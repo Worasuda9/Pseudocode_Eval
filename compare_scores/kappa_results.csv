@@ -1,0 +1,25 @@
+comparison,dimension,n,kappa,agreement_pct,interpretation
+rater1 vs rater2,correctness,60,0.8823016564952049,85.0,Almost perfect
+rater1 vs rater2,completeness,60,0.8365122615803815,80.0,Almost perfect
+rater1 vs rater2,clarity,60,0.8234349919743178,81.66666666666667,Almost perfect
+rater1 vs rater2,efficiency,60,0.8823016564952049,86.66666666666667,Almost perfect
+rater1 vs gemini,correctness,60,0.8149779735682819,80.0,Almost perfect
+rater1 vs gemini,completeness,60,0.6263079222720478,63.333333333333336,Substantial
+rater1 vs gemini,clarity,60,0.436834094368341,46.666666666666664,Moderate
+rater1 vs gemini,efficiency,60,0.5862068965517242,60.0,Moderate
+rater1 vs openai,correctness,60,0.8149779735682819,80.0,Almost perfect
+rater1 vs openai,completeness,60,0.6263079222720478,63.333333333333336,Substantial
+rater1 vs openai,clarity,60,0.436834094368341,46.666666666666664,Moderate
+rater1 vs openai,efficiency,60,0.5862068965517242,60.0,Moderate
+rater2 vs gemini,correctness,60,0.8544973544973544,83.33333333333333,Almost perfect
+rater2 vs gemini,completeness,60,0.6982758620689655,70.0,Substantial
+rater2 vs gemini,clarity,60,0.4005994005994006,46.666666666666664,Moderate
+rater2 vs gemini,efficiency,60,0.6036829463570856,61.666666666666664,Substantial
+rater2 vs openai,correctness,60,0.8544973544973544,83.33333333333333,Almost perfect
+rater2 vs openai,completeness,60,0.6982758620689655,70.0,Substantial
+rater2 vs openai,clarity,60,0.4005994005994006,46.666666666666664,Moderate
+rater2 vs openai,efficiency,60,0.6036829463570856,61.666666666666664,Substantial
+gemini vs openai,correctness,60,1.0,100.0,Almost perfect
+gemini vs openai,completeness,60,1.0,100.0,Almost perfect
+gemini vs openai,clarity,60,1.0,100.0,Almost perfect
+gemini vs openai,efficiency,60,1.0,100.0,Almost perfect
