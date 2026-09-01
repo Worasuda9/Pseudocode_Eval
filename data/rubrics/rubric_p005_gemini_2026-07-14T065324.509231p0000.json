@@ -1,0 +1,51 @@
+{
+  "problem_id": "p005",
+  "problem_statement": "Write a recursive function addition() that calculates the sum of numbers from 0 to 10. A recursive function is a function that calls itself to solve smaller instances of the same problem. Given Input: num = 10. Expected Output: 55.",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "This dimension evaluates whether the recursive logic correctly calculates the sum of numbers from 0 up to a given number for all valid inputs, focusing on the mathematical soundness of the recursive step and base case.",
+        "sub_criteria": [
+          "The recursive step correctly breaks down the summation problem into 'current_number + sum(current_number - 1)'.",
+          "The base case logic correctly handles the smallest input (e.g., sum(0) or sum(1)) to produce the correct non-recursive result.",
+          "The algorithm correctly calculates the sum for numbers between 0 and 10 when mentally traced."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "This dimension assesses if all necessary components of a recursive function are present, including its definition, parameters, the base case, and the recursive call, ensuring the algorithm can fully execute.",
+        "sub_criteria": [
+          "The pseudocode describes a function structure that accepts an input number.",
+          "A clear base case condition is present, which stops the recursion.",
+          "A recursive call to the function itself with a modified input (e.g., 'number - 1') is included.",
+          "The algorithm includes a mechanism to return the calculated sum."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "This dimension evaluates how easy it is to understand the logical flow and purpose of each step in the pseudocode, ensuring that variable names and descriptions are meaningful and unambiguous.",
+        "sub_criteria": [
+          "The purpose of each step, including the base case and recursive step, is clearly described.",
+          "Variable names or descriptions of values used are clear and consistently refer to the same concept.",
+          "The overall flow from input to output, including the recursive calls, is easy to follow."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "This dimension assesses whether the recursive approach avoids unnecessary operations or redundant calculations, reflecting an understanding of basic computational performance for this problem.",
+        "sub_criteria": [
+          "The algorithm avoids redundant calculations by directly using the result of the smaller recursive problem.",
+          "The recursive solution processes each number from the input down to the base case once, without unnecessary re-iterations."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-14T06:53:24.509231+00:00"
+}

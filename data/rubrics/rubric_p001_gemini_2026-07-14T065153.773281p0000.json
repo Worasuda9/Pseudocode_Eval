@@ -1,0 +1,51 @@
+{
+  "problem_id": "p001",
+  "problem_statement": "Write a program to use a loop to find the factorial of a given number. The factorial of N is the product of all integers from 1 to N. Given Input: num = 5. Expected Output: 120.",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "This dimension assesses whether the algorithm's logic accurately computes the factorial for all valid non-negative integer inputs, including base cases.",
+        "sub_criteria": [
+          "The algorithm correctly calculates the product of all integers from 1 up to the given input number.",
+          "The algorithm correctly produces a factorial of 1 when the input number is 0.",
+          "The algorithm correctly produces a factorial of 1 when the input number is 1."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "This dimension evaluates if all necessary structural components and steps are included to fully solve the problem as described.",
+        "sub_criteria": [
+          "The algorithm includes a step to receive or define the input number for which the factorial is to be calculated.",
+          "The algorithm includes an initialization step for the variable that accumulates the factorial product.",
+          "The algorithm includes a loop structure that iterates through the sequence of numbers required for the factorial calculation.",
+          "The algorithm provides a clear final result for the calculated factorial."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "This dimension focuses on how easy the pseudocode is to understand and follow, ensuring logical steps are unambiguous.",
+        "sub_criteria": [
+          "The logical flow of the algorithm is easy to follow step-by-step.",
+          "Variables and any named concepts in the pseudocode are clearly identifiable and have meaningful names.",
+          "Each step is described in a clear and unambiguous manner, allowing the reader to understand its purpose."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "This dimension examines the conceptual computational performance, ensuring the solution avoids obvious redundancies or unnecessary operations.",
+        "sub_criteria": [
+          "The algorithm calculates the factorial using a single iterative pass through the necessary numbers.",
+          "The algorithm avoids redundant calculations or unnecessary storage of intermediate results."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-14T06:51:53.773281+00:00"
+}

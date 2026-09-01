@@ -1,0 +1,52 @@
+{
+  "problem_id": "p003",
+  "problem_statement": "# Food Delivery Fee CalculatorWrite a Python program to calculate the delivery fee based on these rules:1. **Base fee:** 20 baht.2. **Distance fee:**   * ≤ 3 km: 8 baht/km   * > 3 km: 8 × 3 + 10 × (distance − 3)3. **Small order:** Add 12 baht if `order_value < 150`.4. **Rush hour:** Add 10% of the calculated fee if the hour is **11–13 or 17–20**.5. **Rain:** Add 10 baht if `weather = \"rain\"`.6. **Inputs:** `distance_km`, `order_value`, `hour (0–23)`, and `weather (\"normal\"/\"rain\")`.7. **Output:** Final delivery fee rounded to **2 decimal places**.",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "Evaluates if the pseudocode's logic accurately calculates the delivery fee according to all specified rules and mathematical formulas.",
+        "sub_criteria": [
+          "The base fee of 20 baht is correctly applied as a starting point.",
+          "The distance fee calculation logic correctly applies 8 baht/km for `distance_km <= 3` and `(8 * 3) + 10 * (distance_km - 3)` for `distance_km > 3`.",
+          "The rush hour fee is correctly calculated as 10% of the accumulated fee prior to the rush hour adjustment, and applied only if the hour is within the specified 11-13 or 17-20 ranges.",
+          "The final calculated fee is rounded to exactly two decimal places."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "Assesses whether all necessary inputs, outputs, fee components, and conditional logic branches are present in the algorithm.",
+        "sub_criteria": [
+          "All four required inputs (`distance_km`, `order_value`, `hour`, `weather`) are utilized in the calculation process.",
+          "The algorithm includes a conditional check for the small order fee when `order_value < 150`.",
+          "The algorithm includes a conditional check for adding a fee when `weather` is 'rain'.",
+          "The logic correctly handles boundary conditions for distance (e.g., `distance_km = 3`) and hour (e.g., `hour = 11`, `hour = 13`, `hour = 17`, `hour = 20`)."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "Evaluates how easy it is to understand the logical flow and purpose of each step in the pseudocode.",
+        "sub_criteria": [
+          "Variable names and step descriptions are clear and meaningful, accurately representing the values or actions they describe (e.g., `current_fee`, `distance_fee`).",
+          "The logical flow of calculations and conditional checks is easy to follow step-by-step.",
+          "Mathematical operations, comparisons, and conditions are expressed clearly and unambiguously."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "Evaluates if the pseudocode avoids unnecessary calculations or redundant steps, reflecting an awareness of performance.",
+        "sub_criteria": [
+          "The algorithm calculates each fee component only once.",
+          "The conditional checks for rush hour are structured efficiently, preventing redundant evaluations of the hour ranges."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-09-01T07:37:51.023374+00:00"
+}

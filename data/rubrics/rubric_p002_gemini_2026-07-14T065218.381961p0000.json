@@ -1,0 +1,51 @@
+{
+  "problem_id": "p002",
+  "problem_statement": "Write a program to remove all duplicate values from a list using a loop, maintaining the original order of elements. Given Input: [1, 2, 2, 3, 4, 4, 4, 5]. Expected Output: Unique List: [1, 2, 3, 4, 5].",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "This dimension evaluates whether the algorithm's logic accurately identifies and removes duplicate values while preserving the original order of unique elements for all valid inputs.",
+        "sub_criteria": [
+          "The algorithm correctly identifies an element as unique if it has not been encountered before in the resulting unique list.",
+          "The algorithm adds an element to the result list only if it is genuinely a new unique value.",
+          "The algorithm ensures the final list maintains the relative order of elements as they first appeared in the original input list."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "This dimension assesses if all necessary structural components of the algorithm are present, including proper initialization, iteration, and handling of various input scenarios.",
+        "sub_criteria": [
+          "An empty list or similar data structure is initialized to store the unique elements.",
+          "A loop structure is used to iterate through all elements of the input list.",
+          "A mechanism is present to check if an element already exists within the list of unique elements compiled so far.",
+          "The algorithm correctly handles edge cases, such as an empty input list or a list containing only unique elements."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "This dimension evaluates the readability and human-understandability of the pseudocode, ensuring the logical steps and variable references are clear and easy to follow.",
+        "sub_criteria": [
+          "The purpose of each major step (e.g., initializing the unique list, iterating through the input, checking for uniqueness) is clear and understandable.",
+          "Any variables or temporary storage used are clearly named, and their roles within the algorithm are unambiguous.",
+          "The overall flow of the algorithm is logical and easy to trace from start to finish, without confusing jumps or unclear conditions."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "This dimension examines if the algorithm avoids obviously unnecessary computations or redundant operations, reflecting an understanding of basic performance considerations for list processing.",
+        "sub_criteria": [
+          "The algorithm processes each element of the input list in a single pass or sequence of operations without unnecessary re-scans of the entire input list.",
+          "The method for identifying unique elements avoids redundant comparisons or repeated computations for the same element that would significantly increase processing time beyond a common introductory approach."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-14T06:52:18.381961+00:00"
+}

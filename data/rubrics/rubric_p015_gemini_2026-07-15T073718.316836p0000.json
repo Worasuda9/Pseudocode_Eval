@@ -1,0 +1,51 @@
+{
+  "problem_id": "p015",
+  "problem_statement": "Take a 2D list, which is a list containing several lists, and flatten it into a single 1D list containing all the individual elements in their original order. Given Input: 2D List: [[1, 2, 3], [4, 5], [6, 7, 8, 9]]. Expected Output: 1D List: [1, 2, 3, 4, 5, 6, 7, 8, 9].",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "Evaluates if the algorithm's logic correctly combines all elements into a single list while maintaining their original order.",
+        "sub_criteria": [
+          "The logic correctly identifies and processes each sub-list from the input 2D list.",
+          "The logic correctly extracts each individual element from a sub-list.",
+          "The logic ensures that elements are added to the new 1D list in their original sequence."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "Evaluates if all necessary algorithmic components, such as loops, data structures, and handling of various input scenarios, are present in the solution.",
+        "sub_criteria": [
+          "An empty 1D list is created to store the flattened elements.",
+          "A mechanism is present to iterate through each sub-list in the input 2D list.",
+          "A mechanism is present to iterate through each element within a sub-list.",
+          "The algorithm correctly handles edge cases such as an empty input 2D list or 2D lists containing empty sub-lists."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "Evaluates how easy it is to understand the logical flow and purpose of each step in the pseudocode.",
+        "sub_criteria": [
+          "Variable names and descriptions of steps are meaningful and clearly indicate their purpose.",
+          "The logical flow of the algorithm is easy to follow step-by-step.",
+          "Each reference to a value or quantity is unambiguous."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "Evaluates if the algorithm avoids unnecessary operations or redundant processing of data.",
+        "sub_criteria": [
+          "The algorithm processes each element from the input 2D list exactly once to add it to the new 1D list.",
+          "The algorithm avoids creating unnecessary intermediate data structures or performing redundant traversals of the data."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-15T07:37:18.316836+00:00"
+}

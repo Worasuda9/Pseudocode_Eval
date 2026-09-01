@@ -1,0 +1,51 @@
+{
+  "problem_id": "p012",
+  "problem_statement": "Write a program to reverse a given string. Given Input: str1 = \\\"PYnative\\\". Expected Output: evitanYP.",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "This dimension evaluates if the algorithm's logic accurately reverses any given input string, ensuring the final output string is a true reversal of the original.",
+        "sub_criteria": [
+          "The logic correctly determines the order of characters for the reversed string, placing the last character first, the second-to-last character second, and so on.",
+          "The algorithm ensures that all characters from the original string are present in the final output string and no extraneous characters are added or omitted.",
+          "The algorithm correctly handles strings of varying lengths, including those with an even or odd number of characters."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "This dimension assesses whether all essential components of the string reversal algorithm are present, from input handling to result formation and edge case management.",
+        "sub_criteria": [
+          "The algorithm describes a clear input mechanism for accepting the original string.",
+          "The algorithm includes a method to process each character of the input string.",
+          "The algorithm describes storing or accumulating the reversed characters into a resulting string or sequence.",
+          "The algorithm covers edge cases such as an empty string or a string with a single character."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "This dimension evaluates the logical readability and human-understandability of the pseudocode, ensuring the steps and flow are easy to comprehend.",
+        "sub_criteria": [
+          "The logical flow from input to the final reversed string is easy to follow step-by-step.",
+          "Variable names and descriptions of steps clearly convey their purpose within the algorithm.",
+          "The method for building the reversed string is unambiguous and straightforward to understand."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "This dimension evaluates the student's awareness of computational performance by checking if the algorithm avoids obviously unnecessary operations or redundant processing steps.",
+        "sub_criteria": [
+          "The algorithm avoids unnecessary multiple full passes over the input string to achieve the reversal.",
+          "The algorithm does not perform redundant character operations, such as re-processing characters that have already been correctly placed in the reversed string."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-15T07:35:10.114684+00:00"
+}

@@ -1,0 +1,51 @@
+{
+  "problem_id": "p008",
+  "problem_statement": "Write a program that takes a year as input and determines if it is a leap year. A leap year is divisible by 4, unless it is also divisible by 100 but not by 400. Given Input: year = 2024. Expected Output: 2024 is a leap year.",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "This dimension evaluates whether the algorithm's logic accurately applies the leap year rules to produce the correct output for all valid year inputs.",
+        "sub_criteria": [
+          "The algorithm correctly identifies years divisible by 4 as a primary condition for being a leap year.",
+          "The algorithm correctly applies the exception that years divisible by 100 are not leap years.",
+          "The algorithm correctly applies the sub-exception that years divisible by 400 are leap years despite being divisible by 100.",
+          "The algorithm combines these conditions using logically sound operators to arrive at the final leap year determination."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "This dimension assesses if all necessary components of the algorithm are present, including input, output, and the core conditional checks.",
+        "sub_criteria": [
+          "The algorithm describes taking a year as input.",
+          "The algorithm includes all necessary divisibility checks (by 4, by 100, and by 400).",
+          "The algorithm describes communicating the final determination (whether the year is a leap year or not)."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "This dimension evaluates how easy it is to understand the pseudocode's logic, focusing on clear language, logical flow, and unambiguous references.",
+        "sub_criteria": [
+          "Each step of the algorithm is described using clear and understandable language.",
+          "The sequence of operations and logical decisions is easy to follow.",
+          "All variables or values referenced throughout the pseudocode are unambiguous in their meaning and purpose."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "This dimension assesses the student's conceptual understanding of avoiding unnecessary computations or redundant steps in determining the leap year status.",
+        "sub_criteria": [
+          "The algorithm avoids re-calculating divisibility conditions multiple times.",
+          "The algorithm determines the leap year status using a minimal set of logical comparisons."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-15T07:30:52.709752+00:00"
+}

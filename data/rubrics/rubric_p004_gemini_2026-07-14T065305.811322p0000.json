@@ -1,0 +1,51 @@
+{
+  "problem_id": "p004",
+  "problem_statement": "Write a function calculation() that accepts two variables and calculates both addition and subtraction. The function must return both results in a single return statement. Given Input: a = 40, b = 10. Expected Output: 50, 30.",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "This dimension evaluates whether the core arithmetic logic for both addition and subtraction is valid and would produce the correct numerical results for any valid inputs. It focuses on the semantic accuracy of the calculations.",
+        "sub_criteria": [
+          "The logic for the addition operation correctly calculates the sum of the two input variables.",
+          "The logic for the subtraction operation correctly calculates the difference between the two input variables.",
+          "The algorithm's logic for combining and returning the results is valid."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "This dimension assesses if all necessary structural components of the function, including inputs, calculations, and the specified return mechanism, are present in the pseudocode.",
+        "sub_criteria": [
+          "The pseudocode includes a definition for a function.",
+          "The function is designed to accept two distinct input variables.",
+          "The function includes steps to calculate both the sum and the difference of the inputs.",
+          "The function includes a mechanism to return both calculated results as a single conceptual action."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "This dimension evaluates the readability and understandability of the pseudocode, ensuring that the logical flow, variable names, and step descriptions are clear and unambiguous.",
+        "sub_criteria": [
+          "The overall purpose of the function and its individual steps are easy to understand.",
+          "Variable names and descriptions for the calculations are meaningful and unambiguous.",
+          "The order of operations and the logical flow of the algorithm are clear and easy to follow."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "This dimension evaluates if the pseudocode avoids obviously unnecessary operations or redundant computations, reflecting a basic understanding of computational performance.",
+        "sub_criteria": [
+          "The calculations are performed directly without redundant or unnecessary intermediate steps.",
+          "Each required calculation (addition and subtraction) is performed only once."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-14T06:53:05.811322+00:00"
+}

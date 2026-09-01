@@ -1,0 +1,54 @@
+{
+  "problem_id": "p002",
+  "problem_statement": "# Food Delivery Fee Calculator",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "Evaluates whether the logic for calculating the delivery fee accurately applies the student's defined rules for all valid inputs and produces the expected final fee.",
+        "sub_criteria": [
+          "The base fee (if defined) is correctly applied to the initial fee.",
+          "The logic for distance-based fee adjustments correctly calculates and adds the corresponding amount.",
+          "The logic for order value-based fee adjustments (e.g., surcharges, discounts) correctly modifies the fee based on defined thresholds.",
+          "All individual fee components are correctly combined to produce the final delivery fee."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "Assesses if all necessary components for a delivery fee calculation, including inputs, outputs, and conditional logic, are present and adequately addressed.",
+        "sub_criteria": [
+          "The algorithm accepts order value and delivery distance as inputs.",
+          "The algorithm defines at least two distinct factors or rules that influence the delivery fee (e.g., a base fee, a distance rate, an order value threshold).",
+          "Conditional logic is present to apply different fee adjustments based on input values (e.g., if distance is X, if order value is Y).",
+          "The algorithm includes handling for common edge cases, such as a zero or very small order value, or a zero distance.",
+          "The algorithm produces a final calculated delivery fee as output."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "Examines how easily a human can understand the pseudocode's steps, variable usage, and overall logical flow without ambiguity.",
+        "sub_criteria": [
+          "Variable names are meaningful and clearly represent the data they hold (e.g., 'orderValue', 'deliveryDistance', 'finalFee').",
+          "Each step of the calculation and decision-making process is described in clear, easy-to-understand language.",
+          "The logical flow from input to final output is straightforward and easy to trace.",
+          "References to values or intermediate results are unambiguous throughout the pseudocode."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "Evaluates whether the algorithm avoids redundant calculations or unnecessary logical checks, reflecting an awareness of computational performance.",
+        "sub_criteria": [
+          "The algorithm calculates each fee component only once without unnecessary repetition.",
+          "The pseudocode avoids redundant conditional checks that could be combined or nested more effectively."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-09-01T07:33:45.234479+00:00"
+}

@@ -1,0 +1,51 @@
+{
+  "problem_id": "p006",
+  "problem_statement": "Create an outer function that accepts two parameters, a and b. Inside, create an inner function that calculates the addition of a and b. The outer function should then add 5 to that sum and return the final result. Given Input: a = 5, b = 10. Expected Output: 20.",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "This dimension evaluates if the core logic correctly calculates the sum of 'a' and 'b' and then adds 5 to that sum, producing the expected final result for any valid inputs.",
+        "sub_criteria": [
+          "The inner function's logic correctly computes the sum of the two input numbers, 'a' and 'b'.",
+          "The outer function correctly uses the result returned by the inner function in its subsequent calculation.",
+          "The outer function correctly adds 5 to the sum obtained from the inner function before returning the final value."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "This dimension evaluates if all required structural components, such as the outer function, inner function, their parameters, and the necessary operations, are present and properly structured according to the problem statement.",
+        "sub_criteria": [
+          "An outer function is defined that accepts two parameters.",
+          "An inner function is defined within the scope of the outer function.",
+          "The inner function is called from within the outer function to obtain its result.",
+          "The outer function returns the final calculated result as specified."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "This dimension evaluates how easy the pseudocode is to understand, including the logical flow, the meaningfulness of function and variable names, and the clear description of each step.",
+        "sub_criteria": [
+          "The logical flow of steps within both the outer and inner functions is easy to follow.",
+          "Variable names and function names clearly indicate their purpose and what they represent.",
+          "The relationship and interaction between the outer and inner functions are understandable."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "This dimension evaluates if the algorithm avoids obviously unnecessary computations or redundant steps, reflecting a straightforward and optimized approach for this specific problem.",
+        "sub_criteria": [
+          "The calculation of the sum of 'a' and 'b' and the final addition of 5 are performed directly without redundant operations.",
+          "The inner function performs only the required addition without any unnecessary steps."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-15T07:26:47.526289+00:00"
+}

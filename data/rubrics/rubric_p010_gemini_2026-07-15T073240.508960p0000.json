@@ -1,0 +1,51 @@
+{
+  "problem_id": "p010",
+  "problem_statement": "Write a program to check if a string is a palindrome, meaning it reads the same forward and backward. Given Input: str1 = \\\"radar\\\". Expected Output: Is Palindrome: True.",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "This dimension assesses whether the algorithm's logic accurately identifies palindromes and non-palindromes for all valid string inputs.",
+        "sub_criteria": [
+          "The algorithm's comparison logic correctly determines if characters at symmetric positions in the string are identical.",
+          "The algorithm correctly concludes the string is *not* a palindrome if any character mismatch is found.",
+          "The algorithm correctly concludes the string *is* a palindrome if all symmetric character pairs match."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "This dimension evaluates if all essential structural components and necessary steps for the palindrome check are present in the pseudocode.",
+        "sub_criteria": [
+          "The pseudocode describes taking a string as input.",
+          "The pseudocode includes a mechanism to systematically compare characters from both ends of the string moving inwards.",
+          "The pseudocode correctly handles edge cases such as empty strings or strings with a single character.",
+          "The pseudocode describes producing a final boolean result (True/False) indicating if the string is a palindrome."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "This dimension assesses how easily a human can understand the logical steps, intent, and flow of the pseudocode for checking palindromes.",
+        "sub_criteria": [
+          "Each step of the palindrome checking process is described using clear and unambiguous language.",
+          "Any values, indices, or temporary storage used in the algorithm are clearly referenced and their purpose is understandable.",
+          "The overall sequence of operations and decision points is easy to follow."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "This dimension evaluates if the algorithm demonstrates an awareness of minimizing operations by avoiding redundant comparisons or unnecessary passes through the data.",
+        "sub_criteria": [
+          "The algorithm stops comparisons as soon as a character mismatch is detected.",
+          "The algorithm avoids performing redundant operations or making multiple full passes over the string when a single pass (or half-pass) is sufficient."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-15T07:32:40.508960+00:00"
+}

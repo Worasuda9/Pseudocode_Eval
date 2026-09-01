@@ -1,0 +1,51 @@
+{
+  "problem_id": "p013",
+  "problem_statement": "Write a function to rotate a list to the left by k positions. If k = 2, the first two elements move to the end of the list. Given Input: List: [1, 2, 3, 4, 5], k: 2. Expected Output: Rotated List: [3, 4, 5, 1, 2].",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "Evaluates if the algorithm's logic correctly rotates the list elements by k positions for all valid inputs, producing the expected output.",
+        "sub_criteria": [
+          "The logic correctly determines the effective rotation amount, accounting for k being greater than or equal to the list's length, or when k is 0.",
+          "The logic correctly identifies the segment of elements that should form the new beginning of the rotated list.",
+          "The logic correctly identifies the segment of elements that should form the new end of the rotated list.",
+          "The algorithm correctly combines these two identified segments in the proper order to produce the final rotated list."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "Evaluates if all necessary components of the list rotation algorithm are present, including input/output handling and specific edge case considerations.",
+        "sub_criteria": [
+          "The algorithm describes accepting a list and an integer k as input.",
+          "The algorithm includes steps to handle an empty input list gracefully.",
+          "The algorithm describes producing the final rotated list as an output."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "Evaluates the logical readability and human-understandability of the pseudocode, ensuring the steps and concepts are easy to follow.",
+        "sub_criteria": [
+          "The steps clearly describe the process of separating and rejoining parts of the list.",
+          "References to values, variables, or quantities are unambiguous and easy to understand.",
+          "The overall logical flow of the rotation process is straightforward and easy to trace."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "Evaluates the student's conceptual awareness of computational performance, ensuring the algorithm avoids obviously unnecessary or redundant operations.",
+        "sub_criteria": [
+          "The algorithm avoids unnecessary operations such as iterating through the list multiple full times when a single conceptual pass or a few clear operations are sufficient.",
+          "The algorithm avoids creating many temporary lists or making redundant full copies of the entire list."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-15T07:35:53.847554+00:00"
+}

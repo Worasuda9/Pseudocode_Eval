@@ -1,0 +1,52 @@
+{
+  "problem_id": "p003",
+  "problem_statement": "Write a program that counts the total number of vowels and consonants in a given sentence, ignoring spaces and special characters. Given Input: \\\"Loops are Fun!\\\" Expected Output: Vowels: 5, Consonants: 7.",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "Evaluates if the algorithm accurately categorizes each alphabetic character as a vowel or consonant and correctly ignores non-alphabetic characters.",
+        "sub_criteria": [
+          "The logic correctly identifies an alphabetic character as a vowel.",
+          "The logic correctly identifies an alphabetic character as a consonant.",
+          "The logic correctly ignores non-alphabetic characters (e.g., spaces, punctuation, numbers).",
+          "The comparison for vowels and consonants is case-insensitive."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "Evaluates whether all necessary parts of the algorithm are present, including input processing, counting mechanisms, and handling of various character types.",
+        "sub_criteria": [
+          "The algorithm includes counters for both vowels and consonants.",
+          "The algorithm describes how to iterate through each character of the input sentence.",
+          "The algorithm describes how to accumulate the counts based on character type.",
+          "The algorithm addresses situations where the input sentence is empty or contains no alphabetic characters."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "Evaluates how easy it is to understand the logical flow and purpose of each step in the pseudocode.",
+        "sub_criteria": [
+          "The steps clearly describe the process of checking each character's type.",
+          "The names for variables and quantities (e.g., input sentence, current character, vowel count, consonant count) are clear and consistent.",
+          "The overall flow of the algorithm, from start to finish, is easy to understand."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "Evaluates the algorithmic approach for avoiding unnecessary operations or redundant processing.",
+        "sub_criteria": [
+          "The algorithm processes each character in the input sentence at most once to determine its type.",
+          "The algorithm avoids any redundant or unnecessary passes over the entire input sentence."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-14T06:52:53.061467+00:00"
+}

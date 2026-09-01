@@ -1,0 +1,51 @@
+{
+  "problem_id": "p009",
+  "problem_statement": "Create a list of 5 words. Write a loop that iterates through the list and prints each word alongside its character count. Given Input: words = [\\\"Apple\\\", \\\"Banana\\\", \\\"Cherry\\\", \\\"Date\\\", \\\"Elderberry\\\"]. Expected Output: Apple - 5 Banana - 6 Cherry - 6 Date - 4 Elderberry - 10.",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "This dimension evaluates whether the algorithm's logic accurately calculates character counts and correctly associates them with each word for all valid inputs.",
+        "sub_criteria": [
+          "The logic correctly determines the character count for any given word.",
+          "The algorithm correctly pairs each word from the input list with its corresponding character count.",
+          "The loop's conditions ensure that every word in the list is processed exactly once."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "This dimension assesses if all required algorithmic components are present, including the input list, the iterative structure, and the output mechanism.",
+        "sub_criteria": [
+          "The pseudocode establishes or refers to the initial list of words as described in the problem.",
+          "An iterative structure (loop) is present to process items from the list.",
+          "Within the loop, there is a step to access individual words from the list.",
+          "The pseudocode includes a mechanism to present the word and its calculated count as output."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "This dimension evaluates the logical readability and human-understandability of the pseudocode, ensuring clear and unambiguous descriptions.",
+        "sub_criteria": [
+          "The purpose of each step and any intermediate values (like character count) is easily understandable.",
+          "The logical sequence of operations for processing each word is clear and straightforward.",
+          "The language used to describe the algorithm is plain and avoids ambiguity."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "This dimension evaluates whether the algorithm avoids obviously unnecessary operations or redundant passes through the data.",
+        "sub_criteria": [
+          "The algorithm processes each word and calculates its length in a single pass through the list.",
+          "The algorithm avoids recalculating the length of the same word multiple times."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-15T07:31:49.436861+00:00"
+}

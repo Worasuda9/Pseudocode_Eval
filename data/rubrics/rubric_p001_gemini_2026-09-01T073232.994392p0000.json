@@ -1,0 +1,52 @@
+{
+  "problem_id": "p001",
+  "problem_statement": "# Food Delivery Fee Calculator",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "This dimension evaluates whether the algorithm's logic accurately computes the delivery fee for all valid input combinations, adhering to standard fee calculation rules.",
+        "sub_criteria": [
+          "The logic correctly calculates the initial fee based on a base amount and distance-based increment.",
+          "The logic correctly applies a small order surcharge when the order total falls below a specified threshold.",
+          "The logic correctly sets the delivery fee to zero if the order total meets or exceeds a free delivery threshold.",
+          "The logic correctly caps the final calculated delivery fee at a maximum allowed amount."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "This dimension assesses if all necessary components for a comprehensive delivery fee calculation, including input handling, conditional logic, and output, are present in the pseudocode.",
+        "sub_criteria": [
+          "The pseudocode includes steps to accept both the order total and delivery distance as inputs.",
+          "The pseudocode includes conditional logic to evaluate different fee scenarios, such as small order surcharges and free delivery thresholds.",
+          "The pseudocode includes a step to provide the final calculated delivery fee as an output.",
+          "The pseudocode addresses edge cases where delivery distance or order total might be zero or negative, ensuring a sensible calculation."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "This dimension evaluates how easily a human can understand the logical flow and the purpose of each step in the delivery fee calculation.",
+        "sub_criteria": [
+          "Variable and constant names clearly indicate their purpose within the fee calculation (e.g., 'orderTotal', 'deliveryDistance', 'baseFee').",
+          "Each step of the fee calculation is described in clear, straightforward language, making its intention easy to grasp.",
+          "The overall sequence of operations logically progresses from inputs through calculations to the final fee, making the flow simple to follow."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "This dimension evaluates whether the pseudocode avoids redundant calculations or unnecessary processing steps in determining the delivery fee.",
+        "sub_criteria": [
+          "The pseudocode avoids recalculating intermediate fee components that have already been determined.",
+          "The pseudocode applies the different fee rules in a logical sequence, preventing unnecessary re-evaluation or modification of the fee."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-09-01T07:32:32.994392+00:00"
+}

@@ -1,0 +1,51 @@
+{
+  "problem_id": "p011",
+  "problem_statement": "Write a program to count the total number of vowels (a, e, i, o, u) in a given string. Given Input: str1 = \\\"Hello World\\\". Expected Output: Vowel Count: 3.",
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Correctness",
+        "description": "This dimension evaluates if the algorithm's logic accurately identifies and counts all vowels in the input string, consistently producing the correct total for any valid string.",
+        "sub_criteria": [
+          "The logic correctly identifies 'a', 'e', 'i', 'o', 'u' (and their uppercase equivalents) as vowels.",
+          "The logic accurately increments the vowel count only for characters identified as vowels.",
+          "The logic ensures that each vowel found contributes exactly one to the total count."
+        ],
+        "weight": 40
+      },
+      {
+        "name": "Completeness",
+        "description": "This dimension assesses if all necessary algorithmic components are present, including proper handling of input, iteration, counting, and all relevant edge cases for the problem.",
+        "sub_criteria": [
+          "The algorithm defines a way to accept the input string and provide the final vowel count.",
+          "The algorithm includes a method to examine each character within the input string.",
+          "A counter variable is initialized before iteration begins and is updated throughout the string traversal.",
+          "The algorithm correctly handles edge cases such as an empty input string or a string with no vowels."
+        ],
+        "weight": 30
+      },
+      {
+        "name": "Clarity",
+        "description": "This dimension evaluates the logical readability and human-understandability of the pseudocode, focusing on clear language, meaningful variable references, and a straightforward flow.",
+        "sub_criteria": [
+          "The steps are described using clear, plain language that makes the logical flow easy to follow.",
+          "All variables and concepts (e.g., 'string', 'character', 'vowel count') are referred to unambiguously throughout the pseudocode.",
+          "The pseudocode clearly conveys the purpose of each major step, from initialization to counting to providing the result."
+        ],
+        "weight": 20
+      },
+      {
+        "name": "Efficiency",
+        "description": "This dimension evaluates the student's conceptual understanding of performance, ensuring the algorithm avoids obviously unnecessary operations or redundant passes through the data.",
+        "sub_criteria": [
+          "The algorithm processes the input string with a single pass, avoiding redundant iterations over the same data.",
+          "The algorithm avoids unnecessary operations or repeated computations for each character when checking for vowels."
+        ],
+        "weight": 10
+      }
+    ]
+  },
+  "llm_provider": "gemini",
+  "llm_model": "gemini-2.5-flash",
+  "created_at": "2026-07-15T07:33:56.792466+00:00"
+}
