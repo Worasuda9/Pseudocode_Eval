@@ -1,0 +1,884 @@
+[
+  {
+    "User ID": "6887001",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/1 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: TIMEOUT",
+    "Submission Time": "2025-12-03T04:01:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887001\nPASSWORD: v46vmSdc\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nimport pandas as pd\nword = input().split()\ndf = pd.read_csv('log')"
+  },
+  {
+    "User ID": "6887002",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:09:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887002\nPASSWORD: utYNcRnk\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser=input()\nuser=user.split(\",\")\nrou=int(input())\ndic={}\nfor i in range(rou):\n    data=input()\n    data=data.split(\",\")\n    # dic[i]={\"ERROR\":0,\"INFO\":0}\n    if data[0][3:].isdecimal() and data[0][3]!=\"0\":\n        # print(data[0][3:])\n        if data[1] not in dic and \"[INFO]\" in data[2]:\n            dic[data[1]]={\"ERROR\":0,\"INFO\":1,\"TICKET\":[]}\n        elif data[1] in dic and \"[INFO]\" in data[2]:\n            dic[data[1]][\"INFO\"]+=1\n        if data[1] not in dic and \"[ERROR]\" in data[2]:\n            dic[data[1]]={\"ERROR\":1,\"INFO\":0,\"TICKET\":[]}\n        elif data[1] in dic and \"[ERROR]\" in data[2]:\n            dic[data[1]][\"ERROR\"]+=1\n        dic[data[1]][\"TICKET\"].append(int(data[0][3:]))\n\nfor i in user:\n    x=list(sorted(dic[i][\"TICKET\"]))\n    # print(x)\n    dic[i][\"TICKET\"]=x\n# print(dic)\nfor i in user:\n    print(f\"{i}: INFO={dic[i][\"INFO\"]} ERROR={dic[i][\"ERROR\"]} TICKET={dic[i][\"TICKET\"]}\")"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:58:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: grXHPuNP\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nusers = input()\n# print(users)\nn_of_log = int(input())\n# print(n_of_log)\nfor __ in range(n_of_log):\n    ticket_code = input()\n    # print(ticket_code)\n    ticket_code_n = (ticket_code.split(','))\n    # print(ticket_code_n)\n    lst = []\n\n    for c in ticket_code_n[0]:\n        # print(c)\n        lst.append(c)\n    # print(lst)\n    n_lst = ''.join(lst)\n    # print(n_lst)\n    check_lst = []\n    info = 0\n    error = 0\n    for l in n_lst[3:7]:\n        info += 1\n        # print(l)\n        if 0 != n_lst[3]:\n            check_lst.append(n_lst)\n            # print(check_lst)\n        elif '' != l:\n            check_lst.append(n_lst)\n            # print(check_lst)\n        else:\n            error += 1\nfor i in ticket_code.split(','):\n    print(f'{i[1]} INFO={info} ERROR={error} TICKET={check_lst}')\n\n\n    "
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:59:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887004\nPASSWORD: erU44ahB\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nusers = input().split(',')\ntick = dict.fromkeys('key','users')\ndict1 = dict{}\ndict2 = dict{}\nimport string \n# pd.read_csv('.csv')\nwith open ('<ticket_code>','r' ending='utf-8' as f) :\n    lines = f.readlines()\n\n \n\n"
+  },
+  {
+    "User ID": "6887006",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:53:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887006\nPASSWORD: aqhHRFf5\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split()\n\n\n"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:21:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: DfjWKjpq\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\ndata={}\n\nuser = input().split(',')\nfor i in user:\n    data[i] = {'INFO':0, 'ERROR':0, 'TICKET':[]}\n\nn = int(input())\n\nfor i in range(n):\n    tck, us, log = input().split(',')\n    log = log.split()[0]\n    tck = tck.replace('TCK', '')\n    if (tck.isdecimal() and tck[0] != '0'):\n        data[us]['TICKET'].append(int(tck))\n        if (log == '[INFO]'):\n            data[us]['INFO'] += 1\n        else:\n            data[us]['ERROR'] += 1\n\nfor i in data:\n    data[i]['TICKET'].sort()\n\nfor i in data:\n    print(f\"{i}: INFO={data[i]['INFO']} ERROR={data[i]['ERROR']} TICKET={data[i]['TICKET']}\")\n"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:59:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: neP8zZTX\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nimport numpy as np\na = input()\nb = int(input())\nlst = []\nlst1 =[]\ndic = {'ac' : [],\n'mdouglas' : [],\n'ticket' : []}\nfor i in range(b):\n    c = input()\n    lst.append(c)\nfor i in lst:\n    txt = i.split(',')\n    id = txt[0][3::]\n    if not id.isdigit():\n        continue\n    else:\n        if id[0] == '0':\n            continue\n        else:\n            if txt[1] == 'ac':\n                er_ac = txt[2].count('[ERROR]')\n                inf_ac = txt[2].count('[INFO]')\n                \n            elif txt[1] == 'mdouglas':\n                er_md = txt[2].count('[ERROR]')\n                inf_md = txt[2].count('[INFO]')\n            \n            # elif txt[1]== 'mdouglas':\n            #     md = txt[2]\nprint(dic)       \n            "
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:57:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: DmpWXReY\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\ndt=input().strip()\n# print(dt)\nfor i in dt:\n    a=i.split(',')\n    print(a)"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: rSW85wdK\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input()\nf = open('user', 'r')\nprint(f.read())\nf.close()"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:53:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: PH57XvSK\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\n"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:25:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: njFfvSgw\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\ninput_Format = intput().split(' ')\nread_log = []\nTicket = []\nfor read_log in Ticket.keys()|score.keys():\n    log =input_Format.get(read_log, 'ERROR') \nLog = dict(sorted(read_log(Ticket.items())))\n\nfor Ticket,Log in read_log.items():\n    print(f'{Log}->{Ticket}')\n     "
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: ss2X2agh\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nmember = input().split(',')\nn = int(input())\n\n# list_info = []\ndict_info = dict()\nfor v in member:\n    # list_info.append(dict(\n    #     name = v,\n    #     INFO = 0,\n    #     ERRUR = 0,\n    #     TICKET = []\n    # ))\n    dict_info[v] = dict(\n        INFO = 0,\n        ERROR = 0,\n        TICKET = []\n    )\n# print(list_info)\n# print(dict_info)\n\nfor i in range(n):\n    v = input().split(',')\n    tic = v[0].replace('TCK', '')\n    # print(v[0],v[1],v[2])\n\n    if '[INFO]' in v[2] and 'invalid' not in v[2].lower() and tic.isdecimal() and tic[0] != 0:\n        dict_info[v[1]]['INFO'] += 1\n        dict_info[v[1]]['TICKET'].append(int(tic))\n\n    if '[ERROR]' in v[2] and 'invalid' not in v[2].lower() and tic.isdecimal() and tic[0] != 0:\n        dict_info[v[1]]['ERROR'] += 1\n        dict_info[v[1]]['TICKET'].append(int(tic))\n\n# print(dict_info)\n\nfor k1,v1 in dict_info.items():\n    v1['TICKET'].sort()\n    print(f'{k1}:', end= '')\n    for k2,v2 in v1.items():\n        print(f' {k2}={v2}', end= '')\n    print()"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:02:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887015\nPASSWORD: jpgs7BuQ\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split(',')\nn = int(input())\nAll = []\nU = {}\n\n\nfor i in user:\n    if i in U:\n        U[i]=''\n    else:\n        U[i]=''\nfor i in range(n):\n    data = input().split(',')\n    All.append(data)\nfor i in user:\n    for j in All:\n        if j[2].startswith('[INFO]') and j[1] == i:\n            U[i]+=1\n        \nprint(U)\n\n            "
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: WbqdgAeh\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser = input().split(',')\nincome = []\nfor i in range(int(input())) :\n    inp = input().split(',')\n    income.append(inp)\n\n# print(income)\nselect = []\nfor i in income :\n    if len(i[0]) and i[0][4:].isdecimal() and i[0][0] != 0 :\n        select.append(i)\n\nid = dict()\nfor i in user :\n    id[i] = []\n# print(id)\n\nfor i in select :\n    id[i[1]] = ['TICKET:i']"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:01:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887017\nPASSWORD: QJcFm2dG\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nimport numpy as np\nuser=input().split()\nn=int(input())\nfor i in range(n):\n    data=input().split(',')\n    id_str=data[TCK:]\n    if id_str startswith == '0':\n        print('void')\n    elif id_str.isdigit:\n        \n\n    \n\n"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:52:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887018\nPASSWORD: P4sDXKGt\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split(',')\nnum_log = int(input())\nc_error = 0\nc_info = 0\nticket = []\ndic = {}\nfor  i in range(num_log):\n    tck = input().split(',')\n    for word in tck :\n        if word[3:6].isdigit():\n            ticket.append(word[3:6])\n            if word == '[INFO]':\n                c_error +=1\n            elif word == '[INFO]':\n                c_info += 1\n\n    dic[tck[1]] = (f'INFO={c_info} INFO={c_info} TICKET={ticket}')\nprint(dic)"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:49:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: AM2m1FbV\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().strip().split(\",\")\nnumLog = int(input())\ntokenList = []\nfor i in range(numLog):\n    ticketCode = input().strip().split(\",\")\n    tokenList.append(ticketCode)\n# print(tokenList)\nvalidTicketList = []\n\nfor i in tokenList:\n    if len(i[0][3::]) == 4:\n        # print(\"Check1\")\n        if i[0][3::].isdigit():\n            # print(\"Check2\")\n            if i[0][3] != \"0\":\n                # print(i[0][3])\n                # print(\"Check3\")\n                validTicketList.append(i)\n\n# print(validTicketList)\nstatus = list(map(lambda x: x[2].split()[0], validTicketList))\n# print(status)\nvalidTicketList = list(zip(*(validTicketList,status)))\n# print(validTicketList)\n\nuserDict = {}\n\nfor i in validTicketList:\n    if i[0][1] not in userDict:\n        userDict[i[0][1]] = {\"INFO\" : 0, \"ERROR\" : 0, \"TICKET\" : [] }\n        if i[1] == \"[INFO]\":\n            userDict[i[0][1]][\"INFO\"] = userDict[i[0][1]][\"INFO\"] + 1\n            userDict[i[0][1]][\"TICKET\"].append(int(i[0][0][3::]))\n            \n        elif i[1] == \"[ERROR]\":\n            userDict[i[0][1]][\"ERROR\"] = userDict[i[0][1]][\"ERROR\"] + 1\n            userDict[i[0][1]][\"TICKET\"].append(int(i[0][0][3::]))\n\n    else:\n        if i[1] == \"[INFO]\":\n            userDict[i[0][1]][\"INFO\"] = userDict[i[0][1]][\"INFO\"] + 1\n            userDict[i[0][1]][\"TICKET\"].append(int(i[0][0][3::]))\n            \n        elif i[1] == \"[ERROR]\":\n            userDict[i[0][1]][\"ERROR\"] = userDict[i[0][1]][\"ERROR\"] + 1\n            userDict[i[0][1]][\"TICKET\"].append(int(i[0][0][3::]))\n\n# print(userDict)  \n# print(user)\n\n# for i,j in userDict.items():\n#     print(f\"{i}: INFO={j[\"INFO\"]} ERROR={j[\"ERROR\"]} TICKET={j[\"TICKET\"]}\")\n\nfor i in user:\n    print(f\"{i}: INFO={userDict[i][\"INFO\"]} ERROR={userDict[i][\"ERROR\"]} TICKET={sorted(userDict[i][\"TICKET\"])}\")\n\n\n"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:27:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: hedPCWk6\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nusers = input().split(',')\nnum = int(input())\ntickets = [input() for _ in range(num)]\nusers_dict = {}\n\nfor i in users:\n    users_dict.update({i:{'info':0, 'error':0, 'ticket':[]}})\nfor t in tickets:\n    arr = t.split(',')\n    if arr[0][3:].isdecimal() and arr[0][3] != '0':\n        users_dict[arr[1]]['ticket'].append(int(arr[0][3:]))\n        if arr[2][:6] == '[INFO]':\n            users_dict[arr[1]]['info'] += 1\n        if arr[2][:7] == '[ERROR]':\n            users_dict[arr[1]]['error'] += 1\n\nfor i in users:\n    info = users_dict[i]['info']\n    error =  users_dict[i]['error']\n    ticket =  users_dict[i]['ticket']\n    print(f'{i}: INFO={info} ERROR={error} TICKET={sorted(ticket)}')"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:59:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021\nPASSWORD: FMCcfamd\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\n\ndef valid_tckid(ID):\n\n    if ID[3:].isdecimal():\n        if ID[3] != '0':\n            return True\n    else:\n        return False\n\nuser = input().strip().split(',')\nnum_log = int(input())\n\nlog_list = list()\nfor i in range(num_log):\n    log = input().strip().split(',')\n    log_list.append(log)\n\nlog_list_filter = []\nfor i in log_list:\n    if (valid_tckid(i[0])) == True:\n        log_list_filter.append(i)\n\nlog_dict = dict()\n\nfor i in user:\n    log_dict[i] = {'INFO':0 ,'ERROR':0, 'TICKET':[]}\n\n\nfor i in log_list_filter:\n\n    status = (i[-1].split(' '))[0]\n    id = int(i[0][3:])\n    \n\n    if status == '[INFO]':\n        log_dict[i[1]]['INFO'] +=1\n        log_dict[i[1]]['TICKET'].append(id)\n    elif status == '[ERROR]':\n        log_dict[i[1]]['ERROR'] +=1\n        log_dict[i[1]]['TICKET'].append(id)\n\n\nfor key , values in log_dict.items():\n    print(f'{key}: INFO={values['INFO']} ERROR={values['ERROR']} TICKET={sorted(values['TICKET'])}')\n\n\n\n"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:59:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: rEszKRTz\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\n# I LOVE YOU <3\n\ninp = input().split(',')\nnum_of_log = int(input())\nlist_x = []\nfor i in range(num_of_log):\n    x = input()\n    list_x.append(x)\n\n# for i in list_x:\n#     for names in inp:\n#         for check in i:\n#             print(check)\n\nfor name in inp:\n    print(f'{name}:')\n\nfor i in list_x:\n    split_i = i.split(',')\n    for check_1 in split_i[0].split():\n        if check_1.split('k'):\n            print(check_1)"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:57:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887023\nPASSWORD: NYJwfCvX\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split()\nnumber_of_logs = int(input())\nDataCheck = dict()\nticket = dict()\ndata = dict()\nfor i in range(number_of_logs):\n    ticket_code = input().replace(' ',',')\n    ticket_code = ticket_code.replace('[','')\n    ticket_code = ticket_code.replace(']','').split(',')\n    if ticket_code[0][3] == '0'  :\n        continue\n    else:\n        if ticket_code[1] in data:\n            data[ticket_code[1]] += [ticket_code[2]]\n        else:\n            data[ticket_code[1]] = [ticket_code[2]]\n        if ticket_code[1] in ticket:\n            ticket[ticket_code[1]] += [ticket_code[0][3:]]\n        else :\n            ticket[ticket_code[1]] = [ticket_code[0][3:]]\nnumdict = dict()\nfor i ,h in data.items():\n    for k in sorted(h,reverse = True):\n        if k in numdict:\n            numdict[k] += 1\n        else:\n            numdict[k] = 1\n            if 'ERROR' not in k:\n                numdict['ERROR'] = 0\n            elif 'INFO' not in k:\n                numdict['INFO'] = 0\n    DataCheck[i] = numdict\n    numdict = dict()\nfor i,h in DataCheck.items():\n    for j , k in ticket.items():\n        if i == j:\n            print(f'{i}: INFO={h['INFO']} ERROR={h['ERROR']} TICKET={k}')\n"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: FAIL, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:01:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: vv6FdmPr\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nname = list(input().split())\n\n\nnumLog = int(input())\n\ntkc = []\nusn = []\nlogmes = []\nnamedict = {}\nfor i in range(numLog):\n    tk , un , lm = list(input().split(','))\n    tk = tk.replace('TCK','')\n    if tk[0] == '0' or tk.isdecimal():\n        continue\n    tkc.append(int(tk))\n    lm = lm.split(' ')[0].strip('[').strip(']')\n    logmes.append(lm)\n\n    namedict[un] = {\n        'INFO': 0,\n        'ERROR': 0,\n        'TICKET': tkc\n    }\n\nprint(namedict)"
+  },
+  {
+    "User ID": "6887025",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887025\nPASSWORD: ZapC9VHu\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nx=input().split(',')\ntarget={}\n\ntic=[]\ntik_num=[]\nfor i in x :\n    target['name']=i\n    target[f'{i}info']=0\n    target[f'{i}error']=0\n    target[f'{i}number']=0\n    \n\n\nt=int(input())\nfor i in range(t):\n    j=str(input()).replace(' ',',').split(',')\n\n    tic.append(j[0:3])\n\nfor i in tic :\n    if i[0][3:].isdecimal() == False or i[0][3:][0] == '0' :\n        tic.remove(i)\n    \n\nfor i in tic :\n    if i[1] in x and i[2] == '[INFO]':\n        target[f'{i[1]}info']+=1\n    if i[1] in x and i[2] == '[ERROR]':\n        target[f'{i[1]}error']+=1\n        \nfor i in x:\n    print(f'{i}: INFO={target[f'{i}info']} ERROR={target[f'{i}error']}')\n\nprint(target)\n      \n"
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:59:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887027\nPASSWORD: XkXqet9d\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser = input().split(',')\nn = int(input())\ntickets = []\n\nfor _ in range (n):\n    t = input().split(',')\n    tickets.append(t)\n\n\nfor i in range(len(user)):\n    info = 0\n    error = 0\n    idticket = []\n    for j in tickets:\n        # print (i)\n        if j[1] == user[i]:\n            tck = j[0].strip('TCK')\n            \n            # print(tck)\n            if tck.isdigit() and tck[0] != '0':\n                idticket.append(int(tck))\n                if '[INFO]' in j[2]:\n                    info += 1\n                elif '[ERROR]' in j[2]:\n                    error += 1\n            \n            idticket.sort()\n    print(f'{user[i]}: INFO={info} ERROR={error} TICKET={idticket}')\n\n                # print(idticket)\n\n            \n            \n\n\n\n"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:49:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: XspGM6nZ\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input()\nnum_log = int(input())\n\nfor i in range(num_log):\n    ticket = input()\n    "
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:58:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD: fpZNnkgQ\nEXERCISEID: itds120-final-q3\n */\n'''\nname = input().split(',')\nnum_log = int(input())\ninfo = []\nfor i in range(num_log) :\n    sub = {}\n    input_info = input().split(',')\n    sub['ticket_code'] = input_info[0].replace('TCK','')\n    sub['username'] = input_info[1]\n    sub['log_message'] = input_info[2]\n    info.append(sub)\nfiltered = []\nfor i in info :\n    if i['ticket_code'].isdecimal() and i['ticket_code'][0] != '0' :\n        filtered.append(i)\nout_put = {}\nfor i in name :\n    sub = {'INFO':0 ,'ERROR':0 ,'TICKET':[]}\n    for j in filtered :\n        if j['username'] == i :\n            sub['TICKET'].append(int(j['ticket_code']))\n            if 'INFO' in j['log_message'] :\n                sub['INFO'] += 1\n            if 'ERROR' in j['log_message'] :\n                sub['ERROR'] += 1\n    sub['TICKET'] = sorted(sub['TICKET'])\n    out_put[i] = sub\nfor i in out_put :\n    txt = f'{i}:'\n    for j in out_put[i] :\n        txt += f' {j}={out_put[i][j]}'\n    print(txt)\n"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T02:59:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: nnvQrcMv\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split(',')\nnum = int(input())\n\nfor i in range(num) :\n    line = input()\n    ticket , username , log_message = line.strip().split(',')\nprint(line)\n\ntck , num_id = ticket[:3] , ticket[3:]\n'''\nresult = {}\n#current = None\nif username not in result :\n    result[username] = {}\nif '[INFO]' in \n'''"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: TIMEOUT",
+    "Submission Time": "2025-12-03T04:01:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: W89PMQFF\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nimport pandas as pd\n\n"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: 3CGNU6pd\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:01:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: 7z4wj3jj\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser = input(). split(\",\")\nnum = int(input())\n\ntck = []\nfor i in num:\n    code = input(), split(\",\")\n    tck.append(code)\n\nuser_dict = dict.fromkeys(user, None)\nlog = []\nfor i in num:\n    for j in i:\n        if tck[3:].isdigit() and (tck[3] != \"0\"):\n            for k in tck[2]:\n                sub1 = k.replace('[', '').split(']')\n                if sub1[0] in tck[2]:\n                    tck[sub1[0]].append(sub1[1].strip())\nfor i in tck\n    print(f'')"
+  },
+  {
+    "User ID": "6887034",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:46:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887034\nPASSWORD: FEPMT5ZF\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nn1 = input()\nn2 = input()\narray1 = [].append(n1)\narray2 = [].append(n2)"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:58:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: JCN7YuyU\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\n\nname = input().split(',')\nn  = int(input())\n\nall_data = []\nfor i in range(n) :\n    data = input().strip().replace(' ',',').split(',')\n    #print(data)\n    all_data.append(data)\n\n#print(all_data)\n\nx_data = []\nfor i in range(len(all_data)) :\n    for j in range(len(all_data)) :\n        data ={\n            'ticket_code' : all_data[i][0] ,\n            'id_str' : all_data[i][1] ,\n            'vailid?' : all_data[i][2] , \n            'reason' : all_data[i][3] , \n        }         \n   \n#print(x_data)\n\nout_data = {}\n\n\nprint(out_data)"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: acFPH8NN\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nimport numpy as np\nu = input().split()\nn = int(input())\nfor i in (n):\n    d = input().split()\n\n# for i in d:\n#     a = d.isdecimal()\n#     if i == a and i != 'o':\n\n\na = d.isdecimal()\naa =d.[3:6]\n    \n\nprint(f\"ac: {}\")\nprint(f\"mdouglas: {}\")\nprint(f\"alice: {}\")"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:01:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: ZV8J5bqp\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser = input().split(',')\nnumber_of_logs = int(input())\ndict1 = {}\nltic = []\nname = []\nmessage = []\nfor i in range(number_of_logs):\n    ticket_code,username,log_message = input().split(',')\n    ltic.append(ticket_code[3:])\n    name.append(username)\n    message.append(log_message)\n\nticket = []\nfor i,j,k in zip(ltic,name,message):\n    print(i)\n    if i.isdigit()and ('0' not in i):\n        i = int(i)\n        ticket.append(i)\n\nfor i,j,k in zip(name,ticket,ltic):\n    if j in k:\n        dict1[i] = ZV8J5bqp\nprint(dict1)\nprint(ticket)"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:57:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887038\nPASSWORD: yYuVB7G1\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input()\nnumber_of_logs = int(input())\nticket_code = "
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: VBDyzCwt\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser_names = input().split(',')\nn = int(input())\ninfo_list = []\nuser_dict = {}\ninfo_dict = {'INFO': 0, 'ERROR': 0, 'TICKET': []}\nfor i in range(n):\n    info = input().split(',')\n    info_list.append(info)\n\nfor v in user_names:\n    user_dict[v] = info_dict\n\nfor i in range(len(info_list)):\n    if info_list[i][0][3] == '0':\n        pass\n    elif info_list[i][0][3:].isdecimal() == False:\n        pass\n    else:\n        for j in user_names:\n            if info_list[i][1] == j:\n                if '[INFO]' in info_list[i][2]:\n                    user_dict[j]['INFO'] += 1\n                    user_dict[j]['TICKET'].append(int(info_list[i][0][3:]))\n                elif '[ERROR]' in info_list[i][2]:\n                    user_dict[j]['ERROR'] += 1\n                    user_dict[j]['TICKET'].append(int(info_list[i][0][3:]))\n    #else:\n    #     for j in range(len(user_names)):\n    #         for k in user_dict[j]:\n    #             if info_list[i][1] == k:\n    #                 if '[INFO]' in info_list[i][2]:\n    #                     user_dict[j]['INFO'] += 1\n    #                     user_dict[j]['TICKET'].append(int(info_list[i][0][3:]))\n    #                 elif '[ERROR]' in info_list[i][2]:\n    #                     user_dict[j]['ERROR'] += 1\n    #                     user_dict[j]['TICKET'].append(int(info_list[i][0][3:]))\n\n\n# print(user_names)\n# print(info_list)\n# print(user_dict)\n# print(info_dict)\n\nfor k, v in user_dict.items():\n    print(f'{k}: INFO={v['INFO']} ERROR={v['ERROR']} TICKET={v['TICKET']}')"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887040\nPASSWORD: RQ9AP14K\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser_in = input().strip().split(',')\nnumber_of_logs = int(input())\nlist_doc_logs = []\nfor _ in range(number_of_logs):\n    logs = input().strip().split(',')\n    list_doc_logs.append(logs)\n\nuser_log = {k:[] for k in user_in}\ninfo_error_amo = {k:{} for k in user_in}\n\nfor i in list_doc_logs :\n#    print(i[0])\n    if i[0][3::].isdigit() and i[0][3] != '0':\n        for j in i :\n            if j[0] == '[':\n                user_log[i[1]].append(j)\n                info_error_amo[i[1]] = {j:0}\n\n\nfor name,infos in user_log.items():\n    print(f'{name} : {infos}')\nprint(info_error_amo)\n\n\n#user_log.setdefault()\n\n#for i in list_doc_logs:\n#    print(i)\n#    for j in i :\n#        if j[0][0] == '[':\n#            user_log[i[1][:]] = (j)\n#print(user_log)\n\n#for i in user_in:\n#    print(f'{i}: INFO={} ERROR={} TICKET={}')"
+  },
+  {
+    "User ID": "6887041",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:01:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887041\nPASSWORD: rwsv2VNJ\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser = input().split(',')\nnumber_of_logs = int(input())\nlist_tul = []\nlist_ticket = []\nfor i in number_of_logs :\n    tul = input().split(',')\n    list_tul.append(tul)\n\nfor j in list_tul :\n\nlist_ticket.sort()\n\nprint(f'ac: INFO={} ERROR={} TICKET={}')\nprint(f'mdouglas: INFO={} ERROR={} TICKET={}')"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:59:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: a4kBdSNz\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nusers = input().split(',')\ntickets = dict.fromkeys(users, dict.fromkeys(['INFO', 'ERROR'], 0))\nfor i in range(int(input())):\n    x = input().split(',')\n    if x[0][3] != '0' and x[0][3::].isdecimal():\n        tickets[x[1]]['ticket'] = []\n        if x[2].split(' ')[0] == '[INFO]':\n            y = [x[1], 'INFO', x[0][3::]]\n        else:\n            y = [x[1], 'ERROR', x[0][3::]]\n        print(y)\n        tickets[y[0]][y[1]] +=1\n        tickets[y[0]]['ticket'].append(y[2])\n\n\n        \n\nfor i in tickets.keys():\n    print(f'{i}: INFO={tickets[i]['INFO']} ERROR={tickets[i]['ERROR']} TICKET={tickets[i]['ticket']}')      \n"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD: K5MS826v\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nkeyword = input().split(',')\n\nticket = []\n\n\nnum = int(input())\n\nfor i in range (num):\n\n    Tck = input().strip().split(',')\n\n    check1 = Tck[2].split()\n\n    ticket.append((Tck[0],Tck[1],check1[0]))\n\nresult = {}\n\n\n#print(ticket)\n\n#print(check)\n\nticket_final = []\n\ndata_final = []\n\n\nticket_check = []\n\nfor i in keyword :\n\n    if i not in result :\n\n        result[i] = []\n\nfor t , data , q in ticket :\n\n\n    #print(t)\n\n    if not t[3:6].isdecimal() :\n\n        continue\n    \n    if t[3] == '0' :\n\n        continue\n    \n    if len(t[3:6]) == 4 :\n\n        continue\n    \n    else:\n\n        ticket_check.append((t[3:7],data,q))\n\n\n#if q in all_final.keys():\n\n            #all_final[q] += 1\n\n            #all_final['TICKET'].append(t[3:7])\n\n            #if data in result :\n\n                #result[data] = all_final\n\nfor i , data , q in ticket_check :\n\n    all_final = {'[INFO]':0,'[ERROR]':0,'TICKET':[]}\n\n    if q not in all_final.keys():\n\n        all_final[q] = 1\n\n    \n    else :\n\n        all_final[q] += 1\n    \n    all_final['TICKET'].append(i)\n\n    for e in result :\n\n        if data in result.keys():\n\n            result[data] = all_final\n\n\nprint(result)\n#print(all_final)\n\n#print(ticket_check)\n\n\n\n\n        \n    \n\n\n\n\n"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:38:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: aCKctZyv\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser=input()\nnumber_of_logs=int(input)\nticket_code,usename,log_message=input().split()\nticketid=ticket_code[2:6]\nif len(ticketid)==4 and ticketid.isdecimal()and ticketid[2]!=0:\n    if \nelse:\n    continue"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: 3D6Xunda\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\ntk = input()\n\ntklist = []\nvalid = False\nfor i in tk:\n    if i[:3] == 'TCK':\n        valid = True\n\nnums_tk = tk[3:]\nvalid0 = False\nif valid:\n    for i in nums_tk:\n        if i[0] != 0:\n            if i.isdigit():\n                valid0 = True\nif valid0:\n    tklist.append(nums_tk)\n    \nprint(tklist)\n    "
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/3 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: TIMEOUT",
+    "Submission Time": "2025-12-03T03:51:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: jE31M4vr\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nimport pandas as pd\nuser = input().split(',')\nlog = int(input())\nlines = []\nans = {}\nfor _ in range (log) :\n    lines.append(input().split(','))\n\ndef Ticket_ID(id) :\n    valid = 1\n    for i in range (len(id)) :\n        if i >= 3 and i not in [0,1,2,3,4,5,6,7,8,9]:\n            valid = 0\n        elif i == 3 and id[i] == '0' :\n            valid = 0\n    if valid == 1 :\n        return id\n\n# ans = {'name' : , 'INFO' : , 'ERROR' : ,'TICKET' : [] }\nans = {}\nfor i in user :\n    for k in range (len(lines)) :\n        if i == lines[k][1]:\n            print(Ticket_ID(lines[k][0]))\n            print(i,lines[k])\n\n"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:25:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD:  Gfm5gZ3W\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser1 = input()\nuser2 = input()\n\nwhile True :\n\nprint(x.count())\nprint(x.sort())\n"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: kGK2k2wS\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser=input().split(',')\nn=int(input())\nlst=[]\nfor i in range(n):\n    txt=input().split(',')\n    lst.append(txt)\n\nfor i in user:\n    ticket=[]\n    inf=0\n    err=0\n    for j in lst:\n        if j[1]== i:\n            if j[0][3:7].isdecimal() and j[0][3]!='0': #check ticket\n                ticket.append(j[0][-4:])\n                if '[INFO]' in j[-1]:\n                    inf+=1\n                elif '[ERROR]' in j[-1]:\n                    err+=1\n    ticket=sorted(list(map(int,ticket)))\n    print(f'{i}: INFO={inf} ERROR={err} TICKET={ticket}')"
+  },
+  {
+    "User ID": "6887050",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887050\nPASSWORD: uQFUVQ43\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nimport numpy as np\nlist1 = []\nx = input()\ny = int(input())\nz = input()\nfor i in z:\n    a = i.split(\",\")\n    list1.append(z)\narr = np.array(list1)\nprint(list1)\n\n# dict1 = {}\n# for i ,j in list1:\n#     if j not in dict1:\n#         dict1[j] = [i],[k]\n#     else:\n#         dict1[j].append(i)\n#         dict1[j].append(k)\n# print(dict1)\n\n\n\n# dict2 = {'ac':[],'mdouglas':[],'alice':[]}\n# for i in dict1.items():\n#     if i  == 'INFO':\n#         dict2['ac'].append(i)\n#     elif i == 'ERROR':\n#         dict2['ac'].append(i)\n\n\n"
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:25:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: eYz5JdDW\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser = input().split(',')\nnumevent = int(input())\nlistn = []\nlistk =[]\nfor i in range(numevent):\n    k = input()\n    listk.append(k.split(','))\n    listn.append(k)\n\nlistpass = []\n\nfor k in listk:\n    if k[0][3] != '0' and k[0][3:].isdecimal():\n        listpass.append(k)\n\n\n\n\n\nfor i in user :\n    info = 0\n    eror = 0\n    listn = []\n    for j in listpass :\n        if i == j[1]:\n            listn.append(int(j[0].replace('TCK','')))\n            if '[INFO]' in j[2]:\n                info += 1\n            elif '[ERROR]' in j[2]:\n                eror += 1\n\n    print(f'{i}: INFO={info} ERROR={eror} TICKET={sorted(listn)}')\n\n\n"
+  },
+  {
+    "User ID": "6887052",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: ERROR, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887052\nPASSWORD: BF36HC36\nEXERCISEID: itds120-final-q3\n */\n'''\nuser = input()\nuser_l = user.split(\",\")\nX = int(input())\nY = []\ntic1 = []\ntic2 = []\ntic3 = [] \ntic4 = [] \n\nfor i in range (X):\n    Z = input().split(\",\")\n    Y.append(Z)\ninfo = []\nerror = []\n#loop check ticket pass\nfor i in range (X):\n    A = 0\n    ticket_code = Y[i][0]\n    if ticket_code[3] != '0':\n        A += 1\n    if ticket_code[3:].isdecimal() == True:\n        A += 1\n    if len(ticket_code) == 7:\n        A += 1\n    \n    G = Y[i][2]\n    G2 = G.split(']')\n    G3 = G2[0]\n\n    if A == 3 and G3[1:] == 'INFO':\n        info.append(Y[i][1])\n    if A == 3 and G3[1:] == 'ERROR':\n        error.append(Y[i][1])\n    if A == 3 and Y[i][1] == user_l[0]:\n        tic1.append(int(ticket_code[3:]))\n    if A == 3 and Y[i][1] == user_l[1]:\n        tic2.append(int(ticket_code[3:]))\n\n        if A == 3 and Y[i][1] == user_l[2]:\n            tic3.append(int(ticket_code[3:]))\n\n#info error user_l tic1,2,3\ntic1.sort()\ntic2.sort()\ntic3.sort()\nans1 = f'{user_l[0]}: INFO={info.count(user_l[0])} ERROR={error.count(user_l[0])} TICKET={tic1}'\nans2 = f'{user_l[1]}: INFO={info.count(user_l[1])} ERROR={error.count(user_l[1])} TICKET={tic2}'\nans3 = f'{user_l[2]}: INFO={info.count(user_l[2])} ERROR={error.count(user_l[2])} TICKET={tic3}'\n\nprint (ans1)\nprint (ans2)\nprint (ans3)\n"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:35:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: XsVzPMb5\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\ncus  = input().split(',')\nlogs_num = int(input())\nticket_list = []\nfor i in range(logs_num) :\n    n = input().split(',')\n    ticket_list.append(n)\ncus_dict = {}\nfor i in cus :\n    cus_dict[i] = {'INFO': 0,'ERROR':0}\ntick = []\nfor j in ticket_list :\n    if j[1] in cus_dict :\n        sub = j[2].replace('[','').split(']')\n        if j[0][3].isdecimal() and j[0][4].isdecimal() and j[0][5].isdecimal() and j[0][6].isdecimal() :\n            if int(j[0][3]) != 0 :\n                cus_dict[j[1]][sub[0]] += 1\n        else :\n            tick.append(j[0])\nfor k,v in cus_dict.items() :\n    tic_list = []\n    for i in ticket_list :\n        if i[0][3].isdecimal() and i[0][4].isdecimal() and i[0][5].isdecimal() and i[0][6].isdecimal() :\n            if int(i[0][3]) != 0 and i[1] == k :\n                tic_list.append(int(i[0][3:]))\n    v['TICKET'] = sorted(tic_list)\nfor k,v in cus_dict.items() :\n    print(f'{k}: INFO={v['INFO']} ERROR={v['ERROR']} TICKET={v['TICKET']}')"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:02:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: STDvWwQZ\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\n\nname = input().split(',')\namount = int(input())\n\nuser_data = []\nuser_byname = []\nfor i in range(amount) :\n    user_data.append(input())\n\nfor i in user_data :\n    ex = i.split(',')\n    if ex[1]\n\n\n\n\n\n\n\n# print(name)\n# print(amount)\n# print(user_data)\n\n"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887056\nPASSWORD: 82z8Akum\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nwith open(\"data1.csv\",\"r\",encoding=\"utf-8\") as f:\n    lines = f.readlines()\n    f.close()\n    for line in lines:\n        info_count = 0\n        error_count = 0\n        if \"[INFO]\" in lines:\n            info_count += 1\n        elif \"[ERROR]\" in lines:\n            error_count += 1\n        "
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: WyZ7FTJ6\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nusers = input().strip().split(',')\nlogs = int(input())\ntickets_dic = {}\nfor i in range(logs):\n    ticket_code, username, log_message = map(str, input().strip().split(','))\n    if ticket_code[3] != '0' and ticket_code[3::].isalpha() == False:\n        tickets_dic[ticket_code] = {'name': username, 'message':log_message}\n\ntickets_dic = dict(sorted(tickets_dic.items(), key=lambda x: x[0]))\n\nfor name, message in tickets_dic.items():\n    print(f'{message} {name}')\n"
+  },
+  {
+    "User ID": "6887059",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887059\nPASSWORD: rUQ3VsC1\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nimport string \n\nsentence = input()\nusercount = sentence \nusercount = f.readlines() \ntext = [x.strip() for x in sentence]\nc = dict()\nsentence = []\ndimiters = ['.' , ',' , '!' , '?']\n\nif i in text :\n    for d in dimiters :\n        i = i.replace(d , \"/\")\n    word = i.split(\"/\")\n    for j in word\n    presult = dict()\n    presult[word_list] = len(word)\n    uppercase = [x for x in word if x and x(0),isupper()]\n    presult[uppercase] = len(uppercase)\n    senence_ker = f'sentence{index}'\n\n    result(sentence_key) = presult\n    index += 1\n\nprint(result)\n\nsentence = input()\nbase = []\nread_lines = []\nnoise_chars = '!@#$%&'\n\nfor line in sentence :\n    temp_line = line.strip()\n    not temp_line continue \n\nfor char in noise_chars :\n    temp_line = temp_line.replace(char ,\"\")\n    base = temp_line.split()\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD:  N2mbPFp2\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser_name = input()\nn = int(input())\nuser_list = user_name.split(',')\ndata_list = []\nfor i in range(n) :\n    status = input()\n    data_list.append(status)\n\n# print(f'{user}')\n# print(n)\n# print(data_list)\n\nvalid = []\nfor line in data_list :\n    new_line = line.split(',')\n    # print(new_line)\n    ticket = new_line[0]\n    id = ticket[3:7]\n    # print(id)\n    if len(id) == 4 and id[0] != '0' and id.isdecimal() :\n        valid.append(line)\n\n# for item in valid :\n#     print(item)\n\nuser_data = {}\nfor user in user_list :\n    user_data[user] = []\n\nfor item in valid :\n        for user in user_list :\n            if user in item :\n                user_data[user].append(item)\n\nresult = {}\nfor k , v in user_data.items() :\n    info_count = 0\n    error_count = 0\n    ticket_list = []\n    for item in v :\n        # print(item)\n        ticket_list.append(int(item[3:7]))\n        info_count += item.count('INFO')\n        error_count += item .count('ERROR')\n    # print(info_count)\n    # print(error_count)\n    ticket_list.sort()\n    result[k] = f'INFO={info_count} ERROR={error_count} TICKET={ticket_list}'\n\nfor k , v in result.items() :\n    print(f'{k}: {v}')"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: 7YcVQSev\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser=input().split(',')\nnumberlogs=int(input())\nticket=[]\nfor i in range(numberlogs):\n    temp=input().split(',')\n    ticket.append(temp)\n\nnewticket=[]\nfor i,v in enumerate(ticket):\n    check=True\n    for j in range(len(v[0])):\n        if j<3:\n            continue\n        else:\n            if v[0][j].isalpha() or v[0][3]=='0':\n                check=False\n                break\n    if check:\n        newticket.append(v)\n\ndct={}\nfor i in user:\n    dct[i]=dict()\n    dct[i][\"INFO\"]=0\n    dct[i][\"ERROR\"]=0\n    dct[i][\"TICKET\"]=[]\nfor i,n in enumerate(newticket):\n    if \"INFO\" in n[2]:\n        dct[n[1]][\"INFO\"]+=1\n    if \"ERROR\" in n[2]:\n        dct[n[1]][\"ERROR\"]+=1\n    dct[n[1]][\"TICKET\"].append(int(n[0][3:]))\n\n\nfor k,v in dct.items():\n    print(f\"{k}:\",end='')\n    for a,b in v.items():\n        if a=='TICKET':\n            print(f\" {a}={sorted(b)}\",end='')\n        else:\n            print(f\" {a}={b}\",end='')\n    print()\n\n"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD: dEzUnuDJ\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nn = input().split(',')\nb = int(input())\n\n\n#การตรวจสอบ Ticket ID\n# มีความยาว 4 ตัวอักษร\n# ทุกตัวเป็นตัวเลข '0'–'9'\n# ตัวแรก ห้ามเป็น '0'\n\n#  Ticket ID ไม่ถูกต้อง ให้ ข้ามบรรทัดนั้นทันที "
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:55:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: 1QEhQgJM\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split(',')\nnlog = int(input())\ntxt = ''\nlogcount = {}\nfor i in user:\n    logcount[i] = [0,0]#info,error\nfor i in range(nlog):\n    log_mess = input().split(',')\n    #print(log_mess[0][3])\n    if log_mess[0][3:7].isdecimal() and log_mess[0][3] != '0':\n        if 'INFO' in log_mess[2]:\n            logcount[log_mess[1]][0] += 1\n            logcount[log_mess[1]].append(int(log_mess[0][3:7]))\n\n        elif 'ERROR' in log_mess[2]:\n            logcount[log_mess[1]][1] += 1\n            logcount[log_mess[1]].append(int(log_mess[0][3:7]))\n#print(logcount)\nfor i,j in logcount.items():\n    print(f'{i}: INFO={j[0]} ERROR={j[1]} TICKET={sorted(j[2:])}')\n    #print(j)"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:58:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887065\nPASSWORD: mGNWdmYE\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split(',')\nnum_log = int(input())\n\ninput_dict = {}.fromkeys(user)\noutput_dict = {}.fromkeys(user)\n\nfor _ in range(num_log) :\n    ticket_code , username , log_message = input().split(',')\n    if username in input_dict.keys() :\n        input_dict[username] = ticket_code , log_message.split(' ')[0]\n\nprint(input_dict)\n\n\n\nfor k , v in input_dict.items() :\n    #print(v[1])\n    error = 0\n    info = 1\n    if v[1] == '[ERROR]' :\n        error += 1\n    elif v[1] == '[INFO]' :\n        info += 1\n"
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:59:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD:9h2Rjj1n\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser = input().split(',')\nnumber = int(input())\nfor i in range(number):\n    ticket = input().split(',')\n    "
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:41:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887067\nPASSWORD: MsvPnMwc\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser = input()\nlo = int(input())\ndata = []\nnew_data = data\nnew_data = dict()\nfor j in range(lo):\n    s = input().strip()\n    data.append(s)\nfor h in data:\n    if is not data.alnum():\n        return invalid\n    if data[0:3] == 0:\n        return invalid\n\nFinal_dict = {'TICKET=': []}\nfor i in new_data:\n    sub1 = i.replace('[','').split(']')\n    if sub1[0] in Final_dict:\n        Final_dict[sub1[0]].append(sub1[1].strip())\nprint(f'INFO={new_data} ERROR={new_data} {Final_dict}')"
+  },
+  {
+    "User ID": "6887069",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:43:44+00:00",
+    "Code": "'''\n/**\nUSERID:6887069\nPASSWORD: FguZGAK1\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\n"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:53:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: fEK1sPBE\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser=str(input()).split(',')\nnumber_of_logs=int(input())\nfor i in range(number_of_logs):\n    ticket_code,username,log_message=str(input()).split(',')\n\ndef Ticket_ID (ticket_code,username,log_message):\n    "
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: nrQ2XWJ3\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: EDvDwt9n\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nlistname = []\ndictname = dict()\nname = input().strip().split(',')\n\nfor i in name:\n    listname.append(i)\n\nfor i in listname:\n    if i not in dictname:\n        dictname[i] = {}\n    if 'INFO' not in dictname[i]:\n        dictname[i]['INFO'] = 0\n    if 'ERROR' not in dictname[i]:\n        dictname[i]['ERROR'] = 0\n    if 'TICKET'not in dictname[i]:\n        dictname[i]['TICKET'] = []\nn = int(input())\nlistans = []\nfor i in range(n):\n    information = input()\n    TCK,name,kind = information.split(',')\n    cotinune = (TCK,name,kind)\n    listans.append(cotinune)\ncounterror = 1\nlistnums = []\nfor i in listans:\n    First =  i[0].replace('TCK','')\n    if First[0] == 0:\n        break\n    else:\n        if First.isdecimal():\n            dictname[i[1]]['TICKET'].append(int(First))\nfor i in listans:\n    j = i[2].split()\n    if j[0] == '[INFO]':\n        dictname[i[1]]['INFO'] += 1\n    else:\n        dictname[i[1]]['ERROR'] += 1\nfor k,v in dictname.items():\n    print(f'{k}: INFO={dictname[k]['INFO']} ERROR={dictname[k]['ERROR']} TICKET={dictname[k]['TICKET']}')\n#  \n\n\n    \n\n\n\n        \n\n\n\n    \n    \n"
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:58:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887074\nPASSWORD: FBT5p8y1\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser = input()\nlog = int(input())\nticket_code = input()\nusername = input()\nlog_massage = input()\nif ticket_code.index == 0 :\n    False\nelif ticket_code.startswith(TCK):\n    True\nprint({ticket_code})"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: BfAGUuzy\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().strip().split(',')\nn_log = int(input())\n\nrec = []\nunwanted = []\nfor _ in range(n_log):\n    log = input().strip().split(',')\n    for i in log[0]:\n        if i[3:4] == 0:\n            unwanted.append(log[0])\n        else:\n            ticket_code = log[0]\n    username, log_mes = log[1], log[2]\n    rec.append((ticket_code, username, log_mes))\n\n'''unwanted = []\nfinal_rec = {}\nfor ticket_code, username, log_mes in rec:\n    if ticket_code[3:4] == 0:\n        unwanted.append((ticket_code, username, log_mes))\n    else:\n        final_rec[ticket_code] = {'username': username, 'log mes': log_mes}\n'''\nprint(unwanted)"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: GkWzrQyY\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\ni=input().strip().split(',')\nlog=int(input())\nlis=[]\n\nfor i in range(log):\n    l=input().strip().split(',')\n    lis.append(l)\n\ndic={'<ticket_code>':lis[0][0],\n'<username>':lis[0][1],\n'<log_message>':lis[0][2] }\n\nprint(dic)\nprint(lis)"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: DTVyjpFc\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser_list = input().split()\nnum_log = int(input())\n\nlist=[]\nfor i in range(num_log):\n    data = input().split(',')\n    list.append(data)\npass_id=[]\nfor i in list:  \n    if i[0][3]!='0':\n        pass_id.append(i)\n\nperson={}\nfor i in pass_id:\n    \n    if i[1] not in person:\n        person[i[1]]=[i[0], i[2]]\n    elif i[1] in person:\n        for v in person.values():\n            v.append(i[0])\n            v.append(i[2])\nprint(person)\n"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: 9VkbwJXN\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser_name = input().split(',')\nlog_number = input()\nfor i in range(log_number):\n    \n"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: wNz8vvUY\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\n\nn=input().split(',')\nnum=int(input())\n\n\nTCK_pass={}\nfor i in n:\n    TCK_pass[i]=0\n\n\n\nfor i in range(num):\n    data=input().split(',')\n\n\n    tck=data[0]\n    name=data[1]\n    log_mess=data[2]\n\n\n    if tck[3]!=0:\n        if log_mess[1:5]=='INFO':\n            TCK_pass[name]=tck\n            \n        else:\n            TCK_pass[name]=tck\n    \n\nyes=0\nno=0\n\n\n\n\nfor i in n:\n    print(f'{i}: INFO={yes} ERROR={no} TICKET={0}')\n"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: nF56XhhQ\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n#x=input().slpit()\nusers=input().split(\",\")\nlogs=int(input())\ntickets=input().split()\n\nif id in tickets == int:\n    print()\nelif id in tickets ==int(0, 9):\n    print()\nelse:\n    id == 0\n    print(\"\")"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:01:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: d4mdXXD1\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nimport numpy as np \n\ntxt = input()\nuser = input()\ns = input()\ntickets = txt.split()\nnum = s.isdecimal()\n\nfiltered_user = list(filter(lambda x: x[:2] in s.isdecimal,user))\nticket_count = {}\n\nfor line in f:\n    print(line.strip())\n    if word[2] == s.isdecimal():\n        print(f\"{user}:\",tickets)\n    elif word[3] == o:\n        continue\n    else:\n        print()\n\nwith open(\"user\",\"r\") as f:\n    pass\n\n\n\n"
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:51:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: pkHvNQnJ\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split(',')\nnum_log = int(input())\nuser_dict = {}.fromkeys(user,'idk')\n\nfor _ in range(num_log):\n    ticket_code = input()\n    if ticket_code[3:6].isdecimal and ticket_code[3] != '0':\n"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:01:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: w8a2eyEN\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser=input().split(',')\nlogn=int(input())\nlie=['INFO','ERROR','TICKET']\ndic={}\nfor i in user:\n    dic[i]={}\n    dic[i]['TICKET']=[]\nfor i in range(logn):\n    log=input().split(',')\n    if not log[0][3:].isdigit():\n        continue\n    if log[0][3]=='0':\n        continue\n    isu=log[2].split(' ')\n    \n    if isu[0][1:-1] not in dic[log[1]]:\n        dic[log[1]][isu[0][1:-1]]=1\n        dic[log[1]]['TICKET'].append(int(log[0][3:]))\n    else:\n        dic[log[1]][isu[0][1:-1]]+=1\n        dic[log[1]]['TICKET'].append(int(log[0][3:]))\nfor i in user:\n    dic[i]['TICKET']=sorted(dic[i]['TICKET'])\nfor i in user:\n    print(i,end=': ')\n    for j in lie :\n        if j in dic[i]:\n            if j=='TICKET':\n                print(f'{j}={dic[i][j]}',end='') \n                continue\n            print(f'{j}={dic[i][j]}',end=' ')\n        else:\n            if j=='TICKET':\n                print(f'{j}=0',end='')\n                continue\n            print(f'{j}=0',end=' ')\n    print()\n"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: FAIL, CASE 6: FAIL, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:57:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: HBj6Vmew\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split(\",\")\nn = int(input())\n\ndata_lst = []\nfor datas in range (n):\n    data = input().split(\",\")\n    for i in range (len(data)):\n        if data[i][3] != \"0\":\n            if data[i][3:7].isalnum():\n                data_lst.append(data[i])\n\nprint(data_lst)"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:13:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: VNZuqQpW\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nname = input().split(\",\")\nlog_num = int(input())\n\nlog = []\nfor i in range(log_num):\n    ticket = input().split(\",\")\n    log.append(ticket)\n\ndict = {}\ndict_ticket = {}\nfor i in name:\n    error = 0\n    info = 0\n    ticket_list = []\n    for j in log:\n        #print(i)\n        if i == j[1]:\n            #print(\"it workkkkkkk\") [X]\n            #print(j[0][3]!=\"0\") [X]\n            #print(j[0][3::].isalpha())\n            if (j[0][3] != \"0\") and (j[0][3::].isdecimal()):\n                #print(\"this condition work too!\")\n                type_report = j[2].split(\" \")\n                #print(type_report)\n                if type_report[0] == \"[ERROR]\":\n                    error += 1\n                    num = int(j[0].replace(\"TCK\",\"\"))\n                    ticket_list.append(num)\n                elif type_report[0] == \"[INFO]\":\n                    info += 1\n                    num = int(j[0].replace(\"TCK\",\"\"))\n                    ticket_list.append(num)\n\n            else:\n                continue\n    #print(f\"This is error {error}\")\n    #print(f\"This is info {info}\")\n    ticket_list.sort()\n    dict[i] = (info,error)\n    dict_ticket[i] = ticket_list\n\nfor key,value in dict.items():\n    for key2,value2 in dict_ticket.items():\n        if key == key2:\n            print(f\"{key}: INFO={value[0]} ERROR={value[1]} TICKET={value2}\")\n"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887093\nPASSWORD: WdSHdVYY\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nname = input().strip().split(',')\n# print(name)\n\nlogs = int(input())\n\nlist1=[]\nfor i in range(logs):\n    list1.append(input().strip().split(','))\n# print(list1)\n\nsetname =set({})\n\nnoalpha_zero =[]\nfor k in list1:\n    # print(k)\n    if k[0][3:7].isdecimal() and k[0][3] != '0':\n        # print(k)\n        noalpha_zero.append(k)\n        setname.add(k[1])\n# print(noalpha_zero)\n# print(setname)\n\n# listname = list(setname)\n\nfromname = {}.fromkeys(name,'')\n# print(fromname)\n\nfor key,value in fromname.items():\n    total = []\n    info =0\n    erro =0\n    ticket =[]\n    for i in noalpha_zero:\n    \n        if i[1] == key:\n            if '[INFO]' in i[2]:\n                info+=1\n            elif '[ERROR]' in i[2]:\n                erro+=1\n            ticket.append(int(i[0][3:7]))\n    total.append(info)\n    total.append(erro)\n    total.append(sorted(ticket))\n    fromname[key] = total\n# print(fromname)\n\nfor k,v in fromname.items():\n    print(f'{k}: INFO={v[0]} ERROR={v[1]} TICKET={v[2]}')\n"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: ntsV63gJ\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\np = input()\np = p.split(',')\n\nlog = int(input())\n\ndata = []\n\n\nfor i in range(log):\n    a = input()\n    a = a.split(',')\n    data.append(a)\n\n# print(data)\n\nchecked = {}\n\nfor v in p :\n    checked[v] = {'INFO':0,'ERROR':0,'TICKET':[]}\n\n# print(check)\nfor v in data:\n    if v[1] in p :\n        # print(v[1])\n        if v[0][:3] == 'TCK'and v[0][3:].isdecimal() and v[0][3] != '0' :\n            checked[v[1]]['TICKET'].append(v[0][3:]) \n            # print(v[0][3:])\n            if v[2][:6] == '[INFO]':\n                checked[v[1]]['INFO'] += 1\n            elif v[2][:7] == '[ERROR]':\n                checked[v[1]]['ERROR'] += 1\n\n\n\n\nfor k,v in checked.items():\n    print(f'{k}: ',end='')\n    for key,val in v.items():\n        print(f'{key}={val}',end=' ')\n    print()\n        \n    \n\n\n\n\n\n\n\n\n    \n"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:56:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: e4HK5NrR\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\ntext=input().strip().split(',')\nnum=int(input())\nname=[]\nfor i in range(num):\n    mo=input().strip().split(',')\n    name.append(mo)\n\n"
+  },
+  {
+    "User ID": "6887098",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:46:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887098\nPASSWORD: ykKnwJSg\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split(',')\nnumber_of_log = int(input())\nTICKET = []\nfor i in range(number_of_log):\n    ticket_code,username,log_message = input().split(',')\n    ticket_ID = ticket_code[3:7]\n    if ticket_ID.isdecimal and len(ticket_ID) == 4 and ticket_ID[0] != 0:\n        TICKET.append([ticket_code,username,log_message])\n    else:\n        continue\n\n\n"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:01:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: t2R7hW1y\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nlog"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:59:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: 51dWaG62\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser=input().split()\nn=input()\nINFO=0\nERROR=0\nTICKET=[]\nfor _ in range(n)\n    ticket_code=input()\n    username=input()\n    log_message=input()\n\nfor index in ticket_code:\n    if index.isdecimal() and index[0]!=0:\n        INFO+=1\n        TICKET.extend(index)\n    else:\n        ERROR+=1\n"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:57:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: werEw5ju\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split(',')\nnum_of_log = int(input())\n\nfor i in range(num_of_log):\n"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: ycQV22aT\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nlog = dict()\nallUser = input().split(',')\n\nfor u in allUser:\n    log[u] = {'INFO':0,'ERROR':0,'TICKET':[]}\n\nlogNum = int(input())\nline = []\nfor i in range(logNum) :\n    line.append(input().split(','))\n\nfor l in line :\n    if l[0][3] != '0' and l[0][3:].isnumeric() :\n        log[l[1]]['TICKET'].append(int(l[0][3:]))\n        log[l[1]]['TICKET'].sort()\n        if '[INFO]' in l[2] :\n            log[l[1]]['INFO'] += 1\n        else:\n            log[l[1]]['ERROR'] += 1\n\nfor k in log:\n    print(f'{k}: INFO={log[k]['INFO']} ERROR={log[k]['ERROR']} TICKET={log[k]['TICKET']}')\n"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:59:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: YnF9W8nP\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nimport string\nuser = input()\nlis = []\ndef format(user)\n    check = f.readlined()\n    text = [x.strip() for x in check]\n    dic = dict()\n    ticket = []\n    vaild = [start without 0,letter,4 character]\n    for i in check:\n        for d in valid:\n            i = i.replace(d,'')\n        word = i.spilt('')\n        for j in word:\n            if len(j.strip()) > 0:\n                sentence.append(j.strip())\n    resulr = dict()\n    index = 1\n    for j in ticket:\n        word = j.split(' ')\n        enter = dict()\n        enter['word'] = len(word)\n        u = [x fro x in word.isup()]\n        enter['u'] = len(u)\n        key = f'{index}'\n        index +=1\n    print result"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: N94SasTf\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input()\nn = int(input())\nlst = []\n\nfor i in range(n) :\n    x = input()\n    lst.append(x)\n# print(lst)\n\n\nfor i in lst:\n    if i[3] != 0 and i.isdecimal() and len(i[3:8]) == 4  :\n        valid\n    else :\n        continue\n\nprint(i)\n"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:57:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD: nthztNNc\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:08:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: 6NXsZAR2\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\n\ndef cou(text):\n    textlow = text.lower()\n    voel = INFO\n    totalvoe = sum(voel.count(vowel) for vowel in voel)\n    return totalvoe\n\nlog = input()\nwith open(log, 'w') :\n    f.write(f\"INFO=\"{totalvoe}) \n\nans = cou(log)\nprint(ans)\n"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:41:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: mFmh8gHM\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nw=[]\na = input().split(',')\nn =int(input())\nfor j in a:\n    j = {'INFO' : 0 , 'ERROR' : 0 , 'TICKET' : []}\n    w.append(j)\nprint(w)    \n        \n"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:58:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: Kndv5QCt\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuser = input().split(',')\nusers = []\n\nlog_number = int(input())\ninformation = []\n\nfor n in range(log_number) :\n    info = input()\n    information.append(info)\nINFO = 0\nERROR = 0\nTICKET = \"\"\n\n\n\n\n\nprint(f'ac: INFO={} ERROR={} TICKET={}')\nprint(f'mdouglas: INFO={} ERROR={} TICKET={}')\nprint(f'alice: INFO={} ERROR={} TICKET={}')"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:56:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887111\nPASSWORD: G59XZyKJ\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nx = input().strip().split(\",\")\ndict = {'[INFO]' : 0, \"[ERROR]\" : 0}\nlist= []\nfor i in range(int(input())):\n    info = input().strip()\n    list.append(info)\nfor i in list:\n    for j in i :\n        if j in dict.keys():\n            dict[j] += 1\nprint(dict)\n\n\n\n"
+  },
+  {
+    "User ID": "6887112",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:59:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887112\nPASSWORD: 6C8kB9Zy\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\ndiccy = dict()\nusers = input().split(',')\nfor i in range(int(input())):\n    logs = input().split(',')\n# print(logs)\nfor i in users :\n    diccy[i] = []\nprint(diccy)\n\n'''\ncheck a qty of info ,error and check a number for ticket\nappend to diccy.values()\nprint(keys and values) \n\n'''\n"
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:52:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887113\nPASSWORD: rvsTpmyB\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:59:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: HFEM1ACq\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser = input().split(',')\n\n"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:11:45+00:00",
+    "Code": "'''\n/**\nUSERID:6887116\nPASSWORD: suhgZkuC\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: Yyp7vQ1S\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\n\nuser = input().split()\nn = int(input())\n\nyes_data = []\ntk_co = []\nfor __ in range(n):\n    data = input().split('\\n')\n    if data[0][3] != 0 and data[0][3:7].isdecimal():\n        tk_co.append(data)\n    else:\n        continue\n\nname = set()\nfor r in tk_co:\n    if r[1] in name:\n        continue\n    else:\n        name.add(r[1])\n\n    if r[3][0] == '[INFO]':\n        inn = len(r[3] - 1)\n    if r[3][0] == '[ERROR]'\n        er = len(r[3] - 1)\n\n    print(f'{name}: INFO={inn} ERROR= {er} TICKET={r[3:]}')\n\n    \n\n\n\n\n\n\n    \n\n\n\n\n\n    \n        \n\n   \n\n\n"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:39:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: GwzJuRre\nEXERCISEID: itds120-final-q3\n */\n'''\n# YOUR CODE GOES HERE\nuserlist=input().split(',')\nlog=int(input())\nlogs=[]\nfor n in range(log):\n    logs.append(input().split(','))\n\nfor u in userlist:\n    tk=[]\n    info=0\n    error=0\n    for i in logs:\n        x=i[0]\n        if i[1]==u:\n            if not x[3:7].isdecimal():\n                continue\n            elif x[3]=='0':\n                continue\n            else:\n                tk.append(int(x[3:7]))\n                if '[INFO]' in i[2]:\n                    info+=1\n                elif '[ERROR]' in i[2]:\n                    error+=1\n    print(f'{u}: INFO={info} ERROR={error} TICKET={sorted(tk)}')"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-final-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-02T13:42:56+00:00",
+    "Code": "'''\n/**\nUSERID: 999\nPASSWORD: 424242\nEXERCISEID: itds120-final-q3\n */\n'''\n\nline = input().strip()\nusers = line.split(\",\")\n\nstats = dict()\nfor u in users:\n    stats[u] =  {\n        \"info\": 0,\n        \"error\": 0,\n        \"tickets\": []\n    }\n\n\nn = int(input().strip())\n\nfor _ in range(n):\n    line = input().strip()\n    if not line:\n        continue\n\n    parts = line.split(\",\")\n    \n    ticket_code, username, log_message = parts\n\n    if username not in stats:\n        continue\n\n    if len(ticket_code) < 7:\n        continue\n\n    id_str = ticket_code[3:7]\n\n    if len(id_str) != 4:\n        continue\n    if not id_str.isdigit():\n        continue\n    if id_str[0] == '0':\n        continue\n\n\n    if log_message.startswith(\"[INFO]\"):\n        stats[username][\"info\"] += 1\n    elif log_message.startswith(\"[ERROR]\"):\n        stats[username][\"error\"] += 1\n    else:\n        continue\n \n    stats[username][\"tickets\"].append(int(id_str))\n\n\nfor u in users:\n    tickets_sorted = sorted(stats[u][\"tickets\"])\n    print(f\"{u}: INFO={stats[u]['info']} ERROR={stats[u]['error']} TICKET={tickets_sorted }\")\n\n"
+  }
+]

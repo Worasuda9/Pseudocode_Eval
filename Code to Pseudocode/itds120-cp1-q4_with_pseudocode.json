@@ -1,0 +1,1152 @@
+[
+  {
+    "User ID": "6887001",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T10:00:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887001\nPASSWORD: 6VWidV\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\nv1 = a or b\nv2 = c or d\n\ns = (a*c) + (b*d)\n\nv11 = (v1**2)/(a**2 + b**2)\nv12 = (v2**2)/(c**2 + d**2)\n\ncos = (v1*v2)/(v11*v12)\n\nif cos > 0:\n    print(s)\n    print('ACUTE')\nelif cos == 0:\n    print(s)\n    print('RIGHT')\nelif cos < 0:\n    print(s)\n    print('OBTUSE')\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv1 = a or b  \nv2 = c or d  \n\ns = (a times c) plus (b times d)  \n\nv11 = (v1 to the power of 2) divided by (a to the power of 2 plus b to the power of 2)  \nv12 = (v2 to the power of 2) divided by (c to the power of 2 plus d to the power of 2)  \n\ncos = (v1 times v2) divided by (v11 times v12)  \n\nif cos > 0  \n    display s  \n    display ACUTE  \notherwise if cos == 0  \n    display s  \n    display RIGHT  \notherwise if cos < 0  \n    display s  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887002",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:39:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887002\nPASSWORD: VQHbyt\nEXERCISEID: itds120-cp1-q4\n */\n'''\n2\n# YOUR CODE GOES HERE\nx1=int(input()) #0\ny1=int(input()) #0\nx2=int(input()) #-1\ny2=int(input()) #0\nx3=int(input()) #1\ny3=int(input()) #1\n\n#vekter\na1=(x2-x1)#-1\nb1=(y2-y1)#0\nv1=a1*b1#-1\na2=(x3-x1)#1\nb2=(y3-y1)#-1\nv2=a2*b2#-1\n\n\n#dot\ndot=(a1*a2)+(b1*b2)\n#long\nlongv1=((a1**2)+(b1**2))**0.5\nlongv2=((a2**2)+(b2**2))**0.5\n\n#print(longv1)\n#print(longv2)\n#print(longv1+longv2)\n\ncos=(dot)/(longv1*longv2)\nprint (round(cos, 2))\nif cos>0:\n    print(\"ACUTE\")\nelif cos==0:\n    print(\"RIGHT\")\nelif cos<0:\n    print(\"OBTUSE\")\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nset a1 to (x2 minus x1)  \nset b1 to (y2 minus y1)  \nset v1 to (a1 times b1)  \nset a2 to (x3 minus x1)  \nset b2 to (y3 minus y1)  \nset v2 to (a2 times b2)  \n\nset dot to (a1 times a2) plus (b1 times b2)  \nset longv1 to ((a1 squared) plus (b1 squared)) to the power of 0.5  \nset longv2 to ((a2 squared) plus (b2 squared)) to the power of 0.5  \n\nset cos to (dot divided by (longv1 times longv2))  \ndisplay cos rounded to 2 decimal places  \nif cos is greater than 0  \n    display ACUTE  \notherwise if cos is equal to 0  \n    display RIGHT  \notherwise if cos is less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:45:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: Z4EsYx\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = x2 - x1\nb = y2 - y1\nv1 = (a,b)\n\nc = x3 - x1\nd = y3 - y1\nv2 = (c,b)\n\n# dot product\nv1v2 = (a*c) + (b*d)\n\n# length of vector\nv11 = ((a**2) + (b**2))**(1/2)\nv22 = ((c**2) + (d**2))**(1/2)\n\n# cosine of angle\ncos = (v1v2)/(v11*v22)\n\nif cos>0:\n    print(round(cos,2))\n    print('ACUTE')\nelif cos == 0:\n    print(round(cos,2))\n    print('RIGHT')\nelse:\n    print(round(cos,2))\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nv1 = (a, b)  \n\nc = x3 minus x1  \nd = y3 minus y1  \nv2 = (c, b)  \n\nv1v2 = (a times c) plus (b times d)  \n\nv11 = ((a to the power of 2) plus (b to the power of 2)) to the power of (1 divided by 2)  \nv22 = ((c to the power of 2) plus (d to the power of 2)) to the power of (1 divided by 2)  \n\ncos = v1v2 divided by (v11 times v22)  \n\nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \notherwise if cos equals 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \notherwise  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:58:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887004\nPASSWORD: zNCL4y\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1=float(input())\nx2=float(input())\nx3=float(input())\ny1=float(input())\ny2=float(input())\ny3=float(input())\n\n\na = x2-x1\nb = y2-y1\nv1=(x2-x1,y2-y1)\nv1 = (a,b)\nc = x3-x1\nd =y3-y1 \nv2=(x3-x1,y3-y1)\nv2= (c,d)\n\n#cos = ((x2-x1,y2-y1 / x3-x1,y3-y1)) / ((-(v1)*-(v2))) \ncos = (a*c)+(b*d)\nv1 = (x2 - x1, y2 - y1)\nv2 = (x3 - x1, y3 - y1)\n#cos = v1*v2 = a * c + b * d\nprint(round(cos),2)\n\ncos=round(c,2)\nif cos < 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos > 0:\n    print('OBTUSE')\n\n\n",
+    "Pseudocode": "get x1  \nget x2  \nget x3  \nget y1  \nget y2  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nv1 = (x2 minus x1, y2 minus y1)  \nv1 = (a, b)  \nc = x3 minus x1  \nd = y3 minus y1  \nv2 = (x3 minus x1, y3 minus y1)  \nv2 = (c, d)  \n\ncos = (a times c) plus (b times d)  \nv1 = (x2 minus x1, y2 minus y1)  \nv2 = (x3 minus x1, y3 minus y1)  \ndisplay (cos rounded to 2 decimal places)  \n\ncos = c rounded to 2 decimal places  \nif cos < 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise if cos > 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887006",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "5/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: PASS, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:58:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887006\nPASSWORD: hyIOq7\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\nv1v2 = (a * c) + (b * d)\n\n\nv1 = (a**2 + b**2)**2\nv2 = (c**2 + d**2)**2\n\ncos = v1v2 //  (v1 * v2)\nprint(round(cos,2))\n\nif cos > 0 :\n    print(\"ACUTE\")\nelif cos == 0 :\n    print(\"RIGHT\")\nelif cos < 0 :\n    print(\"OBTUSE\")\n\n\n\n\n",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\nset a to x2 minus x1\nset b to y2 minus y1\nset c to x3 minus x1\nset d to y3 minus y1\n\nset v1v2 to (a times c) plus (b times d)\n\nset v1 to (a to the power of 2 plus b to the power of 2) to the power of 2\nset v2 to (c to the power of 2 plus d to the power of 2) to the power of 2\n\nset cos to v1v2 divided by (v1 times v2)\ndisplay cos rounded to 2 decimal places\n\nif cos greater than 0\n    display ACUTE\notherwise if cos equals 0\n    display RIGHT\notherwise if cos less than 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:48:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: Rxdw0E\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\nv1x = x2 - x1\nv1y = y2 - y1\n\nv2x = x3 - x1\nv2y = y3 - y1\n\ncos = ((v1x * v2x) + (v1y * v2y)) / ((((v1x ** 2) + (v1y ** 2)) ** (1/2)) * (((v2x ** 2) + (v2y ** 2)) ** (1/2)))\nprint(round(cos,2))\n\nif (cos > 0):\n    print(\"ACUTE\")\nelif (cos == 0):\n    print(\"RIGHT\")\nelif (cos < 0):\n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nv1x = x2 minus x1  \nv1y = y2 minus y1  \n\nv2x = x3 minus x1  \nv2y = y3 minus y1  \n\ncos = (v1x times v2x plus v1y times v2y) divided by ((((v1x to the power of 2) plus (v1y to the power of 2)) to the power of 0.5) times (((v2x to the power of 2) plus (v2y to the power of 2)) to the power of 0.5))  \ndisplay cos rounded to 2 decimal places  \n\nif cos greater than 0  \n    display ACUTE  \nelif cos equals 0  \n    display RIGHT  \nelif cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:54:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: ZDWFEP\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 =int(input())\ny1 =int(input())\nx2 =int(input())\ny2 =int(input())\nx3 =int(input())\ny3 =int(input())\n\na = (x2-x1)\nb = (y2-y1)\nc = (x3-x1)\nd = (y3-y1)\nv1 = (a*c)+(b*d)\nv2 = (((a**2)+(b**2))**0.5)*(((c**2)+(d**2))**0.5)\ncos = round(v1/v2,2)\nif cos > 0:\n    print(cos)\n    print('ACUTE')\nelif cos == 0:\n    print(cos)\n    print('RIGHT')\nelif cos < 0:\n    print(cos)\n    print('OBTUSE')\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nv1 = (a times c) plus (b times d)  \nv2 = ((a squared plus b squared) to the power of 0.5) times ((c squared plus d squared) to the power of 0.5)  \ncos = v1 divided by v2 rounded to 2 decimal places  \n\nif cos greater than 0  \n    display cos  \n    display ACUTE  \notherwise if cos equals 0  \n    display cos  \n    display RIGHT  \notherwise if cos less than 0  \n    display cos  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:59:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: CIKsXs\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 =float(input())\ny1 =float(input())\nx2 =float(input())\ny2 =float(input())\nx3 =float(input())\ny3 =float(input())\n\nv1 = (x2-x1),(y2-y1)=(a,b)\nv2 = (x3-x1),(y3-y1)=(c,d)\n\nvt= v1*v2\nlv = ((v1=a**2 + b**2)/2), ((v2=c**2 + d**2)/2)\ncs = (v1*v2)/(v1*v2)\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nv1 = (x2 minus x1), (y2 minus y1) assigned to (a, b)  \nv2 = (x3 minus x1), (y3 minus y1) assigned to (c, d)  \n\nvt = v1 times v2  \nlv = (a to the power of 2 plus b to the power of 2) divided by 2, (c to the power of 2 plus d to the power of 2) divided by 2  \ncs = (v1 times v2) divided by (v1 times v2)"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "5/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: PASS, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:59:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: YkQItr\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\na = (x2-x1)\nb = (y2-y1)\nc = (x3-x1)\nd = (y3-y1)\nv1 = (a,b)\nv2 = (c,d)\nv3 = (a*c)+(b*d)\nv4 = (a**2) + (b**2)\nv5 = (c**2) + (d**2)\ncos = (v3)//(v4*v5)\nprint(round(cos, 2))\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelse:\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nv1 = (a, b)  \nv2 = (c, d)  \nv3 = (a times c) plus (b times d)  \nv4 = (a to the power of 2) plus (b to the power of 2)  \nv5 = (c to the power of 2) plus (d to the power of 2)  \ncos = v3 divided by (v4 times v5)  \ncos rounded to 2 decimal places  \nif cos > 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:20:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: L4zjrv\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input());\ny1 = int(input());\nx2 = int(input());\ny2 = int(input());\nx3 = int(input());\ny3 = int(input());\n\na = (x2 - x1)\nb = (y2 - y1)\nc = (x3 - x1)\nd = (y3 - y1)\n\ndot = (a*c) + (b*d);\nv1 = ((a**2) + (b**2))**(1/2);\nv2 = ((c**2) + (d**2))**(1/2);\n\ncos = dot / (v1*v2);\n\nif cos > 0 :\n    print(round(cos, 2))\n    print('ACUTE');\nelif cos == 0 :\n    print(round(cos, 2))\n    print('RIGHT');\nelif cos < 0 :\n    print(round(cos, 2))\n    print('OBTUSE');\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\ndot = (a times c) plus (b times d)  \nv1 = (a to the power of 2) plus (b to the power of 2) rounded to 1 divided by 2  \nv2 = (c to the power of 2) plus (d to the power of 2) rounded to 1 divided by 2  \n\ncos = dot divided by (v1 times v2)  \n\nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \notherwise if cos equals 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \notherwise if cos less than 0  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:35:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: dHpZsw\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 =float(input())\ny1 =float(input())\nx2 =float(input())\ny2 =float(input())\nx3 =float(input())\ny3 =float(input())\n\nv1 = (x2-x1,y2-y1)\nv2 = (x3-x1,y3-y1)\nDot = (x2-x1)*(x3-x1)+(y2-y1)*(y3-y1)\nLV1 = (((x2-x1)**2) + ((y2-y1)**2))**(1/2)\nLV2 = (((x3-x1)**2) + ((y3-y1)**2))**(1/2)\ncos = (Dot/(LV1*LV2))\n\nif cos>0:\n    print(round(cos,2))\n    print('ACUTE')\nelif cos == 0:\n    print(round(cos,2))\n    print('RIGHT')\nelif cos<0:\n    print(round(cos,2))\n    print('OBTUSE')        ",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nset v1 to (x2 minus x1, y2 minus y1)  \nset v2 to (x3 minus x1, y3 minus y1)  \nset Dot to (x2 minus x1) times (x3 minus x1) plus (y2 minus y1) times (y3 minus y1)  \nset LV1 to ((x2 minus x1) to the power of 2 plus (y2 minus y1) to the power of 2) to the power of (1 divided by 2)  \nset LV2 to ((x3 minus x1) to the power of 2 plus (y3 minus y1) to the power of 2) to the power of (1 divided by 2)  \nset cos to (Dot divided by (LV1 times LV2))  \n\nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \notherwise if cos equals 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \notherwise if cos less than 0  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:59:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: 3t1l8b\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\nv = (a * c) + (b * d)\n\nv1 = ( (a ** 2) + (b ** 2) ) ** 0.5\nv2 = ( (c ** 2) + (d ** 2) ) ** 0.5\n\ncos = (v) / (v1 * v2)\n\n\nprint(round(cos, 2))\n\n\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelif cos < 0 :\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv = (a times c) plus (b times d)  \n\nv1 = ( (a to the power of 2) plus (b to the power of 2) ) to the power of 0.5  \nv2 = ( (c to the power of 2) plus (d to the power of 2) ) to the power of 0.5  \n\ncos = v divided by (v1 times v2)  \n\ndisplay cos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise if cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887014",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:59:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887014\nPASSWORD: dSjhNQ\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\na = float(x2 - x1)\nb = float(y2 - y1)\nc = float(x3 - x1)\nd = float(y3 - y1)\n \nr = (a * c) + (b * d)\n\nv1 = ((a)**2 + (b)**2) \n\n\nv2 = ((c)**2 + (d)**2)\n\ncos = round((r / (v1 * v2)), 1)\n\nprint(cos)\nif(cos > 0.0):\n    print('ACUTE')\nelif(cos == 0.0):\n    print('RIGHT')\nelif(cos < 0.0):\n    print('OBTUSE')   \n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nr = (a times c) plus (b times d)  \n\nv1 = (a to the power of 2) plus (b to the power of 2)  \n\nv2 = (c to the power of 2) plus (d to the power of 2)  \n\ncos = r divided by (v1 times v2) rounded to 1 decimal place  \n\ndisplay cos  \nif cos greater than 0.0  \n    display ACUTE  \nelif cos equal to 0.0  \n    display RIGHT  \nelif cos less than 0.0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:54:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887015\nPASSWORD: 4J4ALd\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\na=x2-x1\nb=y2-y1\nc=x3-x1\nd=y3-y1\n\nx=a*c+b*d\n\nV1=(a**2+b**2)\nV2=(c**2+d**2)\n\n\ncos0=(x)/(V1*V2)\nprint(round(cos0,2))\n\nif cos0>0:\n    print('ACUTE')\nelif cos0==0:\n    print('RIGHT')\nelif cos0<0:\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nx = a times c plus b times d  \n\nV1 = a to the power of 2 plus b to the power of 2  \nV2 = c to the power of 2 plus d to the power of 2  \n\ncos0 = x divided by (V1 times V2)  \ndisplay cos0 rounded to 2 decimal places  \n\nif cos0 greater than 0  \n    display ACUTE  \notherwise if cos0 equal to 0  \n    display RIGHT  \notherwise if cos0 less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:41:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: 18nLui\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n#import math\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\n'''\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n'''\n\nv1 = (x2 - x1,y2 - y1)\nv2 = (x3 - x1,y3 - y1)\n\ndot = (v1[0]*v2[0]) + (v1[1]*v2[1])\n\nl1 = ((v1[0]**2)+(v1[1]**2))**(1/2)\nl2 = ((v2[0]**2)+(v2[1]**2))**(1/2)\n\ncos =  (dot)/(l1 * l2)\n\n'''\nprint(l1)\nprint(dot)\nprint(f'{v1[0]}{v2[1]}')\nprint(v1)\n\nprint(f'{a}')\nprint(f'{b}')\nprint(f'{c}')\nprint(f'{d}')\n'''\n\nprint(f'{round(cos, 2)}')\nif (cos > 0):\n    print(f'ACUTE')\nelif (cos == 0):\n    print(f'RIGHT')\nelif (cos < 0):\n    print(f'OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nset v1 to (x2 minus x1, y2 minus y1)  \nset v2 to (x3 minus x1, y3 minus y1)  \n\nset dot to (v1[0] times v2[0]) plus (v1[1] times v2[1])  \n\nset l1 to ((v1[0] squared) plus (v1[1] squared)) to the power of (1 divided by 2)  \nset l2 to ((v2[0] squared) plus (v2[1] squared)) to the power of (1 divided by 2)  \n\nset cos to (dot divided by (l1 times l2))  \n\ndisplay cos rounded to 2 decimal places  \nif cos greater than 0  \n    display ACUTE  \notherwise if cos equals 0  \n    display RIGHT  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:58:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887017\nPASSWORD: IWbKsA\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\na=(x2-x1) \nb=(y2-y1)\nv1=(a,b)\n\nc=(x3-x1)\nd=(y3-y1)\nv2=(c,d)\nv3 = (a*c+b*d)\nv4=((a**2)+(b**2))\nv5=((c**2)+(d**2))\ncos=((v3)/((v4)*(v5)))\nprint(round(cos,2))\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nv1 = (a, b)  \nc = x3 minus x1  \nd = y3 minus y1  \nv2 = (c, d)  \nv3 = a times c plus b times d  \nv4 = a to the power of 2 plus b to the power of 2  \nv5 = c to the power of 2 plus d to the power of 2  \ncos = v3 divided by (v4 times v5)  \ndisplay cos rounded to 2 decimal places  \nif cos > 0  \n    display ACUTE  \nelif cos == 0  \n    display RIGHT  \nelif cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:00:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887018\nPASSWORD: TG2MRS\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\nv1 = ((a**2)+(b**2))**(1/2)\nv2 = ((c**2)+(d**2))**(1/2)\ncos = (a*c+b*d)/(v1*v2)\nprint(round(cos,2))\n\nif cos>0:\n    print('ACUTE')\nelif cos==0:\n    print('RIGHT')\nelif cos<0:\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nv1 = (a to the power of 2) plus (b to the power of 2) rounded to 1 divided by 2  \nv2 = (c to the power of 2) plus (d to the power of 2) rounded to 1 divided by 2  \ncos = (a times c) plus (b times d) divided by (v1 times v2)  \ndisplay cos rounded to 2 decimal places  \n\nif cos greater than 0  \n    display ACUTE  \notherwise if cos equal to 0  \n    display RIGHT  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:24:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: 0KB9eb\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nimport math\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\n\nv1DotV2 = a*c+b*d\nLengthOfVector1 = math.sqrt(a**2+b**2)\nLengthOfVector2 = math.sqrt(c**2+d**2)\n\ncos = v1DotV2 / (LengthOfVector1 * LengthOfVector2)\nprint(f\"{round(cos,2)}\")\nif cos > 0:\n    print(\"ACUTE\")\nelif cos == 0:\n    print(\"RIGHT\")\nelif cos < 0:\n    print(\"OBTUSE\")\n",
+    "Pseudocode": "get x1 as float\nget y1 as float\nget x2 as float\nget y2 as float\nget x3 as float\nget y3 as float\n\nset a to x2 minus x1\nset b to y2 minus y1\nset c to x3 minus x1\nset d to y3 minus y1\n\nset v1DotV2 to a times c plus b times d\nset LengthOfVector1 to a squared plus b squared square rooted\nset LengthOfVector2 to c squared plus d squared square rooted\n\nset cos to v1DotV2 divided by (LengthOfVector1 times LengthOfVector2)\ndisplay cos rounded to 2 decimal places\nif cos greater than 0\n    display ACUTE\notherwise if cos equals 0\n    display RIGHT\notherwise if cos less than 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:30:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: QbYbZi\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2= float(input())\nx3 = float(input())\ny3 = float(input())\n\n\na = x2 - x1\nb = y2 - y1\n\nc = x3 - x1\nd = y3 - y1\n\ndp = (a * c) + (d * b)\nlv1 = ((a**2) + (b**2))**0.5\nlv2 = ((c**2) + (d**2))**0.5\nlv = lv1 * lv2\nc = dp / lv\n\nprint(round(c, 2))\nif c > 0:\n    print(\"ACUTE\")\nelif c == 0:\n    print(\"RIGHT\")\nelif c < 0:\n    print(\"OBTUSE\")\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \n\nc = x3 minus x1  \nd = y3 minus y1  \n\ndp = (a times c) plus (d times b)  \nlv1 = (a squared plus b squared) to the power of 0.5  \nlv2 = (c squared plus d squared) to the power of 0.5  \nlv = lv1 times lv2  \nc = dp divided by lv  \n\nc rounded to 2 decimal places  \nif c greater than 0  \n    display ACUTE  \notherwise if c equals 0  \n    display RIGHT  \notherwise if c less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:29:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021\nPASSWORD: SO3HTG\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nx1 = int(input())\ny1 = int(input())\n\nx2 = int(input())\ny2 = int(input())\n\nx3 = int(input())\ny3 = int(input())\n\na , b = (x2-x1) , (y2-y1)\n\nc , d = (x3-x1) , (y3-y1)\n\nv1v2 = (a*c) +(b*d)\nv1size = ((a**2)+(b**2))**(1/2)\nv2size = ((c**2)+(d**2))**(1/2)\n\ncos = v1v2 / (v1size*v2size)\n\nprint(round(cos,2))\n\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE ')\n",
+    "Pseudocode": "get x1  \nget y1  \n\nget x2  \nget y2  \n\nget x3  \nget y3  \n\nassign a to (x2 minus x1)  \nassign b to (y2 minus y1)  \n\nassign c to (x3 minus x1)  \nassign d to (y3 minus y1)  \n\nassign v1v2 to (a times c) plus (b times d)  \nassign v1size to ((a squared) plus (b squared)) to the power of (1 divided by 2)  \nassign v2size to ((c squared) plus (d squared)) to the power of (1 divided by 2)  \n\nassign cos to (v1v2 divided by (v1size times v2size))  \n\ndisplay cos rounded to 2 decimal places  \n\nif cos greater than 0  \n    display ACUTE  \notherwise if cos equals 0  \n    display RIGHT  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "5/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: PASS, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:53:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: 4o8rml\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\nv1 = a*c\nv2 = b*d\ndot = ((v1)+(v2))\nvec1 = ((a**2)+(b**2))\nvec2 = ((c**2)+(d**2))\nlen = vec1*vec2/5\n\n\ncos = round((dot)/(len),2)\nif cos>0:\n    print(cos)\n    print('ACUTE')\nelif cos==0:\n    print(cos)\n    print('RIGHT')\nelse:\n   print(cos)\n   print('OBTUSE')\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nv1 = a times c  \nv2 = b times d  \ndot = v1 plus v2  \nvec1 = a to the power of 2 plus b to the power of 2  \nvec2 = c to the power of 2 plus d to the power of 2  \nlen = vec1 times vec2 divided by 5  \n\ncos = dot divided by len rounded to 2 decimal places  \nif cos greater than 0  \n    display cos  \n    display ACUTE  \notherwise if cos equals 0  \n    display cos  \n    display RIGHT  \notherwise  \n    display cos  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:01:39+00:00",
+    "Code": "''' \n/**\nUSERID: 6887023\nPASSWORD: Zacn05\nEXERCISEID: itds120-cp1-q4\n */\n'''\n2\n# YOUR CODE GOES HERE\n\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\nv1 = (x2 - x1)\nv11 = (y2 - y1)\n\nv2 = (x3 - x1)\nv22 = (y3 - y1)\n\na = v1\nb = v11\nc = v2\nd = v22\n\nVV = float()\nVV = (a * c) + (b * d)\n\nLV1 = float()\nLV2 = float()\n\n\nLV1 =  (a**2) + (b**2)\nLV2 =  (c**2) + (d**2)\n\nroot = 1/2\n\nLV1 = LV1**root\nLV2 = LV2**root\n\n\nans = VV / (LV1*LV2)\n\n\nif ans > 0 :\n    print((round(ans,2) ))\n    print('ACUTE')\nelif ans == 0 :\n    print((round(ans,2) ))\n    print('RIGHT')\nelse :\n    print((round(ans,2) ))\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nv1 = x2 minus x1  \nv11 = y2 minus y1  \n\nv2 = x3 minus x1  \nv22 = y3 minus y1  \n\na = v1  \nb = v11  \nc = v2  \nd = v22  \n\nVV = 0  \nVV = (a times c) plus (b times d)  \n\nLV1 = 0  \nLV2 = 0  \n\nLV1 = (a to the power of 2) plus (b to the power of 2)  \nLV2 = (c to the power of 2) plus (d to the power of 2)  \n\nroot = 1 divided by 2  \n\nLV1 = LV1 to the power of root  \nLV2 = LV2 to the power of root  \n\nans = VV divided by (LV1 times LV2)  \n\nif ans > 0  \n    display ans rounded to 2 decimal places  \n    display ACUTE  \notherwise if ans == 0  \n    display ans rounded to 2 decimal places  \n    display RIGHT  \notherwise  \n    display ans rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "5/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: PASS, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:59:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: dmzvuU\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\n\nv21 = (a*c)+(b*d)\n\n\nlov1 = ((a**2)+(b**2))**(1/2)\nlov2 = ((a**2)+(b**2))**(1/2)\n\n\n\nif  lov1 < 0:\n    lov1 = lov1 * -1\n    cos = v21 / (lov1* lov2)\n\n    print(round(cos,2))\n\n    if cos > 0:\n        print(\"ACUTE\")\n    elif cos == 0:\n        print(\"RIGHT\")\n    elif cos < 0:\n        print(\"OBTUSE\")\nelif lov2 < 0:\n    lov2 = lov2 * -1\n    cos = v21 / (lov1* lov2)\n   \n\n\n    print(round(cos,2))\n\n    if cos > 0:\n        print(\"ACUTE\")\n    elif cos == 0:\n        print(\"RIGHT\")\n    elif cos < 0:\n        print(\"OBTUSE\")\nelif lov1 < 0 and lov2 < 0:\n    lov1 = lov1 * -1\n    lov2 = lov2 * -1\n    cos = v21 / (lov1* lov2)\n   \n\n\n    print(round(cos,2))\n\n    if cos > 0:\n        print(\"ACUTE\")\n    elif cos == 0:\n        print(\"RIGHT\")\n    elif cos < 0:\n        print(\"OBTUSE\")\nelse:\n    cos = v21 / (lov1* lov2)\n\n\n\n    print(round(cos,2))\n\n    if cos > 0:\n        print(\"ACUTE\")\n    elif cos == 0:\n        print(\"RIGHT\")\n    elif cos < 0:\n        print(\"OBTUSE\")",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv21 = (a times c) plus (b times d)  \n\nlov1 = ((a to the power of 2) plus (b to the power of 2)) to the power of (1 divided by 2)  \nlov2 = ((a to the power of 2) plus (b to the power of 2)) to the power of (1 divided by 2)  \n\nif lov1 < 0  \n    lov1 = lov1 times -1  \n    cos = v21 divided by (lov1 times lov2)  \n\n    display (cos rounded to 2 decimal places)  \n\n    if cos > 0  \n        display ACUTE  \n    elif cos == 0  \n        display RIGHT  \n    elif cos < 0  \n        display OBTUSE  \nelif lov2 < 0  \n    lov2 = lov2 times -1  \n    cos = v21 divided by (lov1 times lov2)  \n\n    display (cos rounded to 2 decimal places)  \n\n    if cos > 0  \n        display ACUTE  \n    elif cos == 0  \n        display RIGHT  \n    elif cos < 0  \n        display OBTUSE  \nelif lov1 < 0 and lov2 < 0  \n    lov1 = lov1 times -1  \n    lov2 = lov2 times -1  \n    cos = v21 divided by (lov1 times lov2)  \n\n    display (cos rounded to 2 decimal places)  \n\n    if cos > 0  \n        display ACUTE  \n    elif cos == 0  \n        display RIGHT  \n    elif cos < 0  \n        display OBTUSE  \nelse  \n    cos = v21 divided by (lov1 times lov2)  \n\n    display (cos rounded to 2 decimal places)  \n\n    if cos > 0  \n        display ACUTE  \n    elif cos == 0  \n        display RIGHT  \n    elif cos < 0  \n        display OBTUSE"
+  },
+  {
+    "User ID": "6887025",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:59:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887025\nPASSWORD: a5lrob\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\n\na=(x2-x1)\nb=(y2-y1)\nc=(x3-x1)\nd=(y3-y1)\n\nvv=(a*c)+(b*d)\nv1=((a*a)+(b*b))\nv2=((c*c)+(d*d))\ncos= vv/(v1*v2)\nprint(round(cos,1))\nif cos ==0 :\n    print('RIGHT')\nelif cos > 0 :\n    print('ACUTE')\nelif cos < 0 :\n    print('OBTUSE')\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nset a to (x2 minus x1)  \nset b to (y2 minus y1)  \nset c to (x3 minus x1)  \nset d to (y3 minus y1)  \n\nset vv to (a times c) plus (b times d)  \nset v1 to (a times a) plus (b times b)  \nset v2 to (c times c) plus (d times d)  \nset cos to vv divided by (v1 times v2)  \ndisplay cos rounded to 1 decimal place  \n\nif cos equals 0  \n    display RIGHT  \notherwise if cos greater than 0  \n    display ACUTE  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887026",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:10:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887026\nPASSWORD: jZDEea\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input( ))\ny1 = int(input( ))\nx2 = int(input( ))\ny2 = int(input( ))\nx3 = int(input( ))\ny3 = int(input( ))\n\na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\n\nvv = (a*c)+(b*d)\nvector1 = ((a**2)+(b**2))**0.5\nvector2 = ((c**2)+(d**2))**0.5\ncos = vv/(vector1*vector2)\n\nif cos >0:\n    print(round(cos,2))\n    print('ACUTE')\nelif cos == 0:\n    print(round(cos,2))\n    print('RIGHT')\nelif cos<0:\n    print(round(cos,2))\n    print('OBTUSE')\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nvv = (a times c) plus (b times d)  \nvector1 = (a squared) plus (b squared) to the power of 0.5  \nvector2 = (c squared) plus (d squared) to the power of 0.5  \ncos = vv divided by (vector1 times vector2)  \n\nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \notherwise if cos equals 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \notherwise if cos less than 0  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:51:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887027\nPASSWORD: e4aBkp\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = (x2 - x1)\nb = (y2 - y1)\nc = (x3 - x1)\nd = (y3 - y1)\n\nv12 = (((a)*(c))+((b) * (d)))\n\nv1 = ((a**2) + (b**2))**0.5\nv2 = ((c**2) + (b**2))**0.5\n\ncos = v12 / (v1 * v2)\n\nprint(round(cos,2))\n\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv12 = (a times c) plus (b times d)  \n\nv1 = (a to the power of 2) plus (b to the power of 2) rounded to 0.5  \nv2 = (c to the power of 2) plus (b to the power of 2) rounded to 0.5  \n\ncos = v12 divided by (v1 times v2)  \n\ndisplay cos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise if cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:50:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: UwzS1e\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\ndot = (a*c) + (b*d)\nvector1 = ((a*a) + (b*b)) **0.5\nvector2 = ((c*c) + (d*d)) **0.5\ncos = dot / (vector1*vector2)\n\nprint(round(cos, 2)) \n\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelse :\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\ndot = (a times c) plus (b times d)  \nvector1 = (a times a) plus (b times b) to the power of 0.5  \nvector2 = (c times c) plus (d times d) to the power of 0.5  \ncos = dot divided by (vector1 times vector2)  \n\ndisplay cos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:42:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD: Bm8EH3\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\ncos = ((a*c)+(b*d)) / ((((a**2)+(b**2))**0.5)*(((c**2)+(d**2))**0.5))\nprint(round(cos,2))\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelif cos < 0 :\n    print('OBTUSE')\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \ncos = (a times c plus b times d) divided by (((a to the power of 2 plus b to the power of 2) to the power of 0.5) times ((c to the power of 2 plus d to the power of 2) to the power of 0.5))  \ndisplay cos rounded to 2 decimal places  \nif cos > 0  \n    display ACUTE  \nelif cos == 0  \n    display RIGHT  \nelif cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:46:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: Ex6bxi\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nx1 = float (input())\ny1 = float (input())\nx2 = float (input())\ny2 = float (input())\nx3 = float (input())\ny3 = float (input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\nv1v2 = (a * c) + (b * d)\n\nsize_v1 = ((a ** 2) + (b ** 2)) ** (1/2)\nsize_v2 = ((c ** 2) + (d ** 2)) ** (1/2)\n\ncos = (v1v2) / (size_v1 * size_v2)\nprint(round(cos , 2))\n\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelif cos < 0 :\n    print('OBTUSE')",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\n\nv1v2 = (a times c) plus (b times d)\n\nsize_v1 = ((a to the power of 2) plus (b to the power of 2)) to the power of (1 divided by 2)\nsize_v2 = ((c to the power of 2) plus (d to the power of 2)) to the power of (1 divided by 2)\n\ncos = v1v2 divided by (size_v1 times size_v2)\ndisplay cos rounded to 2 decimal places\n\nif cos > 0\n    display ACUTE\notherwise if cos == 0\n    display RIGHT\notherwise if cos < 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:56:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: dcHtM1\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nfrom math import sqrt\n\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = x2-x1\nb = y2-y1\n\nc = x3-x1\nd = y3-y1\n\ndotpro = a*c+b*d\n\nlen_v1 = sqrt((a**2+b**2))\nlen_v2 = sqrt((c**2+d**2))\n\n\n\nlen = len_v1*len_v2\n\ncos = dotpro/len\n\n\n\nprint(round(cos,2))\nif(cos>0):\n    print(\"ACUTE\")\nelif(cos==0):\n    print(\"RIGHT\")\nelif(cos<0):\n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \n\nc = x3 minus x1  \nd = y3 minus y1  \n\ndotpro = a times c plus b times d  \n\nlen_v1 = (a to the power of 2 plus b to the power of 2) square rooted  \nlen_v2 = (c to the power of 2 plus d to the power of 2) square rooted  \n\nlen = len_v1 times len_v2  \n\ncos = dotpro divided by len  \n\ncos rounded to 2 decimal places  \nif cos greater than 0  \n    display ACUTE  \notherwise if cos equals 0  \n    display RIGHT  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:57:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: nss3kP\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\nc =((a*c)+(b*d))/((((a+b)**2)/(1/4))*(((c+d)**2)/(1/4)))\nif c>0:\n    print(round(c,2))\n    print('ACUTE')\nelif c==0:\n    print(round(c,2))\n    print('RIGHT')\nelif c<0:\n    print(round(c,2))\n    print('OBTUSE')\n    ",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\nset a to x2 minus x1\nset b to y2 minus y1\nset c to x3 minus x1\nset d to y3 minus y1\nset c to (a times c plus b times d) divided by (((a plus b) to the power of 2) divided by (1 divided by 4)) times (((c plus d) to the power of 2) divided by (1 divided by 4))\nif c greater than 0\n    display c rounded to 2 decimal places\n    display ACUTE\notherwise if c equals 0\n    display c rounded to 2 decimal places\n    display RIGHT\notherwise if c less than 0\n    display c rounded to 2 decimal places\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:47:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: p1Ln2x\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\ndot = (a * c) + (b * d)\n\nv1 = ((a ** 2) + (b ** 2)) ** 0.5\nv2 = ((c ** 2) + (d ** 2)) ** 0.5\n\ncos = dot / (v1 * v2)\n\nprint(round(cos, 2))\n\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelse:\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\ndot = (a times c) plus (b times d)  \n\nv1 = (a to the power of 2) plus (b to the power of 2) rounded to 0.5  \nv2 = (c to the power of 2) plus (d to the power of 2) rounded to 0.5  \n\ncos = dot divided by (v1 times v2)  \n\ndisplay cos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \nelif cos == 0  \n    display RIGHT  \nelse  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887034",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:38:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887034\nPASSWORD: zS5yMF\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\nv1 =(a,b)\nv2 =(c,d)\n\nv3 = a*c+b*d\n\nvv1 = 2/(a**2+b**2)\nvv2 = 2/(c**2+d**2)\n\ncos0 = ((v3)/(vv1*vv2))\nprint(round(cos0, 2))\n\nif cos0 > 0:\n    print(\"ACUTE\")\nelif cos0 == 0:\n    print(\"RIGHT\")\nelif cos0 < 0:\n    print(\"OBTUSE\")\n",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\nv1 = (a, b)\nv2 = (c, d)\n\nv3 = a times c plus b times d\n\nvv1 = 2 divided by (a to the power of 2 plus b to the power of 2)\nvv2 = 2 divided by (c to the power of 2 plus d to the power of 2)\n\ncos0 = v3 divided by (vv1 times vv2)\ndisplay cos0 rounded to 2 decimal places\n\nif cos0 > 0\n    display ACUTE\nelif cos0 == 0\n    display RIGHT\nelif cos0 < 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:58:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: aj8qM2\nEXERCISEID: itds120-cp1-q4\n */\n'''\nx_1=int(input())\ny_1=int(input())\nx_2=int(input())\ny_2=int(input())\nx_3=int(input())\ny_3=int(input())\n\ndot=((x_2-x_1)*(y_2-y_1))+((x_3-x_1)*(y_3-y_1))\n\nLv1=((((x_2-x_1)**2)+((y_2-y_1)**2))*3.14)\nLv2=((((x_3-x_1)**2)+((y_3-y_1)**2))*3.14)\n\ncos=dot/(int(Lv1)*int(Lv2))\n\nprint(round(cos,2))\n\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelif cos < 0 :\n    print('OBTUSE')\n",
+    "Pseudocode": "get x_1  \nget y_1  \nget x_2  \nget y_2  \nget x_3  \nget y_3  \n\ndot = (x_2 minus x_1) times (y_2 minus y_1) plus (x_3 minus x_1) times (y_3 minus y_1)  \n\nLv1 = ((x_2 minus x_1) to the power of 2 plus (y_2 minus y_1) to the power of 2) times 3.14  \nLv2 = ((x_3 minus x_1) to the power of 2 plus (y_3 minus y_1) to the power of 2) times 3.14  \n\ncos = dot divided by (Lv1 rounded to integer times Lv2 rounded to integer)  \n\ndisplay cos rounded to 2 decimal places  \n\nif cos greater than 0  \n    display ACUTE  \notherwise if cos equals 0  \n    display RIGHT  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:59:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: NXDH9w\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = float(input())\ny1 = float(input())\n\nx2 = float(input())\ny2 = float(input())\n\nx3 = float(input())\ny3 = float(input())\n\nv1 = (x2 - x1) , ( y2 - y1)\nv2 = (x3 - x1) , (y3 - y1)\n\nv11 = ((3**2) + (4**2))\nv22 = (((-4)**2) + (3**2))\n\n#cos_theta = round(frac{(v1 * v2)}{(v11 * v22)}, 2)\ncos_theta = round((((v1 - v2) * (v11 * v22)), 2))\n\nif (x1, y1) or (x2, y2) or (x3, y3) < 90:\n    print(str(cos_theta))\n    print('ACUTE')\nelif (x1, y1) or (x2, y2) or (x3, y3)  == 90:\n    print(str(cos_theta))\n    print('RIGHT')\nelif (x1, y1) or (x2, y2) or (x3, y3)  > 90:\n    print(str(cos_theta))\n    print('OBTUSE')\n\n",
+    "Pseudocode": "get x1\nget y1\n\nget x2\nget y2\n\nget x3\nget y3\n\nset v1 to (x2 minus x1), (y2 minus y1)\nset v2 to (x3 minus x1), (y3 minus y1)\n\nset v11 to (3 to the power of 2 plus 4 to the power of 2)\nset v22 to ((-4 to the power of 2) plus (3 to the power of 2))\n\nset cos_theta to ((v1 minus v2) divided by (v11 times v22)) rounded to 2 decimal places\n\nif (x1, y1) or (x2, y2) or (x3, y3) < 90\n    display cos_theta as string\n    display ACUTE\notherwise if (x1, y1) or (x2, y2) or (x3, y3) equals 90\n    display cos_theta as string\n    display RIGHT\notherwise if (x1, y1) or (x2, y2) or (x3, y3) > 90\n    display cos_theta as string\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:55:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: NLb17Y\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\nv11 = ((a**2)+(b**2))**0.5\nv22 = ((c**2)+(d**2))**0.5\n\nv1v2 = (a*c)+(b*d)\n\ncos = (v1v2 / (v11*v22))\na = (round(cos, 2))\n\nprint(a)\n\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv11 = (a squared plus b squared) to the power of 0.5  \nv22 = (c squared plus d squared) to the power of 0.5  \n\nv1v2 = (a times c) plus (b times d)  \n\ncos = v1v2 divided by (v11 times v22)  \na = cos rounded to 2 decimal places  \n\ndisplay a  \n\nif cos > 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise if cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T10:00:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887038\nPASSWORD: JnJsm5\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\n\nv1 = 0.5**(((x2 - x1) * (x2 - x1) )+ ( (y2 - y1) * (y2 - y1)))\nv2 = 0.5**(((x3 - x1) * (x3 - x1) ) + ( (y3 - y1) * (y3 - y1) ))\n( v1 * v2 )  == ( (x2 - x1) * (x3 - x1) ) + ( (y2 - y1) * (y3 - y1) )\ncos = (v1 * v2) * ( v1 * v2 )\n\n\nif (cos > 0):\n    print( str(round(cos, 2)))\n    print('ACUTE')\n\nelif (cos == 0):\n    print( str(round(cos, 2)))\n    print('RIGHT')\n\nelif (cos < 0):\n    print( str(round(cos, 2)))\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nv1 = 0.5 to the power of ((x2 minus x1) times (x2 minus x1) plus ((y2 minus y1) times (y2 minus y1)))  \nv2 = 0.5 to the power of ((x3 minus x1) times (x3 minus x1) plus ((y3 minus y1) times (y3 minus y1)))  \ncheck if (v1 times v2) equals ((x2 minus x1) times (x3 minus x1) plus ((y2 minus y1) times (y3 minus y1)))  \ncos = (v1 times v2) times (v1 times v2)  \n\nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \notherwise if cos equals 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \notherwise if cos less than 0  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:29:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: JECArv\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\nv12 = ((x2-x1)*(x3-x1))+((y2-y1)*(y3-y1))\nv1 = (((x2-x1)**2)+((y2-y1)**2))**0.5\nv2 = (((x3-x1)**2)+((y3-y1)**2))**0.5\ncos = v12/(v1*v2)\n\nif (cos>0):\n    print(round(cos, 2))\n    print('ACUTE')\nelif (cos==0):\n    print(round(cos, 2))\n    print('RIGHT')\nelse:\n    print(round(cos, 2))\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nv12 = (x2 minus x1) times (x3 minus x1) plus (y2 minus y1) times (y3 minus y1)  \nv1 = ((x2 minus x1) to the power of 2 plus (y2 minus y1) to the power of 2) to the power of 0.5  \nv2 = ((x3 minus x1) to the power of 2 plus (y3 minus y1) to the power of 2) to the power of 0.5  \ncos = v12 divided by (v1 times v2)  \n\nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \notherwise if cos equals 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \notherwise  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:38:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887040\nPASSWORD: 3wqD25\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n#input section\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\n#define each quardant\na = x2 - x1 # 1\nb = y2 - y1 # 0\nc = x3 - x1 # 1\nd = y3 - y1 # 1\n\n#calculate first v1*v2\nvmax = (a*c) + (b*d) # 1\n\n#find v1 and v2\nv1 = (a**2 + b**2) ** 0.5 # 1\nv2 = (c**2 + d**2) ** 0.5 # 1.4\n\n#find cos\ncos = (vmax / (v1*v2) )\n\n#output 2 decimal cos\nprint(round(cos ,2))\n\nif cos == 0 :\n    print('RIGHT')\nelif cos > 0 :\n    print('ACUTE')\nelif cos < 0 :\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nvmax = (a times c) plus (b times d)  \n\nv1 = (a squared plus b squared) to the power of 0.5  \nv2 = (c squared plus d squared) to the power of 0.5  \n\ncos = vmax divided by (v1 times v2)  \n\ncos rounded to 2 decimal places  \n\nif cos equals 0  \n    display RIGHT  \notherwise if cos greater than 0  \n    display ACUTE  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887041",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T10:00:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887041\nPASSWORD: NmEBDa\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\n\nx2 = int(input())\ny2 = int(input())\n\nx3 = int(input())\ny3 = int(input())\n\na = x2 - x1\nb = y2 - y1\n\nc = x3 - x1\nd = y3 - y1\n\nv1 = (a**2 + b**2)\nv2 = (c**2 + d**2)\n'''\ncos = ((a * c) + (b * d)) / ((v1) * (v2))\n'''\ncos = ((a * c +b * d)) / ((v1) * (v2))\nprint(round(cos,2))\n\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelif cos < 0 :\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \n\nget x2  \nget y2  \n\nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \n\nc = x3 minus x1  \nd = y3 minus y1  \n\nv1 = a to the power of 2 plus b to the power of 2  \nv2 = c to the power of 2 plus d to the power of 2  \n\ncos = (a times c plus b times d) divided by (v1 times v2)  \ncos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise if cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:33:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: BsVI6m\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\nlv1 = ((a ** 2) + (b ** 2)) ** 0.5\nlv2 = ((c ** 2) + (d ** 2)) ** 0.5\n\ncos = ((a * c) + (b * d)) / (lv1 * lv2)\n\nprint(round(cos, 2))\n\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nlv1 = (a squared plus b squared) to the power of 0.5  \nlv2 = (c squared plus d squared) to the power of 0.5  \n\ncos = (a times c plus b times d) divided by (lv1 times lv2)  \n\ncos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \nelif cos == 0  \n    display RIGHT  \nelif cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:32:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD: 3k9rLM\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\nsqrt = 0.5\nv3 = (a * c) + (b * d)\nv1_1 = (a**2 + b**2)**sqrt\nv2_1 = (c**2 + d**2)**sqrt\ncos = v3/(v1_1*v2_1)\nprint(round(cos,2))\n\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelse:\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nsqrt = 0.5  \nv3 = (a times c) plus (b times d)  \nv1_1 = (a to the power of 2 plus b to the power of 2) to the power of sqrt  \nv2_1 = (c to the power of 2 plus d to the power of 2) to the power of sqrt  \ncos = v3 divided by (v1_1 times v2_1)  \ndisplay cos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \nelif cos == 0  \n    display RIGHT  \nelse  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:51:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: yiiPmC\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=int(input())\ny1=int(input())\nx2=int(input())\ny2=int(input())\nx3=int(input())\ny3=int(input())\n\n\na=x2-x1\nb=y2-y1\nc=x3-x1\nd=y3-y1\n\ndt=a*c+b*d\nsqrt=1/2\nv1=((a**2)+(b**2))**2\nv2=((c**2)+(d**2))**2\n\ncos=dt/(v1*v2)\nprint(round(cos,2))\nif cos>0:\n    print('ACUTE')\nelif cos==0:\n    print('RIGHT')\nelif cos<0:\n    print('RIGHT')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\ndt = a times c plus b times d  \nsqrt = 1 divided by 2  \nv1 = (a to the power of 2 plus b to the power of 2) to the power of 2  \nv2 = (c to the power of 2 plus d to the power of 2) to the power of 2  \n\ncos = dt divided by (v1 times v2)  \ndisplay cos rounded to 2 decimal places  \nif cos greater than 0  \n    display ACUTE  \nelif cos equal to 0  \n    display RIGHT  \nelif cos less than 0  \n    display RIGHT"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "5/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: PASS, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T10:00:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: z6lL4a\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\nall = a * c + b * d\nallv1v2 = all\n\nev1 = (a**2) + (b**2)\nev2 = (c**2) + (d**2)\n\ncos = allv1v2 /(ev1 * ev2) * 3\nprint(round(cos, 2))\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')\n\n\n",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\n\nall = a times c plus b times d\nallv1v2 = all\n\nev1 = a to the power of 2 plus b to the power of 2\nev2 = c to the power of 2 plus d to the power of 2\n\ncos = allv1v2 divided by (ev1 times ev2) times 3\ncos rounded to 2 decimal places\n\nif cos greater than 0\n    display ACUTE\nelif cos equals 0\n    display RIGHT\nelif cos less than 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:37:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: s9bA0p\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = (x2-x1)\nb = (y2-y1)\nc = (x3-x1)\nd = (y3-y1)\n\nvdot = (a*c)+(b*d)\n\nv1 = ((a ** 2) + (b ** 2))\nv2 = ((c ** 2) + (d ** 2))\n\ncos = vdot/v1*v2\nif cos > 0 :\n    print(round(cos,2))\n    print('ACUTE')\nelif cos == 0 :\n    print(round(cos,2))\n    print('RIGHT')\nelif cos < 0 :\n    print(round(cos,2))\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nvdot = (a times c) plus (b times d)  \n\nv1 = (a to the power of 2) plus (b to the power of 2)  \nv2 = (c to the power of 2) plus (d to the power of 2)  \n\ncos = vdot divided by v1 times v2  \nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \notherwise if cos equals 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \notherwise if cos less than 0  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:40:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD: IAup3Z\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = input()\nx2 = input()\nx3 = input()\ny1 = input()\ny2 = input()\ny3 = input()\n\nv1 = (x2 - x1 , y2 - y1) = (a,b)\nv2  =(x3 - x1 , y3 - y1) = (c,d)\n\nv1 * v2 = a * c + b * d\n\ncos = v1 * v2 2 v1 * v2\n\nif cos > 0:\n    print(\"ACUTE\")\nelif cos = 0:\n    print(\"RIGHT\")\nelse:\n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1  \nget x2  \nget x3  \nget y1  \nget y2  \nget y3  \n\nv1 = (x2 minus x1, y2 minus y1)  \nv2 = (x3 minus x1, y3 minus y1)  \n\nv1 times v2 = (first value of v1 times first value of v2) plus (second value of v1 times second value of v2)  \n\ncos = (v1 times v2) divided by (2 times v1 times v2)  \n\nif cos > 0  \n    display ACUTE  \nelseif cos = 0  \n    display RIGHT  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:32:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: lQB3u3\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# input x,y\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\ndot = (a * c) + (b * d) #dot\n\n#length\nv1 = (a**2 + b**2)**(1/2)\nv2 = (c**2 + d**2)**(1/2)\n\n#Cosine of angle dot / length\n\ncos = dot/(v1*v2)\nprint (round(cos, 2))\n\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\ndot = (a times c) plus (b times d)  \n\nv1 = (a to the power of 2 plus b to the power of 2) to the power of 0.5  \nv2 = (c to the power of 2 plus d to the power of 2) to the power of 0.5  \n\ncos = dot divided by (v1 times v2)  \ncos rounded to 2 decimal places  \n\nif cos greater than 0  \n    display ACUTE  \notherwise if cos equals 0  \n    display RIGHT  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887050",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "1/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: ERROR, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:57:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887050\nPASSWORD: Ol3um2\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1,x2,x3 = int(input()),int(input()),int(input())\ny1,y2,y3 = int(input()),int(input()),int(input())\n\na = (x2-x1)\nb = (y2-y1)\nc = (x3-x1)\nd = (y3-y1)\n\nDP = (a*c)+(b*d) \n\npo1 = ((a**2 + b**2)/10)*10\npo2 = ((c**2 + d**2)/10)*10\nL = (po1*po2)\ncos = (DP//L)\nprint(round(cos, 2 ))\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget x2  \nget x3  \nget y1  \nget y2  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nDP = (a times c) plus (b times d)  \n\npo1 = ((a to the power of 2 plus b to the power of 2) divided by 10) times 10  \npo2 = ((c to the power of 2 plus d to the power of 2) divided by 10) times 10  \nL = po1 times po2  \ncos = DP divided by L  \ndisplay cos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \nelif cos == 0  \n    display RIGHT  \nelif cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:48:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: GqluDI\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\n\n\nsumup = ( a * c )+ (b * d) \nsumdown = ((a**2 + b**2)**0.5 )*((c**2 + d**2)**0.5 )\ncosseta = sumup / sumdown\n\nprint(round(cosseta,2))\n\nif cosseta > 0:\n    print(\"ACUTE\")\nelif cosseta == 0:\n    print(\"RIGHT\")\nif cosseta < 0:\n    print(\"OBTUSE \")\n",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\n\nsumup = (a times c) plus (b times d)\nsumdown = ((a to the power of 2 plus b to the power of 2) to the power of 0.5) times ((c to the power of 2 plus d to the power of 2) to the power of 0.5)\ncosseta = sumup divided by sumdown\n\ndisplay cosseta rounded to 2 decimal places\n\nif cosseta > 0\n    display ACUTE\nelif cosseta == 0\n    display RIGHT\nif cosseta < 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887052",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:06:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887052\nPASSWORD: wkzOHa\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = (x2-x1)\nb = (y2-y1)\nc = (x3-x1)\nd = (y3-y1)\ne = ((a**2)+(b**2))**(0.5)\nf = ((c**2)+(d**2))**(0.5)\n\n\ncos = ((a*c)+(b*d))/(e*f)\nprint (round(cos,2))\nif cos > 0:\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \ne = (a squared plus b squared) to the power of 0.5  \nf = (c squared plus d squared) to the power of 0.5  \n\ncos = (a times c plus b times d) divided by (e times f)  \ncos rounded to 2 decimal places  \n\nif cos greater than 0  \n    display ACUTE  \notherwise if cos equals 0  \n    display RIGHT  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:40:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: p1Gu3d\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\nDot = (((x2-x1)*(x3-x1))+((y2-y1)*(y3-y1)))\nLov1 = (((x2-x1)**2)+((y2-y1)**2))**0.5\nLov2 = (((x3-x1)**2)+((y3-y1)**2))**0.5\nCos = round(Dot/(Lov1*Lov2),2)\nprint(Cos)\nif Cos > 0 :\n    print('ACUTE')\nelif Cos == 0 :\n    print('RIGHT')\nelse :\n    print('OBTUSE')\n\n\n",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\nDot = ((x2 minus x1) times (x3 minus x1)) plus ((y2 minus y1) times (y3 minus y1))\nLov1 = ((x2 minus x1) to the power of 2) plus ((y2 minus y1) to the power of 2)\nLov1 = Lov1 to the power of 0.5\nLov2 = ((x3 minus x1) to the power of 2) plus ((y3 minus y1) to the power of 2)\nLov2 = Lov2 to the power of 0.5\nCos = Dot divided by (Lov1 times Lov2)\nCos = Cos rounded to 2 decimal places\ndisplay Cos\nif Cos > 0\n    display ACUTE\notherwise if Cos == 0\n    display RIGHT\notherwise\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:03:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: inIKg0\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\nv1v2 = (a*c)+(b*d)\nL_vector1 = ((a**2)+(b**2))**0.5\nL_vector2 = ((c**2)+(d**2))**0.5\ncos = v1v2/(L_vector1*L_vector2)\nif cos > 0 :\n    print(round(cos,2))\n    print(\"ACUTE\")\nif cos == 0 :\n    print(round(cos,2))\n    print(\"RIGHT\")\nif cos < 0 :\n    print(round(cos,2))\n    print(\"OBTUSE\")\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \nset a to x2 minus x1  \nset b to y2 minus y1  \nset c to x3 minus x1  \nset d to y3 minus y1  \nset v1v2 to (a times c) plus (b times d)  \nset L_vector1 to (a squared plus b squared) to the power of 0.5  \nset L_vector2 to (c squared plus d squared) to the power of 0.5  \nset cos to v1v2 divided by (L_vector1 times L_vector2)  \nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \nif cos equals 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \nif cos less than 0  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:54:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887056 \nPASSWORD: ivNlWf\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = (x2 - x1) \nb = (y2 - y1)\nc = (x3 - x1) \nd = (y3 - y1)\n\nv1 = (a**2)+(b**2)\nv2 = (c**2)+(d**2)\n\ncosine = 0 / (v1*v2)\n\nif cosine >= 0:\n    print(f\"{cosine:.1f}\")\n    print(\"RIGHT\")\nelif cosine == 0:\n    print(f\"{cosine:.1f}\")\n    print(\"ACUTE\")\nelif cosine <= 0:\n    print(f\"{cosine:.1f}\")\n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv1 = (a to the power of 2) plus (b to the power of 2)  \nv2 = (c to the power of 2) plus (d to the power of 2)  \n\ncosine = 0 divided by (v1 times v2)  \n\nif cosine >= 0  \n    display cosine rounded to 1 decimal place  \n    display RIGHT  \notherwise if cosine == 0  \n    display cosine rounded to 1 decimal place  \n    display ACUTE  \notherwise if cosine <= 0  \n    display cosine rounded to 1 decimal place  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887057",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T10:00:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887057\nPASSWORD: HY03IB\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\nv1 = x2 - x1\nv2 = x3 - x1\nv3 = y2 - y1\nv4 = y3 - y1\n\ncdot = v1*v3 + v2*v4\n\nvector1 = (v1*v1+v3*v3)/2\nvector2 = (v2*v2+v4*v4)/2\n\nans = (v1*v2)/(vector1*vector2)\n\nprint(ans)\n\nif ans >= 0:\n    print('ACUTE')\nelif ans == 0:\n    print('RIGHT')\nelif ans <0:\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nv1 = x2 minus x1  \nv2 = x3 minus x1  \nv3 = y2 minus y1  \nv4 = y3 minus y1  \n\ncdot = v1 times v3 plus v2 times v4  \n\nvector1 = (v1 times v1 plus v3 times v3) divided by 2  \nvector2 = (v2 times v2 plus v4 times v4) divided by 2  \n\nans = (v1 times v2) divided by (vector1 times vector2)  \n\ndisplay ans  \n\nif ans is greater than or equal to 0  \n    display ACUTE  \notherwise if ans is equal to 0  \n    display RIGHT  \notherwise if ans is less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:41:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: XNtsvl\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\n#Define a, b, c, d\na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\n\n#Dot Product\ndot_prod = (a*c)+(b*d)\n\n#Length of Vector\nl_v1 = (((a**2)+(b**2))**0.5)\nl_v2 = (((c**2)+(d**2))**0.5)\n\n#Cosine of Angle\ncos = round((dot_prod/(l_v1*l_v2)), 2)\n\nprint(cos)\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\ndot_prod = (a times c) plus (b times d)  \n\nl_v1 = (a squared plus b squared) to the power of 0.5  \nl_v2 = (c squared plus d squared) to the power of 0.5  \n\ncos = (dot_prod divided by (l_v1 times l_v2)) rounded to 2 decimal places  \n\ndisplay cos  \nif cos > 0  \n    display ACUTE  \notherwise if cos equals 0  \n    display RIGHT  \notherwise if cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887059",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:03:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887059\nPASSWORD: zsM3Fe\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\n# v1 = (x2 - x1 , y2 - y1)\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\nsol = (a*c)+(b*d)\na1 = (((a**2)+(b**2))**0.5)\na2 = (((c**2)+(d**2))**0.5)\n\ncos = sol/(a1*a2)\nprint(round(cos , 2))\n\nif cos > 0 :\n    print(\"ACUTE\")\nelif cos == 0 :\n    print(\"RIGHT\")\nelif cos < 0 :\n    print(\"OBTUSE\")    \n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nset a to x2 minus x1  \nset b to y2 minus y1  \nset c to x3 minus x1  \nset d to y3 minus y1  \n\nset sol to (a times c) plus (b times d)  \nset a1 to (a squared plus b squared) to the power of 0.5  \nset a2 to (c squared plus d squared) to the power of 0.5  \n\nset cos to sol divided by (a1 times a2)  \ndisplay cos rounded to 2 decimal places  \n\nif cos greater than 0  \n    display ACUTE  \notherwise if cos equals 0  \n    display RIGHT  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T10:00:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887060\nPASSWORD: 4PahLv\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=int(input())\nx3=int(input())\ny3=int(input())\n\n\na=(x2-x1)\nb=(y2-y1)\nc=(x3-x1)\nd=(y3-y1)\n\nv=(a*c)+(b*d)\n\nv1=(a**2+b**2)\nv2=(c**2+d**2)\n\n\ncos=round(v/(v1*v2), 2)\nprint(cos)\n\nif cos>0:\n    print('ACUTE')\nelif cos==0:\n    print('RIGHT')\nelif cos<0:\n    print('OBTUSE')\n\n\n",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\nset a to (x2 minus x1)\nset b to (y2 minus y1)\nset c to (x3 minus x1)\nset d to (y3 minus y1)\n\nset v to (a times c) plus (b times d)\n\nset v1 to (a to the power of 2) plus (b to the power of 2)\nset v2 to (c to the power of 2) plus (d to the power of 2)\n\nset cos to (v divided by (v1 times v2)) rounded to 2 decimal places\ndisplay cos\n\nif cos greater than 0\n    display ACUTE\notherwise if cos equal to 0\n    display RIGHT\notherwise if cos less than 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:00:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD: yJn7lS\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\nv1_v2 = (a * c) + (b * d)\nv1_ab = ((a ** 2)+(b ** 2)) ** (1/2)\nv2_ab = ((c ** 2)+(d ** 2)) ** (1/2)\n\ncos = v1_v2 / (v1_ab * v2_ab)\nprint(round(cos, 2))\n\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelif cos < 0 :\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv1_v2 = (a times c) plus (b times d)  \nv1_ab = ((a to the power of 2) plus (b to the power of 2)) to the power of (1 divided by 2)  \nv2_ab = ((c to the power of 2) plus (d to the power of 2)) to the power of (1 divided by 2)  \n\ncos = v1_v2 divided by (v1_ab times v2_ab)  \ndisplay cos rounded to 2 decimal places  \n\nif cos greater than 0  \n    display ACUTE  \nelif cos equals 0  \n    display RIGHT  \nelif cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:58:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: Y1WwsH\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\n\nv1a=(x2-x1)\nv1b=(y2-y1)\nv2a=(x3-x1)\nv2b=(y3-y1)\n\nv1=v1a*v2a\nv2=v1b*v2b\nv3=v1+v2\n\nx=(((v1a**2)+(v1b**2))**(1/2))\ny=(((v2a**2)+(v2b**2))**(1/2))\n\ncos = (v3)/(x*y)\n\nprint(round(cos,2))\nif (cos>0):\n    print(\"ACUTE\")\nelif (cos==0):\n    print(\"RIGHT\")\nelse:\n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nset v1a to (x2 minus x1)  \nset v1b to (y2 minus y1)  \nset v2a to (x3 minus x1)  \nset v2b to (y3 minus y1)  \n\nset v1 to (v1a times v2a)  \nset v2 to (v1b times v2b)  \nset v3 to (v1 plus v2)  \n\nset x to ((v1a to the power of 2) plus (v1b to the power of 2)) to the power of (1 divided by 2)  \nset y to ((v2a to the power of 2) plus (v2b to the power of 2)) to the power of (1 divided by 2)  \n\nset cos to (v3 divided by (x times y))  \n\ndisplay cos rounded to 2 decimal places  \nif cos is greater than 0  \n    display ACUTE  \notherwise if cos is equal to 0  \n    display RIGHT  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "2/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:59:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD: Jsbf6k\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\na = (x2-x1)\nb = (y2-y1)\nc = (x3-x1)\nd = (y3-y1)\nv1 = (a and b)\nv2 = (c and b)\ndot = (d*c)+(b*a)\nw1 = (a**2+b**2)\nw2 = (c**2+d**2)\ncos = dot/w1*w2\nprint(round(c,2))\nif cos > 0 :\n    print(\"ACUTE\")\nelif cos == 0:\n    print('RIGHT')\nelse:\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nv1 = a and b  \nv2 = c and b  \ndot = (d times c) plus (b times a)  \nw1 = a to the power of 2 plus b to the power of 2  \nw2 = c to the power of 2 plus d to the power of 2  \ncos = dot divided by w1 times w2  \nc rounded to 2 decimal places  \nif cos > 0  \n    display ACUTE  \nelif cos == 0  \n    display RIGHT  \nelse  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:23:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: eejGC5\nEXERCISEID: itds120-cp1-q4\n */\n'''\n#cos 0 =? cos 30 = root3/2 cos 45 =root2/2 cos60 = 1/root2 cos90 = 0\n# YOUR CODE GOES HERE\nx1 = int(input()) \ny1 = int(input()) \nx2 = int(input()) \ny2 = int(input()) \nx3 = int(input()) \ny3 = int(input()) \na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\ndotprod = (((a)*(c))+((b)*(d)))\nab_dotprod = (((a**2)+(b**2))**0.5)*(((c**2)+(d**2))**0.5)\nangle = dotprod/ab_dotprod\nprint(round(angle,2))\nif angle > 0:\n    print('ACUTE')\nelif angle == 0:\n    print('RIGHT')\nelif angle < 0:\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \nset a to x2 minus x1  \nset b to y2 minus y1  \nset c to x3 minus x1  \nset d to y3 minus y1  \nset dotprod to (a times c) plus (b times d)  \nset ab_dotprod to (a squared plus b squared) to the power of 0.5 times (c squared plus d squared) to the power of 0.5  \nset angle to dotprod divided by ab_dotprod  \ndisplay angle rounded to 2 decimal places  \nif angle > 0  \n    display ACUTE  \nelif angle == 0  \n    display RIGHT  \nelif angle < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:52:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887065\nPASSWORD: OGqLMF\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\ndot = (a*c) + (b*d)\nlength1 = ((a**2)+(b**2))**(1/2)\nlength2 = ((c**2)+(d**2))**(1/2)\ncosine = dot/(length1 * length2)\n\nprint(round(cosine , 2))\n\nif cosine > 0 :\n    print('ACUTE')\nelif cosine == 0 :\n    print('RIGHT')\nelse :\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\ndot = (a times c) plus (b times d)  \nlength1 = (a squared plus b squared) to the power of 0.5  \nlength2 = (c squared plus d squared) to the power of 0.5  \ncosine = dot divided by (length1 times length2)  \n\ndisplay cosine rounded to 2 decimal places  \n\nif cosine > 0  \n    display ACUTE  \notherwise if cosine == 0  \n    display RIGHT  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:48:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD: qaFmRT\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\na = (x2-x1)\nb = (y2-y1)\nc = (x3-x1)\nd = (y3-y1)\nv12 = (a*c)+(b*d)\nv1 = ((a**2)+(b**2))**0.5\nv2 = ((c**2)+(d**2))**0.5\ncos = v12/(v1*v2)\nprint (round(cos, 2))\nif cos>0 :\n    print('ACUTE')\nelif cos==0 :\n    print ('RIGHT')\nelif cos<0 :\n    print ('OBTUSE')",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\nv12 = (a times c) plus (b times d)\nv1 = (a to the power of 2) plus (b to the power of 2) rounded to 0.5\nv2 = (c to the power of 2) plus (d to the power of 2) rounded to 0.5\ncos = v12 divided by (v1 times v2)\ndisplay cos rounded to 2 decimal places\nif cos greater than 0\n    display ACUTE\notherwise if cos equal to 0\n    display RIGHT\notherwise if cos less than 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "1/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: ERROR, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:57:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887067\nPASSWORD: IZptmr\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = float(input())\nx2 = float(input())\nx3 = float(input())\ny1 = float(input())\ny2 = float(input())\ny3 = float(input())\n\n# ab = (x2-x1, y2-y1)\n# cd = (x3-x1, y3-y1)\n# v1 = ab\n# V2 = cd\n# dt = (v1) + (b*d) \n# lv = ((a**2)+(b**2))/2\n# lv2 = ((c**2)+(d**2))/2\n# cos = ((v1*v2)/(lv*lv2))\na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\n# v1 = (a and b)\n# v2 = (c and d)\ndt = ((a*c)+(b*d))\nlv = ((a**2)+(b**2)/2)\nlv2 = ((c**2)+(d**2)/2)\ncos = (((a*b) * (c*d))/(lv * lv2))\nif cos > 0:\n    print(round(cos, 2))\n    print('ACUTE')\nelif cos == 0:\n    print(round(cos, 2))\n    print('RIGHT')\nelif cos < 0:\n    print(round(cos, 2))\n    print('OBTYSE')",
+    "Pseudocode": "get x1  \nget x2  \nget x3  \nget y1  \nget y2  \nget y3  \n\nset a to x2 minus x1  \nset b to y2 minus y1  \nset c to x3 minus x1  \nset d to y3 minus y1  \nset dt to (a times c) plus (b times d)  \nset lv to (a squared plus (b squared divided by 2))  \nset lv2 to (c squared plus (d squared divided by 2))  \nset cos to ((a times b) times (c times d)) divided by (lv times lv2)  \n\nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \notherwise if cos equals 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \notherwise if cos less than 0  \n    display cos rounded to 2 decimal places  \n    display OBTYSE"
+  },
+  {
+    "User ID": "6887068",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:58:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887068\nPASSWORD: fi5JFi\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = (x2-x1)\nb = (y2-y1)\nc = (x3-x1)\nd = (y3-y1)\ndot = ((a * c) + (b * d))\n\nab_v1 =  ((a) **2 + (b) **2)\nab_v2 =  ((c) **2 + (d) **2)\n\n\n\ncos = (dot / (ab_v1 * ab_v2))\n\nif cos > 0 :\n    print(round(cos, 2))\n    print('ACUTE')\n\nelif cos == 0:\n    print(round(cos, 2))\n    print('RIGHT')\n\nelif cos < 0 :\n    print(round(cos, 2))\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nset a to (x2 minus x1)  \nset b to (y2 minus y1)  \nset c to (x3 minus x1)  \nset d to (y3 minus y1)  \nset dot to ((a times c) plus (b times d))  \n\nset ab_v1 to ((a to the power of 2) plus (b to the power of 2))  \nset ab_v2 to ((c to the power of 2) plus (d to the power of 2))  \n\nset cos to (dot divided by (ab_v1 times ab_v2))  \n\nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \notherwise if cos equals 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \notherwise if cos less than 0  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887069",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:58:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887069\nPASSWORD: CLuzX8\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:18:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: rzCl1a\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nfrom math import sqrt\n\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\na=x2-x1\nb=y2-y1\nc=x3-x1\nd=y3-y1\nv3 = (a*c)+(b*d)\nv4 = sqrt((a**2)+(b**2))\nv5 = sqrt((c**2)+(d**2))\nv6 = v4*v5\ncos=(v3)/(v6)\nprint(round(cos, 2))\nif cos > 0:\n    print(\"ACUTE\")\nelif cos == 0:\n    print(\"RIGHT\")\nelif cos < 0:\n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\nv3 = (a times c) plus (b times d)\nv4 = (a to the power of 2) plus (b to the power of 2) square rooted\nv5 = (c to the power of 2) plus (d to the power of 2) square rooted\nv6 = v4 times v5\ncos = v3 divided by v6\ndisplay cos rounded to 2 decimal places\nif cos greater than 0\n    display ACUTE\notherwise if cos equals 0\n    display RIGHT\notherwise if cos less than 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887071",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "1/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T10:00:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887071\nPASSWORD: OeB1QK\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1  = float(input())\nx2  = float(input())\ny2  = float(input())\nx3  = float(input())\ny3  = float(input())\nv1 = x2 - x1\nv2 = y2 -y1\nv3 = x3 - x1\nv4 = y3 -y1\na = v1\nb = v2\nc = v3\nd = v4\n\no1 =a *c\no2 = c *d \nV1 = (a**2) + (b**2)\nV2 = (c**2) + (d**2)\nCosineofAngle = (o1 * o2)/ (V1 * V1)\n\n\nif CosineofAngle > 0 :\n    print(round(CosineofAngle,1))\n    print('ACUTE')\nif CosineofAngle == 0 :\n    print(round(CosineofAngle,1))\n    print('RIGHT')\nif CosineofAngle < 0 :\n    print(round(CosineofAngle,1))\n    print('OBTUSE')\n \n\n\n\n\n\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \nv1 = x2 minus x1  \nv2 = y2 minus y1  \nv3 = x3 minus x1  \nv4 = y3 minus y1  \na = v1  \nb = v2  \nc = v3  \nd = v4  \n\no1 = a times c  \no2 = c times d  \nV1 = (a to the power of 2) plus (b to the power of 2)  \nV2 = (c to the power of 2) plus (d to the power of 2)  \nCosineofAngle = (o1 times o2) divided by (V1 times V1)  \n\nif CosineofAngle > 0  \n    display CosineofAngle rounded to 1 decimal place  \n    display ACUTE  \nif CosineofAngle == 0  \n    display CosineofAngle rounded to 1 decimal place  \n    display RIGHT  \nif CosineofAngle < 0  \n    display CosineofAngle rounded to 1 decimal place  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "5/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: PASS, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:58:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: oXatBP\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=int(input())\ny1=int(input())\nx2=int(input())\ny2=int(input())\nx3=int(input())\ny3=int(input())\na=x2-x1\nb=y2-y1\nc=x3-x1\nd=y3-y1\nDP=(a*c)+(b*d)\nv1=(((a**2)**1/2)+((b**2)**1/2))\nv2=(((c**2)**1/2)+((d**2)**1/2))\ncosθ=(round((v1*v2)/(v1*v2),2)*DP)/10\nprint(cosθ)\nif cosθ>0:\n    print(\"ACUTE\")\nelif cosθ==0:\n    print(\"RIGHT\")\nelif cosθ<0:\n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nDP = (a times c) plus (b times d)  \nv1 = (a to the power of 2) plus (b to the power of 2) rounded to 1 decimal place  \nv2 = (c to the power of 2) plus (d to the power of 2) rounded to 1 decimal place  \ncosθ = (v1 times v2 divided by (v1 times v2)) times DP divided by 10  \ndisplay cosθ  \nif cosθ greater than 0  \n    display ACUTE  \notherwise if cosθ equals 0  \n    display RIGHT  \notherwise if cosθ less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:55:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: GwBpPA\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nX1 = float(input())\nY1 = float(input())\nX2 = float(input())\nY2 = float(input())\nX3 = float(input())\nY3 = float(input())\na = X2-X1\nb = Y2-Y1\nc = X3-X1\nd = Y3-Y1\nZ = a*c+b*d\nv1 = (a**2 + b**2)/(1/2**-2)\nv2 = (c**2 + d**2)/(1/2**-2)\nCos = Z/(v1*v2) \nprint(round(Cos, 2))\nif Cos > 0 :\n    print('ACUTE')\nelif Cos == 0 :\n    print('RIGHT')\nelif Cos < 0 :\n    print('OBTUSE')\n\n\n",
+    "Pseudocode": "get X1\nget Y1\nget X2\nget Y2\nget X3\nget Y3\na = X2 minus X1\nb = Y2 minus Y1\nc = X3 minus X1\nd = Y3 minus Y1\nZ = a times c plus b times d\nv1 = (a squared plus b squared) divided by (1 divided by 2 to the power of -2)\nv2 = (c squared plus d squared) divided by (1 divided by 2 to the power of -2)\nCos = Z divided by (v1 times v2)\ndisplay Cos rounded to 2 decimal places\nif Cos greater than 0\n    display ACUTE\notherwise if Cos equals 0\n    display RIGHT\notherwise if Cos less than 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:58:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887074\nPASSWORD: eR8vK4\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\nv1 = (a,b)\nv2 = (c,d)\nd = (a * c)+(b * d)\ncos = d / (a+b**2)*(b+d**2)\nprint(round(cos,2))\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelif cos < 0 :\n    print('OBTUSE')",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\nd = (a times c) plus (b times d)\ncos = d divided by (a plus (b times b)) times (b plus (d times d))\ndisplay cos rounded to 2 decimal places\nif cos > 0\n    display ACUTE\notherwise if cos == 0\n    display RIGHT\notherwise if cos < 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:57:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: Zl66FF\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nimport math\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = (x2 - x1)\nb = (y2 - y1)\nc = (x3 - x1)\nd = (y3 - y1)\nv1v2 = (a * c) + (b * d)\nv1 = math.sqrt((a**2) + (b**2))\nv2 = math.sqrt((c**2) + (d**2))\ncos = (v1v2)/(v1*v2)\n\nif cos > 0:\n    print(round(cos, 2))\n    print('ACUTE')\nelif cos == 0:\n    print(round(cos, 2))\n    print('RIGHT')\nelif cos < 0:\n    print(round(cos, 2))\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nv1v2 = (a times c) plus (b times d)  \nv1 = (a squared plus b squared) square rooted  \nv2 = (c squared plus d squared) square rooted  \ncos = v1v2 divided by (v1 times v2)  \n\nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \nelif cos equals 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \nelif cos less than 0  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:13:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: gdPINQ\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nfrom math import sqrt\n\n\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\n\nv1=(x2-x1,y2-y1)\nv2=(x3-x1,y3-y1)\n\ndot=((x2-x1) * (x3-x1)) + ((y2-y1) * (y3-y1))\n\nlongv1=sqrt((((x2+x1)**2) + ((y2+y1)**2)))\n\nlongv2=sqrt((((x3+x1)**2) + ((y3+y1)**2)))\n\nans=(dot)/((longv1)*(longv2))\n\nprint(round(ans,2))\n\nif ans>0:\n    print('ACUTE')\nelif ans==0:\n    print('RIGHT')\nelse:\n    print('OBTUSE')\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nset v1 to (x2 minus x1, y2 minus y1)  \nset v2 to (x3 minus x1, y3 minus y1)  \n\nset dot to ((x2 minus x1) times (x3 minus x1)) plus ((y2 minus y1) times (y3 minus y1))  \n\nset longv1 to sqrt((((x2 plus x1) to the power of 2) plus ((y2 plus y1) to the power of 2)))  \nset longv2 to sqrt((((x3 plus x1) to the power of 2) plus ((y3 plus y1) to the power of 2)))  \n\nset ans to (dot divided by (longv1 times longv2))  \n\ndisplay ans rounded to 2 decimal places  \n\nif ans greater than 0  \n    display ACUTE  \notherwise if ans equals 0  \n    display RIGHT  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:54:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: 79whZz\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\n\nx2 = int(input())\ny2 = int(input())\n\nx3 = int(input())\ny3 = int(input())\n\na = x2-x1\nb = y2-y1\nv1 = (a,b)\n\nc = x3-x1\nd = y3-y1\nv2 = (c,d)\n\n\n\nv11 = (a**2 + b**2)**0.5\nv22 = (c**2 + d**2)**0.5\n\ncos = (a*c + b*d)/(v11*v22)\n\nprint(round(cos, 2))\n\nif cos>0:\n    print('ACUTE')\nelif cos==0:\n    print('RIGHT')\nelse:\n    print('OBTUSE')\n\n#true",
+    "Pseudocode": "get x1  \nget y1  \n\nget x2  \nget y2  \n\nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nv1 = (a, b)  \n\nc = x3 minus x1  \nd = y3 minus y1  \nv2 = (c, d)  \n\nv11 = (a squared plus b squared) to the power of 0.5  \nv22 = (c squared plus d squared) to the power of 0.5  \n\ncos = (a times c plus b times d) divided by (v11 times v22)  \n\ndisplay cos rounded to 2 decimal places  \n\nif cos greater than 0  \n    display ACUTE  \notherwise if cos equal to 0  \n    display RIGHT  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887078",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "1/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: PASS, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T10:00:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887078\nPASSWORD: Dy9s6r\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = x2-x1\nb = y2-y1 \nc = x3-x1\nd = y3-y1\n\ncos = ((a*c)+(b*d))/((a**2)+(b**2))\n\nif cos >= 0 :\n    print(round(cos, 2))\n    print(\"ACUTE\")\nelif cos == 0 :\n    print(round(cos, 2))\n    print(\"RIGHT\")\nelif cos <= 0 :\n    print(round(cos, 2))\n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\ncos = (a times c plus b times d) divided by (a to the power of 2 plus b to the power of 2)  \n\nif cos is greater than or equal to 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \notherwise if cos is equal to 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \notherwise if cos is less than or equal to 0  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887079",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:39:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887079\nPASSWORD: 4MRWAs\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 =float(input())\ny1 =float(input())\nx2 =float(input())\ny2 =float(input())\nx3 =float(input())\ny3 =float(input())\n\n(x1, y1) = (2, 2)\n(x2, y2) = (5, 6)\n(x3, y3) = (-2, 5)\n\n\n\nprint(f'{round(x1,2)}')\nprint(f'{round(y1,2)}')\nprint(f'{round(x2,2)}')\nprint(f'{round(y2,2)}')\nprint(f'{round(x3,2)}')\nprint(f'{round(y3,2)}')\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nset x1 to 2  \nset y1 to 2  \nset x2 to 5  \nset y2 to 6  \nset x3 to -2  \nset y3 to 5  \n\ndisplay x1 rounded to 2 decimal places  \ndisplay y1 rounded to 2 decimal places  \ndisplay x2 rounded to 2 decimal places  \ndisplay y2 rounded to 2 decimal places  \ndisplay x3 rounded to 2 decimal places  \ndisplay y3 rounded to 2 decimal places"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:07:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: tS8hYY\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\nv = a*c+b*d\nvv = ((a*a+b*b)**(1/2)) * ((c*c+d*d)**(1/2))\ncos = v/vv\nprint(round(cos,2))\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelse :\n    print('OBTUSE')",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\nv = a times c plus b times d\nvv = (a times a plus b times b) to the power of 1 divided by 2 times (c times c plus d times d) to the power of 1 divided by 2\ncos = v divided by vv\ndisplay cos rounded to 2 decimal places\nif cos > 0\n    display ACUTE\nelif cos == 0\n    display RIGHT\nelse\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:01:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: 2kQm3k\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\n\na=x2-x1\nb=y2-y1\nc=x3-x1\nd=y3-y1\n\nup=a*c+b*d\ndown=(((a**2)+(b**2))**(1/2))*(((c**2)+(d**2))**(1/2))\n\ncos=up/down\n\nprint(round(cos,2))\n\nif cos==0:\n    print('RIGHT')\nelif cos>=0:\n    print('ACUTE')\nelse:\n    print('OBTUSE')\n\n\n\n\n\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nup = a times c plus b times d  \ndown = ((a to the power of 2 plus b to the power of 2) to the power of 0.5) times ((c to the power of 2 plus d to the power of 2) to the power of 0.5)  \n\ncos = up divided by down  \n\ncos rounded to 2 decimal places  \n\nif cos equals 0  \n    display RIGHT  \notherwise if cos greater than or equal to 0  \n    display ACUTE  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:44:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: pklcAs\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\n\nv1=(x2-x1,y2-y1)==(a,b)\nv2=(x3-x1,y3-y1)==(c,d)\nv1*v2==((a*c)+(b*d))\nabs(v1)==(((a**2)+(b**2))**2)\nabs(v2)==(((c**2)+(d**2))**2)\ncos=((v1*v2)/(abs(v1)*abs(v2)))\n\nif cos>0:\n    print('ACUTE')\nelif cos==0:\n    print('RIGHT')\nelif cos<0:\n    print('OBTUSE')\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nv1 = (x2 minus x1, y2 minus y1) equals (a, b)  \nv2 = (x3 minus x1, y3 minus y1) equals (c, d)  \nv1 times v2 equals (a times c plus b times d)  \nabs(v1) equals ((a to the power of 2 plus b to the power of 2) to the power of 2)  \nabs(v2) equals ((c to the power of 2 plus d to the power of 2) to the power of 2)  \ncos equals (v1 times v2) divided by (abs(v1) times abs(v2))  \n\nif cos greater than 0  \n    display ACUTE  \nelif cos equals 0  \n    display RIGHT  \nelif cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887083",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T10:00:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887083\nPASSWORD: QiI5wB\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na= x2-x1\nb= y2-y1\nc= x3-x1\nd= y3-y1\n \nv1 = (x2 - x1, y2 - y1) = (a,b)\nv2 = (x3 - x1, y3 - y1) = (c,d)\n\n\n\n",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\n\nv1 = (a, b)\nv2 = (c, d)"
+  },
+  {
+    "User ID": "6887084",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:48:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887084\nPASSWORD: zYxEJl\nEXERCISEID: itds120-cp1-q4\n */\n'''\nx1=int(input())\ny1=int(input())\nx2=int(input())\ny2=int(input())\nx3=int(input())\ny3=int(input())\n\n(a,b)=(x2-x1,y2-y1)\nv1=(x2-x1,y2-y1)\nv2=(x3-x1,y3-y1)\n(c,d)=(x3-x1,y3-y1)\nv1==(a,b)\nv2==(c,d)\nstr(v1*v2)==str(a*c)+str(b*d)\n\n\n\n\n\n\n\nif cosθ >0:\n    print('ACUTE')\nelif cosθ == 0:\n    print('RIGHT')\nelif cosθ <0:\n    print('OBTUSE')\nelse:\n    print('c')\n# YOUR CODE GOES HERE\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nset a to (x2 minus x1)  \nset b to (y2 minus y1)  \nset v1 to (x2 minus x1, y2 minus y1)  \nset v2 to (x3 minus x1, y3 minus y1)  \nset c to (x3 minus x1)  \nset d to (y3 minus y1)  \nset v1 to (a, b)  \nset v2 to (c, d)  \nset comparison to (v1 times v2) equals (a times c plus b times d)  \n\nif cosθ greater than 0  \n    display ACUTE  \notherwise if cosθ equals 0  \n    display RIGHT  \notherwise if cosθ less than 0  \n    display OBTUSE  \notherwise  \n    display c"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:58:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: LFlH3c\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n#v1 = float(input())\n#v2 = float(input())\nx1 = float(input())\nx2 = float(input())\nx3 = float(input())\ny1 = float(input())\ny2 = float(input())\ny3 = float(input())\n\n#(v1*v2) =(a*c)+(b*d)\n\n",
+    "Pseudocode": "get x1  \nget x2  \nget x3  \nget y1  \nget y2  \nget y3  \nv1 = x1 times x2  \nv2 = y1 times y2  \nresult = (v1 times v2) equals (x3 times y3)"
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:44:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: Cw2p63\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\ndot_product = (a * c) + (b * d)\nv1= ((a**2)+(b**2))**0.5\nv2= ((c**2)+(d**2))**0.5\ncos = round(dot_product / (v1 * v2),2)\nprint(cos)\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\ndot_product = (a times c) plus (b times d)\nv1 = (a to the power of 2) plus (b to the power of 2) rounded to 0.5\nv2 = (c to the power of 2) plus (d to the power of 2) rounded to 0.5\ncos = dot_product divided by (v1 times v2) rounded to 2 decimal places\ndisplay cos\nif cos > 0\n    display ACUTE\nelif cos == 0\n    display RIGHT\nelif cos < 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887087",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:58:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887087\nPASSWORD: SdlJU6\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\n# v1 = ((x2 - x1), (y2 - y1)) = (a,b)\n# v2 = ((x3 - x1), (y3 - y1)) = (c,d)\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\n# dot product\nf = (a*c)+(b*d)\n\n# vector\nv1 = ((a**2) + (b**2))\nv2 = ((c**2) + (d**2))\n\ncos = (f)/(v1*v2)\n\ncos = round(cos, 2)\n\nif cos == 0 :\n    print(str(cos))\n    print(\"RIGHT\")\nelif cos > 0 :\n    print(str(cos))\n    print(\"ACUTE\")\nelse :\n    print(str(cos))\n    print(\"OBTUSE\")\n\n\n\n\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nf = (a times c) plus (b times d)  \n\nv1 = (a to the power of 2) plus (b to the power of 2)  \nv2 = (c to the power of 2) plus (d to the power of 2)  \n\ncos = f divided by (v1 times v2)  \n\ncos = cos rounded to 2 decimal places  \n\nif cos equals 0  \n    display cos as string  \n    display RIGHT  \notherwise if cos greater than 0  \n    display cos as string  \n    display ACUTE  \notherwise  \n    display cos as string  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T10:00:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: S1spOB\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\na=x2-x1\nb=y2-y1\nc=x3-x1\nd=y3-y1\nv=(a*c)+(b*d)\nv1=((a**2)+(b**2))\nv2=((c**2)+(d**2))\ncos=round(v/(v1)*(v2),2)\nprint(cos)\nif cos>0:\n    print('ACUTE')\nelif cos==0:\n    print('RIGHT')\nelse :\n    print('OBTUSE')\n    \n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nv = (a times c) plus (b times d)  \nv1 = (a to the power of 2) plus (b to the power of 2)  \nv2 = (c to the power of 2) plus (d to the power of 2)  \ncos = v divided by v1 times v2 rounded to 2 decimal places  \ndisplay cos  \nif cos > 0  \n    display ACUTE  \notherwise if cos equals 0  \n    display RIGHT  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:18:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: cwbj32\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = float(x2-x1)\nb = float(y2-y1)\nc = float(x3-x1)\nd = float(y3-y1)\n\nv1 = (a,b)\nv2 = (c,d)\n\n\nv1v2 = a*c+b*d\n\nvv1 = (a**2+b**2)**0.5\nvv2 = (c**2+d**2)**0.5\n\ncos = round((v1v2)/(vv1*vv2),2)\n\nif (cos > 0):\n    print(cos)\n    print('ACUTE')\nelif (cos < 0):\n    print(cos)\n    print('OBTUSE')\nelse:\n    print(cos)\n    print('RIGHT')\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv1 = (a, b)  \nv2 = (c, d)  \n\nv1v2 = a times c plus b times d  \n\nvv1 = (a squared plus b squared) to the power of 0.5  \nvv2 = (c squared plus d squared) to the power of 0.5  \n\ncos = (v1v2 divided by (vv1 times vv2)) rounded to 2 decimal places  \n\nif cos greater than 0  \n    display cos  \n    display ACUTE  \nelif cos less than 0  \n    display cos  \n    display OBTUSE  \nelse  \n    display cos  \n    display RIGHT"
+  },
+  {
+    "User ID": "6887090",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:06:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887090\nPASSWORD: toYhLh\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=int(input())\ny1=int(input())\nx2=int(input())\ny2=int(input())\nx3=int(input())\ny3=int(input())\na= (x2 - x1)\nb= (y2 - y1)\nc= (x3 - x1)\nd= (y3 - y1)\nv3= a * c + b * d\nv4= ((a**2) + (b**2))**(1/2)\nv5= ((c**2) + (d**2))**(1/2)\ncos= v3 / (v4*v5)\ncos=round(cos, 2)\nprint(cos)\nif cos>0:\n   print('ACUTE')\nelif cos==0:\n   print('RIGHT')\nelse:\n   print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nv3 = a times c plus b times d  \nv4 = (a squared plus b squared) to the power of 0.5  \nv5 = (c squared plus d squared) to the power of 0.5  \ncos = v3 divided by (v4 times v5)  \ncos = cos rounded to 2 decimal places  \ndisplay cos  \nif cos greater than 0  \n    display ACUTE  \nelif cos equal to 0  \n    display RIGHT  \nelse  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "1/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: FAIL, CASE 6: ERROR, CASE 7: ERROR, CASE 8: PASS, CASE 9: FAIL, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:59:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: qanzAA\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n#input\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\n#Mark a b c d\na = (x2-x1)\nb = (y2-y1)\nc = (x3-x1)\nd = (y3-y1)\n\n#Find dot product\nv1xv2 = a * c + b * d\n\n#Find Length of vector\nv1 = ((a**2)/a + (b**2)/b)\nv2 = ((c**2)/c + (d**2)/d)\n\n#Find Cosine of Angle\ncos = (v1xv2)/(v1*v2)\n\n#output\nprint(round(cos, 2))\n\nif cos > 0:\n    print(\"ACUTE\")\nelif cos == 0:\n    print(\"RIGHT\")\nelif cos < 0:\n    print(\"OBTUSE\")\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv1xv2 = a times c plus b times d  \n\nv1 = (a to the power of 2) divided by a plus (b to the power of 2) divided by b  \nv2 = (c to the power of 2) divided by c plus (d to the power of 2) divided by d  \n\ncos = v1xv2 divided by (v1 times v2)  \n\ncos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise if cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:38:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887093\nPASSWORD: rRac9z\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\n\na = x2-x1\nb = y2-y1\nv1 = a,b\n\nc = x3-x1\nd = y3-y1\nv2 = c,d\n\nv1v2 = (a*c)+(b*d)\n\n\nlengthv1 = (a**2+b**2)//2==0 and  \nlengthv2 = (c**2+d**2)//2==0\n\ncos =(v1v2)/(lengthv1*lengthv2)\nprint(round(cos,2))\n\nif cos>0:\n    print(\"ACUTE\")\nelif cos==0:\n    print(\"RIGHT\")\nelif cos<0:\n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nv1 = a, b  \n\nc = x3 minus x1  \nd = y3 minus y1  \nv2 = c, d  \n\nv1v2 = (a times c) plus (b times d)  \n\nlengthv1 = (a to the power of 2 plus b to the power of 2) divided by 2 equals 0 and  \nlengthv2 = (c to the power of 2 plus d to the power of 2) divided by 2 equals 0  \n\ncos = v1v2 divided by (lengthv1 times lengthv2)  \ndisplay cos rounded to 2 decimal places  \n\nif cos greater than 0  \n    display ACUTE  \nelif cos equals 0  \n    display RIGHT  \nelif cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887094",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:22:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887094\nPASSWORD: eiXpCs\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = (x2 - x1)\nb = (y2 - y1)\nc = (x3 - x1)\nd = (y3 - y1)\n\nabv1 = ((a ** 2) + (b ** 2)) ** (1 / 2)\nabv2 = ((c ** 2) + (d ** 2)) ** (1 / 2)\n\nv3 = (a * c) + (b * d)\n\ncos = (v3/(abv1 * abv2))\n\nprint(round(cos, 2))\n\nif cos > 0 :\n    print(\"ACUTE\")\nelif cos < 0 :\n    print(\"OBTUSE\")\nelse :\n    print(\"RIGHT\")",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nabv1 = (a squared plus b squared) to the power of 1 divided by 2  \nabv2 = (c squared plus d squared) to the power of 1 divided by 2  \n\nv3 = (a times c) plus (b times d)  \n\ncos = v3 divided by (abv1 times abv2)  \n\ndisplay cos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \notherwise if cos < 0  \n    display OBTUSE  \notherwise  \n    display RIGHT"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:53:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: QOoqdw\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na =x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\n\ndot_product = (a*c)+(b*d)\n\nlength_of_vector1 = ((a**2)+(b**2))**0.5\n\nlength_of_vector2 = ((c**2)+(d**2))**0.5\n\n\ncos_zeta = dot_product / (length_of_vector1*length_of_vector2)\n\nprint(round(float(cos_zeta), 2))\n\nif cos_zeta > 0:\n    print('ACUTE')\nelif cos_zeta == 0:\n    print('RIGHT')\nelse:\n    print('OBTUSE')\n\n",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\n\ndot_product = (a times c) plus (b times d)\n\nlength_of_vector1 = (a squared) plus (b squared) all under square root\n\nlength_of_vector2 = (c squared) plus (d squared) all under square root\n\ncos_zeta = dot_product divided by (length_of_vector1 times length_of_vector2)\n\ndisplay cos_zeta rounded to 2 decimal places\n\nif cos_zeta > 0\n    display ACUTE\nelif cos_zeta == 0\n    display RIGHT\nelse\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:09:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: OH40wh\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 =float(input())\ny1 =float(input())\nx2 =float(input())\ny2 =float(input())\nx3 =float(input())\ny3 =float(input())\n\na=x2-x1\nb=y2-y1\nc=x3-x1\nd=y3-y1\n\ndot = a*c+b*d\nv1sqrt=(a**2+b**2)**0.5\nv2sqrt=(c**2+d**2)**0.5\ncos=dot/(v1sqrt*v2sqrt)\n \nprint(round(cos,2))\n\nif cos>0:\n    print('ACUTE')\nelif cos==0:\n    print('RIGHT')\nelse:\n    print('OBTUSE')\n\n\n",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\n\ndot = a times c plus b times d\nv1sqrt = (a to the power of 2 plus b to the power of 2) to the power of 0.5\nv2sqrt = (c to the power of 2 plus d to the power of 2) to the power of 0.5\ncos = dot divided by (v1sqrt times v2sqrt)\n\ndisplay cos rounded to 2 decimal places\n\nif cos greater than 0\n    display ACUTE\notherwise if cos equal to 0\n    display RIGHT\notherwise\n    display OBTUSE"
+  },
+  {
+    "User ID": "6887097",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:59:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887097\nPASSWORD: 13BWr4\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n##v1 = (x2 - x1, y2 - y1)\nv2 = (x3 - x1, y3 - y1)\nu1 = ((x2-x1)*(y2-y1))\nu2 = ((x3-x1)*(y3-y1))\n\nyu1 = u1 + u2\nvl1 = 0.5**(((x2-x1)**2)+ ((y2-y1)**2))\nvl2 = 0.5**(((x3-x1)**2)+ ((y3-y1)**2))\nvex = yu1 / (vl1*vl2)\nprint(vex)\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \nv2 = (x3 minus x1, y3 minus y1)  \nu1 = (x2 minus x1) times (y2 minus y1)  \nu2 = (x3 minus x1) times (y3 minus y1)  \nyu1 = u1 plus u2  \nvl1 = 0.5 to the power of ((x2 minus x1) to the power of 2 plus ((y2 minus y1) to the power of 2))  \nvl2 = 0.5 to the power of ((x3 minus x1) to the power of 2 plus ((y3 minus y1) to the power of 2))  \nvex = yu1 divided by (vl1 times vl2)  \ndisplay vex"
+  },
+  {
+    "User ID": "6887098",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "2/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: ERROR, CASE 3: FAIL, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:39:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887098\nPASSWORD: ZECAxI\nEXERCISEID: itds120-cp1-q4\n *\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\nv1a = (x2-x1)\nv1b = (y2-y1)\nv2c = (x3-x1)\nv2d = (y3-y1)\n\ndot = v1a * v2c + v1b * v2d\nlength1 = 0\nlength2 = 1\nlengthv1 = float()\nlengthv2 = float()\n\nif v1a == 0 and v1b == 0:\n    length1\n    lengthv1 = length1\n    lengthv2 = length1\n\nelif v1a == 1 or v1b == 1 :\n    length2\n    lengthv1 = length2\n    lengthv2 = length2\n\ncosine = dot/((lengthv1*lengthv2))\nprint(round(cosine,2))\n\nif cosine > 0:\n    print ('ACUTE')\nelif cosine == 0:\n    print('RIGHT')\nelif cosine < 0 :\n    print('OBTUSE')\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nv1a = x2 minus x1  \nv1b = y2 minus y1  \nv2c = x3 minus x1  \nv2d = y3 minus y1  \n\ndot = v1a times v2c plus v1b times v2d  \nlength1 = 0  \nlength2 = 1  \nlengthv1 = float()  \nlengthv2 = float()  \n\nif v1a equals 0 and v1b equals 0  \n    length1  \n    lengthv1 = length1  \n    lengthv2 = length1  \notherwise if v1a equals 1 or v1b equals 1  \n    length2  \n    lengthv1 = length2  \n    lengthv2 = length2  \n\ncosine = dot divided by (lengthv1 times lengthv2)  \ndisplay cosine rounded to 2 decimal places  \n\nif cosine greater than 0  \n    display ACUTE  \notherwise if cosine equals 0  \n    display RIGHT  \notherwise if cosine less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:36:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: 7quhAy\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na = (x2-x1)\nb = (y2-y1)\nc = (x3-x1)\nd = (y3-y1)\n\nDP = (a*c)+(b*d)\nLoV1 = (a**2+b**2)**(1/2)\nLov2 = (c**2+d**2)**(1/2)\n\ncosA = (DP/(Lov2*LoV1))\nprint(round(cosA,2))\n      \nif cosA > 0 :\n    print(\"ACUTE\")\nelif cosA == 0 :\n    print(\"RIGHT\")\nelse : \n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = (x2 minus x1)  \nb = (y2 minus y1)  \nc = (x3 minus x1)  \nd = (y3 minus y1)  \n\nDP = (a times c) plus (b times d)  \nLoV1 = (a squared plus b squared) to the power of 0.5  \nLov2 = (c squared plus d squared) to the power of 0.5  \n\ncosA = (DP divided by (Lov2 times LoV1))  \ndisplay cosA rounded to 2 decimal places  \n\nif cosA > 0  \n    display ACUTE  \nelif cosA == 0  \n    display RIGHT  \nelse  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:42:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: YhFcZ1\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=int(input())\ny1=int(input())\nx2=int(input())\ny2=int(input())\nx3=int(input())\ny3=int(input())\na=int(x2-x1)\nb=int(y2-y1)\nc=int(x3-x1)\nd=int(y3-y1)\n\n\n\nv1_v2=(a*c)+(b*d)\nvplus=((a)**2+(b)**2)**1/2\n\nvsuperplus=((c)**2+(d)**2)**1/2\n\ncos=(v1_v2)/((vplus)*(vsuperplus))\ncos=(round(cos,2))\nprint(cos)\nif cos>0:\n    print(\"ACUTE\")\nelif cos==0:\n    print(\"RIGHT\")\nelif cos<0:\n    print(\"OBTUSE\")\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv1_v2 = (a times c) plus (b times d)  \nvplus = (a to the power of 2) plus (b to the power of 2)  \nvplus = vplus divided by 2  \nvsuperplus = (c to the power of 2) plus (d to the power of 2)  \nvsuperplus = vsuperplus divided by 2  \n\ncos = v1_v2 divided by (vplus times vsuperplus)  \ncos = cos rounded to 2 decimal places  \ndisplay cos  \nif cos > 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise if cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:47:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: Gqyb2L\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\nv1v2 = (a * c) + (b * d)\n\nabv1 = ((a**2) + (b**2)) ** (1/2)\nabv2 = ((c**2) + (d**2)) ** (1/2)\n\ncos = v1v2 / (abv1 * abv2)\n\nprint(round(cos,2))\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelif cos < 0 :\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv1v2 = (a times c) plus (b times d)  \n\nabv1 = (a to the power of 2) plus (b to the power of 2)  \nabv1 = abv1 to the power of (1 divided by 2)  \n\nabv2 = (c to the power of 2) plus (d to the power of 2)  \nabv2 = abv2 to the power of (1 divided by 2)  \n\ncos = v1v2 divided by (abv1 times abv2)  \n\ncos rounded to 2 decimal places  \nif cos > 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise if cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:50:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: zU09KY\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\n\na=x2-x1\nb=y2-y1\nc=x3-x1\nd=y3-y1\n\ncos=(a*c+b*d)/(((a**2+b**2)**0.5)*((c**2+d**2)**0.5))\nprint(round(cos,2))\nif cos > 0:\n    print(\"ACUTE\")\nelif cos == 0:\n    print(\"RIGHT\")\nelse :\n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\ncos = (a times c plus b times d) divided by (((a to the power of 2 plus b to the power of 2) to the power of 0.5) times ((c to the power of 2 plus d to the power of 2) to the power of 0.5))  \ncos rounded to 2 decimal places  \n\nif cos greater than 0  \n    display ACUTE  \notherwise if cos equal to 0  \n    display RIGHT  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:20:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: n9GRUu\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\na= x2 - x1\nb= y2 - y1\nc= x3 - x1\nd= y3 - y1\ndot = a*c + b*d\nl1 = round((a**2 + b**2)**0.5,2)\nl2 = round((c**2 + d**2)**0.5,2)\n\ncos = round(dot/(l1 * l2),2)\nprint(cos)\n\nif cos > 0:\n    print('ACUTE')\nelif cos < 0:\n    print('OBTUSE')\nelse:\n    print('RIGHT')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \ndot = a times c plus b times d  \nl1 = (a squared plus b squared) to the power of 0.5 rounded to 2 decimal places  \nl2 = (c squared plus d squared) to the power of 0.5 rounded to 2 decimal places  \n\ncos = dot divided by (l1 times l2) rounded to 2 decimal places  \ndisplay cos  \n\nif cos > 0  \n    display ACUTE  \nelif cos < 0  \n    display OBTUSE  \nelse  \n    display RIGHT"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "2/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:39:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: jN3uzA\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\n\nv1 = ((x2) - (x1) , (y2) - (y1)) \nv2 = ((x3) - (x1) , (y3) - (y1))\n\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n\nv1 = (a,b)\nv2 = (c,d)\n\nlv1 = ((a**2) + (b**2))**1/2\nlv2 = ((c**2) + (d**2))**1/2\n\nc == ((a * c) + (b * d)) / (lv1*lv2)\n\nif c > 0 :\n    print(round(c, 2))\n    print(\"ACUTE\")\nelif c == 0 :\n    print(round(c, 2))\n    print(\"RIGHT\")\nelif c < 0 :\n    print(round(c, 2))\n    print(\"OBTUSE\")\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nv1 = (x2 minus x1, y2 minus y1)  \nv2 = (x3 minus x1, y3 minus y1)  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nv1 = (a, b)  \nv2 = (c, d)  \n\nlv1 = (a squared plus b squared) to the power of 1 divided by 2  \nlv2 = (c squared plus d squared) to the power of 1 divided by 2  \n\nc = (a times c plus b times d) divided by (lv1 times lv2)  \n\nif c greater than 0  \n    display c rounded to 2 decimal places  \n    display ACUTE  \nelif c equals 0  \n    display c rounded to 2 decimal places  \n    display RIGHT  \nelif c less than 0  \n    display c rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T10:00:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD: SmUqHD\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\n\na=(x2-x1)\nb=(y2-y1)\n\nc=(x3-x1)\nd=(y3-y1)\n\nv1v2=(a*c)+(b*d)\n\nv1=((a**2)+(b**2))/((a**2)+(b**2))\nv2=((c**2)+(d**2))/((c**2)+(d**2))\ncos=(v1v2)/(v1*v2)\ncos=round(cos,2)\n\nprint(cos)\n\nif cos>0:\n    print('ACUTE')\nelif cos==0:\n    print('RIGHT')\nelse:\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \n\nc = x3 minus x1  \nd = y3 minus y1  \n\nv1v2 = (a times c) plus (b times d)  \n\nv1 = (a to the power of 2) plus (b to the power of 2) divided by ((a to the power of 2) plus (b to the power of 2))  \nv2 = (c to the power of 2) plus (d to the power of 2) divided by ((c to the power of 2) plus (d to the power of 2))  \ncos = v1v2 divided by (v1 times v2)  \ncos = cos rounded to 2 decimal places  \n\ndisplay cos  \n\nif cos greater than 0  \n    display ACUTE  \notherwise if cos equal to 0  \n    display RIGHT  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:59:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: XgujF1\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\n\n\n\n\n\n'''v1=(a),(b)\nv2=(c),(d)'''\n\nv1=float(x2-x1,y2-y1)\nv2=float(x3-x1,y3-y1)\n\na=float(x2-x1)\nb=float(y2-y1)\nc=float(x3-x1)\nd=float(y3-y1)\n\n'''(x2-x1,y2-y1)=(a,b)\n(x3-x1,y3-y1)=(c,d)'''\n\n\n#v1*v2=(a*c)+(b*d)\n#cosθ=(v1*v2)/(sqrt((a**2)+(b**2))*(c**2)+(d**2))\n\n#cosθ=(v1*v2)/(sqrt((a**2)+(b**2))*(sqrt((c**2)+(d**2))))\n\n#cosθ=(v1*v2)/((v1**(-0.5))*(v2**(-0.5)))\n\n#cosθ=(v1*v2)/(((a**2)+(b**2)):=2)*(((c**2)+(d**2)):=2)\n#cosθ=(v1*v2)/(((a**2)+(b**2))**(-0.5))*(((c**2)+(d**2))**(-0.5))\ncosθ=float((v1*v2)/((a**2)+(b**2))*(((c**2)+(d**2))))\nprint(round(cosθ, 2))\n\nif cosθ>0 :\n    print('ACUTE')\nelif cosθ==0 :\n    print('RIGHT')\nelif cosθ<0 :\n    print('OBTUSE')\n\n\n#b**(-0.5)\n#I don't know sqrt'symbol TT\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nv1 = (x2 minus x1) plus (y2 minus y1)  \nv2 = (x3 minus x1) plus (y3 minus y1)  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\ncosθ = (v1 times v2) divided by ((a squared plus b squared) times (c squared plus d squared))  \ncosθ = (v1 times v2) divided by (((a squared plus b squared) to the power of -0.5) times ((c squared plus d squared) to the power of -0.5))  \ndisplay cosθ rounded to 2 decimal places  \n\nif cosθ > 0  \n    display ACUTE  \notherwise if cosθ equals 0  \n    display RIGHT  \notherwise if cosθ < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:53:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: lBLdzu\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=int(input())\ny1=int(input())\nx2=int(input())\ny2=int(input())\nx3=int(input())\ny3=int(input())\na=x2-x1\nb=y2-y1\nc=x3-x1\nd=y3-y1\nv1_v2=(a*c)+(b*d)\nv1=((a**2)+(b**2))**(1/2)\nv2=((c**2)+(d**2))**(1/2)\ncos=v1_v2/(v1*v2)\nprint(round(float(cos), 2))\nif cos>0:\n    print('ACUTE')\nelif cos==0:\n    print('RIGHT')   \nelse :print('OBTUSE')     \n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nv1_v2 = (a times c) plus (b times d)  \nv1 = (a to the power of 2) plus (b to the power of 2) rounded to 1 divided by 2  \nv2 = (c to the power of 2) plus (d to the power of 2) rounded to 1 divided by 2  \ncos = v1_v2 divided by (v1 times v2)  \ndisplay cos rounded to 2 decimal places  \nif cos > 0  \n    display ACUTE  \nelseif cos == 0  \n    display RIGHT  \notherwise  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "5/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: PASS, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:57:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: MsgU68\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = (x2 - x1)\nb = (y2 - y1)\nc = (x3 - x1)\nd = (y3- x1)\n\n\nv1 = (a**2)+(b**2)%2\nv2 = (c**2)+(d**2)%2\n# can't sqrt ;-;\n\n\nVX = (a*c)+(b*d)\n\ncos = (VX) / (v1*v2) \n\nif cos > 0 :\n    print(round(cos,2))\n    print('ACUTE')\nelif cos == 0 :\n    print(round(cos,2))\n    print('RIGHT')\nelif cos < 0 :\n    print(round(cos,2))\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus x1  \n\nv1 = (a to the power of 2) plus (b to the power of 2) modulo 2  \nv2 = (c to the power of 2) plus (d to the power of 2) modulo 2  \n\nVX = (a times c) plus (b times d)  \n\ncos = VX divided by (v1 times v2)  \n\nif cos greater than 0  \n    display cos rounded to 2 decimal places  \n    display ACUTE  \nelif cos equal to 0  \n    display cos rounded to 2 decimal places  \n    display RIGHT  \nelif cos less than 0  \n    display cos rounded to 2 decimal places  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:59:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887111\nPASSWORD:rh6DB7\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1=int(input())\ny1=int(input())\nx2=int(input())\ny2=int(input())\nx3=int(input())\ny3=int(input())\nv1+v2 = (x2 - x1, y2 - y1) \nv2 = (x3 - x1, y3 - y1) \n\ndot = v1+v2\n\n\n\n\n\n\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \nv1 = (x2 minus x1, y2 minus y1)  \nv2 = (x3 minus x1, y3 minus y1)  \ndot = v1 plus v2"
+  },
+  {
+    "User ID": "6887112",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:38:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887112\nPASSWORD: H6drKZ\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = x2-x1\nb = y2-y1\nc = x3-x1\nd = y3-y1\n\nz = (a*c) + (b*d)\n\nv1 = (a**2+b**2)**(1/2)\nv2 = (c**2+d**2)**(1/2)\n\ncos = z/(v1*v2)\n\nprint(round(cos ,2))\n\nif cos > 0 :\n    print('ACUTE')\nelif cos == 0 :\n    print('RIGHT')\nelif cos < 0 :\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\nz = (a times c) plus (b times d)  \n\nv1 = (a to the power of 2 plus b to the power of 2) to the power of (1 divided by 2)  \nv2 = (c to the power of 2 plus d to the power of 2) to the power of (1 divided by 2)  \n\ncos = z divided by (v1 times v2)  \n\ndisplay cos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \nelif cos == 0  \n    display RIGHT  \nelif cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:45:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887113\nPASSWORD: GqXl2V\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\nvx = a * c + b * d\nv1L = (((a**2)+(b**2))**(1/2))\nv2L = (((c**2)+(d**2))**(1/2))\ncos = vx/(v1L * v2L)\nprint(round(cos,2))\nif cos < 0 :\n    print('OBTUSE')\nelif cos == 0 :\n    print('RIGHT')\nelif cos > 0 :\n    print('ACUTE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \nvx = a times c plus b times d  \nv1L = (a squared plus b squared) to the power of 1 divided by 2  \nv2L = (c squared plus d squared) to the power of 1 divided by 2  \ncos = vx divided by (v1L times v2L)  \ndisplay cos rounded to 2 decimal places  \nif cos < 0  \n    display OBTUSE  \notherwise if cos == 0  \n    display RIGHT  \notherwise if cos > 0  \n    display ACUTE"
+  },
+  {
+    "User ID": "6887114",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:50:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887114\nPASSWORD: 0Pb48z\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n#input x1 y1 x2 y2 x3 y3\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n#set a b c d\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\n#set dot\ndot = (a * c) + (b * d)\n#set Length of Vector\nvec1 = (((a**2)+(b**2))**(0.5))\nvec2 = (((c**2)+(d**2))**(0.5))\n#set Cosine of Angle\ncos = ((dot)/(vec1*vec2))\nprint(round(cos, 2))\n#condition\nif (cos > 0):\n    print('ACUTE')\nelif (cos == 0):\n    print('RIGHT')\nelif (cos < 0):\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \ndot = (a times c) plus (b times d)  \nvec1 = (a squared plus b squared) to the power of 0.5  \nvec2 = (c squared plus d squared) to the power of 0.5  \ncos = dot divided by (vec1 times vec2)  \ncos rounded to 2 decimal places  \nif cos > 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise if cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:47:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: npEnLt\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\nv1a = (x2 - x1)\nv1b = (y2 - y1)\nv2c = (x3 - x1)\nv2d = (y3 - y1)\ndot = (v1a * v2c) + (v1b * v2d)\nvec_leng1 = (((v1a**2) + (v1b**2))**0.5)\nvec_leng2 = (((v2c**2) + (v2d**2))**0.5)\ncos = dot/(vec_leng1 * vec_leng2)\nprint(round(cos, 2))\nif (cos > 0):\n    print('ACUTE')\nelif (cos == 0):\n    print('RIGHT')\nelif (cos < 0):\n    print('OBTUSE')\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \nv1a = x2 minus x1  \nv1b = y2 minus y1  \nv2c = x3 minus x1  \nv2d = y3 minus y1  \ndot = (v1a times v2c) plus (v1b times v2d)  \nvec_leng1 = (v1a squared plus v1b squared) to the power of 0.5  \nvec_leng2 = (v2c squared plus v2d squared) to the power of 0.5  \ncos = dot divided by (vec_leng1 times vec_leng2)  \ndisplay cos rounded to 2 decimal places  \nif cos > 0  \n    display ACUTE  \nelif cos == 0  \n    display RIGHT  \nelif cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:58:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887116\nPASSWORD: Z5BLgE\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = (x2 - x1)\nb = (y2 - y1)\nc = (x3 - x1)\nd = (y3 - y1)\n\ndot = (a*c)+(b*d)\nv1 = ((a**2)+(b**2))**0.5\nv2 = ((c**2)+(d**2))**0.5\ncos = dot / (v1*v2)\nprint(round(cos,2))\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \n\ndot = (a times c) plus (b times d)  \nv1 = (a to the power of 2) plus (b to the power of 2) rounded to 0.5  \nv2 = (c to the power of 2) plus (d to the power of 2) rounded to 0.5  \ncos = dot divided by (v1 times v2)  \ndisplay cos rounded to 2 decimal places  \n\nif cos > 0  \n    display ACUTE  \notherwise if cos == 0  \n    display RIGHT  \notherwise if cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:58:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: FZEb6h\nEXERCISEID: itds120-cp1-q4\n */\n'''\nx1 = float(input())\ny1 = float(input())\nx2 = float(input())\ny2 = float(input())\nx3 = float(input())\ny3 = float(input())\na = x2 - x1\nb = y2 - y1\nc = x3 - x1\nd = y3 - y1\ndot = (a * c) + (b * d)\nlegth1 = ((a**2)+(b**2))**(1/2)\nlegth2 = ((c**2)+(d**2))**(1/2)\ncos = dot / (legth1 * legth2)\nprint(round(cos, 2))\nif cos > 0:\n    print('ACUTE')\nelif cos == 0:\n    print('RIGHT')\nelif cos < 0:\n    print('OBTUSE')\n# YOUR CODE GOES HERE\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \ndot = (a times c) plus (b times d)  \nlegth1 = (a squared plus b squared) to the power of (1 divided by 2)  \nlegth2 = (c squared plus d squared) to the power of (1 divided by 2)  \ncos = dot divided by (legth1 times legth2)  \ndisplay cos rounded to 2 decimal places  \nif cos greater than 0  \n    display ACUTE  \notherwise if cos equals 0  \n    display RIGHT  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:27:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887118\nPASSWORD: fycbNT\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\n\na=x2-x1\nb=y2-y1\nc=x3-x1\nd=y3-y1\n\ncos=((a*c)+(b*d))/((((a**2)+(b**2))**0.5)*(((c**2)+(d**2))**0.5))\n\ncos=round(cos,2)\n\nprint(cos)\n\nif cos>0:\n    print('ACUTE')\nelif cos==0:\n    print('RIGHT')\nelif cos<0:\n    print('OBTUSE')\n\n\n\n\n\n\n\n",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \n\nset a to x2 minus x1  \nset b to y2 minus y1  \nset c to x3 minus x1  \nset d to y3 minus y1  \n\nset cos to (a times c plus b times d) divided by (((a squared plus b squared) to the power of 0.5) times ((c squared plus d squared) to the power of 0.5))  \n\nset cos to cos rounded to 2 decimal places  \n\ndisplay cos  \n\nif cos greater than 0  \n    display ACUTE  \notherwise if cos equal to 0  \n    display RIGHT  \notherwise if cos less than 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:33:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: z6oTw3\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx1=float(input())\ny1=float(input())\nx2=float(input())\ny2=float(input())\nx3=float(input())\ny3=float(input())\na=x2-x1\nb=y2-y1\nc=x3-x1\nd=y3-y1\ndot=(a*c)+(b*d)\nv1=((a**2)+(b**2))**(1/2)\nv2=((c**2)+(d**2))**(1/2)\ncos=(dot/(v1*v2))\nprint(round(cos, 2))\nif cos>0:\n    print('ACUTE')\nelif cos==0:\n    print('RIGHT')\nelif cos<0:\n    print('OBTUSE')",
+    "Pseudocode": "get x1  \nget y1  \nget x2  \nget y2  \nget x3  \nget y3  \na = x2 minus x1  \nb = y2 minus y1  \nc = x3 minus x1  \nd = y3 minus y1  \ndot = (a times c) plus (b times d)  \nv1 = (a to the power of 2) plus (b to the power of 2) rounded to 1 decimal place  \nv2 = (c to the power of 2) plus (d to the power of 2) rounded to 1 decimal place  \ncos = dot divided by (v1 times v2)  \ndisplay cos rounded to 2 decimal places  \nif cos > 0  \n    display ACUTE  \notherwise if cos equals 0  \n    display RIGHT  \notherwise if cos < 0  \n    display OBTUSE"
+  },
+  {
+    "User ID": "6887120",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "4/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:35:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887120\nPASSWORD: cNHd7M\nEXERCISEID: itds120-cp1-q4\n */\n'''\n\nx1 = int(input())\ny1 = int(input())\nx2 = int(input())\ny2 = int(input())\nx3 = int(input())\ny3 = int(input())\n\na = (x2 - x1)\nb = (y2 - y1)\nc = (x3 - x1)\nd = (y3 - y1)\n\nv1_x_v2 = a*c+b*d\n\ntotal1 = a**2+b**2\ntotal2 = c**2+d**2\ncos =  v1_x_v2/(total1*total2)\nprint(cos)\nif cos > 0 :\n    print(\"ACUTE\")\nelif cos == 0 :\n    print(\"RIGHT\")\nelif cos < 0 :\n    print(\"OBTUSE\")",
+    "Pseudocode": "get x1\nget y1\nget x2\nget y2\nget x3\nget y3\n\na = x2 minus x1\nb = y2 minus y1\nc = x3 minus x1\nd = y3 minus y1\n\nv1_x_v2 = a times c plus b times d\n\ntotal1 = a to the power of 2 plus b to the power of 2\ntotal2 = c to the power of 2 plus d to the power of 2\ncos = v1_x_v2 divided by (total1 times total2)\ndisplay cos\nif cos greater than 0\n    display ACUTE\notherwise if cos equals 0\n    display RIGHT\notherwise if cos less than 0\n    display OBTUSE"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-cp1-q4",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T03:01:39+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 999\r\nPASSWORD: 424242\r\nEXERCISEID: itds120-cp1-q4\r\n */\r\n'''\r\n\r\nimport math\r\n\r\nx1 = float(input())\r\ny1 = float(input())\r\nx2 = float(input())\r\ny2 = float(input())\r\nx3 = float(input())\r\ny3 = float(input())\r\n\r\na = x2 - x1   # v1.x\r\nb = y2 - y1   # v1.y\r\nc = x3 - x1   # v2.x\r\nd = y3 - y1   # v2.y\r\n\r\ndot = a * c + b * d\r\n\r\nlen1 = math.sqrt(a**2 + b**2)\r\nlen2 = math.sqrt(c**2 + d**2)\r\n\r\ncos_theta = dot / (len1 * len2)\r\n\r\nprint(round(cos_theta, 2))\r\n\r\n\r\nif dot > 0:\r\n    print(\"ACUTE\")\r\nelif dot == 0:\r\n    print(\"RIGHT\")\r\nelse:\r\n    print(\"OBTUSE\")\r\n",
+    "Pseudocode": "get x1\r\nget y1\r\nget x2\r\nget y2\r\nget x3\r\nget y3\r\n\r\na = x2 minus x1\r\nb = y2 minus y1\r\nc = x3 minus x1\r\nd = y3 minus y1\r\n\r\ndot = a times c plus b times d\r\n\r\nlen1 = a squared plus b squared square rooted\r\nlen2 = c squared plus d squared square rooted\r\n\r\ncos_theta = dot divided by (len1 times len2)\r\n\r\ndisplay cos_theta rounded to 2 decimal places\r\n\r\nif dot > 0\r\n    display ACUTE\r\nelif dot == 0\r\n    display RIGHT\r\nelse\r\n    display OBTUSE"
+  }
+]

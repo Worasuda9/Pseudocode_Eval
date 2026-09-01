@@ -1,0 +1,1142 @@
+[
+  {
+    "User ID": "6887001",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:18:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887001\nPASSWORD: 6VWidV\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nn =77\nk = 13\n\nc = (m**k) % n\n\nprint(c)",
+    "Pseudocode": "get m\n\ninitialize n to 77\n\ninitialize k to 13\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887002",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:38:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887002\nPASSWORD: VQHbyt\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nn=77\nk=13\nm=int(input())\nc=(m**k)%n\nprint(c)\n\n",
+    "Pseudocode": "initialize n to 77  \ninitialize k to 13  \nget m  \nc = m to the power of k modulo n  \ndisplay c"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:45:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: Z4EsYx\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nm = int(input())\nn = 77\nk = 13\nc = (m**k)%n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:54:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887004\nPASSWORD: zNCL4y\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n\nm = (int(input()))\nn=77\nk=13\nc= (int(m**k)%n)\n\n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887006",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:30:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887006\nPASSWORD: hyIOq7\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nn = 77\nk = 13\nc = (m**k) % n\n\nprint(c)\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:47:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: Rxdw0E\nEXERCISEID: itds120-cp1-q1\n */\n'''\n \n# YOUR CODE GOES HERE\nm = int(input())\n\nprint((m ** 13) % 77)\n\n",
+    "Pseudocode": "get m\n\nresult = m to the power of 13\n\nremainder = result modulo 77\n\ndisplay remainder"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:53:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: ZDWFEP\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nn=77\nk=13\nm = int(input())\nc = (m**k)%n\nprint(c)\n",
+    "Pseudocode": "initialize n to 77  \ninitialize k to 13  \nget m  \nc = m to the power of k modulo n  \ndisplay c"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:59:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: CIKsXs\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\na = (m**13)%77\nprint(a)\n\n",
+    "Pseudocode": "get m\na = m to the power of 13 modulo 77\ndisplay a"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:16:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: YkQItr\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nc = (m**13)%77\nprint(str(c))\n\n",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:19:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: L4zjrv\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nc = (m**13) % 77;\nprint(c);\n",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\ndisplay c"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:12:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: dHpZsw\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nk = 13\nn = 77\nc = (m**k)%n\nprint(c)\n",
+    "Pseudocode": "get m\ninitialize k to 13\ninitialize n to 77\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:49:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: 3t1l8b\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx = int(input())\n\nans = ( x ** 13 ) % 77\n\nprint(ans)\n",
+    "Pseudocode": "get x\n\nans = x to the power of 13\n\nans = ans modulo 77\n\ndisplay ans"
+  },
+  {
+    "User ID": "6887014",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:59:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887014\nPASSWORD: dSjhNQ\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = int(77)\nk = int(13)\nc = ((m)**13) % 77\n# c = ((m)**k) % n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = (m to the power of 13) modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:54:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887015\nPASSWORD: 4J4ALd\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm=int(input())\n\nn=77\nk=13\n\nc=m**k%n\n\nprint(c)\n\n\n",
+    "Pseudocode": "get m\n\ninitialize n to 77\n\ninitialize k to 13\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:42:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: 18nLui\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = 77\nk = 13\nc = (m**k)%n\nprint(f'{c}')",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:49:44+00:00",
+    "Code": "'''\n/**\nUSERID:6887017\nPASSWORD:IWbKsA\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm =int(input())\n\nif (0 <= m) and (m < 77):\n    print(((m**13)%77))\n    \n\n",
+    "Pseudocode": "get m\n\nif (0 <= m) and (m < 77)\n    result = (m to the power of 13) modulo 77\n    display result"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:12:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887018\nPASSWORD: TG2MRS\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nc = (m**13)%77\nprint(c)\n",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:06:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: 0KB9eb\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nk = 13\nn = 77\n\nc = (m**k) % n\nprint(c)\n\n",
+    "Pseudocode": "get m\ninitialize k to 13\ninitialize n to 77\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:07:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: QbYbZi\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = (int(input()) ** 13 ) % 77\n\n\n\nprint(m)\n\n\n",
+    "Pseudocode": "get value  \nm = value to the power of 13  \nm = m modulo 77  \ndisplay m"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:08:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021\nPASSWORD: SO3HTG\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nn = 77\nk= 13\nchiper = (m**k)% n\n\nprint(chiper)\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nchiper = m to the power of k modulo n\ndisplay chiper"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:43:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: 4o8rml\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = 77\nk = 13\nc = ((m**k)%n)\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = (m to the power of k) modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:02:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887023\nPASSWORD: Zacn05\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nans = (float(m)**13)%77\n\nprint(int(ans))\n",
+    "Pseudocode": "get m\n\nans = (float(m) to the power of 13) modulo 77\n\ndisplay int(ans)"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:07:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: dmzvuU\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\n\nn = 77\nk = 13\n\nc = (m ** k) % n\n\nprint(c)",
+    "Pseudocode": "get m\n\ninitialize n to 77\n\ninitialize k to 13\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887025",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:59:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887025\nPASSWORD: a5lrob\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm=int(input())\nn= 77\nk=13\nc=(m**k)%n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887026",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:09:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887026\nPASSWORD: jZDEea\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input( ))\n\nc = (m**13)%77\n\nprint(c)",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\ndisplay c"
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:51:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887027\nPASSWORD: e4aBkp\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nc = (m ** 13) % 77\n\nprint(c)\n\n",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\ndisplay c"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:41:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: UwzS1e\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nn = 77\nk = 13\n\nc = (m**k)%n\n\nprint(c)",
+    "Pseudocode": "get m\n\ninitialize n to 77\n\ninitialize k to 13\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:42:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD: Bm8EH3\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\nm = int(input())\nn = 77 \nk = 13\nc =(m**k)%n\nprint(c)\n\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:44:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: Ex6bxi\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nc = (m ** 13) % 77\n\nprint(c)\n",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\ndisplay c"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:56:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: dcHtM1\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\n\nc = (m**13)%77\n\nprint(c)\n",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\ndisplay c"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:23:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: nss3kP\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nn =  77\nk = 13\nc =(m**k)%n\nif 0<=m<n:\n    print(c)\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\nif 0 <= m < n\n    display c"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:46:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: p1Ln2x\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nc = (m ** 13) % 77\n\nprint(c)\n\n\n",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\ndisplay c"
+  },
+  {
+    "User ID": "6887034",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:40:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887034\nPASSWORD: zS5yMF\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = 77\nk = 13\nc = int()\n\nc = (m**k)%n\n\nprint(int(c))\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\ninitialize c to 0\n\nc = m to the power of k modulo n\n\ndisplay int(c)"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:30:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: aj8qM2\nEXERCISEID: itds120-cp1-q1\n */\n'''\nm=int(input())\nc=(m**13)%77\nprint(c)\n\n",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:54:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: NXDH9w\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nn = 77\nk = 13\nc = abs(( m**k ) % (n))\n\n\nprint(c)\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = absolute value of (m to the power of k) modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:56:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: NLb17Y\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nc = (m**13) % 77\nprint(c)",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:49:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887038\nPASSWORD: JnJsm5\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\n\nn = 77\nk = 13\nc = (m ** k) % n\n\nprint(c)\n\n",
+    "Pseudocode": "get m\n\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:07:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: JECArv\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nn = 77\nk = 13\nc = (m**k)%n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:37:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887040\nPASSWORD: 3wqD25\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\na = (m ** 13) % 77\n\nprint(a)",
+    "Pseudocode": "get m\n\na = m to the power of 13 modulo 77\n\ndisplay a"
+  },
+  {
+    "User ID": "6887041",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:48:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887041\nPASSWORD: NmEBDa\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nn = 77 \nk = 13\n\nc = ( m ** k ) % n\n\nprint(c)",
+    "Pseudocode": "get m\n\ninitialize n to 77\ninitialize k to 13\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:05:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: BsVI6m\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nc = (m**13) % 77\nprint(c)",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:31:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD: 3k9rLM\nEXERCISEID: itds120-cp1-q1\n */\n'''\nm = int(input())\nc = (m**13) % 77\nprint(c)\n\n\n",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:17:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: yiiPmC\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm=int(input())\n\nc=(m**13)%77\n\nprint(c)\n\n",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\ndisplay c"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:59:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: z6lL4a\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\nm = int(input())\nn = 77\nk = 13\nc = (m ** k)% n\nprint(c)\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:38:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: s9bA0p\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nc = (m ** 13) % 77\nprint(c)",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:40:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD:IAup3Z\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nc = m ** k % n\n\nif c == 1:\n    print(1)\nelif c == 2:\n    print(30)\nelif c == 3:\n    print(38)\nelif c == 4:\n    print(53)\nelse:\n    print(26)\n",
+    "Pseudocode": "get m\n\nc = m to the power of k modulo n\n\nif c == 1\n    display 1\notherwise if c == 2\n    display 30\notherwise if c == 3\n    display 38\notherwise if c == 4\n    display 53\notherwise\n    display 26"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:33:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: lQB3u3\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm=int(input())\nn=77\nk=13\nc= (m**k) % n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887050",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:57:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887050\nPASSWORD: Ol3um2\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nm = int(input())\nn = 77\nk =13\nc = (m**k)%n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:48:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: GqluDI\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input().strip())\nn = 77\nk = 13\nc = int\nif 0 <= m and m < n:\n    c = (m**k) % n\nelse:\n    pass\nprint(c)\n    \n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\ninitialize c to int\nif 0 <= m and m < n\n    c = m to the power of k modulo n\notherwise\n    pass\ndisplay c"
+  },
+  {
+    "User ID": "6887052",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:07:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887052\nPASSWORD: wkzOHa\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\nn = int(77)\nk = int(13)\nm = int(input())\n\nc = (m**k)%n\nprint(c)",
+    "Pseudocode": "initialize n to 77  \ninitialize k to 13  \nget m  \nc = m to the power of k modulo n  \ndisplay c"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:40:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: p1Gu3d\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\ncal = (m**13)%77\nprint(cal)\n",
+    "Pseudocode": "get m\ncal = m to the power of 13\ncal = cal modulo 77\ndisplay cal"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:03:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: inIKg0\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm =  int(input())\nc = (m**13)%77\nprint(c)\n\n",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:06:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887056\nPASSWORD: ivNlWf\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\n\nc = (m**13) % 77\n\nprint(c)\n\n",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\ndisplay c"
+  },
+  {
+    "User ID": "6887057",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:18:38+00:00",
+    "Code": "'''\n/**\nUSERID:6887057\nPASSWORD:HY03IB\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nm = float(input())\noutput = (m**13)%77\n\nprint(round(output))\n\n\n    ",
+    "Pseudocode": "get m\noutput = m to the power of 13\noutput = output modulo 77\ndisplay round(output)"
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:09:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: XNtsvl\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nx = int(input())\nn = 77\nk = 13\nprint((x**k)%n)\n\n",
+    "Pseudocode": "get x\ninitialize n to 77\ninitialize k to 13\nresult = x to the power of k\nresult = result modulo n\ndisplay result"
+  },
+  {
+    "User ID": "6887059",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:26:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887059\nPASSWORD: zsM3Fe\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\n\nif 0 <= m < 77 :\n    c = (m**13)%77\n    print(c)\n",
+    "Pseudocode": "get m\n\nif 0 <= m < 77\n    c = m to the power of 13 modulo 77\n    display c"
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:54:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887060\nPASSWORD: 4PahLv\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn=77\nk=13\nm=int(input())\n\nif m>=0 and m<n:\n    total=(m**k)%n\nprint(total)\n\n",
+    "Pseudocode": "initialize n to 77  \ninitialize k to 13  \nget m  \n\nif m >= 0 and m < n  \n    total = m to the power of k modulo n  \ndisplay total"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:57:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD: yJn7lS\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nn = 77\nk = 13\n\nc = (m**k) % n\nprint(c)\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\n\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:57:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: Y1WwsH\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm=float(input())\n\nc=(m**13)%77\n\nprint(round(c))",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\ndisplay round(c)"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:30:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD: Jsbf6k\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = 77\nk = 13\nc = (m**k)%n\nprint(c)\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:12:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: eejGC5\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = 77\nk = 13\nc = (m**k)%n\nprint(c)\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:52:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887065\nPASSWORD: OGqLMF\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nc = (m**13)%77\nprint(c)\n\n",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:47:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD: qaFmRT\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nc = (m**13)%77\nprint (c)\n\n",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:14:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887067\nPASSWORD: IZptmr\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nn = 77\nk = 13\nc = (m**k)%n\n# if (0 <= c and c < n) and (0 <= c < n((c**k)%n)):\n#     print(int(c))\nprint(c)\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\nprint c"
+  },
+  {
+    "User ID": "6887068",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:59:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887068\nPASSWORD: fi5JFi\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\n\nn = int(77)\nk = int(13)\n\nc = (((m)**k) % n)\nprint(c)\n\n\n",
+    "Pseudocode": "get m\n\ninitialize n to 77\n\ninitialize k to 13\n\nc = (m to the power of k) modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887069",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:37:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887069\nPASSWORD: CLuzX8\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nn = 77\nk = 13\nc = (m**k) % n\nif 0 > m > 77 :\n    print(\"no\")\nelse :\n    print(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\nif 0 > m > 77\n    display \"no\"\notherwise\n    display c"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:18:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: rzCl1a\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nm = int(input())\nn = 77\nk = 13\nc = ( m**k )%n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887071",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:34:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887071\nPASSWORD: OeB1QK\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nn = 77\nk = 13\nm = float(input())\nc = m**k % n\nprint(float(c))\n\n\n",
+    "Pseudocode": "initialize n to 77  \ninitialize k to 13  \nget m  \nc = m to the power of k modulo n  \ndisplay float(c)"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:13:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: oXatBP\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm=int(input())\nn=77\nk=13\nc=(m**k)%n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:08:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: GwBpPA\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nn = 77\nk = 13\nm = int(input())\nc = (m**k)%n\nprint(c)\n\n",
+    "Pseudocode": "initialize n to 77  \ninitialize k to 13  \nget m  \nc = m to the power of k modulo n  \ndisplay c"
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:58:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887074\nPASSWORD: eR8vK4\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = 77\nk = 13\nc = (m**k)% n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:00:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: Zl66FF\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = 77\nk = 13\nc = (m**k) % n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:13:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: gdPINQ\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm=int(input())\nans=(m**13)%77\nprint(ans)\n",
+    "Pseudocode": "get m\nans = m to the power of 13 modulo 77\ndisplay ans"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:54:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: 79whZz\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nn= 77\nk = 13\n\nc = (m**k)%n\n\nprint(c)\n\n#true\n",
+    "Pseudocode": "get m\n\ninitialize n to 77\n\ninitialize k to 13\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887078",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:29:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887078\nPASSWORD: Dy9s6r\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = 77\nk = 13\n\nc = (m**k)%n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\n\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:06:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: tS8hYY\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nprint((m**13)%77)\n",
+    "Pseudocode": "get m\nresult = m to the power of 13\nremainder = result modulo 77\ndisplay remainder"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:00:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: 2kQm3k\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm=int(input())\nk=int(13)\nn=int(77)\n\nc=(m**k)%n\n\nprint(c)\n\n\n\n\n",
+    "Pseudocode": "get m\ninitialize k to 13\ninitialize n to 77\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:03:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: pklcAs\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm=int(input())\nn=77\nk=13\n\nc=((m**k)%n)\n\nif m>=0 and m<n:\n    print(c)\n\n",
+    "Pseudocode": "get m\n\ninitialize n to 77\ninitialize k to 13\n\nc = m to the power of k modulo n\n\nif m >= 0 and m < n\n    display c"
+  },
+  {
+    "User ID": "6887083",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T10:00:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887083\nPASSWORD: QiI5wB\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = 77\nk = 13\n\nc = (m**13) % {77}\nm = 0 <= m < n\nprint(\"m\")\n\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\n\nc = m to the power of 13 modulo 77\nm = 0 <= m < n\ndisplay \"m\""
+  },
+  {
+    "User ID": "6887084",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:08:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887084\nPASSWORD: zYxEJl\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\nm= int(input())\nn= 77\nk= 13\nc= int(m**k) % n\nprint(c)\n# YOUR CODE GOES HERE\n\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "1/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:01:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: LFlH3c\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = 77\nk = 13\n\nc = (m*k)%n\n\nresult = m*(0<=m<n)\n\n#if (2**13) == 8192 and (8192% 77)==30:\n   # print(1)\n\n\nprint(\"1\")\n\n\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\n\nc = (m × k) modulo n\n\nresult = m × (0 <= m < n)\n\n#if (2 to the power of 13) == 8192 and (8192 modulo 77) == 30:\n   # display 1\n\ndisplay \"1\""
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:39:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: Cw2p63\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nc = (m**13) % 77\nprint(c)\n",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887087",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:59:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887087\nPASSWORD: SdlJU6\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nc = ( m**13 ) % 77\n\nprint(str(c))\n",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\ndisplay c"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:50:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: S1spOB\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm=int(input())\nn=int(77)\nk=int(13)\nx=(m**k)%n\nprint(x)\n\n\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nx = m to the power of k modulo n\ndisplay x"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:17:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: cwbj32\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nn = 77\nk = 13\nc = (m**k)%n\n\nif (m >= 0) and (m<n):\n    print(c)",
+    "Pseudocode": "get m\n\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\n\nif m >= 0 and m < n\n    display c"
+  },
+  {
+    "User ID": "6887090",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:12:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887090\nPASSWORD: toYhLh\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm= int(input())\nn=77\nk=13\nc=(m**13) % 77\nprint(int(c))\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of 13 modulo 77\ndisplay int(c)"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:54:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: qanzAA\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n#input\nm = int(input())\nn = 77\nk = 13\n\n#encryption\nc = (m ** k)%n\n\nprint(c)\n\n\n\n\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:14:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887093\nPASSWORD: rRac9z\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nn = 77\nk = 13\n\nc = (m**k)%n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\n\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887094",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:23:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887094\nPASSWORD: eiXpCs\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\n\nk = 13\nn = 77\n\nc = ((m ** k) % n)\n\nprint(c)",
+    "Pseudocode": "get m\n\ninitialize k to 13\n\ninitialize n to 77\n\nc = (m to the power of k) modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:13:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: QOoqdw\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\n\nc = (m**13)%77\n\nprint(c)\n\n",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\ndisplay c"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:08:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: OH40wh\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm= int(input())\n\n\nn=77\nk=13\nc= (m**k)%n\n\nprint(c)\n\n\n\n",
+    "Pseudocode": "get m\n\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887097",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:39:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887097\nPASSWORD: 13BWr4\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nn = 77\nk = 13\nm = int(input())\nc = (m**13)%77\nprint(c)\n\n",
+    "Pseudocode": "initialize n to 77  \ninitialize k to 13  \nget m  \nc = m to the power of 13 modulo 77  \ndisplay c"
+  },
+  {
+    "User ID": "6887098",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:18:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887098\nPASSWORD: ZECAxI\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\n\nc = (m**13)%77\n\nif m >= 0 and m < 77 :\n    print(c)\n\n\n",
+    "Pseudocode": "get m\n\nc = m to the power of 13 modulo 77\n\nif m >= 0 and m < 77\n    display c"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:37:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: 7quhAy\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(77)\nk = int(13)\nm = int(input())\n\nc = (m**k)%n\nprint(c)",
+    "Pseudocode": "initialize n to 77  \ninitialize k to 13  \nget m  \nc = m to the power of k modulo n  \ndisplay c"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:42:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: YhFcZ1\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm=int(input())\nn=77\nk=13\n\nc=(m**k)%n\n\nprint(c)\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:49:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: Gqyb2L\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nnum = int(input())\nc = (num**13)%77\nprint(str(c))\n\n",
+    "Pseudocode": "get num\nc = num to the power of 13\nc = c modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:50:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: zU09KY\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nn = 77 \nk = 13 \nm=int(input())\nc=(m**k)%n\nprint(c)\n\n",
+    "Pseudocode": "initialize n to 77\ninitialize k to 13\nget m\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:19:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: n9GRUu\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nm = int(input())\nn = 77 \nk = 13 \nx = ( m**k ) %n\nprint(x)\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nx = m to the power of k modulo n\ndisplay x"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:39:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: jN3uzA\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\n\nn = 77\nk = 13\n\nc = ((m) ** k) % n\n\nprint(c)\n\n\n",
+    "Pseudocode": "get m\n\ninitialize n to 77\n\ninitialize k to 13\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:04:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD: SmUqHD\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm=int(input())\nn=int(77)\nk=int(13)\n\nc=(m**k)%n\n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:31:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: XgujF1\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm=int(input())\n\nn=77\nk=13\nc=(m**k)%n\n\nif (m>=0)and(m<n) :\n    print(c)\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n",
+    "Pseudocode": "get m\n\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\n\nif (m >= 0) and (m < n)\n    display c"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:51:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: lBLdzu\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm=int(input())\nn=77\nk=13\nc=(m**k)%77\nif m>=0 and m<=n: \n    print(c)\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo 77\nif m >= 0 and m <= n\n    display c"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:47:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: MsgU68\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\n\ncal = (m**13) % 77\n\nprint(cal)",
+    "Pseudocode": "get m\n\ncal = m to the power of 13 modulo 77\n\ndisplay cal"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:21:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887111\nPASSWORD: rh6DB7\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx=int(input())\nc = (x**13)%77\nprint(c)\n\n",
+    "Pseudocode": "get x\nc = x to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887112",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:38:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887112\nPASSWORD: H6drKZ\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nm = int(input())\nn = 77\nk = 13\nc = (m**k) %n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:13:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887113\nPASSWORD: GqXl2V\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nc = (m**13) % 77\nprint(str(c))",
+    "Pseudocode": "get m\nc = m to the power of 13 modulo 77\ndisplay c"
+  },
+  {
+    "User ID": "6887114",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:47:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887114\nPASSWORD: 0Pb48z\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n#input m\nm = int(input())\n#set n & k\nn = 77\nk = 13\n\n#cal as c\nc = ((m ** k) % n)\n#display c\nprint(c)\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\nc = m to the power of k modulo n\ndisplay c"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:47:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: npEnLt\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nif (m >= 0 and m <= 77):\n    c = (m**13) % 77\n    print(c)\n\n",
+    "Pseudocode": "get m\nif m >= 0 and m <= 77\n    c = m to the power of 13 modulo 77\n    display c"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:22:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887116\nPASSWORD: Z5BLgE\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm = int(input())\nn = 77\nk = 13\n\nc = (m**k) % n\n\nprint(c)",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\n\nc = m to the power of k modulo n\n\ndisplay c"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:57:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: FZEb6h\nEXERCISEID: itds120-cp1-q1\n */\n'''\nn = 77\nk = 13\nm = int(input())\nc = (m ** k) % n\nprint(c)\n# YOUR CODE GOES HERE\n\n\n",
+    "Pseudocode": "initialize n to 77  \ninitialize k to 13  \nget m  \nc = m to the power of k modulo n  \ndisplay c"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:26:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887118\nPASSWORD: fycbNT\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm=int(input())\n\nn=int(77)\nk=int(13)\n\nc=(m**k)%n\n\nif m>=0 and m<n:\n    print(c)\n\n\n\n\n\n\n\n\n",
+    "Pseudocode": "get m\n\ninitialize n to 77\n\ninitialize k to 13\n\nc = m to the power of k modulo n\n\nif m >= 0 and m < n\n    display c"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:36:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: z6oTw3\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nm=int(input())\nprint((m**13)%77)\n",
+    "Pseudocode": "get m\nresult = m to the power of 13\nresult = result modulo 77\ndisplay result"
+  },
+  {
+    "User ID": "6887120",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:37:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887120\nPASSWORD: cNHd7M\nEXERCISEID: itds120-cp1-q1\n */\n'''\n\nm = int(input())\nn = 77\nk = 13\n\ntotal = (m**k)%n\nprint(total)\n\n",
+    "Pseudocode": "get m\ninitialize n to 77\ninitialize k to 13\n\ntotal = m to the power of k modulo n\ndisplay total"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-cp1-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-11-13T02:49:54+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 999\r\nPASSWORD: 424242\r\nEXERCISEID: itds120-cp1-q1\r\n */\r\n'''\r\n\r\ndef is_capitalized(s):\r\n    # No symbols, no numbers\r\n    for i in range(len(s)):\r\n        c = s[i]\r\n        if not c.isalpha():\r\n            if not (i == len(s)-1 and c == '.'):\r\n                return False\r\n    if s.endswith('.'):\r\n        s = s[:-1]\r\n    # No uppercase except first letter\r\n    for c in s[1:]:\r\n        if not c.islower():\r\n            return False\r\n    return s[0].isupper()\r\n\r\n# instr = '  What 4,578.00 is ISssSs is it iT ItttT  12,3 the Cap14ital of 14 France That. -15 ?    '\r\ninstr = input()\r\ninstr = instr.strip()\r\nwords = list(filter(lambda s: len(s) > 0, instr.split()))\r\ncapitalizeds = list(filter(is_capitalized, words))\r\nprint(capitalizeds)",
+    "Pseudocode": "initialize USERID to 999  \ninitialize PASSWORD to 424242  \ninitialize EXERCISEID to 'itds120-cp1-q1'  \n\ndefine function is_capitalized with parameter s  \n    go through each index i in the range of length of s  \n        set c to s[i]  \n        if c is not an alphabet  \n            if not (i is equal to length of s minus 1 and c is equal to '.')  \n                return False  \n    if s ends with '.'  \n        set s to s without the last character  \n    go through each character c in s starting from index 1  \n        if c is not a lowercase letter  \n            return False  \n    return s[0] is an uppercase letter  \n\nget instr  \nset instr to instr with leading and trailing spaces removed  \nset words to list of items from instr split by spaces where length of item is greater than 0  \nset capitalizeds to list of items from words where is_capitalized returns True  \ndisplay capitalizeds"
+  }
+]

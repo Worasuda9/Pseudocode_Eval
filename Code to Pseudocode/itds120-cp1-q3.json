@@ -1,0 +1,1037 @@
+[
+  {
+    "User ID": "6887001",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:00:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887001\nPASSWORD: 6VWidV\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nt = float(input()) \nh = float(input()) \nw = float(input())\n\nindex = t + (h/10) - (w/5)\n\nif index < 20 :\n    print(round(index, 1))\n    print('COLD')\nelif index >= 20 and index < 25:\n    print(round(index, 1))\n    print('COOL')\nelif index >= 25 and index < 30:\n    print(round(index, 1))\n    print('WARM')\nelif index >= 30 and index < 35:\n    print(round(index, 1))\n    print('HOT')\nelif index >= 35:\n    print(round(index, 1))\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887002",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:39:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887002\nPASSWORD: VQHbyt\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\n\nindex=t+(h/10)-(w/5)\nprint(round(index, 2))\nif index<20:\n    print(\"COLD\")\nelif index>=20 and index<25:\n    print(\"COOL\")\nelif index>=25 and index<30:\n    print(\"WARM\")\nelif index>=30 and index<35:\n    print(\"HOT\")\nelif index>=35:\n    print(\"EXTREME HEAT\")"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:45:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: Z4EsYx\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\nround(index,1)\n\nif index<20:\n    print(f'{index}')\n    print('COLD')\nelif index>=20 and index<25:\n    print(f'{index}')\n    print('COOL')\nelif index>=25 and index<30:\n    print(f'{index}')\n    print('WARM')\nelif index>=30 and index<35:\n    print(f'{index}')\n    print('HOT')\nelse:\n    print(f'{index}')\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:54:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887004\nPASSWORD: zNCL4y\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = round(float(input()),1)\nh = round(float(input()),1)\nw = round(float(input()),1)\n\nindex = (t + (h/10)-(w/5))\nprint(round((index),1))\n\nif index <20:\n    print ('COLD')\nelif index >=20 and index < 25:\n    print('COOL')\nelif index >=25 and index <30:\n    print('WARM')\nelif index >= 30 and index < 35 :\n    print('HOT')\nelif index >= 35:\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887006",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:06:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887006\nPASSWORD: hyIOq7\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h / 10) - (w / 5)\nprint(round(index,1))\n\nif index < 20 :\n    print(\"COLD\")\nelif index >= 20 and index < 25 : \n    print(\"COOL\")\nelif index >= 25 and index < 30 :\n    print(\"WARM\")\nelif index >= 30 and index < 35 :\n    print(\"HOT\")\nelse :\n    print(\"EXTREME HEAT\")\n"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:48:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: Rxdw0E\nEXERCISEID: itds120-cp1-q3\n */\n'''\n \n# YOUR CODE GOES HERE\n\nt = float(input())\nh = int(input())\nw = int(input())\n\nindex = t + (h / 10) - (w / 5)\n\nprint(round(index,2))\nif (index < 20):\n    print(\"COLD\")\nelif (index < 25):\n    print(\"COOL\")\nelif (index < 30):\n    print(\"WARM\")\nelif (index < 35):\n    print(\"HOT\")\nelif (index >= 35):\n    print(\"EXTREME HEAT\")\n"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:54:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: ZDWFEP\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt =float(input())\nh =float(input())\nw =float(input())\na = t+(h/10)-(w/5)\nindex = round(a,1)\nif index < 20:\n    print(index)\n    print('COLD')\nelif index >= 20 and index < 25:\n    print(index)\n    print('COOL')\nelif index >= 25 and index <30:\n    print(index)\n    print('WARM')\nelif index >= 30 and index <35:\n    print(index)\n    print('HOT')\nelif index >= 35:\n    print(index)\n    print('EXTREME HEAT')\n\n\n"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:59:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: CIKsXs\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex =t+(h/10)-(w/5) \nweather = 0\nif index<20:\n    weather='COLD'\nelif index>=20 and index<25:\n    weather='COOL'\nelif index>=25 and index<30:\n    weather='WARM'\nelif index>=30 and index<35:\n    weather='HOT' \nelif index>=35:\n    weather='EXTREME HEAT'\n\n\n\n\nprint(round(index,1))\nprint(weather)\n\n"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:44:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: YkQItr\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = (t) + (h/10) - (w/5)\nprint(round(index, 1))\n\nif index < 20:\n    print('COLD')\nelif (index >= 20) and (index < 25):\n    print('COOL')\nelif (index >= 25) and (index < 30):\n    print('WARM')\nelif (index >= 30) and (index < 35):\n    print('HOT')\nelse:\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:20:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: L4zjrv\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input());\nh = float(input());\nw = float(input());\n\nindex = t + (h/10) - (w/5);\nround(index, 1);\n\nif index < 20 :\n    print(f'{index:.1f}');\n    print('COLD');\nelif (index >= 20) and (index < 25) :\n    print(f'{index:.1f}');\n    print('COOL');\nelif (index >= 25) and (index < 30) :\n    print(f'{index:.1f}');\n    print('WARM');\nelif (index >= 30) and (index < 35) :\n    print(f'{index:.1f}');\n    print('HOT');\nelif (index >= 35) :\n    print(f'{index:.1f}');\n    print('EXTREME HEAT');\n\n"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:41:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: dHpZsw\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = round(t,1)+(round(h/10,1))-(round(w/5,1))\n\nif index<20:\n    print(round(index,2))\n    print('COLD')\nelif 20<=index<25:\n    print(round(index,2))\n    print('COOL')\nelif 25<=index<30:\n    print(round(index,2))\n    print('WARM')\nelif 30<=index<35:\n    print(round(index,2))\n    print('HOT')\nelse:\n    print(round(index,2))\n    print('EXTREME HEAT')                \n\n\n"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:58:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: 3t1l8b\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\n\nindex = (t) + (h / 10) - (w / 5)\n\n\nprint( round(index, 1) )\n\n\nif index < 20 :\n    print('COLD')\n\nelif index >= 20 and index < 25 :\n    print('COOL')\n\nelif index >= 25 and index < 30 :\n    print('WARM')\n\nelif index >= 30 and index < 35 :\n    print('HOT')\n\nelif index >= 35 :\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887014",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:59:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887014\nPASSWORD: dSjhNQ\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\ntem = float(input())\nh   = float(input())\nw   = float(input())\nd   = tem + (h / 10) - (w / 5)\nprint(str(d))\nif(d < 20 ):\n    print('COLD')\nelif(d >= 20 and d < 25):\n    print('COOL')\nelif(d >= 25 and d < 30):\n    print('WARM')\nelif(d >= 30 and d < 35):\n    print('HOT')\nelif(d >= 35):\n    print('EXTREME HEAT')\n\n\n\n"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:54:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887015\nPASSWORD:4J4ALd \nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\n\nindex=t+(h/10)-(w/5)\n\nprint(round(index,1))\n\nif index<20:\n    print('COLD')\nelif index>=20 and index < 25:\n    print('COOL')\nelif index>=25 and index<30:\n    print('WARM')\nelif index>=30 and index<35:\n    print('HOT')\nelse:\n    print('EXTREME HEAT')\n\n\n"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:41:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: 18nLui\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = int(input())\nw = int(input())\n\nindex = t + (h/10) - (w/5)\n\nprint(f'{round(index,1)}')\nif (index >= 35):\n    print(f'EXTREME HEAT')\nelif (30 <= index < 35):\n    print(f'HOT')\nelif (25 <= index < 30):\n    print(f'WARM')\nelif (20 <= index < 25):\n    print(f'COOL')\nelse:\n    print(f'COLD')"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:23:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887017\nPASSWORD: IWbKsA\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\nindex =((h/10)-(w/5))+t\nprint(round(index,2))\nif index<20:\n    print('COLD')\nelif index>=20 and index < 25:\n    print('COOL')\nelif index>=25 and index < 30:\n    print('WARM')\nelif index>=30 and index < 35:\n    print('HOT')\nelse:\n    print('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:30:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887018\nPASSWORD: TG2MRS\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t+(h/10)-(w/5)\nprint(round(index,1))\n\nif (index<20):\n    print('COLD')\nelif (20 <= index < 25\t):\n    print('COOL')\nelif (25 <= index < 30\t):\n    print('WARM')\nelif ( 30 <= index < 35\t):\n    print('HOT')\nelse:\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:14:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: 0KB9eb\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t + (h/10) - (w/5)\nindex = round(index, 1)\nprint(index)\n\nif index < 20:\n    print(\"COLD\")\nelif 20 <= index < 25 :\n    print(\"COOL\")\nelif 25 <= index < 30:\n    print(\"WARM\")\nelif 30 <= index < 35:\n    print(\"HOT\")\nelif index >= 35:\n    print(\"EXTREME HEAT\")"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:17:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: QbYbZi\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input()) / 10\nw = float(input()) / 5\n\nindex = t + h - w\n\nprint(round(index, 1))\n\nif index < 20:\n    print(\"COLD\")\nelif 20 <= index < 25:\n    print(\"COOL\")\nelif 25 <= index < 30:\n    print(\"WARM\")\nelif 30 <= index < 35:\n    print(\"HOT\")\nelif index >= 35:\n    print(\"EXTREME HEAT\")\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:18:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021\nPASSWORD: SO3HTG\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\n\n\nprint(round(index,1))\n\n\n\nif index < 20:\n    print('COLD')\nelif index >= 20 and index <25:\n    print('COOL')\nelif index >= 25 and index <30:\n    print('WARM')\nelif index >= 30 and index <35:\n    print('HOT')\nelif index >= 35 :\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:43:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: 4o8rml\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = round(t+((h/10)- (w/5)),1)\n\nif index <20:\n    print(index)\n    print('COLD')\nelif 20<= index <25:\n    print(index)\n    print('COOL')\nelif 25<= index <30:\n    print(index)\n    print('WARM')\nelif 30<= index <35:\n    print(index)\n    print('HOT')\nelse:\n    print(index)\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:01:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887023\nPASSWORD: Zacn05\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\nindex = round(index,1)\n\nif index < 20 :\n    print(index)\n    print('COLD')\nelif index < 25:\n    print(index)\n    print('COOL')\nelif index < 30 :\n    print(index)\n    print('WARM')\nelif index <35 :\n    print(index)\n    print('HOT')\nelse :\n    print(index)\n    print('EXTREME HEAT')\n\n"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:28:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: dmzvuU\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\n\nindex = round(index,1)\n\nif index < 20:\n    print(round(index,2))\n    print('COLD')\nelif index >= 20 and index < 25:\n    print(round(index,2))\n    print('COOL')\nelif index >= 25 and index < 30:\n    print(round(index,2))\n    print('WARM')\nelif index >= 30 and index < 35:\n    print(round(index,2))\n    print('HOT')\nelif index >= 35:\n    print(round(index,2))\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887025",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:58:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887025\nPASSWORD: a5lrob\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\n\nindex = t+(h/10)-(w/5)\nprint(round(index,1))\nif index < 20 :\n    print('COLD')\nif 20<= index < 25 :\n    print('COOL')\nif 25<=index < 30 :\n    print('WARM')\nif 30 <= index < 35 :\n    print('HOT')\nif index >= 35 :\n    print('EXTREME HEAT')\n\n"
+  },
+  {
+    "User ID": "6887026",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:10:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887026\nPASSWORD: jZDEea\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input( ))\nh = float(input( ))\nw =float(input( ))\n\nindex = t + (h/10)-(w/5)\n\nif index < 20:\n    print(round(index, 1))\n    print('COLD')\nelif 20 <= index and index < 25:\n    print(round(index, 1))\n    print('COOL')\nelif 25 <= index and index < 30:\n    print(round(index, 1))\n    print('WARM')\nelif 30 <= index and index < 35:\n    print(round(index, 1))\n    print('HOT')\nelif index >= 35:\n    print(round(index, 1))\n    print('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:51:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887027\nPASSWORD: e4aBkp\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\n\nprint(round(index, 1))\n\nif index < 20:\n    print('COLD')\nelif 20 <= index < 25:\n    print('COOL')\nelif 25 <= index < 30:\n    print('WARM')\nelif 30 <= index < 35:\n    print('HOT')\nelif index >= 35:\n    print('EXTREME HEAT')\n    \n\n"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:42:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: UwzS1e\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\n\nprint(round(index, 1))\n\nif index < 20 :\n    print('COLD')\nelif index < 25 :\n    print('COOL')\nelif index < 30 :\n    print('WARM')\nelif index < 35 :\n    print('HOT')\nelse :\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:42:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD: Bm8EH3\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t + (h / 10) - (w / 5)\nprint(round(index,1))\nif index < 20 :\n    print('COLD')\nelif 20 <= index < 25 :\n    print('COOL')\nelif 25 <= index < 30 :\n    print('WARM')\nelif 30 <= index < 35 :\n    print('HOT')\nelif index >= 35 :\n    print('EXTREME HEAT')\n\n\n"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:48:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: Ex6bxi\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nt = float (input())\nh = float (input())\nw = float (input())\n\nindex = t + (h/10) - (w/5)\nprint (round(index,1))\n\nif index >= 35 :\n    print('EXTREME HEAT')\nelif index >= 30 and index < 35 :\n    print('HOT')\nelif index >= 25 and index < 30 :\n    print('WARM')\nelif index >= 20 and index < 25 :\n    print('COOL')\nelif index < 20 :\n    print('COLD')\n"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:56:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: dcHtM1\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t+h/10-w/5\n\nprint(round(index,1))\nif(index<20):\n    print(\"COLD\")\nelif(20<=index<25):\n    print(\"COOL\")\nelif(25<=index<30):\n    print(\"WARM\")\nelif(30<=index<35):\n    print(\"HOT\")\nelif(index>=35):\n    print(\"EXTREME HEAT\")"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:41:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: nss3kP\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t+(h/10)-(w/5)\nif index<20:\n    print(f'{round(index,1)}')\n    print('COLD')\nelif index>=20 and index<25:\n    print(f'{round(index,1)}')\n    print('COOL')\nelif index>=25 and index<30:\n    print(f'{round(index,1)}')\n    print('WARM')\nelif index>=30 and index<35:\n    print(f'{round(index,1)}')\n    print('HOT')\nelif index>=35:\n    print(f'{round(index,1)}')\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:47:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: p1Ln2x\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\n\nprint(round(index,1))\nif index >= 35:\n    print('EXTREME HEAT')\nelif index >= 30 and index <35:\n    print('HOT')\nelif index >= 25 and index <30:\n    print('WARM')\nelif index >= 20 and index <25:\n    print('COOL')\nelse:\n    print('COLD')\n"
+  },
+  {
+    "User ID": "6887034",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:35:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887034\nPASSWORD: zS5yMF\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = float()\n\nindex = t+(h/10)-(w/5)\nprint(round(index,1))\n\nif index < 20:\n    print(\"COLD\")\nelif 20 <= index <25:\n    print(\"COOL\")\nelif 25 <= index <30:\n    print(\"WARM\")\nelif 30 <= index <35:\n    print(\"HOT\")\nelif index >= 35:\n    print(\"EXTREME HEAT\")   \n\n"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:31:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: aj8qM2\nEXERCISEID: itds120-cp1-q3\n */\n'''\nt=float(input())\nh=float(input())\nw=float(input())\nindex=t+(h/10)-(w/5)\nprint(round(index, 2))\nif index < 20 :\n    print('COLD')\nelif (index >= 20 ) and (index < 25) :\n    print('COOL')\nelif (index >= 25 ) and (index < 30) :\n    print('WARM')\nelif (index >= 30 ) and (index < 35) :\n    print('HOT')\nelif index >= 35 :\n    print('EXTREME HEAT')\n\n\n"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:55:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: NXDH9w\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\n#text{index} = t + ((frac{h}{10}) - (frac{w}{5}))\n\nindex = round(t + ((h // 10) - (w // 5)), 2)\n\n\nif index < 20:\n    print(str(index))\n    print('COLD')\n\nelif 20 <= index < 25:\n    print(str(index))\n    print('COOL')\n\nelif 25 <= index < 30:\n    print(str(index))\n    print('WARM')\n\nelif 30 <= index < 35:\n    print(str(index))\n    print('HOT')\n\nelif index >= 35:\n    print(str(index))\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:55:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: NLb17Y\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\n\n\nif index >= 35:\n    we = 'EXTREME HEAT'\nelif index < 35 and index >= 30:\n    we = 'HOT'\nelif index < 30 and index >= 25:\n    we = 'WARM'\nelif index < 25 and index >= 20:\n    we = 'COOL'\nif index < 20:\n    we = 'COLD'\n\nprint(index)\nprint(we)"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:45:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887038\nPASSWORD: JnJsm5\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + ( h / 10) - ( w / 5 )\n\nif ( index < 20):\n    index = round(index, 1)\n    print(str(index))\n    print('COLD')\nelif ( 20 <= index < 25):\n    index = round(index, 1)\n    print(str(index))\n    print('COOL')  \nelif ( 25 <= index < 30):\n    index = round(index, 1)\n    print(str(index)) \n    print('WARM')\nelif ( 30 <= index < 35):\n    index = round(index, 1)\n    print(str(index))\n    print('HOT') \nelif ( index >= 35 ):\n    index = round(index, 1)\n    print(str(index))\n    print('EXTREME HEAT')           \n"
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:29:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: JECArv\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t+(h/10)-(w/5)\n\nif (index>=35):\n    print(round(index, 1))\n    print('EXTREME HEAT')\nelif (index>=30):\n    print(round(index, 1))\n    print('HOT')\nelif (index>=25):\n    print(round(index, 1))\n    print('WARM')\nelif (index>=20):\n    print(round(index, 1))\n    print('COOL')\nelif (index<20):\n    print(round(index, 1))\n    print('COLD')"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:38:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887040\nPASSWORD: 3wqD25\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex =  (t + (h / 10)) - (w / 5)\n\nprint(round(index ,1))\n\nif index < 20. :\n    print('COLD')\nelif index >= 20 and index < 25 :\n    print('COOL')\nelif index >= 25 and index < 30 :\n    print('WARM')\nelif index >= 30 and index < 35 :\n    print('HOT')\nelif index >= 35 :\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887041",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:48:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887041\nPASSWORD: NmEBDa\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + ((h / 10) - (w / 5))\n\nprint(round(index,1))\n\nif index < 20 :\n    print('COLD')\nelif 20 <= index and index < 25 :\n    print('COOL')\nelif 25 <= index and index < 30 :\n    print('WARM')\nelif 30 <= index and index < 35 :\n    print('HOT')\nelif index >= 35 :\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:22:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: BsVI6m\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h / 10) - (w / 5)\n\nprint(round(index, 2))\n\nif index < 20:\n    print('COLD')\nelif index >= 20 and index < 25:\n    print('COOL')\nelif index >= 25 and index < 30:\n    print('WARM')\nelif index >= 30 and index < 35:\n    print('HOT')\nelif index >= 35:\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:32:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD: 3k9rLM\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t + (h/10) - (w/5)\n\nprint(round(index,2))\n\nif index <  20 :\n    print('COLD')\nelif index >= 20 and index < 25 :\n    print('COOL')\nelif index >= 25 and index < 30 :\n    print('WARM')\nelif index >=30 and index < 35 :\n    print('HOT')\nelse:\n    print('EXTREME HEAT')\n\n\n"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:37:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: yiiPmC\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\nindex=t+(h/10)-(w/5)\nprint(f'{round(index,1)}')\nif index<20:\n    print('COLD')\nelif 20<=index<25:\n    print('COOL')\nelif 25<=index<30:\n    print('WARM')\nelif 30<=index<35:\n    print('HOT')\nelse:\n    print('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:58:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: z6lL4a\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t + (h / 10) - (w / 5)\nprint(index)\nif round(index, 1) < 20:\n    print('COLD')\nelif round(index, 1) < 25:\n    print('COOL')\nelif round(index, 1) < 30:\n    print('WARM')\nelif round(index, 1) < 35:\n    print('HOT')\nelse:\n    print('EXTREME HEAT')\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:38:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: s9bA0p\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\nindex = t + ( (h/10) - (w/5) )\nif round(index, 1) < 20 :\n    print(round(index, 1))\n    print('COLD')\nelif round(index, 1) < 25 :\n    print(round(index, 1))\n    print('COOL')\nelif round(index, 1) < 30 :\n    print(round(index, 1))\n    print('WARM')\nelif round(index, 1) < 35 :\n    print(round(index, 1))\n    print('HOT')\nelif round(index, 1) >= 35 :\n    print(round(index, 1))\n    print('\tEXTREME HEAT')"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:40:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD: IAup3Z\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = int(input())\nw = int(input())\n\nindex = round(t + h / 10) - (w / 5),1\n\nif index < 20:\n    print(\"COLD\")\nelif index < 25:\n    print(\"COOL\")\nelif index < 30:\n    print(\"WARM\")\nelif index < 35:\n    print(\"HOT\")\nelse:\n    print(\"EXTREME HEAT\")"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:32:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: lQB3u3\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# input temp, humid, wind\nt = float(input())\nh = float(input())\nw = float(input())\nind= t + (h/10) - (w/5) #Cal index\nprint(round(ind, 1)) #decimal 1\n\n#ind check\nif ind >= 35:\n    print('EXTREME HEAT')\nelif 30 <= ind and ind < 35:\n    print('HOT')\nelif 25 <= ind and ind < 30:\n    print('WARM')\nelif 20 <= ind and ind < 25:\n    print('COOL')\nelif ind < 20:\n    print('COLD')\n"
+  },
+  {
+    "User ID": "6887050",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:57:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887050\nPASSWORD: Ol3um2\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t+(h/10)-(w/5)\nprint(round(index, 1 ))\n\nif index < 20:\n    status = 'COLD'\nelif index < 25:\n    status = 'COOL'\nelif index < 30:\n    status = 'WARM'\nelif index < 35:\n    status = 'HOT'\nelse:\n    status = 'EXTREME HEAT'\nprint(status)"
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:48:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: GqluDI\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input().strip())\nh = float(input().strip())\nw = float(input().strip())\n\nindex = t + (h / 10) - (w/5)\nprint(round(index,1))\nif index >= 35:\n    print('EXTREME HEAT')\nelif index<35 and index >= 30:\n    print('HOT')  \nelif index<30 and index >= 25:\n    print('WARM')  \nelif index<35 and index >= 20:\n    print('COOL')  \nelif index<20:\n    print('COLD')  "
+  },
+  {
+    "User ID": "6887052",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:06:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887052\nPASSWORD: wkzOHa\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\nt = float(input())\nh = float(input())\nw = float(input())\nindex = round((t + (h/10) - (w/5)),1)\nprint (index)\n\nif index < 20:\n    print('COLD')\nelif index >= 20 and index < 25:\n    print('COOL')\nelif index >= 25 and index < 30:\n    print('WARM')\nelif index >= 30 and index < 35:\n    print('HOT')\nelif index >= 35:\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:44:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: p1Gu3d\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex =  round(t + (h*0.1)-(w/5),1)\nprint(index)\nif index >= 35 :\n    print('EXTREME HEAT')\nelif 30 <= index < 35 :\n    print('HOT')\nelif 25 <= index < 30 :\n    print('WARM')\nelif 20 <= index < 25 :\n    print('COOL')\nelse :\n    print('COLD')\n\n"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:03:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: inIKg0\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t+(h/10)-(w/5)\nif index < 20 :\n    print(round(index,1))\n    print(\"COLD\")\nif 20<=index<25 :\n    print(round(index,1))\n    print(\"COOL\")\nif 25<=index <30 :\n    print(round(index,1))\n    print(\"WARM\")\nif 30<=index<35 :\n    print(round(index,1))\n    print(\"HOT\")\nif index>= 35 :\n    print(round(index,1))\n    print(\"EXTREME HEAT\")\n\n"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:01:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887056\nPASSWORD: ivNlWf\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\ntem = float(input())\ncold = float(input())\nwind = float(input())\n\nindex = (tem + (cold / 10)) - wind / 5\n\nif index <= 20:\n    print(f\"{index:.1f}\")\n    print(\"COLD\")\nelif 20 <= index < 25:\n    print(f\"{index:.1f}\")\n    print(\"COOL\")\nelif 25 <= index < 30:\n    print(f\"{index:.1f}\")\n    print(\"WARM\")\nelif 30 <= index < 35:\n    print(f\"{index:.1f}\")\n    print(\"HOT\")\nelif index >= 35:\n    print(f\"{index:.1f}\")\n    print(\"EXTREME HEAT\")\n"
+  },
+  {
+    "User ID": "6887057",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:56:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887057\nPASSWORD: HY03IB\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\nIndex = t +(h/10)-(w/5)\nif Index < 20:\n    print(round(Index,1))\n    print('COLD')\nelif 20<= Index < 25:\n    print(round(Index,1))\n    print('COOL')\nelif 25<= Index < 30:\n    print(round(Index,1))\n    print('WARM')\nelif 30<= Index < 35:\n    print(round(Index,1))\n    print('HOT')\nelif  Index >= 35:\n    print(round(Index,1))\n    print('EXTREME HEAT ')\n\n"
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:22:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: XNtsvl\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = round(t+(h/10)-(w/5), 2)\n\nprint(index)\nif index < 20:\n    print('COLD')\nelif index < 25:\n    print('COOL')\nelif index < 30:\n    print('WARM')\nelif index < 35:\n    print('HOT')\nelse:\n    print('EXTREME HEAT')\n\n"
+  },
+  {
+    "User ID": "6887059",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:45:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887059\nPASSWORD: zsM3Fe\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\nprint(index)\nif index < 20 :\n    print(\"COLD\")\nelif 20 <= index and index < 25 :\n    print(\"COOL\")\nelif 25 <= index and index < 30 :\n    print(\"WARM\")\nelif 30 <= index and index < 35 :\n    print(\"HOT\")\nelif 35 <= index :\n    print(\"EXTREME HEAT\")\n"
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:54:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887060\nPASSWORD: 4PahLv\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt=float(input())\nh=float(input())\nw=float(input())\n\ntotal=t+(h/10)-(w/5)\ntotal2=round((total), 1)\ntotal3=round((total), 2)\nprint(total3)\n\nif total<20:\n    print('COLD')\nelif total==20 or total<25:\n    print('COOL')\nelif total==25 or total<30:\n    print('WARM')\nelif total==30 or total<35:\n    print('HOT')\nelif total >= 35:\n    print('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:59:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD: yJn7lS\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h /10) - (w / 5)\nprint(round(index,1))\nif index < 20 :\n    print('COLD')\nelif (index >= 20) and (index < 25) :\n    print('COOL')\nelif (index >= 25) and (index < 30) :\n    print('WARM')\nelif (index >= 30) and (index < 35) :\n    print('HOT')\nelif index >= 35 :\n    print('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:57:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: Y1WwsH\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt=float(input())\nh=float(input())\nw=float(input())\n\nindex=t+(h/10)-(w/5)\nprint(round(index,1))\n\nif (index<20):\n    print(\"COLD\")\nelif (index<25):\n    print(\"COOL\")\nelif(index<30):\n    print(\"WARM\")\nelif(index<35):\n    print(\"HOT\")\nelse:\n    print(\"EXTREME HEAT\")"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:30:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD: Jsbf6k\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t+(h/10)-(w/5)\n\nprint(f'{round(index, 1)}')\nif index < 20:\n    print('COLD')\nelif index >= 20 and index < 25:\n    print('COOL')\nelif index >= 25 and index < 30:\n    print('WARM')\nelif index >= 30 and index < 35:\n    print('HOT')\nelse:\n    print('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:24:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: eejGC5\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\ntemp = float(input())\nh = float(input())\nw = float(input())\nindex = temp+(h/10)-(w/5)\nprint(round(index,1))\nif index < 20:\n    print('COLD')\nelif index >= 20 and index < 25:\n    print('COOL')\nelif index >= 25 and index < 30:\n    print('WARM')\nelif index >= 30 and index < 35:\n    print('HOT')\nelif index >= 35:\n    print('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:52:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887065\nPASSWORD: OGqLMF\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\ntemp = float(input())\nhumid = float(input())\nwind = float(input())\n\nindex = temp + (humid/10) - (wind/5)\nprint(round(index , 1))\n\nif index >= 35 :\n    print('EXTREME HEAT')\nelif index >= 30 :\n    print('HOT')\nelif index >= 25 :\n    print('WARM')\nelif index >= 20 :\n    print('COOL')\nelse :\n    print('COLD')\n\n"
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:48:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD: qaFmRT\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t+(h/10)-(w/5)\nprint (round(index, 2))\nif index<20 :\n    print ('COLD')\nelif index>=20 and index<25 :\n    print ('COOL')\nelif index>=25 and index<30 :\n    print ('WARM')\nelif index>=30 and index<35 :\n    print ('HOT')\nelif index>=35 :\n    print ('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:48:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887067\nPASSWORD: IZptmr\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nins = t + ((h/10) - (w/5))\n\nif ins < 20:\n    print(round(ins, 2))\n    print('COLD')\nelif 20 <= ins and ins < 25:\n    print(round(ins, 2))\n    print('COOL')\nelif 25 <= ins and ins < 30:\n    print(round(ins, 2))\n    print('WARM')\nelif 30 <= ins and ins < 35:\n    print(round(ins, 2))\n    print('HOT')\nelif ins >= 35:\n    print(round(ins, 2))\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887068",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:59:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887068\nPASSWORD: fi5JFi\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + ((h / 10) - (w / 5))\n\nif index < 20 :\n    print(index)\n    print('COLD')\n\nelif 20 <= index < 25 :\n    print(index)\n    print('COOL')\n\nelif 25 <= index < 30 :\n    print(index)\n    print('WARM')\n\nelif 30 <= index < 35 :\n    print(index)\n    print('HOT')\n\nelif index >= 35 :\n    print(index)\n    print('EXTREME HEAT')\n\n"
+  },
+  {
+    "User ID": "6887069",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:59:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887069\nPASSWORD: CLuzX8\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t + (h/10) - (w/5)\nif index >= 35 :\n    print (f\"{round(index, 1)} \\nEXTREME HEAT\")\nelif index >= 30 and index < 35 :\n    print (f\"{round(index, 1)}\\nHOT\")\nelif index >= 25 and index < 30 :\n    print(f\"{round(index, 1)}\\nWARM\")\nelif index >= 20 and index < 25 :\n    print(f\"{round(index, 1)}\\nCOOL\")\nelse :\n    print(f\"{round(index, 1)}\\nCOLD\")\n\n"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:19:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: rzCl1a\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nt = float(input())\nh = float(input())\nw = float(input())\ni = t+(h/10)-(w/5)\nprint(round(i, 1))\nif i >= 35 :\n    print(\"EXTREME HEAT\")\nelif i >= 30 :\n    print(\"HOT\")\nelif i >= 25 :\n    print(\"WARM\")\nelif i >= 20 :\n    print(\"COOL\")\nelse :\n    print(\"COLD\")\n\n\n#15\n#20\n#10"
+  },
+  {
+    "User ID": "6887071",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T10:00:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887071\nPASSWORD: OeB1QK\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nans = ((t + (h/10))-(w/5))\nif ans < 20:\n    print(round(ans,1))\n    print('COLD')\nif ans >=20 and ans < 25 :\n    print(round(ans,1))\n    print('COOL')\nif ans >=25 and ans < 30 :\n    print(round(ans,1))\n    print('WARM')\nif  ans >=30 and ans < 35 :\n    print(round(ans,1))\n    print('HOT')\nif ans >= 35:\n    print(round(ans,1))\n    print('EXTREME HEAT')\n\n\n\n"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:51:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: oXatBP\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=int(input())\nw=int(input())\nindex=round(t+(h/10)-(w/5),2)\nprint(index)\nif index<20:\n    print(\"COLD\")\nelif 20<=index and index<25:\n    print(\"COOL\")\nelif 25<=index and index<30:\n    print(\"WARM\")\nelif 30<=index and index<35:\n    print(\"HOT\")\nelse:\n    print(\"EXTREME HEAT\")"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:08:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: GwBpPA\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input()) \nh = float(input()) \nw = float(input()) \nindex = (float(t) + float(h/10) - float(w/5))\nprint(round(index,1))\nif index < 20 :\n    print('COLD')\nelif 20 <= index < 25:\n    print('COOL')\nelif 25 <= index < 30 :\n    print('WARM')\nelif 30 <= index < 35:\n    print('HOT')\nelif index >= 35:\n    print('EXTREME HEAT')\n\n\n\n\n            \n               "
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:58:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887074\nPASSWORD: eR8vK4\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t + h/10 - w/5\nprint(round(index,1))\nif index < 20 :\n    print('COLD')\nelif 20 <= index < 25 :\n    print('COOL')\nelif 25 <= index < 30 :\n    print('WARM')\nelif 30 <= index < 35 :\n    print('HOT')\nelse :\n    print('EXTREME HEAT')\n\n\n"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:00:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: Zl66FF\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + ((h/10) - (w/5))\n\nif index < 20:\n    print(round(index,1))\n    print('COLD')\nelif 20 <= index < 25:\n    print(round(index,1))\n    print('COOL')\nelif 25 <= index < 30:\n    print(round(index,1))\n    print('WARM')\nelif 30 <= index < 35:\n    print(round(index,1))\n    print('HOT')\nelif index >= 35:\n    print(round(index,1))\n    print('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:13:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: gdPINQ\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\nans=t+(h/10)-(w/5)\nprint(round(ans,1))\nif ans<20:\n    print('COLD')\nelif 20 <= ans <25:\n    print('COOL')\nelif 25 <= ans <30:\n    print('WARM')\nelif 30 <= ans <35:\n    print('HOT')\nelse:\n    print('EXTREME HEAT')\n\n"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:54:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: 79whZz\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + h/10 - w/5\n\nprint(round(index, 1))\n\nif index < 20  :\n    print('COLD')\nelif 20 <= index < 25:\n    print('COOL')\nelif 25 <= index < 30:\n    print('WARM')\nelif 30 <= index < 35:\n    print('HOT')\nelse:\n    print('EXTREME HEAT')\n\n#true\n\n\n"
+  },
+  {
+    "User ID": "6887078",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:30:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887078\nPASSWORD: Dy9s6r\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = int(input())\nw = int(input())\n\nindex = t+(h/10)-(w/5)\n\nif index < 20 :\n    print(round(index, 1))\n    print(\"COLD\")\nelif index >= 20 and index < 25 :\n    print(round(index, 1))\n    print(\"COOL\")\nelif index >= 25 and index < 30 :\n    print(round(index, 1))\n    print(\"WARM\")\nelif index >= 30 and index < 35 :\n    print(round(index, 1))\n    print(\"HOT\")\nelif index >= 35 :\n    print(round(index, 1))\n    print(\"EXTREME HEAT\")"
+  },
+  {
+    "User ID": "6887079",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:43:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887079\nPASSWORD: 4MRWAs\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\n\nprint('round(index, 1)')\n"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:06:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: tS8hYY\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = int(input())\nw = float(input())\nindex = (t+(h/10)-(w/5))\nprint(round(index, 1))\nif index < 20:\n    print('COLD')\nelif index >= 20 and index < 25 :\n    print('COOL')\nelif index < 30 and index >= 25 :\n    print('WARM')\nelif index >= 30 and index < 35 :\n    print('HOT')\nelse :\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:01:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: 2kQm3k\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt=float(input())\na=float(input())\nw=float(input())\n\ndex=t+(a/10)-(w/5)\n\nprint(round(dex,1))\n\nif dex>=35:\n    print('EXTREME HEAT')\nelif dex>=30:\n    print('HOT')\nelif dex>=25:\n    print('WARM')\nelif dex>=20:\n    print('COOL')\nelse:\n    print('COLD')\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-08-25T09:55:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: pklcAs\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\n\nindex=(round(t+(h/10))-(w/5),1)\n\nif index<20:\n    print('COLD')\nelif index>=20 and index<25:\n    print('COOL')\nelif index>=25 and index<30:\n    print('WARM')\nelif index>=30 and index<35:\n    print('HOT')\nelif index>=35:\n    print('EXTREAM HEAT')\n\n"
+  },
+  {
+    "User ID": "6887083",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "7/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T09:59:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887083\nPASSWORD: QiI5wB\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h%10) - (w%5)\n\nif index < 20:\n    print(round(index, 1))\n    print(\"COLD\")\nif 20 <= index < 25:\n    print(round(index, 1))\n    print(\"COOL\")\nif 25 <= index < 30:\n    print(round(index, 1))\n    print(\"WARM\")\nif 30 <= index < 35:\n    print (round(index, 1))\n    print(\"HOT\")\nif index >= 35:\n    print (round(index, 1))\n    print(\"EXTREME HEAT\")\n\n\n\n"
+  },
+  {
+    "User ID": "6887084",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:31:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887084\nPASSWORD: zYxEJl\nEXERCISEID: itds120-cp1-q3\n */\n'''\nt=float(input())\nh=float(input())\nw=float(input())\nindex= t+(h/10)-(w/5)\nindex= round(index,1)\nif index <20:\n    print(str(index))\n    print('COLD')\nelif 20 <= index and index <25:\n    print(str(index))\n    print('COOL')\nelif 25<= index and index <30:\n    print(str(index))\n    print('WARM')\nelif 30<= index and index<35:\n    print (str(index))\n    print('HOT')\nelif index >=35:\n    print(str(index))\n    print('EXTREME HEAT')\nelse:\n    print('x')\n\n# YOUR CODE GOES HERE\n\n\n"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-08-25T10:00:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: LFlH3c\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\ntem = float(input())\nh = float(input())\nw = float(input())\nindex = tem + (h / 10) - (w / 5)\n\nif index < 20:\n    print(round(index, 1),\"COLD\")\nelif 20<= index <25 :\n    print(index,\"COOL\")\nelif 25<= index <30 :\n    print(round(index, 1),\"WARM\")\nelif 30<= index <35 :\n    print(round(index, 1),\"HOT\")\nelif index >=35 :\n    print(round(index, 1),\"EXTREME HEAT\")\n"
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:39:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: Cw2p63\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = round(t + (h / 10) - (w / 5),1)\nprint(index)\nif index < 20:\n    print('COLD')\nelif index >= 20 and index < 25:\n    print('COOL')\nelif index >= 25 and index < 30:\n    print('WARM')\nelif index >= 30 and index < 35:\n    print('HOT')\nelif index >= 35:\n    print('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887087",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:06:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887087\nPASSWORD: SdlJU6\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\na = t + (h/10) - (w/5)\n\na = round(a, 1)\n\nif a >= 35 :\n    print(str(a))\n    print(\"EXTREME HEAT\")\nelif a >= 30 :\n    print(str(a))\n    print(\"HOT\")\nelif a >= 25 :\n    print(str(a))\n    print(\"WARM\")\nelif a >= 20 :\n    print(str(a))\n    print(\" COOL\")\nelse :\n    print(str(a))\n    print(\"COLD\")\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:50:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: S1spOB\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())/10\nw=float(input())/5\nx=round(t+(h-w),1)\nprint(x)\nif x<20:\n    print('COLD')\nelif x<25:\n    print('COOL')\nelif x<30:\n    print('WARM')\nelif x<35:\n    print('HOT')\nelse:\n    print('EXTREME HEAT')\n\n"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:18:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: cwbj32\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t+(h/10)-(w/5)\n\nif index < 20:\n    print(round(index,1))\n    print('COLD')\nelif index < 25:\n    print(round(index,1))\n    print('COOL')\nelif index < 30:\n    print(round(index,1))\n    print('WARM')\nelif index < 35:\n    print(round(index,1))\n    print('HOT')\nelse:\n    print(round(index,1))\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887090",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:50:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887090\nPASSWORD: toYhLh\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\nindex= t + (h/10) - (w/5) \nindex=round(index, 1)\nprint(index)\nif index<20:\n  print('COLD')\nelif (index < 25) and (index >= 20):\n  print('COOL')\nelif (index < 30) and (index >= 25):\n  print('WARM')\nelif (index < 35) and (index >= 30):\n  print('HOT')\nelse:\n  print('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:55:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: qanzAA\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n#input\nt = float(input())\nh = float(input())\nw = float(input())\n\n#finding index\nindex = t+(h / 10) - ( w / 5)\n\n#outout\nprint(round(index,1))\n\nif index < 20:\n    print(\"COLD\")\nelif index >= 20 and index < 25:\n    print(\"COOL\")\nelif index >= 25 and index < 30:\n    print(\"WARM\")\nelif index >= 30 and index < 35:\n    print(\"HOT\")\nelif index >= 35:\n    print(\"EXTREME HEAT\") \n\n\n"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:34:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887093\nPASSWORD: rRac9z\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t+(h/10)-(w/5)\n\nprint(round(index, 1))\n\nif index < 20:\n    print(\"COLD\")\nelif index >= 20 and index <25:\n    print(\"COOL\")\nelif index >= 25 and index <30:\n    print(\"WARM\")\nelif index >= 30 and index <35:\n    print(\"HOT\")\nelif index >= 35:\n    print(\"EXTREME HEAT\")\n"
+  },
+  {
+    "User ID": "6887094",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:22:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887094\nPASSWORD: eiXpCs\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = (t + (h/10) - (w/5))\n\nprint(round(index, 1))\n\nif index < 20 :\n    print(\"COLD\")\nelif index < 25 :\n    print(\"COOL\")\nelif index < 30 :\n    print(\"WARM\")\nelif index < 35 :\n    print(\"HOT\")\nelse :\n    print(\"EXTREME HEAT\")"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:25:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: QOoqdw\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\na = float(input())\nb = float(input())\nc = float(input())\n\nindex = a + (b/10) - (c/5)\n\nprint(round(index,1))\n\nif index < 20 :\n    print('COLD')\nelif index < 25 :\n    print('COOL')\nelif index < 30 :\n    print('WARM')\nelif index < 35 :\n    print('HOT')\nelse:\n    print('EXTREME HEAT')\n\n"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:08:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: OH40wh\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\nround(index,1)\nprint(index)\n\nif index>=35:\n    print('EXTREME HEAT')\nelif index>=30:\n    print('HOT')\nelif index>=25:\n    print('WARM')\nelif index>=20:\n    print('COOL')\nelse:\n    print('COLD')\n\n"
+  },
+  {
+    "User ID": "6887097",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:00:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887097\nPASSWORD: 13BWr4\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = round(float(input()),2)\nh = round(float(input()),2)\nw = round(float(input()),2)\nindex = t + ((h/10)-(w/5))\nrid = round(index,2)\nprint(rid)\nif index < 20 :\n    print(\"COLD\")\nelif index < 25 and index >= 20:\n    print(\"COOL\")\nelif index < 30 and index >= 25:\n    print(\"WARM\")\nelif index < 35 and index >= 30:\n    print(\"HOT\")\nelif index >= 35 :\n    print(\"EXTREME HEAT \")\n"
+  },
+  {
+    "User ID": "6887098",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:37:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887098\nPASSWORD: ZECAxI\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\n\nprint(round(index,1))\n\nif index < 20 :\n    print('COLD')\nelif index >= 20 and index < 25:\n    print('COOL')\nelif index >= 25 and index < 30:\n    print('WARM')\nelif index >= 30 and index < 35:\n    print('HOT')\nelif index >= 35:\n    print('EXTREME HEAT')\n\n"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:37:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: 7quhAy\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh =float(input())\nw = float(input())\n\nindex = t+(h/10)-(w/5)\nprint(round(index,1))\n\nif index <20 :\n    print(\"COLD\")\nelif index<25 :\n    print(\"COOL\")\nelif index<30 :\n    print(\"WARM\")\nelif index<35 :\n    print(\"HOT\")\nelse :\n    print(\"EXTREME HEAT\")"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:42:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: YhFcZ1\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\n\nindex=(t)+(h/10)-(w/5)\nindex=(round(index,1))\nprint(index)\nif index<20:\n    print(\"COLD\")\nelif index>=20 and index<25:\n    print(\"COOL\")\nelif index>=25 and index<30:\n    print(\"WARM\")\nelif index>=30 and index<35:\n    print(\"HOT\")\nelif index>=35:\n    print(\"EXTREME HEAT\")"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:48:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: Gqyb2L\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t + (h/10) - (w/5)\nprint(str(index))\nif index < 20 :\n    print('COLD')\nelif index >= 20 and index < 25 :\n    print('COOL')\nelif index >= 25 and index < 30 :\n    print('WARM')\nelif index >= 30 and index < 35 :\n    print('HOT')\nelif index >= 35 :\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:50:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: zU09KY\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\n\nn = t+h/10-w/5\n\nprint(round(n,1))\n\nif n<20:\n    print(\"COLD\")\nelif n<25:\n    print('COOL')\nelif n<30:\n    print('WARM')\nelif n<35:\n    print('HOT')    \nelse:\n    print('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:19:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: n9GRUu\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt=float(input())\nh=float(input())\nw=float(input())\nx =  t + h/10 - w/5\nprint(x)\nif x>= 35:\n    print('EXTREME HEAT')\nelif x>=30:\n    print('HOT')\nelif x>=25:\n    print('WARM')\nelif x>=20:\n    print('COOL')\nelse: \n    print('COLD')"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:39:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: jN3uzA\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\n\nif index < 20 :\n    print (round(index, 1))\n    print(\"COLD\")\nelif index >= 20 and index < 25 :\n    print (round(index, 1))\n    print(\"COOL\")\nelif index >= 25 and index < 30 :\n    print (round(index, 1))\n    print(\"WARM\")\nelif index >= 30 and index < 35 :\n    print (round(index, 1))\n    print(\"HOT\")\nelif index >= 35 :\n    print (round(index, 1))\n    print(\"EXTREME HEAT\")"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:00:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD:SmUqHD\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\n\nindex=(t+(h/10)-(w/5))\nindex=round(index,1)\n\nprint(index)\n\nif index<20:\n    print('COLD')\nelif index<25:\n    print('COOL')\nelif index<30:\n    print('WARM')\nelif index<35:\n    print('HOT')\nelse: print ('EXTREME HEAT')\n"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:57:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: XgujF1\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\ntemp=float(input())\nsm=float(input())\nv=float(input())\n\n\nindex=(float(temp)+float(sm/10)-float(v/5))\n\nindex = round(index, 1)\nprint(index)\n\n\nif index < 20 :\n    print('COLD')\nelif 20 <= index < 25 :\n    print('COOL')\nelif 25 <= index < 30 :\n    print('WARM')\nelif 30 <= index < 35 :\n    print('HOT')\nelif index >= 35 :\n    print('EXTREME HEAT')\n\n"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:52:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: lBLdzu\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\nindex=t+(h/10)-(w/5)\nprint(round(index, 1))\nif index<20 :\n    print('COLD')\nelif index<25 and index>=20:\n    print('COOL')\nelif index<30 and index>=25:\n    print('WARM')   \nelif index<35 and index>=30:\n    print('HOT')   \nelse :print('EXTREME HEAT')     \n\n"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:47:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: MsgU68\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t+(h/10)-(w/5)\n\nround(index,1)\n\nif index <= 20:\n    print(round(index,1))\n    print('COLD')\nelif index >= 20 and index <25:\n    print(round(index,1))\n    print('COOL')\nelif index >= 25 and index <30:\n    print(round(index,1))\n    print('WARM')\nelif index >= 30 and index <35:\n    print(round(index,1))\n    print('HOT')\nelif index >= 35 :\n    print(round(index,1))\n    print('EXTREME HEAT')\n\n"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:10:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887111\nPASSWORD: rh6DB7\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt= float(input())\nh= float(input())\nw= float(input())\n\nans = t+(h/10)-(w/5)\nindex = round(ans, 1)\n\nprint(ans)\n\nif round(index , 2)< 20 :\n    print('COLD')\nelif round(index , 2)< 25  and index>= 20 :\n    print('COOL')\nelif round(index ,2)<30 and index>=25 :\n    print('WARM')\nelif round(index ,2) <35 and index>=30 :\n    print('HOT')\nelse :\n    print('EXTREME HEAT')\n\n"
+  },
+  {
+    "User ID": "6887112",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:38:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887112\nPASSWORD: H6drKZ\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + (h/10) - (w/5)\nprint(round(index , 1))\n\nif index >= 35 :\n    print('EXTREME HEAT')\nelif index < 35 and index >= 30:\n    print('HOT') \nelif index < 30 and index >= 25:\n    print('WARM')\nelif index < 25 and index >= 20:\n    print('COOL')\nelif index < 20 :\n    print('COLD')"
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:30:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887113\nPASSWORD: GqXl2V\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t + (h/10) - (w/5)\nprint(index)\nif index >= 35 :\n    print('EXTREME HEAT')\nelif index >= 30 :\n    print('HOT')\nelif index >= 25 :\n    print('WARM')\nelif index >= 20 :\n    print('COOL')\nelse :\n    print('COLD')"
+  },
+  {
+    "User ID": "6887114",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:50:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887114\nPASSWORD: 0Pb48z\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\n#input t h w\nt = float(input())\nh = float(input())\nw = float(input())\n#cal index\nindex = (t + ((h/10) - (w/5)))\nprint(round(index, 1))\n#condition\nif (index >= 35): #index ≥ 35\n    print('EXTREME HEAT')\nelif (index >= 30): #30 ≤ index < 35\n    print('HOT')\nelif (index >= 25): #25 ≤ index < 30\n    print('WARM')\nelif (index >= 20): #20 ≤ index < 25\t\n    print('COOL')\nelif (index < 20): #index < 20\n    print('COLD')\n"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:47:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: npEnLt\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t + ((h/10) - (w/5))\nprint(round(index, 1))\nif (index >= 35):\n    print('EXTREME HEAT')\nelif (index >= 30):\n    print('HOT')\nelif (index >= 25):\n    print('WARM')\nelif (index >= 20):\n    print('COOL')\nelif (index < 20):\n    print('COLD')\nelse:\n    print('Error')"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:38:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887116\nPASSWORD: Z5BLgE\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt = float(input())\nh =  float(input())\nw = float(input())\n\ni = t + h/10-w/5\n\nprint(round(i,1))\n\nif i < 20:\n    print('COLD')\nelif i < 25:\n    print('COOL')    \nelif i < 30:\n    print('WARM')    \nelif i < 35:\n    print('HOT')   \nelse:\n    print('EXTREME HEAT ')     \n\n"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:57:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: FZEb6h\nEXERCISEID: itds120-cp1-q3\n */\n'''\nt = float(input())\nh = float(input())\nw = float(input())\nindex = t + (h/10) - (w/5)\nprint(round(index, 1))\nif index < 20:\n    print('COLD')\nelif index >= 20 and index < 25:\n    print('COOL')\nelif index >= 25 and index < 30:\n    print('WARM')\nelif index >= 30 and index < 35:\n    print('HOT')\nelif index >= 35:\n    print('EXTREME HEAT')\n# YOUR CODE GOES HERE\n\n\n"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:27:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887118\nPASSWORD: fycbNT\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\n\nindex=t+(h/10)-(w/5)\n\nindex=round(index,1)\n\nprint(index)\n\nif index<20:\n    print('COLD')\nelif (index>=20) and (index<25):\n    print('COOL')\nelif (index>=25) and (index<30):\n    print('WARM')\nelif (index>=30) and (index<35):\n    print('HOT')\nelif index>=35:\n    print('EXTREME HEAT')\n\n\n"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T08:34:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: z6oTw3\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\n# YOUR CODE GOES HERE\nt=float(input())\nh=float(input())\nw=float(input())\nindex=t+(h/10)-(w/5)\nprint(round(index, 1))\nif index<20:\n    print('COLD')\nelif (index>=20) and (index<25):\n    print('COOL')\nelif (index>=25) and (index<30):\n    print('WARM')\nelif (index>=30) and (index<35):\n    print('HOT')\nelif index>=35:\n    print('EXTREME HEAT')"
+  },
+  {
+    "User ID": "6887120",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T09:36:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887120\nPASSWORD: cNHd7M\nEXERCISEID: itds120-cp1-q3\n */\n'''\n\nt = float(input())\nh = float(input())\nw = float(input())\n\nindex = t + h/10 - w/5\nprint(round(index,1))\nif index < 20 :\n    print(\"COLD\")\nelif 20 <= index <25 :\n    print(\"COOL\")\nelif 25<= index <30 :\n    print(\"WARM\")\nelif 30 <= index < 35 :\n    print(\"HOT\")\nelif index >= 35:\n    print(\"EXTREME HEAT\")\n"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-cp1-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-08-25T03:01:29+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 999\r\nPASSWORD: 424242\r\nEXERCISEID: itds120-cp1-q3\r\n */\r\n'''\r\n\r\ntemp = float(input())\r\nhumidity = float(input())\r\nwind = float(input())\r\n\r\nindex = temp + (humidity / 10) - (wind / 5)\r\n\r\nprint(round(index, 1))\r\nif index < 20:\r\n    print(\"COLD\")\r\nelif index < 25:\r\n    print(\"COOL\")\r\nelif index < 30:\r\n    print(\"WARM\")\r\nelif index < 35:\r\n    print(\"HOT\")\r\nelse:\r\n    print(\"EXTREME HEAT\")\r\n"
+  }
+]

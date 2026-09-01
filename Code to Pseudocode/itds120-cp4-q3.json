@@ -1,0 +1,938 @@
+[
+  {
+    "User ID": "6887001",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:58:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887001\nPASSWORD: NAA5QZ9f\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr = int(input())\nc = int(input())\nfor i in range(r)\n    n_rows1 = np.array(input().split(), dtype=np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:00:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: ZKgXad7X\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrow_n,col_n = input().split(' ')\nrow_n,col_n = int(row_n),int(col_n)\nrow = []\nfor i in range(row_n):\n    values = input().strip().split(' ')\n    row.append(np.array(values))\ninput_max = np.array(row)\nnumbers_max = input_max.astype(int)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nnumbers_max[numbers_max<=num] = 0\nprint(numbers_max)\nhigh = numbers_max[numbers_max>num]\nhigh_num = np.array(high)\nout_1 = np.sum(high_num, axis=1)\nprint(out_1)\nout_0 = np.sum(high_num, axis=0)\nprint(out_0)\n\n\n\n\n# import numpy as np\n\n# row_n,col_n = input().split(' ')\n# row_n,col_n = int(row_n),int(col_n)\n# row = []\n# for i in range(row_n):\n#     values = input().strip().split(' ')\n#     row.append(np.array(values))\n# input_max = np.array(row,dtype=np.int8)\n# numbers_max = input_max.astype(int)\n# # print(numbers_max)\n# num = int(input())\n# numbers_max[numbers_max<=num] = 0\n# print(numbers_max)\n# high = numbers_max[numbers_max>num]\n# high_num = np.array(high)\n# out_1 = np.sum(high_num, axis=1)\n# print(out_1)\n# out_0 = np.sum(high_num, axis=0)\n# print(out_0)\n\n"
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:00:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887004\nPASSWORD: rGpK9KHe\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np \n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows , n_cols = input().split('')\nn_rows , n_cols = int(n_rows), int(n_cols)\nn = []\nfor r in range(n_rows):\n    row = list(map(int, input().split('')))\n    n.append(row)\n\nmat = np.array(n,dtype=np.int64)\nprint(mat)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nprint()"
+  },
+  {
+    "User ID": "6887005",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:40:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887005\nPASSWORD: zzYkNtET\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrow,col = map(int,input().strip().split(' '))\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nrow = []\nfor i in range(row):\n    \n    row.append(list(map(int().split())))\narr = np.array(row, dtype=np.int8)\nnum = int(input())\nrow_col = arr[arr<=20]\n# zero_total = arr[row_col]\nzero_ = np.zeros(row_col, axis=1)\noutput = np.delete\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n#   row.append(np.array(int(values)))"
+  },
+  {
+    "User ID": "6887006",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:00:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887006\nPASSWORD: aAVhaYQd\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr, c = input().split()\nshape = list(map(int,input())[x for  x in range(c)])\nprint(shape)\nprint(c)\nfor x in range(r):\n    row = np.array((map(int, (input().split(',')for x in range(c)))))\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:33:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: fT2evRA7\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = input().split()\nn_rows, n_cols = int(n_rows), int(n_cols)\n\ntemp = []\nfor i in range(n_rows):\n    n = input().split()\n    temp.append(n)\n\nmatrix = np.array(temp, dtype= int)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nmatrix[matrix <= num] = 0\nprint(matrix)\nprint(np.sum(matrix, axis=1))\nprint(np.sum(matrix, axis=0))\n\n"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:40:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: vhDprqeQ\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nimport numpy as np\nrow,col = map(int,input().split(' '))\n\ndata = []\nans = []\nfor i in range(row):\n    n = list(map(int,input().split()))\n    data.append(n)\n# arr = np.array(data,dtype=np.int8)\n# print(arr)\nnum =int(input())\nfor i in data:\n    lst = []\n    for j in i: \n        if j<=num:\n            j = 0 \n        lst.append(j)\n    ans.append(lst)\na = np.array(ans,dtype=np.int8)\nprint(a)\nprint(np.sum(a,axis=1))\nprint(np.sum(a,axis=0))\n\n    \n"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: FAIL, CASE 3: FAIL, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:37:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: ZkFhrMhV\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nnrow,ncol=input().split()\nnrow,ncol=int(nrow),int(ncol)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\ndata=[]\nfor r in range(nrow):\n    rowdata=list(map(int,input().split()))\n    data.append(rowdata)\n\nmat=np.array(data,dtype=np.int8)\n\nnum=int(input())\n\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\ncalarray=[]\nfor i in mat:\n    if num > i:\n        i=0\n        calarray.append(i)\n    else: \n        i=i\n        calarray.append(i)\n\nprint(calarray)"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:58:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: j9F3dPSF\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows,n_cols = input().split()\nn_rows,n_cols = int(n_rows),int(n_cols)\nrows = []\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nresult = np.array(rows,dtype = np.int8)\nprint(result)\nprint(np.mean(result,axis = 0))\nprint(np.mean(result,axis = 1))"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:39:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: rbaYp4Ds\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = input().split(' ')\nn_rows, n_cols = int(n_rows), int(n_cols)\nrows = []\nfor i in range(n_rows):\n    values = input().strip().split(' ')\n    rows.append(np.array(values))\ninput_matrix = np.array(rows, dtype=np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\nnum = int(input())\ncheck = input_matrix[input_matrix <= num] = 0\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nsumofrows = np.sum(input_matrix, axis=1)\nsumofcols = np.sum(input_matrix, axis=0)\nprint(input_matrix)\nprint(sumofrows)\nprint(sumofcols)"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:49:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: e8Edq2nC\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows,n_cols = map(int,input().split)\nvalue = int(input)\nnl1 = np.array(value)\nnl1 = nl1.astype(int)\narr = np.array(nl1)\nnum = int(input())\nans = []\nfor i in nl1:    \n    if nl1> num:\n        for j in nl1:\n            nl1.sum(arr,axis=0)\n            ans.append(nl1)\n            arrayss = np.array(ans)\nprint(arrayss)\n            \n  \n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:56:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: C5hCXu9z\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr,c = map(int,input().split())\n\nmat_list = []\nfor i in range(r):\n    mat_list.append(list(map(int, input().split())))\n\nmat_arr = np.array(mat_list)\n# print(mat_arr)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nbool2 = (mat_arr > num)\n# print(bool2)\n\nfor r in range(len(bool2)):\n    for c in range(len(bool2[r])):\n\n        if bool2[r,c] == False:\n            mat_arr[r,c] = 0\n\nprint(mat_arr)\nprint(np.sum(mat_arr, axis= 1))\nprint(np.sum(mat_arr, axis= 0))"
+  },
+  {
+    "User ID": "6887014",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:53:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887014\nPASSWORD: PccAYH6m\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows,n_colums = input().split(' ')\nn_rows,n_colums = int(n_rows),int(n_colums)\n\nrow = []\nfor i in range (n_rows):\n    values = input().strip().split(' ')\n    row.append(values)\na = np.array(row, dtype=np.int8)\n\n# print(a)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# print(num)\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\na[np.array(a <= num)] = 0\nprint(a)\nrow_sum = np.sum(a,axis=1)\nprint(row_sum)\ncolum_sum = np.sum(a,axis=0)\n\nprint(colum_sum)"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:58:28+00:00",
+    "Code": "'''\n/**\nUSERID:6887015\nPASSWORD: WCAKBWBa\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrow,colum = map(int,input().split())\ndata=[]\nfor i in range(row):\n    col=list(map(int,input().split()))\n    data.append(col)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\narr = np.array(data,dtype=int)\nnew = arr[arr > num]\nprint(new)\n\n"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "3/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:00:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: MXryeA2U\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr,c = map(int, input().split())\nrow = []\nfor i in range(r) :\n    row.append(list(map(int, input().split())))\n# print(row)\nmatrix = np.array(row, dtype=np.int8)\n# print(matrix)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nfor i in range(len(matrix)) :\n    for j in range(len(matrix)) :\n        if matrix[i:i+1,j:j+1] <= num :\n            # b = matrix[i-1:i,j-1:j]\n            # b[i-1:i,j-1:j] = 0\n            b = matrix[i:i+1,j:j+1]\n            # print(b)\n            b[0,0] = 0\n            # print(b)\nprint(matrix)\nprint(np.sum(matrix, axis=1))\nprint(np.sum(matrix, axis=0))"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:59:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887017\nPASSWORD: sC8m3Zqa\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows,n_cols = input().split(' ')\nn_rows,n_cols= int(n_rows),int(n_cols)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nrows=[]\nfor r in range(n_rows):\n    values = input().strip().split()\n    rows.append(np.array(values))\ninput_mat=np.array(rows, dtype=np.int8)\n#print(input_mat)\nfor i in input_mat:\n    if i.any() < 0:\n        i.any() == '0'\nprint(input_mat)\nprint(input_mat.size)\n        \n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:51:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887018\nPASSWORD: w7C72TR6\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = (map(int,input().split(' ')))\nlst2d = []\nfor i in range(n_rows):\n    line = list(map(int,input().split(' ')))\n    lst2d.append(line)\narr = np.array(lst2d, atype=np.int8)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum  = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nlst2 = []\nfor  i in lst2:\n    if i <= num:\n        lst2.append(0)\n    else:\n        lst2.append(i)\nnew_arr = np.array(lst2, atype=np.int8)\n\nprint(sum(new_arr), axis=1)\nprint(sum(new_arr), axis=0)"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:12:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: SsYuf2td\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nimport numpy as np\n\nn_rows, n_cols = map(lambda x: int(x) ,input().strip().split())\nmatrixList = []\n\nfor i in range(n_rows) :\n    row = input().strip().split()\n    row = list(map(lambda x: int(x), row))\n    matrixList.append(row)\n\nmatrixNPArray = np.array(matrixList)\n\n\nnum = int(input())\nmask = matrixNPArray <= num\nmatrixNPArray[mask] = 0\n\n\n\n\nprint(matrixNPArray)\nprint(matrixNPArray.sum(axis = 1))\nprint(matrixNPArray.sum(axis = 0))\n"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:13:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: ywV1nUQg\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrow, column = input().split()\nrow, column = int(row), int(column)\nmatrix_0 = [input().split() for _ in range(row)]\nmatrix = []\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nfor i in matrix_0:\n    x = []\n    for j in i:\n        if int(j) <= num:\n            x.append(0)\n        else:\n            x.append(int(j))\n    matrix.append(x)\narray = np.array(matrix, dtype=np.int8)\nsum_array = np.sum(matrix, axis= 1)\nsum_array0 = np.sum(matrix, axis= 0)\nprint(array)\nprint(sum_array)\nprint(sum_array0)\n\n"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:59:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021\nPASSWORD: Vj3jCCnd\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows , n_cols = map(int,input().split(' '))\nmartixlist = list()\nfor i in range(n_rows):\n    y =list()\n    x = ((input().strip()).split(' '))\n    for i in x:\n        y.append(int(i))\n    martixlist.append(y)\nmartix = np.array(martixlist)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nmartix = ([martix >= num]=0)"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:59:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: 2EmafUWY\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nimport numpy as np\nn_rows , n_cols = input().split()\nn_rows , n_cols = int(n_rows) , int(n_cols)\n\nrows = []\n\nfor i in range(n_rows):\n    n = input().split()\n    rows.append(n)\n\narr = np.array(rows, dtype=np.int8)\nnum = int(input())\nboolean_idx = (arr>=num) \n\n\n# boolean_arr = np.array(boolean, dtype=np.int8)\n# print(boolean_arr)\n\n# arr_sum = np.sum(boolean, axis=0)\n# arr_sum1 = np.sum(boolean , axis=1)\n# print(arr_sum)\n"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:51:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887023\nPASSWORD: WsRuhwXt\nEXERCISEID: itds120-cp4-q3\n */\n'''\nimport numpy as np\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nn_row , n_col = input().split()\nn_row , n_col = int(n_row),int(n_col)\nlistee = []\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nfor i in range(n_row):\n    values = input().split()\n    listee.append(values)\nNarray = np.array(listee,dtype=np.int64)\nnum = int(input())\nlistCheck = []\nfor i in Narray:\n    listR = []\n    for h in i :\n        if h <= num:\n            listR.append(0)\n        else:\n            listR.append(h)\n    listCheck.append(listR)\nANS = np.array(listCheck,dtype=np.int64)\nSum1 = np.sum(ANS,axis=1)\nSum2 = np.sum(ANS,axis=0)\nprint(ANS)\nprint(Sum1)\nprint(Sum2)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:24:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: W5X7DXnM\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows , n_cols = map(int,input().split())\nnum_metrix = []\nfor i in range(n_rows):\n    col = list(map(int,input().split()))\n    num_metrix.append(col)\nnum_metrix = np.array(num_metrix,dtype= np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nmarker = (num > num_metrix)\n\nprint(num_metrix[marker])\n\n# if we got new metrix that already have 0\n\n# newM \n# print(np.sum(newM,axis=1))\n# print(np.sum(newM,axis=0))"
+  },
+  {
+    "User ID": "6887025",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "2/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:58:42+00:00",
+    "Code": "'''\n/**\nUSERID:  6887025\nPASSWORD: RY6BhPEa\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\nx=input()\nrow,col=x.split()\nrow=int(row)\ncol=int(col)\nlist=[]\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nfor i in range(row):\n    y=input().split()\n    list.append(y)\n\na=np.array(list,dtype=np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum=input()\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nup=np.sum(a , axis=1)\ndown=np.sum(a , axis=0)\nprint(a)\nprint(up)\nprint(down)"
+  },
+  {
+    "User ID": "6887026",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:51:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887026\nPASSWORD: tBXt9zsa\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nn_rows,n_cols = input().split()\nn_rows,n_cols = int(n_rows),int(n_cols)\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nlist1=[]\nfor i in range n_rows:\n    "
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:01:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887027\nPASSWORD: p1Q3b1a5\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = input().split(' ')\nn_rows, n_cols = int(n_rows), int(n_cols)\nvalues = []\n\nfor i in range(n_rows):\n    # row = input()\n    row = list(map(int(input().split(' '))))\n    values.append(row)\n\nmat = np.array(values,dtype = np.int8)\n\nprint(values)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nprint(np.sum(mat, axis = 1))\nprint(np.sum(mat, axis = 0))"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: FAIL, CASE 3: FAIL, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:01:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: Fqm1hpd2\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = map(int, input().split())\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\ndata = []\nfor _ in range (n_rows):\n    row = list(map(int, input().split()))[:n_cols]\n    if len(row) < n_cols:row += [0] * (n_cols - len(row)) \n    data.append(row)\nmat = np.array(data, dtype=int)\n\nrows_sum = np.sum(mat, axis=1)\ncols_sum = np.sum(mat, axis=0)\n\nprint(rows_sum)\nprint(cols_sum)"
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:44:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD: KVZzkvqZ\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\nn_r , n_c = input().split()\nn_r , n_c = int(n_r) , int(n_c)\nrows = []\nfor i in range(n_r) :\n    val = input().strip().split()\n    rows.append(np.array(val))\ninput_mat = np.array(rows, dtype=np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\ninput_mat[input_mat <= num] = 0\nprint(input_mat)\nprint(np.sum(input_mat,axis=1))\nprint(np.sum(input_mat,axis=0))\n"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:56:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: uEUGuWFS\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows , n_cols = input().split(' ')\nn_rows , n_cols = int(n_rows) , int(n_cols)\nvalues = []\nfor i in range(n_rows) :\n    row = list(map(int , input().split()))\n    values.append(row)\nmat = np.array(values , dtype=np.int8)\n\n# print(mat)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nmat[mat <= num] = 0\n\nsum_row = np.sum(mat , axis=1)\nsum_col = np.sum(mat , axis=0)\n\nprint(mat)\nprint(sum_row)\nprint(sum_col)\n\n"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:32:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: yG1n63ja\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nimport numpy as np\n\nrc = input().split()\nr,c = int(rc[0]),int(rc[1])\n\n\nln = []\n\nfor i in range(r):\n    n = input().strip().split(\" \")\n    ln.append(n)\n\nnum = int(input())\n\nnewln = []\nfor i in ln:\n    data = []\n    for j in i:\n        j = int(j)\n        if j<=num:\n            j=0\n        data.append(j)\n    newln.append(data)\n\n\narr = np.array(newln,dtype=np.int8)\n\nprint(arr)\n\nprint(arr.sum(1))\nprint(arr.sum(0))"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:00:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: jQHKp7Yr\nEXERCISEID: itds120-cp4-q3\n */\n'''\nf = open('input.txt','w')\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nn = f.readlines()\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nsum = "
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:56:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: HBMamU12\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\nn_rows, n_columns = input(). split(\" \")\nn_rows, n_columns = int(n_rows), int(n_columns)\n\ninput_mat = []\nfor i in range(n_rows):\n    values = input(). split()\n    values = [int(x) for x in values]\n    input_mat.append(values)\n\nmat_array = np.array(input_mat, dtype=np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nmat_array[mat_array <= num] = 0\nprint(mat_array)\n\nsum_row = np.sum(mat_array, axis = 1)\nsum_col = np.sum(mat_array, axis = 0)\nprint(sum_row)\nprint(sum_col)"
+  },
+  {
+    "User ID": "6887034",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:01:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887034\nPASSWORD: AuuC9bR5\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, cols = input().split(' ') # we will get an information from here\nn_rows, cols = int(n_rows), int(cols)\nrows = []\nfor r in range(n_rows): # this will turn into the matrix but i only get 1 rows\n    values = input().strip().split(' ')\n    rows.append(np.array(values))\nmatrix = np.array(rows, dtype=np.int8)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnums = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nf = matrix[:] <= nums # This is where tha place that will change your number that less than input that you put and turn to 0\napple = matrix[f]\nprint(apple.shape)\n\n"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:49:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: XHSVNNKb\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrows , cols = input().split()\nrows , cols = int(rows) , int(cols)\nv = []\nfor i in range(rows):\n    row = list(map(int , input().split()))\n    v.append(row)\nmat = np.array(v , dtype = np.int8)\n#print(mat)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nmat[mat <= num] = 0\nprint(mat)\nprint(np.sum(mat , axis = 1))\nprint(np.sum(mat , axis = 0))\n"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:52:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: eu12J8UM\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n# import numpy as np\n\n# # TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# # YOUR CODE GOES HERE\n# rows, cols = map(int, input().split())\n\n# # TODO: รับค่า `num`` จากผู้ใช้งาน\n# # YOUR CODE GOES HERE\n# l_2d = []\n# for i in range(r):\n#     num = list(map(float, input().split()))\n#     l_2d.append(num)\n\n# # TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# # YOUR CODE GOES HERE\n# martrix = npa.array(l_2d, dtype=np.int8)\n\n# print(martrix)\n\n\n\nimport numpy as np\ns = input().strip().split()\nr = int(s[0])\nc = int(s[1])\nl_2 = []\n\nfor i in range(r):\n    row = input().strip().split()\n    l_2.append(row)\nmartrix = np.array(l_2, dtype=np.int8)\nv = input().strip().split()\nvv = np.array(v, dtype=np.int8)\nprint(vv)\n\n\n\n# import numpy as np\n# rows, cols = (int, input().split())\n# data = []\n# for _ in rows:\n#     row_d = list(map(int,input().split()))\n#     dara.append(row_d)\n\n# martrix = np.array(data)\n\n# u = int(input())\n\n# row_max = np.ax(martrix,axis=1)\n# m = row_max >= u\n# f = martrix[m]\n# print(f)\n"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:15:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: 1EtcacG1\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\nn_rows , n_cols = list(map(int,input().split()))\nlist1 = []\nfor i in range(n_rows):\n    a = list(map(int,input().split()))\n    list1.append(a)\n\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n\n            \ndata = np.array(list1)\nboolpdx = (data >= num)\ndata[boolpdx] = 0\nprint(data[boolpdx])\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:01:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887038\nPASSWORD: pzgszd2k\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows,n_cols = input().split()\nn_rows,n_cols = int(n_rows),int(n_cols)\nr = []\nfor i in range(n_rows):\n    data = input().strip().split()\n    r.append(data)\no = np.array(r, dtype=np.int8)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nfor i in o:\n    if i <= num:\n        i = 0\nmaxxx = np.max(o, axis=1)\nma = o[maxxx]\ns = 0\n\nfor i in range(n_rows):\n    if i == ma :\n        s += i\n        print(s)\n \nsum = 0\nmaxx = np.max(m, axis=0)\nm = o[maxx]\nfor i in range(n_cols):\n    if i == m :\n        sum += i\n        print(sum)\n     "
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:34:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: 4RDqRy3h\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = input().split()\nn_rows, n_cols = int(n_rows), int(n_cols)\nrows = []\nfor i in range(n_rows):\n    num = input().split()\n    rows.append(num)\nrows = np.array(rows, dtype=np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nchange = (rows<=num)\nrows[change] = 0\nprint(rows)\nprint(np.sum(rows, axis=1))\nprint(np.sum(rows, axis=0))"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887040\nPASSWORD: KaCPZkmK\nEXERCISEID: itds120-cp4-q3\n */\n'''\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrow_col = list(map(int, input().split(' ')))\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\narray_want = []\nfor i in range(row_col[0]):\n    num = input().strip().split(' ')\n    array_want.append(num)\nthreshold = int(input())\narray_ar = np.array(array_want, dtype=int)\n#print(array_ar)\narray_ar[(array_ar) <= (threshold)] = 0\nprint(array_ar)\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nsum_row = np.sum(array_ar,axis=1)\nsum_col = np.sum(array_ar,axis=0)\nprint(sum_row)\nprint(sum_col)\n\n#;-;"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:50:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: t2cfpvaN\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = input().split(' ')\nn_rows, n_cols = int(n_rows), int(n_cols)\ntemp = []\nfor i in range(n_rows):\n    x = input().strip().split(' ')\n    temp.append(x)\n\narray = np.array(temp, dtype= np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nfor i in range(n_rows):\n    for j in range(n_cols):\n        if array[i, j] <= num:\n            array[i, j] = 0\n\nprint(array)\nprint(np.sum(array, axis= 1))\nprint(np.sum(array, axis= 0))"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD: R5bTUbs2\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nimport numpy as np\n\nn_rows , n_cols = input().split(' ')\nn_rows, n_cols = int(n_rows) , int(n_cols)\n\nvalues = []\n\nfor r in range(n_rows):\n\n    row = input().split()\n\n    values.append(row)\n\nnum = int(input())\n\ninput_matrix = np.array(values,dtype=np.int64)\n\n\n\n\ninput_matrix[input_matrix <= num] = 0\n\nrow = np.sum(input_matrix,axis=1)\n\ncolumn = np.sum(input_matrix,axis=0)\n\nprint(input_matrix)\n\n\nprint(row)\n\nprint(column)\n"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:00:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: C6sZ2Met\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr,c = map(int,input().split())\ndata=[]\nfor i in range(r):\n    rows=list(map(int,input().split()))\n    data.append(rows)\n\ninput_mat=np.array(data,dtype=np.int8)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum=int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nfor i in data:\nrow=np.sum(input_mat,axis=1)\ncol=np.sum(input_mat,axis=0)\nprint(row)\nprint(col)\n"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:58:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: vJnuWvcY\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = map(int,input().split())\ndata = []\nfor _ in range(n_rows):\n    row = list(map(float,input().split()))\n    data.append(row)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nmatrix = np.array(data)\n\n\nrow_sum = np.sum(matrix, axis = 1)\ncols_sum = np.sum(matrix, axis = 0)\nprint(row_sum, cols_sum)\n\n\n\n"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:08:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: BdwfBCte\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np \nn_rows , n_cols = input().split()\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrows = []\nfor i in range (int(n_rows)) :\n    values = input().strip().split(' ')\n    rows.append(np.array(values))\ninput_matrix = np.array(rows,dtype = np.int8)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n# print(input_matrix[input_matrix < num])\ninput_matrix[input_matrix <= num] = 0\nprint(input_matrix)\nprint(np.sum(input_matrix , axis = 1))\nprint(np.sum(input_matrix , axis = 0))"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:28:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD: EZrSU4FX\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\nn_rows , n_cols = input().split(' ')\nn_rows , n_cols = int(n_row , n_col)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\nnum = input()\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\ntotal = 0\nlist1 = []\nfor i in range(n_row) :\n    row = list(map(int,input().split(' ')))\n    values.append(row)\n\nmat = np.array(values , dtype = np.int8)\nprint(mat<0)\nprint(mat[mat<0])\n\nmat[mat<0] = 0\nprint(mat)"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: ksHSm72J\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrows,cols=input().split(' ')\nrows,cols=int(rows),int(cols)\nlst=[]\nfor i in range(rows):\n    val = input().strip().split(' ')\n    lst.append(val)\n# YOUR CODE GOES HERE\n# TODO: รับค่า `num`` จากผู้ใช้งาน\nnum=int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nimport numpy as np\narr= np.array(lst,dtype=int)\narr[arr<=num]=0\nprint(arr)\nprint(np.sum(arr,axis=1))\nprint(np.sum(arr,axis=0))"
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:26:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: zAwXQWd1\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nimport numpy as np\n\ninputco_rou = input()\ninputco_rou = inputco_rou.split(' ')\nn_rows = int(inputco_rou[0])\nn_cols = int(inputco_rou[1])\n#print(n_cols)\n#print(n_rows )\n\nlistn = []\n\nfor i in range(n_rows):\n    num = input().split(' ')\n    listk = []\n    for k in num:\n        if k == '':\n            pass\n        else:\n            listk.append(int(k))\n\n\n    listn.append(listk)\n\narr = np.array(listn)\n\nnum = int(input())\n#print(num,'num')\n#print(arr)\nlistn = []\nfor i in arr:\n    listk = []\n    for k in i:\n        if k <= num:\n            listk.append(0)\n        else:\n            listk.append(k)\n    listn.append(listk)\narr2 = np.array(listn)            \nprint(arr2)\n\nprint(np.sum(arr2,axis = 1))\nprint(np.sum(arr2,axis = 0))"
+  },
+  {
+    "User ID": "6887052",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: FAIL, CASE 3: FAIL, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: FAIL, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:58:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887052\nPASSWORD: VUCEY6Yr\nEXERCISEID: itds120-cp4-q3\n */\n'''\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\nx = input().split(' ')\nrol = int(x[0])\ncol = int(x[1])\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = []\nfor i in range (rol):\n    matrix = []\n    y = input().split(' ')\n    num.append(y)\na = np.array(num, dtype=int)\nb = a[a<0] = 0\nprint(a)\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:26:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: HApXca6C\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrow , col = input().strip().split()\nrow , col = int(row),int(col)\nrows = []\nfor i in range (row) :\n    val = input().strip().split()\n    rows.append(val)\ninput_mat = np.array(rows,dtype=int)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\ninput_mat[input_mat <= num] = 0\nprint(input_mat)\nprint(np.sum(input_mat,axis=1))\nprint(np.sum(input_mat,axis=0))"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:52:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: tK86DUCk\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:01:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887056\nPASSWORD: 4VtWsFU9\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows , n_cols = input().strip().split()\nn_rows , n_cols = int(n_rows) , int(n_cols)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nrows = []\nfor r in range(n_rows):\n    values = input().strip().split()\n    rows.append(np.array(values))\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\na = np.array(rows)\nprint(a)"
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:48:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: 9T6A2r2F\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = input().split(' ')\nn_rows, n_cols = int(n_rows), int(n_cols)\n\nmats = []\nfor i in range(n_rows):\n    m = [int(n) for n in input().split()]\n    mats.append(m)\n\nmatrix = np.array(mats, dtype=np.int8)\n#print(matrix)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\n#print(matrix[matrix <= num])\nmatrix[matrix <= num] = 0\nprint(matrix)\nsum_cols = np.sum(matrix, axis = 1)\nprint(sum_cols)\nsum_rows = np.sum(matrix, axis = 0)\nprint(sum_rows)\n"
+  },
+  {
+    "User ID": "6887059",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: FAIL, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:51:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887059\nPASSWORD: pPk8vbpC\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nimport numpy as np \n\ndef sum_of_each_row_and_coloumn() :\n    rows , cols = map(int , input().split())\n    \n    data = []\n\n    for i in range (rows) :\n        data.append(list(map(int , input().split())))\n    matrix = np.array(data)\n    if matrix.size == 0 :\n        return\n\n    # print(matrix)\n    num = int(input())\n    # for np.argwhere(matrix <= num) :\n    #     matrix.replace(\"0\" , coordinates)\n    # if coordinates = np.argwhere(matrix <= num) :\n    #     coordinates.replace(\"0\" , matrix)\n    matrix[: , num ] = 0\n\n            \n\n        \n\n    print(matrix)\n    # if coordinates.size == 0 :\n    #     print(\"can't find coordinate\")\n\n\n\nsum_of_each_row_and_coloumn()"
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:50:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887060\nPASSWORD: 8PYvSr23\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\nimport numpy as np \n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\nn_rows , n_cols=map(int, input().split())\n\ndata=[]\nfor i in range(n_rows):\n    row_data=list(map(int, input().split()))\n    data.append(row_data)\n\nmatrix=np.array(data, dtype=int)\nprint(matrix)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\nnum=int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nprint(matrix[matrix > num])\n#matrix=matrix[matrix < num] =0\nrow_sum=matrix.sum(axis=0)\nprint(row_sum)"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:26:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD: JGGHH4h4\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrow , col = map(int,input().split())\nmat_list = []\nfor i in range(row):\n    mat_list.append(list(map(int,input().split())))\nmat = np.array(mat_list , dtype=np.int8)\n# print(mat)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\ncond = mat <= num\nmat[cond] = 0\nprint(mat)\n\nprint(np.sum(mat,axis=1))\nprint(np.sum(mat,axis=0))"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:59:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: VrHkuy8h\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr,c = map(int,input().strip().split())\nlist2d=[]\nfor i in range(r):\n    row=input().strip().split()\n    list2d.append(row)\nmatrix=np.array(list2d,dtype=np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum=int(input())\ncheck=matrix>num\nfor i in range(r):\n    for j in range(c):\n        if check[i][j]==False:\n            matrix[i][j]=0\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nprint(matrix)\nprint(np.sum(matrix,axis=1))\nprint(np.sum(matrix,axis=0))"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "2/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:59:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD: VRzttkuK\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrow_col = input().split()\na = int(row_col[0])\nb = int(row_col[1])\nmatrix1 = []\nfor i in range(a):\n    lines = input().split()\n    matrix1.append(lines)\nrows = np.array(matrix1,dtype=np.int8)\nprint(rows)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nsum_row = np.sum(rows,axis = 1)\nsum_col = np.sum(rows,axis = 0)\n\nbool_id = (sum_row <= num)\nbool_idx = (sum_col > num)\n\nprint(sum_row)\nprint(sum_col)\n"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:23:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: 3KuJ6wPE\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows,n_cols = input().strip().split()\nn_rows,n_cols = int(n_rows),int(n_cols)\nprea = []\nfor i in range(n_rows):\n    row = input().strip().split()\n    prea.append(row)\ninput_matrix = np.array(prea,dtype=np.int8)\n#print(input_matrix)\n#print(n_rows,n_cols)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n#print(num)\nzero = np.zeros((n_rows,n_cols),int)\ncondition = input_matrix[:,:] <= num\ninput_matrix[condition] = 0\nprint(input_matrix)\nprint(np.sum(input_matrix,axis = 1))\nprint(np.sum(input_matrix,axis = 0))\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:42:16+00:00",
+    "Code": "'''\n/**\nUSERID:6887065\nPASSWORD: 8srPM9cC\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows , n_cols = input().split(' ')\nn_rows , n_cols = int(n_rows) , int(n_cols)\n\nrows = []\nfor __ in range(n_rows):\n    values = input().strip().split(' ')\n    rows.append(np.array(values))\nmatrix = np.array(rows, dtype=np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\nmatrix[matrix <= num] = 0\nprint(matrix)\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nprint(np.sum(matrix , axis = 1))\nprint(np.sum(matrix , axis = 0))"
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:57:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD: 9c4EaUG4\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = input().split(' ')\nn_rows, n_cols = int(n_rows), int(n_cols)\nrows = []\nfor i in range(n_rows):\n    values = input().strip().split(' ')\n    rows.append(np.array(values, dtype=int))\nnew_rows = np.array(rows)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nx = new_rows<=num\nmask = new_rows[x] = 0\nprint(new_rows)\n\nsum1 = np.sum(new_rows, axis=1)\nprint(sum1)\nsum2 = np.sum(new_rows, axis=0)\nprint(sum2)"
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T08:25:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887067\nPASSWORD: teqsaP8Y\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = input().split(' ')\nn_rows, n_cols = int(n_rows), int(n_cols)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nrows = []\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nfor t in range(n_rows):\n    values = input().strip().split(' ')\n    rows.append(np.array(values))\nmat = np.array(rows, dtype=np.int8)\nmat[mat < 0] = 0\nprint(mat)"
+  },
+  {
+    "User ID": "6887068",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:01:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887068\nPASSWORD: wm916DqP\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np \n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows , n_cols = map(int, input().split(' '))\nmat_list = []\nfor _ in range(n_rows):\n    mat_list.append(list(map(int, input().split())))\nmat = np.array(mat_list)\nprint(mat_list)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n# num = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\n"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:45:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: Q4djZpjb\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\nr,c=(input().split(' '))\n(int(r))\n(int(c))\nfor i in range(r):\n    for j in range(c):\n        a=[]\n        n=int(input())\n        a.append(n)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\nnum=int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nb = np.array(l==num or l <= num)\na[np.arange(c), b] == 0\nprint(a)"
+  },
+  {
+    "User ID": "6887071",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:59:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887071\nPASSWORD: bMZqRz48\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\nn_rows,n_cols = map(int, input().split())\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrows = []\nfor _ in range(n_rows):\n    values = input().strip().split(' ')\n    rows.append(np.array(values))\n\nmatrix = np.array(rows, dtype=np.int8 )\nprint(matrix)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = input()\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n#a = np.zero((n_cols,n_rows),dtype=np.int8 )\n\nfor i in range matrix:\n    if i <= num:\n        \n\n\n\n"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:18:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: 8aQh25rt\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = map(int, input().split())\ndata = []\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nfor _ in range(n_rows):\n    nums = list(map(int, input().split()))\n    data.append(nums)\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nmatrix = np.array(data, dtype=np.int8)\nmat = np.sum(matrix[matrix <= nums])\nprint(mat)"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "5/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:57:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: Gru944SH\nEXERCISEID: itds120-cp4-q3\n */\n'''\nimport numpy as np\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nrow,colume = input().strip().split()\nrow,colume = int(row),int(colume)\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrows = []\nfor i in range(row):\n    n = input().strip().split()\n    rows.append(n)\nmatrix = np.array(rows,dtype=int)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\nans = np.zeros((row,colume),dtype=int)\nfor i in range(row):\n    for j in range(colume):\n        if matrix[i,j] == num or matrix[i,j] > num :\n            ans[i,j] = matrix[i,j]\nprint(ans)\na = np.sum(ans,axis=1)\nb = np.sum(ans,axis=0)\nprint(a)\nprint(b)\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:56:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887074\nPASSWORD: 6797H8B2\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nrow, col = map(int, input().split())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\ndata = []\nfor _ in range(row):\n    data.append(list(map(float, input().split())))\ninput_mat = np.array(data)\nrow_sum = np.sum(input_mat, axis = 1)\nmin_index = np.argmin(row_sum)\noutput_mat = np.zeros((row -1,col))\noutput_mat = np.delete(input_mat,min_index,axis = 0)\nprint(output_mat)"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:55:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: SsSUJz1S\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr, c = input().strip().split(' ')\nr, c = int(r), int(c)\nrows = []\nfor i in range(r):\n    n = input()\n    n = n.strip().split(' ')\n    rows.append(np.array(n))\nmatrix = np.array(rows, dtype=int)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\nafter_matrix = matrix[matrix <= num]\nprint(matrix)\n\n        \n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nsum_matrix = np.sum(after_matrix, axis=0)\nprint(sum_matrix)"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:01:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: 8sbEGqDN\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr,c=map(int,input().split(' '))\nrow=[]\nfor i in range(r):\n    val=input().strip().split(' ')\n    row.append(np.array(val))\nmat=np.array(row,dtype=np.int64)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum=int(input)\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nfor i in mat:\n    \n\n"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:55:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: mv6Ecned\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrow,col = input().split()\nrow,col = int(row),int(col)\nmatrix=[]\nfor i in range(row):\n    inner = list(map(int, input().split()))\n    matrix.append(inner)\nmatrix = np.array(matrix, dtype=np.int8)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nmask = (matrix[:,:]<=num)\n# matrix[mask] = 0\n\nfor i in matrix:\n    if i in mask:\n        i=0\n    else:\n        i=i\n\n\nprint(matrix)"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:01:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: 2FdqES4K\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = map(int, input().split())\nnumpy_array = []\nfor i in range(n_rows):\n    data = np.array(input())\n    numpy_array.append(data)\nprint(numpy_array)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:51:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: NkQ67tHQ\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport num as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\nn_rows,n_cols=input(int())\n\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\narr=([])\nfor i in range(n_rows):\n    for o in range(n_cols):\n        arr=input(int())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\n\n\nprint(n_rows,n_cols)\n\n\n\n"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:11:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: 9C92Jts8\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\nrows,cols=map(int,input().split())\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\ndata=[]\narr=list(map(int, input().split()))\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum=input()\nA=np.array(data)\n\nif num>data:\n    total=a.sum()\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nprint(f\"sum={total}\")"
+  },
+  {
+    "User ID": "6887083",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:00:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887083\nPASSWORD: 9ykhAc9D\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows = map(int, input().split())\nn_cols = map(int, input().split())\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = input()\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nnum = input().split('')\nnum = np.array(data,dtype=np.int8)\n\n\nprint(np.array)\n"
+  },
+  {
+    "User ID": "6887084",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:01:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887084\nPASSWORD: 61EPRGnK\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrow = np.array([])\ncol = np.array([])\n\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum= np.array([row,col])\nif num = num < 0 :\n    print(0)\nelse:\n    print(num)\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nsum_row_max = print(f\"sum_row_max:{sum_row_max}= {np.sum(sum_row_max)}\")\nsum_col_max = print(f\"sum_col_max:{sum_col_max}= {np.sum(sum_col_max)}\")"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:58:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: nnMkDQ7a\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr,c = map(int,input().split(' '))\n#n_rows,n_cols = (n_row * n_col)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = []\nfor _ in range(r):\n    num.append(list(map(int,input().split())))\n\ndata = np.array(num,dtype=np.int8)\n    #if data <= 0:\n     #   print(0)\nmatrix = data[:r,:c]\nprint(matrix)\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:11:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: nghj5ngU\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = input().split(' ')\nn_rows, n_cols = int(n_rows), int(n_cols)\nrows = []\nfor i in range(n_rows):\n    values = input().strip().split(' ')\n    rows.append(np.array(values))\ninput_matrix = np.array(rows, dtype=np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n# for i in input_matrix:\n#     for j in i:\n#         if j <= num:\n#             input_matrix[i][j] == 0\nprint(input_matrix)"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: yuWG9WnF\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols=map(int,input().split(' '))\nar=[]\nfor r in range (n_rows):\n    a=input().strip().split()\n    ar.append(a)\n    '''a=list(map(int, input().split(' ')))\n    ar.append(a)'''\narr=np.array(ar,dtype=np.int8)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum=int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n'''for i in range (n_rows):\n    for j in arr[i]:\n        if j<=num:\n            j==0'''\narr[arr<=num]=0\nre1=np.sum(arr, axis=1)\nre2=np.sum(arr, axis=0)\nprint(arr)\nprint(re1)\nprint(re2)\n\n"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:54:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: pzNEmR83\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n#import numpy as np\n\nr = input()\nrc = r.split()\n\nprint(rc)\n'''for i in range (len(r)):\n    for j in range (len(c)):'''\n      \n    \n\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:01:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: HSTvUEEK\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nrow_n_cols = list(map(int,input().split(\" \")))\n\nlist_array = []\nfor i in range(row_n_cols[0]):\n    for j in range(row_n_cols[1]):\n        if row_n_cols[1] >= 2:\n            row = list(map(int,input().split(\" \")))\n        else:\n            row = int(input())\n        list_array.append(row)\n\narray = np.array(list_array)\n\nnum = int(input())\n\n#print(array)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\narray = array[array <= num] = 0\nprint(array)\n\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nnp.sum(array,axis = 1)"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:21:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887093\nPASSWORD: JwjvCavh\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows , n_cols = input().strip().split(' ')\nn_rows , n_cols = int(n_rows) , int(n_cols)\n\n# print(n_rows , n_cols)\n\nrows =[]\nfor i in range(n_rows):\n    values = input().strip().split(' ')\n    rows.append(np.array(values))\ninput_matrix = np.array(rows,dtype=np.int8)\n# print(input_matrix)\n\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\nnum =int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nx =input_matrix[input_matrix <= num] = 0\nprint(input_matrix)\n\nallcols = np.sum(input_matrix,axis=1)\nallrows = np.sum(input_matrix,axis=0)\nprint(allcols)\nprint(allrows)"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:42:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: AynCtBTW\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr,c = input().split()\nr,c = int(r),int(c)\n\na = []\n\nfor i in range(r):\n    x = []\n    n = input().split()\n    for i in range(c):\n        x.append(n[i])\n    a.append(x)\n# print(a)\n\narr = np.array(a,dtype=int)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\narr[arr <= num] = 0\n\nprint(arr)\n\nsum_rows = np.sum(arr,axis=0)\nsum_column = np.sum(arr,axis=1)\n\nprint(sum_column)\nprint(sum_rows)\n"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:57:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: T6vrzA3F\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\nn_rows,n_cols =input().strip().split()\nn_rows,n_cols=int(n_rows),int(n_cols)\nlist1=[]\nfor i in range(n_rows):\n    row=list(map(int, input().split()))\n    list1.append(row)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum=int(input())\n\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\narr=np.array(list1, dtype=np.int8)\nboolean_mask= num<=arr\n\n\nprint(boolean_mask)\n\n    \n    \n"
+  },
+  {
+    "User ID": "6887098",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:58:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887098\nPASSWORD: P9gska6Y\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows,n_cols = input().strip().split(' ')\nn_rows,n_cols = int(n_rows),int(n_cols)\nmatrix = []\nfor r in range(n_rows):\n    input_matrix = input().strip().split(' ')\n    matrix.append(input_matrix)\narray_2d = np.array(matrix,dtype=int)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nbool_idx = array_2d <= num\narray_2d[bool_idx] = 0\n\nsum_rows = np.sum(array_2d,axis=0)\nsum_cols = np.sum(array_2d,axis=1)\n\nprint(array_2d)\nprint(sum_cols)\nprint(sum_rows)"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T08:49:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: UpRVZSRe\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nx = input()\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:38:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: d5nt5aRW\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr,c=map(int,input().split())\nmatrix=[]\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nfor _ in range(r):\n    row=list(map(int,input().split()))\n    matrix.append(row)\n\ntwo_d=np.array(matrix,dtype=np.int8)\nnum=int(input())\nprint(two_d)\n\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "2/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:58:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: UewPkgQb\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = input().split(' ')\nn_rows, n_cols = int(n_rows), int(n_cols)\n\nmat = []\nfor i in range(n_rows):\n    a = input().strip().split(' ')\n    mat.append(a)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\narr = np.array(mat)\narr = arr.astype(int)\n\n\nprint(arr)\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nprint(np.sum(arr, axis=1))\nprint(np.sum(arr, axis=0))"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:51:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: h9Ps35sr\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr,c = map(int,input().strip().split())\nMet = []\nfor i in range(r):\n    Met.append(input().strip().split())\nMet = np.array(Met, dtype = np.int64)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nMet[Met[:,:] <= num] = 0\nprint(Met)\nprint(np.sum(Met,axis = 1))\nprint(np.sum(Met,axis = 0))"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:59:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: 7gd9vSGc\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nimport numpy as np\nnum_row,num_cols = mapclambda x : int(x),(input().strip().split(' '))\nmatrix = []\nfor i in range(num_rows):\n    matrix.append(input()strip().split(''))\nmatrix = np.array(matrix,dtype = np.int64)\nif num_cols == num_rows or num_cols < num_rows:\n    print('0')\nnp.sum(n_rows)\nsum_matrix = np.sum(matrix,axis = 1)\nminIndex = np.argmin(sum_matrix)\nres = np.zero((num_rows-1,num_cols))\nj = 0\nfor i in range (num_rows):\n    if i == minIndex:\n        continoue\n        res[j] = matrix[i]\n        j+=1\nprint(res)"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:00:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: 6E38vtvJ\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\nimport numpy as np \n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\nr,c = map(int,input().split(' '))\nmat = np.zeros((r,c),dtype=np.int8)\n \nfor i in range(r) :\n    mat[i] = list(map(int ,input().split()))\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nfor i in range(r) :\n    for j in range(c) :\n        if mat[i][j] <= num:\n            mat[i][j] = 0\n\nprint(mat)\nprint(np.sum(mat,axis=1))\nprint(np.sum(mat,axis=0))"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T08:52:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD: 8JFAFzaz\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\nimport numpy as np\n\nn_rows, n_cols = input().strip().split(' ')\nn_rows, n_cols = int(n_rows), int(n_cols)\nlist=[]"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:01:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: Jcr5dBvh\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nkun = np.array(len(rows) + len(cols))\na = np.array(input)\n\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nrows = input().split()\ncols = input().split()\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\ngigi = (rows < a)&(rows=a) or (cols < a)&(cols = a) = 0\n\n#hh = np.array(rows+cols)\nprint(gigi)\n\n\n"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:04:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: ddSD8TVM\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\nt =list(map(int ,input().split()))\nn =t[0]\nm= t[1]\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\na = np.shape(n,m)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nprint(a)\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:01:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: Q6pAsqj6\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\ns = input().strip().split()\nr = int(s[0])\nc = int([s[1]])\nlist_2d = []\nfor i in range(r) :\n    row = input().strip().split()\n    list_2d.append(row)\nmartrix = np.array(list_2d,dtype=np.int8)\n\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = input().strip().split()\n\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:01:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887111\nPASSWORD: pZghGcsX\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nr, c = map(int, input().split())\nlist = []\nfor i in range(r):\n    row = input().strip().split()\n    list.append(row)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nans = np.array(list)\nsum_max = np.max(list, axis=1)\n\nanswer= list[sum > num]\nprint(answer)"
+  },
+  {
+    "User ID": "6887112",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:01:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887112\nPASSWORD: RJGJ8ycs\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np \n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nnrow , ncol = input().split()\nnrow , ncol = int(nrow),int(ncol)\nlis = []\nfor i in range(nrow):\n    x = input().split()\n    lis.append(np.array(x))\nipm = np.array(lis ,dtype = np.int64)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\nfor i in ipm :\n    for j in i :\n        if j <= num :\n    print(ipm)\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n"
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:58:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887113\nPASSWORD: V88aUbf9\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows,n_cols = input().strip().split()\nn_rows,n_cols = int(n_rows),int(n_cols)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnn = []\nfor i in range(n_rows):\n    row = (input())\n    nn.append(row)\n\nprint(nn)\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\n"
+  },
+  {
+    "User ID": "6887114",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:32:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887114\nPASSWORD: BHdV9svj\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows,n_cols = map(int, input().split(' '))\n#print(n_rows,n_cols)\nrows = []\nfor i in range(n_rows):\n    cols = []\n    values = input().split(' ')\n    for j in range(n_cols):\n        cols.append(values[j])\n    rows.append(cols)\n#print(rows)\narr = np.array(rows)\narr = arr.astype(int)\n#print(arr)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nfor i in range(n_rows):\n    for j in range(n_cols):\n        if arr[i][j] <= num:\n            arr[i][j] = 0\nprint(arr)\nprint(np.sum(arr,axis = 1))\nprint(np.sum(arr,axis = 0))\n"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:01:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: kgRHpBYe\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\n\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\n\nn_rows, n_cols = input().split(' ')\nn_rows, n_cols = int(n_rows), int(n_cols)\nMatlist = []\n\nfor i in range(n_rows) :\n    Numlist = []\n    values = input().split(' ')\n    for j in range(n_cols) :\n        Numlist.append(int(values[j]))\n    Matlist.append(Numlist)\n\nnum_arr = np.array(Matlist)\n\n# print(num_arr)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\nnum = int(input())\n\nboolean_mask = num_arr >= num\nboolean_mask == True\nfor k in range(n_rows) :\n    if boolean_mask not in k:\n        continue\n\nprint(Matlist)\n\n# print(boolean_mask) #check True / False\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\n\n\nprint(np.sum(num_arr, axis= 0))\nprint(np.sum(num_arr, axis= 1))\n\n\n"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:51:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887116\nPASSWORD: mtS5EzaG\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\na = int(input())\nb = int(input())\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\narr = np.array([[a], [b]])\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nma = max(a)\nmb = max(b)\nsum = ma + mb\nprint(sum)"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: FAIL, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:01:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: Pk834RQA\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows,ncols = list(map(int, input().split(' ')))\nrow = []\nfor r in range(n_rows):\n    valu = input().strip().split()\n    row.append(valu)\nmat = np.array(row, dtype = np.int8)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum = int(input())\nmat2 = []\nfor i in mat:\n    if i == num:\n        i.replace(i, 0)\n        mat2.append(i)\n    else:\n        mat2.append(i)\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nmat3 = []\nfor j in mat2:\n    if j > num:\n        mat3.append(j)\n    else:\n        continue\n\nprint(mat3)\n"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:01:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887118\nPASSWORD: 75z92Ykv\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nnrow,ncol=map(int,input().split())\ndata=[]\nfor i in range(nrow):\n    row=list(map(int,input().split()))\n    data.append(row)\narr=np.array(data,dtype=np.int8)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum=int(input())\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nchange=arr[arr<=num]\nnew=[]\nfor i in data:\n    for j in list(map(int,change)):\n        if i!=j:\n            new.append(0)\n        elif i==j:\n            new.append(i)\narr2=np.array(new)\nline1=np.sum(arr2,axis=1)\nline2=np.sum(arr2,axis=0)\nprint(arr2)\nprint(line1)\nprint(line2)\n\n\n\n"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:51:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: n2JuT6d2\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\n# YOUR CODE GOES HERE\nn_rows, n_cols = input().split()\nn_rows, n_cols = int(n_rows), int(n_cols)\nrows=[]\nfor n in range(n_rows):\n    value=input().strip().split()\n    rows.append(value)\nmatrix_i=np.array(rows, dtype=int)\n# TODO: รับค่า `num`` จากผู้ใช้งาน\n# YOUR CODE GOES HERE\nnum=int(input())\nboole=(matrix_i <= num)\nfor i in range(n_rows):\n    for j in range(n_cols):\n        if matrix_i[i][j] <= num:\n            matrix_i[i][j]=0\nprint(matrix_i)\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\n# YOUR CODE GOES HERE\nprint(np.sum(matrix_i, axis=1))\nprint(np.sum(matrix_i, axis=0))\n"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-cp4-q3",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-14T03:19:23+00:00",
+    "Code": "'''\n/**\nUSERID: 999\nPASSWORD: 424242\nEXERCISEID: itds120-cp4-q3\n */\n'''\n\n# TODO: อิมพอร์ตไลบรารีที่จำเป็น\nimport numpy as np\n\nin_n = input('').split(' ')\nif len(in_n) != 2:\n    print('Invalid input 1')\n    exit()\nn_rows, n_cols = int(in_n[0]), int(in_n[1])\n\n# TODO: อ่านข้อมูลเข้าเป็น 2D numpy array ขนาด n_rows x n_cols\nall_rows = []\nfor i in range(n_rows):\n    row = input('').split(' ')\n    rows = [int(x) for x in row if len(x) > 0]\n    if len(rows) != n_cols:\n        print('Invalid input 2')\n        exit()\n    all_rows.append(rows)\nmat = np.array(all_rows, dtype=int)\n\n# TODO: รับค่า `num`` จากผู้ใช้งาน\nnum = int(input(''))\n\n# TODO: คำนวน**ผลรวมของค่าที่มากกว่าค่าที่ผู้ใช้งานกำหนด**ในแต่ละแถว (row) และหลัก (column) ของ 2D numpy array\nmat[mat<=num] = 0\nprint(mat)\nprint(np.sum(mat, axis=1))\nprint(np.sum(mat, axis=0))"
+  }
+]

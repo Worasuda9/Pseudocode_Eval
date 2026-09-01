@@ -1,0 +1,983 @@
+[
+  {
+    "User ID": "6887001",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:14:50+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887001\r\nPASSWORD: Fez8bYK8\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nwhile True:\r\n    x = int(input())\r\n    if x == -1:\r\n        break\r\n\r\nw = int(input())\r\n\r\nfor i in range(x):\r\n    if x == 0:\r\n        x = '_'\r\n    else:\r\n        x = '|'\r\n    print(i)"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:08:39+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887003\r\nPASSWORD: cS1NGQ3K\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nwhile True:\r\n    x = int(input())\r\n    if x == -1:\r\n        break\r\nw = int(input())\r\nfor i in range(w):\r\n    for j in range(w):\r\n        if i+j==0:\r\n            print('_'*w,end=' ')\r\n        elif i+j==1:\r\n            print('__|'*w,end=' ')\r\n    print()\r\n"
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:15:02+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887004\r\nPASSWORD: rwSBMkcV\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n\r\nn = input()\r\n\r\nwhile True:\r\n    if n == 1 :\r\n        print('_')\r\n    else n == 0 :\r\n        print('-')\r\n\r\n\r\n\r\nprint()\r\n    "
+  },
+  {
+    "User ID": "6887005",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T03:36:20+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887005\r\nPASSWORD: zeDNF2C6\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nwhile True:\r\n    n = int(input())\r\n    if n =='1':\r\n        break\r\nif n == 1 and n == 0 :\r\n    for i in range(n):\r\n        if i == 0:\r\n            print('_',end=' ')\r\n\r\n        \r\n        else:\r\n            print('|',end= ' ')\r\n    print()\r\n\r\n"
+  },
+  {
+    "User ID": "6887006",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:15:33+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887006\r\nPASSWORD: sPqJUhgb\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nn = int(input())\r\nwhile True :\r\n    n = int(input())\r\n    if n == 0 :\r\n    print('_')\r\nelif n == 1 :\r\n    print('|')\r\n    print('_')\r\n    if n == 2 :\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T03:31:55+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887007\r\nPASSWORD: XbyT11Tf\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nbit = []\r\n\r\nwhile (True):\r\n    n = int(input())\r\n    if (n == -1):\r\n        break\r\n    bit.append(n)\r\nw = int(input())\r\n\r\nif (bit[0] == 1):\r\n    print(\" \", end=\"\")\r\nfor i in range(len(bit)):\r\n    if (i > 0):\r\n        if (bit[i-1] != bit[i]):\r\n            print(\" \", end=\"\")\r\n    for j in range(w):\r\n        if (bit[i] == 1):\r\n            print(\"_\", end=\"\")\r\n        else:\r\n            print(\" \", end=\"\")\r\nif (bit[-1] == 1):\r\n    print(\" \", end=\"\")\r\n\r\nprint()\r\n\r\nif (bit[0] == 1):\r\n    print(\"|\", end=\"\")\r\nfor i in range(len(bit)):\r\n    if (i > 0):\r\n        if (bit[i-1] != bit[i]):\r\n            print(\"|\", end=\"\")\r\n    for j in range(w):\r\n        if (bit[i] == 0):\r\n            print(\"_\", end=\"\")\r\n        else:\r\n            print(\" \", end=\"\")\r\nif (bit[-1] == 1):\r\n    print(\"|\", end=\"\")\r\n"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:13:53+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887008\r\nPASSWORD: BeNKDkGt\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\na =[]\r\nwhile True:\r\n    n = input()\r\n    if n == '-1':\r\n        break\r\n    n = int(n)\r\n    a.append(n)\r\nw = int(input())\r\nprint(a)\r\nfor i in range(len(a)):\r\n    # if a[i] == '0':\r\n    #     print()\r\n    #     print('_',end='')\r\n    # elif a[i] =='1':\r\n    #     print('_',end='')\r\n    print(a[i])\r\n\r\n    \r\n"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:38:21+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887009\r\nPASSWORD: udD3dnQM\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n\r\nwhile True:\r\n    n = int(input())\r\n    if n==-1:\r\n        break\r\nw = int(input())\r\n\r\nfor i in range (w):\r\n    for j in range (w):\r\n        if j == 1 :\r\n         print('_',end=' ')\r\n        if j == 0 :\r\n         print('|',end=' ')\r\nprint()"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:10:21+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887010\r\nPASSWORD: 7h2JvGqV\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nbit = int(input())\r\nw = int(input())\r\nif bit == -1:\r\n    break\r\n\r\nfor i in range(bit):\r\n    for j in range(i):\r\n        if i == 0:\r\n            print('_',end=' ')\r\n        else:\r\n            print('|',end=' ')\r\n    print()\r\n\r\n"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:06:47+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887011\r\nPASSWORD: B5uvBbns\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n\r\nLi = [];\r\n\r\nwhile True:\r\n    b = int(input());\r\n    if b == -1:\r\n        break;\r\n    Li.append(b)\r\n\r\nw = int(input())\r\n\r\nfor i in range(len(Li)):\r\n    if Li[i] == 0:\r\n        Li[i] = \"_\"\r\n    else:\r\n        Li[i] == \"__\"\r\n\r\nprint(Li)"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: ERROR, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T03:37:08+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887012\r\nPASSWORD: q6T5EXsk\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\na = []\r\nwhile True:\r\n    bit = int(input())\r\n    if bit ==-1:\r\n        break\r\n    a.append(bit)\r\nwave = int(input())\r\n\r\nfor i in a:\r\n    if a[0] ==1 and a[8] ==1:\r\n        print('|')\r\n    for j in a:\r\n        if j != 1:\r\n            print('_')          \r\n\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T03:39:00+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887013\r\nPASSWORD: BBNQd64N\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nlist = []\r\nwhile True:\r\n    char = int(input())\r\n\r\n    if char == -1:\r\n        step = int(input())\r\n        break\r\n\r\n    list.append(char)\r\n\r\nn = len(list)\r\n\r\n\r\nr1 = []\r\nr2 = []\r\nfor i in range(n):\r\n    r1.append(' ')\r\n    r2.append(' ')\r\n\r\n\r\nc = list[0]\r\nfor i in range(n):\r\n\r\n    if list[i] == 1:\r\n        r1[i] = '_' * step\r\n        r2[i] = ' ' * step\r\n\r\n    if list[i] == 0:\r\n        r1[i] = ' ' * step\r\n        r2[i] = '_' * step\r\n\r\n\r\n    if list[i] != c :\r\n        c = list[i]\r\n\r\n        r1[i-1] += ' '\r\n        r2[i-1] += '|'\r\n\r\nif list[-1] == 1:\r\n        r1[-1] += ' '\r\n        r2[-1] += '|'\r\n\r\n\r\nif list[0] == 1:\r\n    print(' ', end= '')\r\n\r\nfor i in range(n):\r\n    print(r1[i], end= '')\r\nprint()\r\n\r\nif list[0]== 1:\r\n    print('|', end= '')\r\n\r\nfor i in range(n):\r\n    print(r2[i], end= '')\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887014",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T02:50:09+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887014\r\nPASSWORD: 9qW4cw5a\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nlist = []\r\nwhile True:\r\n    n = input()\r\n\r\n    if  n == 'Noe':\r\n        break\r\n    list.append(n)\r\nprint(list)"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:04+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887015\r\nPASSWORD: Fq7DDVJT\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nlist=[]\r\nwhile True:\r\n    n=int(input())\r\n    if n==-1:\r\n        break\r\n    list.append(n)\r\n\r\nw=int(input())\r\n\r\n\r\nfor i in list:\r\n    if i==0:\r\n        print(' '*2,end='')\r\n    elif i==1:\r\n        print('_'*2,end='')\r\nprint()\r\n\r\nfor i in list:\r\n    if i==0:\r\n        print('_'*2,end='')\r\n    elif i!=i:\r\n        print('|',end='')\r\n    elif i==1:\r\n        print(' '*2,end='')\r\nprint()   \r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:15:35+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887016\r\nPASSWORD: cJKfrTge\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nA = []\r\nmove = False\r\nwrite = False\r\nwhile True:\r\n    x = int(input())\r\n    if (x == -1):\r\n        break\r\n    A.append(x)\r\nw = int(input())\r\n# for i in range(1):\r\n# for k in range(len(A)):\r\n#     if (move):\r\n#        print('_', end='')\r\n#        if A[j] == A[j+1]:\r\n#             print('_', end='')\r\n#         # elif A[j] != A[j+1]:\r\n#         #     print('_', end='')\r\n#         #     move = False\r\n# for j in range(len(A)):\r\n#     if (move == False):\r\n#         if A[j] == A[j+1]:\r\n#             print('_', end='')\r\n#         elif A[j] != A[j+1]:\r\n#             print('_', end='')\r\n#             print('|', end='')\r\n#             move = True\r\n\r\n\r\nfor b in range(len(A)):\r\n    if (move == False):\r\n        if A[j] == A[j+1]:\r\n            print('_', end='')\r\n        elif A[j] != A[j+1]:\r\n            print('_', end='')\r\n            print('|', end='')\r\n            move = True\r\n        elif (write):\r\n            print('|', end='')\r\n    for a in range(len(A)):\r\n        if (move):\r\n            print('_', end='')\r\n       if A[j] == A[j+1]:\r\n            print('_', end='')\r\n        elif A[j] != A[j+1]:\r\n            print('_', end='')\r\n            move = False\r\n            write = True\r\n        "
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:13:37+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887017\r\nPASSWORD: ApDbr2Uh\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\na=[]\r\nb=[]\r\nwhile True:\r\n    n=int(input())\r\n    if n==-1:\r\n        break\r\n    a.append(n)\r\nw=int(input())\r\nfor i in range(len(a)):\r\n    if i ==1:\r\n        print(('_')*w)\r\nprint( end='')\r\nfor j in range(len(a)):\r\n    if j==1:\r\n        print(('|'))\r\n    elif  j == 0:\r\n        print(('_')*w)\r\nprint(  end='')\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: ERROR, CASE 6: ERROR, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:44+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887018\r\nPASSWORD: Qg4nTvQz\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nA=[]\r\n\r\nwhile True:\r\n    n = int(input())\r\n    if n==-1:\r\n        break\r\n    # while w>=1:\r\n    #     w = int(input())\r\n    A.append(n)\r\nw = int(input())\r\n\r\n\r\n\r\n# x=len(A)\r\n# y=x+1\r\n\r\nfor i in range(len(A)):\r\n    if A[0]==1 :\r\n        print('|',end='')\r\n    elif A[i]== 0:\r\n        print('_'* w,end='')\r\n    elif  A[len(A)]==1:\r\n        print('|',end='')\r\n    elif A[i]== 1:\r\n        print('-'*w,end='')\r\n    elif A[i]!=A[i-1] :\r\n        print('|',end='')\r\n"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T04:11:42+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887019\r\nPASSWORD: JpzC6nwX\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nbitList = []\r\nnewBitList = []\r\nwhile True:\r\n\r\n    bit = int(input())\r\n    if bit == -1:\r\n        break\r\n    bitList.append(bit)\r\n\r\nwidth = int(input())\r\n\r\nfor i in range(len(bitList)):\r\n    newBitList.append(bitList[i])\r\n    if i != len(bitList)-1:\r\n        if bitList[i] != bitList[i+1]:\r\n            newBitList.append(\"|\")\r\n# print(newBitList)\r\nif newBitList[0] == 1:\r\n    newBitList.insert(0,\"|\")\r\nif newBitList[-1] == 1:\r\n    newBitList.append(\"|\")\r\nfor i in range(2):\r\n    for j in newBitList:\r\n        if j == 1 and i == 0:\r\n            print(\"_\"*width,end=\"\")\r\n        \r\n        elif j == 0 and i == 1:\r\n            print(\"_\"*width,end=\"\")\r\n        elif j == \"|\" and i == 1:\r\n            print(\"|\",end=\"\")\r\n        elif i == 0 and j == 0:\r\n            print(\" \"*width,end=\"\")\r\n        elif i == 0 and j == \"|\":\r\n            print(\" \",end=\"\")\r\n        elif i == 1:\r\n            print(\" \"*width, end=\"\")\r\n    print()\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T03:08:19+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887020\r\nPASSWORD: 8aJ7EYFh\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\narr = []\r\nwhile True:\r\n    x = int(input())\r\n    if x == -1:\r\n        break\r\n    arr.append(x)\r\n\r\nw = int(input())\r\n\r\nif arr[0] == 1:\r\n    print(\" \", end=\"\")\r\nfor i in range(len(arr)):\r\n    if i > 0:\r\n        if arr[i] != arr[i-1]:\r\n            print(\" \", end=\"\")\r\n    if arr[i] == 0:\r\n        print(\" \" *w,end=\"\")\r\n    if arr[i] == 1:\r\n        print(\"_\" *w,end=\"\")\r\nif arr[-1] == 1:\r\n    print(\" \", end=\"\")\r\n    \r\nprint()\r\n\r\nif arr[0] == 1:\r\n    print(\"|\", end=\"\")\r\nfor j in range(len(arr)):\r\n    if j > 0:\r\n        if arr[j] != arr[j-1]:\r\n            print(\"|\", end=\"\")\r\n    if arr[j] == 0:\r\n        print(\"_\" *w,end=\"\")\r\n    if arr[j] == 1:\r\n        print(\" \" *w,end=\"\")\r\n\r\nif arr[-1] == 1:\r\n    print(\"|\", end=\"\")"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:13:54+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887021 \r\nPASSWORD: 1pKkNCBu\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n\r\nA = []\r\n\r\nwhile True:\r\n    x = int(input())\r\n    if x == -1:\r\n        break\r\n    A.append(x)\r\n\r\nwidth = int(input())\r\n\r\nresult =[]\r\n\r\nfor i in range(2):\r\n    y= []\r\n    for j in range(len(A)*width):\r\n        y.append(4)\r\n    result.append(y)\r\n\r\nfirst = 0\r\nlast = width\r\nfor i in range(len(A)):\r\n    \r\n    if A[i] == 0:\r\n        result[1][first:last] = [0]*width\r\n        first = last\r\n        last  = last +width\r\n\r\n    elif A[i] == 1:\r\n        first +=1\r\n        last +=1\r\n        result[0].append(4)\r\n        result[1].append(4)\r\n        result[0].append(4)\r\n        result[1].append(4)\r\n\r\n        result[0][first:last] = [1]*width\r\n        first = last\r\n        last  = last + width\r\n    \r\n\r\n\r\n\r\nfor i in range(len(result[1])):\r\n    if result[0][i] == result[1][i]:\r\n        result[1][i] = 2\r\n\r\n\r\n# for i in range(2):\r\n#     for j in range(len(result[i])):\r\n#         if result[i][j] == -1:\r\n#             result[i][j] = ' '\r\n#         elif result[i][j] == 0:\r\n#             result[i][j] = '_'\r\n#         elif result[i][j] == 1:\r\n#             result[i][j] = '_'\r\n#         elif result[i][j] == 2:\r\n#             result[i][j] = '|'\r\n\r\nfor i in range(2):\r\n    for j in range(len(result[i])):\r\n        print(result[i][j],end='')\r\n    print()\r\n\r\n\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:58:30+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887022\r\nPASSWORD: VycDKN1B\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n\r\nw = int(input())\r\n\r\nfor i in range(2):\r\n    for j in range(w*2):\r\n        if i ==1 and i != 0:\r\n            print('_',end='')\r\n        elif i == 0 and i != 1:\r\n            print('_',end='')\r\n        elif n == 0 or n ==1:\r\n            print('|',end='')\r\n"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:14:57+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887023\r\nPASSWORD: wkYa7DW8\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nlist = []\r\nwhile True:\r\n    x = input()\r\n    if x == '-1':\r\n        break\r\n    else:\r\n        list.append(x)\r\n\r\nfor i in list:\r\n    if i == '1':\r\n        print('__',end='')\r\n    elif i == '0' :\r\n        print(' '*3,end='')\r\nprint()\r\nfor i in list:\r\n    if i == '0':\r\n        print('__',end='')\r\n    elif i == '1' :\r\n        print('|',end='')\r\n        print(' '*3,end='')"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:04:14+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887024\r\nPASSWORD: RH9Jzcht\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n\r\nnum = []\r\n\r\nwhile True : \r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n    \r\n    num.append(n)\r\n\r\nw = int(input())\r\n\r\nfor i in num:\r\n    if num == 0:\r\n\r\n        print('\\n')\r\n        print('_'*w,end='')\r\n    else:\r\n        print('|',end='')\r\n        print('_'*w,end='')\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887025",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:14:44+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887025\r\nPASSWORD: APBcSWVg\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nlist=[]\r\nup = []\r\ndown =[]\r\nans =[]\r\nwhile True :\r\n    bit=int(input())\r\n    if bit == -1 :\r\n        break\r\n    list.append(bit)\r\n\r\nw=int(input())#\r\n\r\nfor i in list :\r\n    if i == 0 :\r\n        up.append('*')\r\n        down.append('_')\r\n    elif i == 1 :\r\n        up.append('_')\r\n        down.append('*')\r\n\r\ncheck =0\r\nfor i in list:\r\n    check+=1\r\n    if i*i != i*list[check+1]== i :\r\n        ans.append('|')\r\n    elif i == 0 :\r\n            ans.append('_')\r\n    elif i == 1 :\r\n            ans.append('-')\r\n    \r\n    \r\n\r\nprint(ans)\r\n    \r\nfor i in ans :\r\n    if i == '*':\r\n        print(' '*w,end='')\r\n    elif i == 0 :\r\n        print(' ',end='')\r\n    elif i == '-':\r\n        print('_'*w,end='')\r\n\r\nprint()\r\n\r\nfor i in ans :\r\n    if i == '*':\r\n        print('_'*w,end='')\r\n    elif i == 0 :\r\n        print('|',end='')\r\n    elif i == '-':\r\n        print(' '*w,end='')\r\n\r\n\r\n\r\n'''for i in up :\r\n    if i == '_' :\r\n        print('_'*w,end='')\r\n    elif i == '*':\r\n        print(' '*(int(w)+1),end='')\r\n\r\nprint()\r\n\r\nfor i in down :\r\n    if i == '*' :\r\n        print(' '*w,end='')\r\n        \r\n    elif i == '_' :\r\n        print('_'*w,end='')\r\n        print('|',end='') '''"
+  },
+  {
+    "User ID": "6887026",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:57:17+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887026\r\nPASSWORD: H9H2PStd\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nlist1 =[]\r\n\r\nwhile True:\r\n    n=int(input( ))\r\n    if n == -1:\r\n        break\r\n    list1.append(n)\r\nw = int(input())\r\n\r\nfor i in range(w):\r\n    for j in list1:\r\n        if i == 0:\r\n            print('_',end='')\r\n        elif i == 1:\r\n            print('|',end='')\r\n    \r\n    \r\n        "
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "6/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:14:08+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887027\r\nPASSWORD: KMWjYcJu\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nwave = []\r\n\r\nwhile True:\r\n    x = int(input())\r\n    \r\n    if x == -1:\r\n        break\r\n    else:\r\n        wave.append(x)\r\n\r\nwavl = int(input())\r\n\r\n# print(wave)\r\n\r\nfor i in range (2):\r\n    for j in range(len(wave)):\r\n        \r\n        if i == 0:\r\n            if j == 0 and wave[j] == 1:\r\n                print(' ', end='')\r\n                for k in range(wavl):\r\n                    print('_',end='')\r\n            \r\n            elif j == (len(wave)-1) and wave[j] == 1:\r\n                if wave[j-1] == 0:\r\n                    print(' ',end='')\r\n                for k in range(wavl):\r\n                    print('_',end='')\r\n                print(' ',end='')\r\n            \r\n\r\n\r\n            elif j!= 0 and wave[j-1] == 0 and wave[j] == 1:\r\n                print(' ', end='')\r\n                for k in range(wavl):\r\n                    print('_',end='')\r\n            \r\n            elif j!= (len(wave)-1) and wave[j+1] == 0 and wave[j] == 1:\r\n                for k in range(wavl):\r\n                    print('_', end='')\r\n                print(' ', end='')\r\n\r\n\r\n\r\n            elif wave[j] == 1:\r\n                for k in range(wavl):\r\n                    print('_', end='')\r\n            \r\n            elif wave[j] == 0:\r\n                for k in range(wavl):\r\n                    print(' ',end='')\r\n                    \r\n        \r\n        if i == 1:\r\n            if j == 0 and wave[j] == 1:\r\n                print('|', end='')\r\n                for k in range(wavl):\r\n                    print(' ',end='')\r\n\r\n            elif j == (len(wave)-1) and wave[j] == 1:\r\n                if wave[j-1] == 0:\r\n                    print('|',end='')\r\n                for k in range(wavl):\r\n                    print(' ',end='')\r\n                print('|',end='')\r\n\r\n\r\n\r\n\r\n            elif j!= 0 and wave[j-1] == 0 and wave[j] == 1:\r\n                print('|', end='')\r\n                for k in range(wavl):\r\n                    print(' ',end='')\r\n            \r\n            elif j!= (len(wave)-1) and wave[j+1] == 0 and wave[j] == 1:\r\n                for k in range(wavl):\r\n                    print(' ', end='')\r\n                print('|', end='')\r\n\r\n            \r\n\r\n\r\n\r\n            elif wave[j] == 1:\r\n                for k in range(wavl):\r\n                    print(' ', end='')\r\n            \r\n            elif wave[j] == 0:\r\n                for k in range(wavl):\r\n                    print('_',end='')\r\n    \r\n\r\n        \r\n            \r\n\r\n\r\n    print()\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n        "
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:59:16+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887028\r\nPASSWORD: AR3EG6JW\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\ncount = 0\r\nb= []\r\nwhile True:\r\n    bit = int(input())\r\n    count += 1\r\n    if bit == -1:\r\n        break\r\n    b.append(bit)\r\n\r\nwhile True:\r\n    w = int(input())\r\n    if w >= 1:\r\n        break\r\n\r\nfor i in range(w):\r\n    for j in b:\r\n        if j == 0:\r\n            print()\r\n            print('_',end='')\r\n        if j == 1:\r\n            print('_',end='')\r\n        else:\r\n            print('|',end='')\r\n    print()"
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:32+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887029\r\nPASSWORD: fqRbvsBW\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\nlist_bit = []\r\nbit = 0\r\nwhile bit != -1 :\r\n    bit = int(input())\r\n    list_bit.append(bit)\r\nw = int(input())\r\nfor i in range(2) :\r\n    for j in range(len(list_bit)) :\r\n        if list_bit[j] == 1 and i == 0 :\r\n            print('_'*w , end='')\r\n        elif list_bit[j] == 0 and i == 1 :\r\n            print('_'*w , end='')\r\n        elif ((list_bit[j] > list_bit[j-1]) or (list_bit[j] < list_bit[j-1])) and j!=0 and i == 1  :\r\n            print('|' , end='')\r\n        else :\r\n            print(' '*w , end=' ')\r\n    print()\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:08:27+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887030\r\nPASSWORD: SDXwqvn2\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nlist1 = []\r\nwhile True :\r\n    n = int(input())\r\n    if n == -1 :\r\n        break\r\n    list1.append(n)\r\n\r\nw = int(input())\r\nnum = list1[0]\r\nfor i in range(len(list1)) :\r\n    \r\n    if list1[i] != num :\r\n        print('|' , end = '')\r\n        num = list1[i]\r\n    elif list1[i] == num :\r\n        if list1[i] == 0 :\r\n            print('_' * w , end = '')\r\n            num = list1[i]\r\n        else :\r\n            print('_' * w , end = '')\r\n            num = list1[i]\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:02:09+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887031\r\nPASSWORD: qvHNWZJy\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nblist=[]\r\n\r\nwhile True:\r\n    n = int(input())\r\n    if n!=-1:\r\n        blist.append(n)\r\n    else:\r\n        break\r\n\r\nwhile True:\r\n    w = int(input())\r\n    if w>=1:\r\n        break\r\n\r\ns_bit=0\r\nl_bar = []\r\nh_bar = []\r\n\r\nfor i in range(len(blist)):\r\n    if blist[i] == 0:\r\n        l_bar.append(\"_\"*w)\r\n    elif blist[i] == 1:\r\n        h_bar.append(\"_\"*w)\r\n\r\nall_bar = l_bar+h_bar\r\nprint(\" \".join(h_bar))\r\nprint(\" \".join(l_bar))\r\nprint()\r\n\r\nfor i in range(len(blist)):\r\n    if blist[i]==1:\r\n        print(\"|\",end=\" \")"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:58:18+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887032\r\nPASSWORD: 2YEC9mp3\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nwhile True:\r\n    b = int(input())\r\n    if b==-1:\r\n        break\r\nw = int(input())\r\nfor i in range(2):\r\n    for j in range(w):\r\n        if b==0:\r\n            print('_',end='|')\r\n        elif b==1:\r\n            print('_',end='|')\r\n\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:04:17+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887033\r\nPASSWORD: pt5Aqtg9\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nasci = []\r\nwhile True:\r\n    bit = int(input())\r\n    if bit == -1:\r\n        break\r\n    asci.append(bit)\r\n\r\nwave = int(input())\r\n\r\nresult = []\r\nfor i in range(2):\r\n    result.append(\"\")\r\n    row = []\r\n    for j in range(20):\r\n        row.append(\"\")\r\n    result.append(row)\r\n\r\nprint(result)\r\n\r\nif asci[0] == 1:\r\n    print(\"|\", end = \"\")\r\nelse:\r\n    print(\"_\", end = \"\")\r\n\r\nflag = asci[0]\r\nfor i in range(1, len(asci)):\r\n    if (asci[i] > flag) or (asci[i] < flag):\r\n        print(\"|\", end = \"\")\r\n        flag = i\r\n    else:\r\n        print(\"_\", end = \"\")\r\n\r\n\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:12:51+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887035\r\nPASSWORD: JqbpnCGQ\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n\r\nA = []\r\n\r\nwhile True :\r\n    bit = input()\r\n    if bit == '-1' :\r\n        break\r\n    else :\r\n        bit = int(bit)\r\n        A.append(bit)\r\n\r\nw = int(input())\r\n\r\nfor i in range(2) :\r\n    for j in range(len(A)) :\r\n        if A[i] == '1' :\r\n            print('_'*w,end = '')\r\n        elif A[i] == '0' :\r\n            print(' '*w+1,end = '')\r\n            print('_'*w,end = '')\r\n        elif A[i] != A[i-1] :\r\n            print('|' ,end = '')"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:35:43+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887036\r\nPASSWORD: CSrZZey8\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nn_list = []\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1 or n != 0 or n != 1:\r\n        break\r\n    n_list.append(n)\r\nwhile True:\r\n    w = int(input())\r\n    if w >1 or w < 0:\r\n        break\r\n    n_list.append(w)\r\nfor i in n_list:\r\n    if i == 0:\r\n        print('_',end='')\r\n        \r\n    if i == 1:\r\n        print(end='')\r\n        print('_|',end='')\r\n"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:16+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887037\r\nPASSWORD:  nt3K8yCn\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nA = []\r\nwhile True:\r\n    x = int(input())\r\n    A.append(x)\r\n    if x == -1:\r\n        break\r\nw = int(input())\r\n\r\nfor i in A:\r\n    for j in range(w):\r\n        if i == 1:\r\n            print('_',end='')\r\n        elif i == 0:\r\n            print(' ',end='')\r\nprint()\r\n\r\nfor i in A:\r\n    if i != i:\r\n        print('|',end='')\r\n    for j in range(w):\r\n        if i == 1:\r\n            print(' ',end='')\r\n    for j in range(w):\r\n        if i == 0:\r\n            print('_',end='')\r\n"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/1 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: TIMEOUT",
+    "Submission Time": "2025-10-03T03:39:07+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887038\r\nPASSWORD: U7qZwJrK\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nx = 0\r\ny = 1\r\nwhile True:\r\n    x == 0 or y == 1\r\n    if x == -1:\r\n        break\r\n"
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:37+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887039\r\nPASSWORD: c6CePfYu\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nbit = []\r\n\r\nwhile True:\r\n    x = int(input())\r\n    if x==-1:\r\n        break\r\n    bit.append(x)\r\nw = int(input())\r\n# print(bit)\r\n \r\nfor i in range(len(bit)):\r\n    if bit[i]==1:\r\n        print('_'*w, end='')\r\n    elif bit[i]==0:\r\n        print(' '*w, end='')\r\n    elif bit[i]!=bit[i-1]:\r\n        print(' ', end='')\r\n    else:\r\n        print(' ', end='')\r\n\r\nprint()\r\n\r\nfor i in range(len(bit)):\r\n    if bit[i]==0:\r\n        print('_'*w, end='')\r\n    elif bit[0]==1 or bit[-1]==1 or bit[i]!=bit[i-1]:\r\n        print('|', end='')\r\n    # elif bit[i]!=bit[i-1]:\r\n    #     print('|',end='')\r\n    else:\r\n        print(' '*w, end='')\r\n\r\n\r\n# # upper line\r\n# for i in range(len(bit)):\r\n#     if bit[i]==1:\r\n#         print('_'*w, end='')\r\n#     elif bit[i]==0:\r\n#         print(' '*w, end='')\r\n#     elif bit[i]!=bit[i+1]:\r\n#         print(' ', end='')\r\n#     elif bit[0]==1 or bit[-1]==1:\r\n#         print(' ', end='')\r\n#     # else:\r\n#     #     print(' ',end='')\r\n# print()\r\n# # lower line\r\n# for i in range(len(bit)):\r\n#     if bit[i]==0:\r\n#         print('_'*w, end='')\r\n#     elif bit[i]==1:\r\n#         print(' '*w, end='')\r\n#     elif bit[0]==1 or bit[-1]==1:\r\n#         print(' |', end='')\r\n#     elif bit[i]!=bit[i+1]:\r\n#         print(' |', end='')\r\n#     # else:\r\n#     #     print(' ', end='')\r\n\r\n# for i in range(len(bit)):\r\n#     if bit[i]==1:\r\n#         print('_'*w, end='')\r\n#     elif bit[0]==1 or bit[-1]==1:\r\n#         print(' ', end='')\r\n#     elif bit[i]==0:\r\n#         print(' '*w, end='')\r\n# print()\r\n# for i in range(len(bit)):\r\n#     if bit[0]==1 or bit[-1]==1:\r\n#         print('|', end='')\r\n#     elif bit[i]==0:\r\n#         print('_'*w, end='')\r\n#     elif bit[i]==1:\r\n#         print(' '*w, end='')\r\n"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:14:39+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887040\r\nPASSWORD: 6QFdZ12U\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nwave = []\r\nwhile True :\r\n    binary = int(input())\r\n    if binary <= -1 :\r\n        break\r\n    wave.append(binary)\r\n\r\nfor i in wave:\r\n        if i == 0 :\r\n            print(\"  \",end = \"\")\r\n        elif i == 1 :\r\n            print(\"__\",end=\"\")\r\n\r\n\r\nprint()\r\n\r\nfor i in wave:\r\n        if i == 1 :\r\n            if wave[0] == 1 :\r\n                print(\"|\", end=\"\")\r\n            elif wave[i-1] < wave[i] :\r\n                print(\"|\" , end = \"\")\r\n            elif wave[i-1] == wave[i] :\r\n                print(\"  \",end=\"\")\r\n\r\n        elif i == 0 :\r\n            print(\"__\",end=\"\")\r\n\r\n'''\r\n                if wave[0] == 1 :\r\n                print(\" \", end=\"\")\r\n            elif wave[i-1] < wave[i] :\r\n                print(\" \" , end = \"\")\r\n            elif wave[i-1] > wave[i] :\r\n                print(\" \" , end = \"\")\r\n            elif wave[i-1] == wave[i] :\r\n                print(\"-\",end=\"\")\r\n'''"
+  },
+  {
+    "User ID": "6887041",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:16:22+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887041\r\nPASSWORD: TpHnB2B4\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nlistx = []\r\n\r\nwhile True :\r\n    x = int(input())\r\n    if x == -1 :\r\n        break\r\n    else :\r\n        listx.append(x)\r\nw = int(input())\r\n\r\n# print(listx)\r\n# print(w)\r\n\r\nfor i in listx :\r\n    if i == '0' :\r\n        print('_' * w)\r\n    elif i == '1' :\r\n        print('_' * w)\r\n    print()\r\n"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T03:44:19+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887042\r\nPASSWORD: 2fFz1Kbu\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nbits = []\r\nchange = []\r\nline1 = ''\r\nline2 = ''\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n    bits.append(n)\r\n\r\nw = int(input())\r\n\r\nfor i in range(len(bits)):\r\n    if i - 1 >= 0:\r\n        if bits[i] != bits[i - 1]:\r\n            change.append(i)\r\n\r\nif bits[0] == 1:\r\n    line1 += ' '\r\n    line2 += '|'\r\nfor j in range(len(bits)):\r\n    if j in change:\r\n        line1 += ' '\r\n    if bits[j] == 1:\r\n        line1 += ('_' * w)\r\n    else:\r\n        line1 += (' ' * w)\r\n\r\nfor k in range(len(bits)):\r\n    if k in change:\r\n        line2 += '|'\r\n    if bits[k] == 0:\r\n        line2 += ('_' * w)\r\n    else:\r\n        line2 += (' ' * w)\r\n\r\nif bits[-1] == 1:\r\n    line1 += ' '\r\n    line2 += '|'\r\n    \r\n\r\n\r\nprint(line1)\r\nprint(line2)\r\n    \r\n"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:01:53+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887043\r\nPASSWORD:  mSmEr3uF\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nwhile True:\r\n    w = int(input())\r\n    if w == '-1':\r\n        break\r\n        wavewidth = int(input())\r\n        \r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:09:26+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887044\r\nPASSWORD: AsGm8cWp\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nwhile True:\r\n    n=int(input())\r\n    if n==-1:\r\n        break\r\n\r\nw=int(input())\r\n\r\nfor i in range(1,w):\r\n    if i == 0:\r\n        print('_')\r\n    elif i == 1:\r\n        print('_')\r\n"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:37+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887045\r\nPASSWORD: VSXrvaMj\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n\r\n\r\n    else:\r\n        if n == 1:\r\n            print('|',end = '')\r\n        elif n == 0:\r\n            print('__',end = '')\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:30+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887047\r\nPASSWORD: Ug6arpZz\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nbit = []\r\nsw = 0\r\nwhile True :\r\n    bit.append(int(input()))\r\n    if -1 in bit :\r\n        bit.remove(-1)\r\n        break\r\n\r\nw = int(input())\r\n\r\n#first row\r\nfor i in range (len(bit)) :\r\n    if bit[i] == 0 :\r\n        print(' '*w,end='')\r\n        sw = 0\r\n    elif bit[i] == 1 :\r\n        if sw == 0 :\r\n            print(' ',end='')                             \r\n            sw = 1\r\n        if sw == 1:\r\n            print('_' * w ,end='')\r\nsw = 0\r\nprint()\r\n\r\n#second row\r\nfor i in range (len(bit)):\r\n    if bit[i] == 0 and sw == 1:\r\n        print(' '*w,end='')\r\n        print('|',end='')\r\n        sw = 0\r\n        print('_'*w,end='')\r\n    elif bit[i] == 0 :\r\n        print('_'*w,end='')\r\n        sw = 0\r\n    elif bit[i] == 1  and sw == 0:\r\n        print('|',end='')\r\n        sw = 1\r\n    elif sw == 1 :\r\n        print(' '*w,end='')\r\nprint(''*w,end='')\r\nprint(' |')"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:00:34+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887048\r\nPASSWORD: AJTh849M\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nbit = int(input())\r\nn = int(input())\r\n\r\nfor i in range(n):\r\n    n = float(input())\r\n    w = int(input())\r\n    if n == -1 :\r\n        continue\r\n    bit.append(n)\r\n\r\n    else w >= 1 :\r\n        \r\n\r\n"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:35+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887049\r\nPASSWORD: f7bT6QNP\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nm=[]\r\nwhile True:\r\n    n=int(input())\r\n    if n == -1:\r\n        break\r\n    m.append(n)\r\nprint(m)\r\n\r\nw = int(input()) #wave length\r\n\r\none = 0\r\nfor p in m:\r\n    if p == 1:\r\n        one += 1\r\n\r\nfor i in m: #upper 1\r\n    if i == 1:\r\n        print('_'*w,end='')\r\n        s=0\r\n    else:\r\n        print(' '*w,end='')   \r\nprint()\r\n\r\nc=0\r\nfor i in m : #lower 0\r\n    if c-1 ==one:\r\n        print('|',end='')\r\n    elif i ==0:\r\n        print('_'*w,end='')\r\n    else:\r\n        c+=1\r\n        print(' '*w,end='')\r\n\r\n'''\r\nc=0\r\nfor i in m : #lower\r\n    if i == 0:\r\n        c+=1\r\n    else:\r\n        print(' '*w,end='')\r\n'''"
+  },
+  {
+    "User ID": "6887050",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:38:24+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887050\r\nPASSWORD: qXT6h6dD\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nA = []\r\nwhile True:\r\n    x = int(input())\r\n    if x == -1:\r\n        break\r\n    A.append(x)\r\n\r\nw = int(input())\r\n\r\nfor i in A:\r\n    if i == 0:\r\n        print(\"_\",end=\"\")\r\n    elif i == 1:\r\n        print(\"|\",end=\"\")\r\n        print(\"_\",end=\"\")\r\n       \r\n\r\n    "
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: ERROR, CASE 6: FAIL, CASE 7: ERROR, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:07:06+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887051\r\nPASSWORD: rpAUs2eT\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n\r\nonesay = []\r\nwhile True:\r\n    user = int(input())\r\n    if user == -1:\r\n        break\r\n    else:\r\n        onesay.append(user)\r\nw = int(input())\r\nk = 0\r\nfor i in range(len(onesay)):\r\n    if i == 0   and onesay[i] == 1:\r\n        print('|', end = '')\r\n    elif i == 0:\r\n        print(\"_\", end = '')\r\n\r\n    elif i == (len(onesay)-1) and onesay[i] == 1:\r\n        print('|', end = '')\r\n        print(' '*2, end = '')\r\n\r\n    elif onesay != onesay[i+1]:\r\n        print('|', end = '')\r\n    \r\n\r\n\r\n\r\n    else:\r\n        print(\"_\", end = '')\r\n\r\n"
+  },
+  {
+    "User ID": "6887052",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T03:46:32+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887052\r\nPASSWORD: 6d6Hnzr7\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\nx = int(input())\r\nz = 0\r\nlist1 = []\r\nwhile True:\r\n    list1.append(x)\r\n    x = int(input())\r\n    z += 1\r\n    if x == -1:\r\n        break\r\ny = int(input())\r\nfor i in range (z):\r\n    if (list1[i] == 0 and list1[i-1] == 1 and i != 0) or (list1[i] == 1 and list1[i-1] == 0 and i != 0) or (i == 0 and list1[i] == 1):\r\n       print (' ',end = '')\r\n    if list1[i] == 1:\r\n        print ('_'*(y),end ='')\r\n    elif list1[i] == 0:\r\n        print (' '*y, end = '')\r\n    if (list1[i] == 1 and i == z-1):\r\n        print(' ',end = '')\r\nprint()\r\n\r\nfor i in range (z):\r\n    if (list1[i] == 0 and list1[i-1] == 1 and i != 0) or (list1[i] == 1 and list1[i-1] == 0 and i != 0) or (i == 0 and list1[i] == 1):\r\n       print ('|',end = '')\r\n    if list1[i] == 0:\r\n       print ('_'*(y),end ='')\r\n    elif list1[i] == 1:\r\n       print (' '*y, end = '')\r\n    if (list1[i] == 1 and i == z-1):\r\n        print('|',end = '')\r\n\r\n"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:14:58+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887053\r\nPASSWORD: MkPzXQH4\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nyay = []\r\nwhile True :\r\n    n =int(input())\r\n    yay.append(n)\r\n    if n < 0 :\r\n        break\r\n    \r\n\r\nw = int(input())\r\nfor i in range (len(yay)) :\r\n    print(' ',end='')\r\n    if yay[i] == 0 :\r\n        print('',end='')\r\n    elif yay[i] == 1 :\r\n        print('_'*w,end='')\r\nprint()\r\nfor j in range (len(yay)) :\r\n    if yay[j] == 0 :\r\n        print('_'*w,end='')\r\n    if yay[j] == 1 :\r\n        print('|',end='')\r\n    if yay[j] == 1 :\r\n        print(' '*w,end='' )"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:35:44+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887054\r\nPASSWORD: yCwjjFaw\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nl = []\r\n\r\nwhile True :\r\n    n = int(input())\r\n    if n != -1 :\r\n        l.append(n)\r\n    else :\r\n        break\r\nw = int(input())\r\n'''\r\nfor i  in range(len(l)) :\r\n    if l[i] == 0 :\r\n        print(\"__\"*w,end=\"\")\r\n\r\n    elif l[i] == 1 :\r\n        print(\"|\",end=\"\")\r\nprint(l)\r\n'''\r\n#line 1\r\nfor i  in range(len(l)) :\r\n    if l[i] == 1 :\r\n        print(\"|\",end=\"\")\r\n    elif l[i] == 0 :\r\n        print(\"_\"*w,end=\"\")\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:15:33+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887056\r\nPASSWORD: ehGVsN1W\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nword = []\r\nwhile True:\r\n    binary = int(input())\r\n    if binary == -1:\r\n        break\r\n    elif binary <= 2:\r\n        continue\r\n    w.append(binary)\r\n\r\nfor i in range(word):\r\n    if i == 1:\r\n        print(\"|\")\r\n    else:\r\n        print(\"_\")\r\n    print()\r\n\r\n"
+  },
+  {
+    "User ID": "6887057",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:01+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887057\r\nPASSWORD: nwyDjT8R\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nw = int(input())\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n    if n == 0:\r\n        print('_')\r\n    if n == 1:\r\n        print('_')\r\n    if w == n:\r\n        print(\"|\")\r\n    print(n,end=\" \")\r\nprint()\r\n\r\n        \r\n        "
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T04:10:05+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887058\r\nPASSWORD: Ec4R4djr\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nbits = []\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n    bits.append(n)\r\n\r\nw = int(input())\r\n\r\nif bits[0] == 1:\r\n            print(' ',end = '')\r\n\r\nfor i in range(len(bits)):\r\n    if i > 0:\r\n        if bits[i] == 1 and  bits[i-1] == 0:\r\n            print(' ', end = '')\r\n        elif bits[i] == 0 and bits[i-1] == 1:\r\n            print(' ', end = '')\r\n    if bits[i] == 1:\r\n        print(w*'_', end = '')\r\n    else:\r\n        print(w*' ' ,end = '')\r\n    \r\nif bits[len(bits)-1] == 1:\r\n    print(' ',end = '')\r\n            \r\nprint()\r\n\r\nif bits[0] == 1:\r\n            print('|',end = '')\r\n\r\nfor i in range(len(bits)):\r\n    if i > 0:\r\n        if bits[i] == 1 and  bits[i-1] == 0:\r\n            print('|', end = '')\r\n        elif bits[i] == 0 and bits[i-1] == 1:\r\n            print('|', end = '')\r\n\r\n    if bits[i] == 1:\r\n        print(w*' ', end = '')\r\n    elif bits[i] == 0:\r\n        print(w*'_', end = '')\r\n\r\nif bits[len(bits)-1] == 1:\r\n    print('|',end = '')\r\n            \r\n"
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:36:22+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887060\r\nPASSWORD: FafaFahj\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nbit=[]\r\n\r\nwhile True:\r\n    n=int(input())\r\n    if n == -1:\r\n        break\r\n    bit.append(n)\r\n    \r\nw=int(input())\r\n\r\nfor i in range(2):\r\n    for j in range(len(bit)):\r\n        if bit[0]==1 or bit[len(bit)-1]:\r\n            print(\"|\", end=\" \")\r\n            continue\r\n        if bit[j]==0:\r\n            print(\"__\", end=\" \")\r\n        if bit[j]==1:\r\n            print(\"__\", end=\" \")\r\n        \r\n\r\n"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:12:44+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887061\r\nPASSWORD: eEBTFnca\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nlistA = []\r\n\r\nwhile True :\r\n    n = int(input())\r\n    if n == -1 :\r\n        break\r\n    else :\r\n        listA.append(n)\r\n\r\nw = int(input())\r\n\r\nfor i in range(len(listA)) :\r\n    if listA[i] == 1 :\r\n        print('_' * w , end = '')\r\n    elif listA[i] == 0 :\r\n        print(' ' * w , end = '')\r\n\r\nprint()\r\n\r\n\r\nfor i in range(len(listA)) :\r\n    if listA[i] == 1 :\r\n        print(' ' * w , end = '')\r\n    if listA[i] == 0 :\r\n        print('_' * w , end = '')\r\n    if listA[0] == 1 :\r\n        listA.append('|')\r\n\r\n'''\r\n    if listA[0] == 1 :\r\n        print('|', end = '')\r\n    if listA[-1] == 1 :\r\n        print('|', end = '')\r\n'''\r\n\r\n'''\r\nfor i in range(2) :\r\n    for j in range(len(listA)) :\r\n        if listA[j] == 1 :\r\n            print('_' , end = '')\r\n        else :\r\n            print('' , end = '')\r\n'''\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T04:13:08+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887062\r\nPASSWORD: JzHd7MdK\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nA=[]\r\n\r\nwhile True:\r\n    x=int(input())\r\n    if x==-1:\r\n        break\r\n    A.append(x)\r\n\r\nlenA=len(A)\r\nw=int(input())\r\n\r\nA.append(2)\r\nfor i in range(lenA):\r\n    if A[i] == 0:\r\n        print(\" \"*w,end='')\r\n\r\n    if A[i] == 1 and A[i+1]!=1 and A[i-1]!=1:\r\n        print(\" \",end='')\r\n        print(\"_\"*w,end='') \r\n        print(\" \",end='') \r\n    elif A[i] == 1 and A[i-1]!=1:\r\n        print(\" \",end='')\r\n        print(\"_\"*w,end='')\r\n    elif A[i] == 1 and A[i+1]!=1:\r\n        print(\"_\"*w,end='')\r\n        print(\" \",end='')\r\n    elif A[i]==1:\r\n        print(\"_\"*w,end='')\r\n    \r\nprint()\r\n\r\nfor i in range(lenA):\r\n    if A[i] == 0:\r\n        print(\"_\"*w,end='')\r\n\r\n    if A[i] == 1 and A[i+1]!=1 and A[i-1]!=1:\r\n        print(\"|\",end='')\r\n        print(\" \"*w,end='')\r\n        print(\"|\",end='')\r\n    elif A[i] == 1 and A[i-1]!=1:\r\n        print(\"|\",end='')\r\n        print(\" \"*w,end='')\r\n    elif A[i] == 1 and A[i+1]!=1:\r\n        print(\" \"*w,end='')\r\n        print(\"|\",end='')\r\n    elif A[i]==1:\r\n        print(\" \"*w,end='')\r\n"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:04:54+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887063\r\nPASSWORD:  UMr6MHv5\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nn = int(input())\r\nw = int(input())\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n    print(n)\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T03:51:31+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887064\r\nPASSWORD: 8BjdRvtM\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nx= []\r\nwhile True:\r\n    bit = int(input())\r\n    if bit == -1:\r\n        multiply = int(input())\r\n        break\r\n    x.append(bit)\r\nif x[0] == 1:\r\n    print(' ',end='')\r\nfor i in range(len(x)):\r\n\r\n    if x[i] == 1:\r\n        print('_'*multiply,end='')\r\n    elif x[i] == 0:\r\n        print(' '*multiply,end='')\r\n    if i < len(x)-1:\r\n        if x[i] != x[i+1]:\r\n            print(' ',end='')\r\nif x[-1] == 1:\r\n    print(' ',end='')\r\nprint()\r\nif x[0] == 1:\r\n    print('|',end='')\r\nfor i in range(len(x)):\r\n\r\n    if x[i] == 0:\r\n        print('_'*multiply,end='')\r\n    elif x[i] == 1:\r\n        print(' '*multiply,end='')\r\n    if i < len(x)-1:\r\n        if x[i] != x[i+1]:\r\n            print('|',end='')\r\nif x[-1] == 1:\r\n    print('|',end='')   \r\n\r\n\r\n\r\n        \r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "3/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: PASS, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:40+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887065\r\nPASSWORD: HqReWzQC\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nbit = []\r\ncount = 0\r\nwhile True :\r\n    n = input()\r\n    if n == '-1' :\r\n        break\r\n    bit.append(n)\r\n    count += 1\r\n\r\nw = int(input())\r\n\r\nfor i in range(2):\r\n    line = ''\r\n    if i == 0 :\r\n        for j in range(len(bit)):\r\n            if bit[j] == '0' : \r\n                line += ' ' * w\r\n            if bit[j] == '1' :\r\n                line += '_' * w\r\n            if bit[j] != bit[-count+j+1]:\r\n                line += ' '\r\n            \r\n        print(line)\r\n    if i == 1 :\r\n        if bit[0] == '1' :\r\n            line += '|'\r\n        for j in range(len(bit)):\r\n            if bit[j] == '0' :\r\n                line += '_' * w\r\n            if bit[j] != bit[-count + j+1]:\r\n                line += '|'\r\n            elif bit[j] == '1' :\r\n                line += '  ' * w\r\n                \r\n       \r\n\r\n        print(line)\r\n\r\n        "
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: FAIL, CASE 3: ERROR, CASE 4: ERROR, CASE 5: FAIL, CASE 6: ERROR, CASE 7: FAIL, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:10:25+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887066\r\nPASSWORD: zWwpJbbR\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nz=[]\r\nwhile True:\r\n    bit=int(input())\r\n    if bit==-1:\r\n        break\r\n    else:\r\n        z.append(bit)\r\n\r\nw=int(input())\r\n\r\nfor i in range(len(z)):\r\n    if z[i]==0 :\r\n        print('_' , end='')\r\n    elif z[i]==1:\r\n        print('_' , end='')\r\n        if z[i+1]==z[i]:\r\n            print('|', end='')\r\n        \r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:05:52+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887067\r\nPASSWORD: EB7ZkFpr\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n\r\nwhile True:\r\n    bit = input()\r\n    if bit == '-1':\r\n        break\r\nw = int(input())\r\nfor _ in range(w):\r\n    if bit == '1':\r\n        print('|')\r\n    # if bit == '1':\r\n    #     print('_',end='')\r\n    # if bit == '0':\r\n    #     print('_',end='')\r\n    # elif bit >= 1:\r\n    #     print('|',end='')\r\n"
+  },
+  {
+    "User ID": "6887068",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:42:45+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887068\r\nPASSWORD: nfnVnyEV\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nn = int(input())\r\nlist_box = []\r\nwhile True :\r\n    if n == -1 :\r\n        break\r\n    list_box.append(n)\r\n    n = int(input())\r\n\r\nprint(list_box[0:30])\r\n"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:13:21+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887070\r\nPASSWORD: BEkk6zpe\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\na=[]\r\nwhile True:\r\n    n = int(input())\r\n    a.append(n)\r\n    if n == -1:\r\n        break\r\n\r\nwhile True:\r\n    w=int(input())\r\n    if w>=1:\r\n        break\r\n\r\np=len(a)\r\n\r\nfor i in range (p*w):\r\n    for j in range (3):\r\n        if n==1:\r\n            print(\"_\",end=\"\")\r\n        else:\r\n            print(\"_\",end=\"\")\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887071",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:15:16+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887071\r\nPASSWORD: ecHbHhn3\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nx = input()\r\n\r\nif x == '-1':\r\n    break\r\nw = input()\r\nif w == 2 :\r\n    print('__')\r\n    else :\r\n        print('_')\r\nfor i in range(2)\r\n    for j in range(m)\r\n        if i == 1 and j == 0  :\r\n            print('0')\r\n        elif i == 0 and j == 1 :\r\n            print('1')\r\n        else : \r\n\r\n\r\n\r\n\r\n\r\n\r\n            \r\n\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T03:28:21+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887072\r\nPASSWORD: T6ERAjf7\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n\r\nfor i in range(n):\r\n    for j in range(n):\r\n    if i == 1 or j == 0 or i == j or i*j == 0 or i*j ==1:\r\n        print(\"__\" ,end=\"\")\r\n    else:\r\n        print(\"|\" ,end=\"\")\r\n"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:13+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887073\r\nPASSWORD: MNahV3pq\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nlist1 = []\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n    else:\r\n        list1.append(n)\r\n\r\n\r\n\r\nfor i in range(len(list1)):\r\n    for j in list1:\r\n        if i == 0 :\r\n            print('_',end = ' ')\r\n            if i == 1:\r\n                print('|',end = ' ')\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:47:39+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887074\r\nPASSWORD: 88Kphcj8\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nwhile True :\r\n    n = int(input())\r\n    if n == -1 :\r\n        break\r\nw = int(input())\r\nfor i in range(w) :\r\n    for j in range(i):\r\n        if j <= i :\r\n            print('_',end = \" \")\r\nprint()"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:58:44+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887075\r\nPASSWORD: ANB58hnW\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nwhile True:\r\n    bit = int(input())\r\n    if bit == -1:\r\n        break\r\nfor i in range(2):\r\n    if bit == 1:\r\n        print('|')"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:08:08+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887076\r\nPASSWORD: 7gvFh7PY\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nlist=[]\r\nwhile True:\r\n    n=int(input())\r\n    if n == -1:\r\n        break\r\n    list.append(n)\r\n\r\nw=int(input())\r\n\r\nfor i in range(2):\r\n    for j in range(len(list)):\r\n        if list[j]==0:\r\n            print('_'*w,end='')\r\n        elif list[j]==1:\r\n            print(' '*w,end='')\r\n            print('|',end='')\r\n        \r\n    print()\r\n"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:14+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887077\r\nPASSWORD: JGphjpJe\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\nlist=[]\r\nwhile True:\r\n    n=int(input())\r\n    if n==-1:\r\n        break\r\n    list.append(n)\r\nw=int(input())\r\n\r\nfor i in range(len(list)):\r\n    if list[i] ==0:\r\n        print('  ', end='')\r\n    elif list[i]==1:\r\n        print('__', end='')\r\n    elif list[i+1]==0:\r\n        print(' ', end='')\r\nprint()\r\nfor i in range(len(list)):\r\n    if list[i] ==0:\r\n        print('__', end='')\r\n    elif list[i] == 1 or list[i-1]==0:\r\n        print('|', end='')\r\n        print(' ', end='')"
+  },
+  {
+    "User ID": "6887078",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:22+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887078\r\nPASSWORD: XpaqhE1M\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nw = []\r\nwhile True :\r\n    w = int(input())\r\n    if w == -1 :\r\n        break\r\nfor i in range(w+1) :\r\n    if i == 0 :\r\n        print(\"_\")\r\n    if i == 1 :\r\n        print(\"|\")"
+  },
+  {
+    "User ID": "6887079",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:02+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887079\r\nPASSWORD: CwUP3nYc\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nhigh = int(input())\r\nlow = int(input())\r\n\r\nprint(\"  ____          ____ __|    |________|    |\")\r\n\r\n"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: FAIL, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T03:23:53+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887080\r\nPASSWORD: 34H1WXAA\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n\r\nbinary_code = []\r\n\r\nwhile True:\r\n    binary = input()\r\n    if binary == '-1':\r\n        break\r\n    binary = int(binary)\r\n    binary_code.append(binary)\r\n\r\nwaveform = int(input())\r\n\r\n\r\nfor i in range(2):\r\n    for j in range(10):\r\n        if i == 1 and binary_code[j] - binary_code[j-1] != 0:\r\n            print('|', end='')\r\n\r\n        if binary_code == 0 and binary_code[j] == 1:\r\n            print('_', end='')\r\n\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T04:06:42+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887081\r\nPASSWORD: qJjC4UEZ\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nx=[]\r\n\r\n\r\nwhile True:\r\n    a=int(input())\r\n    if a==-1:\r\n        break\r\n    x.append(a)\r\n\r\nw=int(input())\r\n\r\n\r\nB=int(0)\r\nfor i in x:\r\n    if B!=i:\r\n        print(' ',end='')\r\n    if i==1:\r\n        print('_'*w,end='')\r\n        B=i\r\n    else:\r\n        print(' '*w,end='')\r\n        B=i\r\nk=x.pop()\r\nx.append(k)\r\nif k==1:\r\n    print(' ',end='')\r\n\r\nprint('')\r\n\r\nS=int(0)\r\nfor i in x:\r\n    if S!=i:\r\n        print('|',end='')\r\n    if i==0:\r\n        print('_'*w,end='')\r\n        S=i\r\n    else:\r\n        print(' '*w,end='')\r\n        S=i\r\n    \r\nq=x.pop()\r\nif q==1:\r\n    print('|')\r\n"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:22+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887082\r\nPASSWORD: mr6thYbs\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n#H=[[\"_\" for _ in range(n)]for _ in range(n)]\r\n#L=[[\"_\" for _ in range(n)]for _ in range(n)]\r\n\r\nh=int(input())\r\nl=int(input())\r\nw=int(input())\r\n\r\nwhile True:\r\n    n=input()\r\n    if n==\"-1\":\r\n        break\r\n\r\nfor i in range(h):\r\n    if h==1:\r\n        print(\"_\", end=\" \")\r\n    for j in range(l):\r\n        if l==0:\r\n            print(\"_\", end=\" \")\r\n    else:\r\n        if h==1 and l==1:\r\n            print(\"|\", end=\" \")\r\n    "
+  },
+  {
+    "User ID": "6887083",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:48:49+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887083\r\nPASSWORD:  pkZa7PrV\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nbit = []\r\nwhile True:\r\n    bit = (input())\r\n    if bit == '1':\r\n        break\r\n    bit.append()\r\n\r\nw = int(input())\r\n\r\nfor i in range (w):\r\n    if w >= 1:\r\n        if low == 0:\r\n            print('_')\r\n        if high == 1: \r\n            print('_')\r\n\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887084",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:53:22+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887084\r\nPASSWORD: d7nEdE6D\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nbit = int(input())\r\n\r\nwhile True: \r\n    bit == -1 \r\n    break\r\n\r\nw = int(input())\r\nif w == 0:\r\n    print( '_'+'|')\r\nelif w == 1:\r\n    print('____') \r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:06+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887085\r\nPASSWORD: 4DckWCbm\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nbit = 0,1\r\nw = int(input())\r\n\r\nwhile True:\r\n    bit = input()\r\n    if bit == '-1':\r\n        break\r\n    #w.append(bit)\r\n\r\n    if w >= 1:\r\n        print()\r\n    if w == 0:\r\n        print('_')\r\n    elif w == 1:\r\n        print('_')\r\n    elif w1 == 1 and w2 == 1 :\r\n        print(\"|\")\r\n\r\nprint()\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:11:49+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887086\r\nPASSWORD: djAVQA5Y\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nlist = []\r\nwhile True:\r\n    bit = int(input())\r\n    if bit == -1:\r\n        break\r\n    list.append(bit)\r\nw = int(input())\r\nbit = 1\r\nfor i in range(w):\r\n    for j in range(len(list)):\r\n        if list[j] == 1:\r\n            print('_',end='')\r\n        if i == 1:\r\n            if bit != list[j]:\r\n                print('|',end='')\r\n            if list[j] == 0:\r\n                print('_',end='')\r\n            bit = list[j]\r\n    print()\r\n        \r\n        \r\n"
+  },
+  {
+    "User ID": "6887087",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:30:44+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887087\r\nPASSWORD: e7pVJWmk\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\ni = int(input())\r\n\r\nprint(\"\")\r\n"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:15+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887088\r\nPASSWORD: uFPzzAF9\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nlist=[]\r\nwhile True:\r\n    x=int(input())\r\n    if x==-1:\r\n        break\r\n    list.append(x)\r\nw=int(input())\r\nz=100\r\nfor i in range(2):\r\n    for j in range(len(list)):\r\n        if list[j]!= z and j!=0 and i!=0:\r\n            print('|',end='')\r\n        if list[j]==0 and i==1:\r\n            print('_'*w,end='')\r\n        if list[j]==1 and i==0:\r\n            print('_'*w,end='')\r\n        z=list[j]\r\n    print()\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:32+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887089\r\nPASSWORD: FM6TYUdV\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nA = []\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n    else:\r\n        A.append(n)\r\n\r\nw = int(input())\r\n\r\n'''for i in range (w):\r\n    for j in range (len(A)):\r\n        if i == 0:\r\n            if j == 0:\r\n                print(' ', end='')\r\n            elif j == 1:\r\n                print('_', end='')\r\n        else:\r\n            if j == 0:\r\n                print('_', end='')\r\n            elif j == 1:\r\n                print('| ', end='')'''\r\n\r\nfor i in range (2):\r\n    for j in range (w):\r\n        if j == 0:\r\n            print(' ', end='')\r\n        elif j == 1:\r\n            print('_', end='')\r\n        else:\r\n            if j == 0:\r\n                print('_', end='')\r\n            elif j == 1:\r\n                print('| ', end='')"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:43:43+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887092\r\nPASSWORD: FfTEgAWq\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n#input\r\nread = []\r\nwhile True:\r\n    x = int(input())\r\n    if x == -1:\r\n        break\r\n    read.append(x)\r\nw =  int(input())\r\n\r\nfor i in read:\r\n    if (i-1 == 0 and i == 1) or (i-1 == 1 and i == 0):\r\n        print(\"|\", end=\"\")\r\n\r\n    elif i == 0:\r\n        print(\"_\", end=\"\")\r\n    \r\n    elif i == 1:\r\n        print(\"_\", end=\"\")\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:10:17+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887093\r\nPASSWORD: UnGKPQk7\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nlistnum=[]\r\n\r\nwhile True :\r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n    else:\r\n        listnum.append(n)\r\n\r\nw = int(input())\r\n\r\nprint(listnum)\r\nprint(w)\r\n\r\nfor i in range(2):\r\n    for j in range(len(listnum)):\r\n        if listnum[j] == 0:\r\n            print(\"_\",end=\"\")\r\n        elif listnum[j] == 1:\r\n            print(\"\")\r\n\r\n"
+  },
+  {
+    "User ID": "6887094",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "1/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:49:16+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887094\r\nPASSWORD: jZXcJKBq\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nlist1 = []\r\n\r\nwhile True :\r\n    n = input()\r\n\r\n    if n == '-1' :\r\n        break\r\n\r\n    list1.append(int(n))\r\n\r\nw = int(input())\r\n\r\nfor i in range(2) :\r\n    for j in list1 :\r\n        if j == 0 and i == 0 :\r\n            print(' ' * w,end='')\r\n            print(' ' ,end='')\r\n        if j == 0 and i == 1 :\r\n            if j != c :\r\n                print('|',end='')\r\n            print('_' * w,end='')\r\n        if j == 1 and i == 0 :\r\n            print('_' * w,end='')\r\n        if j == 1 and i == 1 :\r\n            if j != c :\r\n                print('|',end='')\r\n            print(' ' * w,end='')\r\n        c = j\r\n    print()\r\n"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:14:44+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887095\r\nPASSWORD: GfKuEeE8\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nbit = []\r\nwhile True :\r\n    n = int(input())\r\n    if n == -1 :\r\n        break\r\n    bit.append(n)\r\n\r\nw = int(input())\r\n\r\n\r\n\r\nfor i in range(2):\r\n    count  = 0 \r\n    if i == 0 :\r\n        for j in range(len(bit)):\r\n            if bit[j] == 0 :\r\n                print(' '*w,end='')\r\n            elif bit[j] == 1 :\r\n                if count%2 == 0 :\r\n                 print(' '+'_'*w+' ',end='')\r\n                 count += 1\r\n                elif count%2 != 0 :\r\n                    print(' ',end='')\r\n        print()\r\n    elif i == 1 :\r\n        for j in range(len(bit)):\r\n            if bit[j] == 0 :\r\n               print('_'*w,end='')\r\n            elif bit[j] == 1 :\r\n                if count%2 == 0 :\r\n                     print('|',end='')\r\n                     print(' '*w,end='')\r\n                elif count%2 != 0 :\r\n                     print('|',end='')\r\n        print()\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    \r\n\r\n"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:13:09+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887096\r\nPASSWORD: kuYfZ8Jj\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nlist1=[]\r\nwhile True:\r\n    x=int(input())\r\n    list1.append(x)\r\n    if x==-1:\r\n        break \r\nw=int(input())\r\n\r\nfor i in list1:\r\n    if i==1:\r\n        print('|'*w,end='')\r\n    elif i==0:\r\n        print('_'*w,end='')\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887097",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "2/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:14:38+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887097\r\nPASSWORD: tj53QnWE\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\na = []\r\ni = 0\r\nft = False\r\nwhile i != 1:\r\n    x = int(input())\r\n    if x == -1:\r\n        i = 1\r\n    a.append(x)\r\n\r\n\r\ny = int(input())\r\n\r\nfor i in range(len(a)):\r\n    if a[i] == 1:\r\n        if a[i-1] == 0:\r\n            print(\" \", end='')\r\n        for j in range(y):\r\n            print(\"_\", end='')\r\n    if a[i] == 0:\r\n        if a[i-1] == 1:\r\n            print(\" \", end='')\r\n        \r\n        for j in range(y):\r\n            print(\" \", end='')\r\nprint(\"\")\r\n\r\nfor i in range(len(a)):\r\n    if ft == False and a[0] == 1:\r\n        print(\"|\", end = '')\r\n    if a[i]== 0:    \r\n        if a[i] == 0:\r\n            if a[i-1] == 1:\r\n                print(\"|\", end='')\r\n            for j in range(y):\r\n                print(\"_\", end='')\r\n    if a[i] == 1:\r\n        if a[i-1] == 0:\r\n            print(\"|\", end='')\r\n        for j in range(y):\r\n            print(\" \", end='')\r\n    \r\n  \r\n\r\n\r\n        \r\n    \r\n    \r\n\r\n\r\n#   ____          ____\r\n#   ____          ____ \r\n"
+  },
+  {
+    "User ID": "6887098",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "1/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:06:28+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887098\r\nPASSWORD: FEEukY2t\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n#num = []\r\n#while True :\r\n#    bit = int(input())\r\n#    if bit == -1:\r\n#        break\r\n#    num.append(bit)\r\n#\r\n#w = int(input())\r\n\r\n#for i in range(2):\r\n#    for j in range(w):\r\n#        print()\r\n\r\nprint('   ____          ____ ') \r\nprint('__|    |________|    |')  \r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T03:29:05+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887099\r\nPASSWORD: CQ87zh9Z\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nprint(  __)\r\nprint(_|,  |_)\r\n"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:12:23+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887100\r\nPASSWORD: pFMVk51y\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "1/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:14:22+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887101\r\nPASSWORD: 5NTgWVzy\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nwave = []\r\nwhile True :\r\n    a = int(input())\r\n    if a == -1 :\r\n        break\r\n    wave.append(a)\r\nw = int(input())\r\n\r\nif wave[0] == 1 :\r\n   print(' ', end = '')\r\nfor i in range(len(wave)) :\r\n    for j in range(w) :\r\n        if wave[i] == 0 :\r\n            print(' ', end = '')\r\n        else :\r\n            print('_', end = '')\r\nif wave[-1] == 1 :\r\n   print(' ', end = '')\r\nprint()\r\n\r\nif wave[0] == 1 :\r\n   print('|', end = '')\r\nfor i in range(len(wave)) :\r\n    for j in range(w) :\r\n        if wave[i] == 0 :\r\n            print('_', end = '')\r\n        elif wave[i] == 1 :\r\n            print(' ', end = '')\r\nif wave[-1] == 1 :\r\n   print('|', end = '')"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T04:15:30+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887103\r\nPASSWORD: XQw874AW\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nbit = []\r\nwhile True:\r\n    x = int(input())\r\n    if x == -1:\r\n        break\r\n    bit.append(x)\r\nw = int(input())\r\n\r\n\r\nif bit[0] == 1:\r\n    print(' ',end='')\r\nfor b in range(len(bit)):\r\n    if bit[b] == 0:\r\n        print(' '*w,end='')\r\n    else:\r\n        if  b-1 >= 0 and bit[b-1] != 1:\r\n            print(' ',end='')\r\n        print('_'*w,end='')\r\n        if b+1 < len(bit) and bit[b+1] != 1:\r\n            print(' ',end='')\r\nif bit[-1]==0:\r\n    print()\r\nelse:\r\n    print(' ')\r\nif bit[0] == 1:\r\n    print('|',end='')\r\nfor b in range(len(bit)):\r\n    if bit[b] == 0:\r\n        print('_'*w,end='')\r\n    else:\r\n        if b-1 >= 0 and bit[b-1] != 1:\r\n            print('|',end='')\r\n        print(' '*w,end='')\r\n        if b+1 < len(bit) and bit[b+1] != 1:\r\n            print('|',end='')\r\nif bit[-1] == 1:\r\n    print('|')\r\n\r\n"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:10:27+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887104\r\nPASSWORD: CrXuPAeu\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n\r\nx = int(input())\r\nw = int(input())\r\nfor i in range x:\r\n    for j in range w:\r\n    \r\n    if x == 0 or x == 1:\r\n        if x == 1:\r\n            prnit('_',end='')\r\n        else:\r\n            print('-',end = '')\r\n    else:\r\n        print('|',end = '')\r\n"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:14:28+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887105\r\nPASSWORD: pyXPtvJK\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nwhile True :\r\n    n = int(input())\r\n    if n == -1 :\r\n        break\r\n\r\nfor i in range(n) :    \r\n    w = int(input())\r\n    for j in range(n) :\r\n        if n == 0 :\r\n            print('_')\r\n        elif n == 1 :\r\n            print('|')\r\n    print()\r\n\r\n"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:05:33+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887106\r\nPASSWORD: W1MCRFBK\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nbit = []\r\nwhile True:\r\n    n = int(input())\r\n\r\n    if n == -1:\r\n        break\r\n    bit.append(n)\r\n\r\n    \r\n"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T03:46:51+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887107\r\nPASSWORD: Egru3Nq6\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n\r\nx = int(input())\r\nw = int(input())\r\n\r\nwhile x == -1 :\r\n    f = int(input())\r\n    break\r\n    for i in range(2):\r\n        0 == _\r\n        for j in range(2) :\r\n            1 == _\r\n    print(f)\r\nprint()"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:41+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887108\r\nPASSWORD: Kk8Xt2Cy\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\na=[]\r\nwhile True:\r\n    x=int(input())\r\n    if x==-1:\r\n        break\r\n    a.append(x)  \r\nw=int(input())    \r\nfor i in a:\r\n    if i==1:\r\n        print(w*'_',end='')\r\n    elif i==0:\r\n        print(w*' ',end='')    \r\nprint('')        \r\nfor j in a:\r\n    if j==0:\r\n        print(w*'_',end='')\r\n    elif j==1:\r\n        \r\n        print(w*' ',end='')\r\n\r\n    \r\n                           \r\n"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T03:58:40+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887109\r\nPASSWORD: td4Zj4qa\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nnu = []\r\nwhile True :\r\n    n = int(input()) \r\n    if n == 0 or n == 1 :\r\n        \r\n"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:13:06+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887111\r\nPASSWORD: 5Z1FqkMt\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nlist = []\r\nwhile True :\r\n    x = int(input())\r\n    if x == -1 :\r\n        break\r\n    list.append(x)\r\nw = int(input())\r\n\r\nfor i in range (w) :\r\n    for j in list :\r\n        if i == 1 and j == 0  :\r\n            if 0-j == -1 :\r\n                print(\"__|\", end =\"\")\r\n            else :\r\n                print(\"__\", end =\"\")\r\n        elif i == 0 and j == 1:\r\n            print(\"__\", end =\"\")\r\n            \r\n        else :\r\n            print(\"  \",end = \"\")\r\n    print()\r\n    \r\n"
+  },
+  {
+    "User ID": "6887112",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:13:26+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887112\r\nPASSWORD: SJ7T6YQD\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "3/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-03T04:06:37+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887113\r\nPASSWORD: eSdcbhq9\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\na = [ ]\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1 :\r\n        break\r\n    else:\r\n        a.append(n)\r\n\r\nw = int(input())\r\n\r\n\r\nfor i in range(len(a)):\r\n    if a[i] == 0:\r\n        for j in range(w):\r\n            print(' ',end = '')\r\n    if a[i] == 1:\r\n        print(' ',end='')\r\n        for j in range(w):\r\n            print((('_')),end = '')\r\n        print(' ',end='')\r\n\r\nprint( )\r\n\r\nfor i in a:\r\n    if i == 0 :\r\n        for j in range(w):\r\n            print('_',end ='')\r\n    if i == 1:\r\n        print('|',end = '')\r\n        for j in range(w):\r\n            print(' ',end = '')\r\n        print('|',end = '')\r\n        "
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: ERROR, CASE 6: ERROR, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:25+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887115\r\nPASSWORD: AmypMj4Q\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nA =[]\r\n\r\n#Correct_1\r\nwhile True:\r\n    b = int(input())\r\n    if b == -1 :\r\n        break\r\n    A.append(b)\r\n\r\nw = int(input())\r\nblank = 1\r\n#Correct_1\r\n\r\nfor i in A:\r\n    if A[i] == 1:\r\n        print(f'{'_'*w}', end='')\r\n    if A[0] == 1:\r\n        print(f' ', end='')\r\n    if A[i] == 0:\r\n        print(f'{''*w}', end='')\r\n\r\nprint()\r\n\r\n\r\n\r\nfor i in range(len(A)) :\r\n    if A[i] == 0 and A[0] != 1:\r\n        print(f'{'_'*w}', end='')\r\n    elif A[i] == 0 :\r\n        print(f'{''}', end='')\r\n    elif A[0] == 1 :\r\n        print(f'|', end='')\r\n    elif A[i] == 0 and A[(i + 1) in range(len(A)) == 1]:\r\n        print(f'|', end='')\r\n    elif A[i] == 1 and A[(i + 1) in range(len(A)) == 0]:\r\n        print(f'|', end='')\r\n    elif A[len(A)] == 1:\r\n        print(f'|', end='')\r\n"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-10-03T04:15:28+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887116\r\nPASSWORD: J92CTmgc\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nc =2\r\nx = int(input())\r\ny = int(input())\r\nfor x in range(y)\r\n    if x ==0:\r\n    print('_')\r\nfor y in range(x)\r\n    if y == 0\r\n    print('|')\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:20+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887117\r\nPASSWORD: 6WnzWUXs\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nwhile True:\r\n    n = int(input())\r\n    if n == -1:\r\n        break\r\n\r\nw = int(input())\r\n\r\n"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:13:20+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887118\r\nPASSWORD: knhg7ccV\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\n\r\nA=[]\r\nwhile True:\r\n    n=int(input())\r\n    if n==-1:\r\n        break\r\n    A.append(n)\r\n\r\nw=int(input())\r\nbit0=1\r\nbit1=1\r\n\r\nfor i in A[:]:\r\n    if i==0:\r\n        bit0=bit0*w\r\n    elif i==1:\r\n        bit1=bit1*w\r\n\r\n\r\n\r\n"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-10-03T04:15:25+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 6887119\r\nPASSWORD: bRsW4NMy\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n# YOUR CODE GOES HERE\r\nx=int(input())\r\nlist1=[]\r\nwhile x!=-1:\r\n    list1.append(x)\r\n    x=int(input())\r\nw=int(input())\r\nB=[]\r\nb=[]\r\nfor i in list1:\r\n    if i==0:\r\n        b.append(' '*w)\r\n    if i==1:\r\n        b.append('_'*w)\r\nB.append(b)\r\nb=[]\r\nfor i in list1:\r\n    if i==0:\r\n        b.append('_'*w)\r\n    if i==1:\r\n        b.append(' '*w)\r\nB.append(b)\r\no=0\r\nfor i in range(len(B)):\r\n    if i==0:\r\n        for j in range(len(B[i])):\r\n            print(B[i][j],end=' ',sep='')\r\n        print( )\r\n    elif i==1:\r\n        for j in range(len(B[i])):\r\n            if list1[j]!=o:\r\n                print('|',end=' ',sep='')\r\n                print(B[i][j],end=' ',sep='')\r\n                o=list1[j]\r\n            elif list1[j]==o:\r\n                print(B[i][j],end=' ',sep='')\r\n            if j==(len(B[i])-1):\r\n                if list1[j]==1:\r\n                    print('|',end=' ',sep='')\r\n\r\n"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-mid-q3",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-10-02T09:23:30+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 999\r\nPASSWORD: 424242\r\nEXERCISEID: itds120-mid-q3\r\n */\r\n'''\r\n\r\n# อ่านบิตเข้ามาทีละบรรทัดจนกว่าจะเจอ -1\r\nbinary = []\r\nwhile True:\r\n    ch = input().strip()\r\n    if ch == \"-1\":\r\n        break\r\n    binary.append(ch)\r\n\r\n# อ่านค่า wave width\r\nw = int(input())\r\n\r\ntop_row = \"\"\r\nbot_row = \"\"\r\nprev_bit = None\r\n\r\nfor bit in binary:\r\n    top = \"\"\r\n    bottom = \"\"\r\n\r\n    # ถ้ามีการเปลี่ยนค่าบิต\r\n    if prev_bit is not None and bit != prev_bit:\r\n        top += \" \"\r\n        bottom += \"|\"\r\n    # ถ้าบิตแรกเป็น 1\r\n    if prev_bit is None and bit == \"1\":\r\n        top += \" \"\r\n        bottom += \"|\"\r\n\r\n    # วาดบิตตามความกว้าง w (จงใจใช้ loop ให้เป็น nested loop >_<)\r\n    # ควรเป็น top = top + \"_\" * w \r\n    for i in range(w):  \r\n        if bit == \"1\":\r\n            top = top + \"_\" \r\n            bottom = bottom + \" \" \r\n        else:\r\n            top = top + \" \" \r\n            bottom = bottom +  \"_\" \r\n\r\n    top_row += top\r\n    bot_row += bottom\r\n    prev_bit = bit\r\n\r\n# ถ้าบิตสุดท้ายเป็น 1 → ใส่ขอบปิด\r\nif prev_bit == \"1\":\r\n    top_row += \" \"\r\n    bot_row += \"|\"\r\n\r\nprint(top_row)\r\nprint(bot_row)\r\n"
+  }
+]

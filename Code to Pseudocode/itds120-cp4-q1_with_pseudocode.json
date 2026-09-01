@@ -1,0 +1,1082 @@
+[
+  {
+    "User ID": "6887001",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:48:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887001\nPASSWORD: NAA5QZ9f\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntext = input()\nupper_text = text.upper()\ntext = text.split()\ntext0 = ''\nfor ch in text:\n    if text[0] == upper_text:\n        text0 += ch\nprint(text0)",
+    "Pseudocode": "get text\nupper_text = text converted to uppercase\ntext = split text by whitespace\ninitialize text0 to empty text\ngo through each ch in text\n    if text at index 0 is upper_text\n        text0 += ch\ndisplay text0"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:20:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: ZKgXad7X\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntxt = input().strip().split(' ')\nlst = []\nfor t in txt:\n    lst.append(t)\n# print(lst)\nn_lst = []\nfor n in lst:\n    # print(n)\n    if n[:1].isupper() and n[1:len(n)].islower():\n        # print(n) #What,The,Capital\n        n_lst.append(n)\n# print(n_lst) #['What', 'The', 'Capital', 'France?']\nreal_lst = []\nfor i in n_lst:\n    # print(i) #What,The,\n    if (i.isalpha()) or (i[-1]=='.'):\n        # print(i) #What,The,Capital\n        real_lst.append(i)\nprint(real_lst)\n\n",
+    "Pseudocode": "get txt  \ntxt = trim whitespace from txt  \ntxt = split txt by space  \ninitialize lst to empty list  \ngo through each t in txt  \n    add t to lst  \ninitialize n_lst to empty list  \ngo through each n in lst  \n    if n from index 0 to 1 is uppercase and n from index 1 to length of n is lowercase  \n        add n to n_lst  \ninitialize real_lst to empty list  \ngo through each i in n_lst  \n    if i is alphabetic or i at last index is .  \n        add i to real_lst  \ndisplay real_lst"
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:00:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887004\nPASSWORD: rGpK9KHe\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nn = input()\nwords = n.split()\n\nwordscl = [ ''.join(filter(str.isalpha,w)) for w in words]\n\n## clear = .isupper(wordscl , key=len)\nprint(wordscl) \n",
+    "Pseudocode": "get n  \nwords = split n  \nwordscl = list of items in words where each item is combined from alphabetic characters in item  \ndisplay wordscl"
+  },
+  {
+    "User ID": "6887005",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:00:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887005\nPASSWORD: zzYkNtET\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntxt = input().strip().split()\nlst = []\n\nfor i in txt:\n    if i.isalpha():\n         lst.append(lst)\n    else:\n        continue\n\nprint(lst)\n\n# total = []\n\n# for x in range(lst):\n#     if x[0] == x.upper() and x[1:] == x.lower():\n#         total.append(lst)\n    \n\n\n# total = []\n\n# for i in lst:\n#     if  x = i[0] == i[0.upper()] and i[1:] == i[1: .lower()]:\n#         total.append(x)\n\n# print(total)\n\n# and i[0].upper()",
+    "Pseudocode": "get txt  \ntxt = trim whitespace from txt  \ntxt = split txt by whitespace  \ninitialize lst to empty list  \n\ngo through each i in txt  \n    if i is alphabetic  \n         add lst to lst  \n    otherwise  \n        continue  \n\ndisplay lst  \n\ninitialize total to empty list  \n\nrepeat length of lst times using index x  \n    if x at index 0 is equal to x at index 0 converted to uppercase and x from index 1 to end is equal to x from index 1 to end converted to lowercase  \n        add lst to total  \n\ninitialize total to empty list  \n\ngo through each i in lst  \n    if x is equal to i at index 0 and i at index 0 is equal to i at index 0 converted to uppercase and i from index 1 to end is equal to i from index 1 to end converted to lowercase  \n        add x to total  \n\ndisplay total  \n\nand i at index 0 converted to uppercase"
+  },
+  {
+    "User ID": "6887006",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:01:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887006\nPASSWORD: aAVhaYQd\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ninputwords = input().strip().split(\" \")\nprint(inputwords)\nwordlist = []\nfor i in inputwords:\n    if i.isalpha() :\n        if i[0] == i[1].isupper() :\n            wordlist.append(i[1])\n        elif i[1] == i[0].isupper():\n            wordlist.append(i[0])\n\nprint(wordlist)\n    \n\n\n\n\n",
+    "Pseudocode": "get inputwords  \ntrim whitespace from inputwords  \nsplit inputwords by space  \ndisplay inputwords  \ninitialize wordlist to empty list  \ngo through each i in inputwords  \n    if i is alphabetic  \n        if i at index 0 is i at index 1 is uppercase  \n            add i at index 1 to wordlist  \n        otherwise if i at index 1 is i at index 0 is uppercase  \n            add i at index 0 to wordlist  \ndisplay wordlist"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:33:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: fT2evRA7\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ndef check(x):\n    if (x[1:].isalpha() or (x[1:-1].isalpha() and x[-1] == \".\")):\n        upper = x[0].isupper()\n        lower = x[1:].islower()\n        return upper and lower\n    else:\n        return False\n\nword = input().strip().split()\nword = list(filter(lambda x:len(x) > 0,word))\n\nresault = list(filter(check, word))\nprint(resault)\n\n",
+    "Pseudocode": "define function check with parameter x\nif x from index 1 to end is alphabetic or (x from index 1 to second last is alphabetic and x at last index is .)\n    upper = x at index 0 is uppercase\n    lower = x from index 1 to end is lowercase\n    return upper and lower\notherwise\n    return False\n\nword = get input and trim whitespace from it\nword = list of items in word where length of x is greater than 0\n\nresault = list of items in word where check is true for each item\ndisplay resault"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:04:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: vhDprqeQ\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nt = input()\ntxt = t.split()\nnew = []\nlst =[]\nans = []\nfor w in txt:\n    if w[0].isupper():\n        new.append(w)\nfor i in new:\n    if i.isalpha() or i[-1]=='.':\n        lst.append(i)\nfor j in lst:\n   if j[1::].islower():\n        ans.append(j)\nprint(ans)\n\n\n\n",
+    "Pseudocode": "get t  \ntxt = split t  \ninitialize new to empty list  \ninitialize lst to empty list  \ninitialize ans to empty list  \ngo through each w in txt  \n    if w at index 0 is uppercase  \n        add w to new  \ngo through each i in new  \n    if i is alphabetic or i at last index is .  \n        add i to lst  \ngo through each j in lst  \n    if substring of j from index 1 to end is lowercase  \n        add j to ans  \ndisplay ans"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:50:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: ZkFhrMhV\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nword=input().strip()\nsplitword=word.split()\n# print(splitword)\n\n\nlst=[]\nfor w in splitword :\n    if w[0].isupper() or w[:1].islower() or w.isalpha()  :\n        lst.append(w)\n    if w[1:] != w.islower():\n         list.remove\nprint(lst)\n\n# lst2=[]\n\n\n\n\n\n\n\n\n\n\n\n\n\n# def mask (s):\n#     a=s[0]==s.upper()\n#     return a\n\n\n\n\n# word=input().strip()\n# splitword=word.split()\n# # print(splitword)\n\n# lst=[]\n# for w in splitword:\n#     if w.isalpha() and w[0]==w.upper() :\n#         lst.append(w)\n# print(lst)\n# pass only testcase7\n\n# word=input().strip()\n# splitword=word.split()\n# print(splitword)\n# pass only testcase8",
+    "Pseudocode": "get word  \nword = trim whitespace from word  \nsplitword = split word by whitespace  \ninitialize lst to empty list  \ngo through each w in splitword  \n    if w at index 0 is uppercase or w from index 0 to 1 is lowercase or w is alphabetic  \n        add w to lst  \n    if w from index 1 to end is not equal to w is lowercase  \n         remove item from list  \ndisplay lst"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: j9F3dPSF\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\na = input().split()\nprint(a)\n\n\n",
+    "Pseudocode": "get a  \na = split a  \ndisplay a"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "3/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:59:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: rbaYp4Ds\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntext = input().strip().split(' ')\nnew = []\nfor word in text:\n    for char in word:\n        if char.isalpha():\n            if char.isupper():\n                if not word[1:].isupper():\n                    new.append(word)\n\nnewer = []\n\nfor word in new:\n    if not word[0:].isupper():\n        if not word[-1] == '!' or word[-1] == '?':\n            newer.append(word)\n\nprint(newer)",
+    "Pseudocode": "get text  \nset text to trim whitespace from text and split text by space  \ninitialize new to empty list  \ngo through each word in text  \n    go through each char in word  \n        if char is alphabetic  \n            if char is uppercase  \n                if word from index 1 to end is not uppercase  \n                    add word to new  \ninitialize newer to empty list  \ngo through each word in new  \n    if word from index 0 to end is not uppercase  \n        if word at last index is not equal to ! or word at last index is equal to ?  \n            add word to newer  \ndisplay newer"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:06:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: e8Edq2nC\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nt = input()\nt = t.split(\" \")\nchar = []\nfor i in t:\n    if i.isalpha() or '.' in i:\n        char.append(i)\nprint(char)\n\n\n\n\n",
+    "Pseudocode": "get t  \nt = split t by space  \ninitialize char to empty list  \ngo through each i in t  \n    if i is alphabetic or '.' is in i  \n        add i to char  \ndisplay char"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:56:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: C5hCXu9z\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nchar_list = input().split()\n\noutput = []\n\nfor v in char_list:\n\n    # print(v[0])\n    # print(v[1:])\n    # print(v[-1])\n\n    if (v[0].isupper() and v[1:].islower() and v.isalpha()) :\n        output.append(v)\n\n    if (v[0].isupper() and v[1:-1].islower() and v[-1] == '.'):\n        output.append(v)\n\nprint(output)",
+    "Pseudocode": "get char_list\n\ninitialize output to empty list\n\ngo through each v in char_list\n    if v at index 0 is uppercase and v from index 1 to end is lowercase and v is alphabetic\n        add v to output\n    if v at index 0 is uppercase and v from index 1 to second last is lowercase and v at index last is .\n        add v to output\n\ndisplay output"
+  },
+  {
+    "User ID": "6887014",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "4/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: PASS, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:59:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887014\nPASSWORD: PccAYH6m\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nn = input().strip().split(' ')\nlst = []\n\nfor i in n:\n    \n    if (i.isalpha() == True) and (i[0].isupper ()== True) and (i[1:].islower()== True):\n        lst.append(i)\n\n\nprint(lst)\n",
+    "Pseudocode": "get n  \nn = trim whitespace from n  \nn = split n by space  \ninitialize lst to empty list  \n\ngo through each i in n  \n    if i is alphabetic and i at index 0 is uppercase and substring of i from index 1 to end is lowercase then  \n        add i to lst  \n\ndisplay lst"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:59:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887015\nPASSWORD: WCAKBWBa\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntext = input().split()\ndata=[]\nfor i in text:\n    if i.isalpha() and i[0] == i[0].upper() and i[1:] == i[1:].lower()or i[-1] == '.' and i[1]==i[1].lower() and i[0] == i[0].upper():\n        data.append(i)\n    \nprint(data)\n\n\n",
+    "Pseudocode": "get text  \nset data to empty list  \ngo through each i in text  \n    if i is alphabetic and i at index 0 is i at index 0 converted to uppercase and i from index 1 to end is i from index 1 to end converted to lowercase or i at last index is . and i at index 1 is i at index 1 converted to lowercase and i at index 0 is i at index 0 converted to uppercase:  \n        add i to data  \ndisplay data"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:38:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: MXryeA2U\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntxt = input().split()\nresult = []\nfor i in range(len(txt)) :\n    if txt[i].isalpha() or txt[i][-1] == '.' :\n        # print(txt[i])\n        if txt[i] == txt[i].capitalize() :\n            result.append(txt[i])\nprint(result)",
+    "Pseudocode": "get txt\nset txt to list of items in txt split by whitespace\ninitialize result to empty list\ngo through each i in range of length of txt\n    if txt at index i is alphabetic or last character of txt at index i is .\n        if txt at index i is equal to txt at index i capitalized\n            add txt at index i to result\ndisplay result"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "3/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:07:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887017\nPASSWORD:sC8m3Zqa\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntext=[]\nn=input().strip().split()\nfor i in n:\n    if i[0].isupper():\n            if i[1].islower():\n                text.append(i)\n                \n                \nprint(text)\n        \n            \n        \n        \n#print(n)\n",
+    "Pseudocode": "initialize text to empty list\nget n\nset n to split n by whitespace\ngo through each i in n\n    if first character of i is uppercase\n        if second character of i is lowercase\n            add i to text\ndisplay text"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "4/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: PASS, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:03:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887018\nPASSWORD: w7C72TR6\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntxt = input().strip().split(' ')\nupper_lst = []\nlst2=[]\nnum = ('1', '2', '3', '4', '5', '6', '7', '8', '9')\n\nfor words in txt:\n    if words.isalpha():\n        if  (words[0].isupper() and words[1:].islower()) or words[:-1] == '.':\n            upper_lst.append(words)\n    elif not words.isdecimal():\n        for letters in words:\n            if  letters == '.'  :\n               lst2.append(words)\n\n\n\n        \nprint(upper_lst)\n",
+    "Pseudocode": "get txt  \ntxt = split txt by space  \ninitialize upper_lst to empty list  \ninitialize lst2 to empty list  \ninitialize num to list containing 1, 2, 3, 4, 5, 6, 7, 8, 9  \n\ngo through each words in txt  \n    if words is alphabetic then  \n        if words at index 0 is uppercase and substring of words from index 1 to end is lowercase or words from start to second last is equal to . then  \n            add words to upper_lst  \n    otherwise if words is not numeric then  \n        go through each letters in words  \n            if letters is equal to . then  \n                add words to lst2  \n\ndisplay upper_lst"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:12:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: SsYuf2td\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntxtList = input().strip().split()\nnewList = []\n\nfor txt in txtList:\n\n    capitalise = False\n    allAlpha = True\n    if txt == txt.capitalize():\n        capitalise = True\n    for i in txt:\n        if i == \".\":\n            continue\n        elif not i.isalpha():\n            allAlpha = False\n            # print(i)\n            break\n    \n    if capitalise and allAlpha:\n        newList.append(txt)\n\nprint(newList)\n\n\n\n\n\n",
+    "Pseudocode": "get txtList  \ninitialize newList to empty list  \n\ngo through each txt in txtList  \n    initialize capitalise to False  \n    initialize allAlpha to True  \n    if txt is txt capitalized then  \n        set capitalise to True  \n    go through each i in txt  \n        if i is . then  \n            continue  \n        otherwise if i is not alphabetic then  \n            set allAlpha to False  \n            break  \n    if capitalise and allAlpha then  \n        add txt to newList  \n\ndisplay newList"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:36:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: ywV1nUQg\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nword = input().split()\ncap =[]\nfor i in word:\n    \n    if i.isalpha() and i[0] == i[0].upper() and i[1:] == i[1:].lower():\n        cap.append(i)\n    elif i[-1] == \".\" and i[0] == i[0].upper() and i[1:] == i[1:].lower():\n        cap.append(i)\n\nprint(cap)\n",
+    "Pseudocode": "get word\nset cap to empty list\ngo through each i in word\n    if i is alphabetic and i at index 0 is i at index 0 converted to uppercase and i from index 1 to end is i from index 1 to end converted to lowercase\n        add i to cap\n    otherwise if i at last index is . and i at index 0 is i at index 0 converted to uppercase and i from index 1 to end is i from index 1 to end converted to lowercase\n        add i to cap\ndisplay cap"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:54:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021\nPASSWORD: Vj3jCCnd\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nword = list((input().strip()).split(' '))\nword = list(filter(lambda x : len(x)>0 , word))\n\nfilterfullstop = list(x for x in word if ((x[-1] == '.') or (x[-1].isalpha())) )\n\nfilterupperall = list(x for x in filterfullstop if x[1:].islower())\nfilternum = list(x for x in filterupperall  if x[:-1].isalpha())\nupper = list(x for x in filternum if x[0].isupper())\n\nprint(upper)",
+    "Pseudocode": "get input_string  \nset word to list of items in input_string split by whitespace  \nset word to list of x for each x in word where length of x is greater than 0  \nset filterfullstop to list of x for each x in word where x at index -1 is . or x at index -1 is alphabetic  \nset filterupperall to list of x for each x in filterfullstop where x from index 1 to end is lowercase  \nset filternum to list of x for each x in filterupperall where x up to index -1 is alphabetic  \nset upper to list of x for each x in filternum where x at index 0 is uppercase  \ndisplay upper"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:59:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: 2EmafUWY\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntext = input().split()\nfor i in text:\n    if i.isalpha() and i[0].capitalize():\n        print(i)\n#     if i.isalpha():\n#         capi_text = i.capitalize()\n# print(capi_text)\n\n",
+    "Pseudocode": "get text  \nsplit text by whitespace  \ngo through each i in text  \n    if i is alphabetic and first character of i capitalized  \n        display i"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:51:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887023\nPASSWORD: WsRuhwXt\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nx = input().split()\nAns = ''\nfor i in x:\n    if i.isalpha() and i [0] == i[0].upper() and i[1] == i[1].lower() and i[-1] == i[-1].lower()  :\n        Ans = Ans +i + ' '\n    elif i[-1] == '.' and i [0] == i[0].upper() and i[1] == i[1].lower():\n       Ans = Ans + i + ' '\nprint(Ans.split())",
+    "Pseudocode": "get x  \ninitialize Ans to empty text  \ngo through each i in x  \n    if i is alphabetic and i at index 0 is i at index 0 converted to uppercase and i at index 1 is i at index 1 converted to lowercase and i at last index is i at last index converted to lowercase  \n        Ans = Ans plus i plus space  \n    otherwise if i at last index is . and i at index 0 is i at index 0 converted to uppercase and i at index 1 is i at index 1 converted to lowercase  \n        Ans = Ans plus i plus space  \ndisplay Ans split()"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:01:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: W5X7DXnM\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\ntextinput = input()\n\ntextlist = textinput.split()\n\nprint(textlist)\n\nans = []\nfor i in range(len(textlist)):\n    want = False\n    n = ''\n    for q in range(len(textlist[i])):\n        if textlist[i][q].isalpha() or textlist[i][q] == '.':\n            n += textlist[i][q]\n        else:\n            break\n    \n    ans.append(n)\n\nprint(ans)\n\n\n\n# for i in range(len(textlist)):\n  \n#     for q in range(len(textlist[i])):\n#         if textlist[i]\n",
+    "Pseudocode": "get textinput  \nset textlist to split textinput by whitespace  \ndisplay textlist  \ninitialize ans to empty list  \ngo through each i in range of length of textlist  \n    initialize want to False  \n    initialize n to empty string  \n    go through each q in range of length of textlist at index i  \n        if textlist at index i at index q is alphabetic or textlist at index i at index q is .  \n            set n to n plus textlist at index i at index q  \n        otherwise  \n            break  \n    add n to ans  \ndisplay ans"
+  },
+  {
+    "User ID": "6887025",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:18:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887025 \nPASSWORD: RY6BhPEa\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nX=input().strip().split()\nlist=[]\nans=[]\nfor i in X :\n    if i.isalpha() or i[-1]=='.' :\n        list.append(i)\n\nfor i in list :\n    if i[0].isupper() and  i[1:].islower():\n        ans.append(i)\n\nprint(ans)\n",
+    "Pseudocode": "get X  \nX = trim whitespace from X and split X by whitespace  \ninitialize list to empty list  \ninitialize ans to empty list  \ngo through each i in X  \n    if i is alphabetic or last character of i is .  \n        add i to list  \ngo through each i in list  \n    if first character of i is uppercase and substring of i from index 1 to end is lowercase  \n        add i to ans  \ndisplay ans"
+  },
+  {
+    "User ID": "6887026",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "4/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: PASS, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:57:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887026\nPASSWORD: tBXt9zsa\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nword = input()\nword = word.split()\nfrist_cap = []\na = ['.']\nfor i in word:\n    if i.isalpha() and i[0].isupper() and i[1:].islower():\n        if i[-1] in a:\n            frist_cap.append(i)\n        else:\n            frist_cap.append(i)\nprint(frist_cap)\n",
+    "Pseudocode": "get word  \nword = split word  \ninitialize frist_cap to empty list  \ninitialize a to list containing .  \ngo through each i in word  \n    if i is alphabetic and i at index 0 is uppercase and i from index 1 to end is lowercase  \n        if i at last index is in a  \n            add i to frist_cap  \n        otherwise  \n            add i to frist_cap  \ndisplay frist_cap"
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887027\nPASSWORD: p1Q3b1a5\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\ntxt = input().split(' ')\nfinal = []\n\n# print(txt)\nfor i in txt:\n\n    if ((i.isalpha() == True or ('.' in i) == True) and i.istitle() == True) or (i.isalpha() == True and i.istitle() == True) :\n        final.append(i)\n\n#         print(i)\n\nprint(final)\n\n",
+    "Pseudocode": "get txt\nset txt to split txt by space\ninitialize final to empty list\n\ngo through each i in txt\n    if (i is alphabetic is true or '.' is in i is true) and i is title case is true or (i is alphabetic is true and i is title case is true)\n        add i to final\n\ndisplay final"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: PASS, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:59:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: Fqm1hpd2\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntxt = input()\ntext = txt.split(\" \")\nfiltered = txt.capitalize()\nresult = []\n\nfor t in text:\n    if t == txt.capitalize():\n        result.append(t)\n    \nprint(result)",
+    "Pseudocode": "get txt  \nset text to list of words from txt split by space  \nset filtered to capitalize txt  \ninitialize result to empty list  \n\ngo through each t in text  \n    if t is capitalize txt  \n        add t to result  \n\ndisplay result"
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:44:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD: KVZzkvqZ\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\ninput_string = input().split()\noutput_list = []\nfor i in input_string :\n    if (i.isalpha() or ('.' in i)) :\n        if i[-1] == '.' :\n            if i[0].isupper() and i[1:-1].islower() :\n                output_list.append(i)\n        else :\n            if i[0].isupper() and i[1:].islower() :\n                output_list.append(i)\nprint(output_list)\n\n\n",
+    "Pseudocode": "get input_string  \nset output_list to empty list  \ngo through each i in input_string  \n    if i is alphabetic or '.' is in i  \n        if i at index -1 is .  \n            if i at index 0 is uppercase and substring of i from index 1 to -1 is lowercase  \n                add i to output_list  \n        otherwise  \n            if i at index 0 is uppercase and substring of i from index 1 to end is lowercase  \n                add i to output_list  \ndisplay output_list"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "2/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:53:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: uEUGuWFS\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntxt = input()\ntxt_list = txt.split()\n\n\ncount = 0\nfor word in txt_list :\n    \n    if word[0].isupper() == True :\n        '''\n        if word[1:].islower() == True :\n            continue\n        else :\n            txt_list.pop(count)\n            count += 1\n        '''\n    else :\n        txt_list.pop(count)\n        count += 1\n    \n    \nprint(txt_list)",
+    "Pseudocode": "get txt\nset txt_list to split txt\n\ninitialize count to 0\ngo through each word in txt_list\n    if word at index 0 is uppercase is true\n        '''\n        if word from index 1 to end is lowercase is true\n            continue\n        otherwise\n            remove item at index count from txt_list\n            count = count plus 1\n        '''\n    otherwise\n        remove item at index count from txt_list\n        count = count plus 1\n\ndisplay txt_list"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:14:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: yG1n63ja\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntxt = input().strip()\n\ntxt = txt.split()\n\nnewtxt = []\nfor t in txt:\n    if (t.istitle() and t.isalpha()) or (t.istitle() and t[-1]=='.'):\n        newtxt.append(t)\nprint(newtxt)",
+    "Pseudocode": "get txt  \ntxt = trim whitespace from txt  \ntxt = split txt by whitespace  \n\ninitialize newtxt to empty list  \ngo through each t in txt  \n    if t is title case and t is alphabetic or t is title case and last character of t is .  \n        add t to newtxt  \ndisplay newtxt"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "6/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:52:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: jQHKp7Yr\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nn = input().split(' ')\nlist_n = []\n#print(n)\nfor i in n:\n        if i[:1].isupper() and i[1:].islower():\n            if i[-1].islower() or i[-1]=='.':\n                list_n.append(i)\nprint(list_n)\n\n",
+    "Pseudocode": "get n  \nset list_n to empty list  \ngo through each i in n  \n    if i at index 0 is uppercase and substring of i from index 1 to end is lowercase  \n        if i at last index is lowercase or i at last index is .  \n            add i to list_n  \ndisplay list_n"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:56:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: HBMamU12\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntxt = input().split()\n\ntxt2 = []\nfor i in txt:\n    if i.isalpha() and i.istitle() or ((\".\" in i) and (i.istitle())):\n        txt2.append(i)\n\nprint(txt2)",
+    "Pseudocode": "get txt  \nset txt2 to empty list  \ngo through each i in txt  \n    if i is alphabetic and i is title case or (dot is in i and i is title case)  \n        add i to txt2  \ndisplay txt2"
+  },
+  {
+    "User ID": "6887034",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "7/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:45:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887034\nPASSWORD: AuuC9bR5\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ns = input().strip().split()\nhelp = []\nddd = []\nfor i in s:\n    if i[0].isupper() and i[1].islower() and i[-1] != '?' and i[-1] !='!' and i[-1] !='O' and i [-1] !='1' and i[-2] !='1':\n        help.append(i)\n\nprint(help)\n",
+    "Pseudocode": "get s  \ns = split s by whitespace  \ninitialize help to empty list  \ninitialize ddd to empty list  \ngo through each i in s  \n    if i at index 0 is uppercase and i at index 1 is lowercase and i at last index is not ? and i at last index is not ! and i at last index is not O and i at last index is not 1 and i at second last index is not 1  \n        add i to help  \ndisplay help"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: PASS, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:48:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: XHSVNNKb\nEXERCISEID: itds120-cp4-q1\n */\n'''\n# YOUR CODE GOES HERE\n\ntext = input().split(' ')\n#print(text)\nout = []\nfor i in range(len(text)) :\n    for j in range(len(text)) :\n        if ((text[i]).isalpha() == 'True') and ((text[i][0]).isupper() == 'True') :\n            out.append(text[i])\n\nprint(out)",
+    "Pseudocode": "get text\nset text to split text by space\ninitialize out to empty list\ngo through each i in range of length of text\n    go through each j in range of length of text\n        if text at index i is alphabetic is True and text at index i at index 0 is uppercase is True\n            add text at index i to out\ndisplay out"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:48:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: eu12J8UM\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = map(input().split().strip())\nnn = []\nnn.append(n)\n\nfor i in range(nn):\n    if i[0][0] == nn.isupper() or i[1][0] == nn.isupper() or i[2][0] == nn.isupper() or i[3][0] == nn.isupper():\n        print(i)\n    else:\n        print(i[1])",
+    "Pseudocode": "get n  \ninitialize nn to empty list  \nadd n to nn  \n\ngo through each i in nn  \nif i at index 0 at index 0 is uppercase or i at index 1 at index 0 is uppercase or i at index 2 at index 0 is uppercase or i at index 3 at index 0 is uppercase  \ndisplay i  \notherwise  \ndisplay i at index 1"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:39:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: 1EtcacG1\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntext = input()\ntext = text.split()\n\nlist1 = []\n\nfor i in text:\n    if i[0].isupper() and i[0:].isalpha() and i[-1].islower() :\n        list1.append(i)\n    elif i[0].islower():\n        continue\n    elif i[-1] == '.':\n        list1.append(i)\n    if i.isupper() and i[-1].isdecimal():\n        list1.remove(i)\n\nfor i in list1:\n    if i[1].isupper():\n        list1.remove(i)\n  \n\nprint(list1)\n",
+    "Pseudocode": "get text\ntext = split text\n\ninitialize list1 to empty list\n\ngo through each i in text\n    if i at index 0 is uppercase and i from index 0 to end is alphabetic and i at last index is lowercase\n        add i to list1\n    otherwise if i at index 0 is lowercase\n        continue\n    otherwise if i at last index is equal to .\n        add i to list1\n    if i is uppercase and i at last index is decimal\n        remove i from list1\n\ngo through each i in list1\n    if i at index 1 is uppercase\n        remove i from list1\n\ndisplay list1"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:35:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887038\nPASSWORD: pzgszd2k\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntext = input().split(' ')\nnew = ' '\nl = []\nfor i in text:\n    if i.isalpha():\n        new += i\n    l.append(i)\nprint(l)    \n# p = l.append(i)\n# for i in range (p) :\n#      i[0] == i.isupper() :\n#         p += i\n#      i[1::] == i.islower():\n#         p += i\n# print(p)",
+    "Pseudocode": "get text  \nset new to space  \ninitialize l to empty list  \ngo through each i in text  \n    if i is alphabetic  \n        new += i  \n    add i to l  \ndisplay l  \n# p = l.append(i)  \n# for i in range (p) :  \n#      i[0] == i.isupper() :  \n#         p += i  \n#      i[1::] == i.islower():  \n#         p += i  \n# display p"
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:15:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: 4RDqRy3h\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntext = input()\ntext = text.split()\n# print(text)\nnew = []\n# text[i] == text[i].capitalize()\n\nfor i in range(len(text)):\n    if text[i][0].isupper() and text[i][-1] == '.':\n        if text[i] == text[i].capitalize():\n            new.append(text[i])\n    elif text[i][0].isupper() and text[i].isalpha():\n        if text[i] == text[i].capitalize():\n            new.append(text[i])\nprint(new)\n",
+    "Pseudocode": "get text  \nset text to split text  \ninitialize new to empty list  \ngo through each i in range of length of text  \n    if text at index i has first character uppercase and last character is .  \n        if text at index i is equal to text at index i capitalized  \n            add text at index i to new  \n    otherwise if text at index i has first character uppercase and text at index i is alphabetic  \n        if text at index i is equal to text at index i capitalized  \n            add text at index i to new  \ndisplay new"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:55:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887040\nPASSWORD: KaCPZkmK\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ninput_ = input().strip().split()\n\nword_col = []\nword_thing = ''\n\nfor i in input_:\n    #print(i)\n    if i.isalpha() or i[-1] == \".\":\n        word_thing += i + ' '\n        word_col.append(word_thing.strip())\n    word_thing = ''\n\ncap_word = []\nfor i in word_col:\n    if i[0] == i[0].upper() and i[1:] == i[1:].lower():\n        cap_word.append(i)\n\nprint(cap_word)\n\n#`:D`\n",
+    "Pseudocode": "get input_  \nset input_ to trim whitespace from input_ and split input_ by spaces  \n\ninitialize word_col to empty list  \ninitialize word_thing to empty text  \n\ngo through each i in input_  \n    if i is alphabetic or last character of i is .  \n        set word_thing to word_thing plus i plus space  \n        add word_thing trimmed to word_col  \n    set word_thing to empty text  \n\ninitialize cap_word to empty list  \ngo through each i in word_col  \n    if first character of i is uppercase and substring of i from index 1 to end is lowercase  \n        add i to cap_word  \n\ndisplay cap_word"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "6/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: ERROR, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: ERROR, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:21:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: t2cfpvaN\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nwords = input().strip().split(' ')\ncap = []\n\nfor word in words:\n    if word.isalpha() and word[0].isupper() and word[1:].islower():\n        cap.append(word)\n    elif word[-2::-1].isalpha and word[-1] == '.' and word[0].isupper() and word[1:].islower():\n        cap.append(word)\nprint(cap)\n",
+    "Pseudocode": "get words  \ntrim whitespace from words  \nsplit words by space  \ninitialize cap to empty list  \n\ngo through each word in words  \n    if word is alphabetic and word at index 0 is uppercase and substring of word from index 1 to end is lowercase then  \n        add word to cap  \n    otherwise if word at index -2 to start is alphabetic and word at index -1 is . and word at index 0 is uppercase and substring of word from index 1 to end is lowercase then  \n        add word to cap  \ndisplay cap"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "6/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: ERROR, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: ERROR, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:00:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD: R5bTUbs2\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nnum = input().strip().split(' ')\n\nresult = []\n\n\n\n\n\nfor i in num :\n    if i == '':\n        pass\n    \n    if  i[0].isupper() and i[1:].islower() :\n        result.append(i)\n\nresult2 = []\nfor j in result:\n\n    if j.isalpha():\n\n        result2.append(j)\n    \n    elif j[-1] == '.':\n        result2.append(j)\n\nprint(result2)\n\n        \n\n        \n\n\n\n\n",
+    "Pseudocode": "get num  \nnum = num stripped of whitespace and split by space  \ninitialize result to empty list  \n\ngo through each i in num  \n    if i is empty string  \n        pass  \n    if first character of i is uppercase and substring of i from index 1 to end is lowercase  \n        add i to result  \n\ninitialize result2 to empty list  \ngo through each j in result  \n    if j is alphabetic  \n        add j to result2  \n    otherwise if last character of j is .  \n        add j to result2  \n\ndisplay result2"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:00:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: C6sZ2Met\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ns=input().split()\nt=''\nfor i in s:\n    if i.isalpha() and '.':\n        if not i.islower():\n            t+=i\n\nprint(t)\n",
+    "Pseudocode": "get s  \ninitialize t to empty text  \ngo through each i in s  \n    if i is alphabetic and '.'  \n        if not i is lowercase  \n            t = t plus i  \ndisplay t"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:58:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: vJnuWvcY\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntxt = input()\npart = txt.split(' ')\ncapitalize = []\nresult = []\nfor p in part:\n    if p.capitalize():\n        capitalize.append(p)\n\nfor q in capitalize:\n    if q.isalpha():\n        result.append(q) \n    elif q[:-1] == '.':\n        result.append(q)\n\nprint(result)\n\n\n\n",
+    "Pseudocode": "get txt  \npart = split txt by space  \ninitialize capitalize to empty list  \ninitialize result to empty list  \ngo through each p in part  \n    if p capitalize  \n        add p to capitalize  \ngo through each q in capitalize  \n    if q is alphabetic  \n        add q to result  \n    otherwise if substring of q from index 0 to length of q minus 1 is .  \n        add q to result  \ndisplay result"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:10:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: BdwfBCte\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ns = input()\ns = s.split()\nwords = []\nfor word in s :\n    if word == word.capitalize() and (word.isalpha() or word[-1] == '.'):\n        words.append(word)\nprint(words)",
+    "Pseudocode": "get s\ns = s split\ninitialize words to empty list\ngo through each word in s\n    if word is word capitalized and (word is alphabetic or word at index -1 is .)\n        add word to words\ndisplay words"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:28:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD: EZrSU4FX\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ns = input().upper().strip().split()\nnew = list(map(lambda v : v.strip() , s))\ns_joinn = ' '.join(new_s)\nprint(s_join)\n\n",
+    "Pseudocode": "get s  \ns = convert s to uppercase  \ns = trim whitespace from s  \ns = split s by whitespace  \ninitialize new to list of v for each v in s where v is trimmed  \ninitialize s_joinn to combine items in new into text  \ndisplay s_joinn"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:58:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: ksHSm72J\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntxt = input().split(' ')\n\nn_txt=[]\nfor i in txt:\n    if i != '':\n        n_txt.append(i)\n\nresult=[]\nfor i in n_txt:\n    if i[0].isupper()  and i[1:].islower() and (i.isalpha() or i[-1]=='.'):\n        result.append(i)\nprint(result)\n",
+    "Pseudocode": "get txt  \nset txt to list of items in txt split by space  \ninitialize n_txt to empty list  \ngo through each i in txt  \n    if i is not empty  \n        add i to n_txt  \ninitialize result to empty list  \ngo through each i in n_txt  \n    if i at index 0 is uppercase and substring of i from index 1 to end is lowercase and (i is alphabetic or i at last index is .)  \n        add i to result  \ndisplay result"
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:49:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: zAwXQWd1\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nword = input().strip().split(' ')\n\n#print(word)\ndef isgood(s):\n    listn = []\n    l = 0\n    for i in s:\n        if i == '':\n            pass\n        elif i[0].isupper() and (i[-1].isalpha() and i[-1] != i[-1].upper() ):\n            for k in i:\n                if type(k) == int:\n\n                    break\n                \n\n                \n               \n            listn.append(i)\n            \n        elif i[-1] == '.':\n            i.replace('.','')\n            if i[0].isupper() and  ( i[-2] != i[-2].upper()) :\n                for k in i:\n                    if type(k) == int:\n                        break\n                listn.append(i)\n\n\n\n    return listn\n\n\nm = 0\nlistn = []\nlistk = []\nfor i,k in zip(isgood(word),range(10)):\n    \n\n    for m in i:\n        if m.isdecimal():\n            listn.append(i)\n\nlistn = list(set(listn))\n\nl = isgood(word)\n\nfor i in l:\n    if i in listn or i[1] == i[1].upper():\n        pass\n    else:\n        listk.append(i)\n\nprint(listk)\n    ",
+    "Pseudocode": "get word\nword = word trimmed and split by space\n\ndefine function isgood with parameter s\n    initialize listn to empty list\n    initialize l to 0\n    go through each i in s\n        if i is empty string\n            pass\n        otherwise if first character of i is uppercase and last character of i is alphabetic and last character of i is not uppercase\n            go through each k in i\n                if type of k is integer\n                    break\n            add i to listn\n            \n        otherwise if last character of i is dot\n            replace dot in i with empty string\n            if first character of i is uppercase and second last character of i is not uppercase\n                go through each k in i\n                    if type of k is integer\n                        break\n                add i to listn\n\n    return listn\n\ninitialize m to 0\ninitialize listn to empty list\ninitialize listk to empty list\ngo through each i, k in paired items from isgood(word) and range from 0 to 10\n    go through each m in i\n        if m is decimal\n            add i to listn\n\nlistn = unique items in listn\n\ninitialize l to isgood(word)\n\ngo through each i in l\n    if i is in listn or second character of i is uppercase\n        pass\n    otherwise\n        add i to listk\n\ndisplay listk"
+  },
+  {
+    "User ID": "6887052",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:19:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887052\nPASSWORD: VUCEY6Yr\nEXERCISEID: itds120-cp4-q1\n */\n'''\nA = []\nx = input().split(\" \")\ndef alpha (x):\n    if x.isalpha() == True:\n        return x\n    if len(x) > 0:\n        if x[-1] == '.':\n            return x\n    \n\n    \nY = list(filter(alpha ,x))\n\nfor i in range(len(Y)):\n    Z = Y[i]\n    if Z[:1].isupper() == True and Z[1:].islower() == True:\n        A.append(Z)\nprint(A)\n",
+    "Pseudocode": "initialize A to empty list  \nget x  \nsplit x by space  \ndefine function alpha with parameter x  \nif x is alphabetic is true  \nthen return x  \nif length of x is greater than 0  \nif x at index -1 is .  \nthen return x  \nY = list of items in x where alpha  \nrepeat length of Y times using index i  \nset Z to Y at index i  \nif Z from index 0 to 1 is uppercase is true and Z from index 1 to end is lowercase is true  \nthen add Z to A  \ndisplay A"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:00:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: HApXca6C\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nwords = input().split()\nfinal = []\na = 0\nb = 0\nc = 0\nfor word in words :\n    if word.isalpha() or word[-1] == '.' :\n        if word[0].isupper() :\n            a = 1\n            print(a)\n        if word[1:] == word[1:].lower() :\n            b = 1\n            print(b)\n        if word[-1].isalpha() or word[-1] == '.' :\n            c = 1\n            print(c)\n        if a == 1 and b == 1 and c == 1 :\n            final.append(word)\nprint(final)",
+    "Pseudocode": "get words  \ninitialize final to empty list  \ninitialize a to 0  \ninitialize b to 0  \ninitialize c to 0  \ngo through each word in words  \n    if word is alphabetic or word at index -1 is .  \n        if word at index 0 is uppercase  \n            set a to 1  \n            display a  \n        if word from index 1 to end is equal to word from index 1 to end converted to lowercase  \n            set b to 1  \n            display b  \n        if word at index -1 is alphabetic or word at index -1 is .  \n            set c to 1  \n            display c  \n        if a is equal to 1 and b is equal to 1 and c is equal to 1  \n            add word to final  \ndisplay final"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "4/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: PASS, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:20:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: tK86DUCk\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nimport string\n\ntxt = input().strip().split()\n\n# new = []\n# for i in txt :\n#     if i.isalpha() :\n#         new.append(i)\n\nresult = []\nfor i in txt :\n    if i[0].isupper() and i[1:].islower() and i.isalpha():\n        result.append(i)\n\nprint(result)\n\n\n\n\n\n\n\n\n# B_alpha = [\n# 'A','B','C','D','E','F','G','H','I','J','K',\n# 'L','M','N','O','P','Q','R','S','T','U',\n# 'V','W','X','Y','Z'\n# ]\n\n# punctuation = ['!',\"'\",'#','$','%','&','()','*',\n# '+','-','.','/',':',';','<','=','?','`']\n\n# big = []\n# for i in txt :   \n#     if i.isalpha() :\n#         big.append(i)\n# print(big)\n\n# clear = []\n# punc = string.punctuation\n# for j in TXT :\n#     j.replace('?','')",
+    "Pseudocode": "get txt  \nset txt to result of stripping whitespace from txt and splitting by spaces  \n\ninitialize result to empty list  \ngo through each i in txt  \n    if i at index 0 is uppercase and substring of i from index 1 to end is lowercase and i is alphabetic:  \n        add i to result  \n\ndisplay result"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:00:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887056\nPASSWORD: 4VtWsFU9\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ns = input().split()\ncap = []\nfor ch in s:\n    if ch.title():\n        cap.append(ch)\nprint(cap)\n\n# flowchart\n# 1.input your str\n# 2.str will s.upper()\n# 3.str will s.capitalize()\n# 4.[-1] use (\".\")\n# 5.result is list in the condition at first\n# 6.if your input have int and space is not count\n# 7.if your input have more space will be between ถูกละเว้น\n",
+    "Pseudocode": "get s  \ninitialize cap to empty list  \ngo through each ch in s  \n    if ch is not empty  \n        add ch to cap  \ndisplay cap"
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: ERROR, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:01:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: 9T6A2r2F\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntxt = input().strip().split(' ')\n\n'''\ndef words(s):\n    return len(s) > 0\n\nclean_txt = map(lambda name: len(name) > 0, txt)\n\nprint(list(clean_txt))'''\n\ncap_words = []\nfor t in txt:\n    if t[0].isupper() and t[1:-1].islower() or t[-1] == '.':\n        if t.isalpha:\n            cap_words.append(t)\n    \nprint(cap_words)\n",
+    "Pseudocode": "get txt  \ntxt = split txt by space  \ninitialize cap_words to empty list  \n\ngo through each t in txt  \n    if t at index 0 is uppercase and substring of t from index 1 to -1 is lowercase or t at index -1 is .  \n        if t is alphabetic  \n            add t to cap_words  \n\ndisplay cap_words"
+  },
+  {
+    "User ID": "6887059",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T08:09:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887059\nPASSWORD: pPk8vbpC\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n",
+    "Pseudocode": "get USERID  \nget PASSWORD  \nget EXERCISEID"
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "3/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: ERROR, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL, CASE 6: ERROR, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:50:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887060\nPASSWORD: 8PYvSr23\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nword=input()\n\nword=word.split(' ')\n#print(word)\nall=[]\nfor i in word:\n    if i.isalpha() and i[0].upper()==i[0] and i.upper!=i[1:] or i[-1]==\".\":\n        all.append(i)\nprint(all)\n'''\nfor i in word:\n    if i[0] == i[0].upper() and i.isalpha():\n        all.append(i)\n\nprint(all)\n'''",
+    "Pseudocode": "get word  \nset word to split word by space  \ninitialize all to empty list  \ngo through each i in word  \n    if i is alphabetic and i at index 0 is uppercase and i at index 0 to end is not equal to i at index 1 to end or i at last index is .  \n        add i to all  \ndisplay all"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:23:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD: JGGHH4h4\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ns = input().strip().split()\n# print(s)\n# cap = []\n# okay = True\noutput = []\nfor word in s :\n    if word[0].isupper(): # if the first one is capital -> okay\n        left = word[1:len(word)] # from the next to the last\n        if left[-1] != '.' : \n            if left.islower() and left.isalpha() :\n                output.append(word)\n        elif left[-1] == '.' :\n            left = word[1:len(word)-1]\n            if left.islower() and left.isalpha() :\n                output.append(word)\n            \nprint(output)\n       \n    #     output.remove(word)\n    \n    # if (word[-1] != '.') and (not word.isalpha()):\n    #     output.remove(word)\n    #     # for ch in word[1:len(word)] :\n            \n#             if ch.isupper :\n#                 okay = False\n#                 break\n#     if okay :\n#         cap.append(word)\n# print(cap)\n# #     if not word[0].isupper() :\n# #         s.remove(word)\n# #     if word[]\n# # print(s)\n\n\n# # nd not word[1:-1].islower()) or (not word.isalnum()):\n# print(s)",
+    "Pseudocode": "get s\ns = trim whitespace from s\ns = split s by whitespace\ninitialize output to empty list\ngo through each word in s\n    if word at index 0 is uppercase\n        left = substring of word from index 1 to length of word\n        if left at last index is not .\n            if left is lowercase and left is alphabetic\n                add word to output\n        otherwise if left at last index is .\n            left = substring of word from index 1 to length of word minus 1\n            if left is lowercase and left is alphabetic\n                add word to output\ndisplay output"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:59:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: VrHkuy8h\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nx=input().strip().split()\nnew=[]\nfor word in x:\n    count=0\n    for i,char in enumerate(word):\n        if i==0:\n            if char.islower():\n                break\n            else:\n                if char.isalpha():\n                    count+=1\n        elif i>0:\n            if (char.islower() and char.isalpha()) or char=='.':\n                count+=1\n    if count==len(word):\n        new.append(word)\nprint(new)\n",
+    "Pseudocode": "get x  \ninitialize new to empty list  \ngo through each word in x  \n    initialize count to 0  \n    go through each i and char in word with index  \n        if i is 0  \n            if char is lowercase  \n                break  \n            otherwise  \n                if char is alphabetic  \n                    count = count plus 1  \n        otherwise if i is greater than 0  \n            if char is lowercase and char is alphabetic or char is .  \n                count = count plus 1  \n    if count is equal to length of word  \n        add word to new  \ndisplay new"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:59:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD: VRzttkuK\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nwords = (input())\nlist1 = []\nlist1 = words.split()\nfound = False\nfor i in range(len(words)):\n    if words[i].isalpha():\n        a = ' '.join(list1)\n        list1.append(words[i])\nprint(list1)\n\n",
+    "Pseudocode": "get words  \ninitialize list1 to empty list  \nset list1 to words split by whitespace  \ninitialize found to False  \nrepeat length of words times using index i  \n    if words at index i is alphabetic  \n        set a to combine items in list1 into text  \n        add words at index i to list1  \ndisplay list1"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:21:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: 3KuJ6wPE\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n#start with CAP\n#only alphabet no num or symbol\ntext = input().strip().split()\noutlist = []\n#print(text)\nfor i in text:\n    if i.isalpha() and i[0].isupper() and i[1:].islower():\n        #print(i)\n        outlist.append(i)\n    if i[-1] == '.' and i[1:-1].islower() and i[0].isupper():\n        #print(i)\n        outlist.append(i)\nprint(outlist)",
+    "Pseudocode": "get text  \ntext = trim whitespace from text and split by whitespace  \ninitialize outlist to empty list  \ngo through each i in text  \n    if i is alphabetic and i at index 0 is uppercase and substring of i from index 1 to end is lowercase then  \n        add i to outlist  \n    if i at last index is . and substring of i from index 1 to second last index is lowercase and i at index 0 is uppercase then  \n        add i to outlist  \ndisplay outlist"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:41:57+00:00",
+    "Code": "'''\n/**\nUSERID:6887065\nPASSWORD: 8srPM9cC\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nword = input().strip().split(' ')\n#print(word)\n\ncap_word = []\nfor x in word :\n    if (x.isalpha()) or ('.' in x[-1:] ): \n        if x[0] == x[0].upper() and x[1:] == x[1:].lower() :\n            #print(x)\n            cap_word.append(x)\n\nprint(cap_word)\n",
+    "Pseudocode": "get word  \ntrim whitespace from word  \nsplit word by space  \n\ninitialize cap_word to empty list  \ngo through each x in word  \n    if x is alphabetic or '.' is in substring of x from index -1 to end:  \n        if x at index 0 is x at index 0 converted to uppercase and x from index 1 to end is x from index 1 to end converted to lowercase:  \n            add x to cap_word  \n\ndisplay cap_word"
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:57:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD: 9c4EaUG4\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntext = input().split(' ')\n\na=[]\nfor i in text:\n    if i == i.capitalize() and (i.isalpha() or i.endswith('.')) :\n        a.append(i)\nprint(a)\n\n",
+    "Pseudocode": "get text  \nset a to empty list  \ngo through each i in text  \n    if i is i capitalized and (i is alphabetic or i ends with .)  \n        add i to a  \ndisplay a"
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:31:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887067\nPASSWORD: teqsaP8Y\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n# .split()\n# .isalpha()\n# .capitalize()\n# '.'.join()\n\nn = input().split(' ')\nprint(n)\n# n1 = []\n# n1.append(n)\n# print(n1)\n\n# news_n = []\n# for k in n:\n#     # if n.isalpha():\n#     # n.capitalize()\n#     news_n.append(n)\n# print(news_n)\n",
+    "Pseudocode": "get n  \nn is split by space  \ndisplay n  \ninitialize n1 to empty list  \nadd n to n1  \ndisplay n1  \ninitialize news_n to empty list  \ngo through each k in n  \nadd n to news_n  \ndisplay news_n"
+  },
+  {
+    "User ID": "6887068",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:56:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887068\nPASSWORD: wm916DqP\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = input().split(' ')\nword = ['a','b','c','d','e','f','g','h','i','j','k','l','m','o','p','q','r','s','t','u','v','w','s','y','z']\nlist1 = []\nfor c in range(len(n)):\n    for n[c] in word:\n        if n[c] != word:\n            print(n[c])\n# if n[c].isalpha() and n[c]== n[c].upper\n    ",
+    "Pseudocode": "get n  \nset word to list containing a, b, c, d, e, f, g, h, i, j, k, l, m, o, p, q, r, s, t, u, v, w, s, y, z  \ninitialize list1 to empty list  \ngo through each c in range of length of n  \ngo through each n[c] in word  \nif n[c] is not word  \ndisplay n[c]"
+  },
+  {
+    "User ID": "6887069",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:00:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887069\nPASSWORD: YvzfY77B\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx = input()\n\" \".join(x)\n\nfor i in x :\n    if i is i.islower() or i.isdigit() or i.isnumeric() :\n        x.replace(i,\"\")\n        \nprint(x.split())\n\n\n\n\n\n\n\n\n",
+    "Pseudocode": "get x\ncombine items in x into text\n\ngo through each i in x\n    if i is i.islower() or i.isdigit() or i.isnumeric() \n        x.replace(i, \"\")\n        \ndisplay x.split()"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:52:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: Q4djZpjb\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nu=[]\nn=input().split(' ')\nu.append(n)\n\n#for i in range(len(u)):\nup = list(filter(lambda u: u.isupper(),u))\nprint(up)   \n\n\n",
+    "Pseudocode": "initialize u to empty list\nget n\nsplit n by space\nadd n to u\nup = list of items in u where item is uppercase\ndisplay up"
+  },
+  {
+    "User ID": "6887071",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:07:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887071\nPASSWORD: bMZqRz48\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntext = input().strip()\ntext = text.split()\n\nprint(text)\n\n",
+    "Pseudocode": "get text  \ntrim whitespace from text  \nsplit text by whitespace  \ndisplay text"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:51:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: 8aQh25rt\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntxt = input().strip().split()\nfill = \"\"\nfor i in txt:\n    if i.isalpha():\n        fill += i.upper()\n        print(i ,end=' ')",
+    "Pseudocode": "get txt  \ntxt = split txt by whitespace  \ninitialize fill to empty text  \ngo through each i in txt  \n    if i is alphabetic  \n        fill = fill plus i converted to uppercase  \n        display i without newline"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:57:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: Gru944SH\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nword = input().strip().split()\nans = []\nfor i in word:\n    if i.isalpha() or i[-1] == '.':\n        if i[0] != i[0].upper():\n            continue\n        else:\n            ans.append(i)\nans2 = []\nfor i in ans:\n    if i[1:] != i[1:].lower():\n        continue\n    else:\n        ans2.append(i)\n\nprint(ans2)\n\n",
+    "Pseudocode": "get word  \nset word to list of items in word split by whitespace  \ninitialize ans to empty list  \ngo through each i in word  \n    if i is alphabetic or i at index -1 is .  \n        if i at index 0 is not uppercase  \n            continue  \n        otherwise  \n            add i to ans  \ninitialize ans2 to empty list  \ngo through each i in ans  \n    if i from index 1 to end is not lowercase  \n        continue  \n    otherwise  \n        add i to ans2  \ndisplay ans2"
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:56:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887074\nPASSWORD: 6797H8B2\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nword = input()\nx = [w.isupper() for w in word.split(',')]\nprint(x)",
+    "Pseudocode": "get word\nx = list of w is uppercase for each w in word split by comma\ndisplay x"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:54:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: SsSUJz1S\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\ntext = input().strip().split(' ')\nout = []\n\n\nfor t in text:\n    if t.isalpha():\n        if t[0].isupper():\n            if t[1:].islower():\n                out.append(t)\n    else:\n        if t[-1:] == '.':\n            if t[0].isupper():\n                if t[1:].islower():\n                    out.append(t)\nprint(out)",
+    "Pseudocode": "get text  \nset text to split text by space  \ninitialize out to empty list  \n\ngo through each t in text  \n    if t is alphabetic then  \n        if t at index 0 is uppercase then  \n            if substring of t from index 1 to end is lowercase then  \n                add t to out  \n    otherwise  \n        if substring of t from index -1 to end is equal to . then  \n            if t at index 0 is uppercase then  \n                if substring of t from index 1 to end is lowercase then  \n                    add t to out  \ndisplay out"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:21:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: 8sbEGqDN\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nout=[]\ntext=[]\nx=input().split()\nfor i in x:\n    if i.isalpha() or i[-1]=='.':\n        text.append(i)\nfor i in text:\n    if i[0]==i[0].upper() and i[1:]==i[1:].lower():\n        out.append(i)\n    \nprint(out)\n\n\n\n",
+    "Pseudocode": "initialize out to empty list  \ninitialize text to empty list  \nget x  \nsplit x by whitespace  \ngo through each i in x  \n    if i is alphabetic or i at index -1 is .  \n        add i to text  \ngo through each i in text  \n    if i at index 0 is uppercase and substring of i from index 1 to end is lowercase  \n        add i to out  \ndisplay out"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:22:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: mv6Ecned\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist_input = input().split()\nlist_output = []\nfor i in list_input:\n    if (i[0].isupper() and i.isalpha() and i[1:].islower() and i[-1]!='.') or (i[0].isupper() and i[1:len(i)].islower() and i[-1]=='.'):\n        list_output.append(i)\nprint(list_output)\n\n\n",
+    "Pseudocode": "get list_input  \nset list_output to empty list  \ngo through each i in list_input  \n    if (i at index 0 is uppercase and i is alphabetic and substring of i from index 1 to end is lowercase and i at last index is not .) or (i at index 0 is uppercase and substring of i from index 1 to end is lowercase and i at last index is .)  \n        add i to list_output  \ndisplay list_output"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T10:00:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: 2FdqES4K\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nwords_input = input()\nwords = words_input.split()\n\ncapitalized_words_isalpha = [w for w in words if w.isalpha()]\nfinal_capitalized_words = []\n\nfor w in len(capitalized_words_isalpha):\n    \n\nprint(capitalized_words)",
+    "Pseudocode": "get words_input  \nset words to split words_input by whitespace  \nset capitalized_words_isalpha to list of w for each w in words where w is alphabetic  \ninitialize final_capitalized_words to empty list  \n\ngo through each w in length of capitalized_words_isalpha  \n    \n\ndisplay capitalized_words"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: PASS, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:01:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: NkQ67tHQ\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nword=input().strip().split()\nT=[]\nAA=[]\nfor i in range(len(word)):\n    T=word\n    if T[0].isupper==True:\n        AA+=T\n        \n    \n\n\nprint(AA)",
+    "Pseudocode": "get word  \nset T to empty list  \nset AA to empty list  \ngo through each i in range of length of word  \n    set T to word  \n    if T at index 0 is uppercase is true  \n        add T to AA  \ndisplay AA"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:01:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: 9C92Jts8\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ns=input()\n\nwords=s.split()\nclean=[]\n\n#for s in words:\n #   if s.lower():\n  #      clean.append(words)\n   #     clean=False\n\nfor w in words:\n    w_clean=\"\".join(s for s in w if s.isalpha())\n    if w_clean==w.replace(\",\",\"\").replace(\"!\", \"\"):\n        clean.append(w_clean)\n\nprint([\"', '\".join(clean)])\n",
+    "Pseudocode": "get s\nset words to split s\ninitialize clean to empty list\n\ngo through each w in words\n    set w_clean to combine items in w where each item is alphabetic\n    if w_clean is w with , replaced with empty and ! replaced with empty\n        add w_clean to clean\n\ndisplay list containing clean joined with ', '"
+  },
+  {
+    "User ID": "6887083",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:48:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887083\nPASSWORD: 9ykhAc9D\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nword = input()\ncapitalized word = word().split()\n\nfor ch in txt :\n    if ch.isalpha():\n    \nif txt == txts[::1]:\n    print(txt.upper())\nif txt == txts[::-1]:\n    print(txt.lower())\nif txt == ('.'):\n    print()\n\nprint(txt)\n",
+    "Pseudocode": "get word\ncapitalized word = word split by whitespace\n\ngo through each ch in txt\n    if ch is alphabetic\n\nif txt is equal to txts from start to end\n    display txt converted to uppercase\nif txt is equal to txts from end to start\n    display txt converted to lowercase\nif txt is equal to .\n    display nothing\n\ndisplay txt"
+  },
+  {
+    "User ID": "6887084",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:42:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887084\nPASSWORD: 61EPRGnK\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nword = input()\nword = word.upper() \nword = word.capitalize().split()\n\nprint(word)\n\n\n\n\n",
+    "Pseudocode": "get word\nword = word converted to uppercase\nword = word capitalized and split by whitespace\ndisplay word"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR",
+    "Submission Time": "2025-11-17T09:59:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: nnMkDQ7a\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\"\"\"txt = str()\nalphabet = []\n\nfor txt in alphabet:\n    print(alphabet)\n\n    if alphabet == \"A-Z\" or \"a-z\" or \".\":\n        print(txt.upper().strip().split())\n    else:\n        print()\n\nprint(alphabet)\n#print(txt.upper().strip().split())\"\"\"\n\nimport numpy as np\n\ntxt = input().strip()\nalphabets = txt.split()\nword = str()\nprint(alphabets)\n\nfor alphabet in alphabets:\n    n = alphabets.upper()[0].split().strip()\n    word.append(n)\nprint(word) \n\n\n\n",
+    "Pseudocode": "initialize txt to empty text\ninitialize alphabet to empty list\n\ngo through each txt in alphabet\n    display alphabet\n\n    if alphabet is A-Z or alphabet is a-z or alphabet is .\n        display txt converted to uppercase and trimmed and split\n    otherwise\n        display empty text\n\ndisplay alphabet\n\nimport numpy as np\n\nget txt\ntrim whitespace from txt\nset alphabets to list of items in txt split by whitespace\ninitialize word to empty text\ndisplay alphabets\n\ngo through each alphabet in alphabets\n    set n to alphabet converted to uppercase at index 0 and split and trimmed\n    add n to word\ndisplay word"
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "6/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: ERROR, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: ERROR, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:24:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: nghj5ngU\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nword = input().split(' ')\nlist = []\nlist2 = []\n# for i in range(len(word)):\n#     if word[i].isalpha() or (word[i])[-1] == '.':\n#         list.append(word[i])\nfor i in word:\n    if (i[0].isupper() or i[-1] =='.') and (i.isalpha() or i[-1]=='.') and (i[1:].islower()):\n        list.append(i)\nprint(list)\n\n",
+    "Pseudocode": "get word  \ninitialize list to empty  \ninitialize list2 to empty  \ngo through each i in word  \n    if (i at index 0 is uppercase or i at index -1 is .) and (i is alphabetic or i at index -1 is .) and (i from index 1 to end is lowercase)  \n        add i to list  \ndisplay list"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: yuWG9WnF\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nx=input().strip().split()\nresult=[]\nfor i in x:\n    if i[0:-1].isalpha():\n        if i[0].isupper():\n            if len(i)==2:\n                if i[-1].islower() or i[-1]=='.':\n                    result.append(i)\n            if i[1:-1].islower():\n                if i[-1].islower() or i[-1]=='.':\n                    result.append(i)\nprint(result)\n\n",
+    "Pseudocode": "get x  \ninitialize result to empty list  \ngo through each i in x  \n    if i from index 0 to end minus 1 is alphabetic  \n        if i at index 0 is uppercase  \n            if length of i is 2  \n                if i at last index is lowercase or i at last index is .  \n                    add i to result  \n            if i from index 1 to end minus 1 is lowercase  \n                if i at last index is lowercase or i at last index is .  \n                    add i to result  \ndisplay result"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: ERROR, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:54:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: pzNEmR83\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nw = input()\nx = w.split(\" \")\n\nu = list(filter(lambda words: words[0].isupper, x))\nprint(u)\n\n'''c = []\nfor words in x:\n    if words.isalpha():\n        c.append(words)\n\nprint(c)'''\n\n'''for words in x:\n    if words.isalpha():\n        c.append(words)\n\nfor words in c:\n    if words[0].isalpha():\n        u.append(words)\nprint(u)'''",
+    "Pseudocode": "get w  \nx = split w by space  \nu = list of words for each words in x where words at index 0 is uppercase  \ndisplay u  \nc = list containing no items  \ngo through each words in x  \n    if words is alphabetic  \n        add words to c  \ndisplay c  \ngo through each words in x  \n    if words is alphabetic  \n        add words to c  \ngo through each words in c  \n    if words at index 0 is alphabetic  \n        add words to u  \ndisplay u"
+  },
+  {
+    "User ID": "6887090",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "3/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: ERROR, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:00:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887090\nPASSWORD: VqB2Cuhj\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntex = input()\nlist_upper = []\n\n\n\nlist_tex = tex.split(\" \")\n\n\n\n#for i in range(len(list_tex)):\nfor tex in list_tex:\n       \n        if tex[0] == tex[0].upper() and tex[0:] != tex[:].upper() :\n            list_upper.append(tex)\n        elif tex[0] == tex[0].upper() and tex[0:] != tex[:].upper() and tex != tex.isalpha():\n            list_tex.clear()\n            list_upper.append(tex[0])\nprint(list_upper)\n     \n        ",
+    "Pseudocode": "get tex  \ninitialize list_upper to empty list  \nset list_tex to split tex by space  \n\ngo through each tex in list_tex  \n    if tex at index 0 is upper case and tex from index 0 to end is not equal to tex from start to end in upper case  \n        add tex to list_upper  \n    otherwise if tex at index 0 is upper case and tex from index 0 to end is not equal to tex from start to end in upper case and tex is not alphabetic  \n        clear list_tex  \n        add tex at index 0 to list_upper  \ndisplay list_upper"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:45:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: HSTvUEEK\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ninput_word = input().strip().split(\" \")\n\nword = []\nfor i in input_word:\n    if (i[0:-1].isalpha()) and (not i[-1].isdecimal()):\n        if (i[0] == i[0].upper()) and (i[1:] == i[1:].lower()) and (i[-1] != \"?\") and (i[-1] != \"!\"):\n            word.append(i)\n\nprint(word)\n\n\n",
+    "Pseudocode": "get input_word  \ninput_word = trim whitespace from input_word  \ninput_word = split input_word by space  \n\ninitialize word to empty list  \ngo through each i in input_word  \n    if i from index 0 to -1 is alphabetic and i at index -1 is not numeric then  \n        if i at index 0 is uppercase and i from index 1 to end is lowercase and i at index -1 is not ? and i at index -1 is not ! then  \n            add i to word  \ndisplay word"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "4/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: PASS, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T10:00:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887093\nPASSWORD: JwjvCavh\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx = input().strip().split(' ')\n# print(x)\n\nlistdot = []\nfor k in x:\n    if '.' in k:\n        listdot.append(k)\n# print(listdot)\n\nlastdot = []\nfor d in listdot:\n    if '.' in d[-1] and d[1:-2].islower():\n        lastdot.append(d)\n# print(lastdot)\n\nlistx=[]\n\nfor i in x :\n    if i.isalpha() and i[0].isupper() and i[1][:].islower() and i[-1].islower():\n        listx.append(i)\n\nprint(listx)\nz=listx.extend(lastdot)\n# print(z)\n\n\n",
+    "Pseudocode": "get x\nx = trim whitespace from x and split x by space\ninitialize listdot to empty list\ngo through each k in x\n    if . is in k\n        add k to listdot\ninitialize lastdot to empty list\ngo through each d in listdot\n    if . is in last character of d and substring of d from index 1 to second last character is lowercase\n        add d to lastdot\ninitialize listx to empty list\ngo through each i in x\n    if i is alphabetic and first character of i is uppercase and substring of i from index 1 to end is lowercase and last character of i is lowercase\n        add i to listx\ndisplay listx\nz = extend listx with lastdot"
+  },
+  {
+    "User ID": "6887094",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:56:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887094\nPASSWORD: UpMK5Yuw\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nw = input().split(' ')\nnew_list = []\n\nfor i in w :\n    if i[:-1].isalpha() and i[0].isupper() and i[1:-1].islower():\n        if i[-1].islower() or i[-1] == '.' :\n            new_list.append(i)\n    if i == 'Is':\n        new_list.append(i)\n\nprint(new_list)",
+    "Pseudocode": "get w  \ninitialize new_list to empty list  \ngo through each i in w  \n    if i from index 0 to second last is alphabetic and i at index 0 is uppercase and i from index 1 to second last is lowercase  \n        if i at last index is lowercase or i at last index is .  \n            add i to new_list  \n    if i is Is  \n        add i to new_list  \ndisplay new_list"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:12:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: AynCtBTW\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\na = input().strip().split()\nx = []\nfor v in a :\n    if v.istitle() :\n        if v[-1] == '.'or v[-1].isalpha():\n            x.append(v)\n    \nprint(x)\n\n",
+    "Pseudocode": "get a  \ninitialize x to empty list  \ngo through each v in a  \n    if v is title case  \n        if v at last index is . or v at last index is alphabetic  \n            add v to x  \ndisplay x"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "3/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:57:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: T6vrzA3F\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntext=input().strip().split()\nlist2=[]\n\nfor i in text:\n    if i.islower():\n        continue\n    elif i.isupper():\n        continue\n    elif i[0].isdecimal():\n        continue\n    else:\n        list2.append(i)\n\nprint(list2)\n",
+    "Pseudocode": "get text  \ntext = trim whitespace from text  \ntext = split text by whitespace  \ninitialize list2 to empty list  \n\ngo through each i in text  \n    if i is lowercase then  \n        continue  \n    otherwise if i is uppercase then  \n        continue  \n    otherwise if first character of i is numeric then  \n        continue  \n    otherwise  \n        add i to list2  \n\ndisplay list2"
+  },
+  {
+    "User ID": "6887098",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:58:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887098\nPASSWORD: P9gska6Y\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntxt = input().strip().split()\noutput = []\n\nfor text in txt:\n    if text.isalpha() and text[0].isupper() and text[1:].islower() or text[0].isupper() and text[1:].islower() and text[-1]=='.':\n        output.append(text)\n\nprint(output)\n\n\n\n\n\n\n",
+    "Pseudocode": "get txt  \ntxt = trim whitespace from txt  \ntxt = split txt by whitespace  \ninitialize output to empty list  \n\ngo through each text in txt  \n    if text is alphabetic and text at index 0 is uppercase and text from index 1 to end is lowercase or text at index 0 is uppercase and text from index 1 to end is lowercase and text at last index is .  \n        add text to output  \n\ndisplay output"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T08:49:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: UpRVZSRe\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ndict = {\n    \n}\n\n",
+    "Pseudocode": "initialize dict to empty dictionary"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "3/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: d5nt5aRW\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nimport string\n\ntxt=input().strip()\nword=txt.split()\ncount=[]\nfor w in word:\n    if w.isalpha():\n        for i in w:\n            if i[0].isupper():\n                count.append(w)\n                \n    if w.isalpha()==False:\n            if \".\" in w:\n                for i in w:\n                    if i[0].isupper():\n                        count.append(w)\n\n\nprint(count)\n\n",
+    "Pseudocode": "import string  \nget txt  \ntrim whitespace from txt  \nset word to split txt by whitespace  \ninitialize count to empty list  \ngo through each w in word  \n    if w is alphabetic  \n        go through each i in w  \n            if i at index 0 is uppercase  \n                add w to count  \n    if w is not alphabetic  \n        if . is in w  \n            go through each i in w  \n                if i at index 0 is uppercase  \n                    add w to count  \ndisplay count"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:58:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: UewPkgQb\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntxt = input().strip().split(' ')\n\n\nnew_txt = []\nfor i in txt:\n    if not len(i) == 0:\n        new_txt.append(i)\n\nnew_txt2 = []\nfor i in new_txt:\n    if i.isalpha() or i[-1] == '.':\n        new_txt2.append(i)\n\nnew_txt3 = []\nfor i in new_txt2:\n    a = i[0]\n    b = i [1:]\n\n    if a.isupper() and b.islower():\n        new_txt3.append(i)\n\nprint(new_txt3)\n    ",
+    "Pseudocode": "get txt  \ntxt = trim whitespace from txt and split txt by space  \n\ninitialize new_txt to empty list  \ngo through each i in txt  \n    if not length of i is equal to 0  \n        add i to new_txt  \n\ninitialize new_txt2 to empty list  \ngo through each i in new_txt  \n    if i is alphabetic or i at index -1 is equal to .  \n        add i to new_txt2  \n\ninitialize new_txt3 to empty list  \ngo through each i in new_txt2  \n    set a to i at index 0  \n    set b to substring of i from index 1 to end  \n\n    if a is uppercase and b is lowercase  \n        add i to new_txt3  \n\ndisplay new_txt3"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:51:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: h9Ps35sr\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nPass = True\nIn = input().strip().split()\nres = []\nfor word in In:\n    Pass = True\n    if word[0].isupper():\n        for char in word[1:]:\n            if char.isupper() or (not (char.isalpha() or char == '.')):\n                Pass = False \n        if Pass :\n            res.append(word)\nprint(res)\n        \n",
+    "Pseudocode": "initialize Pass to True  \nget In  \nset In to split and trim whitespace from In  \ninitialize res to empty list  \ngo through each word in In  \n    initialize Pass to True  \n    if first character of word is uppercase:  \n        go through each char in word from index 1 to end:  \n            if char is uppercase or char is not alphabetic and char is not .:  \n                set Pass to False  \n        if Pass:  \n            add word to res  \ndisplay res"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:12:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: 7gd9vSGc\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntext_input = input()\ncleaned_string = \"\"\nfor char in text_input:\n    if char.isalnum():\n        cleaned_string += char\nif len(cleaned_string)> 1:\n    print(cleaned_string)\nelse:\n    print('')\n",
+    "Pseudocode": "get text_input\ninitialize cleaned_string to empty string\ngo through each char in text_input\n    if char is alphanumeric\n        cleaned_string = cleaned_string plus char\nif length of cleaned_string is greater than 1\n    display cleaned_string\notherwise\n    display empty string"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: 6E38vtvJ\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ns = input().split()\ntxt = ''\nlist =[]\n\nfor i in s :\n    if i[0].isupper() and i[1:].islower() :\n        if i.isalpha() or i[-1] == '.' :\n            x = txt + i\n            list.append(x)\nprint(list)\n",
+    "Pseudocode": "get s  \ninitialize txt to empty text  \ninitialize list to empty list  \n\ngo through each i in s  \n    if i at index 0 is uppercase and substring of i from index 1 to end is lowercase  \n        if i is alphabetic or i at last index is .  \n            x = txt plus i  \n            add x to list  \ndisplay list"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:57:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD: 8JFAFzaz\nEXERCISEID: itds120-cp4-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nwords=input()\nlist=[]\n",
+    "Pseudocode": "get words  \ninitialize list to empty list"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "0/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:19:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: Jcr5dBvh\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\neiei = input()\nidd = []\n\nfor i in eiei :\n    idd.append(i)\n    s= ''.join(idd).strip()\n    \n\nprint(s)\n    \n    #print(i, end='')\n\n\n\n'''\nstrip\ns.isalpha\n'''",
+    "Pseudocode": "get eiei\ninitialize idd to empty list\n\ngo through each i in eiei\n    add i to idd\n    set s to combine items in idd into text and trim whitespace from s\n\ndisplay s"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:29:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: ddSD8TVM\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\na=[]\ns = input()\ns = s.strip().split()\nfor i in s:\n    if i[0].isupper()==True and i[1:].islower()==True and (i[1:].isalpha()==True or i[-1]=='.'):\n        a.append(i)\nprint(a)",
+    "Pseudocode": "initialize a to empty list\nget s\nset s to trim whitespace from s and split s by whitespace\ngo through each i in s\n    if i at index 0 is uppercase and i from index 1 to end is lowercase and (i from index 1 to end is alphabetic or i at last index is .)\n        add i to a\ndisplay a"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:00:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: Q6pAsqj6\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ns = input()\n\nword = s.strip().split(' ')\n\nresult = []\n\nfor w in word :\n    if w.isalpha() :\n        if w[0].isupper() and w[1:].islower() :\n            result.append(w)\n\n    if  w[1:].islower() and w[-1] == \".\" :\n        result.append(w)\n\nfor c in result :\n    if not c[0].isupper() :\n        result.remove(c)\n\n\n\nprint(result)\n\n",
+    "Pseudocode": "get s  \nword = s.strip().split by space  \ninitialize result to empty list  \n\ngo through each w in word  \n    if w is alphabetic :  \n        if w at index 0 is uppercase and w from index 1 to end is lowercase :  \n            add w to result  \n\n    if w from index 1 to end is lowercase and w at last index is . :  \n        add w to result  \n\ngo through each c in result  \n    if c at index 0 is not uppercase :  \n        remove c from result  \n\ndisplay result"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "3/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:51:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887111\nPASSWORD: pZghGcsX\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\nsen = input().strip().split()\nlist_up = []\n\nfor i in sen :\n    if i[2:7].isdecimal():\n        sen.remove(i)\n\nfor i in sen :\n    if i[0].isupper() and i[-1].isalpha()  or i[-1] == '.': \n        list_up.append(i)\n    else :\n        continue\nprint(list_up)\n\n\n",
+    "Pseudocode": "get sen  \nsen = sen stripped of whitespace and split  \ninitialize list_up to empty list  \n\ngo through each i in sen  \n    if substring of i from index 2 to 7 is numeric:  \n        remove i from sen  \n\ngo through each i in sen  \n    if i at index 0 is uppercase and i at last index is alphabetic or i at last index is .:  \n        add i to list_up  \n    otherwise:  \n        continue  \n\ndisplay list_up"
+  },
+  {
+    "User ID": "6887112",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "5/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887112\nPASSWORD: RJGJ8ycs\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ns = input().split()\nnewtxt = []\nnum ='0123456789'\np = ',!?'\nfor i in s :\n    if i[0].isupper() and i[1:].islower() and i[1:] and i[-1] not in p and i not in num  :\n        if i not in newtxt :\n            newtxt.append(i)\n# for j in newtxt :\n#     for n in num :\n#         if j == n :\n#             newtxt.remove(j)\nprint(newtxt)\n",
+    "Pseudocode": "get s  \ninitialize newtxt to empty list  \ninitialize num to 0123456789  \ninitialize p to ,!?  \ngo through each i in s  \n    if i at index 0 is uppercase and i from index 1 to end is lowercase and i from index 1 to end is not empty and i at last index is not in p and i is not in num  \n        if i is not in newtxt  \n            add i to newtxt  \ndisplay newtxt"
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "3/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887113\nPASSWORD: V88aUbf9\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ngg = []\nword = input().strip().split(' ')\n\nfor i in word:\n    for j in i:\n        if j[0].isupper():\n            gg.append(i)\n\nfor i in gg:\n    if '?' in i or '!' in i:\n        gg.remove(i)\nprint(gg)",
+    "Pseudocode": "initialize gg to list containing no items  \nget word  \nset word to split word by space and trim whitespace  \ngo through each i in word  \n    go through each j in i  \n        if j at index 0 is uppercase  \n            add i to gg  \ngo through each i in gg  \n    if ? is in i or ! is in i  \n        remove i from gg  \ndisplay gg"
+  },
+  {
+    "User ID": "6887114",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:26:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887114\nPASSWORD: BHdV9svj\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n#input value\ntext = input().split(' ')\n#print(text)\n#filtered alphabete and last char is '.'\nalpha = list(filter(lambda x:x.isalpha() or ('.' in x),text))\n#print(alpha)\n#filtered capital letter and all lower other\ncapital = list(filter(lambda x:x[0].isupper() and x[1:].islower(),alpha))\n#print(capital)\nresult = list(filter(lambda  x:x[-1] == '.' and x not in x,capital))\nprint(capital+result)\n",
+    "Pseudocode": "get text  \nset text to split text by space  \nset alpha to list of x for each x in text where x is alphabetic or . is in x  \nset capital to list of x for each x in alpha where x at index 0 is uppercase and substring of x from index 1 to end is lowercase  \nset result to list of x for each x in capital where x at index -1 is . and x is not in x  \ndisplay capital plus result"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "5/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: PASS, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T10:01:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: kgRHpBYe\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntext = input().strip().split(' ')\nAnslist1 = []\n\n# print(text) #Correct\nnum_list = '0123456789'\n\nfor i in text :\n    if (i.capitalize() and i.isalpha() or '.' in i) and not i.islower() and not i.isupper() :\n        Anslist1.append(i)\n\n        \nprint(Anslist1)\n\n",
+    "Pseudocode": "get text  \ninitialize Anslist1 to empty list  \ninitialize num_list to 0123456789  \n\ngo through each i in text  \n    if i capitalize and i is alphabetic or . is in i and i is not lowercase and i is not uppercase  \n        add i to Anslist1  \n\ndisplay Anslist1"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:58:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887116\nPASSWORD: mtS5EzaG\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n# list = []\n# x = input() .split()\n\n# print(x)\n\n# list = []\n# x = input() .split()\n# for i in x:\n#     list.append(i)\n#     if list.capitalize():      \n#         print(i)\n\nlist = []\nx = input() .split()\nprint(x)",
+    "Pseudocode": "initialize list to empty list  \nget x  \nsplit x by whitespace  \ndisplay x  \ninitialize list to empty list  \nget x  \nsplit x by whitespace  \ngo through each i in x  \nadd i to list  \nif list is capitalized  \ndisplay i"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "4/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:54:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: Pk834RQA\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntext = input().split()\ncap = []\nfor t in text:\n    if (t.isalpha() and t[0].isupper() and t[1:].islower()) or t[-1] == '.':\n        cap.append(t)\n    else:\n        continue\nprint(cap)\n",
+    "Pseudocode": "get text  \nset text to list of items in text split by whitespace  \ninitialize cap to empty list  \ngo through each t in text  \n    if t is alphabetic and first character of t is uppercase and substring of t from index 1 to end is lowercase or last character of t is .  \n        add t to cap  \n    otherwise  \n        skip to next iteration  \ndisplay cap"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T09:24:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887118\nPASSWORD: 75z92Ykv\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntext=input().split(' ')\nlisttitle=[]\nfor i in text:\n    if i.istitle() and i.isalpha():\n        listtitle.append(i)\n    elif i.istitle() and i.endswith('.'):\n        listtitle.append(i)\nprint(listtitle)",
+    "Pseudocode": "get text  \nset listtitle to empty list  \ngo through each i in text  \n    if i is title case and i is alphabetic then  \n        add i to listtitle  \n    otherwise if i is title case and i ends with . then  \n        add i to listtitle  \ndisplay listtitle"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-17T08:20:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: n2JuT6d2\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\ntext=input().split()\ntext2=[]\n# text2=list(filter(lambda n: n.isalpha(), text))\nfor x in text:\n    if (x[-1]=='.') and (x[:-1].isalpha()):\n        text2.append(x)\n    elif x.isalpha():\n        text2.append(x)\ntext3=[]\nfor x in text2:\n    if (x[0].isupper()) and (x[1:].islower()):\n        text3.append(x)\nprint(text3)",
+    "Pseudocode": "get text  \ninitialize text2 to empty list  \ngo through each x in text  \n    if x at last index is . and x from start to second last index is alphabetic  \n        add x to text2  \n    otherwise if x is alphabetic  \n        add x to text2  \ninitialize text3 to empty list  \ngo through each x in text2  \n    if x at index 0 is uppercase and x from index 1 to end is lowercase  \n        add x to text3  \ndisplay text3"
+  },
+  {
+    "User ID": "6887120",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "1/8 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL",
+    "Submission Time": "2025-11-17T09:38:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887120\nPASSWORD: rz3rhPHA\nEXERCISEID: itds120-cp4-q1\n */\n'''\n\n# YOUR CODE GOES HERE\n\nstring = input()\ncount_str = len(string)\nlis1 = []\ntotal = string.split(\" \")\nalpha = \"\"\n#print(total)\n\n#print(len(total[0]))\nc = ''\nfor i in total:\n    if i.isalpha():\n        c += i+\" \"\nc= c.split(\" \")      \n#print(c)\nc.remove('')\nd = \"\"\nfor i in c :\n    if i[0].isupper()and i[1].islower and i[-1].isalnum():\n        d+= i+\" \"\ne=d.split(\" \")\ne.remove('')\nprint(e)\n# for count in total:\n#     alpha += count\n#     c = 0\n#     for i in alpha:\n#         if i.isupper():\n#             c +=1\n#             print(f\"{i}:1{c}\")\n",
+    "Pseudocode": "get string\ninitialize count_str to length of string\ninitialize lis1 to empty list\ninitialize total to split string by space\ninitialize alpha to empty text\ninitialize c to empty text\ngo through each i in total\n    if i is alphabetic\n        set c to c plus i plus space\nset c to split c by space\nremove empty items from c\ninitialize d to empty text\ngo through each i in c\n    if first character of i is uppercase and second character of i is lowercase and last character of i is alphanumeric\n        set d to d plus i plus space\nset e to split d by space\nremove empty items from e\ndisplay e"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-cp4-q1",
+    "Test Results": "8/8 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS",
+    "Submission Time": "2025-11-14T03:18:53+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 999\r\nPASSWORD: 424242\r\nEXERCISEID: itds120-cp4-q1\r\n */\r\n'''\r\n\r\ndef is_capitalized(s):\r\n    # No symbols, no numbers\r\n    for i in range(len(s)):\r\n        c = s[i]\r\n        if not c.isalpha():\r\n            if not (i == len(s)-1 and c == '.'):\r\n                return False\r\n    if s.endswith('.'):\r\n        s = s[:-1]\r\n    # No uppercase except first letter\r\n    for c in s[1:]:\r\n        if not c.islower():\r\n            return False\r\n    return s[0].isupper()\r\n\r\n# instr = '  What 4,578.00 is ISssSs is it iT ItttT  12,3 the Cap14ital of 14 France That. -15 ?    '\r\ninstr = input()\r\ninstr = instr.strip()\r\nwords = list(filter(lambda s: len(s) > 0, instr.split()))\r\ncapitalizeds = list(filter(is_capitalized, words))\r\nprint(capitalizeds)",
+    "Pseudocode": "define function is_capitalized with parameter s\ngo through each i in range of length of s\n    set c to s at index i\n    if c is not alphabetic\n        if not (i is equal to length of s minus 1 and c is equal to .)\n            return False\n    if s ends with .\n        set s to substring of s from index 0 to length of s minus 1\n    go through each c in s from index 1 to end\n        if c is not lowercase\n            return False\n    return s at index 0 is uppercase\n\nget instr\nset instr to trim whitespace from instr\nset words to list of s for each s in result of splitting instr by whitespace where length of s is greater than 0\nset capitalizeds to list of items in words where is_capitalized of item is True\ndisplay capitalizeds"
+  }
+]

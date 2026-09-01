@@ -1,0 +1,1012 @@
+[
+  {
+    "User ID": "6887001",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:02:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887001\nPASSWORD: h9TrmHWN\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx = int(input())\nn = int(input())\n\nA = []\nfor i in range(x):\n    r = []\n    for j in range(n):\n        x1 = input()\n        A.append(x1)\n        r.append(A)\nprint(i)\n\n",
+    "Pseudocode": "get x  \nget n  \ninitialize A to empty list  \nrepeat x times using index i  \n    initialize r to empty list  \n    repeat n times using index j  \n        get x1  \n        add x1 to A  \n        add A to r  \nprint i"
+  },
+  {
+    "User ID": "6887002",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:51:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887002\nPASSWORD: F8P64sjH\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\nl=[]#score\nfor i in range(n):\n    void=[]\n    for j in range(4):\n        void.append(int(input()))\n    l.append(void)\n# print(l)\n\ne=[]\nfor k in range(4):\n    h=float(input())\n    e.append(h)\n# print(e)\n\npasss=float(input())\nlast=[]\nrow=0\nfor i in range(n):\n    total=0\n    for j in range(4):\n        # print(l[i][j],\"*\",e[j],l[i][j]*e[j])\n        total=total+(l[i][j]*e[j])\n    #     print(l[i][j],\"*\",e[j])\n    # print(i,total,passs)\n    if total>=passs:\n        last.append(i+1)\n        row=row+1\n    # row=row+1\n    # if total>=passs:\n    #     last.append(row)\n    #     print(\"pass\")\n    # total=0\n            \n        \n#         # print(l[i][j],\"*\",e[j],l[i][j]*e[j])\n#         # print(total)\nif row!=0:\n    print(last)\nelse:\n    print(\"NO ACCEPTABLE APPLICANT\")",
+    "Pseudocode": "get n\ninitialize l to empty list\nrepeat n times using index i\n    initialize void to empty list\n    repeat 4 times using index j\n        get input and convert to integer\n        add input to void\n    add void to l\n\ninitialize e to empty list\nrepeat 4 times using index k\n    get input and convert to float\n    add input to e\n\nget passs and convert to float\ninitialize last to empty list\ninitialize row to 0\nrepeat n times using index i\n    initialize total to 0\n    repeat 4 times using index j\n        total = total plus (l[i][j] times e[j])\n    if total is greater than or equal to passs\n        add i plus 1 to last\n        row = row plus 1\n\nif row is not equal to 0\n    display last\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:49:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: KSv7B5BK\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nsum = []\nsum1 = 0\nfor i in range(n):\n    m = int(input())\nsum.append(m)\n\n# for i in range(n):\n#     s = int(input())\n# sum.append(s)\n\n# for i in range(n):\n#     n = int(input())\n# sum.append(n)\n\n# for i in range(n):\n#     o = int(input())\n# sum.append(o)\nfor i in range(4):\n    ma = float(input())\n    sc = float(input())\n    en = float(input())\n    vv = float(input())\ntotal = int(input())\n\nfor i in range(len(sum)):\n    if sum[i] < total:\n        sum.remove(sum[i])\n        break\nprint(sum)\n\n    \n\n",
+    "Pseudocode": "get n\ninitialize sum to empty list\ninitialize sum1 to 0\nrepeat n times using index i\n    get m\n    add m to sum\n\nrepeat 4 times using index i\n    get ma\n    get sc\n    get en\n    get vv\nget total\n\nrepeat for each i in length of sum\n    if sum[i] is less than total\n        remove sum[i] from sum\n        exit loop\ndisplay sum"
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:59:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887004\nPASSWORD: AfWmZBKG\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist1=[]\n\n\n\nfor i in range(4):\n    math =(int(input())*0.4)\n    sci =(int(input())*0.3)\n    eng =(int(input())*0.2)\n    pk =(int(input())*0.1)\nprint()\n    \n",
+    "Pseudocode": "initialize list1 to empty list\n\nrepeat 4 times using index i\n    get math_input\n    initialize math to math_input converted to integer times 0.4\n    get sci_input\n    initialize sci to sci_input converted to integer times 0.3\n    get eng_input\n    initialize eng to eng_input converted to integer times 0.2\n    get pk_input\n    initialize pk to pk_input converted to integer times 0.1\nprint empty line"
+  },
+  {
+    "User ID": "6887006",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T08:32:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887006\nPASSWORD: qNCguHKZ\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nst_num = int(input())\n\nst_row = []\nfor i in st_row :\n    st_row.append(st_num)\n    print([st_num])\n    \n        \n        \n",
+    "Pseudocode": "get st_num  \ninitialize st_row to empty list  \ngo through each i in st_row  \nadd st_num to st_row  \ndisplay [st_num]"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:03:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: V1YYWwq7\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nscore = []\nw = []\npas = []\n\nn = int(input())\nfor i in range(n):\n    temp = []\n    for j in range(4):\n        s = int(input())\n        temp.append(s)\n    score.append(temp)\n\nfor i in range(4):\n    temp = float(input())\n    w.append(temp)\nspas = int(input())\n\nfor i in range(len(score)):\n    sum = 0\n    for j in range(4):\n        sum += score[i][j] * w[j]\n    if (sum >= spas):\n        pas.append(i+1)\n\nif (pas != []):\n    print(pas)\nelse:\n    print(\"NO ACCEPTABLE APPLICANT\")",
+    "Pseudocode": "initialize score to empty list\ninitialize w to empty list\ninitialize pas to empty list\n\nget n\nrepeat n times using index i\n    initialize temp to empty list\n    repeat 4 times using index j\n        get s\n        add s to temp\n    add temp to score\n\nrepeat 4 times using index i\n    get temp\n    add temp to w\nget spas\n\nrepeat for each i in length of score\n    initialize sum to 0\n    repeat 4 times using index j\n        sum = sum plus score[i][j] times w[j]\n    if sum is greater than or equal to spas\n        add i plus 1 to pas\n\nif pas is not empty\n    display pas\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T08:46:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: MhAE3nFz\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\na=[]\nfor i in range(n):\n    b=[]\n    for j in range(4):\n        x= int(input())\n        b.append(x)\n    a.append(b)\nc=[0.4,0.3,0.2,0.1]\nfor i in a:\n    sum = 0\n    for j in c:\n        for k in range(n):\n            sum += j*k\n    print(sum)\n        \n\n",
+    "Pseudocode": "get n\ninitialize a to empty list\nrepeat n times using index i\n    initialize b to empty list\n    repeat 4 times using index j\n        get x\n        add x to b\n    add b to a\ninitialize c to list containing 0.4, 0.3, 0.2, 0.1\nrepeat for each i in a\n    initialize sum to 0\n    repeat for each j in c\n        repeat n times using index k\n            sum = sum plus j times k\n    display sum"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:51:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: w4rZw1GV\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\nfor i in range(n):\n    for j in range(1,5):\n        sc=int(input())\n",
+    "Pseudocode": "get n\nrepeat n times using index i\n    repeat 4 times using index j\n        get sc"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:04:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: wJv3SsDE\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\np = int(input())\nx = int(input())\n\n",
+    "Pseudocode": "get p  \nget x"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:28:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: FFJhBzJS\nEXERCISEID: itds120-cp2-q2\n#  */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input());\nLi = [];\n\nfor i in range(n):\n    row = [];\n    for j in range(n):\n        member = int(input());\n        row.append(member);\n    Li.append(row);\n\nfor i in range(n):\n    for j in range(n):\n        Li[i][j]*0.5\n\nprint(Li)\n\n",
+    "Pseudocode": "get n\ninitialize Li to empty list\n\nrepeat n times using index i\n    initialize row to empty list\n    repeat n times using index j\n        get member\n        add member to row\n    add row to Li\n\nrepeat n times using index i\n    repeat n times using index j\n        Li[i][j] times 0.5\n\ndisplay Li"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:59:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: VfG93sQU\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\npeoeple =[]\na = int(input())\nm = int(input())\nv = int(input())\ne = int(input())\ns = int(input())\npeoeple.extend(a,m,v,e,s)\npeople.sort(reverse=True)\n\np_m = float(input())\np_v = float(input())\np_e = float(input())\np_s = float(input())\nw_m = float(input())\nw_v = float(input())\nw_e = float(input())\nw_s = float(input())\npass_m = m*w_m\npass_v = m*w_v\npass_e = m*w_e\npass_s = m*w_s\nfor i in range(1):\n    if int(m) =<pass_m or int(v)=<pass_v or int(e)=<pass_e or int(s)=<pass_s:\n        print('NO ACCEPTABLE APPLICANT')\n    for j in people:\n        if m >=pass_m or v>=pass_v or e>=pass_e or s>=pass_s:\n            print(people[1:4])\n    \n\n\n",
+    "Pseudocode": "initialize people to empty list\nget a\nget m\nget v\nget e\nget s\nadd a to people\nadd m to people\nadd v to people\nadd e to people\nadd s to people\nsort people in reverse order\n\nget p_m\nget p_v\nget p_e\nget p_s\nget w_m\nget w_v\nget w_e\nget w_s\npass_m = m times w_m\npass_v = m times w_v\npass_e = m times w_e\npass_s = m times w_s\nrepeat 1 time using index i\n    if int(m) is less than or equal to pass_m or int(v) is less than or equal to pass_v or int(e) is less than or equal to pass_e or int(s) is less than or equal to pass_s:\n        display NO ACCEPTABLE APPLICANT\n    go through each j in people\n        if m is greater than or equal to pass_m or v is greater than or equal to pass_v or e is greater than or equal to pass_e or s is greater than or equal to pass_s:\n            display substring of people from index 1 to 4"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T08:31:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: EkB8JgjC\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nnum = int(input())\n\nlist = []\n\nfor i in range(num):\n    scr = []\n    for j in range(4):\n        point = float(input())\n        scr.append(point)\n    list.append(scr)\n\na = float(input())\nb = float(input())\nc = float(input())\nd = float(input())\n\nscr_pass = float(input())\n\nlist_scr = []\nfor v in list:\n    sum = (v[0] * a) + (v[1] * b) + (v[2] * c) + (v[3] * d)\n    list_scr.append(sum)\n\nans = []\nfor i in range(num):\n    if list_scr[i] >= scr_pass:\n        ans.append(i+1) \n\nif len(ans) == 0 :\n    print('NO ACCEPTABLE APPLICANT')\nelse :\n    print(ans)\n    \n",
+    "Pseudocode": "get num\n\ninitialize list to empty\n\nrepeat num times using index i\n    initialize scr to empty\n    repeat 4 times using index j\n        get point\n        add point to scr\n    add scr to list\n\nget a\nget b\nget c\nget d\n\nget scr_pass\n\ninitialize list_scr to empty\ngo through each v in list\n    initialize sum to (v[0] times a) plus (v[1] times b) plus (v[2] times c) plus (v[3] times d)\n    add sum to list_scr\n\ninitialize ans to empty\nrepeat num times using index i\n    if list_scr[i] is greater than or equal to scr_pass\n        add i plus 1 to ans\n\nif length of ans is 0\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display ans"
+  },
+  {
+    "User ID": "6887014",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:04:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887014\nPASSWORD: jbyHfCww\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nlist = []\n\nfor i in range (n+1):\n    box = []\n    for j in range(4):\n        x = float(input())\n        box.append(x)\n    list.append(box)\np = input()\n\n\n\nfor i in list[0:4]:\n    sum = 0\n    for j in range (len(list[i])):\n        for k in range (len(list[j])):\n        m = list[i][j] * list[4][j]\n    sum +=m\n\nif sum >= p:#pass\n    print(list[i])\n\n\n\n",
+    "Pseudocode": "get n\ninitialize list to empty\n\nrepeat n plus 1 times using index i\n    initialize box to empty\n    repeat 4 times using index j\n        get x\n        add x to box\n    add box to list\n\nget p\n\ngo through each i in list from index 0 to 4\n    initialize sum to 0\n    repeat length of list[i] times using index j\n        repeat length of list[j] times using index k\n            m = list[i][j] times list[4][j]\n        sum += m\n\nif sum is greater than or equal to p\n    display list[i]"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:58:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: zbBt2222\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nsum = 0\nM = 0\nS = 0\nE = 0\nZ = 0\nN = []\np = int(input())\n\nfor i in range(1, p+1):\n    row = []\n    for j in range(4):\n        n = float(input())\n        row.append(n)\n    N.append(row)\nm = float(input())\ns = float(input())\ne = float(input())\nz = float(input())\n\nss = int(input())\ntotal = []\nfor a in range(1, 2):\n    # print(a)\n    # for b in range(a):\n    for c in N:\n        # for c2 in c:\n        M = c[0]*m\n        S = c[0]*s\n        E = c[0]*e\n        Z = c[0]*z\n        \n        # print(c[0])\n            # print(m)\n            # print(M)\n        print(sum)\n    sum += M+S+E+Z\n    total.append(sum)\nprint(total)\n# if (sum >= ss):\n#     print('pass')\n#     print(a)",
+    "Pseudocode": "initialize sum to 0  \ninitialize M to 0  \ninitialize S to 0  \ninitialize E to 0  \ninitialize Z to 0  \ninitialize N to empty list  \nget p  \nrepeat from i = 1 to p inclusive:  \n    initialize row to empty list  \n    repeat 4 times using index j:  \n        get n  \n        add n to row  \n    add row to N  \nget m  \nget s  \nget e  \nget z  \nget ss  \ninitialize total to empty list  \nrepeat 1 time using index a:  \n    repeat for each c in N:  \n        M = c[0] times m  \n        S = c[0] times s  \n        E = c[0] times e  \n        Z = c[0] times z  \n        display sum  \n    sum = sum plus M plus S plus E plus Z  \n    add sum to total  \ndisplay total"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T08:54:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887017\nPASSWORD: u1Xsn7Kf\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\na=[]\nnum=0\nnum1=0\nnum2=0\nnum3=0\nwhile True:\n    n=int(input( ))\n    if n ==-1:\n        a.append(n)\n        a.sort(n)\n        c=len(a)\n        for i in range(c):\n            print(a[i],end=' ')\n            if a[i][0]>num:\n                num=a[i][0]\n            if a[i][1]>num1:\n                num1>a[i][1]\n            if a[i][2]>num2:\n                num2>a[i][2]\n             if a[i][3]>num3:\n                num3>a[i][3]\n    else:\n        print('NO ACCEPTABLE APPLICANT')\n\n\n    print()\n#print(f'-'{num})\n#print(f'-'{num1})\n#print(f'-'{num2})\n#print(f'-'{num3})\n\n",
+    "Pseudocode": "initialize a to empty list\ninitialize num to 0\ninitialize num1 to 0\ninitialize num2 to 0\ninitialize num3 to 0\nrepeat forever:\n    get n\n    if n is -1:\n        add n to a\n        sort a\n        initialize c to length of a\n        go through each i from 0 to c minus 1:\n            display a[i] without newline\n            if a[i][0] is greater than num:\n                num = a[i][0]\n            if a[i][1] is greater than num1:\n                num1 = a[i][1]\n            if a[i][2] is greater than num2:\n                num2 = a[i][2]\n            if a[i][3] is greater than num3:\n                num3 = a[i][3]\n    otherwise:\n        display NO ACCEPTABLE APPLICANT\n    display newline"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:04:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887018\nPASSWORD:  VJ87KPUf\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\n\nA=[]#score\nB=[]# น้ำหนัก\nC=[]\n\nfor i in range(n):\n    a = []\n    for j in range(4):\n        a.append((int(input())))\n    A.append(a)\n    print()\n\nfor i in range(1):\n    b = []\n    for j in range(4):\n        b.append(float(input()))\n    B.append(b)\n    print()\n\nx = int(input())\n\nfor i in range(4):\n    c= []\n    for j in range(n):\n        sum = 0 \n        for k in range(1):\n            sum = A[i][k]*B[k][j] + sum\n        c.append(sum)\n    C.append(c)\n    print()\n\n\n\nprint(A)\nprint(B)\nprint(C)\n# for i in range(n):\n#     for j in range(4):\n\n    ",
+    "Pseudocode": "get n\ninitialize A to empty list\ninitialize B to empty list\ninitialize C to empty list\n\ngo through each i from 0 to n minus 1\n    initialize a to empty list\n    go through each j from 0 to 3\n        get input and convert to integer\n        add input to a\n    add a to A\n    display empty line\n\ngo through each i from 0 to 0\n    initialize b to empty list\n    go through each j from 0 to 3\n        get input and convert to float\n        add input to b\n    add b to B\n    display empty line\n\nget x\n\ngo through each i from 0 to 3\n    initialize c to empty list\n    go through each j from 0 to n minus 1\n        initialize sum to 0\n        go through each k from 0 to 0\n            sum = A[i][k] times B[k][j] plus sum\n        add sum to c\n    add c to C\n    display empty line\n\ndisplay A\ndisplay B\ndisplay C"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T08:35:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: tmSRzmWS\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\ncurrentList = []\nscoreList = []\nweightList = []\nfinalList = []\n\n\nfor i in range(n):\n    currentList = []\n    for j in range(4):\n        score = float(input())\n        currentList.append(score)\n    scoreList.append(currentList)\n\nfor i in range(4):\n    weight = float(input())\n    weightList.append(weight)\n\npassScore = float(input())\n\n#print(weightList)\n\nfor i in scoreList:\n    currentList = []\n    for j in range(4):\n        \n        finalScore = i[j] * weightList[j]\n        currentList.append(finalScore)\n\n    finalList.append(sum(currentList))\n\n\npassList = []\nuser = 1\nfor i in finalList:\n    if i >= passScore:\n        passList.append(user)\n    user += 1\n        \n\nif len(passList) > 0:\n    print(passList)\nelse:\n    print(\"NO ACCEPTABLE APPLICANT\")\n      \n\n\n",
+    "Pseudocode": "get n\ninitialize currentList to empty list\ninitialize scoreList to empty list\ninitialize weightList to empty list\ninitialize finalList to empty list\n\nrepeat n times using index i\n    initialize currentList to empty list\n    repeat 4 times using index j\n        get score\n        convert score to float\n        add score to currentList\n    add currentList to scoreList\n\nrepeat 4 times using index i\n    get weight\n    convert weight to float\n    add weight to weightList\n\nget passScore\nconvert passScore to float\n\ninitialize passList to empty list\ninitialize user to 1\ngo through each i in finalList\n    if i is greater than or equal to passScore\n        add user to passList\n    add 1 to user\n\nif length of passList is greater than 0\n    display passList\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T08:31:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: Unb9Sasf\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nscores = []\npoint = []\npassed = []\nfor _ in range(n):\n    m = []\n    for __ in range(4):\n        m.append(float(input()))\n    scores.append(m)\nfor i in range(4):\n    point.append(float(input()))\npass_point = int(input())\nfor i in range(n):\n    total = 0\n    for j in range(4):\n        total +=scores[i][j] * point[j] \n    if total >= pass_point:\n       passed.append(i+1)\n\nif len(passed) > 0:\n    print(passed)\nelse:\n    print(\"NO ACCEPTABLE APPLICANT\")\n\n",
+    "Pseudocode": "get n\ninitialize scores to empty list\ninitialize point to empty list\ninitialize passed to empty list\nrepeat n times\n    initialize m to empty list\n    repeat 4 times\n        get value\n        add value to m\n    add m to scores\nrepeat 4 times\n    get value\n    add value to point\nget pass_point\nrepeat n times\n    initialize total to 0\n    repeat 4 times\n        total = total plus scores[i][j] times point[j]\n    if total is greater than or equal to pass_point\n        add i plus 1 to passed\nif length of passed is greater than 0\n    display passed\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T08:29:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021\nPASSWORD: ka33bC4t\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n# 4\n\n# 90\n# 80\n# 70\n# 60\n\n# 50\n# 50\n# 50\n# 50\n\n# 100\n# 90\n# 95\n# 85\n\n# 40\n# 60\n# 20\n# 30\n\n# 0.4\n# 0.3\n# 0.2\n# 0.1\n# 75\n\nn = int(input())\nA=[]\nW=[]\n# Register Score\nfor i in range(n):\n    y=[]\n    for j in range(4):\n        y.append(int(input()))\n    A.append(y)\n\n\n# Weight Score\nfor i in range(4):\n    W.append(float(input()))\n\n# Grade\ngrade = int(input())\n\nresult=[0]*n\naccept=[]\n\nfor i in range(len(A)):\n    for j in range(len(W)):\n        result[i] += A[i][j] *W[j]\n\nfor i in range(len(result)):\n    if result[i] >= grade:\n        accept.append(i+1)\n\nif accept:\n    print(accept)\nelse:\n    print('NO ACCEPTABLE APPLICANT')\n",
+    "Pseudocode": "get n\ninitialize A to empty list\ninitialize W to empty list\n# Register Score\nrepeat n times using index i\n    initialize y to empty list\n    repeat 4 times using index j\n        get score\n        add score to y\n    add y to A\n\n# Weight Score\nrepeat 4 times using index i\n    get weight\n    add weight to W\n\n# Grade\nget grade\n\ninitialize result to list of zeros with length n\ninitialize accept to empty list\n\nrepeat length of A times using index i\n    repeat length of W times using index j\n        result[i] = result[i] plus A[i][j] times W[j]\n\nrepeat length of result times using index i\n    if result[i] is greater than or equal to grade\n        add i plus 1 to accept\n\nif accept is not empty\n    display accept\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:02:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: 3TzK6jQY\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nlist1 = []\nx = int(input())\nfor i in range(0,x*x):\n    q = int(input())\nfor j in range(0,4):\n    f = float(input())\np = float(input())\n\nfor i in range(0,x+1):\n    math = i*j\nprint(math)\n\n\n",
+    "Pseudocode": "initialize list1 to empty list\nget x\nrepeat x times using index i\n    get q\nrepeat 4 times using index j\n    get f\nget p\nrepeat x plus 1 times using index i\n    math = i times j\nprint math"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:03:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887023\nPASSWORD: D7HBb7Yv\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nx = int(input())\npoint = []\ncal = []\ncal1 = []\nb = []\nsum2 = 0\nfor i in range(x):\n    row = []\n    for h in range(4):\n        x1 = int(input())\n        row.append(x1)\n    point.append(row)\nprint(point)\n\nfor i in range(4):\n    x1 = float(input())\n    cal.append(x1)\ncal1.append(cal)\nprint(cal1)\n\nrowA = len(point)\nrowa = len(point[0])\n\nnice = int(input())\n\nfor i in range(rowA):\n    sum = float\n    sum = 0\n    y = 1\n    for h in range(rowa):\n        print(point[i][h],cal[h])\n        sum = sum + (point[i][h] * cal[h])\n        if sum >= nice :\n            b.append(y+i)\n        else :\n            print('NO ACCEPTABLE APPLICANT')\n    print(sum)\n    print(b)",
+    "Pseudocode": "get x\ninitialize point to empty list\ninitialize cal to empty list\ninitialize cal1 to empty list\ninitialize b to empty list\ninitialize sum2 to 0\nrepeat x times using index i\n    initialize row to empty list\n    repeat 4 times using index h\n        get x1\n        add x1 to row\n    add row to point\ndisplay point\n\nrepeat 4 times using index i\n    get x1\n    add x1 to cal\nadd cal to cal1\ndisplay cal1\n\ninitialize rowA to length of point\ninitialize rowa to length of point at index 0\n\nget nice\n\nrepeat rowA times using index i\n    initialize sum to float\n    initialize sum to 0\n    initialize y to 1\n    repeat rowa times using index h\n        display point at index i and h, cal at index h\n        sum = sum plus (point at index i and h times cal at index h)\n        if sum is greater than or equal to nice\n            add y plus i to b\n        otherwise\n            display NO ACCEPTABLE APPLICANT\n    display sum\n    display b"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "4/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:54:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: bMWVu7Fn\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nh = int(input())\n\n\nhr = []\nfor i in range(h):\n    hc = []\n    for j in range(4):\n        hc.append(int(input()))\n    hr.append(hc)\n\nw = []\nfor i in range(4):\n    w.append(float(input()))\n\n\nscorer = []\nc = 0\n\nfor i in range(len(hr)) :\n    scorerc = []\n    for j in range(4) :\n        if j == 0:\n            scorerc.append(hr[i][0]*w[0])\n        elif j == 1:\n            scorerc.append(hr[i][1]*w[1])\n        if j == 2:\n            scorerc.append(hr[i][2]*w[2])\n        if j == 3:\n            scorerc.append(hr[i][3]*w[3])\n    scorer.append(scorerc)\n\n# print(scorer)\n\nsum = []\n\nfor i in range(len(hr)):\n    sumc = 0\n    for j in range(4):\n        sumc += scorer[i][j]\n\n    sum.append(sumc)\n\n# print(sum)\n\ngo = []\norder = 1\nfor i in sum :\n    if i >= 75:\n        go.append(order)\n    order += 1\n\n\n\nem = []\n\nif go == em :\n    print('NO ACCEPTABLE APPLICANT')\nelse:\n    print(go)",
+    "Pseudocode": "get h\n\ninitialize hr to empty list\nrepeat h times using index i\n    initialize hc to empty list\n    repeat 4 times using index j\n        get input and convert to integer\n        add input to hc\n    add hc to hr\n\ninitialize w to empty list\nrepeat 4 times using index i\n    get input and convert to float\n    add input to w\n\ninitialize scorer to empty list\ninitialize c to 0\n\nrepeat length of hr times using index i\n    initialize scorerc to empty list\n    repeat 4 times using index j\n        if j is 0\n            add hr[i][0] times w[0] to scorerc\n        otherwise if j is 1\n            add hr[i][1] times w[1] to scorerc\n        if j is 2\n            add hr[i][2] times w[2] to scorerc\n        if j is 3\n            add hr[i][3] times w[3] to scorerc\n    add scorerc to scorer\n\ninitialize sum to empty list\n\nrepeat length of hr times using index i\n    initialize sumc to 0\n    repeat 4 times using index j\n        sumc = sumc plus scorer[i][j]\n    add sumc to sum\n\ninitialize go to empty list\ninitialize order to 1\nrepeat each i in sum\n    if i is greater than or equal to 75\n        add order to go\n    order = order plus 1\n\ninitialize em to empty list\n\nif go is em\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display go"
+  },
+  {
+    "User ID": "6887025",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:59:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887025\nPASSWORD: NaCWdWhs\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\npeople=int(input())\nscore=[]\ngrade=[]\nfor i in range(1,people+1):\n    collec=[]\n    for j in range(1,people+1):\n        x=int(input())\n        collec.append(x)\n    score.append(collec)\n\nfor i in range(1,people+1):\n    y=float(input())\n    grade.append(y)\n\ngood=float(input())\n\nprint(score)\n",
+    "Pseudocode": "get people\ninitialize score to empty list\ninitialize grade to empty list\nrepeat people times using index i\n    initialize collec to empty list\n    repeat people times using index j\n        get x\n        add x to collec\n    add collec to score\n\nrepeat people times using index i\n    get y\n    add y to grade\n\nget good\n\ndisplay score"
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T10:04:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887027\nPASSWORD: g7c82cAW\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx = int(input())\na = []\n\nfor i in range (x):\n    per = []\n\n    for j in range(4):\n        t = int(input())\n    \n        per.append(t)\n\n    a.append(per)\n\n\nratio = []\n\nfor i in range(4):\n    p = float(input())\n\n    ratio.append(p)\n\npasg = int(input())\n\npassing = []\n\nfor i in range (x):\n    s = 0\n    for j in range(4):\n\n        s += a[i][j] * ratio[j]\n\n    if s >= pasg:\n        \n        passing.append(i+1)\n\nif len(passing) == 0:\n    print('NO ACCEPTABLE APPLICANT')\n\nelse:\n    print(passing)\n\n\n\n\n\n\n",
+    "Pseudocode": "get x as integer\ninitialize a to empty list\n\nrepeat x times using index i\n    initialize per to empty list\n\n    repeat 4 times using index j\n        get t as integer\n        \n        add t to per\n\n    add per to a\n\ninitialize ratio to empty list\n\nrepeat 4 times using index i\n    get p as float\n\n    add p to ratio\n\nget pasg as integer\n\ninitialize passing to empty list\n\nrepeat x times using index i\n    initialize s to 0\n    repeat 4 times using index j\n        s = s plus a[i][j] times ratio[j]\n\n    if s is greater than or equal to pasg\n        add i plus 1 to passing\n\nif length of passing is 0\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display passing"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:04:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: Ute8z4Ea\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nS = []\nn = int(input())\n\nfor i in range(n):\n   score = input().split()\n   score = [int(x) for x in score]\n   S.append(score)\n\nN = []\ncount = 0\nfor i, std in enumerate(S,start=1):\n    t = sum(std)\n    if t >= 75:\n        count += 1\n    N.append(count)\nN.sort()\nprint(N)",
+    "Pseudocode": "initialize S to empty list\nget n\nrepeat n times using index i\n   get score\n   split score by whitespace\n   convert each x in score to integer\n   add score to S\ninitialize N to empty list\ninitialize count to 0\ngo through each std in S with index i starting at 1\n   t = sum of std\n   if t is greater than or equal to 75\n      count = count plus 1\n   add count to N\nsort N\ndisplay N"
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:58:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD: GVw8fHEb\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\nn = int(input())\nscore_each = []\nfor i in range(n) :\n    a = [int(input()) for __ in range(4)]\n    score_each.append(a)\n\nweight = [float(input()) for __ in range(4)]\npass_score = int(input())\n\npass_per = []\nfor i in range(n) :\n    result = 0\n    for j in range(4) :\n        result += score_each[i][j] * weight[j] \n    if result >= pass_score :\n        pass_per.append(i+1)\n\nif pass_per == [] :\n    print('NO ACCEPTABLE APPLICANT')\nelse :\n    print(pass_per)\n\n\n\n\n\n",
+    "Pseudocode": "get n\ninitialize score_each to empty list\nrepeat n times using index i\n    a = list of 4 values from input converted to integer\n    add a to score_each\nweight = list of 4 values from input converted to float\nget pass_score\ninitialize pass_per to empty list\nrepeat n times using index i\n    initialize result to 0\n    repeat 4 times using index j\n        result = result plus score_each[i][j] times weight[j]\n    if result is greater than or equal to pass_score\n        add i plus 1 to pass_per\nif pass_per is empty\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display pass_per"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:51:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: vYb8MWXy\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nruam = []\nfor i in range(n) :\n    score = []\n    for j in range(4) :\n        x = int(input())\n        score.append(x)\n    ruam.append(score)\n\nn1 = float(input())\nn2 = float(input())\nn3 = float(input())\nn4 = float(input())\n\ngen = int(input())\n\npon = []\nfor a in range(n) :\n    math = ruam[a][0] * n1\n    sci = ruam[a][1] * n2\n    eng = ruam[a][2] * n3\n    so = ruam[a][3] * n4\n    total = math + sci + eng + so\n    pon.append(total)\n\n\n\nsarub = []\nfor i in range(len(pon)) :\n    if pon[i] >= gen :\n        sarub.append(i+1)\n    else :\n        continue\n\nif len(sarub) == 0 :\n    print('NO ACCEPTABLE APPLICANT')\nelse :\n    print(sarub)",
+    "Pseudocode": "get n\ninitialize ruam to empty list\nrepeat n times using index i\n    initialize score to empty list\n    repeat 4 times using index j\n        get x\n        add x to score\n    add score to ruam\n\nget n1\nget n2\nget n3\nget n4\n\nget gen\n\ninitialize pon to empty list\nrepeat n times using index a\n    math = ruam[a][0] times n1\n    sci = ruam[a][1] times n2\n    eng = ruam[a][2] times n3\n    so = ruam[a][3] times n4\n    total = math plus sci plus eng plus so\n    add total to pon\n\ninitialize sarub to empty list\nrepeat length of pon times using index i\n    if pon[i] is greater than or equal to gen\n        add i plus 1 to sarub\n    otherwise\n        skip to next iteration\n\nif length of sarub is equal to 0\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display sarub"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "3/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:04:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: vEwcFd6K\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\npt=int(input())\nptpoint=[]\nfor i in range(pt):\n    point=[]\n    for j in range(4):\n        point.append(int(input()))\n    ptpoint.append(point)\n\nmses=[]\nfor i in range(4):\n    mses.append(float(input()))\n\npasspoint=float(input())\n\navgpoint=[]\nfor i in range(len(ptpoint)):\n    ttp=0\n    for j in range(len(ptpoint)):\n        ttp+=ptpoint[i][j]*mses[j]\n    avgpoint.append(ttp)\npp_pass=[]\nfor i in range(len(avgpoint)):\n    if avgpoint[i]>=passpoint:\n        pp_pass.append(i+1)\npppass=True\nif len(pp_pass)==0:\n    pppass=False\n\nif pppass:\n    print(pp_pass)\nelse:\n    print(\"NO ACCEPTABLE APPLICANT\")\n",
+    "Pseudocode": "get pt\ninitialize ptpoint to empty list\nrepeat pt times using index i\n    initialize point to empty list\n    repeat 4 times using index j\n        get input and add to point\n    add point to ptpoint\n\ninitialize mses to empty list\nrepeat 4 times using index i\n    get input and add to mses\n\nget passpoint\ninitialize avgpoint to empty list\nrepeat length of ptpoint times using index i\n    initialize ttp to 0\n    repeat length of ptpoint times using index j\n        ttp = ttp plus ptpoint[i][j] times mses[j]\n    add ttp to avgpoint\n\ninitialize pp_pass to empty list\nrepeat length of avgpoint times using index i\n    if avgpoint[i] is greater than or equal to passpoint\n        add i plus 1 to pp_pass\n\ninitialize pppass to True\nif length of pp_pass is equal to 0\n    pppass = False\n\nif pppass\n    display pp_pass\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:07:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: 7bGdWztq\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\n\nfor i in range(1,n+1):\n    for j in range(4)\n\n\n\n\n\n\n",
+    "Pseudocode": "get n\nrepeat n times using index i\n    repeat 4 times using index j"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:03:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: ECTqm4Mp\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\n\nstd = []\nfor _ in range(n):\n    row = []\n    for j in range(4):\n        score = int(input())\n        row.append(score)\n    std.append(row)\n\nweight = []\nfor _ in range(4):\n    num = float(input())\n    weight.append(num)\n\nsum_score = []\n\nfor i in range(n):\n    row = []\n    for j in range(4):\n        sum = 0\n        for k in range(4):\n            sum += std[i][k] * weight[k]\n        row.append(sum)\n    sum_score.append(row)\nprint(sum_score)\n\n# score_pass = int(input())\n\n# pass\n# row_num = 1\n\n# for row in std:\n#     sum = 0\n#     for value in row:\n#         sum += value\n\n# 4 6 6 4\n",
+    "Pseudocode": "get n\n\ninitialize std to empty list\nrepeat n times\n    initialize row to empty list\n    repeat 4 times\n        get score\n        add score to row\n    add row to std\n\ninitialize weight to empty list\nrepeat 4 times\n    get num\n    add num to weight\n\ninitialize sum_score to empty list\n\nrepeat n times\n    initialize row to empty list\n    repeat 4 times\n        initialize sum to 0\n        repeat 4 times\n            sum = sum plus std[i][k] times weight[k]\n        add sum to row\n    add row to sum_score\ndisplay sum_score"
+  },
+  {
+    "User ID": "6887034",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:53:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887034\nPASSWORD: Uj6Gg26Y\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nwhile True:\n    n = int(input())\n    if n >= 1:\n        break\n\nregone = []\nfor i in range(n):\n    row = list(map(int,input().split()))\n    regone.append(row)\n\nprint(regone)",
+    "Pseudocode": "repeat while True\n    get n\n    convert n to integer\n    if n is greater than or equal to 1\n        exit loop\n\ninitialize regone to empty list\ngo through each i in range n\n    get row\n    split row by whitespace\n    convert each item in row to integer\n    add row to regone\n\ndisplay regone"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:05:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: 6cRyKwZU\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\nA =  []\nB = []\nC = []\nn = int(input())\nsum = 0\ns = 0\n\nfor __ in range(n) :\n    a = []\n    for __ in range(4) :\n        x = int(input())\n        a.append(x)\n    A.append(a)\nfor __ in range(4) :\n    y = input()\n    C.append(y)\n\nfor i in A :\n    for j in A :\n        for k in A :\n            sum += A[j][k]*C[j][k]\n            s += sum\n            b.append(s)\n    B.append(b)\n\nre = []\nfor i in B :\n    if i >= 75 :\n        re.append(i)\nprint(re)",
+    "Pseudocode": "initialize A to empty list  \ninitialize B to empty list  \ninitialize C to empty list  \nget n  \ninitialize sum to 0  \ninitialize s to 0  \n\nrepeat n times using index __  \n    initialize a to empty list  \n    repeat 4 times using index __  \n        get x  \n        add x to a  \n    add a to A  \nrepeat 4 times using index __  \n    get y  \n    add y to C  \n\ninitialize b to empty list  \nrepeat for each i in A  \n    repeat for each j in A  \n        repeat for each k in A  \n            sum = sum plus A[j][k] times C[j][k]  \n            s = s plus sum  \n            add s to b  \n    add b to B  \n\ninitialize re to empty list  \nrepeat for each i in B  \n    if i is greater than or equal to 75  \n        add i to re  \ndisplay re"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:05:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: HEqzwF44\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\np_lit = []\n\nmm_list = []\nss_list = []\nee_list = []\nhh_list = []\n\nfor i in range(n):\n    m = input()\n    mm_list.append(m)\n    # m = m*0.4\n    s = input()\n    ss_list.append(s)\n    # s = s * 0.3\n    e = input()\n    ee_list.append(e)\n    # e = e * 0.2\n    h = input()\n    hh_list.append(h)\n    # h = h * 0.1\n\nf = m + s + e + h\n\n# for i in range(n):\n#     if f < 50:\n#         print('ไม่ผ่าน')\n#     else:\n#         print('ผ่าน')",
+    "Pseudocode": "get n\ninitialize p_lit to empty list\n\ninitialize mm_list to empty list\ninitialize ss_list to empty list\ninitialize ee_list to empty list\ninitialize hh_list to empty list\n\nrepeat n times using index i\n    get m\n    add m to mm_list\n    get s\n    add s to ss_list\n    get e\n    add e to ee_list\n    get h\n    add h to hh_list\n\nf = m plus s plus e plus h\n\n# repeat n times using index i\n#     if f is less than 50\n#         display ไม่ผ่าน\n#     otherwise\n#         display ผ่าน"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:04:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: UKaRVZsY\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\ncount = 0\nx = int(input())\nfor i in range(x):\n    B = []\n    for j in range(4):\n        a = int(input())\n        B.append(a)\n    A.append(B)    \nprint(A)\n",
+    "Pseudocode": "initialize A to empty list\ninitialize count to 0\nget x\nrepeat x times using index i\n    initialize B to empty list\n    repeat 4 times using index j\n        get a\n        add a to B\n    add B to A\ndisplay A"
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:07:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: N32dkX91\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nsUm = []\npoint = []\nrate = []\nA = []\n\nn = int(input())\n\nfor i in range(n): # people's count\n    for __ in range(4):\n        p = int(input())\n        point.append(p) #point\nfor __ in range (4):\n    r = float(input())\n    rate.append(r) #float\npAss = int(input()) #pass point\n\nfor __ in range(n):\n    sum = 0\n    for j in range(4):\n        sum += point[j]*rate[j]\n    sUm.append(sum)\n\n# print(sUm)\n# for i in range(len(sUm)):\n\n\nif len(A)==0:\n    print('NO ACCEPTABLE APPLICANT')\nelse:\n    print(A)",
+    "Pseudocode": "initialize sUm to empty list\ninitialize point to empty list\ninitialize rate to empty list\ninitialize A to empty list\n\nget n\n\nrepeat n times using index i\n    repeat 4 times\n        get p\n        add p to point\nrepeat 4 times\n    get r\n    add r to rate\nget pAss\n\nrepeat n times\n    initialize sum to 0\n    repeat 4 times using index j\n        sum = sum plus point[j] times rate[j]\n    add sum to sUm\n\nif length of A is 0\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display A"
+  },
+  {
+    "User ID": "6887041",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "2/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:04:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887041\nPASSWORD: r6awaW4A\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\np1 = []\np2 = []\np3 = []\np4 = []\n\nn = int(input())\ncount = 1\nfor i in range(n):\n    if count == 1 :\n        math = int(input())\n        p1.append(math)\n        sci = int(input())\n        p1.append(sci)\n        eng = int(input())\n        p1.append(eng)\n        soc = int(input())\n        p1.append(soc)\n        count += 1\n\n    elif count == 2 :\n        math = int(input())\n        p2.append(math)\n        sci = int(input())\n        p2.append(sci)\n        eng = int(input())\n        p2.append(eng)\n        soc = int(input())\n        p2.append(soc)\n        count += 1\n\n    elif count == 3 :\n        math = int(input())\n        p3.append(math)\n        sci = int(input())\n        p3.append(sci)\n        eng = int(input())\n        p3.append(eng)\n        soc = int(input())\n        p3.append(soc)\n        count += 1\n\n    elif count == 4 :\n        math = int(input())\n        p4.append(math)\n        sci = int(input())\n        p4.append(sci)\n        eng = int(input())\n        p4.append(eng)\n        soc = int(input())\n        p4.append(soc)\n        count += 1\n\n# print(p1)\n# print(p2)\n# print(p3)\n# print(p4)\n\nsmath = float(input())\nssci = float(input())\nseng = float(input())\nssoc = float(input())\ntem100 = int(input())\n\nnewp1 = []\nnewp2 = []\nnewp3 = []\nnewp4 = []\n\ncount = 1\nfor j in range(n):\n    if count == 1 :\n        math = p1[0] * smath\n        newp1.append(math)\n        sci = p1[1] * ssci\n        newp1.append(sci)\n        eng = p1[2] * seng\n        newp1.append(math)\n        soc = p1[3] * ssoc\n        newp1.append(soc)\n        count += 1\n\n    elif count == 2 :\n        math = p2[0] * smath\n        newp2.append(math)\n        sci = p2[1] * ssci\n        newp2.append(sci)\n        eng = p2[2] * seng\n        newp2.append(math)\n        soc = p2[3] * ssoc\n        newp2.append(soc)\n        count += 1\n\n    elif count == 3 :\n        math = p3[0] * smath\n        newp3.append(math)\n        sci = p3[1] * ssci\n        newp3.append(sci)\n        eng = p3[2] * seng\n        newp3.append(math)\n        soc = p3[3] * ssoc\n        newp3.append(soc)\n        count += 1\n\n    elif count == 4 :\n        math = p4[0] * smath\n        newp4.append(math)\n        sci = p4[1] * ssci\n        newp4.append(sci)\n        eng = p4[2] * seng\n        newp4.append(math)\n        soc = p4[3] * ssoc\n        newp4.append(soc)\n        count += 1\n\n# print(newp1)\n# print(newp2)\n# print(newp3)\n# print(newp4)\n\nresult = []\n\ncount = 1\nfor k in range(n):\n    if count == 1 :\n        end1 = sum(newp1) - tem100\n        if end1 > 0 :\n            result.append(1)\n        else :\n            continue\n        count += 1\n\n    elif count == 2 :\n        end2 = sum(newp2) - tem100\n        if end2 > 0 :\n            result.append(2)\n        else :\n            continue\n        count += 1\n\n    elif count == 3 :\n        end3 = sum(newp3) - tem100\n        if end3 > 0 :\n            result.append(3)\n        else :\n            continue\n        count += 1\n\n    elif count == 4 :\n        end4 = sum(newp4) - tem100\n        if end4 > 0 :\n            result.append(4)\n        else :\n            continue\n        count += 1\n\nif len(result) != 0 :\n    print(result)\nelse :\n    print('NO ACCEPTABLE APPLICANT')\n\n\n\n# scores = []\n\n# n = int(input())\n\n# for student in range(n):\n#     pmath = int(input())\n#     psci = int(input())\n#     peng = int(input())\n#     psoc = int(input())\n#     scores.append([pmath, psci, peng, psoc])\n\n# # print(scores)\n\n# smath = float(input())\n# ssci = float(input())\n# seng = float(input())\n# ssoc = float(input())\n# tem100 = int(input())\n\n# p1 = []\n# p2 = []\n# p3 = []\n# p4 = []\n\n# people = 1\n\n# for i in range(n):\n#     if people == n :\n#         break\n#     #1st person\n#     elif people == 1 :\n#         for p1 in scores :\n#             p1math = scores[0][0] * smath\n#             p1.append(p1math)\n#             p1sci = scores[1][0] * ssci\n#             p1.append(p1sci)\n#             p1eng = scores[2][0] * seng\n#             p1.append(p1eng)\n#             p1soc = scores[3][0] * ssoc\n#             p1.append(p1soc)\n#             people += 1\n#     #2nd person\n#     elif people == 2 :\n#         for p2 in scores :\n#             p2math = scores[0][1] * smath\n#             p2.append(p2math)\n#             p2sci = scores[1][1] * ssci\n#             p2.append(p2sci)\n#             p2eng = scores[2][1] * seng\n#             p2.append(p2eng)\n#             p2soc = scores[3][1] * ssoc\n#             p2.append(p2soc)\n#             people += 1\n#     #3rd person\n#     elif people == 3 :\n#         for p3 in scores :\n#             p3math = scores[0][2] * smath\n#             p3.append(p3math)\n#             p3sci = scores[1][2] * ssci\n#             p3.append(p3sci)\n#             p3eng = scores[2][2] * seng\n#             p3.append(p3eng)\n#             p3soc = scores[3][2] * ssoc\n#             p3.append(p3soc)\n#             people += 1\n#     #4th person\n#     elif people == 4 :\n#         for p4 in scores :\n#             p4math = scores[0][3] * smath\n#             p4.append(p4math)\n#             p4sci = scores[1][3] * ssci\n#             p4.append(p4sci)\n#             p4eng = scores[2][3] * seng\n#             p4.append(p4eng)\n#             p4soc = scores[3][3] * ssoc\n#             p4.append(p4soc)\n#             people += 1\n# print(p1)\n# print(p2)\n# print(p3)\n# print(p4)",
+    "Pseudocode": "initialize p1 to empty list\ninitialize p2 to empty list\ninitialize p3 to empty list\ninitialize p4 to empty list\n\nget n\ninitialize count to 1\nrepeat n times using index i\n    if count is 1\n        get math\n        add math to p1\n        get sci\n        add sci to p1\n        get eng\n        add eng to p1\n        get soc\n        add soc to p1\n        count += 1\n\n    otherwise if count is 2\n        get math\n        add math to p2\n        get sci\n        add sci to p2\n        get eng\n        add eng to p2\n        get soc\n        add soc to p2\n        count += 1\n\n    otherwise if count is 3\n        get math\n        add math to p3\n        get sci\n        add sci to p3\n        get eng\n        add eng to p3\n        get soc\n        add soc to p3\n        count += 1\n\n    otherwise if count is 4\n        get math\n        add math to p4\n        get sci\n        add sci to p4\n        get eng\n        add eng to p4\n        get soc\n        add soc to p4\n        count += 1\n\nget smath\nget ssci\nget seng\nget ssoc\nget tem100\n\ninitialize newp1 to empty list\ninitialize newp2 to empty list\ninitialize newp3 to empty list\ninitialize newp4 to empty list\n\ninitialize count to 1\nrepeat n times using index j\n    if count is 1\n        math = p1[0] times smath\n        add math to newp1\n        sci = p1[1] times ssci\n        add sci to newp1\n        eng = p1[2] times seng\n        add eng to newp1\n        soc = p1[3] times ssoc\n        add soc to newp1\n        count += 1\n\n    otherwise if count is 2\n        math = p2[0] times smath\n        add math to newp2\n        sci = p2[1] times ssci\n        add sci to newp2\n        eng = p2[2] times seng\n        add eng to newp2\n        soc = p2[3] times ssoc\n        add soc to newp2\n        count += 1\n\n    otherwise if count is 3\n        math = p3[0] times smath\n        add math to newp3\n        sci = p3[1] times ssci\n        add sci to newp3\n        eng = p3[2] times seng\n        add eng to newp3\n        soc = p3[3] times ssoc\n        add soc to newp3\n        count += 1\n\n    otherwise if count is 4\n        math = p4[0] times smath\n        add math to newp4\n        sci = p4[1] times ssci\n        add sci to newp4\n        eng = p4[2] times seng\n        add eng to newp4\n        soc = p4[3] times ssoc\n        add soc to newp4\n        count += 1\n\ninitialize result to empty list\n\ninitialize count to 1\nrepeat n times using index k\n    if count is 1\n        end1 = sum of newp1 minus tem100\n        if end1 > 0\n            add 1 to result\n        otherwise\n            continue\n        count += 1\n\n    otherwise if count is 2\n        end2 = sum of newp2 minus tem100\n        if end2 > 0\n            add 2 to result\n        otherwise\n            continue\n        count += 1\n\n    otherwise if count is 3\n        end3 = sum of newp3 minus tem100\n        if end3 > 0\n            add 3 to result\n        otherwise\n            continue\n        count += 1\n\n    otherwise if count is 4\n        end4 = sum of newp4 minus tem100\n        if end4 > 0\n            add 4 to result\n        otherwise\n            continue\n        count += 1\n\nif length of result is not 0\n    display result\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:51:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: vUN5FWVj\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nfinal = []\npassed = []\nscore = [[int(input()) for __ in range(4)] for __ in range(n)]\nweight = [float(input()) for __ in range(4)]\ncriteria = int(input())\n\nfor i in range(len(score)):\n    for j in range(len(score[i])):\n        score[i][j] = score[i][j]*weight[j]\n\nfor i in range(len(score)):\n    sco = 0\n    for j in range(len(score[i])):\n        sco += score[i][j]\n    final.append(sco)\n\nfor i in range(len(final)):\n    if final[i] >= criteria:\n        passed.append(i + 1)\n\nif passed == []:\n    print('NO ACCEPTABLE APPLICANT')\nelse:\n    print(passed)\n",
+    "Pseudocode": "get n\ninitialize final to empty list\ninitialize passed to empty list\ninitialize score to list of lists with n rows and 4 columns filled with integer inputs\ninitialize weight to list of 4 elements filled with float inputs\nget criteria\n\ngo through each i from 0 to length of score minus 1\n    go through each j from 0 to length of score[i] minus 1\n        score[i][j] = score[i][j] times weight[j]\n\ngo through each i from 0 to length of score minus 1\n    initialize sco to 0\n    go through each j from 0 to length of score[i] minus 1\n        sco = sco plus score[i][j]\n    add sco to final\n\ngo through each i from 0 to length of final minus 1\n    if final[i] is greater than or equal to criteria\n        add i plus 1 to passed\n\nif passed is empty\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display passed"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:04:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD: ZwDQjXFm\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nplayer = []\nfor i in range(1,n+1):\n    player.append(i)\na = []\nfor i in range(n):\n    row = []\n    for j in range(n):\n        k = int(input())\n        row.append(k)\n    a.append(row)\n\n\nsubject =[]\nfor i in range(4):\n    subject_1 = []\n    for j in range(1):\n        k = float(input())\n        subject_1.append(k)\n    subject.append(subject_1)\n\nfinalscore = float(input())\n\n\nsumall = []\nfor j in range (len(a)):\n    one = []\n    for i in range(len(a)):\n        one.append(a[i][j] * subject[i][0])\n\n    sumall.append(one)\n\nprint(player)\n\n\n\n",
+    "Pseudocode": "get n\ninitialize player to empty list\nrepeat n times using index i\n    add i to player\ninitialize a to empty list\nrepeat n times using index i\n    initialize row to empty list\n    repeat n times using index j\n        get k\n        add k to row\n    add row to a\n\ninitialize subject to empty list\nrepeat 4 times using index i\n    initialize subject_1 to empty list\n    repeat 1 time using index j\n        get k\n        add k to subject_1\n    add subject_1 to subject\n\nget finalscore\n\ninitialize sumall to empty list\nrepeat length of a times using index j\n    initialize one to empty list\n    repeat length of a times using index i\n        add a[i][j] times subject[i][0] to one\n    add one to sumall\n\ndisplay player"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:05:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: 3RBWDn6B\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nA=[]\nB=[]\nm=int(input())\nn=int(input())\nv=4\nfor i in range(m):\n    row=[]\n    for j in range(4):\n        point=int(input())\n        row.append(point)\n    A.append(row)\n\nfor i in range(v+1):\n    row=[]\n    for j in range(v+1):\n        w=float(input())\n        row.append(w)\n    B.append(row)\n\ng=int(input())\ntotal=0\nc=[]\nfor i in range(len(A)):\n    for i in range(len(B)):\n        total+=A[i]*B[i]\n    c.append(total)\n\nx=[]\nfor i in c:\n    if i>=g:\n    x.append(i)\n\n",
+    "Pseudocode": "initialize A to empty list\ninitialize B to empty list\nget m\nget n\ninitialize v to 4\nrepeat m times using index i\n    initialize row to empty list\n    repeat 4 times using index j\n        get point\n        add point to row\n    add row to A\n\nrepeat v plus 1 times using index i\n    initialize row to empty list\n    repeat v plus 1 times using index j\n        get w\n        add w to row\n    add row to B\n\nget g\ninitialize total to 0\ninitialize c to empty list\nrepeat length of A times using index i\n    repeat length of B times using index i\n        total plus equals A[i] times B[i]\n    add total to c\n\ninitialize x to empty list\nrepeat each i in c\n    if i is greater than or equal to g\n        add i to x"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:51:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: mHDyCep4\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nuser = int(input())\nstudent = []\n",
+    "Pseudocode": "get user\ninitialize student to empty list"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:47:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: NhBDb2u4\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nscore = []\nweight = []\nwhopass = []\nn = int(input())\n\nfor i in range (n): # score input\n    r = []\n    for j in range (4):\n        r.append(int(input()))\n    score.append(r)\n\nfor i in range (4):\n    weight.append(float(input()))\n\npas = int(input())\n\nfor i in range (n):\n    check = 0\n    for j in range (4):\n        check += score[i][j]*weight[j]\n    if check >= pas:\n        whopass.append(i+1)\nif whopass == []:\n    print('NO ACCEPTABLE APPLICANT')\nelse :\n    print(whopass)",
+    "Pseudocode": "initialize score to empty list\ninitialize weight to empty list\ninitialize whopass to empty list\nget n\n\nrepeat n times using index i\n    initialize r to empty list\n    repeat 4 times using index j\n        get input and convert to integer\n        add input to r\n    add r to score\n\nrepeat 4 times using index i\n    get input and convert to float\n    add input to weight\n\nget pas and convert to integer\n\nrepeat n times using index i\n    initialize check to 0\n    repeat 4 times using index j\n        check = check plus score at index i and index j times weight at index j\n    if check is greater than or equal to pas\n        add i plus 1 to whopass\n\nif whopass is empty\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display whopass"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:30:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD: CpQpYFMK\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\na = int(input())\ngrade = float(input()) \nn = int(input())\n\nfor i in range(n):\n    w = float(input())\n    if w != 0:\n        continue\n\n    print(i)\n    \n\n\n",
+    "Pseudocode": "get a  \nget grade  \nget n  \n\nrepeat n times using index i  \n    get w  \n    if w is not 0  \n        skip to next iteration  \n    display i"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T10:05:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: ZvyV7W6M\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nall=[] \nfor _ in range(n):\n    s_list=[]\n    for __ in range(4):\n        score= int(input())\n        s_list.append(score)\n    all.append(s_list)\n\n\nweight=[]#weight score\nfor _ in range(4):\n    w=float(input())\n    weight.append(w)\n\nover = int(input())#pass at\n\ncal_s=[] #cal\nfor i in range(len(all)):\n    sum=0\n    for j in range(4):\n        cal = (all[i][j] * weight[j])\n        sum +=cal\n    cal_s.append(sum)\n\nwin=[] #check\nfor i in range(len(cal_s)):\n    if cal_s[i] >= over:\n        win.append(i+1)\n\nif len(win)==0: \n    print('NO ACCEPTABLE APPLICANT')\nelse:\n    print(win)\n",
+    "Pseudocode": "get n\ninitialize all to empty list\nrepeat n times\n    initialize s_list to empty list\n    repeat 4 times\n        get score\n        add score to s_list\n    add s_list to all\n\ninitialize weight to empty list\nrepeat 4 times\n    get w\n    add w to weight\n\nget over\n\ninitialize cal_s to empty list\nrepeat for each i in range of length of all\n    initialize sum to 0\n    repeat 4 times\n        cal = all[i][j] times weight[j]\n        sum = sum plus cal\n    add sum to cal_s\n\ninitialize win to empty list\nrepeat for each i in range of length of cal_s\n    if cal_s[i] is greater than or equal to over\n        add i plus 1 to win\n\nif length of win is 0\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display win"
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:40:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: GHNdnRPd\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\ncandidate = int(input())\ntest = 4\nlistnum = []\nlistdegree = []\nlowpoint = 0\nn = 0\nlistwin= []\nlistwinpoiont = []\nfor i in range(1,candidate+1):\n    listwin.append(i)\n\n\n\n\n\n\n\nfor i in range(candidate):\n    lsitn = []\n    for j in range(4):\n        n = int(input())\n        lsitn.append(n)\n    listnum.append(lsitn)\nfor i in range(4):\n    n = float(input())\n    listdegree.append(n)\n\nfor i in range(1):\n    lowpoint = int(input())\n\nfor i in range(candidate):\n    num = 0\n    n = 0\n    n = ((listnum[i][0]*listdegree[0])+(listnum[i][1]*listdegree[1])+(listnum[i][3]*listdegree[3])+(listnum[i][2]*listdegree[2]))\n    listwinpoiont.insert(i,n)\n\n\nn = 0\n\nfor i in listwinpoiont:\n    if i >= lowpoint:\n\n        n += 1\n        pass\n    else:\n\n        listwin.pop(n)\nif listwin == []:\n    print('NO ACCEPTABLE APPLICANT')\nelse:\n    print(listwin)\n\n",
+    "Pseudocode": "get candidate\ninitialize test to 4\ninitialize listnum to empty list\ninitialize listdegree to empty list\ninitialize lowpoint to 0\ninitialize n to 0\ninitialize listwin to empty list\ninitialize listwinpoiont to empty list\nrepeat candidate times using index i\n    add i to listwin\n\nrepeat candidate times using index i\n    initialize lsitn to empty list\n    repeat 4 times using index j\n        n = get integer input\n        add n to lsitn\n    add lsitn to listnum\nrepeat 4 times using index i\n    n = get float input\n    add n to listdegree\n\nrepeat 1 time using index i\n    lowpoint = get integer input\n\nrepeat candidate times using index i\n    initialize num to 0\n    initialize n to 0\n    n = (listnum[i][0] times listdegree[0]) plus (listnum[i][1] times listdegree[1]) plus (listnum[i][3] times listdegree[3]) plus (listnum[i][2] times listdegree[2])\n    insert n into listwinpoiont at index i\n\ninitialize n to 0\n\nrepeat for each i in listwinpoiont\n    if i is greater than or equal to lowpoint\n        n = n plus 1\n        do nothing\n    otherwise\n        remove item at index n from listwin\nif listwin is empty\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display listwin"
+  },
+  {
+    "User ID": "6887052",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:05:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887052\nPASSWORD: SWv2qvzd\nEXERCISEID: itds120-cp2-q2\n */\n'''\nx = int(input())\nlistP = []\nlistC = []\nlistA = []\nlistF = []\nlistFA = []\nfor i in range(x): #save point\n    listX = []\n    for j in range(4):\n        point = int(input())\n        listX.append(point)\n    listP.append(listX)\n\nfor i in range(1): #Weight\n    listX = []\n    for j in range(4):\n        point = float(input())\n        listX.append(point)\n    listC.append(listX)\n\nfor i in range(x): #Calculate1\n    listX = []\n    for j in range(4):\n        if j%4 ==0:\n            listX = []\n        point = listP[i][j]*listC[0][j]\n        listX.append(point)\n    listA.append(listX)\n\nfor i in range(x): #Calculate2\n    listX=[]\n    for j in range(3):\n        point += listA[i][j]\n    listF.append(point)\n\nfor i in range(x): #Check pass\n    listX=[]\n    for j in range(x):\n        if listF[j] >= 75:\n            listFA.append(i)\nprint(listFa)",
+    "Pseudocode": "get x\ninitialize listP to empty list\ninitialize listC to empty list\ninitialize listA to empty list\ninitialize listF to empty list\ninitialize listFA to empty list\nrepeat x times using index i\n    initialize listX to empty list\n    repeat 4 times using index j\n        get point\n        add point to listX\n    add listX to listP\nrepeat 1 time using index i\n    initialize listX to empty list\n    repeat 4 times using index j\n        get point\n        add point to listX\n    add listX to listC\nrepeat x times using index i\n    initialize listX to empty list\n    repeat 4 times using index j\n        if j modulo 4 is 0\n            initialize listX to empty list\n        point = listP[i][j] times listC[0][j]\n        add point to listX\n    add listX to listA\nrepeat x times using index i\n    initialize listX to empty list\n    initialize point to 0\n    repeat 3 times using index j\n        point = point plus listA[i][j]\n    add point to listF\nrepeat x times using index i\n    initialize listX to empty list\n    repeat x times using index j\n        if listF[j] is greater than or equal to 75\n            add i to listFA\ndisplay listFA"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "4/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T10:05:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: vvdFs955\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\np = int(input())\nscore = [[int(input()) for __ in range (4)]for __ in range (p)]\nd = []\nfor x in range (4) :\n    div = float(input())\n    d.append(div)\nq = len(d)\nacc = []\ncount = 0\npa = int(input())\nfor i in range (len(score)) :\n    sum = 0\n    for j in range (len(score[i])) :\n        sum += score[i][j]*d[j]\n    if sum >= pa :\n        count += 1\n        acc.append(i+1)\n    elif count == 0 :\n        print('NO ACCEPTABLE APPLICANT')\n\nprint(acc)",
+    "Pseudocode": "get p\ninitialize score to empty list\ngo through each __ in range 4\n    get integer input and add to score\ngo through each __ in range p\n    add score to score\ninitialize d to empty list\ngo through each x in range 4\n    get float input and add to d\ninitialize q to length of d\ninitialize acc to empty list\ninitialize count to 0\nget pa\ngo through each i in range length of score\n    initialize sum to 0\n    go through each j in range length of score[i]\n        sum = sum plus score[i][j] times d[j]\n    if sum is greater than or equal to pa\n        count = count plus 1\n        add i plus 1 to acc\n    otherwise if count is equal to 0\n        display NO ACCEPTABLE APPLICANT\ndisplay acc"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:51:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: 5PR4WwHA\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nscore = []\nn     = int(input())\nfor i in range(n) :\n    stu_score = []\n    for j in range(4) :\n        subj = int(input())\n        stu_score.append(int(subj))\n    score.append(stu_score)\n\nsub_wei = []\nfor i in range(4) :\n    weight  = float(input())\n    sub_wei.append(float(weight))\n\na = sub_wei[0]\nb = sub_wei[1]\nc = sub_wei[2]\nd = sub_wei[3]\nresult = []\nfor i in score:\n    for j in i :\n        if j == 0 :\n            int(j)*int(a)\n        elif j == 1 :\n            int(j)*int(b)\n        elif j == 2 :\n            int(j)*int(c)\n        elif j == 3 :\n            int(j)*int(d)\n\n    \n        \n\n        \n\n\n\n\n\n\n\n\n\n\n# print(score)\n# print(sub_wei)\n",
+    "Pseudocode": "initialize score to empty list\nget n\nrepeat n times using index i\n    initialize stu_score to empty list\n    repeat 4 times using index j\n        get subj\n        add convert subj to integer to stu_score\n    add stu_score to score\n\ninitialize sub_wei to empty list\nrepeat 4 times using index i\n    get weight\n    add convert weight to float to sub_wei\n\nset a to value for index 0 in sub_wei\nset b to value for index 1 in sub_wei\nset c to value for index 2 in sub_wei\nset d to value for index 3 in sub_wei\ninitialize result to empty list\ngo through each i in score\n    go through each j in i\n        if j is 0\n            int j times int a\n        otherwise if j is 1\n            int j times int b\n        otherwise if j is 2\n            int j times int c\n        otherwise if j is 3\n            int j times int d"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:02:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887056\nPASSWORD: e8W9bbNK\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nregister = int(input(\"Register : \"))\na = []\nfor i in range(register):\n    subject = []\n    for j in range(register):\n        math = int(input(\"Math : \"))\n        english = int(input(\"Englist : \"))\n        science = int(input(\"Science : \"))\n        social = int(input(\"Social : \"))\n        subject.append([math],[endlish],[science],[social])\n    a.append(subject)\n    print()\n\n    \n",
+    "Pseudocode": "get register  \ninitialize a to empty list  \nrepeat register times using index i  \n    initialize subject to empty list  \n    repeat register times using index j  \n        get math  \n        get english  \n        get science  \n        get social  \n        add [math] to subject  \n        add [english] to subject  \n        add [science] to subject  \n        add [social] to subject  \n    add subject to a  \n    display empty line"
+  },
+  {
+    "User ID": "6887057",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:02:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887057\nPASSWORD: Ubh4eDKd\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nlst = []\nwhile True:\n    \n\n\n",
+    "Pseudocode": "initialize lst to empty list\nrepeat while True"
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T10:04:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: ds4EdVUw\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nstudent = int(input())\n\nscores = []\nfor i in range(student):\n    score = []\n    for j in range(4):\n        s = int(input())\n        score.append(s)\n    scores.append(score)\n\nmulscores = []\nfor i in range(4):\n    ms = float(input())\n    mulscores.append(ms)\n\npasing_score = int(input())\n\npasser = []\nfor i in range(student):\n    total = 0\n    for j in range(4):\n        total += scores[i][j] * mulscores[j]\n    if total >= pasing_score:\n        passer.append(i+1)\n\nif len(passer) >= 1:\n    print(passer)\nelse:\n    print('NO ACCEPTABLE APPLICANT')",
+    "Pseudocode": "get student\n\ninitialize scores to empty list\nrepeat student times using index i\n    initialize score to empty list\n    repeat 4 times using index j\n        get s\n        add s to score\n    add score to scores\n\ninitialize mulscores to empty list\nrepeat 4 times using index i\n    get ms\n    add ms to mulscores\n\nget pasing_score\n\ninitialize passer to empty list\nrepeat student times using index i\n    initialize total to 0\n    repeat 4 times using index j\n        total = total plus scores[i][j] times mulscores[j]\n    if total is greater than or equal to pasing_score\n        add i plus 1 to passer\n\nif length of passer is greater than or equal to 1\n    display passer\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:05:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887060\nPASSWORD: jFy2HDUh\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn=int(input())\ncol=4\nA=[]\n\nfor i in range(n):\n    row=[]\n    for j in range(4):\n        n=int(input())\n        row.append(n)\n    A.append(row)\n\npoint=[]\nfor i in range(4):\n    u=float(input())\n    point.append(u)\n\n\ng=int(input())\n\nc=[]\ntotal=0\nfor j in range(3):\n    for i in range(1,n+1)\n        for k in range(4):\n            a=A[j][n]\n            b=point[k]\n            print(a,b)\n\n\n        \n\n\n",
+    "Pseudocode": "get n\ninitialize col to 4\ninitialize A to empty list\n\nrepeat n times using index i\n    initialize row to empty list\n    repeat 4 times using index j\n        get n\n        add n to row\n    add row to A\n\ninitialize point to empty list\nrepeat 4 times using index i\n    get u\n    add u to point\n\nget g\n\ninitialize c to empty list\ninitialize total to 0\nrepeat 3 times using index j\n    repeat n plus 1 times using index i\n        repeat 4 times using index k\n            set a to A[j][n]\n            set b to point[k]\n            display a b"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:57:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD: Yhw8Ve7c\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn_stu = int(input())\n\nlistA = [] # all student score\n\nfor i in range(n_stu) :\n    row = [] # list of each student score\n    for j in range(4) :\n        score = int(input())\n        row.append(score)\n    listA.append(row)\n\nlistB = [] # list of each subject\n\nfor k in range(4) :\n    weight = float(input()) \n    listB.append(weight)\n\npass_score = int(input())\npass_stu = []\n\n\nfor i in range(len(listA)) :\n    total = 0\n    sum = 0\n    for j in range(len(listA[i])) :\n        sum += listA[i][j] * listB[j]\n    total += sum\n    \n    if total >= pass_score :\n        pass_stu.append(i+1)\n\nif len(pass_stu) > 0 :\n    print(pass_stu)\nelse :\n    print('NO ACCEPTABLE APPLICANT')\n\n\n",
+    "Pseudocode": "get n_stu\n\ninitialize listA to empty list\n\nrepeat n_stu times using index i\n    initialize row to empty list\n    repeat 4 times using index j\n        get score\n        add score to row\n    add row to listA\n\ninitialize listB to empty list\n\nrepeat 4 times using index k\n    get weight\n    add weight to listB\n\nget pass_score\ninitialize pass_stu to empty list\n\nrepeat length of listA times using index i\n    initialize total to 0\n    initialize sum to 0\n    repeat length of listA[i] times using index j\n        sum = sum plus listA[i][j] times listB[j]\n    total = total plus sum\n    \n    if total is greater than or equal to pass_score\n        add i plus 1 to pass_stu\n\nif length of pass_stu is greater than 0\n    display pass_stu\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:28:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: uQptcGZk\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\nA=[]\nG=[]\nfor i in range(n):\n    row=[]\n    for j in range(4):\n        member=float(input())\n        row.append(member)\n    A.append(row)\n\nfor i in range(4):\n    x=float(input())\n    G.append(x)\nNPass=int(input())\n\nPass=[]\nfor i in range(n):\n    Total=0\n    for j in range(4):\n        Total+=A[i][j]*G[j]\n    \n    if Total>=NPass:\n        Pass.append(i+1)\n\nif Pass == []:\n    print(\"NO ACCEPTABLE APPLICANT\")\nelse:\n    print(Pass)",
+    "Pseudocode": "get n\ninitialize A to empty list\ninitialize G to empty list\nrepeat n times using index i\n    initialize row to empty list\n    repeat 4 times using index j\n        get member\n        add member to row\n    add row to A\n\nrepeat 4 times using index i\n    get x\n    add x to G\nget NPass\n\ninitialize Pass to empty list\nrepeat n times using index i\n    initialize Total to 0\n    repeat 4 times using index j\n        Total = Total plus A[i][j] times G[j]\n    \n    if Total is greater than or equal to NPass\n        add i plus 1 to Pass\n\nif Pass is empty\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display Pass"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:00:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD: ePMDK9ed\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nP = []\np = float(input())\nwhile True:\n    p = float(input())\n    continue\n    P.append(p)\nprint(P)\n\n\n\n",
+    "Pseudocode": "initialize P to empty list\nrepeat while True\n    get p\n    continue\n    add p to P\ndisplay P"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T08:39:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: Nu7MRUue\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nnum = int(input())\nresult = []\nmultiply = []\np0 = []\nfor i in range(num):\n    score = []\n    for j in range(4):\n        score.append(float(input()))\n    result.append(score)\n\nfor multi in range(4):\n    multiply.append(float(input()))\ntherehold = float(input())\nfor i in range(num):\n    point = 0\n    for j in range(4):\n        point += (result[i][j]*multiply[j])\n    if point >= therehold:\n        p0.append(i+1)\n\nif len(p0) == 0:\n    print('NO ACCEPTABLE APPLICANT')\nelse:\n    print(p0)\n\n",
+    "Pseudocode": "get num\ninitialize result to empty list\ninitialize multiply to empty list\ninitialize p0 to empty list\nrepeat num times using index i\n    initialize score to empty list\n    repeat 4 times using index j\n        get score value\n        add score value to score\n    add score to result\nrepeat 4 times using index multi\n    get multiply value\n    add multiply value to multiply\nget therehold\nrepeat num times using index i\n    initialize point to 0\n    repeat 4 times using index j\n        point = point plus (result[i][j] times multiply[j])\n    if point is greater than or equal to therehold\n        add i plus 1 to p0\nif length of p0 is 0\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display p0"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:46:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887065\nPASSWORD: 4suaUgVC\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nscore = []\nn = int(input())\n\nfor i in range(n):\n    s = []\n    for j in range(4):\n        s.append(int(input()))\n    score.append(s)\n\nweight = []\nfor i in range(4) :\n    weight.append(float(input()))\n\ns_pass = int(input())\n\nresult = []\nfor i in range(n):\n    sum = 0\n    for j in range(4):\n        re = score[i][j] * weight[j]\n        sum = sum + re\n    result.append(sum)\n\nout = []\ncount = 0\nfor i in range(len(result)) :\n    if result[i] >= s_pass :\n        out.append(i+1)\n        count += 1\n\nif count > 0 :\n    print(out)\nelse :\n    print('NO ACCEPTABLE APPLICANT')",
+    "Pseudocode": "initialize score to empty list\nget n\nrepeat n times using index i\n    initialize s to empty list\n    repeat 4 times using index j\n        get value\n        add value to s\n    add s to score\n\ninitialize weight to empty list\nrepeat 4 times using index i\n    get value\n    add value to weight\n\nget s_pass\n\ninitialize result to empty list\nrepeat n times using index i\n    initialize sum to 0\n    repeat 4 times using index j\n        re = score[i][j] times weight[j]\n        sum = sum plus re\n    add sum to result\n\ninitialize out to empty list\ninitialize count to 0\nrepeat length of result times using index i\n    if result[i] is greater than or equal to s_pass\n        add i plus 1 to out\n        count = count plus 1\n\nif count is greater than 0\n    display out\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T10:04:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD: ndCZw2q5\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\na=[]\nb=[]\nmath=[]\ncount=1\nn=int(input())\nfor i in range(n):\n    x=[]\n    for j in range(4):\n        h=int(input())\n        x.append(h)\n    a.append(x)\nfor i in range(4):\n    mat=float(input())\n    math.append(mat)\n\ntotal=float(input())\n\nfor i in range(len(a)):\n    cal=float((a[i][0]*math[0])+(a[i][1]*math[1])+(a[i][2]*math[2])+(a[i][3]*math[3]))\n    if cal>=total :\n        b.append(count)\n        count+=1\n    else:\n        count+=1\n        continue \n     \n        \nif b!=[]:\n    print(b)\nelse:\n    print('NO ACCEPTABLE APPLICANT')\n",
+    "Pseudocode": "initialize a to empty list  \ninitialize b to empty list  \ninitialize math to empty list  \ninitialize count to 1  \nget n  \nrepeat n times using index i  \n    initialize x to empty list  \n    repeat 4 times using index j  \n        get h  \n        add h to x  \n    add x to a  \nrepeat 4 times using index i  \n    get mat  \n    add mat to math  \nget total  \nrepeat length of a times using index i  \n    cal = (a[i][0] times math[0]) plus (a[i][1] times math[1]) plus (a[i][2] times math[2]) plus (a[i][3] times math[3])  \n    if cal is greater than or equal to total  \n        add count to b  \n        count = count plus 1  \n    otherwise  \n        count = count plus 1  \n        skip to next iteration  \nif b is not empty  \n    display b  \notherwise  \n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887069",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T08:23:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887069\nPASSWORD: rEUBPK4q\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n",
+    "Pseudocode": "initialize USERID to 6887069  \ninitialize PASSWORD to rEUBPK4q  \ninitialize EXERCISEID to itds120-cp2-q2"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:05:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: fgHeNgy6\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nA=[]\nB=[]\nC=[]\nD=[]\n\np=int(input())\n\nif p == 1:\n    for i in range(4):\n        a=int(input())\n        A.append(a)\nif p == 2:\n    for i in range(4):\n        a=int(input())\n        A.append(a)\n    for j in range(4):\n        b=int(input())\n        B.append(b)\nif p == 3:\n    for i in range(4):\n        a=int(input())\n        A.append(a)\n    for j in range(4):\n        b=int(input())\n        B.append(b)\n    for k in range(4):\n        c=int(input())\n        C.append(c)\nif p == 4:\n    for i in range(4):\n        a=int(input())\n        A.append(a)\n    for j in range(4):\n        b=int(input())\n        B.append(b)\n    for k in range(4):\n        c=int(input())\n        C.append(c)\n    for k in range(4):\n        d=int(input())\n        D.append(d)\n\nsub = []\nfor s in range (4):\n    S = int(input())\n    sub.append(S)\n",
+    "Pseudocode": "initialize A to empty list\ninitialize B to empty list\ninitialize C to empty list\ninitialize D to empty list\n\nget p\n\nif p is 1\n    repeat 4 times using index i\n        get a\n        add a to A\nif p is 2\n    repeat 4 times using index i\n        get a\n        add a to A\n    repeat 4 times using index j\n        get b\n        add b to B\nif p is 3\n    repeat 4 times using index i\n        get a\n        add a to A\n    repeat 4 times using index j\n        get b\n        add b to B\n    repeat 4 times using index k\n        get c\n        add c to C\nif p is 4\n    repeat 4 times using index i\n        get a\n        add a to A\n    repeat 4 times using index j\n        get b\n        add b to B\n    repeat 4 times using index k\n        get c\n        add c to C\n    repeat 4 times using index k\n        get d\n        add d to D\n\ninitialize sub to empty list\nrepeat 4 times using index s\n    get S\n    add S to sub"
+  },
+  {
+    "User ID": "6887071",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:44:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887071\nPASSWORD: vzjW1kTK\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\n    print(n)\n    \n\n\n",
+    "Pseudocode": "get n\nn = convert n to integer\ndisplay n"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:57:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: 6YsHBcXE\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nam=int(input())\nm=float(input())\ns=float(input())\ne=float(input())\nb=float(input())\nmseb=m+s+e+b\nlist1=[]\nfor i in range(1,len(list1)):\n    if mseb==100:\n        count = 0\n    for j in range(1,len(list1)):\n        if mseb<100:\n    print()\n    ",
+    "Pseudocode": "get am\nget m\nget s\nget e\nget b\nmseb = m plus s plus e plus b\ninitialize list1 to empty list\nrepeat len of list1 minus 1 times using index i\n    if mseb is 100\n        count = 0\n    repeat len of list1 minus 1 times using index j\n        if mseb is less than 100\n    display empty line"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:57:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: cJgvepGP\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nlist1 = []\nlist2 = []\nlist3 = []\nlist4 = []\navg = []\nif n == 4:\n\n    for i in range(4):\n        m = int(input())\n        list1.append(m)\n    for i in range(4):\n        v = int(input())\n        list2.append(v)\n    for i in range(4):\n        e = int(input())\n        list3.append(e)\n    for i in range(4):\n        p = int(input())\n        list4.append(p)\n    for i in range(4):\n        num = float(input())\n        avg.append(num)\npas = int(input())\npass1 = 0\npass2 = 0\npass3 = 0\npass4 = 0\npass1 = list1[0]*avg[0] + list1[1]*avg[1] + list1[2]*avg[2] + list1[3]*avg[3] \npass2 = list2[0]*avg[0] + list2[1]*avg[1] + list2[2]*avg[2] + list2[3]*avg[3] \npass3 = list3[0]*avg[0] + list3[1]*avg[1] + list3[2]*avg[2] + list3[3]*avg[3]\npass4 = list4[0]*avg[0] + list4[1]*avg[1] + list4[2]*avg[2] + list4[3]*avg[3]\npritn(pass1)\n        \n\n  \n\n    ",
+    "Pseudocode": "get n\ninitialize list1 to empty list\ninitialize list2 to empty list\ninitialize list3 to empty list\ninitialize list4 to empty list\ninitialize avg to empty list\nif n is 4:\n    repeat 4 times using index i:\n        get m\n        add m to list1\n    repeat 4 times using index i:\n        get v\n        add v to list2\n    repeat 4 times using index i:\n        get e\n        add e to list3\n    repeat 4 times using index i:\n        get p\n        add p to list4\n    repeat 4 times using index i:\n        get num\n        add num to avg\nget pas\ninitialize pass1 to 0\ninitialize pass2 to 0\ninitialize pass3 to 0\ninitialize pass4 to 0\npass1 = list1[0] times avg[0] plus list1[1] times avg[1] plus list1[2] times avg[2] plus list1[3] times avg[3]\npass2 = list2[0] times avg[0] plus list2[1] times avg[1] plus list2[2] times avg[2] plus list2[3] times avg[3]\npass3 = list3[0] times avg[0] plus list3[1] times avg[1] plus list3[2] times avg[2] plus list3[3] times avg[3]\npass4 = list4[0] times avg[0] plus list4[1] times avg[1] plus list4[2] times avg[2] plus list4[3] times avg[3]\npritn(pass1)"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:04:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: XS7yTkz6\nEXERCISEID: itds120-cp2-q2\n */\n'''\nn = int(input())\nscore = []\nweight_score = []\n\nfor s in range(n*4):\n    scores = int(input())\n    score.append(scores)\n\nfor w in range(4):\n    we = float(input())\n    weight_score.append(we)\n\nh = int(input())\n\nfor i in score:\n    divid = score / weight_score\n    \nprint(i)",
+    "Pseudocode": "get n\ninitialize score to empty list\ninitialize weight_score to empty list\n\nrepeat n times using index s\n    get scores\n    add scores to score\n\nrepeat 4 times using index w\n    get we\n    add we to weight_score\n\nget h\n\nrepeat for each i in score\n    divid = score divided by weight_score\n\ndisplay i"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:47:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: 4DrAQNHN\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\na=int(input())\nsm=[]\nss=[]\nse=[]\nsp=[]\n\nscoll=[]\n\nconpass=[]\n\nfor i in range(a):\n    scoll=int(input())\n    sm.append(scoll)\n    scoll=int(input())\n    ss.append(scoll)\n    scoll=int(input())\n    se.append(scoll)\n    scoll=int(input())\n    sp.append(scoll)\n\n\nwm=float(input())\nws=float(input())\nwe=float(input())\nwp=float(input())\n\n        \nkan=int(input())\n\nfor i in range(1,a+1):\n    m=sm[i-1]*wm\n    s=ss[i-1]*ws\n    e=se[i-1]*we\n    p=sp[i-1]*wp\n    sum=m+s+e+p\n    if sum>=kan:\n        conpass.append(i)\n\nif len(conpass)==0:\n    print('NO ACCEPTABLE APPLICANT')\nelse:   \n    print(conpass)\n\n\n\n\n\n\n",
+    "Pseudocode": "get a\ninitialize sm to empty list\ninitialize ss to empty list\ninitialize se to empty list\ninitialize sp to empty list\ninitialize scoll to empty list\ninitialize conpass to empty list\n\nrepeat a times using index i\n    get scoll\n    add scoll to sm\n    get scoll\n    add scoll to ss\n    get scoll\n    add scoll to se\n    get scoll\n    add scoll to sp\n\nget wm\nget ws\nget we\nget wp\n\nget kan\n\nrepeat from 1 to a using index i\n    m = sm[i minus 1] times wm\n    s = ss[i minus 1] times ws\n    e = se[i minus 1] times we\n    p = sp[i minus 1] times wp\n    sum = m plus s plus e plus p\n    if sum is greater than or equal to kan\n        add i to conpass\n\nif length of conpass is 0\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display conpass"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:04:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: tUHnPCUB\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn=int(input())\nlist=[]\nwhile True:\n    lists=[]\n    s1=int(input())\n    s2=int(input())\n    s3=int(input())\n    s4=int(input())\n    lists.append(s1)\n    lists.append(s2)\n    lists.append(s3)\n    lists.append(s4)\n    list.append(lists)\n    if len(list)==n:\n        break\n\nlistweigh=[]\nfor i in range(4):\n    w=float(input())\n    listweigh.append(w)\n    if len(listweigh)==4:\n        break\n\nlisttotal=[]\ntotal=int(input())\n\na=[]\n\nfor i in list:\n    sum1=0\n    for j in list:\n        sum1=((list[i][j])*(listweigh[j]))\n    a.append(sum1)\n\n\n           \n\n\n\n\n\n\n",
+    "Pseudocode": "get n\ninitialize list to empty\nrepeat while true\n    initialize lists to empty\n    get s1\n    get s2\n    get s3\n    get s4\n    add s1 to lists\n    add s2 to lists\n    add s3 to lists\n    add s4 to lists\n    add lists to list\n    if length of list is n\n        exit loop\n\ninitialize listweigh to empty\nrepeat 4 times using index i\n    get w\n    add w to listweigh\n    if length of listweigh is 4\n        exit loop\n\ninitialize listtotal to empty\nget total\n\ninitialize a to empty\n\nrepeat for each i in list\n    initialize sum1 to 0\n    repeat for each j in list\n        sum1 = (value for index i in list times value for index j in listweigh)\n    add sum1 to a"
+  },
+  {
+    "User ID": "6887079",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:56:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887079\nPASSWORD: wqUd59F9\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nx = int(input())\n\nlist = []\n\nfor i in range(x):\n    num = []\n    for j in range(x):\n        num.append(int(input()))\n    list.append(num)\n\nprint(list)\n\n",
+    "Pseudocode": "get x\ninitialize list to empty\n\nrepeat x times using index i\n    initialize num to empty\n    repeat x times using index j\n        get value\n        add value to num\n    add num to list\n\ndisplay list"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:55:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: pBU7v24R\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nall_student = int(input())\nall_student_score = []\n\nfor i in range(all_student*4):\n    score = (int(input()))\n    all_student_score.append(score)\n\n\naverage = []\n\nfor i in range(4):\n    a = float(input())\n    average.append(a)\n\naverage_score = []\n\n\nfor i in range(4):\n    a = average[i]\n    for j in range(all_student*4):\n        x = float(all_student_score[j])\n        sum = x*a\n    average_score.append(sum)\n       \nprint(average_score)\n",
+    "Pseudocode": "get all_student\ninitialize all_student_score to empty list\n\nrepeat all_student times 4 using index i\n    get score\n    add score to all_student_score\n\ninitialize average to empty list\n\nrepeat 4 times using index i\n    get a\n    add a to average\n\ninitialize average_score to empty list\n\nrepeat 4 times using index i\n    set a to average[i]\n    repeat all_student times 4 using index j\n        set x to float of all_student_score[j]\n        set sum to x times a\n    add sum to average_score\n\ndisplay average_score"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:29:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: J6rqjvAj\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\np=int(input())\nsco=[]\n\n\nfor i in range(p):\n    for o in range(p):\n        x=float(input())\n        sco.append(x)\n    print('')\n\n\nprint(sco)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "Pseudocode": "get p\ninitialize sco to empty list\n\nrepeat p times using index i\n    repeat p times using index o\n        get x\n        add x to sco\n    display empty line\n\ndisplay sco"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:40:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: GPC6Gd6y\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nlist=[]\nn=int(input())\n\nfor i in range(n):\n    student=[]\n    for j in range(n):\n        x=input()\n        student.append(x)\n    list.append(student)\n\nfor j in list:\n    if j[1]==''\n\n",
+    "Pseudocode": "initialize list to empty\nget n\nrepeat n times using index i\n    initialize student to empty\n    repeat n times using index j\n        get x\n        add x to student\n    add student to list\nrepeat for each j in list\n    if j[1] is empty"
+  },
+  {
+    "User ID": "6887083",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:01:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887083\nPASSWORD: f6ZYTG8M\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nx = int(input())\nscores = []\n\nfor i in range():\n    \n",
+    "Pseudocode": "get x  \ninitialize scores to empty list  \nrepeat while i is less than x  \n    add score to scores  \n    increment i by 1"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:02:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: FTnqMKTW\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nstudent_scores = int(input())\nprogram = str()\n\nscores = []\n\ncount = 0\n\nfor i in range(4):\n    line = input().split()\n    student_scores = list(map(int,line))\nprint()\n\n\n\n",
+    "Pseudocode": "get student_scores\ninitialize program to empty text\ninitialize scores to empty list\ninitialize count to 0\nrepeat 4 times using index i\n    get line\n    split line by whitespace\n    set student_scores to list of integers from line\nprint"
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:19:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: 6a94rayU\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nlist = []\nlist2 = []\n\nans = []\nfor i in range(n):\n    x = []\n    for j in range(4):\n        subject = int(input())\n        x.append(subject)\n    list.append(x)\n\nfor k in range(n):\n    y = []\n    for s in range(4):\n        w = float(input())\n        y.append(w)\n    list2.append(y)\nPass = int(input())\n\nfor f in range(n):\n    total = 0\n    for m in range(4):\n        point = list[m][f] * tam[m][f]\n        total+= point\n    if total >= pass1:\n        ans.append(f+1)\nans.sort()\nprint(ans)\n",
+    "Pseudocode": "get n\ninitialize list to empty\ninitialize list2 to empty\ninitialize ans to empty\n\nrepeat n times using index i\n    initialize x to empty\n    repeat 4 times using index j\n        get subject\n        add subject to x\n    add x to list\n\nrepeat n times using index k\n    initialize y to empty\n    repeat 4 times using index s\n        get w\n        add w to y\n    add y to list2\n\nget Pass\n\nrepeat n times using index f\n    initialize total to 0\n    repeat 4 times using index m\n        point = value for index m in list at index f times value for index m in tam at index f\n        total = total plus point\n    if total is greater than or equal to Pass\n        add f plus 1 to ans\n\nsort ans\ndisplay ans"
+  },
+  {
+    "User ID": "6887087",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:01:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887087\nPASSWORD: Wb8TvXfV\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n\n\n\nn = int(input())\n\nwhile True :\n    i = float(input())\n    break\n\nprint(\"NO ACCEPTABLE APPLICANT\")\n\n",
+    "Pseudocode": "get n\n\nrepeat while True\n    get i\n    exit loop\n\ndisplay NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:03:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: Mc17C1QA\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\na=[]\nk=0\nw=0\nfor i in range (n):\n    row=[]\n    for j in range (4):\n        x=float(input())\n        row.append(x)\n    a.append(row)\nb=[]\nfor i in range(4):\n    y=float(input())\n    b.append(y)\nz=float(input())\nr=[]\nfor i in range (n):\n    row=[]\n    for j in range(4):\n        k+=a[i][j]*b[j]\n    r.append(k)\np=[]\nfor i in r:\n    w += 1\n    if i >= z:\n        p.append(w)\nprint(p)\n\n\n    \n    \n\n\n\n\n",
+    "Pseudocode": "get n\ninitialize a to empty list\ninitialize k to 0\ninitialize w to 0\nrepeat n times using index i\n    initialize row to empty list\n    repeat 4 times using index j\n        get x\n        add x to row\n    add row to a\ninitialize b to empty list\nrepeat 4 times using index i\n    get y\n    add y to b\nget z\ninitialize r to empty list\nrepeat n times using index i\n    initialize row to empty list\n    repeat 4 times using index j\n        k = k plus a[i][j] times b[j]\n    add k to r\ninitialize p to empty list\nrepeat for each i in r\n    w = w plus 1\n    if i is greater than or equal to z\n        add w to p\ndisplay p"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:48:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: Ay5q2fNq\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\nB = []\nn = int(input())\n\nfor i in range (n):\n    row = []\n    for j in range (n):\n        x = int(input())\n        row.append(x)\n    A.append(row)\n\nc = n\nfor i in range(c):\n    x = float(input())\nB.append(a)\n\nmin = int(input())\n\nsum = 0\nfor i in range (len(A)):\n    for j in range (len(A)):\n        for k in range (len(A)):\n            a = A[0][j]*B[i]\n            b =",
+    "Pseudocode": "initialize A to empty list\ninitialize B to empty list\nget n\nrepeat n times using index i\n    initialize row to empty list\n    repeat n times using index j\n        get x\n        add x to row\n    add row to A\ninitialize c to n\nrepeat c times using index i\n    get x\n    add x to B\nget min\ninitialize sum to 0\nrepeat for each i in length of A\n    repeat for each j in length of A\n        repeat for each k in length of A\n            a = A[0][j] times B[i]\n            b ="
+  },
+  {
+    "User ID": "6887090",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T08:17:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887090\nPASSWORD: 6S64XaeD\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\nfor i in range():\n    list.append(float(input()))\n\n\npeo = int(input())\nmath = int(input())\nsci = int(input())\neng = int(input())\nsoc = int(input())\nwig = float(input())\nga = float(input())\n",
+    "Pseudocode": "initialize list to empty list\nrepeat using index i\n    add float(input) to list\npeo = convert input to integer\nmath = convert input to integer\nsci = convert input to integer\neng = convert input to integer\nsoc = convert input to integer\nwig = convert input to float\nga = convert input to float"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:53:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: 3gGNYASs\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n#input\n   #student num \nStudent = int(input())\n\n    #subject point\nAll_point = []\nfor __ in range(Student):\n    point = []\n    for __ in range(4):\n        x = int(input())\n        point.append(x)\n    All_point.append(point)\n\n    #weight\nweight = []\nfor __ in range(4):\n    weight.append(float(input()))\npassing_point = int(input())\n\n#process\n    #Each subjects point\nSubjects_point = []\nfor i in range(Student):\n    row = []\n    for j in range(4):\n            V = All_point[i][j] * weight[j]\n            row.append(V)\n    Subjects_point.append(row)\n\n    #Plus all subjects point\nSum_point = []\nfor i in range(Student):\n    Sum = 0\n    for j in range(4):\n        Sum += Subjects_point[i][j] #noted this please\n    Sum_point.append(Sum)\n\n    #check\n#print(Subjects_point)\n#print(Sum_point)\n\n\nStudent_pass = []\nfor i in range(len(Sum_point)):\n    if Sum_point[i] >= passing_point:\n        Student_pass.append(i+1)\n\n#print(Sum_point)\n#output\nif len(Student_pass) >= 1: \n    print(Student_pass)\nelse:\n    print(\"NO ACCEPTABLE APPLICANT\")\n",
+    "Pseudocode": "get Student\ninitialize All_point to empty list\nrepeat Student times\n    initialize point to empty list\n    repeat 4 times\n        get x\n        add x to point\n    add point to All_point\ninitialize weight to empty list\nrepeat 4 times\n    get weight value\n    add weight value to weight\nget passing_point\ninitialize Subjects_point to empty list\nrepeat Student times\n    initialize row to empty list\n    repeat 4 times\n        V = All_point[i][j] times weight[j]\n        add V to row\n    add row to Subjects_point\ninitialize Sum_point to empty list\nrepeat Student times\n    initialize Sum to 0\n    repeat 4 times\n        Sum = Sum plus Subjects_point[i][j]\n    add Sum to Sum_point\ninitialize Student_pass to empty list\nrepeat length of Sum_point times\n    if Sum_point[i] is greater than or equal to passing_point\n        add i plus 1 to Student_pass\nif length of Student_pass is greater than or equal to 1\n    display Student_pass\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:05:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887093\nPASSWORD: y6Jazvbb\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n#input student มีผู้สมัครกี่คน\nstudent = int(input())\nstudentscore=[]\n\n#รับค่าคะแนนของผู้สมัครแต่ละคน\nfor i in range(student):\n    box=[]\n    for j in range(4):\n        score = int(input())\n        box.append(score)\n    studentscore.append(box)\nprint(studentscore)\n\n#inputปรแกรมจะรับค่าน้ำหนัก 4 ค่า เป็นเลขทศนิยม\nweight=[]\n\nfor j in range(4):\n    z = float(input())\n    weight.append(z)\n\n#เกณฑ์คะแนนรวมที่ผ่านเต็มร้อย\np = int(input())\n\n\n\nsumall=[]\n\n\n\nfor i in range (len(studentscore)):\n    sum =[]\n    for j in range (len(studentscore)):\n        x1 = studentscore[i][0]*weight[0]\n        x2 = studentscore[i][1]*weight[1]\n        x3 = studentscore[i][2]*weight[2]\n        x4 = studentscore[i][3]*weight[3]\n    sum.append(x1)\n    sum.append(x2)\n    sum.append(x3)\n    sum.append(x4)\n    sumall.append(sum)\n\nprint(sumall)\n        \nfor i in sumall:\n        \n\n            \n\n\n\n#         sum.append(x)\n#     sumall.append(sum)\n# print(sumall)\n\n        \n        \n    \n\n",
+    "Pseudocode": "get student\ninitialize studentscore to empty list\n\nrepeat student times using index i\n    initialize box to empty list\n    repeat 4 times using index j\n        get score\n        add score to box\n    add box to studentscore\ndisplay studentscore\n\ninitialize weight to empty list\n\nrepeat 4 times using index j\n    get z\n    add z to weight\n\nget p\n\ninitialize sumall to empty list\n\nrepeat length of studentscore times using index i\n    initialize sum to empty list\n    repeat length of studentscore times using index j\n        x1 = studentscore[i][0] times weight[0]\n        x2 = studentscore[i][1] times weight[1]\n        x3 = studentscore[i][2] times weight[2]\n        x4 = studentscore[i][3] times weight[3]\n    add x1 to sum\n    add x2 to sum\n    add x3 to sum\n    add x4 to sum\n    add sum to sumall\n\ndisplay sumall\n\nrepeat for each i in sumall"
+  },
+  {
+    "User ID": "6887094",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:55:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887094\nPASSWORD: RYtfwYrE\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\n\nlist_pt = []\n\nfor i in range(n) :\n    list_p = []\n    for j in range(4) :\n        pt = float(input())\n        list_p.append(pt)\n    list_pt.append(list_p)\n\nlist_g = []\n\nfor i in range(4) :\n    g = float(input())\n    list_g.append(g)\n\nlast = float(input())\n\nlist_total = []\n\nfor i in range(n) :\n    total = 0\n    for j in range(4) :\n        total += list_pt[i][j] * list_g[j]\n    list_total.append(total)\n\nlist_good = []\n\nfor i in range(len(list_total)) :\n    if list_total[i] >= last :\n        list_good.append(i+1)\n\nif len(list_good) > 0 :\n    print(list_good)\nelse :\n    print('NO ACCEPTABLE APPLICANT')",
+    "Pseudocode": "get n\n\ninitialize list_pt to empty list\n\nrepeat n times using index i\n    initialize list_p to empty list\n    repeat 4 times using index j\n        get pt\n        add pt to list_p\n    add list_p to list_pt\n\ninitialize list_g to empty list\n\nrepeat 4 times using index i\n    get g\n    add g to list_g\n\nget last\n\ninitialize list_total to empty list\n\nrepeat n times using index i\n    initialize total to 0\n    repeat 4 times using index j\n        total = total plus list_pt[i][j] times list_g[j]\n    add total to list_total\n\ninitialize list_good to empty list\n\ngo through each i in length of list_total\n    if list_total[i] is greater than or equal to last\n        add i plus 1 to list_good\n\nif length of list_good is greater than 0\n    display list_good\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:53:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: hzg9cEsX\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\na =[]\nfor i in range(n):\n    row =[]\n    for j in range(4):\n        row.append(int(input()))\n    a.append(row)\n\n\nm = round(float(input()),1)\nn = round(float(input()),1)\no = round(float(input()),1)\np = round(float(input()),1)\nwin = float(input())\n\n# b = []\n\n# for i in range(n):\n#     for j in range(4):\n#         x = 0\n#         x = (round((a[i][0])*m) + ((a[i][1])*n) + ((a[i][2])*o) + ((a[i][3])*p),1)\n#         b.append(x)\n   \n# print(b)",
+    "Pseudocode": "get n\ninitialize a to empty list\nrepeat n times using index i\n    initialize row to empty list\n    repeat 4 times using index j\n        get input and convert to integer\n        add input to row\n    add row to a\n\nget input and convert to float and round to 1 decimal place and assign to m\nget input and convert to float and round to 1 decimal place and assign to n\nget input and convert to float and round to 1 decimal place and assign to o\nget input and convert to float and round to 1 decimal place and assign to p\nget input and assign to win\n\ninitialize b to empty list\n\nrepeat n times using index i\n    repeat 4 times using index j\n        initialize x to 0\n        compute x as (a[i][0] times m) plus (a[i][1] times n) plus (a[i][2] times o) plus (a[i][3] times p) rounded to 1 decimal place\n        add x to b\n\ndisplay b"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:04:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: dcr2VnWR\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nscore=[]\nn=int(input())\nfor _ in range(n):\n    row=[]\n    for _ in range(4):\n        row.append(int(input()))\n    score.append(row)\n\ngrade=[]\nfor _ in range(4):\n    grade.append(float(input()))\n\npassex=[]\nfor i in range(len(score)):\n    total=0\n\n    for j in range(4):\n        total=score[i][j]\n        sums=0\n        for k in range(4):\n            s=total*grade[k]\n            sums+=s\n    if sums>=75:\n        print(sums)\n\nelse:\n    print('NO ACCEPTABLE APPLICANT')\n\n\n\n\n",
+    "Pseudocode": "initialize score to empty list\nget n\nrepeat n times\n    initialize row to empty list\n    repeat 4 times\n        get value\n        add value to row\n    add row to score\n\ninitialize grade to empty list\nrepeat 4 times\n    get value\n    add value to grade\n\ninitialize passex to empty list\nrepeat length of score times\n    initialize total to 0\n\n    repeat 4 times\n        total = score at index i and j\n        initialize sums to 0\n        repeat 4 times\n            s = total times grade at index k\n            sums = sums plus s\n    if sums is greater than or equal to 75\n        display sums\n\n    otherwise\n        display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887097",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:02:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887097\nPASSWORD: nJTEZkNu\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\nenlist = int(input())\nll = []\nl2 = []\nlx = []\nx = 0\nwhile x <= enlist-1:\n    ls = []\n    for i in range(4):\n        z = float(input())\n        ls.append(z)\n    ll.append(ls)\n    x +=1\nfor i in range(4):\n    s = float(input())\n    l2.append(s)\nx = 0 \nfor i in range(enlist):\n    for j in range(4):\n        ll[i][j] = ll[i][j]*l2[j]\n    \nprint(ll)\n",
+    "Pseudocode": "get enlist\ninitialize ll to empty list\ninitialize l2 to empty list\ninitialize lx to empty list\ninitialize x to 0\nrepeat while x is less than or equal to enlist minus 1\n    initialize ls to empty list\n    repeat 4 times using index i\n        get z\n        add z to ls\n    add ls to ll\n    x = x plus 1\nrepeat 4 times using index i\n    get s\n    add s to l2\ninitialize x to 0 \nrepeat enlist times using index i\n    repeat 4 times using index j\n        ll[i][j] = ll[i][j] times l2[j]\ndisplay ll"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "2/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS",
+    "Submission Time": "2025-09-22T10:02:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: PKgyqCaX\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nprint('[1, 3]')\n\n\n\n",
+    "Pseudocode": "display [1, 3]"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:44:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: PSkAQqAK\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=float(input)\nMath=[]\nSci=[]\nEng=[]\nWat=[]\nfor _ in range(n):\n    for i in range(4):\n        Math.append(float(input()))\n        Sci.append(float(input()))\n        Eng.append(float(input()))\n        Wat.append(float(input()))\nMath_per=[]\nSci_per=[]\nEng_per=[]\nWat_per=[]\nfor j in range(4):\n    Math_per.append(float(input()))\n    Sci_per.append(float(input()))\n    Eng_per.append(float(input()))\n    Wat_per.append(float(input()))\n\n        \n\n\n\n\n",
+    "Pseudocode": "get n\ninitialize Math to empty list\ninitialize Sci to empty list\ninitialize Eng to empty list\ninitialize Wat to empty list\nrepeat n times using index _\n    repeat 4 times using index i\n        add float input to Math\n        add float input to Sci\n        add float input to Eng\n        add float input to Wat\ninitialize Math_per to empty list\ninitialize Sci_per to empty list\ninitialize Eng_per to empty list\ninitialize Wat_per to empty list\nrepeat 4 times using index j\n    add float input to Math_per\n    add float input to Sci_per\n    add float input to Eng_per\n    add float input to Wat_per"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T09:52:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: NA11KcJe\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nstu = []\nfor _ in range(n) :\n    score = []\n    for _ in range(4) :\n        score.append(int(input()))\n    stu.append(score)\n\nsub = []\nfor _ in range(4) :\n    sub.append(float(input()))\n\nf_stu = []\nfor i in range(n) :\n    f_sco = 0\n    for j in range(4) :\n        final = stu[i][j] * sub[j]\n        f_sco += final\n    f_stu.append(f_sco)\n\npassing = int(input())\npass_stu = []\nfor i in range(n) :\n    if f_stu[i] >= passing :\n        pass_stu.append((i+1))\n\nif len(pass_stu) > 0 :\n    print(pass_stu)\nelse :\n    print('NO ACCEPTABLE APPLICANT')\n\n",
+    "Pseudocode": "get n\ninitialize stu to empty list\nrepeat n times\n    initialize score to empty list\n    repeat 4 times\n        get input and convert to integer\n        add input to score\n    add score to stu\n\ninitialize sub to empty list\nrepeat 4 times\n    get input and convert to float\n    add input to sub\n\ninitialize f_stu to empty list\nrepeat n times\n    initialize f_sco to 0\n    repeat 4 times\n        final = stu[i][j] times sub[j]\n        f_sco = f_sco plus final\n    add f_sco to f_stu\n\nget passing\ninitialize pass_stu to empty list\nrepeat n times\n    if f_stu[i] is greater than or equal to passing\n        add i plus 1 to pass_stu\n\nif length of pass_stu is greater than 0\n    display pass_stu\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T08:32:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: Hc9D5vbs\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nc = []\nw = []\nres = []\nfor i in range(n):\n    row = []\n    for j in range(4):\n        s = int(input())\n        row.append(s)\n    c.append(row)\nfor i in range(4):\n    s = float(input())\n    w.append(s)\npassing = int(input()) \n\nfor i in range(n):\n    sum = 0\n    for j in range(4):\n        sum += c[i][j] * w[j]\n    if sum >= passing:\n        res.append(i+1)\nif len(res) > 0:\n    print(res)\nelse:\n    print(\"NO ACCEPTABLE APPLICANT\")\n\n\n",
+    "Pseudocode": "get n\ninitialize c to empty list\ninitialize w to empty list\ninitialize res to empty list\nrepeat n times using index i\n    initialize row to empty list\n    repeat 4 times using index j\n        get s\n        add s to row\n    add row to c\nrepeat 4 times using index i\n    get s\n    add s to w\nget passing\nrepeat n times using index i\n    initialize sum to 0\n    repeat 4 times using index j\n        sum = sum plus c[i][j] times w[j]\n    if sum is greater than or equal to passing\n        add i plus 1 to res\nif length of res is greater than 0\n    display res\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:47:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: 5UpB5ryQ\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx = int(input())\ny = int(input())\nz = int(input())\nstop = False\nfor i in range(n):\n    for j in range(n):\n        print('('+str(i)+','str(j)+')',end='')\n        if i == x and j == y:\n            stop = True\n            break\n    print()\n    if stop:\n        break",
+    "Pseudocode": "get x  \nget y  \nget z  \ninitialize stop to False  \nrepeat n times using index i  \n    repeat n times using index j  \n        display (i, j) without newline  \n        if i is x and j is y:  \n            set stop to True  \n            exit loop  \n    display newline  \n    if stop:  \n        exit loop"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:04:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: ZgaGtGpU\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist = []\nn = int(input())\nm = 4\n\nfor i in range(n) :\n    listp = []\n    for j in range(m) :\n        p = int(input())\n        listp.append(p)\n    list.append(listp)\n\nlistB = []\n\nfor i in range(m) :\n    w = float(input())\n    listB.append(w)\n    sum = 0\n    sum = list[i][j] * listB[i]\n    listans = []\n    if sum > listB[i] :\n        print(listB[i])\n        \n\n",
+    "Pseudocode": "initialize list to empty list\nget n\ninitialize m to 4\n\nrepeat n times using index i\n    initialize listp to empty list\n    repeat m times using index j\n        get p\n        add p to listp\n    add listp to list\n\ninitialize listB to empty list\n\nrepeat m times using index i\n    get w\n    add w to listB\n    initialize sum to 0\n    sum = list[i][j] times listB[i]\n    initialize listans to empty list\n    if sum is greater than listB[i]\n        display listB[i]"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T09:56:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD: 5X5Gu1qy\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nlist[]\nx=int(input())\nfor _ in range(x):\n    row=[]\n    for _ in range(2):\n        row.append(x)\n    list1.append(row)\n\n",
+    "Pseudocode": "initialize list to empty\nget x\nrepeat x times using index _\n    initialize row to empty\n    repeat 2 times using index _\n        add x to row\n    add row to list1"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:04:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: Z9CUHvBP\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n#สอบเพียง 4 หัวข้อ แต่ละข้อมีน้ำหนักไม่เท่ากัน \n#โดยให้แต่ละหลักสูตรกำหนดนำ้หนักและคะแนนรวมขั้นต่ำเอง\n\nnumber=int(input()) #people\nsc=float(input()) \n\na[]\nb=[]\n\n# use absord\nfor i in (4):\n    if number[i] \n\n\n\n\n\n\n",
+    "Pseudocode": "initialize number to integer from input\ninitialize sc to float from input\ninitialize a to empty list\ninitialize b to empty list\nrepeat 4 times using index i\n    if number at index i is true"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T10:04:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: MhBRskjX\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\npasses=[]\nstudent=[]\ncount=0\nsum=0\np=[]\nfor i in range(n):\n    for j in range(4):\n        x=float(input())\n        student.append(x)\nm=float(input())\ns=float(input())\ne=float(input())\nt=float(input())\npass_1=float(input())\nfor v in student:\n    count+=1\n    if count==1:\n        re=v*m\n        sum+=re\n    elif count==2:\n        re=v*s\n        sum+=re\n    elif count==3:\n        re=v*e \n        sum+=re\n    elif count==4:\n        re=v*t\n        sum+=re\n        count=0\n        p.append(float(sum))\n        sum=0               \nfor i in p:\n    count+=1\n    if i>=pass_1:\n        passes.append(count)\no=len(passes)        \nif o>0:\n    print(passes)\nelse:\n    print('NO ACCEPTABLE APPLICANT')           \n            \n    \n    \n    \n\n\n",
+    "Pseudocode": "get n\ninitialize passes to empty list\ninitialize student to empty list\ninitialize count to 0\ninitialize sum to 0\ninitialize p to empty list\nrepeat n times using index i\n    repeat 4 times using index j\n        get x\n        add x to student\nget m\nget s\nget e\nget t\nget pass_1\ngo through each v in student\n    count plus 1\n    if count is 1\n        re equals v times m\n        sum plus re\n    otherwise if count is 2\n        re equals v times s\n        sum plus re\n    otherwise if count is 3\n        re equals v times e \n        sum plus re\n    otherwise if count is 4\n        re equals v times t\n        sum plus re\n        count equals 0\n        add sum to p\n        initialize sum to 0               \ngo through each i in p\n    count plus 1\n    if i is greater than or equal to pass_1\n        add count to passes\ninitialize o to length of passes        \nif o is greater than 0\n    display passes\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:05:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: gR4EGQKU\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nrow = []\n\nm = int(input())\n\nfor i in range(m) :\n    point = []\n    for j in range(4):\n        p = input()\n        point.append(p)\n    row.append(point)\n\n\n#point\nfor i in range(len(row)):\n    for j in range\n",
+    "Pseudocode": "initialize row to empty list\n\nget m\n\nrepeat m times using index i\n    initialize point to empty list\n    repeat 4 times using index j\n        get p\n        add p to point\n    add point to row\n\nrepeat length of row times using index i\n    repeat 4 times using index j"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:04:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887111\nPASSWORD: m8QT4nnc\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nx = int(input())\n\nlistA= []\nfor i in range(x):\n    A = []\n    for j in range(1, 6):\n        score = float(input())\n        A.append(score)\n    listA.append(A)\n\nlast = int(input())\nresult = []\n\n\n\nfor q in range:\n    for s in range:\n\n\n\n    \n    \n\n    \n\n\n\n",
+    "Pseudocode": "get x\ninitialize listA to empty list\nrepeat x times using index i\n    initialize A to empty list\n    repeat from j equals 1 to 5\n        get score\n        add score to A\n    add A to listA\n\nget last\ninitialize result to empty list\n\nrepeat for q in range\n    repeat for s in range"
+  },
+  {
+    "User ID": "6887114",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T08:40:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887114\nPASSWORD: vyyXW7B6\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nstudent = int(input())\nscore = []\nfor i in range(student):\n    row = []\n    for j in range(4):\n        row.append(int(input()))\n    score.append(row)\nweight = []\nfor i in range(4):\n    weight.append(float(input()))\ngrade = float(input())\ntotal = []\n\nfor i in range(student):\n    row = []\n    sum = 0\n    for j in range(4):\n        sum += score[i][j]*weight[j]\n    total.append(sum)\n\na = []\nfor i in range(student):\n    if  total[i] >= grade:\n        a.append(i+1)\nif (len(a)>0):\n    print(a)\nelse:\n    print('NO ACCEPTABLE APPLICANT')\n\n",
+    "Pseudocode": "get student\ninitialize score to empty list\nrepeat student times using index i\n    initialize row to empty list\n    repeat 4 times using index j\n        get input and convert to integer\n        add input to row\n    add row to score\ninitialize weight to empty list\nrepeat 4 times using index i\n    get input and convert to float\n    add input to weight\nget grade and convert to float\ninitialize total to empty list\n\nrepeat student times using index i\n    initialize row to empty list\n    initialize sum to 0\n    repeat 4 times using index j\n        sum = sum plus score at index i and j times weight at index j\n    add sum to total\n\ninitialize a to empty list\nrepeat student times using index i\n    if total at index i is greater than or equal to grade\n        add i plus 1 to a\nif length of a is greater than 0\n    display a\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:05:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: Pg5erMKh\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\ntotals = []\nPass = []\nnraw = []\npop = int(input())\ncount = 0\ncount_P = 0\ni = 0\nwhile i < (pop*4)+4:\n    raw = float(input())\n    count += 1\n    nraw.append(raw)\n    if count == ((pop*4)+5):\n        break\nfor i in range(len(nraw)):\n    '''total = nraw[i]*0.4 + nraw[i+1]*0.3 + nraw[i+2]*0.2 + nraw[i+3]*0.1\n    totals.append(total)'''\n\n\n\n\n\n\n\n\n\n'''if totals[i] >= 75:\n    Pass.append[totals[i]]\n    count_P += 1\nelse:\n    count_P += 0'''\n\nif count_P > 0:\n    print(Pass)\nelif count_P == 0:\n    print('NO ACCEPTABLE APPLICANT')\n\n\n\n",
+    "Pseudocode": "initialize totals to empty list\ninitialize Pass to empty list\ninitialize nraw to empty list\nget pop\ninitialize count to 0\ninitialize count_P to 0\ninitialize i to 0\nrepeat while i is less than (pop times 4) plus 4\n    get raw\n    convert raw to float\n    add raw to nraw\n    add 1 to count\n    if count is equal to (pop times 4) plus 5\n        exit loop\ngo through each i in length of nraw\n    '''total = nraw[i] times 0.4 plus nraw[i+1] times 0.3 plus nraw[i+2] times 0.2 plus nraw[i+3] times 0.1\n    add total to totals'''\n\n    '''if totals[i] is greater than or equal to 75\n        add totals[i] to Pass\n        add 1 to count_P\n    otherwise\n        add 0 to count_P'''\n\nif count_P is greater than 0\n    display Pass\notherwise if count_P is equal to 0\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:53:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887116\nPASSWORD: rTBhyqmk\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n\n",
+    "Pseudocode": "initialize USERID to 6887116  \ninitialize PASSWORD to rTBhyqmk  \ninitialize EXERCISEID to itds120-cp2-q2"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-09-22T10:03:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: v7YE3617\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\np = int(input())\ng = []\n\nfor i in range(p):\n    for j in range(4):\n        s = float(input())\n        g.append(s)\n\nwe = []\nfor k in range(4):\n    w = float(input())\n    we.append(w)\n\npas = float(input())\n\npa = []\nsum = 0\nfor m in g:\n    for n in we:\n        sum += g[int(m)]*we[int(n)]\n        if sum >= pas:\n            pa.append(sum)\n\nfor o in pa:\n    if pa[o] >= pas:\n        print(f'[{o}],',end='') \n   \n\n\n\n",
+    "Pseudocode": "get p\ninitialize g to empty list\n\nrepeat p times using index i\n    repeat 4 times using index j\n        get s\n        add s to g\n\ninitialize we to empty list\nrepeat 4 times using index k\n    get w\n    add w to we\n\nget pas\n\ninitialize pa to empty list\ninitialize sum to 0\ngo through each m in g\n    go through each n in we\n        sum = sum plus g at index of m times we at index of n\n        if sum is greater than or equal to pas\n            add sum to pa\n\ngo through each o in pa\n    if pa at index of o is greater than or equal to pas\n        display [o],\n        stay on same line"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T09:59:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887118\nPASSWORD: pPqavJtc\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn=int(input())\ni=0\nlist1=[] #score each per\nwhile True:\n    if i<(n*4):\n        s=int(input())\n        list1.append(s)\n        i=i+1\n    else:\n        break\n        \nweight=[] # * score\nj=0\nwhile True:\n    if j<4:\n        o=float(input())\n        list1.append(o)\n        j=j+1\n    else:\n        break\n\nsum=int(input()) #>=pass\n\n\n\n\n\n            \n\n\n        \n\n\n\n\n\n\n\n\n\n\n\n",
+    "Pseudocode": "get n\ninitialize i to 0\ninitialize list1 to empty list\nrepeat while true\n    if i is less than n times 4\n        get s\n        add s to list1\n        i = i plus 1\n    otherwise\n        exit loop\n\ninitialize weight to empty list\ninitialize j to 0\nrepeat while true\n    if j is less than 4\n        get o\n        add o to list1\n        j = j plus 1\n    otherwise\n        exit loop\n\nget sum"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T08:35:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: cvf7671U\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\nall=[]\nd=[]\nfor i in range(n):\n    a=[]\n    for i in range(4):\n        a.append(int(input()))\n    all.append(a)\nfor i in range(4):\n    d.append(float(input()))\n\np=float(input())\nsum=[]\nfor i in range(n):\n    s=0\n    for j in range(4):\n        x=all[i][j]*d[j]\n        s+=x\n    sum.append(s)\nnew=[]\nfor i in range(len(sum)):\n    if sum[i]>=p:\n        new.append(i+1)\nif len(new)>0:\n    print(new)\nelse:\n    print('NO ACCEPTABLE APPLICANT')\n\n\n\n\n\n",
+    "Pseudocode": "get n\ninitialize all to empty list\ninitialize d to empty list\nrepeat n times using index i\n    initialize a to empty list\n    repeat 4 times using index i\n        get value\n        add value to a\n    add a to all\nrepeat 4 times using index i\n    get value\n    add value to d\nget p\ninitialize sum to empty list\nrepeat n times using index i\n    initialize s to 0\n    repeat 4 times using index j\n        x = all[i][j] times d[j]\n        s = s plus x\n    add s to sum\ninitialize new to empty list\nrepeat length of sum times using index i\n    if sum[i] is greater than or equal to p\n        add i plus 1 to new\nif length of new is greater than 0\n    display new\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  },
+  {
+    "User ID": "6887120",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "3/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL",
+    "Submission Time": "2025-09-22T10:02:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887120\nPASSWORD: 1BS2pU1T\nEXERCISEID: itds120-cp2-q2\n */\n'''\n\nn = int(input())\nsum_score1=[]\nfor i in range (n):\n    score = 0\n    sum_score2=[]\n    for j in range (4):\n        score = input()\n        sum_score2.append(float(score))\n    sum_score1.append(sum_score2)\n\nclas = []\n\nfor i in range (4):\n    z = input()\n    clas.append(float(z))\n\n\nfinal_score = float(input())\n\ntotal_1 = []\ntotal_2 = []\nfor i in range (len(sum_score1)):\n    sum3 = 0\n    for j in range (len(sum_score1)):\n        sum3 += sum_score1[i][j]*clas[j]\n    total_2.append(sum3)\n    sum3 = 0\ntotal3 = []\nfor i in range (0,len(total_2)):\n    if total_2[i]>=(final_score):\n        total3.append(i+1)\nif total3 == []:\n    print(\"NO ACCEPTABLE APPLICANT\")\nelse:\n    print(total3)\n",
+    "Pseudocode": "get n\ninitialize sum_score1 to empty list\nrepeat n times using index i\n    initialize score to 0\n    initialize sum_score2 to empty list\n    repeat 4 times using index j\n        score = input\n        add convert score to float to sum_score2\n    add sum_score2 to sum_score1\n\ninitialize clas to empty list\n\nrepeat 4 times using index i\n    z = input\n    add convert z to float to clas\n\nfinal_score = convert input to float\n\ninitialize total_1 to empty list\ninitialize total_2 to empty list\nrepeat length of sum_score1 times using index i\n    initialize sum3 to 0\n    repeat length of sum_score1 times using index j\n        sum3 = sum3 plus sum_score1[i][j] times clas[j]\n    add sum3 to total_2\n    initialize sum3 to 0\ninitialize total3 to empty list\nrepeat 0 to length of total_2 using index i\n    if total_2[i] is greater than or equal to final_score\n        add i plus 1 to total3\nif total3 is empty\n    display NO ACCEPTABLE APPLICANT\notherwise\n    display total3"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-cp2-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-09-22T04:59:04+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 999\r\nPASSWORD: 424242\r\nEXERCISEID: itds120-cp2-q2\r\n */\r\n'''\r\n\r\nn = int(input())\r\n\r\nscores = []\r\nfor _ in range(n):\r\n    s = []\r\n    for __ in range(4):\r\n        s.append(float(input().strip()))\r\n    scores.append(s)\r\n\r\nweights = [float(input().strip()) for _ in range(4)]\r\nthreshold = float(input().strip())\r\n\r\npassed = []\r\nfor i, sc in enumerate(scores, start=1):\r\n    total = sum(s * w for s, w in zip(sc, weights))\r\n    if total >= threshold:\r\n        passed.append(i)\r\n\r\nif len(passed) > 0:\r\n    print(passed)\r\nelse:\r\n    print('NO ACCEPTABLE APPLICANT')\r\n",
+    "Pseudocode": "get n\n\ninitialize scores to empty list\nrepeat n times\n    initialize s to empty list\n    repeat 4 times\n        get score\n        add score to s\n    add s to scores\n\ninitialize weights to list of 4 weights from input\nget threshold\n\ninitialize passed to empty list\ngo through each i, sc in scores with index starting at 1\n    initialize total to sum of s times w for each s, w in zip of sc and weights\n    if total is greater than or equal to threshold\n        add i to passed\n\nif length of passed is greater than 0\n    display passed\notherwise\n    display NO ACCEPTABLE APPLICANT"
+  }
+]
