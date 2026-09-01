@@ -1,0 +1,392 @@
+[
+  {
+    "problem_id": 1,
+    "question": "Exercise 17. Find factorial of a number\nPractice Problem: Write a program to use a loop to find the factorial of a given number (e.g., 5!). The factorial of N is the product of all integers from 1 to N.\nGiven Input: num = 5\nExpected Output: 120",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "I will start with a variable called answer and set it to 1. Then I will make a loop that counts from 1 up to the number we are given, which is 5. Every time the loop runs, I take the current loop number and multiply it by my answer variable, then save that as the new answer. Once the loop finishes going through all the numbers up to 5, I will show the final answer."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "i'll set up a variable named total and make it equal to 1 then do a loop thingy to go from 1 to the input number but inside the loop i accidentally write total equals the current number instead of total times the current number so it keeps overwriting it every time it loops until the end."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "The input is 5 so I think I just need to make a loop that runs 5 times. Inside the loop, I'll take 5 and multiply it by 4, then multiply by 3, then 2, then 1. Then I just print out 120 at the end because that's 5 factorial."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "add them up"
+      }
+    ]
+  },
+  {
+    "problem_id": 2,
+    "question": "Exercise 30. Remove duplicates without set\nPractice Problem: Write a program to remove all duplicate values from a list using a loop, maintaining the original order of elements.\nGiven Input: [1, 2, 2, 3, 4, 4, 4, 5]\nExpected Output: Unique List: [1, 2, 3, 4, 5]",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Create an empty list called unique_numbers. Then look at each number in the original list one by one using a loop. For each number, check if it is already inside my unique_numbers list. If it isn't in there yet, append it to unique_numbers. If it's already there, just do nothing and move to the next item. Finally, print the unique_numbers list."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "I will create a new list for the answer. Then I will go through the given list with a loop. I'll check if the current item matches the item right next to it. If they are different, I will add the current item to my new list. This should filter out the doubles."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "i look at the sample list containing 1 2 2 3 4 4 4 5 and write an IF statement to check if the number is equal to 2 or equal to 4 and if it matches those numbers i'll delete the duplicates from the list manually until only one of them is left then show it."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "I forgot how to do this, so I will just use print statements..."
+      }
+    ]
+  },
+  {
+    "problem_id": 3,
+    "question": "Exercise 12. Count vowels and consonants in a sentence\nPractice Problem: Write a program that counts the total number of vowels and consonants in a given sentence, ignoring spaces and special characters.\nGiven Input: \"Loops are Fun!\"\nExpected Output:\nVowels: 5\nConsonants: 7",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Start two counters, one for vowels at 0 and one for consonants at 0. Loop through every character in the string 'Loops are Fun!'. First check if the character is a letter. If it is a letter, check if it's in a list of vowels like a, e, i, o, u (both lowercase and uppercase). If it matches, add 1 to vowels. Otherwise, add 1 to consonants. Print both totals at the end."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "I will set a vowel counter to 0 and a consonant counter to 0. Then I loop through the sentence character by character. If the character is 'a', 'e', 'i', 'o', or 'u', I increase the vowel counter by 1. Else, I increase the consonant counter by 1. At the end I will print the results."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "make a loop for the sentence Loops are Fun! and check if the character is equal to o or e or u because those are the vowels in the example input and then increment the vowel thingy by 1 and if it is not those then it is a consonant."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "just loop the things and hope it works."
+      }
+    ]
+  },
+  {
+    "problem_id": 4,
+    "question": "Exercise 3. Return Multiple Values from a Function\nPractice Problem: Write a function calculation() that accepts two variables and calculates both addition and subtraction. The function must return both results in a single return statement.\nGiven Input:\na = 40\nb = 10\nExpected Output: 50, 30",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Define a function named calculation that takes two inputs, let's call them x and y. Inside the function, make a variable for the sum which is x plus y. Make another variable for the difference which is x minus y. Then use a return statement to send back both the sum and the difference separated by a comma."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "Create the calculation function with two parameters. I will calculate a plus b and save it as add_result. Then calculate a minus b and save it as sub_result. I will print add_result and then print sub_result inside the function so both show up."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "i'll make a function named calculation and hardcode it to compute 40 + 10 to get 50 and then do 40 - 10 to get 30 because those are the variables given in the example and then i'll use a return statement for 50 and another return for 30 right after it."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "use an IF to check if it's equal, I guess..."
+      }
+    ]
+  },
+  {
+    "problem_id": 5,
+    "question": "Exercise 6. Create a Recursive Function\nPractice Problem: Write a recursive function addition() that calculates the sum of numbers from 0 to 10. A recursive function is a function that calls itself to solve smaller instances of the same problem.\nGiven Input: num = 10\nExpected Output: 55",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Create a function called addition that takes a number. If the number is 0, it should just return 0. Otherwise, the function should return the current number plus a call to itself, passing in the current number minus 1. This will keep going down until it hits 0."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "I need a function named addition that accepts a number. Inside, I will return the number plus a call to addition with number minus 1. I think this will keep adding the numbers together recursively until it reaches the total sum."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "i will create a recursive addition function that takes the input 10 and inside it calls addition(10) over and over again to add it to a total variable until the answer becomes 55 and then i print the result on the screen."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "loop to 10"
+      }
+    ]
+  },
+  {
+    "problem_id": 6,
+    "question": "Exercise 5. Create an Inner Function\nPractice Problem: Create an outer function that accepts two parameters, a and b. Inside, create an inner function that calculates the addition of a and b. The outer function should then add 5 to that sum and return the final result.\nGiven Input:\na = 5\nb = 10\nExpected Output: 20",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Make an outer function that takes two arguments. Inside this function, define a second function that adds those two arguments together and returns that sum. Back in the outer function, call the inner function to get the sum, add 5 to that result, and then return the final value."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "I'll make an outer function with parameters a and b. Inside it, I'll make an inner function that does a + b. Then the outer function will take that inner function's result, add 5 to it, and print it out."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "outer function takes 5 and 10 and then inside i make an inner function that adds 5 and 10 together to make 15 but i forget to actually call the inner function thingy from the outer function so it just returns 15 plus 5 which equals 20 maybe."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "dunno how to nest functions just print 20"
+      }
+    ]
+  },
+  {
+    "problem_id": 7,
+    "question": "Exercise 19. Multi-Tiered Income Tax Calculation\nPractice Problem: Calculate income tax for a given income based on these rules:\nFirst $10,000: 0% tax\nNext $10,000: 10% tax\nRemaining income: 20% tax\nGiven Input: income = 45000\nExpected Output: Total income tax to pay is 6000",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Set tax to 0. If income is greater than 10000, we know the first 10000 has no tax, so we subtract 10000 from the income. Now check if the remaining income is more than 10000. If it is, we add 1000 (which is 10% of 10000) to our tax, and subtract another 10000 from the income. Whatever income is left over gets multiplied by 0.20 and added to the tax. Finally, print the total tax."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "I'll check the income with if statements. If income is less than or equal to 10000, tax is 0. If it's between 10000 and 20000, the tax is 10% of the income. If it's above 20000, like the 45000 input, then the tax is 20% of the remaining amount after subtracting 20000, plus the tax from the lower tiers."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "the income is 45000 which is more than 20000 so i will just take 45000 and multiply it by 20 percent since it falls into the remaining income bracket and then subtract 10000 from it to get the tax amount."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "I am completely lost, tax is too hard."
+      }
+    ]
+  },
+  {
+    "problem_id": 8,
+    "question": "Exercise 25. Check Leap Year\nPractice Problem: Write a program that takes a year as input and determines if it is a leap year.\nRules for leap years: a year is a leap year if it’s divisible by 4, unless it’s also divisible by 100 but not by 400.\nGiven Input: year = 2024\nExpected Output: 2024 is a leap year",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Take the year input. First check if the year can be divided evenly by 400, if so, it is a leap year. If not, check if it's divided evenly by 100, if it is, then it's NOT a leap year. Otherwise, if it's divided evenly by 4, it IS a leap year. If none of those match, it's a regular year."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "I will check if the year can be divided by 4 with no remainder. If it can, I'll check if it's divisible by 100. If it's divisible by 4 and not 100, I will print it's a leap year. I think this works for 2024."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "i'll check if the input year is 2024 and if it is 2024 then i will use an IF statement to print out that 2024 is a leap year because it can be divided by 4 perfectly."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "check if the year is even number"
+      }
+    ]
+  },
+  {
+    "problem_id": 9,
+    "question": "Exercise 29. Word Length Analysis\nPractice Problem: Create a list of 5 words. Write a loop that iterates through the list and prints each word alongside its character count.\nGiven Input: words = [\"Apple\", \"Banana\", \"Cherry\", \"Date\", \"Elderberry\"]\nExpected Output:\nApple - 5 Banana - 6 Cherry - 6 Date - 4 Elderberry - 10",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "I'll make a list holding the five words given. Then I will use a loop to go through each word in that list. Inside the loop, I'll count the letters of the current word using a length counter and print out the word, a dash, and the count all together on the same line."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "First, create the list of words. Then loop through the list. For each item, I will count how many characters it has and print that count number. I just need to make sure the word itself is printed too."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "do a for loop thingy on the list of words containing Apple Banana Cherry Date Elderberry and inside it just print Apple - 5 then print Banana - 6 and type out the rest of the counts from the example output."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "count words in list which is 5"
+      }
+    ]
+  },
+  {
+    "problem_id": 10,
+    "question": "Exercise 27. Palindrome Check\nPractice Problem: Write a program to check if a string is a palindrome (reads the same forward and backward).\nGiven Input: str1 = \"radar\"\nExpected Output: Is Palindrome: True",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Take the input string. Create a copy of this string but reversed, maybe by looping backwards through the original letters and building a new string. Then compare the original string with the reversed string using an if statement. If they match exactly, print True for palindrome, otherwise False."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "I'll check the first letter of the string and compare it to the last letter. If they are the same, like 'r' and 'r' in radar, then I will say it is a palindrome. If they are different, it's not."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "i'll look at the string radar and check if the first character is r and the middle character is d and if both are true then i will just tell the computer to say it reads backward correctly."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "check if string length is bigger than 3"
+      }
+    ]
+  },
+  {
+    "problem_id": 11,
+    "question": "Exercise 10. Vowel Counter\nPractice Problem: Write a program to count the total number of vowels (a, e, i, o, u) in a given string.\nGiven Input: str1 = \"Hello World\"\nExpected Output: Vowel Count: 3",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Start a counter variable at 0. Loop through each letter of the string 'Hello World'. Inside the loop, check if the current letter is equal to 'a', 'e', 'i', 'o', or 'u'. If it matches any of those, add 1 to the counter. After checking all letters, print out the final count."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "I will create a variable named count and set it to 0. Then I'll look at the string. I'll search for vowels. If I find an 'e' or an 'o', I will increase count by 1. Then print the count at the end."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "loop through Hello World character by character and if the character is e or o then add 1 to a variable because those are the only vowels in Hello World and then print the result which is 3."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "count the words in the text string"
+      }
+    ]
+  },
+  {
+    "problem_id": 12,
+    "question": "Exercise 5. Reverse a given string\nPractice Problem: Write a program to reverse a given string.\nGiven Input: str1 = \"PYnative\"\nExpected Output: evitanYP",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Start with an empty string called reversed_str. Look at the original string 'PYnative' and start a loop from the very last character down to the first character. In each step, take that character and append it to the end of reversed_str. When the loop finishes, print reversed_str."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "I will loop through the given string from start to finish. For each character, I will print it out. But I need to figure out how to make the loop go backwards instead of forwards so that it prints evitanYP."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "i'll take PYnative and split it in half to get PYna and tive then swap them around to make tivePYna because i think swapping the blocks reverses the general order of the word."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "sort the string from z to a"
+      }
+    ]
+  },
+  {
+    "problem_id": 13,
+    "question": "Exercise 41. Rotate a List (Left or Right by k positions)\nPractice Problem: Write a function to rotate a list to the left by k positions. For example, if k=2, the first two elements move to the end of the list.\nGiven Input:\nList: [1, 2, 3, 4, 5]\nk: 2\nExpected Output: Rotated List: [3, 4, 5, 1, 2]",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Create a function that takes the list and k. Inside, make a new list. Take the elements from index k to the end of the original list and put them in the new list first. Then, take the elements from the start of the original list up to index k, and append them to the end of the new list. Return the new list."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "I will loop k times. Inside the loop, I'll remove the very first item from the front of the list and then append that same item to the back of the list. This should shift everything left, but it might crash if k is bigger than the list length."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "the number k is 2 so i'll take the first two numbers 1 and 2 from the list and swap their spots so it becomes 2 and 1 then shift the rest of the list manually to look like 3 4 5 1 2."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "reverse the entire list completely"
+      }
+    ]
+  },
+  {
+    "problem_id": 14,
+    "question": "Exercise 26. Find the Second Largest Number in a List\nPractice Problem: Write a Python function that takes a list of numbers and returns the second largest value. Ensure the function handles lists with duplicate values correctly.\nGiven Input: List: [12, 35, 1, 10, 34, 1, 35]\nExpected Output: Second Largest: 34",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Keep track of two variables, largest and second_largest, initializing them to very small numbers. Loop through each number in the list. If the current number is bigger than largest, update second_largest to be the old largest, and make the current number the new largest. If the current number is smaller than largest but bigger than second_largest, update second_largest. Ignore numbers that equal largest so duplicates don't mess it up."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "First, I'll sort the list of numbers from smallest to largest. After it is sorted, the largest number will be at the very end. So the second largest number must be the one right before it, at the second to last position. I'll return that value."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "i look at the array 12 35 1 10 34 1 35 and see that 35 is the highest number so i will find where 35 is and then look at the number right next to it which is 34 and just return 34."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "compare first number to last number"
+      }
+    ]
+  },
+  {
+    "problem_id": 15,
+    "question": "Exercise 38. Flatten Nested List (2D to 1D)\nPractice Problem: Take a 2D list (a list containing several lists) and “flatten” it into a single 1D list containing all the individual elements in their original order.\nGiven Input: 2D List: [[1, 2, 3], [4, 5], [6, 7, 8, 9]]\nExpected Output: 1D List: [1, 2, 3, 4, 5, 6, 7, 8, 9]",
+    "submissions": [
+      {
+        "submission_id": 1,
+        "level": "mostly_correct",
+        "pseudocode": "Start with a new empty list called flat_list. Use a loop to go through each inner sub-list inside the big 2D list. Inside that loop, make another loop to go through each single item of the current sub-list. Take each item and append it to flat_list. After both loops finish, return flat_list."
+      },
+      {
+        "submission_id": 2,
+        "level": "partially_correct",
+        "pseudocode": "I'll create an empty list for the final answer. Then I will loop through the main 2D list. For each item I find, I will add it to my final list. I think this will combine them all together into one flat list."
+      },
+      {
+        "submission_id": 3,
+        "level": "largely_incorrect",
+        "pseudocode": "i'll look at the 2D list containing three sublists and write code to add the first list 1 2 3 to the second list 4 5 and then add the third list using a plus sign then print out how many total items are inside."
+      },
+      {
+        "submission_id": 4,
+        "level": "incorrect",
+        "pseudocode": "count how many small lists there are"
+      }
+    ]
+  }
+]
