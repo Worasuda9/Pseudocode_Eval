@@ -1,0 +1,956 @@
+[
+  {
+    "User ID": "6887001",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:57:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887001\nPASSWORD: v46vmSdc\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n\n#### END import\n\n\n\n#### START Functions\ndef encode_data(arr1, arr2):\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n    diff = arr1 - arr2\n## END TODO 2\n    return diff\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split()\narr2 = input().split()\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1, arr2)\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887002",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:57:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887002\nPASSWORD: utYNcRnk\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data():\n    lst=[]\n    for i in range(l):\n        x=arr1[i]-arr2[i]\n        lst.append(x)\n    print(arr1)\n    print(arr2)\n    print(lst)\n        \n\n\n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1=input()\narr1=arr1.split()\narr1=list(map(lambda x:int(x),arr1))\nl=len(arr1)\narr2=input()\narr2=arr2.split()\narr2=list(map(lambda x:int(x),arr2))\n\n\nencode_data()\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\n# print('Sender sent:')\n# print(' First input: ', end='')\n# for v in arr1: print(v, end=' ')\n# print()\n# print(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "1/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:59:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: grXHPuNP\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(ar1,ar2):\n    value1 = np.array(ar1,dtype=int)\n    value2 = np.array(ar2,dtype=int)\n    diff = value1 - value2\n    return diff\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input()\n# print(arr1)\narr1 = arr1.split(' ')\n# print(arr1)\narr2 = input()\n# print((arr2))\narr2 = arr2.split(' ')\n# print(arr2)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n# print(out_enc)\n\nlst = []\nunique,count = np.unique(out_enc,return_counts=True)\nfor k,v in zip(unique,count):\n    # print(f'({k} {v})')\n    # out_enc = np.array(f'({k}, {v})')\n    lst.append(np.array(f'({k}, {v})'))\n# print(np.asarray(lst))\nout_enc = ''\nfor l in lst:\n    # print(l)\n    out_enc += l + ','\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: [{out_enc[:-1]}]')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:00:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887004\nPASSWORD: erU44ahB\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np \n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndiff = arr1 - arr2\nencode = diff.\n\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = np.array([1,1,2,2,2,3,4,5,6,6])\narr2 = np.array([1,1,1,2,2,2,4,5,6,7])\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887005",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:00:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887005\nPASSWORD: 5g4g28jp\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    out_enc = np.subtract(arr1,arr2)\n    \n    count = 0\n    \n    for i in diff:\n        if i[0]==i[1]:\n            count +=1\n        else:\n            count = 1\n    encoding ={\n        (out_rnc,count)\n    }\n\n    return out_enc\n    \n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n\nrow = list(map(int,input()split()))\ncol = list(map(int,input()split()))\narr1 = np.array(row, dype=np.int8)\narr2 = np.array(col, dype=np.int8)\ntotal = encode_data(arr1,arr2)\nprint(total)\n\n\n\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\ndef final(out_enc):\n    return \n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887006",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887006\nPASSWORD: aqhHRFf5\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np \n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1 , arr2) :\n    list = []\n    difference = np.subtract(arr1,arr2)\n    \n    for _ in list:\n        t = (difference,(len(difference[0:2])))\n        list.append(t)\n        \n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = int(input())\narr2 = int(input())\nA = np.array(list(map(int, (arr1,arr2).split())))\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "11/11 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T03:21:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: DfjWKjpq\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(a1, a2):\n    encode = []\n    diff = a1 - a2\n    count = 1\n    for i in range(len(diff)-1):\n        if (diff[i] == diff[i+1]):\n            count += 1\n        else:\n            encode.append((int(diff[i]), count))\n            count = 1\n    encode.append((int(diff[-1]), count))\n    return encode\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split()\narr2 = input().split()\n\narr1 = np.array(arr1, dtype=int)\narr2 = np.array(arr2, dtype=int)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:59:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: neP8zZTX\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\na1 = input()\na2 = input()\nfor i in a1:\n    a = i.split()\n    print(a)\n\n#### START Functions\n# def encode_data(a1,a2):\nfor i in range(len(a1)):\n        print(i)\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n# def encode_data(a1,a2):\n\n## END TODO 2\n\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\n# print('Sender sent:')\n# print(' First input: ', end='')\n# for v in arr1: print(v, end=' ')\n# print()\n# print(f' Encode data: {out_enc}')\n\n#### END Main Program\n"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:57:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: DmpWXReY\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:00:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: rSW85wdK\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data():\n    arr1 = int(input())\n    arr2 = int(input())\n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nencode_data() = out_enc\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "7/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T04:01:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: PH57XvSK\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1, arr2):\n    diff = []\n    data = dict()\n    values = []\n    for i in range(len(arr1)):\n        diff.append(int(arr1[i]) - int(arr2[i]))\n    for i in diff:\n        data[i] = data.get(i, 0) + 1\n    return list(data.items())\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().strip().split()\narr2 = input().strip().split()\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1, arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:54:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: njFfvSgw\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(**kwargs):\n    diff = arr1 - arr2\n    for arr1,arr2 in diff.items():\n        arr1 =np.array(arr1-arr2,dtype = int)\n    return(encode_data) as out_enc\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\nline1= []\nline2 = []\narr1 = line1.append(line1)\narr2 = line2.append(line2)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = out_enc.append(encode_data)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program\n"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "11/11 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T03:58:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: ss2X2agh\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(a1,a2):\n    n1 = list(map(int, list(np.subtract(a1,a2))))\n    # print(n1)\n\n    f = n1[0]\n    count = 0\n    lst = []\n    for i in range(len(n1)):\n\n        if n1[i] == f:\n            count += 1\n        else:\n            lst.append( (f, count))\n            f = n1[i]\n            count = 1\n\n        if i == len(n1)-1:\n            lst.append( (f, count))\n\n    return lst\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = np.array(list(map(int, input().split())))\narr2 = np.array(list(map(int, input().split())))\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887014",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T02:39:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887014\nPASSWORD: BW4CZm22\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as numpy\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n# def encode_data (a,b):\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nn1 = input().split('')\nn2 = input().split('')\n\nprint(n1,n2)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\n# print('Sender sent:')\n# print(' First input: ', end='')\n# for v in arr1: print(v, end=' ')\n# print()\n# print(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:02:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887015\nPASSWORD: jpgs7BuQ\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\ndef encode_data(diff):\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n    \n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "1/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:39:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: WbqdgAeh\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(a,b) :\n    # diff = subtract(a,b)\n    diff = []\n    for a1,a2 in zip(a,b) :\n        diff.append(int(a1)-int(a2)) \n    # print(diff)\n    encoding = []\n    same = 0\n    new = []\n    for i in range(len(diff)) :\n        # print(diff[i] == diff[i-1])\n        if diff[i] == diff[i-1] :\n            same += 1\n            data = (diff[i], same)\n\n        elif diff[i] != diff[i-1] :\n            same = 0\n            same += 1\n            data = (diff[i], same)\n        new.append(data)\n    for i in range(len(new)) :\n        # print(new[i][1])\n        if new[i][1] <= new[i-1][1] :\n            encoding.append(new[i-1])\n        \n    # print(new)\n    return encoding\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split()\narr2 = input().split()\n# arr1 = np.array(arr1, dtype=np.int64)\n# arr2 = np.array(arr2, dtype=np.int64)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n# print(np.array(out_enc, dtype=int))\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program\n\n# 1 1 2 2 2 3 4 5 6 6\n# 1 1 1 2 2 2 4 5 6 7"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887017\nPASSWORD: QJcFm2dG\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\nimport numpy as np\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\ndef encode_data(args):\n#### END Functions\n    diff=np.subtract(arr1,arr2)\nreturn diff\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nlist1=[]\nlist2=[]\nline1=input()\nline2=input()\nfor n in line1:\n    t=n.split(' ')\n    list1.append(t)\nfor r in line2:\n    w=r.split(' ')\n    list2.append(w)\narr1=np.array(list1)\narr2=np.array(list2)\nout_enc=np.add(arr1,arr2)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nprint(encode_data(out_enc))\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887018\nPASSWORD: P4sDXKGt\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndiff = []\ndef encode_data(arr1,arr2):\n    if len(arr1) == len(arr2):\n        for  i in range(len(arr1))\n            diff.append(arr1[i])\n            diff.append(arr2[i])\n    elif len(arr1) > len(arr2):\n        for  i in range(len(arr2))\n            diff.append(arr1[i])\n            diff.append(arr2[i])\n        for i in range(arr2,arr1):\n            diff.append(arr1[i])\n    elif len(arr1) < len(arr2):\n        for  i in range(len(arr1))\n            diff.append(arr1[i])\n            diff.append(arr2[i])\n        for i in range(arr1,arr2):\n            diff.append(arr1[i])\n    return np.array(diff)\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nline1 =input().split(' ')\nlines = input().split\narr1 = np.array(line1)\narr2 = np.array(line2)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "11/11 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T03:49:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: AM2m1FbV\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n\narr1 = list(map(lambda x: int(x),input().strip().split()))\narr2 = list(map(lambda x: int(x),input().strip().split()))\n# print(arr1)\n# print(arr2)\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\ndef encoding_data(arr1,arr2):\n    diff = []\n    encodingList = []\n\n    for i,j in list(zip(*(arr1,arr2))):\n        diff.append(i-j)\n    # print(diff)\n    count = 0\n    for i in range(len(diff)):\n        # print(diff[i])\n        # print(i)\n        # print(len(diff)-1)\n        \n        if i == 0:\n            # print(\"HelloStart\")\n            count += 1\n        elif diff[i] == diff[i-1]:\n            # print(\"Hello\")\n            count += 1\n            if i == len(diff) - 1:\n                # print(\"Hello2\")\n                # print((diff[i],count))\n                encodingList.append((diff[i],count))\n        elif diff[i] != diff[i-1]:\n            # print(\"Hello3\")\n            # print((diff[i-1],count))\n            encodingList.append((diff[i-1],count))\n            count = 0\n            count += 1\n            if i == len(diff) - 1:\n                # print(\"Hello4\")\n                encodingList.append((diff[i],count))\n        \n\n    # print(encodingList)\n    return encodingList\n        \n        \n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\nout_enc = encoding_data(arr1,arr2)\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "7/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T03:59:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: hedPCWk6\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(l1, l2):\n    array1 = np.array(l1,dtype=int )\n    array2 = np.array(l2,dtype=int )\n    diff = np.subtract(array1, array2)\n    encode = []\n    final_encode = []\n    for i in diff:\n        count = 0\n        target = i\n        for j in diff[count:]:\n            if target == j:\n                count+=1\n        encode.append((int(target), count))\n    for i in encode:\n        if i in final_encode:\n            continue\n        final_encode.append(i)\n    return final_encode\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split()\narr2 = input().split()\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1, arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:01:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021\nPASSWORD: FMCcfamd\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\ndef encode_data(arr1 , arr2):\n    diff = arr1 - arr2\n\n    row = (diff.shape)[0]\n    encoding = []\n\n\n    start_num = diff[0]\n\n    count = 0\n    firstcount = 0\n    \n\n\n\n\n    for i in range(len(diff)):\n        num = diff[i]\n        if i+1 <row:\n            next_num = diff[i+1]\n        else:\n            next_num = 0\n\n        \n        if diff[i] == next_num:\n            count+=1\n        \n        else:   \n            slicing = diff[firstcount:count+1]\n\n            print(slicing)\n                    \n            firstcount = count+1\n           \n\n\n            encoding.append(slicing)\n\n\n    return encoding\n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\narr1 = input().strip().split()\narr2 = input().strip().split()\n\narr1 = np.array(arr1,dtype=int)\narr2 = np.array(arr2,dtype=int)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1 , arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:00:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: rEszKRTz\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    diff = arr1 -arr2\n    return diff\n    # for i in diff: \n## END TODO 2\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\ninp1 = input().split()\ninp2 = input().split()\narr1 = np.array(inp1 , dtype = int)\narr2 = np.array(inp2, dtype = int)\n# print(arr1)\n# print(arr2)\n# print(encode_data(arr1,arr2))\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:00:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887023\nPASSWORD: NYJwfCvX\nEXERCISEID: itds120-final-q4\n */\n'''\nimport numpy as np\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nA1 = input().split()\nA2 = input().split()\n#### END import\narr1 = np.array(A1)\narr2 = np.array(A2)\ndiff = np.subtract(arr1,arr2)\nprint(diff)\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: vv6FdmPr\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arrF,arrS):\n    outl = []\n    arrF = np.array(arrF)\n    arrS = np.array(arrS)\n    minus = arrF - arrS\n    for i in range(len(minus)):\n        num = i\n        c = 1\n        if i == (len(minus) + 1):\n            outl.append((num,c))\n        \n        if minus[i+1] == num:\n            c += 1\n        else: \n\n# END TODO 2\n\n### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = list(input().split(' '))\narr2 = list(input().split(' '))\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887026",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:57:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887026\nPASSWORD: SXdCCwM7\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\ndef encode_data(arr1,arr2):\n    diff = np.divide(arr,axis=0)\n    \n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = list(int(input()))\narr2 = list(int(input()))\narr_t = list(arr1,arr2)\narr = np.array(arr_t)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:57:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887027\nPASSWORD: XkXqet9d\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2)\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = int(input().split(' '))\narr2 = int(input().split(' '))\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:59:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: XspGM6nZ\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1, arr2):\n    diff = arr1-arr2\n    \n    return diff\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = np.array(input().split())\narr2 = np.array(input().split())\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\nout_enc = encode_data(arr1, arr2)\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "11/11 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T03:58:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD: fpZNnkgQ\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(a1,a2) :\n    diff = a1 - a2\n    diff_list = []\n    out_list = []\n    for i in range(len(diff)) :\n        if i != 0 :\n            if diff[i-1] != diff[i] :\n                diff_list.append(int(diff[i]))\n            else :\n                if int(diff[i]) not in diff_list :\n                    diff_list.append(int(diff[i]))\n        else :\n            if int(diff[i]) not in diff_list :\n                diff_list.append(int(diff[i]))\n    if np.array(diff_list,dtype=int).shape == diff.shape :\n        for i in diff_list :\n            out_list.append((i,1))\n    else :\n        yes = 0\n        for i in diff_list :\n            q = 0\n            count = 0 \n            for j in range(len(diff)) :\n                if yes != j :\n                    continue\n                if i == int(diff[j]) :\n                    if j != len(diff) - 1:\n                        if diff[j] != diff[j+1] :\n                            count += 1\n                            out_list.append((i,count))\n                            q = 1\n                            continue\n                        else :\n                            count += 1\n                    else :\n                        count += 1\n                yes += 1\n            if q == 1 :\n                continue\n            out_list.append((i,count))\n    return out_list\n\n\n\n        \n        \n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split()\narr1 = np.array(arr1,dtype=int)\narr2 = input().split()\narr2 = np.array(arr2,dtype=int)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T02:14:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: nnvQrcMv\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = list(map(int , input().split()))\narrr2 = list(map(int , input().split()))\nprint(arr1)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n'''\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program\n'''"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "7/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T04:00:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: W89PMQFF\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    diffArr_list = []\n    npArr1 = np.array(arr1,dtype=int)\n    npArr2 = np.array(arr2,dtype=int)\n\n    diff_Arr = np.subtract(npArr1,npArr2)\n\n    dArr_dict = {}\n    for i in diff_Arr:\n        if i not in dArr_dict:\n            dArr_dict[i]=0\n        dArr_dict[i]+=1\n\n    for k,v in dArr_dict.items():\n        uTuple = (int(k),v)\n        diffArr_list.append(uTuple)\n                 \n        \n    return diffArr_list\n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split()\narr2 = input().split()\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: 3CGNU6pd\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data()\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = int(input())\narr2 = int(input())\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: 7z4wj3jj\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1, arr2):\n    diff = [x - y for x, y in zip(arr1, arr2)]\n    encoding = []\n    counts = []\n    current = diff[0]\n    count = 1\n    for i in diff[1:]:\n        if i == current:\n            \n    return encoding\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = np.array(input(). split(), dtype=np.int64)\narr2 = np.array(input(). split(), dtype=np.int64)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1, arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887034",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887034\nPASSWORD: FEPMT5ZF\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport Python Library\n#### END import\n\n\n\n#### START Functions\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    diff = arr1 - arr2\n    endcoding:\n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nn1 = input()\nn2 = input()\narr1 = [].append(n1)\narr2 = [].append(n2)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data()\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: ERROR, CASE 5: FAIL, CASE 6: ERROR, CASE 7: FAIL, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:57:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: JCN7YuyU\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data (s) :\n    diff = arr1 - arr2\n    encodeing = [ ( diff, len(diff))]\n    return encodeing\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\narr1 = input().split(' ')\narr2 = input().split(' ')\narr1 = list(map(lambda x : [int (i) for i in x.strip()] , arr1))\narr2 = list(map(lambda x : [int (i) for i in x.strip()] , arr2))\narr1 = np.array(arr1 , dtype = int)\narr1 = np.array(arr2 , dtype = int)\n#print(arr1)\n#print(arr2)\n\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\nout_enc = (encode_data , arr1 ,arr2)\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: acFPH8NN\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\nimport numpy as np\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data():\n\n    a1 = arr1.dtype\n    a2 = arr1.dtype\n    return a1 ,a2\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\narr1 = np.array((input().split()))\narr2 = np.array((input().split()))\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:02:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: ZV8J5bqp\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\ndef encode_data(arr1,arr2):\n    diff = np.subtract(arr1,arr2)\n    a = diff.tolist()\n    out = [(diff,len(a))]\n    return out\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\nx = input().split()\nlist1 = []\nfor i in x:\n    k = int(i)\n    list1.append(k)\narr1 = np.array(list1)\n\n\ny = input().split()\nlist2 = []\nfor i in y:\n    k = int(i)\n    list2.append(k)\narr2 = np.array(list2)\n\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\nout_enc = encode_data(arr1,arr2)\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:57:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887038\nPASSWORD: yYuVB7G1\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2)\n    diff = arr1 - arr2\n    for i in diff:\n        if i in\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = np.array(list, dtype=int)\narr2 = np.array(list, dtype=int)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: VBDyzCwt\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "1/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:57:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887040\nPASSWORD: RQ9AP14K\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport math\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(x , y):\n    diff_ach = []\n    for i in range(len(x)):\n        diff = int(x[i]) - int(y[i])\n        count = 0\n        if x[i-1] == x[i]:\n            count += 1\n        diff_ach.append((diff , count))\n        #print(diff)\n    return diff_ach\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = list(map(int, input().strip().split()))\narr2 = list(map(int, input().strip().split()))\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = (encode_data(arr1 , arr2))\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887041",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:53:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887041\nPASSWORD: rwsv2VNJ\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\ndef encode_data(x,y):\n    diff = x - y\n    n_diff.append(int(diff))\n    return diff\n\n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = list(map(int, input().split()))\narr2 = list(map(int, input().split()))\n# print(arr1, arr2)\n\n    \n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nn = len(arr1)\nout_enc = []\nn_diff = []\nfor i in range(n) :\n    out_enc.append(encode_data(arr1[i],arr2[i]))\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:00:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: a4kBdSNz\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\ndef encode_data(arr1, arr2):\n    ar1 = np.array(arr1, dtype= int)\n    ar2 = np.array(arr2, dtype= int)\n    diff = np.subtract(ar1, ar2)\n\n#for i in range(shape(diff)):\n    return diff\n\n\n\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split(' ')\narr2 = input().split(' ')\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\nout_enc = encode_data(arr1, arr2)\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:54:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD: K5MS826v\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\ndef encode_data(arr1,arr2):\n\n    result = []\n\n    for i in  arr1 :\n\n        for j in arr2 :\n\n            if i > 2 :\n\n                result.append((i,2))\n            \n            if i == 1 :\n\n                result.append((i,1))\n            \n            if j > 2 :\n\n                result.append((i,2))\n            \n            if j == 1 :\n\n                result.append((i,1))\n            \n            if i or j > 3 :\n\n                result.append(i,3)\n            \n            if i or == -1 :\n\n                result.append(i,1)\n    return result\n\n    \n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\narr1 = map(int,input().split())\n\narr2 = map(int,input().split())\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc\n\nout_enc = list(map(encode_data , arr1,arr2))\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:38:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: aCKctZyv\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2)\n    diff=arr1-arr2\n    if dff[0]==dff=[1] \n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nn1=list(int(input().split()))\nn2=list(int(input().split()))\nnum1=np.arr1(n1)\nnum2=np.arr2(n2)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: 3D6Xunda\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\na1 = int(input())\na2 = int(input())\ntxt1 = a1.split()\ntxt2 = a2.split()\n\naa1 = list(map(int, a1))\naa2 = list(map(int, a2))\narr1 = np.array(aa1)\narr2 = np.array(aa2)\n\n#### END import\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1, arr2):\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "11/11 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T03:59:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: jE31M4vr\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    newarr1 = []\n    newarr2 = []\n    diff = []\n    ordernumber = {}\n    ans = []\n    for i in arr1 :\n        newarr1.append(int(i))\n    for i in arr2 :\n        newarr2.append(int(i))\n    for i in range (len(newarr1)) :\n        diff.append(newarr1[i] - newarr2[i])\n    \n    for i in diff :\n        if ordernumber == {} :\n            ordernumber[i] = 1\n            last = i\n        elif i in ordernumber:\n            ordernumber[i] += 1\n            last = i\n        elif i not in ordernumber :\n            ans.append( (last,ordernumber[last] ))\n            ordernumber.clear()\n            ordernumber[i] = 1\n            last = i\n    ans.append( (last,ordernumber[last] ))\n    return ans\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split(' ')\narr2 = input().split(' ')\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program\n"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:47:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD:  Gfm5gZ3W\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\nimport numpy as np\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\narr = np.array()\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:01:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: kGK2k2wS\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr_a,arr_b):\n    diff= np.subtract(arr_a,arr_b) #diff: 0 0 1 0 0 1 0 0 0 -1\n    out_enc=[]\n    for i in range (len(diff)):\n        if i % 2!=0:\n            n= diff[i]\n            if n==x:\n                c+=1\n            else:\n                out_enc.append(tuple(n,c))\n                c=1\n        elif i % 2==0:\n            x= diff[i]\n            if i ==0:\n                c=1\n            elif x==n:\n                c+=1\n            else:\n                out_enc.append(tuple(x,c))\n                c=1\n        return(out_enc)\n    return out_enc\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nlst1=input().split()\nlst1=list(map(int,lst1))\nlst2=input().split()\nlst2=list(map(int,lst2))\narr1=np.array(lst1)\narr2=np.array(lst2)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc=encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\n\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: \n    print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "3/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: PASS, CASE 7: FAIL, CASE 8: FAIL, CASE 9: PASS, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:01:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: eYz5JdDW\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\ndef encode_data(arr1,arr2):\n    diff = arr1 - arr2\n    encodeing = []\n    unique = np.unique(diff)\n    pop = 0\n\n    for x,y in zip(diff ,range(len(diff)) ):\n\n        \n        for i,l in zip(diff ,range(len(diff)) ):\n            \n            \n\n\n\n            k = 0\n            for j,count in zip(diff[l:],range(len(diff))):\n\n\n\n                #print(f'{j} {count} k {k}')\n                if i == j:\n                    k+=1\n                elif i != j:\n                    break\n            \n            encodeing.append((int(i),int(k) ))\n            #print('pop')\n            pop += k\n            pop -= 1\n            #print(f'{i} check{l}')\n            \n\n\n    \n        #print(unique)\n        #print(diff,'diff')\n        return encodeing\n\n\n\n\n\n\n\n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\narr1 = np.array(list(map(int,input().split())))\narr2 = np.array(list(map(int,input().split())))\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n\n\n\nout_enc = (encode_data(arr1,arr2))\n\n\n\n## END TODO 3\n\n# แสดงผลลัพธ์\n\n\n\n\n\n\n\n\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "7/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T04:01:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: XsVzPMb5\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np \n#### END import\n\n\n\n#### START Functions\n# 2 1 2 1 2 1\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2) :\n    diff = np.subtract(arr1,arr2)\n    encoding = []\n    sub_dict ={}\n    for i in diff :\n        if i not in sub_dict :  #count the duplicate from diff\n            sub_dict[i] = 1\n        else :\n            sub_dict[i] += 1\n    for k,v in sub_dict.items() : # seperate the duplicate in sub _list and use uni,count = np.unique() to count the frequency\n        encoding.append((int(k),v)) # put them into tuple and append in encoding \n\n    # idont have enough timeto finsih\n## END TODO 2\n    return encoding\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = np.array(input().split(),dtype=int)\narr2 = np.array(input().split(),dtype=int)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n#### END Main Program"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:46:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: STDvWwQZ\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2) :\n    result = []\n    count = {}\n    last_result = []\n    \n    for i in line1() :\n        x = line1[i]- line2[i]\n        result.append(x)\n    \n    for i in result :\n        if result[i] == result[i-1] :\n            count[result[i]] += 1\n        else :\n            result[i] = 1\n\n\n    '''\n    for i in range len(line1) :\n        x = line1[i]-line2[i]\n        result.append(x)\n        if x == result[i-1] :\n    '''\n\n\n    return last_result\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split()\nline1 = []\nfor i in arr1 :\n    line1.append(int(i))\narr2 = input().split()\nline2 = []\nfor i in arr2 :\n    line2.append(int(i))\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n    out_enc = encode_data(line1,line2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:00:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887056\nPASSWORD: 82z8Akum\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ncount = 0\ndef encode_data(arr1,arr2):\n    diff = arr1 - arr2\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = np.array(int,input().split())\narr2 = np.array(int,input().split())\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nreturn encode_data\nout_enc = 0\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(f' First input: {arr1}', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:01:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: WyZ7FTJ6\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\ndef encode_data(arr1, arr2):\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n    diff = arr1 - arr2\n    encoding = []\n    counts = {}\n    for v in diff:\n        if v not in counts:\n            counts[v] = 0\n        counts[v] += 1\n## END TODO 2\n    return diff\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nn1 = list(map(int, input().strip().split()))\nn2 = list(map(int, input().strip().split()))\narr1 = np.array(n1)\narr2 = np.array(n2)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nencode = encode_data(arr1, arr2)\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint(encode_data(arr1, arr2))\n# print('Sender sent:')\n# print(' First input: ', end='')\n# for v in arr1: print(v, end=' ')\n# print()\n# print(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887059",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:00:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887059\nPASSWORD: rUQ3VsC1\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport string\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\na_size = int(input().strip().split()(0))\nrow = a_size \ncolumn = a_size\nmatrix = []\n\nfor i in (row) :\n    matrix.append(list(map(int , input().strip().split())))\narra1 = np.array(matrix)\nk = int(input())\n\nif k > row :\n    exit()\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:01:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887060\nPASSWORD: SNjga1zt\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    diff=[]\n    encode=[]\n    count=0\n    for i in range(len(arr1)):\n        diff.append(arr1[i]-arr2[i])\n    diff,arr1=np.unique(diff,return_counts=True)\n    encode=diff,arr1\n    return encode\n## END TODO 2\n\n#### END Functions\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nrow=input().split()\ncol=input().split()\narr1=[]\narr2=[]\nfor i in row:\n    arr1.append(int(i))\nfor i in col:\n    arr2.append(int(i))\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc=encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program\n\n"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:01:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD: N2mbPFp2\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\ndef encode_data(arr1,arr2) :\n    encode_list = []\n    diff = arr1 - arr2\n    for i in range(len(diff)) :\n       encode_list.append((int(diff[i]),'X'))\n       # i cannot find x may i give x naka\n    \n    return encode_list\n\n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\nn1 = input().split()\nlist1 = list(map(int,n1))\nn2 = input().split()\nlist2 = list(map(int,n2))\n\narr1 = np.array(list1)\narr2 = np.array(list2)\n\n\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\nout_enc = encode_data(arr1,arr2)\n\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n# #### END Main Program\n"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "11/11 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T04:00:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: 7YcVQSev\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    diff = np.subtract(arr1,arr2)\n    diff = list(map(int,diff))\n    encoding=[]\n    count=1\n    for i,v in enumerate(diff):\n        nodi=False\n        if i!=len(diff)-1:\n            if diff[i]==diff[i+1]:\n                count+=1\n            else:\n                encoding.append(tuple([diff[i],count]))\n                count=1\n        else:\n            encoding.append(tuple([diff[i],count]))\n    return encoding\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nx=list(map(int,input().split()))\ny=list(map(int,input().split()))\narr1=np.array(x)\narr2=np.array(y)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc=encode_data(arr1,arr2)\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:57:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD: dEzUnuDJ\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data():\n    diff = arr1-arr2\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nar1 = input().split()\nar2 = input().split()\nlist1 = []\nfor i in range(len(ar1)):\n    list1.append(ar1)\narr1 = np.array(list1)\nprint(arr1)\n\n\nlist2 = []\nfor i in range(len(ar2)):\n    list2.append(ar2)\narr2 =  np.array(list2)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:57:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: 1QEhQgJM\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(a,b):\n    diff = np.subtract(a,b)\n    encode = []\n    return diff\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split(' ')\narr2 = input().split(' ')\narr1 = np.array(arr1)\narr2 = np.array(arr2)\narr1 = arr1.astype(int)\narr2 = arr2.astype(int)\n#print(arr1)\n#print(arr2)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nprint(encode_data(arr1,arr2))\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\n#print(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:00:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887065\nPASSWORD: mGNWdmYE\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1 , arr2) :\n    diff = np.subtract(arr1, arr2)\n    diff1 = diff.tolist()\n    diff2 = diff1.copy()\n    #print(diff)\n    a = []\n    b = []\n    for x in diff1 :\n        count = 0\n        for y in diff2 :\n            if x == y :\n                count += 1\n                diff2.remove(y)\n            b.append(count)\n            a.append(x)\n    \n    print(a)\n    print(b)\n\n    encoding = list(zip(a,b))\n    return encoding\n    \n## END TODO 2\n\n#### END Functions\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split(' ')\narr1 = np.array(arr1 , dtype=np.int8)\n\narr2 = input().split(' ')\narr2 = np.array(arr2 , dtype=np.int8)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1 , arr2)\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: FAIL, CASE 3: ERROR, CASE 4: FAIL, CASE 5: ERROR, CASE 6: FAIL, CASE 7: FAIL, CASE 8: ERROR, CASE 9: FAIL, CASE 10: ERROR, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:59:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD: 9h2Rjj1n\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(a, b):\n    diff = np.subtract(a, b)\n    val, count = np.unique(diff)\n    encoding = (val, count)\n\n\n    return encoding\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = np.array(input().split(' '),dtype=int)\narr2 = np.array(input().split(' '),dtype=int)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1, arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T02:51:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887067\nPASSWORD: MsvPnMwc\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\ndef encode_data():\n    # diff = arr1 - arr2\n    enc = []\n    for i in diff:\n        enc += 1\n    return encode_data\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\na1 = input()\na2 = input()\narr1 = list(a1)\narr2 = list(a2)\n\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\nout_enc = encode_data\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887068",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887068\nPASSWORD: NCDBmat3\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n\n#### END import\n\n\n\n#### START Functions\n\n    arr1,arr2 = int(input().split())  \n\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887069",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:43:36+00:00",
+    "Code": "'''\n/**\nUSERID:6887069\nPASSWORD:FguZGAK1\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:00:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: fEK1sPBE\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n#### START Functions\ndef encode_data (arr1,arr2):\n    diff=np.subtract(o, p)\n    for i,diff in range(len(o)):\n        count =+ 1\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1=input().split( )\no=[]\no.append(arr1)\narr2=input().split( )\np=[]\np.append(arr2)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc=encode_data\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887071",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:00:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887071\nPASSWORD: rR97Uzpm\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\nr1 = input() \nr2 = input()\n\n\nencoding = \n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = []\narr2 = []\n \n  \n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: nrQ2XWJ3\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data():\n    diff = arr1 - arr2\n    encoding = [diff]\n    return encoding\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1, arr2 = input().split(' ')\narr1, arr2 = int(arr1), int(arr2)\narr3 = []\nfor r in range(arr1):\n    values = input().strip().split(' ')\n    arr3.append(np.array(values))\ninput_arr = np.array(arr3, dtype=np.int8)\nprint(input_arr, type(input_arr), input_arr.dtype)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nprint(encode_data(out_enc))\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "7/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T04:00:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: EDvDwt9n\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\nlistnum = []\nlistnum1 = []\nn = input().split()\nn1 = input().split()\nfor i in n :\n    listnum.append(int(i))\nfor i in n1 :\n    listnum1.append(int(i))\narr1 = np.array(listnum)\narr2 = np.array(listnum1)\n#### START functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\nlistans = []\ndef encode_data(arr1,arr2):\n    import numpy as np\n    listnums = []\n    ans = arr1 - arr2\n    dictnums = dict()\n    for i in ans:\n        if i not in dictnums.keys():\n            dictnums[int(i)] = 1\n        else:\n            dictnums[int(i)] += 1\n    for k,v1 in dictnums.items():\n        c = (k,v1)\n        listans.append(c)\n    out_enc = listans\n    return out_enc\n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n    # out_enc = v\n## END TODO 3\nout_enc = encode_data(arr1,arr2)\nv = out_enc\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887074\nPASSWORD: FBT5p8y1\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    encording = diff\n    diff = np.subtract(arr1,arr2,return_count=True)\n    \nreturn encording\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = list(map(int,input().split()))\narr2 = list(map(int,input().split()))\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nx = encode_data(result)\nout_enc.append(x)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "3/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: PASS, CASE 7: FAIL, CASE 8: FAIL, CASE 9: PASS, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:01:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: BfAGUuzy\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1, arr2):\n    diff = []\n    ar1 = []\n    ar2 = []\n    for a1 in arr1:\n        a1 = int(a1)\n        ar1.append(a1)\n    for a2 in arr2:\n        a2 = int(a2)\n        ar2.append(a2)\n    for i in range(len(ar1)):\n        d = ar1[i] - ar2[i]\n        diff.append(d)\n    count = 0\n    out = []\n    for j in diff:\n        if j not in out:\n            count = 1\n        else:\n            count += 1\n        out.append((j, count))\n    \n    return out\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().strip().split(' ')\narr2 = input().strip().split(' ')\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1, arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:53:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: GkWzrQyY\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    diff = list(zip(arr1 - arr2))\n    encoding = diff\n    return encoding\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1=list(map(int,input().strip().split()))\narr2=list(map(int,input().strip().split()))\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:00:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: DTVyjpFc\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    diff=[]\n    for i in range(len(arr1)):\n        dif_num = arr1[i]-arr2[i]\n        diff.append(dif_num)\n    \n    encoding=[]\n    count=1\n    for j in range(len(diff)):\n        \n        if diff[j]==diff[j-1]:\n            count+=1\n        elif diff[j]!=diff[j-1]:\n            tup=(diff[j-1],count)\n            encoding.append(tup)\n    return encoding\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = list(map(int, input().split()))\narr2 = list(map(int, input().split()))\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:00:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: 9VkbwJXN\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1, arr2):\n    diff = arr1 - arr2\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split()\narr1 = map(int, arr1)\narr2 = input().split()\narr2 = map(int, arr2)\n\n## END TODO 1\nout_enc = encode_data(arr1, arr2)\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:33:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: wNz8vvUY\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:12:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: nF56XhhQ\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np \n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(data, arr1, arr2):\n    diff = arr1 - arr2\nfor arr1, arr2 in data:\n    if \n\nreturn encoding\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = int(input())\n\narr2 = int(input())\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887084",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887084\nPASSWORD: JgbPUtr3\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndiff = np.add(arr1, arr2)\nresult = (map(lambda x: x = arr1-arr2 and  ))\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 =np.array([])\narr2 =np.array([])\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\ndef encode_data(**kwargs):\n    for k, v in encode_data:\n        print(f\"\")\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:01:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: d4mdXXD1\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\narr1 = np.array([])\narr2 = np.array([])\n\nout_enc = np.array([])\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(*args):\n    #print(args)\n    dift = 0\n    for num in args:\n        dift = np.subtract(arr1,arr2)\n        dift += 1\n    return out_enc\n\n## END TODO 2\nencode_data(out_enc)\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nwith open(\"arr1.txt\",\"a\",encoding=\"utf-8\")as f:\n    pass\nwith open(\"arr2.txt\",\"a\",encoding=\"utf-8\")as f:\n    pass\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nencode_data(out_enc)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program\n\n\"\"\"import numpy as np \n\narr1 = np.array([])\narr2 = np.array([])\narr = ([])\ndift = ([])\n#count += 1\n\ndef encode_data(*args):\n    return count(args)\n\n    dift = arr1 - arr2\n\nwords = list(map(lambda arr: arr1 - arr2,list))\n\n\nprint(f\"encoding:\", [dift])\"\"\""
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "6/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T03:52:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: pkHvNQnJ\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    diff = arr1 - arr2\n    encoding_dict = {}\n    encoding = []\n    for i in range(len(diff)):\n        if diff[i] == diff[i-1]:\n            if diff[i] in encoding_dict:\n                encoding_dict[diff[i]]+=1\n        if diff[i] != diff[i-1]:\n            if diff[i] not in encoding_dict:\n                x = {diff[i]:1}\n                encoding_dict.update(x)\n    for i,j in encoding_dict.items():\n        tuple = (int(i),j)\n        encoding.append(tuple)\n    \n    return encoding\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nx = (input().split(' '))\ny = (input().split(' '))\narr1 = np.array(x, dtype = int)\narr2 = np.array(y, dtype = int)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:56:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: w8a2eyEN\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\ndef 'encode_data' (diff)\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n    list=[]\n    for i in diff:\n        \n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nar1=input().strip().split()\nar2=input().strip().split()\narr1=np.array(ar1, dtype=int)\narr2=np.array(ar2, dtype=int)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\ndiff=np.substact(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "1/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:59:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: HBj6Vmew\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\narr1 = input().strip()\narr2 = input().strip()\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\na = np.array(arr1.split() ,dtype = int)\nb = np.array(arr2.split() ,dtype = int)\ndiff = np.subtract(a,b)\n#print(diff)\n\ndt_vals, dt_cnts = np.unique(diff, return_counts = True)\n\n'''print(dt_vals)\nprint(dt_cnts)'''\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n'''encode_data = []\nfor i in range (len(dt_vals)):\n    out_enc = dt_vals[i], dt_cnts[i]\n    encode_data.append(out_enc)\n\nprint(encode_data)'''\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(f' First input: {arr1} ')\nfor i in range (len(dt_vals)):\n    #out_enc = dt_vals[i], dt_cnts[i]\n    #print(f' Encode data: [{out_enc}]')\n    print(f\" Encode data: [({dt_vals[i]}, {dt_cnts[i]})]\", end = \" \")\n'''for v in arr1:\n    print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc})'''\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:30:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: VNZuqQpW\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    diff = arr1 - arr2\n    encoding = []\n    dict = []\n    for i in range(len(diff)): \n        #locate = [0,i]\n        dict[arr1[0,i]] = (arr1[i]-[arr2],0)\n        if arr1[i] == arr1[i+1]:\n              dict[arr1][1] = +1\n    return encoding\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = list(map(int,input().split(\" \")))\narr2 = list(map(int,input().split(\" \")))\narr1 = np.array(arr1)\narr2 = np.array(arr2)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:59:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887093\nPASSWORD: WdSHdVYY\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\nimport numpy as np\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data (ar1,ar2):\n    \n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = []\nstr_arr1 = input().strip().split(' ')\n# print(arr1)\nfor i in str_arr1:\n    arr1.append(int(i))\nprint(arr1)\n\narr2 = []\nstr_arr2 = input().strip().split(' ')\n# print(arr1)\nfor i in str_arr2:\n    arr2.append(int(i))\nprint(arr2)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:01:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: ntsV63gJ\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(x):\n    encode = []\n    \n    for i in range(len(x)):\n        count = 0\n        for j in range(1+i,len(x)):\n            if x[i]==x[j] :\n                count += 1\n                # print(x[i])\n                # print(count)\n            elif x[i] != x[j]:\n                \n                encode.append((x[i],count))\n        encode.append((x[i],count))\n    return encode\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = np.array(input().split(),dtype=int)\n# print(arr1)\narr2 = np.array(input().split(),dtype=int)\n# print(arr2)\ndiff = np.subtract(arr1, arr2)\n\n# print(diff)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(diff)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "7/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T03:58:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: e4HK5NrR\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    diff=[]\n    endcoding=[]\n    for i in range(len(arr1)):\n        c=int(arr1[i])-int(arr2[i])\n        diff.append(c)\n    \n    for j in diff:\n        total=0\n        for k in diff:\n            if j==k:\n                total+=1    \n        endcoding.append((j,total))\n    check=[]\n    for i in endcoding:\n        if i in check:\n            continue\n        else:\n            check.append(i)\n            \n    return check\n## END TODO 2\n#### END Functions\n\n\n\n#### START Main Program\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1=input().strip().split()\narr2=input().strip().split()\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc=(encode_data(arr1,arr2))\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887097",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:30:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887097\nPASSWORD: EG6Tde99\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(out_enc):\n    larr = np.subtract(arr1, arr2)\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = np.array(input())\narr2 = np.array(input())\n\n\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887098",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:56:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887098\nPASSWORD: ykKnwJSg\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    diff_list = []\n    for i in len(arr1):\n        diff = arr1[i]-arr2[i]\n        diff_list.append(diff)\n    encoding = []\n    for i in diff_list:\n        (x,y) = (i,diff_list.count(i))\n        encoding.append((x,y))\n    return arr1,encoding\n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\narr1 = input().strip().split(' ')\narr2 = input().strip().split(' ')\narr1,arr2 = int(arr1),int(arr2)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\nout_enc = encode_data(arr1,arr2)\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: t2R7hW1y\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\narr = np.array([input])\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr):\n    diff = arr1-arr2\nreturn\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:00:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: 51dWaG62\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n\n\n    return encoding\n    \n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nlist1=int(input())\narr1=np.array(list1)\nlist2=int(input())\narr2=np.array(list2)\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc=encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:57:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: werEw5ju\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(ar1, ar2):\n    ar1 = np.array([ar1])\n    a1 = ar1.astype(int)\n\n    ar2 = np.array([ar2])\n    a2 = ar2.astype(int)\n\n    a3 = np.subtract(a1, a2)\n    return a3\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = input().split(' ')\narr2 = input().split(' ')\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1, arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "11/11 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T04:00:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: ycQV22aT\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2) :\n    arr1 = np.array(arr1)\n    arr2 = np.array(arr2)\n    diff = arr1 - arr2\n    encoding = []\n    count = 1\n    for i in range(len(diff)):\n        if i+1 < len(diff) and diff[i] == diff[i+1] :\n            count += 1\n        else :\n            encoding.append((int(diff[i]),count))\n            count = 1\n    return encoding\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = list(map(int,input().split(' ')))\narr2 = list(map(int,input().split(' ')))\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:57:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: YnF9W8nP\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\narr1,arr2 = input().split()\nlis = []\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(lis)\nfor i in range(arr1):\n    linelist = f.readline().split(' ')\n    for c in (arr2):\n        listrow.append(int(linelist[c]))    \n    diff = arr1 - arr2\nreturn encode_data\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\ncalls = dict[arr1, arr2]\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nkknb = f.encode_data()\nout_enc = lis.append(encode_data)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:01:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: N94SasTf\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data() :\n    diff = arr1 - arr2\n    return diff\n\n    list = []\n    for i in range(diff) :\n        count = 0 \n        encoding = (diff[i] ,diff.count(i))\n    return encoding\n\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = list(input().split())\narr2 = list(input().split())\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:58:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD: nthztNNc\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: 6NXsZAR2\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\ndef divice(arr1, arr2) :\n    return arr2-arr1\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\ndef encode_data(divice):\n    result = x.copy()\n    for key, value in divice.items():\n        if key in result :\n            result[key] += 1\n        else :\n            result[key] = 0\n    return divice, result\n\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nf = open(\"input.divice\",'r')\nprint(f'1:{f.readline()}').append(arr1)\nprint(f'2:{f.readline()}').append(arr2)\nf.close()\n\n\n\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1, arr2)\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program\n\n\n\n"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:00:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: mFmh8gHM\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef out_enc(g ,h):\n    w = []\n    for i in range(len(g)):\n        for i,j in g,h:\n            o = (i,j)\n            w.append(o)\n    return w        \n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = np.array(input())\narr2 = np.array(input())\nw = np.subtract(arr1, arr2)\nv,c = np.unique(w, return_count=True)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: Kndv5QCt\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2) :\n    diff = arr1 - arr2\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = int(input())\narr2 = int(input())\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:45:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887111\nPASSWORD: G59XZyKJ\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(x, y):\n    diff = arr1-arr2\n    return diff\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nx = input().split()\ny= input().split()\narr1 = np.array(x)\narr2 = np.array(y)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nprint(encode_data(x, y))\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887112",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:59:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887112\nPASSWORD: 6C8kB9Zy\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data():\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\na1 = input().split()\na2 = input().split()\narr1 = list(map(int,a1))\narr2 = list(map(int,a2))\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "7/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T03:59:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887113\nPASSWORD: rvsTpmyB\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(a1,a2):\n    diff = []\n    for i in range(len(a1)):\n        g = a1[i] - a2[i]\n        diff.append(g)\n    count={}\n    for i in range (len(diff)):\n        if (diff[i] in count):\n            count[diff[i]] += 1\n        else:\n            count[diff[i]] = 1\n    \n    out = []\n    for k,v in count.items():\n        gg = (k,v)\n        out.append(gg)\n    \n    return out\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nar1 = list(input().split(' '))\narr1 = []\nfor i in ar1:\n    arr1.append(int(i))\n\narr2 = []\nar2 = list(input().split(' '))\nfor i in ar2:\n    arr2.append(int(i))\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\nout_enc = (encode_data(arr1,arr2))\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887114",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "7/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-03T03:56:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887114\nPASSWORD: MCHWAtrj\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\ndef encode_data(arr1,arr2):\n    diff = []\n    for i in range(len(arr1)):\n        diff.append(arr1[i]-arr2[i])\n    #print(diff)\n    encode_dict = {}\n    encode_dict2 = {}\n    list1 = []\n    lsit2 = []\n    for x in range (len(diff)):\n        if diff[x] in encode_dict and diff[x-1] == diff[x]:\n            encode_dict[diff[x]] += 1\n        elif diff[x] in encode_dict and (diff[x-1] != diff[x] or diff[x] not in encode_dict2):\n            if diff[x] in encode_dict2:\n                encode_dict2[diff[x]] += 1\n                encode_dict[diff[x]] -= 1\n            else:\n                encode_dict2[diff[x]] = 1\n        else:\n            encode_dict[diff[x]] = 1\n    #print(encode_dict)\n    encode_list = []\n    for key,val in encode_dict.items():\n        encode_list.append((key, val))\n    for key,val in encode_dict2.items():\n        encode_list.append((key, val))\n    return encode_list\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = list(map(int,input().split()))\narr2 = list(map(int,input().split()))\n#print(arr1)\n#print(arr2)\n\n#print(diff)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:59:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: HFEM1ACq\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\ndef encode_data(arr1, arr2) :\n    diff = arr1 - arr2\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\nrows1 = input().split(' ')\n\nrows2 = input().split(' ')\n\nrow_1 = []\nrow_2 = []\nfor i in range (rows1) :\n    values1 = input().split(' ')\n\n\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\nencode_data()\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T03:37:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887116\nPASSWORD: suhgZkuC\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: 5 6 4', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:00:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: Yyp7vQ1S\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1, arr2):\n    diff = arr1 - arr2\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1 = []\narr2 = []\nfor i in data:\n    arr1.append(int(i))\n    arr2.append(int(i))\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\nout_enc = map(encode_data, (arr1, arr2))\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR, CASE 11: ERROR",
+    "Submission Time": "2025-12-03T04:01:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887118\nPASSWORD: c5hQ5R67\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data()\ndiff=[]\n    for i,v in zip(arr1,arr2)\n        d = arr1 - arr2\n        diff.append(d)\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nwith open('text.txt','w') as f:\n    f.write(input()+'\\n')\nwith open('text.txt','a') as f:\n    f.write(input())\n\nwith open('text.txt','r') as f:\n    txt=f.read().splitlines()\narr1=[]\narr1.append(txt[0])\narr2=[]\narr2.append(txt[1])\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T04:00:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: GwzJuRre\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\nimport numpy as np\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data(arr1,arr2):\n    ar1=np.array(arr1,dtype=np.int8)\n    ar2=np.array(arr2,dtype=np.int8)\n    diff=np.subtract(ar1, ar2)\n    encode=[]\n    n=(diff.shape)[0]\n    for d in range(n):\n        c=0\n        if d==n-1:\n            c+=1\n            encode.append((diff[d],c))\n        elif diff[d]!=diff[d+1]:\n            c+=1\n            encode.append((diff[d],c))\n        elif diff[d]==diff[d+1]:\n            c+=1\n    \n    return encode\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\narr1=input().split()\narr2=input().split()\n# arr1=(int(v) for v in arr1)\n# arr2=(int(v) for v in arr1)\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc=encode_data(arr1,arr2)\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "6887120",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "0/11 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL, CASE 11: FAIL",
+    "Submission Time": "2025-12-03T03:59:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887120\nPASSWORD: PGP3Us9z\nEXERCISEID: itds120-final-q4\n */\n'''\n\n#### START import\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\n\n#### END import\n\n\n\n#### START Functions\n\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\ndef encode_data( arr1,arr2):\n    diff = arr1 - arr2\n    return diff\n\n## END TODO 2\n\n#### END Functions\n\n\n\n#### START Main Program\n\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\nn1 = input()\narr1 = []\narr1 = n1\narr1 = arr1.split(\" \")\nn2 = input()\narr2 = []\narr2 = n2\narr2 = arr2.split(\" \")\n\n## END TODO 1\n\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\nout_enc = encode_data\n\n## END TODO 3\n\n# แสดงผลลัพธ์\nprint('Sender sent:')\nprint(' First input: ', end='')\nfor v in arr1: print(v, end=' ')\nprint()\nprint(f' Encode data: {out_enc}')\n\n#### END Main Program"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-final-q4",
+    "Test Results": "11/11 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS, CASE 11: PASS",
+    "Submission Time": "2025-12-02T13:42:51+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 999\r\nPASSWORD: 424242\r\nEXERCISEID: itds120-final-q4\r\n */\r\n'''\r\n\r\n#### START import\r\n# ถ้า นศ ต้องการ Import Python Library สามารถทำได้ในส่วนนี้\r\nimport numpy as np\r\n#### END import\r\n\r\n\r\n\r\n#### START Functions\r\n\r\n## TODO 2: เขียนฟังก์ชัน `encode_data` เพื่อบีบอัดข้อมูล\r\ndef encode_data(arr1, arr2):\r\n    arr1 = np.array(arr1)\r\n    arr2 = np.array(arr2)\r\n    diff = arr1 - arr2\r\n    out = []\r\n    i = 0\r\n    while i < len(diff):\r\n        j = i + 1\r\n        count = 1\r\n        while j < len(diff) and diff[j] == diff[i]:\r\n            count += 1\r\n            j += 1\r\n        out.append((int(diff[i]), count))\r\n        i = j\r\n    return out\r\n## END TODO 2\r\n\r\n#### END Functions\r\n\r\n\r\n\r\n#### START Main Program\r\n\r\n## TODO 1: อ่านข้อมูล input 2 บรรทัด\r\n#          บรรทัด1 เก็บใน arr1, บรรทัด 2 เก็บใน arr2\r\narr1 = list(map(int, input().strip().split(' ')))\r\narr2 = list(map(int, input().strip().split(' ')))\r\n## END TODO 1\r\n\r\n## TODO 3: เรียกใช้ฟังก์ชัน `encode_data` ที่เขียนไว้ใน TODO 2\r\n#          เก็บผลลัพธ์ในตัวแปร `out_enc`\r\nout_enc = encode_data(arr1, arr2)\r\n## END TODO 3\r\n\r\n# แสดงผลลัพธ์\r\nprint('Sender sent:')\r\nprint(' First input: ', end='')\r\nfor v in arr1: print(v, end=' ')\r\nprint()\r\nprint(f' Encode data: {out_enc}')\r\n\r\n#### END Main Program"
+  }
+]

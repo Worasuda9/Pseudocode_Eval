@@ -1,0 +1,1001 @@
+[
+  {
+    "User ID": "6887001",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:55:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887001\nPASSWORD: v46vmSdc\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = input().split(',')\ntext = input().split(',')\n\nlist_text = []\nnot_list_text = []\nfor word in vocab_list:\n    if text.count(word) >= 1 and word not in list_text:\n        list_text.append(word)\n    else:\n        list_text.append(word)\n\nif list_text:\n    for word in list_text:\n        print(f'{word} {text.count(word)}')\n\nunk = 0\nfor i in text:\n    if i not in list_text:\n        not_list_text.append(i)\n        unk += 1\nprint(f'<ukn> {unk}')"
+  },
+  {
+    "User ID": "6887002",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:09:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887002\nPASSWORD: utYNcRnk\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nfir=input()\nf=fir.split(\",\")\nsecon=input()\ns=secon.split(\",\")\ndic={}\nlost=[]\nfor i in s:\n    # print(i)\n    if i not in dic and i in f:\n        dic[i]=1\n        # print(i)\n    elif i in dic and i in f:\n        dic[i]+=1\n    elif i not in dic and i not in f:\n        lost.append(i)\n\nfor i in f:\n    if i not in dic:\n        dic[i]=0\n# print(dic)\n# print(lost)\nx=list(sorted(dic,key=lambda x: f.index(x)))\n# print(x)\nfor i in x:\n    print(i+\" \"+str(dic[i]))\nprint(\"<ukn> \"+str(len(lost)))"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "1/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: grXHPuNP\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\n\nvocab_lst = input()\n# print(vocab_lst)\nn_lst = input()\n# print(n_lst)\n\nvocab_lst = vocab_lst.split(',')\n# print(vocab_lst)\nn_nlst = []\nfor w in n_lst.split(','):\n    if w not in n_nlst:\n        n_nlst.append(w)\n\n\n\nunknow = 0\ncount = 0\nfor l in n_nlst:\n    # print(l)\n    if l in vocab_lst:\n        count += 1\n        print(f'{l} {count}')\n    if l not in vocab_lst:\n        print(f'{vocab_lst[2]} 0')\n    if l not in vocab_lst:\n        unknow += 1\nprint(f'<ukn> {unknow}')\n\n"
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887004\nPASSWORD: erU44ahB\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\ncount = 0\ncount2 = 0\nvocavblst = input().split()\nunk = input().split()\nresult=[]\n\nfor w in vocavblst :\n    clean = ''.join ( ch for ch in w if ch.isalpha())\n    if clean in vocavblst  :\n        result.append(clean)\n        count1 = len(result)\n        #count1 += 1\n        \n    else :\n        count2 +=1\n    #print((f'{vocavblst}{count}'))\n    print( (f'{vocavblst}{count}'))\n    print((f'<unk> {count2}'))"
+  },
+  {
+    "User ID": "6887005",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:51:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887005\nPASSWORD: 5g4g28jp\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab_list=[]\nvacab = input().split(,)\nterm = input().split(,)\n\n\ncount = 0\ntotal = set()\nfor word in vacab:\n     if word.isalnum() and word.lower() and word not in ('.,!?'):\n        if vacab[word] ==term[word]:\n             vacab_list.append(word)\n             total.add(word)\n             count +=1\n        elif word not in vacab:\n            \n\n# vacab_list ={}\n# count = 0\n# vacab = input(),split(,)\n# secend = input(),split(,)\n# for word in range(len(secend)):\n#     if word not in vacab_list:\n\n\n\n\n        \n    \n\n"
+  },
+  {
+    "User ID": "6887006",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887006\nPASSWORD: aqhHRFf5\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = input().split()\ntext = input()\ntext = text.lower()\npunctuatuion = \".,!?;:-()\\\"'\"\nfor p in punctuatuion :\n    text = text.replace(p,\" \")\nwords = text.split()\n\n\nfreq={}\nfor w in words :\n    if w in freq :\n        freq[w] += 1\n    else :\n        freq[w] = 1\n\n\n\n        \n# sorted_freq = sorted(freq.items(),key=lambda x:(-x[1],x[0]))\nfor word , count in freq.items() :\n    print(f\"{word} {count}\")\n"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:20:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: DfjWKjpq\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab = input().split(',')\ntext = input().split(',')\n\ntermfre = {}.fromkeys(vocab, 0)\ntermfre['<ukn>'] = 0\n\nfor i in text:\n    if (i in termfre):\n        termfre[i] += 1\n    else:\n        termfre['<ukn>'] += 1\n\nfor i in termfre:\n    print(i, termfre[i])"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "5/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: PASS, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: neP8zZTX\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\na = input()\nb =input()\ndic ={}\n\nc = a.split(',')\nd = b.split(',')\nn = len(d)\nfor i in c:\n    dic[i] = 0\nfor j in d:\n    if j in dic:\n        dic[j] += 1\n    else:\n        dic[i] = 0\n        \nsum = 0\nfor i,j in dic.items():\n    j = int(j)\n    print(i,j)\n    sum += j\n    \nprint('<ukn>',n-sum)"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: DmpWXReY\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocablst=input()\nwords=input()\ndic={}\n\nlstofvocab=[]\nfor i in vocablst.split():\n    lstofvocab.append(i)\n# print(lstofvocab)\n\nlstword=[]\nfor i in words.split():\n    # print(i)\n    lstword.append(i)\n# print(lstword)\n\ncount=0\nnew={}\nfor i in lstofvocab:\n    # print(i)\n    if i not in new:\n        count+=1\n        new[i]=count\n    else:\n        count+=1\n        \nprint(new)\n\n\n# ne=[]\n# for i in lstword:\n#     # print(i)\n#     if i in lstofvocab:\n#         ne.append(i)\n#     print(ne)\n\n# newlst=[]\n# for i,j in zip(lstofvocab,lstword):\n#     # print(i,j)\n#     if j in lstofvocab:\n#         newlst.append(i)\n#     # else:\n    #     newlst.append('<ukn>')\n\n\n    # if i not in lstofvocab:\n    #     newlst.append('<ukn>')\n    # else:\n    #     newlst.append(i)\n\n\n\n\n\n\n\n\n\n\n\n# fillst=[]\n# for i in lstofvocab:\n#     # print(i)\n#     for j in lstword:\n#         if j == lstofvocab:\n#         # print(j)\n#             fillst.append(j)\n        # else:\n        #     fillst.append('<ukn>')\n    \n# print(fillst)\n\n\n\n# for i in words:\n#     if words in vocablst:\n#         dt.append(i)\n#     else:\n#         dt.append('<ukn>')\n# print(dt)\n# for n in dt:\n#     if n"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:58:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: rSW85wdK\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab = input()\nvocab1 = input()\n\nfor vocab1 in vocab:\n    n = vocab.count(vocab1)\n    print(f'{vocab1} {n}')\n    print(f'<ukn> {n}')\n    "
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:53:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: PH57XvSK\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab1 = input().strip().split(',')\nvocab2 = input().strip().split(',')\ndata = {'<ukn>': 0}\nfor i in vocab1:\n    data[i] = 0\n    if i in vocab2:\n        data[i] = data.get(i, 0) + vocab2.count(i)\n\nfor i in vocab2:\n    if i not in vocab1:\n        data['<ukn>'] += 1\n\nukn = data.pop('<ukn>')\n\nfor i,j in data.items():\n    print(i, j)\nprint('<ukn>', ukn)\n"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:14:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: njFfvSgw\nEXERCISEID: itds120-final-q1\n */\n\n       \n\n'''\n# YOUR CODE GOES HERE\ndata = []\nvocab = []\nans = []\nnum1 = []\nnum2 = []\nvocab_list =  input().lower().strip()\nvocab = input().lower().strip()\n\nvocab_list = vocab_list.split(',')\nvocab = vocab.split(',')\n\ndata = data.append(vocab_list)\nvocab = vocab.append(vocab)\n\n\nfor vocab in data:\n    if vocab in data:\n        ans.append(vocab)\n        num1 += vocab\n    else:\n        num2 += vocab\n\n        \nprint(f'{ans.join(vocab)}', {num1} )\nprint(f'<ukn> {num2}') \n\n\n\n"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:57:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: ss2X2agh\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nval = input().split(',')\nlst1 = input().split(',')\n\nfor v in val:\n    print(v,lst1.count(v))\n\nukn_count = 0\nfor v in lst1:\n    if v not in val:\n        ukn_count += 1\nprint('<ukn>',ukn_count)"
+  },
+  {
+    "User ID": "6887014",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "1/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: PASS, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:59:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887014\nPASSWORD: BW4CZm22\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab = input().lower().split(',')\nf = input().lower().split(',')\n\nd ={}\nl = []\nh = []\nfor i in f:\n    if i not in vocab:\n        l.append(i)\n    else:\n        h.append(i)\n# print(vocab)\n# print(h)\n\nfor j in vocab:\n    count = 0\n    if j in h:\n        for i in h:\n            if j == i:\n                count += 1\n                d[j] = count  \n        \n            else:\n                d[j] = 0\n            \n\n    elif j not in h:\n            d[j] = 0\n\nfor k,v in d.items():\n    print(f'{k} {v}')\nprint(f'<ukn> {len(l)}')\n\n"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:01:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887015\nPASSWORD: jpgs7BuQ\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nword = (input().split(','))\ntext = (input().split(','))\nvocab = []\ndata = {}\ndata2 = {}\nfor i in word:\n    data[i]=0\n    data2['<ukn>']=0\nfor i in text:\n    if i in data:\n        data[i]+=1\n    else:\n        data2['<ukn>']+=1\n\n\nfor name,count in data.items():\n    print(f'{name} {count}')\nfor name,count in data2.items():\n    print(f'{name} {count}')"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:31:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: WbqdgAeh\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = input().split(',')\nvocab2_list = input().split(',')\n\nresult = dict()\n\nfor i in vocab_list :\n    result[i] = 0\nresult['<ukn>'] = 0\n\nfor i in vocab2_list :\n    if i not in vocab_list :\n        if '<ukn>' not in result :\n            result['<ukn>'] = 1\n        else :\n            result['<ukn>'] += 1\n    elif i in vocab_list :\n        if i not in result :\n            result[i] += 1\n        else :\n            result[i] += 1\n\nfor k,v in result.items() :\n    print(f'{k} {v}')"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:58:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887017\nPASSWORD: QJcFm2dG\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nn=input().split(',')\ntext=input().split(',')\ncout=0\nlist1=[]\nfor i in n:\n   list1.append(i)\nfor r in text:\n    if r == list1:\n        cout+=1\nprint(f'{list1}{cout}')\n\n\n\n\n   \n    \n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T02:51:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887018\nPASSWORD:P4sDXKGt\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_lst = input().strip().split(',')\nfile_word = input().split(',')\nnot_in = 0\ncount = 0\n\nfor vocab in vocab_lst:\n    count = 0\n    for vocab in file_word:\n        count += 1\n    print(f'{vocab} {(count)}')\n        \n\n\n# for i in read_dict:\n#     print(f'{i} = {read_dict[i]}')"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:49:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: AM2m1FbV\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocabList = input().strip().split(\",\")\nwordList = input().strip().split(\",\")\ncombineList = []\n\nfor i in vocabList + wordList:\n    if i not in combineList:\n        combineList.append(i)\n    \n\n# print(vocabList)\n# print(wordList)\nuknCount = 0\nfor i in combineList:\n    if i in vocabList:\n        print(f\"{i} {wordList.count(i)}\")\n    else:\n        uknCount += wordList.count(i)\n\n\nprint(f\"<ukn> {uknCount}\")"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:23:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: hedPCWk6\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\ntarget = input().split(',')\n\nvocab = input().split(',')\nukn = 0\nfor i in target:\n    print(f'{i} {vocab.count(i)}')\nfor j in vocab:\n    if j not in target:\n        ukn += 1\n\nprint(f'<ukn> {ukn}')\n"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:16:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021\nPASSWORD: FMCcfamd\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocal_list = input().strip().split(',') \n\nword = input().strip().split(',') \n\n\ncountdict = dict()\n\nfor i in vocal_list:\n    countdict[i] = word.count(i)\n\ntotalcount = sum(countdict.values())\ncountdict['<ukn>'] = len(word) -totalcount\n\nfor key,values in countdict.items():\n    print(f'{key} {values}')\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: rEszKRTz\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab_list = input().lower().split(',')\nword = input().lower().split(',')\ndict_vocab = {}\ndict_word = {}\n# new = dict.fromkeys(vocab_list , word)\n# print(new)\nunknown = '<ukn>'\n\ncount = 0\ncount_unknown = 0\nfor i in vocab_list:\n    if i in word:\n        count+=1\n    # elif i not in word:\n    #     count_unknown += 1\n    else:\n        count = 0\n    print(f'{i} {count}')\n\nprint(f'{unknown} ')\n\n\n\n\n\n\n# for i in vocab_list:\n#     dict_vocab[i] = 0\n# for w in word:\n#     dict_word[w] = 0\n# count = 0\n# for key,value in dict_vocab.items():\n#     if key == dict_word.keys():\n#         count+= 1\n#         print(key,value)\n\n# set_vocab = set(dict_vocab.keys())\n# set_word = set(dict_word.keys())\n\n# for i in vocab_list:\n#     for w in word:\n#         dict_vocab[i] = 0\n#         if w not in dict_vocab:\n#             dict_vocab[i] += 1\n#         else:\n#             dict_vocab[i] -=0\n# print(dict_vocab)\n    \n# new_set = set(dict_vocab.keys()) & set(word_dict.keys())\n# new_value = set(dict_vocab.values()) | set(word_dict.values())\n# print(new_set)\n# print(new_value)\n\n# for i in vocab_list:\n#     if i not in dict_vocab:\n#         dict_vocab[i] = 0\n# # print(dict_vocab)\n\n# for check in word:\n#     if check in dict_vocab:\n#         dict_vocab[check] += 1\n#     else:\n#         dict_vocab[check] =0\n# print(dict_vocab)\n\n# for i in vocab_list:\n#     dict_vocab[i] = 0\n# print(dict_vocab)\n\n# for w in word:\n#     if w in word_dict:\n#         word_dict[w] += 1\n#     else:\n#         word_dict[w] =1\n# print(word_dict)\n\n# new_dict = set(dict_vocab.keys()) - set(dict_vocab.keys())\n# print(new_dict)\n\n\n# for key ,value in dict_vocab:\n"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:20:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887023\nPASSWORD: NYJwfCvX\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE.\nvocablist = input().split(',')\nwordinput = input().split(',')\nwordchedk = dict()\ncount = 0\nfor i in vocablist:\n    wordchedk[i] = 0\nfor i in wordinput:\n    if i in vocablist and i in wordchedk :\n        wordchedk[i] += 1\n    else:\n        count += 1\n        wordchedk['<ukn>'] = 1\n    wordchedk['<ukn>'] = count\nfor i , h in wordchedk.items():\n    print(i,h)\n"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:01:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: vv6FdmPr\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab = list(input().split(','))\nbow = list(input().split(','))\n\n\ndictvo = {}\nfor i in range(len(vocab)):\n    dictvo[vocab[i]] = 0\ndictvo['<ukn>'] = 0\n\n\nfor j in bow:\n    if j not in dictvo:\n        dictvo['<ukn>'] += 1\n    else:\n        dictvo[j] += 1\n\n\nfor k1,v1 in dictvo.items():\n    print(f'{k1} {v1}')"
+  },
+  {
+    "User ID": "6887025",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:30:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887025\nPASSWORD: ZapC9VHu\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nuse=input().split(',')\nnew=input().split(',')\ntarget={}\nunknown={}\nunknown['<ukn>']=0\n\nfor i in use :\n    target[i]=0\nfor i in new :\n    if i.lower() in use :\n        target[i]+=1\n    if i.lower() not in use:\n        unknown['<ukn>']+=1\n\n    \nfor i,v in  target.items():\n    print(f'{i} {v}')\n\nfor i,v in unknown.items():\n    print(f'{i} {v}')"
+  },
+  {
+    "User ID": "6887026",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887026\nPASSWORD: SXdCCwM7\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\n\nvocab_list = input().split(',')\nword = input().split(',')\ndict1 = dict()\ndict2 = dict()\ncount_v=0\ncount_ukn = 0\nfor v in word:\n    if v in vocab_list:\n        dict1[v]+=1\n    else:\n        dict2[v]+=1\n\nfor k,v in dict1.items():\n    if v>1:\n        print(f'{dict1[k]} {dict1[v]}')\nfor k,v in dict2.items():\n    s = sum(v)\n    print(f'<ukn> {s}')\nprint()\n"
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887027\nPASSWORD: XkXqet9d\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nfreq = {}\nukn = {'<ukn>':0}\n\nv = input().split(',')\n# print(v)\nfor i in v:\n    freq[i] = 0\nfreq['<ukn>'] = 0\n\nf = input().split(',')\n\n\n# print(words)\nfor i in f:\n    if (i in v) and (i in freq):\n        # print(i)\n        freq[i] += 1\n    \n    elif i in v:\n        # print(i)\n        freq[i] = 1\n\n    else:\n        freq['<ukn>'] += 1\n\nfor i in freq:\n    print(f'{i} {freq[i]}')\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:57:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: XspGM6nZ\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = input().split()\nvocab = input().split()\n\ncount = 0\nfor vocab_list in vocab:\n    if vocab == vocab:\n        count += 1\n        print(vocab_list, count)"
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:58:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD: fpZNnkgQ\nEXERCISEID: itds120-final-q1\n */\n'''\nvocab_list = input().split(',')\ninput_vocab = input().split(',')\ncount = {}.fromkeys(vocab_list,0)\nsub_ukn = 0\nfor i in input_vocab :\n    if i in vocab_list :\n        count[i] += 1\n    else :\n        sub_ukn += 1\ncount['<ukn>'] = sub_ukn\nfor i in count :\n    print(f'{i} {count[i]}')\n"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "9/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: FAIL, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:43:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: nnvQrcMv\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = input().split(',')\nsent = input().split(',')\n#print(vocab_list)\n#print(sent)\n\n\n\nset2 = list(set(sent))\nset3 = set2.copy()\n\nfor i in range(len(set2)) :\n    if set2[i] in vocab_list :\n        set3.pop(0)\n#print(set3)\n\nresult = {}\nfor i in vocab_list :\n    result[i] = sent.count(i)\n#    result['<ukn>'] = len(set3)\n#print(result)\n\nfor key , value in result.items() :\n    print(f'{key} {value}')\nprint(f'<ukn> {len(set3)}')\n\n\n\n"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:29:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: W89PMQFF\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab = input().split(',')\nword = input().split(',')\n\nvocab_dict = {}\nnotInvocab = []\n\nfor i in vocab:\n    if i not in vocab_dict and i in word:\n        vocab_dict[i]=word.count(i)\n    if i not in word:\n        vocab_dict[i]=0\n\n\nfor i in word:\n    if i not in vocab:\n        notInvocab.append(i)\n\n\nfor k,v in vocab_dict.items():\n    print(k,v)\n    \nprint(f\"<ukn> {len(notInvocab)}\")"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:59:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: 3CGNU6pd\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab = input().split(',')\nv = input().split(',')\nc = 0\nukn = 0\nv_list = []\nfor i in v:\n    if i in vocab:\n        c += 1\n        v_list.append(i)\n    else:\n        ukn += 1\nfor i in vocab:\n    print(i,c)\nprint(f' {ukn}')\n"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:57:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: 7z4wj3jj\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab = input(). split(\",\")\ncut = input(). split(\",\")\n\nvocab_dict = dict.fromkeys(vocab, 0)\nukn = {\"<ukn>\": 0}\nresult = {**vocab_dict, **ukn}\n\nfor i in cut:\n    if i in vocab:\n        result[i] += 1\n    else:\n        result[\"<ukn>\"] += 1\n\nfor k,v in result.items():\n    print(k,v)"
+  },
+  {
+    "User ID": "6887034",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:46:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887034\nPASSWORD: FEPMT5ZF\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab = input().lower().split(',')\ncutword = input().split(',')\nvocab_list = dict.fromkeys(vocab,0)\naaa = set()\nunknown = 0\n# for i in vocab:\n#     if cutword in i:\n#         vocab_list[i] +=1\nfor i in cutword:\n    if i not in vocab_list:\n        unknown += 1\n    elif i in vocab_list:\n        vocab_list[i] +=1\n\nfor a,h in vocab_list.items():\n    print(a,h)\n\nprint('<ukn>', unknown)"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: JCN7YuyU\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nv_list = input().split(',')\n#print(v_list)\nwv_list = input().split(',')\n#print(wv_list)\n\ncount = []\nukn = []\nfor i in wv_list :\n    word = []\n    if i in v_list :\n        word.append(i)\n        count.append(word)\n        #print(word)\n    else :\n        word.append(i)\n        ukn.append(word)\n#print(count)\nfor j in v_list :\n    #print(j)\n    print( f'{j} {len(j)-1}')\nprint( f'<ukn> {len(ukn)}')"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:53:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: acFPH8NN\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nimport numpy as np\nimport math\nn1 = input().split()\nn2 = input().split()\n\n# i1 = (n1.lower())\n# i2 = (n2.lower())\ni3 = n1 + n2 \n\n\nfor i in i3:\n\n    # ans1 = i.count('cat')\n    # a1 = ans1.append(ans1)\n    # ans2 = i.count('dog')\n    # ans3 = i.count('fish')\n    # print(f\"cat {a1}\")\n    # print(f\"dog {ans2}\")\n    # print(f\"fish {ans3}\"\n\n    s = i3.count(i)\n    print(s)\n\n"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:02:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: ZV8J5bqp\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\ntext = input().lower()\ntext2 = input().lower()\nlst = text.split(',')\nlst2  = text2.split(',')\n\ndict1 = {}\nfor i,j in zip(lst,lst2):\n    if i not in dict1:\n        dict1[i] = 0\n    else:\n        dict1[i] += 0\n\nlst3 = []\nfor j in lst2:\n    if j not in lst:\n        lst3.append(j)\n\ndict1['<ukn>'] = len(lst3)\n\nfor i in lst:\n    for j in lst2:\n        if j in i:\n            dict1[i] += 1\n        # elif j not in i:\n            # dict[i] -= 1\n\nfor i,j in dict1.items():\n    if i == 'tok10':\n        j -= 1\n    print(i,j)"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887038\nPASSWORD: yYuVB7G1\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab = input().split(',')\nfile = input().split(',')\ncount = 0\ns = {}\nfor i in vocab:\n    if i in s and i.isdecimal() and i.islower():\n            count += 1\n    elif i not in s:\n            count = 1\n\n\n    if i not in vocab:\n        print(\"<ukn>\")\nprint(s)\n\n"
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:20:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: VBDyzCwt\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocabs = input().split(',')\nnames = input().split(',')\nvocab_dict = {}\n# print(vocab, names)\n\nfor i in range(len(vocabs)):\n    vocab_dict[vocabs[i]] = 0\nvocab_dict['<ukn>'] = 0\n# print(vocab_dict)\nfor v in names:\n    if v not in vocab_dict:\n        vocab_dict['<ukn>'] += 1\n    else:\n        vocab_dict[v] += 1\n# print(vocab_dict)\nfor k, v in vocab_dict.items():\n    print(f'{k} {v}')"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:58:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887040\nPASSWORD: RQ9AP14K\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = input().strip().split(',')\nword_input = input().strip().split(',')\n\ndict_vocab = {}\nfor i in vocab_list:\n    dict_vocab[i] = 0\ndict_vocab['<ukn>'] = 0\n#print(dict_vocab)\n\nfor i in word_input:\n    if i in vocab_list:\n        dict_vocab[i] += 1\n    else:\n        dict_vocab['<ukn>'] += 1\n\nfor key,value in dict_vocab.items():\n    print(f'{key} {value}')"
+  },
+  {
+    "User ID": "6887041",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:54:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887041\nPASSWORD: rwsv2VNJ\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\ninp1 = input().split(',')\ninp2 = input().split(',')\n# vol1 = list(inp1)\n# vol2 = list(inp2)\n# print(vol1)\n# print(vol2)\n\ncount = 0\nlist1 = []\nfor i in inp1 :\n    # print(i)\n    for j in inp2 :\n        if j == i :\n            count += 1\n    list1.append(f'{i} {count}')\n    count = 0\nfor k in inp2 :\n    if k not in inp1 :\n        count += 1\nlist1.append(f'{'<ukn>'} {count}')\n# print(list1)\n\nfor n in list1 :\n    print(n)"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:59:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: a4kBdSNz\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocabs = input().split(',')\nwords = input().split(',')\n\nworddict = {'<ukn>': 0}\nfor i in words:\n    if i in vocabs and i not in worddict:\n        worddict[i] = 1\n    elif i in vocabs and i in worddict:\n        worddict[i] += 1\n    elif i not in vocabs:\n        worddict['<ukn>'] += 1 \n        worddict[i] = 0    \nfor j in vocabs:\n    if j not in worddict.keys():\n        worddict[j] = 0\nfor k in vocabs:\n    if i in worddict.keys():\n        print(f'{k} {worddict[k]}')\nprint(f'{'<ukn>'} {worddict['<ukn>']}')\n\n\n\n"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "5/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: FAIL, CASE 9: FAIL, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:01:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD: K5MS826v\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\n\ndictionary = {}\n\nkeyword = input().strip().split(',')\n\ncheck = input().strip().split(',')\n\ncheck1 = sorted(check,key=lambda x : keyword == x)\n\n#print(check1)\n\n\nfor i in check1 :\n\n\n\n    if i not in dictionary and i in keyword :\n\n        dictionary[i] = 1\n    \n    elif i  in dictionary and i in keyword :\n\n        dictionary[i] += 1\n\n    \n    else:\n\n       \n        for j in keyword :\n\n            if j not in dictionary :\n\n                dictionary[j] = 0\n\ndictionary['<ukn>'] = 0\n\nfor k in check1 :\n\n    if k not in dictionary and k not in keyword :\n\n        dictionary['<ukn>'] += 1\n\n\nfor key , value in dictionary.items():\n\n    print(f'{key} {value}')\n\n\n    \n\n    \n    \n"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: aCKctZyv\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list=input().split(',')\nvocab_str=' '.join(vocab_list)\nvocab=input().split(',')\nvocab_lst=[]\ncount=0\ncount_notin=0\nithas=False\nfor word in vocab:\n    if word in vocab_list:\n        vocab_lst.append(word)\n        for i in vocab_lst:\n            if i not in vocab_lst:\n                count=0\n            elif i in vocab_lst:\n                count+=1\n            print(f'{i} {count}')\n            ithas=True\n    elif word not in vocab_list:\n        count_notin+=1\n        \n\n\nprint(f'<ukn> {count_notin}')\n"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: 3D6Xunda\nEXERCISEID: itds120-final-q1\n */\n'''\ntxt = input()\nunk = input()\n\nlst_txt = []\nlst_unk = []\n\nparts = txt.split(',')\nunk_part = unk.split(',')\n\njoin_unk = ' '.join(unk_part)\n\nlst_all = []\nfor i in parts:\n    lst_all.append(i)\n\nfor i in unk_part:\n    lst_all.append(i)\n\ncounted = {}\nfor part in lst_all:\n    if part.islower() and part.isalnum():\n        count = lst_all.count(part)\n        if count >= 1:\n            counted[part] = count\n\nif len(counted) >= 1:\n    for part,count in counted.items():\n        print(f\"{part} {count}\")\n\n    \n\n"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:59:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: jE31M4vr\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES \nvocab_list = input().split(',')\nvocab = input().split(',')\ncount = {'ukn' : 0}\nfor i in vocab :\n    if i in vocab_list and i in count:\n        count[i] += 1\n    elif i in vocab_list :\n        count[i] = 1\n    elif i not in vocab_list :\n        count['ukn'] += 1\n\nfor i in vocab_list :\n    if i not in count :\n        count[i] = 0\n\nfor i in vocab_list:\n    print(i,count[i])\nprint('<ukn>',count['ukn'])"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:22:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD: Gfm5gZ3W\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab = input()\nprint(vocab)\nprint(vocab.spilt(','))\n\nnotfile = input()\nprint(notfile)\nprint(notfile.spilt(','))\n\nif vocab == True :\n    print(vocab)\n\nelse :\n    print(vocab('<ukn>'))\n\nx = vocab.count('')\n\nlist1 = []\n\nfor s in list1 :\n  print(s)\n\nprint(s.isalnum)\nprint(s.islower)\nprint(s.strip(list1))\n\n\n\n"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: kGK2k2wS\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_lst=input().split(',')\ncount_lst=input().split(',')\n\ndict_count=dict.fromkeys(vocab_lst,0)\ndict_count[\"<ukn>\"]=0\nfor i in count_lst:\n    if i in dict_count.keys():\n        dict_count[i]+=1\n    else:\n        dict_count[\"<ukn>\"]+=1\n\nfor k,v in dict_count.items():\n    print(k,v)"
+  },
+  {
+    "User ID": "6887050",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:56:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887050\nPASSWORD: uQFUVQ43\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nlist1 = []\ncount = 0\nukn = 0\nx = input()\ny = input()\nfor i in x:\n    a = i.split()\n    list1.append(a)\n    for j in y:\n\n        list2 = []\n        b = j.split(',')\n        if b == list1:\n            count += 1\n            list2.append(count)\n        else:\n            ukn += 1\n            list2.append(ukn)\n    print(i)\n    \n\n        \n\n\n"
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:17:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: eYz5JdDW\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nimport numpy as np\nvocab_list = input().strip().split(',')\nuser = input().split(',')\n\npointunk = 0\nfor i in vocab_list:\n    k = 0\n    for j in user:\n        if j.isalnum():\n            if i == j:\n                k += 1\n                \n    pointunk += k\n    print(f'{i} {k}')\nprint(f'<ukn> {len(user) - pointunk }')\n        \n\n"
+  },
+  {
+    "User ID": "6887052",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:32:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887052\nPASSWORD: BF36HC36\nEXERCISEID: itds120-final-q1\n */\n'''\nimport numpy as np\n\nunique = input()\nfeq = input()\nitem_unique = unique.split(',')\nitem_feq = feq.split(',')\nitemZ = []\nitem_num = []\nA = 0\nfor i in item_feq:\n    if i not in item_unique:\n        itemZ.append(i)\nfor i in range (len(item_unique)):\n    C = item_unique[i]\n    B = item_feq.count(C)\n    item_num.append(B)\nfor i in itemZ:\n    A += 1\n\nfor i in range (len(item_unique)):\n    D = f\"{item_unique[i]} {item_num[i]}\"\n    print(D)\nE = f\"<ukn> {A}\"\nprint(E)"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:50:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: XsVzPMb5\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab = input().split(',')\nvocab_new = vocab.append('<ukn>')\nall_vocab = input().split(',')\nvocab_dict = dict.fromkeys(vocab,0)\nfor i in all_vocab :\n    if i in vocab_dict :\n        vocab_dict[i] += 1\n    else :\n        vocab_dict['<ukn>'] += 1\nfor k,v in vocab_dict.items() :\n    print(f'{k} {v}')"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:48:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: STDvWwQZ\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\ndata = input().split(',')\nname_amount = input().split(',')\n\ncount_data = {}\ncount_name = {}\nresult = {}\nukn = {'<ukn>' : 0}\n\nfor i in data :\n    count_data[i] = 0\n# print(count_data)\n\nfor i in name_amount :\n    if i not in count_name :\n        count_name[i] = 1\n    else :\n        count_name[i] += 1\n# print(count_name)\n\nfor i in count_data.keys() :\n    if i in count_name :\n        result[i] = count_name[i]\n    elif i not in count_name :\n        result[i] = count_data[i]\n\nfor i in count_name.keys() :\n    if i not in count_data :\n        ukn['<ukn>'] += count_name[i]\n\n# print(result)\n# print(ukn)\n\nfor i in result.keys() :\n    print(f'{i} {result[i]}')\n\nfor i in ukn  :\n    print(f'{i} {ukn[i]}')\n\n   \n\n\n\n# for i in count_name.keys() :\n#     if i in count_data :\n#         result[i] = count_name[i]\n#     elif i not in \n#     elif i not in count_data :\n#         ukn['<ukn>'] += count_name[i]\n"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887056\nPASSWORD: 82z8Akum\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = input().strip(\",\").split()\nhave_vocab = input().strip(\",\").split()\n\nlst_all = []\ncount = 0\nresult = \"\"\nnot_in = \"\"\n\nfor have_vocab in vocab_list:\n    if have_vocab in vocab_list:\n        result += have_vocab\n        for w in have_vocab:\n            count += 1\n    elif have_vocab not in vocab_list:\n        not_in = f\"<ukn>\"\nprint(f\"{result.strip(\",\")} {count}\")\n    \n        \n\n"
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:49:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: WyZ7FTJ6\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocabs = input().strip().split(',')\nwords = input().strip().split(',')\n\nvocabs = list(map(lambda x: x.lower(), vocabs))\nwords = list(map(lambda x: x.lower(), words))\n\nvocabs_dic = {}\nfor v in vocabs:\n    if v not in vocabs_dic:\n        vocabs_dic[v] = 0\n\nvocabs_dic['<ukn>'] = 0\nfor v in words:\n    if v not in vocabs_dic:\n        vocabs_dic['<ukn>'] += 1\n    else:\n        vocabs_dic[v] += 1\n\nfor key, value in vocabs_dic.items():\n    print(f'{key} {value}')\n"
+  },
+  {
+    "User ID": "6887059",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887059\nPASSWORD: rUQ3VsC1\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nimport string \n\nword_list = str(input())\ntext = str(input())\n\n# text = [x.strip() for x in word]\n# text_list = [x.strip() for x in word_list]\nc = dict()\nsentence = []\n\ndimiters = ['.' , ',' , '!' , '?']\n\nif i in text :\n    for d in dimiters :\n        i = i.replace(d , \"/\")\n    word = i.split(\"/\")\n    for j in word :\n        if len(i , strp()) > 0 :\n            sentence.appear(i , strip())\n\nresult = dict()\nindex = 1 \nfor j in sentence :\n    word = j.split()\n    preresult = dict()\n    preresult(\"word\") = len(word)\n    uppercase = [x for x in word if x and x(0).isupper()]\n    preresult['uppercase'] = len(uppercase)\n    sentence_key = f\"Sentence {index}\"\n    result(sentence_key) = preresult\n    index += 1 \n\nprint(result)\n\n\n\n\n    "
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: FAIL, CASE 4: ERROR, CASE 5: FAIL, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:55:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887060\nPASSWORD: SNjga1zt\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nrow=input().split(',')\ncol=input().split(',')\n\nrows={}\nfor i in range(len(row)):\n    rows[row[i]]=row[i]\n\ncount=0\ncounts={}\nlst=[]\nlst1=[]\nfor i in col:\n    if i in row:\n        lst.append(i)\n    else:\n        lst1.append(i)\n\nfor i in range(len(row)):\n    if col[i] in row:\n        count+=1\n        counts[row[i]]=[count]\n        boo=True\n    elif i not in row:\n        count=0\n\nfor i in row:\n    if boo:\n        print(f'{i} {counts[i]}')\n    else :\n        print(f'<ukn> {counts.fromkeys()}')\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD: N2mbPFp2\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab_input = input()\nfile_input = input()\n\nvocab_list = vocab_input.split(',')\nfile_list = file_input.split(',')\n# print(vocab_list)\n# print(file_list)\n\nresult = {}\nfor word in vocab_list :\n    result[word] = file_list.count(word)\n\ncount = 0\nfor word in file_list :\n    if word not in vocab_list :\n        count += 1\n    result['<ukn>'] = count\n\nfor k , v in result.items() :\n    print(f'{k} {v}')"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:59:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: 7YcVQSev\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab=input().split(',')\ndata=input().split(',')\ncount=0\nfor i in vocab:\n    count+=data.count(i)\n    print(f\"{i} {data.count(i)}\")\n\nprint(f\"<ukn> {len(data)-count}\")"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: FAIL, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:58:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD: dEzUnuDJ\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nfound = False\nword1 = str(input())\nvocab_list = []\nvocab_list = word1.split(',')\ndict1 = {}\n#print(vocab_list)\nword2 = (input())\nword_list = []\nword_list = word2.split(',')\n\n#print(word_list)\n# for i in range(len(word_list)):\n#     if word_list[i] in vocab_list: \n#         print(word_list[i]) \n\nfor i in range(len(word_list)):\n    for i in range(len(vocab_list)):\n        if word_list[i] in vocab_list:\n            dict1[i] += 1\n        else:\n            dict1[i] = 1\n\nfor k in dict1:\n    if dict1[k] >= 0:\n        print(f'{k} {dict1[k]}')\n        found = True\nif found == False:\n    print('<ukn> {dict1[k]}')\n\n\n    \n    \n\n\n\n\n        \n\n\n\n"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:55:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: 1QEhQgJM\nEXERCISEID: itds120-final-q1\n */\n'''\nvocab = input().split(',')\n#print(vocab)\nlov = input().split(',')\n#print(lov)\nukn = 0\ncounter = {}\nfor i in vocab:\n    counter[i] = 0\nfor i in lov:\n    if i in vocab:\n        counter[i] += 1\n    else:\n        ukn += 1\n#print(counter)\nfor i,j in counter.items():\n    print(i,j)\n\nprint('<ukn>',ukn)\n"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:58:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887065\nPASSWORD: mGNWdmYE\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_lst = input().split(',')\nword_lst = input().split(',')\nvocab_dict = dict.fromkeys(vocab_lst,0)\nvocab_dict['<ukn>'] = 0\n\n#print(vocab_dict)\n\nfor x in word_lst :\n    if x in vocab_dict.keys() :\n        vocab_dict[x] += 1\n    else :\n        vocab_dict['<ukn>'] += 1\n\nfor k , v in vocab_dict.items() :\n    print(k , v)\n"
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD: 9h2Rjj1n\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = []\nvocab1 = input().split(',')\n\nvocab_list.append(vocab1)\n\nvocab2 = input().split(',')\n\na = []\nb = []\nfor i in vocab2:\n    if i in vocab1:\n        a.append(i)\n    else:\n        b.append(i)\n\nn=0\nfor i in range(len(vocab1)) :\n    for j in range(len(a)):\n        print(vocab1[i], a[j].count(vocab1[i]))\n\nprint(f'<ukn> {len(b)}')\n\n\n"
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:59:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887067\nPASSWORD: MsvPnMwc\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvc = input().lower()\nocv = input().lower().split()\nvc_list = []\nocv_list = []\ncount = ''\n\nfor j in vc:\n    if j.isalnum():\n        vc_list.append(j)\n\nfor i in ocv:\n    if i.isalnum():\n        ocv_list.append(i)\n\nfor o in sorted(len(ocv_list)):\n    count += o\n\nprint(f'{vc_lisy} {count}')"
+  },
+  {
+    "User ID": "6887068",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:59:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887068\nPASSWORD: NCDBmat3\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nn =  input().lower().strip()\nn2 = list(input().lower())\nn1 = []\ncontain = []\ncontain2 = []\nfor i in n:\n    if i.isalnum:\n      \n        contain.append(i)\ncontain  = ''.join(contain) \ncontain = contain.replace(',',' ')\n\n\nprint(contain)\n\n\n\n\nfor i in n2:\n    if i.isalnum:\n        contain2.append(i)\n\ncontain2  = ''.join(contain2)\n\n\n\n\n   \n\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887069",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887069\nPASSWORD: FguZGAK1\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab  = input().split(\",\")\nvocab_in_lst = input().split(\",\")\na = str(vocab_in_lst)\nw = {}\nukn = 0\n\nwith open(\"vocab.txt\",\"w\") as inp :\n    inp.write(a + \"\\n\")\n\nwith open(\"vocab.txt\",\"r\") as inp :\n    for line in inp :\n        if a in inp :\n            w[i] += 1\n        else :\n            ukn += 1\n\n    for i,j in w.items() :\n        print(i,\" \",j)\n\nprint(f\"ukn {ukn}\")\n\n\n\n\n\n\n\n\n\n        \n\n"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:54:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: fEK1sPBE\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nlist=[]\nlist2=[]\nvocab=str(input()).split(',')\nvocab2=str(input()).split(',')\nlist.append(vocab)\nlist2.append(vocab2)\n\nfor i in range(len(list2)):\n    count =+ 1\n\n\nprint()"
+  },
+  {
+    "User ID": "6887071",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T02:14:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887071\nPASSWORD: rR97Uzpm\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab = input()\nx = \",\".join(vocab)"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:00:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: nrQ2XWJ3\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab = ','\nvoc = input().split()\ntotal = 0\nfor i in voc:\n    if i.isalpha():\n        vocab += i\n    else:\n        if vocab != ',':\n            print('unk')\n"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: EDvDwt9n\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HER\nsentance = input().split(',')\nsentance2 = input().split(',')\ndictword = dict()\n\nfor i in sentance:\n    if i not in dictword:\n        dictword[i] = 0\ndictword['<ukn>'] = 0\nfor i in sentance2:\n    if i  in dictword:\n        dictword[i] += 1\n    if i not in dictword:\n        dictword['<ukn>'] += 1\n\nfor k,v in dictword.items():\n    print(f'{k} {v}')\n"
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:58:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887074\nPASSWORD: FBT5p8y1\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab = list(input().split(\",\"))\ncut = list(input().split(','))\ncount = 0\nunk = 0\nfor vocab in cut:\n    if vocab not in cut:\n        unk += 1\nfor i in vocab:\n    if vocab in cut :\n        count += 1\nprint({vocab},{count},{unk})"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:18:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: BfAGUuzy\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nline1 = input().strip().split(',')\nline2 = input().strip().split(',')\n\nvocab = {}\n\nfor word in line1:\n    if word not in vocab:\n        vocab[word] = 0\n\nunknown = 0\nfor word in line2:\n    if word not in vocab:\n        unknown += 1\n    elif word in vocab:\n        vocab[word] += 1\n\nfor k, v in vocab.items():\n    print(f'{k} {v}')\nprint(f'<ukn> {unknown}')"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:37:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: GkWzrQyY\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\ni1=input().strip().split(',')\ni2=input().strip().split(',')\ndic={}\n\n'''for i in i1:\n    count=0\n    for j in i1:\n        if j in i2:\n            count+=1\n            dic[i]=count\n        else:\n            count+=1\n            dic['<ukn>']=count\n    \n '''\ncount=0\nfor i in i1:\n    dic[i]=count\ndic['<ukn>']=count\nfor j in i2:\n    if j in i1:\n        dic[j]=dic.get(j,count)+1\n        count+=1\n    else:\n        dic['<ukn>']=dic.get('<ukn>',count)+1\n\n        \nfor k,v in dic.items():\n    print(f'{k} {v}')\n"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:01:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: DTVyjpFc\nEXERCISEID: itds120-final-q1\n */\n'''\n# PASS\nvocab_list = input().split(',')\ncut_ff = input().split(',')\n\nresult={}\nfor i in vocab_list:\n    result[i]=0\n\ncount = 0\nunkn={}\nfor j in cut_ff:\n    if j in result:\n        result[j]+=1\n    elif j not in result:\n        count+=1\n        unkn['<ukn>']=count\n    \n\nfor k,v in result.items():\n    print(f'{k} {v}')\n\nif len(unkn)>0:\n    for k,v in unkn.items():\n        print(f'{k} {v}')\nelse:\n    unkn['<ukn>']=0\n    for k,v in unkn.items():\n        print(f'{k} {v}')"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: 9VkbwJXN\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\n\nvocab_list = input().split(',')\nvocab = input().split(',')\nvocab_dict = dict.fromkeys(vocab_list)\n\nfor i in len(vocab):\n    if vocab[i] in vocab_list:\n        \n\n\n\n\n\n\n\n\n\n\nfor key, value in instructor.items():\n    print(key, value)"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:57:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: wNz8vvUY\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\n\nbase=input(str()).split(',')\nword=input(str()).split(',')\n\n\ncount={}\nfor i in base:\n    count[i]=0\n\ncount['<ukn>']=0\n\n\nfor i in word:\n    if i in count:\n        count[i]+=1\n    else:\n        count['<ukn>']+=1\n\n\nfor key, value in count.items():\n print(key, value)\n"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:29:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: nF56XhhQ\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocabs=input().split(\",\")\nw=input().split(\",\")\n\nv=0\nw=0\na=[]\n\nfor i in vocabs:\n    if w in vocabs:\n        count += 1\n        #v[i]+=1\n    else:\n        print(\"<ukn>\")\n        #w.append(vocabs)\nprint(w)\nprint(vocabs)"
+  },
+  {
+    "User ID": "6887084",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:33:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887084\nPASSWORD: JgbPUtr3\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = []\nresult = list(map(lambda name: name.lower(),fliter(lambda name: name,{} ,vocab_list ))\nprint(result)\n\n\n\n"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: d4mdXXD1\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\n\"\"\"vacabulary = []\n\nvocab, = []\n\nif \"\"\"\n\nvocab_list  = \" \"\nwith open(\"word.vocab_list\",\"w\", encoding= \" utf-8\") as f:\n    f.write(vocab_list)\n\nwith open(\"word.vocab_list\",\"r\", encoding= \" utf-8\") as f:\n    vocab = f.read()\n\nsentences = []\nsentence = \" \"\nfor ch in vocab_list:\n    sentence += ch\n    if ch in vocab:\n        sentences.append(sentence.strip())\n        sentence = \" \"\n\nsentences = [s for s in sentences if s]\n\nresult = {}\nfor i, s in enumerate(sentences,1):\n    words_list = s.split()\n    word_count = 0\n    for w in words_list:\n        w_clean = w.strip()\n        if w_clean:\n            word_count += 1\n        else:\n            print(unknow)\n\nresult(vocab_list )"
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:52:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: pkHvNQnJ\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nx = input().split(',')\nlist = input().split(',')\ndict = {}.fromkeys(x,0)\n# print(dict)\nunknow = 0\nfor i in list:\n    if i in dict:\n        dict[i]+= 1\n    if i not in dict:\n        unknow+= 1\nfor i,j in dict.items():\n    print(f'{i} {j}')\nprint(f'<ukn> {unknow}')"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:01:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: w8a2eyEN\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nx=input()\ny=input()\n\nx1=x.strip().split(',')\ny1=y.strip().split(',')\ndic={}\nfor i in y1:\n    if i in x1 :   \n        if i not in dic:\n            dic[i]=1\n        else:\n            dic[i]+=1\n    elif i not in x1:\n        if '<ukn>' not in dic:\n            dic['<ukn>']=1\n        else:\n            dic['<ukn>']+=1\nfor i in x1:\n    if i in dic:\n        print(f'{i} {dic[i]}')\n    else:\n        print(f'{i} 0')\nif '<ukn>' in dic:   \n    print(f'<ukn> {dic['<ukn>']}')\nelse:\n    print(f'<ukn> 0')           \n\n"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: ERROR, CASE 6: FAIL, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:58:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: HBj6Vmew\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n#vocab_lst = []\nimport numpy as np\n\nvocab_lst = []\nvocab_1 = input().split(\",\") #list\nvocab_2 = input().split(\",\") #list\n\nvocab_lst.append(vocab_1)\nvocab_lst.append(vocab_2)\n\n'''x = np.array(vocab_lst)\ndt_vals, dt_cnts = np.unique(x, return_counts = True)'''\n\n'''for i in vocab_1:\n    if vocab_2 not in vocab_1:\n        vocab_2 = \"<ukn>\"\n        np.sum(vocab_2)'''\n\n\nprint(vocab_lst)\n#print(x)\n\nc = 0\nc2 = 0\nname_same =[]\nfor i in vocab_lst[0]:\n    for j in range (len(vocab_lst[0])):\n        if vocab_lst[1][j] != vocab_lst[0][j]:\n             vocab_lst[1][j] = \"<ukn>\"\n             c += 1\n        else:\n            name_same.appendvocab_lst[0][j]\n\nprint(name_same)"
+  },
+  {
+    "User ID": "6887090",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T03:57:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887090\nPASSWORD: 3hNPj6je\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvo = []\nfi = []\n\nfor i in range(3):\n    vo.append(input())\n\n\nfor i in range(6):\n    fi.append(input())\n\n\nukn=0\n\nfor i in vo :\n    if i in fi :\n        print(f'{i}{fi.count(i)}')\n\n    elif fi not in i :\n        ukn = ukn + 1\n\n    elif i not in fi :\n        print(f'{i} 0')\n\n\nprint(f'<ukn> {ukn}')\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:14:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: VNZuqQpW\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\ninput1 = input().split(\",\")\ninput2 = input().split(\",\")\n\n#print(input1)\n#print(input2)\n\nukn_count = 0\ndict = {}\nfor i in input1:\n    count = 0\n    for j in input2:\n        if j == i:\n            count += 1\n        elif j not in input1:\n            input2.remove(j)\n            ukn_count +=1\n    dict[i] = count\n\nfor k,v in dict.items():\n    print(f\"{k} {dict[k]}\")\nprint(f\"<ukn> {ukn_count}\")"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887093\nPASSWORD: WdSHdVYY\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab_list = input().strip().split(',')\n# print(vocab_list)\n\ntxt = input().strip().split(',')\n# print(txt)\n\n\n\nfrom_vocab ={}.fromkeys(vocab_list,0)\n# print(from_vocab)\n\nukn = 0\n\nfor i in txt:\n    if i in from_vocab.keys():\n        from_vocab[i]+=1\n    else:\n        ukn +=1\n\n# print(from_vocab)\n# print(ukn)\n\nfor key,value in from_vocab.items():\n    print(key,value)\n\nprint('<ukn>',ukn)\n"
+  },
+  {
+    "User ID": "6887094",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:34:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887094\nPASSWORD: fAXS8Vh3\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nlst = input().split(',')\nlst += ['<ukn>']\n\ndat = input().split(',')\n\ndic = {}\n\nfor i in lst :\n    dic[i] = 0\n\nfor i in lst :\n    for j in dat :\n        if i == j :\n            dic[i] += 1\n\nfor i in dat :\n    if i not in lst :\n        dic['<ukn>'] += 1\n\nfor k,v in dic.items() :\n    print(f'{k} {v}')"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:01:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: ntsV63gJ\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab_list = input()\nvocab_list  = vocab_list.split(',')\nfile = input()\nfile = file.split(',')\n\nchecked = {}\n\nfor v in vocab_list :\n    checked[v] = 0 \n\nchecked['<ukn>'] = 0\n# print(file)\n# print(checked)\n\nfor v in file :\n    if v in checked :\n        checked[v] += 1\n    else:\n        checked['<ukn>'] += 1\n    \n# print(checked)\nfor k,v in checked.items():\n    print(k,v)"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:56:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: e4HK5NrR\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nx=input().strip().split(',')\nvocab=input().strip().split(',')\ndictx={}\ntotal_unk=0\nfor i in x:\n    dictx[i]=0\n\nfor j in vocab:\n    if j in dictx:\n        dictx[j]+=1\n    else:\n        total_unk+=1\n\nfor k in dictx:\n    print(f'{k} {dictx[k]}')\n\nprint(f'<ukn> {total_unk}')\n\n\n    "
+  },
+  {
+    "User ID": "6887097",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T02:47:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887097\nPASSWORD: EG6Tde99\nEXERCISEID: itds120-final-q1\n */\n'''\na = input()\n\nif a == a.strip:\n    a = a.split(',')\nelse:\n    a = a.split(' ')\nb = input()\n\nprint(a)\n\nif b == b.strip:\n    b.split(',')\nelse:\n    b.split(' ')\nprint(len(a))"
+  },
+  {
+    "User ID": "6887098",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:58:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887098\nPASSWORD: ykKnwJSg\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = input().split(',')\nfilecut = input().split(',')\n\ncounter = 0\nfor i in filecut:\n    if i not in vocab_list:\n        i = '<ukn>'\n        counter += 1\n\nfor i in vocab_list:\n    print(f'{i} {filecut.count(i)}')\n\nprint(f'<ukn> {counter}')\n\n"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:01:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: t2R7hW1y\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nlist = []\nlist.count\nif x not in list :\n    x = unk\nprint"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "3/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: PASS, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: 51dWaG62\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab_list=input().split(\",\")\ntxt=input().split(\",\")\ncount={}\nfor i in vocab_list:\n    count[i]=0\n    for j in txt:\n        unknow=0\n        if j==i:\n            count[i]+=1\n        elif j!=i:\n            if j not in vocab_list:\n                unknow+=2\n                \n\n        \n            \n\n\n \n\nfor k,v in count.items():\n    print(f\"{k} {v}\")\n\nprint(f\"<ukn> {unknow}\")\n\n\n\n\n    \n\n\n"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:57:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: werEw5ju\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvoc = input().split(',')\nwords = input().split(',')\n\nfre = {}\nfor i in voc:\n    fre[i] = 0\nfre['<ukn>'] = 0\nfor word in words:\n    if word in fre:\n        fre[word] += 1\n    else:\n        fre['<ukn>'] += 1\nfor k,v in fre.items():\n    print(k,v)"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T04:00:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: ycQV22aT\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nline1 = input().split(',')\nline2 = input().split(',')\ncount = dict()\nfor word in line2 :\n    if word in line1 :\n        count[word] = count.get(word,0) + 1\n\n    else :\n        count['<ukn>'] = count.get('<ukn>',0) + 1 \n\n\nfor word in line1 :\n    print(f'{word} {count.get(word,0)}')\n\nprint(f'<ukn> {count.get('<ukn>',0)}')\n\n"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: YnF9W8nP\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\ntext = input()\n\nclean_string = \"\"\nfor char in text:\n    if char.isalnum():\n        cleaned_string += char\nif len(cleaned_string) > 0:\n\n    words = text.split(' ')\n    word_counts = {}\n    for word in words:\n        word_counts[word] = word_counts.get(word, 0)+1\n    found_duplicate = False\n    for word, count in word_counts.items():\n        if count > 1:\n            print(f\"{word}:{word_counts}\")\n            found_duplicate = True\n        if not found_duplicate:\n            print('')\nelse:\n    print('')"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:57:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: N94SasTf\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = input().split()\nkw = input().split()\n\nlist = []\nx = set(vocab_list) - set(kw)\nlist.append(x)\n# print(x)\n\nfor v in kw :\n    if v not in vocab_list :\n        v = '<ukn>'\n    list.append(v)\nprint(list)\n\nlst = []\ncount = 0\n\nfor i in x :\n    if i[:] not in lst :\n        count += 1\nprint(count)\n\n    \n\n\n"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:57:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD: nthztNNc\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nlist=[]\nvocab=input()\n\nlist.append(vocab)\n\ndef frequency(collection,search_term):\n    count=0\n    for item in collection:\n        if item in search_term:\n            count+=1\n    return count\n\nprint(vocab, )"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR, CASE 7: ERROR, CASE 8: ERROR, CASE 9: ERROR, CASE 10: ERROR",
+    "Submission Time": "2025-12-03T04:00:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: 6NXsZAR2\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\ndef vocablist(v, uv) :\n    #result = uv.copy()\n    for key, value in v.items() :\n        if key not in result :\n            result[key] += ukn\n        else :\n            result[key] = key\n    return result\n\nv = input()\nuv = input()\nukn = []\nvlist = vocablist(v, uv)\nprint(vlist)\n\n\n"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:10:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: mFmh8gHM\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nt={}\nw=0\nl=0\nc = input().strip().split(',')\nd = (input().strip().split(','))\nfor i in c :\n    t[i] = 0\ne = list(c)    \nf = list(d)\nfor i in f:\n    l+=1\n    for j in e:\n        if i==j:\n            t[i]+=1\n            w+=1 \nm = l - w\nfor h in t:\n    print(f'{h} {t[h]}')\nprint(f'<ukn> {m}')"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:59:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: Kndv5QCt\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HER\n\n\n\nword_list = input().lower().split(',')\nwords = input().lower().split(',')\nvoclab_list = []\nunk = 0\n\nfor w in word_list :\n    voclab_list.append(w)\n\nfor w in voclab_list :\n    if w in words :\n        count = 0\n        for x in words :\n            if w == x :\n                count += 1          \n        print(f'{w} {count}')\n    elif w not in words and w in voclab_list :\n        count = 0\n        print(f'{w} {count}')\n\n\nfor w in words :    \n    count = 0\n    if w in voclab_list :\n        count += 1\n    else :\n        unk += 1 \nprint(f'<ukn> {unk}')\n\n\n"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:57:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887111\nPASSWORD: G59XZyKJ\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab = input().split(',')\ntarget = input().split(\",\")\ndict_vo ={}\nfor name in vocab :\n   \n   if name in vocab  :\n      dict_vo[name] = 0\n   elif name not in vocab:\n      dict_vo['<ukn>'] = 0\n   \nfor x, y in dict_vo.items():\n   for i in target:\n      if x == i :\n         y += 1\nfor name, count in dict_vo.items():\n   print(f\"{name} {count}\")\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887112",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "5/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS, CASE 6: PASS, CASE 7: FAIL, CASE 8: PASS, CASE 9: FAIL, CASE 10: PASS",
+    "Submission Time": "2025-12-03T03:59:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887112\nPASSWORD: 6C8kB9Zy\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\ndiccy = dict()\ndictun = dict()\nvocablist = input().split(',')\nn = input().split(',')\nfor i in n:\n    if i in vocablist:\n        if i not in diccy :\n            diccy[i] = 1\n        else :\n            diccy[i] += 1\n    if i not in vocablist:\n        i = '<ukn>'\n        if i not in dictun :\n            dictun[i] = 1\n        else :\n            dictun[i] += 1\nif '<ukn>' not in dictun :\n    dictun['<ukn>'] = 0\nfor i in vocablist :\n    if i not in diccy :\n        diccy[i] = 0\nlist1 = []\nfor k,v in diccy.items():\n    result = {'name' : k,'qty' : v}\n    list1.append(result)\na = list(sorted(list1,key = lambda x :x['name']))\nfor i in a:\n    print(f'{i['name']} {i['qty']}')\nfor k,v in dictun.items() :\n    print(f'{k} {v}')\n\n'''\nsorted by vocablist\nprint(keys and values)\n'''\n"
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:42:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887113\nPASSWORD: rvsTpmyB\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nani = list((input()).split(','))\ntext = list((input()).split(','))\nall = {}\nunk = 0\nfor i in ani:\n    if i in all:\n        all[i] = 0\n    else:\n        all[i] = 0\n\nfor i in text:\n    if i in all:\n        all[i] += 1\n    else:\n        unk += 1\n\nfor k,v in all.items():\n    print(f'{k} {v}')\n\nprint(f'<ukn> {unk}')"
+  },
+  {
+    "User ID": "6887114",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:48:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887114\nPASSWORD: MCHWAtrj\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_list = input().split(',')\n#print(vocab_list)\nfile_vocab = input().split(',')\n#print(file_vocab)\nresult_dict = {}.fromkeys(['<ukn>'],0)\nfor a in vocab_list:\n    result_dict[a] = 0\n#print(result_dict)\nfor x in file_vocab:\n    if x in result_dict:\n        result_dict[x] += 1\n    elif x not in vocab_list:\n        result_dict['<ukn>'] += 1\n    else:\n        result_dict[x] = 1\n#print(result_dict)\nfor key,val in result_dict.items():\n    if key != '<ukn>':\n        print(f'{key} {val}')\n# print '<ukn>' หลังสุด\nfor key,val in result_dict.items():\n    if key == '<ukn>':\n        print((f'{key} {val}'))\n"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "8/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: FAIL, CASE 9: PASS, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: HFEM1ACq\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab_list = input().split(',')\nbag_of_word = input().split(',')\n\nukn_count = 0\n\n# print(vocab_list)\n# print(bag_of_word)\n\nvo_dict = {}\n\nfor i in vocab_list :\n    try_tuple = (i, 'unknown')\n\n\n#some bag_of_word in cab_list\nfor i in vocab_list :\n    if i in bag_of_word :\n        vo_dict.update({i : bag_of_word.count(i)})\n\n# if not \nfor k in range(len(bag_of_word)) :\n    if bag_of_word[k] not in vocab_list :\n        ukn_count += 1\n\nfor j in vocab_list :\n    if j not in bag_of_word :\n        vo_dict.update({j : 0})\n\nfor x,y in vo_dict.items() :\n    print(f'{x} {y}')\n\nprint(f'<ukn> {ukn_count}')\n\n"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:58:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887116\nPASSWORD: suhgZkuC\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\n\n# d = ()\n# for i in d:\n#     a = input()\n#     if a not in i :\n#         a == 1\n#     else:\n#         a+=1\n#     print(a)\n\n# s = str(input())\n# vocab_list = {}\n# count=0\n# for i  in s:\n#     if i not in s:\n#         count ==1\n#     else:\n#         count += 1\n# print(count)\n\n# vocab_list = []\n# count = 0\n# a = input().split()\n# for i in a:\n#     vocab_list.append(i)\n#     if i ==i:\n#         print(i,a.count(i))\n\nvocab_list = []\ncount = 0\na = input().split()\nb = input().split()\nfor i in a:\n    vocab_list.append(i)\n    print(vocab_list)\nfor j in b:\n    if j == i:\n        count += 1\n        print(j,count)\n    else:\n        print(\"<ukn>\", count)\n\n\n\n\n    \n\n"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "0/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T04:01:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: Yyp7vQ1S\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab_list = input().split(',')\nwords = input().split(',')\n\nw = []\nukn = []\nfor v in vocab_list:\n    count = 0\n    if v in words:\n        w.append(v)\n        count = len(w)\n        w.clear()\n    else:\n        ukn.append(v)\n\n    if w != '':\n        count += 1 \n\n    print(f'{v} {count}')\n\nprint(f'<ukn> {len(ukn)}')\n\n"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:37:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887118\nPASSWORD: c5hQ5R67\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\n\nvocab_list=input().split(',') #list\nword=input().split(',') #list\n\nlistcount={}\n\nfor i,j in zip(vocab_list,word):\n    listcount[i]=word.count(i)\n\nfor k,v in listcount.items():\n    print(f'{k} {v}')\n\ncount=0\nfor v in listcount.values():\n    count=count+int(v)\n\nukn=len(word)-count\n\nprint(f'<ukn> {ukn}')\n\n\n"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-03T02:25:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: GwzJuRre\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocablist=input().split(',')\nvocheck=input().split(',')\n\nfor i in vocablist:\n    if i in vocheck:\n        print(f'{i} {vocheck.count(i)}')\n    elif i not in vocheck:\n        print(f'{i} 0')\nc=0\ncheck=[]\nfor j in vocheck:\n    if j not in vocablist:\n        if j in check:\n            continue\n        c+=vocheck.count(j)\n        check.append(j)\nprint(f'<ukn> {c}')\n\n    \n"
+  },
+  {
+    "User ID": "6887120",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "5/10 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: FAIL, CASE 8: FAIL, CASE 9: FAIL, CASE 10: FAIL",
+    "Submission Time": "2025-12-03T03:59:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887120\nPASSWORD: PGP3Us9z\nEXERCISEID: itds120-final-q1\n */\n'''\n# YOUR CODE GOES HERE\nvocab_scan = []\nvocab_list = []\nn1= input()\nvocab_scan = n1\nvocab_scan = vocab_scan.split(\",\")\nn2 = input()\nvocab_list =n2\nvocab_list = vocab_list.split(\",\")\ncount1=0\ncount2=0\ncount3=0\nunknow = 0\ndic1 = {}\nfor scan in range(len(vocab_list)):\n    if vocab_list[scan] in vocab_scan[0]:\n        count1+=1\n    elif vocab_list[scan] in vocab_scan[1]:\n        count2+=1\n    elif vocab_list[scan] in vocab_scan[2]:\n        count3+=1\n    else:\n        unknow+=1\n\nprint(f\"{vocab_scan[0]} {count1}\")\nprint(f\"{vocab_scan[1]} {count2}\")\nprint(f\"{vocab_scan[2]} {count3}\")\nprint(f\"<ukn> {unknow}\")"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-final-q1",
+    "Test Results": "10/10 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS, CASE 7: PASS, CASE 8: PASS, CASE 9: PASS, CASE 10: PASS",
+    "Submission Time": "2025-12-02T13:43:28+00:00",
+    "Code": "'''\n/**\nUSERID: 999\nPASSWORD: 424242\nEXERCISEID: itds120-final-q1\n */\n'''\nvocab = input().strip().split(\",\")\nwords = input().strip().split(\",\")\n\n\nfreq = dict()\nfor v in vocab:\n    freq[v] = 0\nunk = 0\n\n\nfor w in words:\n    if w in freq:\n        freq[w] += 1\n    else:\n        unk += 1\n\nfor v in vocab:\n    print(v, freq[v])\nprint(\"<ukn>\", unk)\n\n"
+  }
+]

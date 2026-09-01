@@ -1,0 +1,857 @@
+[
+  {
+    "User ID": "6887002",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887002\nPASSWORD: ETgrJJ1T\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nn=int(input())\nm=int(input())\na=[]\nb=[]\nfor i in range(n):\n    void=[]\n    for j in range(m):\n        void.append(int(input()))\n    a.append(void)    \n\n\n\nx=int(input())\ny=int(input())\nlast=a[x][y]\nfor i in range(m):\n    for j in range(n):\n        if last<a[i][j]:\n            last=a[x+1][y]\n        elif last<a[i][j]:\n            last=a[x-1][y]\n        elif last<a[i][j]:\n            last=a[x][y+1]\n        elif last<a[i][j]:\n            last=a[x][y-1]\n        else:\n            break\n\n\n\nprint(last)\n    \n"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:10:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: cS1NGQ3K\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nN = int(input())\nM = int(input())\nfor i in range(0,N-1):\n    for j in range(0,M-1):\n        if i>j:\n            print(f'Hot Latte 300% sweetness')\n        else:\n            print(f'Iced Americano, no sugar')\n\n        "
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:31:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: XbyT11Tf\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\npo = []\nboard = []\nmost = 0\n\nn = int(input())\nm = int(input())\n\nfor i in range(n):\n    row = []\n    for j in range(m):\n        data = int(input())\n        row.append(data)\n    board.append(row)\n\npo.append(int(input()))\npo.append(int(input()))\n\nmost = board[0][0]\nfor i in range(n):\n    for j in range(m):\n        if (board[i][j] > most):\n            most = board[i][j]\n\nwhile (True):\n    np = []\n    high = board[po[0]][po[1]]\n    if (po[0]-1 >= 0):\n        if (high < board[po[0]-1][po[1]]):\n            high = board[po[0]-1][po[1]]\n            np = [po[0]-1 , po[1]]\n    if (po[0]+1 <= n-1):\n        if (high < board[po[0]+1][po[1]]):\n            high = board[po[0]+1][po[1]]\n            np = [po[0]+1 , po[1]]\n    if (po[1]-1 >= 0):\n        if (high < board[po[0]][po[1]-1]):\n            high = board[po[0]][po[1]-1]\n            np = [po[0] , po[1]-1]\n    if (po[1]+1 <= m-1):\n        if (high < board[po[0]][po[1]+1]):\n            high = board[po[0]][po[1]+1]\n            np = [po[0] , po[1]+1]\n\n    if (board[po[0]][po[1]] == high):\n        break\n    else:\n        po = np[:]\n\nprint(po[0], po[1])\nprint(board[po[0]][po[1]])\nif (board[po[0]][po[1]] == most):\n    print(\"Iced Americano, no sugar\")\nelse:\n    print(\"Hot Latte 300% sweetness\")"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:08:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: BeNKDkGt\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nitems = []\nn = int(input())\nm = int(input())\nfor i in range(n):\n    item=[]\n    for j in range(m):\n        a = int(input())\n        item.append(a)\n    items.append(item)\nx = int(input())\ny = int(input())\nprint(items)\nfor i in range(n):\n    for j in range(m):\n        if items[x][y] <items[i][j]:\n            print(items[i][j])\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:11:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: udD3dnQM\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nn= int(input())\nm = int(input())\n\nfor i in range(n):\n    nn=int(input())\n    for j in range(m):\n        mm=int(input())"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:13:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: 7h2JvGqV\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nm = int(input())\nh = int(input())\ni = int(input())\nj = int(input())\n\n"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:06:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: B5uvBbns\nEXERCISEID: itds120-mid-q2\n */\n'''\n\nN = int(input())\nM = int(input())\nMatrix = [[int(input()) for _ in range(M)] for _ in range(N)]\nN_Pos = int(input())\nM_Pos = int(input())\n\nfor i in range(Matrix[N_Pos]):\n    for j in range(Matrix[M_Pos]):\n        if Matrix[i][j] > [Matrix][j][i]:\n            print(Matrix[i][j])\n\n"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:53:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: q6T5EXsk\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nrow = int(input())\ncol = int(input())\np_row = input()\np_col = input()\n\n\nmt = []\nfor i in range(row):\n    num = []\nprint()    \nfor j in range(col):\n        num.append(int(input()))\n        mt.append(num)\nprint(mt)"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:14:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: BBNQd64N\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\n\n\nmax = -999\n\nlist = []\nfor i in range(n+2):\n    row = []\n    for j in range(m+2):\n\n        if i == 0 or j == 0 or i == n+1 or j == m+1:\n            row.append(-9)\n        else:\n            num = int(input())\n            if num > max:\n                max = num\n            row.append(num)\n    list.append(row)\n\n# for i in range(len(list)):\n#     print(list[i])\n\n\ni = int(input()) + 1\nj = int(input()) + 1\nmaxxx = list[1][1]\nwhile True:\n\n    if list[i][j] >= list[i+1][j] and list[i][j] >= list[i-1][j] and list[i][j] >= list[i][j+1] and list[i][j] >= list[i][j-1]:\n        break\n\n    elif list[i+1][j] >= list[i][j] and list[i+1][j] >= list[i-1][j] and list[i+1][j] >= list[i][j+1] and list[i+1][j] >= list[i][j-1]:\n\n        maxxx = list[i+1][j]\n        i = i+1\n        j = j\n\n    elif list[i-1][j] >= list[i+1][j] and list[i-1][j] >= list[i][j] and list[i-1][j] >= list[i][j+1] and list[i-1][j] >= list[i][j-1]:\n\n        maxxx = list[i-1][j]\n        i = i-1\n        j = j\n\n    elif list[i][j+1] >= list[i+1][j] and list[i][j+1] >= list[i-1][j] and list[i][j+1] >= list[i][j] and list[i][j+1] >= list[i][j-1]:\n\n        maxxx = list[i][j+1]\n        i = i\n        j = j+1\n\n    elif list[i][j-1] >= list[i][j] and list[i][j-1] >= list[i+1][j] and list[i][j-1] >= list[i][j+1] and list[i][j-1] >= list[i-1][j]:\n\n        maxxx = list[i][j-1]\n        i = i\n        j = j-1\n\nprint(i-1,j-1)\nprint(maxxx)\n\nif maxxx >= max:\n    print('Iced Americano, no sugar')\nelse:\n    print('Hot Latte 300% sweetness')\n"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887015\nPASSWORD: Fq7DDVJT\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nN=int(input())\nM=int(input())\n\nfor i in range(N*M):\n    n=int(input())\n\nn1=int(input())\nm=int(input())\nfor i in range(N):\n    for j in range(M):\n        print(j,end='')\n    print()\n    \n"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T03:38:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: cJKfrTge\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nN = int(input())\nM = int(input())\nA = []\nfor i in range(N):\n    a = []\n    for j in range(M):\n        x = int(input())\n        a.append(x)\n    A.append(a)\n\nx = int(input())\ny = int(input())\n\nfor i in range(len(A)):\n    for j in range(len(A)):\n        if A[i+1] or A[i-1] or A[j+1] or A[j-1] > A[i][j] :\n            point = A[i][j]\n        else:\n            point = A[i][j]\n            break\n\nq = 0\nfor k in A:\n    for m in k:\n        if (m >= q):\n            q = m\nprint(f'{q} เป็นจุดที่สูงที่สุดในตารางนี้')\nif (point == q):\n    print('Iced Americano, no sugar')\nelse:\n    print('Hot Latte 300% sweetness')\n# print(A)"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:13:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887017\nPASSWORD: ApDbr2Uh\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\nm=int(inpput())\nmax=()\nfor i range(0,n-1,1):\nfor j in range(0,m-1,1):\n    a=[[int(input()for_ in range(n))]for_ in range(m)]\n    if a[i][j]>a[j][i]:\n        max=a[i][j]\n    elif a[i][j]<a[i][j]:\n        max=a[i][j]\n\n        \n\n\n\nprint(max)\nprint(f'Hot Latte 300% sweetness')"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "3/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:12:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: JpzC6nwX\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nm = int(input())\nareaList = []\nscoreList = []\n\n\n\nfor i in range(n):\n    row = []\n    for j in range(m):\n        area = int(input())\n        scoreList.append(area)\n        row.append(area)\n    areaList.append(row)\n\nmaxValue = max(scoreList)\ncurrentMax = areaList[0][0]\nmaxPosition = \"\"\nstopLoop = False\n\nfor i in range(n):\n    \n    if stopLoop == True:\n        print(\"FK U\")\n        break\n    curerntRow = []\n    for j in range(m):\n        if areaList[i][j] == currentMax and n == m:\n            curerntRow.extend([areaList[i][j],areaList[i][j+1], areaList[i+1][j]])\n            currentMax = max(curerntRow)\n            maxPosition = str(i)+\" \"+str(j)\n            # print(currentMax)\n        \n        elif areaList[i][j] == currentMax and n != m:\n            if i == 0 and j!= 0 and j!= m-1:\n                curerntRow.extend([areaList[i][j],areaList[i][j+1], areaList[i+1][j],areaList[i][j-1]])\n                newMax = max(curerntRow)\n                if currentMax == newMax:\n                    stopLoop = True\n                    currentMax = newMax\n                    maxPosition = str(i)+\" \"+str(j)\n                    break\n\n                currentMax = newMax\n                maxPosition = str(i)+\" \"+str(j)\n\n            elif i ==0 and j == 0:\n                curerntRow.extend([areaList[i][j],areaList[i][j+1], areaList[i+1][j]])\n                newMax = max(curerntRow)\n                if currentMax == newMax:\n                    stopLoop = True\n                    currentMax = newMax\n                    maxPosition = str(i)+\" \"+str(j)\n                    break\n\n                currentMax = newMax\n                maxPosition = str(i)+\" \"+str(j)\n\n            elif i ==0 and j == m-1:\n                curerntRow.extend([areaList[i][j],areaList[i][j-1], areaList[i+1][j]])\n                newMax = max(curerntRow)\n                if currentMax == newMax:\n                    stopLoop = True\n                    currentMax = newMax\n                    maxPosition = str(i)+\" \"+str(j)\n                    break\n\n                currentMax = newMax\n                maxPosition = str(i)+\" \"+str(j)\n\n            elif i == n-1 and j!= 0 and j!= m-1:\n                curerntRow.extend([areaList[i][j],areaList[i][j+1], areaList[i-1][j],areaList[i][j-1]])\n                newMax = max(curerntRow)\n                if currentMax == newMax:\n                    stopLoop = True\n                    currentMax = newMax\n                    maxPosition = str(i)+\" \"+str(j)\n                    break\n\n                currentMax = newMax\n                maxPosition = str(i)+\" \"+str(j)\n\n            elif i ==n-1 and j == 0:\n                curerntRow.extend([areaList[i][j],areaList[i][j+1], areaList[i-1][j]])\n                newMax = max(curerntRow)\n                if currentMax == newMax:\n                    stopLoop = True\n                    currentMax = newMax\n                    maxPosition = str(i)+\" \"+str(j)\n                    break\n\n                currentMax = newMax\n                maxPosition = str(i)+\" \"+str(j)\n            elif i ==n-1 and j == m-1:\n                curerntRow.extend([areaList[i][j],areaList[i][j-1], areaList[i-1][j]])\n                newMax = max(curerntRow)\n                if currentMax == newMax:\n                    stopLoop = True\n                    currentMax = newMax\n                    maxPosition = str(i)+\" \"+str(j)\n                    break\n\n                currentMax = newMax\n                maxPosition = str(i)+\" \"+str(j)\n            elif j == 0 and i != 0 and i!= n-1:\n                curerntRow.extend([areaList[i][j],areaList[i][j+1], areaList[i+1][j],areaList[i-1][j]])\n                newMax = max(curerntRow)\n                if currentMax == newMax:\n                    stopLoop = True\n                    currentMax = newMax\n                    maxPosition = str(i)+\" \"+str(j)\n                    break\n\n                currentMax = newMax\n                maxPosition = str(i)+\" \"+str(j)\n            elif j == m-1 and i != 0 and i!= n-1:\n                curerntRow.extend([areaList[i][j],areaList[i][j-1], areaList[i+1][j],areaList[i-1][j]])\n                newMax = max(curerntRow)\n                if currentMax == newMax:\n                    stopLoop = True\n                    currentMax = newMax\n                    maxPosition = str(i)+\" \"+str(j)\n                    break\n\n                currentMax = newMax\n                maxPosition = str(i)+\" \"+str(j)\n            else:\n                curerntRow.extend([areaList[i][j],areaList[i][j-1], areaList[i+1][j],areaList[i-1][j],areaList[i][j+1]])\n                newMax = max(curerntRow)\n                if currentMax == newMax:\n                    stopLoop = True\n                    currentMax = newMax\n                    maxPosition = str(i)+\" \"+str(j)\n                    break\n\n                currentMax = newMax\n                maxPosition = str(i)+\" \"+str(j)\n\n        \n\nif currentMax == maxValue:\n    print(maxPosition)\n    print(currentMax)\n    print(\"Iced Americano, no sugar\")\n\n\nif currentMax != maxValue:\n    print(maxPosition)\n    print(currentMax)\n    print(r\"Hot Latte 300% sweetness\")\n\n# print(areaList)\n# print(maxValue)\n\n\n\n"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "2/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: 8aJ7EYFh\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\n\narr = []\nfor _ in range(n):\n    temp = []\n    for __ in range(m):\n        temp.append(int(input()))\n    arr.append(temp)\n\nx = 0\ny = 0\nis_highest = True\nx_c = 0\ny_c = 0\nhigh = arr[x][y]\n\nfor i in range(n):\n    for j in range(m):\n        if x-1 <= i <= x+1 and y-1 <= j <= y+1:\n            if high < arr[i][j]:\n                high = arr[i][j]\n                x = i\n                y = j\n\n    \n            \n\nprint(x,y)\nprint(high)\n\n\nfor i in range(n):\n    for j in range(m):\n        if high < arr[i][j]:\n            is_highest = False\n\nif is_highest:\n    print(\"Iced Americano, no sugar\")\nelse:\n    print(\"Hot Latte 300% sweetness\")\n"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:20:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021 \nPASSWORD: 1pKkNCBu\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nn = int(input())\nm = int(input())\n\nmartix = []\nfor i in range(n):\n    y=[]\n    for j in range(m):\n        x = int(input())\n        y.append(x)\n    martix.append(y)\n\nrow = int(input())\ncol = int(input())\n\n# maxm = martix[row][col]\n\n# for i in range(n):    \n#     for j in range(m):\n#         if col == 0 and row == 0:\n#             top = 0\n#             left = 0\n#             down = martix[row+1][col]\n#             right = martix[row][col+1]\n\n#         elif col == m-1 and row==0:\n#             top = 0\n#             right = 0\n#             down = martix[row+1][col]\n#             left = martix[row][col-1]\n\n\n#         elif col == 0 and row == n-1:\n#             down = 0\n#             left = 0\n#             top = martix[row-1][col]\n#             right = martix[row][col+1]\n\n#         elif col == m-1 and row ==n-1:\n#             down = 0\n#             right = 0\n#             top = martix[row-1][col]\n#             left = martix[row][col-1]\n        \n#         elif row ==n-1:\n#             top = martix[row-1][col]\n#             down = 0\n#             right = martix[row][col+1]\n#             left = martix[row][col-1]\n#         elif row ==0:\n#             top = 0\n#             down = martix[row+1][col]\n#             right = martix[row][col+1]\n#             left = martix[row][col-1]\n#         else:\n#             top = martix[row-1][col]\n#             down = martix[row+1][col]\n#             right = martix[row][col+1]\n#             left = martix[row][col-1]\n            \n#         if maxm < max(top,down,right,left):\n#             maxm =  max(top,down,right,left)\n        \n#         if maxm == martix[i][j]:\n#             col = j\n#             row = i\n        \n        \nfor i in range(n):    \n    for j in range(m):\n        print(martix[i][j],end=' ')\n    print()\n\n# top = martix[row-1][col]\n# down = martix[row+1][col]\n# right = martix[row][col+1]\n# left = martix[row][col-1]\n\n\n# for i in range(n):    \n#     for j in range(m):\n#         if maxm == martix[i][j]:\n#             print(i ,j)\n\n# print(maxm)\n\n\n# max_v = martix[0][0]\n# for i in range(n):    \n#     for j in range(m):\n#         if max_v < martix[i][j]:\n#             max_v = martix[i][j]\n\n# if max_v == maxm:\n#     print('Iced Americano, no sugar')\n# else:\n#     print('Hot Latte 300% sweetness')\n\n\n"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:08:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: VycDKN1B\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\n\nfor rows in range(0,n-1):\n    for cols  in range(0,m-1):\n\n\nif i < j:\n    print('Iced Americano, no sugar')\nelse:\n    print('Hot Latte 300% sweetnessx')\n\n#whatttttttttttttttttt!????????\n"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:28:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887023\nPASSWORD: wkYa7DW8\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx = int(input())\ny = int(input())\ncheck = 0\nlsit = []\n\nfor i in range(x):\n    row = []\n    for h in range(y):\n        k = int(input())\n        row.append(k)\n    lsit.append(row)\nprint(lsit)\n\n\ncheckII = lsit[0][0]\nnum1 = int(input()) \nnum2 = int(input())\n\nfor i in range(x):\n    for h in range(y):\n        check = lsit[i][h]\n        if check > checkII:\n            checkII = lsit[i][h]\nprint(checkII)"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/1 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: TIMEOUT",
+    "Submission Time": "2025-10-03T04:13:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: RH9Jzcht\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\n\n\nboard = []\nfor i in range(n):\n    row = []\n    for j in range(m):\n        row.append(int(input()))\n    board.append(row)\n\nposi = int(input())\nposj = int(input())\n\nplayer = board[posi][posj]\n\nwhile True:\n\n    check = []\n    \n\n"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:11:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: AR3EG6JW\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nN = int(input())\nM = int(input())\na = []\n\nfor i in range(0, N-1):\n    for j in range(0, M-1):\n        if i == j :\n            print(i, j)\n            "
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:01:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD:  fqRbvsBW\nEXERCISEID: itds120-mid-q2\n */\n'''\n\nn = int(input())\nm = int(input())\nmax = 0\nsurround = []\nfor i in range(n) :\n    sub_surround = []\n    for j in range(m) :\n        a = int(input())\n        if a > max :\n            max = a\n        sub_surround.append(a)\n    surround.append(sub_surround)\n\npoint_x = int(input())\npoint_y = int(input())\nfor i in range(n) :\n    for j in range(m) :\n        if surround[point_x][point_y] > surround[point_x+1][point_y] and surround[point_x][point_y] > surround[point_x][point_y+1] and surround[point_x][point_y] > surround[point_x-1][point_y] and surround[point_x][point_y] > surround[point_x][point_y-1] :\n            break\n        else :\n            if surround[point_x+1][point_y] > surround[point_x][point_y] and surround[point_x+1][point_y] > surround[point_x][point_y+1] and surround[point_x+1][point_y] > surround[point_x-1][point_y] and surround[point_x+1][point_y] > surround[point_x][point_y-1] :\n                point_x += 1\n            elif surround[point_x][point_y+1] > surround[point_x][point_y] and surround[point_x][point_y+1] > surround[point_x+1][point_y] and surround[point_x][point_y+1] > surround[point_x-1][point_y] and surround[point_x][point_y+1] > surround[point_x][point_y-1] :\n                point_y += 1\n            elif surround[point_x-1][point_y] > surround[point_x][point_y] and surround[point_x-1][point_y] > surround[point_x][point_y+1] and surround[point_x-1][point_y] > surround[point_x+1][point_y] and surround[point_x-1][point_y] > surround[point_x][point_y-1] :\n                point_x -= 1\n            elif surround[point_x][point_y-1] > surround[point_x][point_y] and surround[point_x][point_y-1] > surround[point_x][point_y+1] and surround[point_x][point_y-1] > surround[point_x-1][point_y] and surround[point_x][point_y-1] > surround[point_x][point_y+1] :\n                point_y -= 1\n\nprint(f'{point_x} {point_y}')\nprint(surround[point_x][point_y])\nif surround[point_x][point_y] == max :\n    print('Iced Americano, no sugar')\nelse :\n    print(f'Hot Latte 300% sweetness')\n\n\n        \n\n\n"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:12:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: SDXwqvn2\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nn = int(input())\nm = int(input())\n\nmat = []\nfor i in range(n) :\n    side = []\n    for j in range(m) :\n        x = int(input())\n        side.append(x)\n    mat.append(side)\n\nmat_check = []\nfor i in range(n) :\n    for j in range(m) :\n        mat_check.append(mat[i][j])\n\nmat_check.sort()\n\n\nrol = int(input())\ncol = int(input())\n\nfirst = mat[rol][col]\nfor i in range(n) :\n    for j in range(m) :\n        if mat[i][j] > first :\n            mat[i][j] = first\n        else :\n            break\n\nprint(i , j , end = '')\nprint()\nprint(mat[i][j])\n\nif first != mat_check[-1] :\n    print('Hot Latte 300% sweetness')\nelse :\n    print('Iced Americano, no sugar')\n\n\n        "
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:12:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: qvHNWZJy\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\n\nmt = []\nfor i in range(n):\n    num=[]\n    for j in range(m):\n        num.append(int(input()))\n    mt.append(num)\n\n\nst_row = int(input())\nst_col = int(input())\n\ntop = mt[st_row][st_col]\nmax=0\nfor i in range(len(mt)):\n    for j in range(len(mt)):\n        if mt[i][j]>max:\n            max=mt[i][j]\n            \n\n\nif top<mt[st_row-1][st_col]:\n    top=mt[st_row-1][st_col]\nelif top<mt[st_row][st_row-1]:\n    top=[st_row][st_row-1]\nelif top<mt[st_row+1][st_col]:\n    top=mt[st_row+1][st_col]\nelif top<mt[st_row][st_col+1]:\n    top=mt[st_row][st_col+1]\n\n\nif top<max:\n    print(\"Hot Latte 300% sweetness\")\nelse:\n    print(\"Iced Americano, no sugar\")\n\n\n\n"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: 2YEC9mp3\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nm = int(input())\nl1 = []\nfor i in range(n-1):\n    for j in range(m-1):\n        print(i)\n\n"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "2/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: pt5Aqtg9\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nN = int(input())\nM = int(input())\n\nnoe = []\n\nfor __ in range(N):\n    row = []\n    for __ in range(M):\n        value = int(input())\n        row.append(value)\n    noe.append(row)\n\nstart_row = int(input())\nstart_col = int(input())\n\nmaxi = noe[start_row][start_col]\nstop = [0, 0]\nsuccess = True\n\nfor i in range(N):\n    for j in range(M):\n        if ((noe[i][j]) or (noe[i - 1][j]) or (noe[i][j - 1]))  > maxi:\n            maxi = noe[i][j]\n\nif maxi == 9:\n    print(\"1 1\")\nelif maxi == 47:\n    print(\"4 6\")\nelif maxi == 10:\n    maxi -= 1\n    print(\"1 0\")\nelif maxi == 13:\n    maxi -= 9\n    print(\"3 5\")\nelif maxi == 10:\n    maxi -= 1\n    print(\"1 0\")\nelif maxi == 98:\n    maxi -= 3\n    print(\"5 5\")\n    print(f\"Hot Latte 300% sweetness\")\n\nprint(maxi)\nif success:\n    print(\"Iced Americano, no sugar\")\nelse:\n    print(f\"Hot Latte 300% sweetness\")\n"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:15:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: JqbpnCGQ\nEXERCISEID: itds120-mid-q2\n */\n'''\n\nN = int(input())\nM = int(input())\nh = 0\nc = 0\nA = []\nx = 0\ny = 0\n\nfor __ in range(N) :\n    B = []\n    for __ in range(M) :\n        x  =int(input())\n        B.append(x)\n    A.append(B)\nfor i in range(len(A)) :\n    for j in range(len(A)) :\n        if i == '0' and j== '0':\n            if (A[i][j]> A[i+1][j+1]) :\n                h = A[i][j]\n                x = i\n                y = j\n        if j == M :\n            if (A[i][j] > A[i][j-1])or(A[i][j] > A[i-1][j]):\n                h = A[i][j]\n                x = i\n                y = j\n        else :\n            if (A[i][j] > A[i][j-1])or(A[i][j] > A[i][j+1]):\n                h = A[i][j]\n                x = i\n                y = j\n\nprint(x,y)\nprint(h)\n\nfor i in range(len(A)) :\n    for j in range(len(A)) :\n        if A[i][j] > h :\n            c = A[i][j]\nif c>0 :\n    print('Hot Latte 300% sweetness')\nelse : \n    print('Iced Americano, no sugar')"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:13:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: CSrZZey8\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n# n_list = []\n# w_list = []\n# while True:\n#     n = int(input())\n#     if n == -1 or n != 0 or n != 1:\n#         break\n#     n_list.append(n)\n\n# while True:\n#     w = int(input())\n#     if w >1:\n#         break\n#     w_list.append(w)\n\n# for i in n_list:\n#     nw = []\n#     for j in w_list:\n#         if i == j:\n#             prin()\n\na = []\nn = int(input())\nfor i in range(n):\n    nw = []\n    for j in range(3):\n        w = int(input())\n        nw.append(w)\n    a.append(nw)\n    print(a[i])\n\n    "
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "2/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:09:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: nt3K8yCn\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\nA =[]\nfor i in range(n):\n    B = []\n    for j in range(m):\n        B.append(int(input()))\n    A.append(B)\n\na = int(input())\nb = int(input())\nz = A[a][b]\nx = A[0][0]\n\nfor i in range(len(A)):\n    for j in range(m):\n        if A[i][j] > x:\n            x = A[i][j]\n            y,q = i,j\nprint(y,q)\nprint(x)\nprint('Iced Americano, no sugar')\n\n\n# print(A)"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T03:32:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887038\nPASSWORD: U7qZwJrK\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn= int(input())\nm = int(input())\n\n\nfor i in range(0,n-1,1):\n    for j in range(0,n-1,n):"
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: ERROR, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:03:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: c6CePfYu\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nh = []\nhighest = 0\n\nN = int(input())\nW = int(input())\nns = int(input()) #row's index\nms = int(input()) #colum's index\npoint = []\n\nfor i in range(N):\n    hx = []\n    for j in range(W):\n        x = int(input())\n        hx.append(x)\n    h.append(hx)\n\nfind = False\nmax = h[ns][ms]\n\n\n\n\nprint(max)\nif find == True:\n    print('Iced Americano, no sugar')\nelse:\n    print(f'Hot Latte 300% sweetness')\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# for i in range(len(h)):\n#     for j in range(len(h)):\n#         max = h[ns][ms]\n#         if h[ns+1][ms+1] > max: # for (0,0)\n#             max = h[ns+1][ms+1]\n#             point.append(ns+1)\n#             point.append(ms+1)\n#         elif h[ns+1][ms+1] > max: # for (1,0)\n#             max = h[ns+1][ms+1]\n#             point.append(ns+1)\n#             point.append(ms+1)\n#         elif h[ns-1][ms+1] > max: # for (1,0)\n#             max = h[ns-1][ms+1]\n#             point.append(ns-1)\n#             point.append(ms+1)\n#         elif h[ns-1][ms+1] > max: # for (0,0)\n#             max = h[ns+1][ms+1]\n#             point.append(ns+1)\n#             point.append(ms+1)"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887040\nPASSWORD: 6QFdZ12U\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nN = int(input())\nM = int(input())\nmatrix = []\n\nfor i in range(N):\n    sub_ma = []\n    for j in range(M):\n        val = input()\n        sub_ma.append(val)\n    matrix.append(sub_ma)\n\nbegining = 0\nlast = 0\nwhile begining >= N :\n    begining = int(input)\n    if begining < N :\n        break\nwhile last >= M :\n    last = int(input)\n    if last < M :\n        break\n\nnumberH = 0\nfound = False\nfor i in range(N):\n    for j in range(M):\n                if matrix[i][j] > matrix[i][j+1] or matrix[i][j] > matrix[i][j-1] or matrix[i][j] > matrix[i-1][j]:\n                    numberH = matrix[i][j]\n                    found = True\n                    print(f'{i} {j}')\n                    break\n\nprint(numberH)\nif found == False:\n    print(\"Hot Latte 300% sweetness\")\nif found == True:\n    print(\"Iced Americano, no sugar\")\n\n"
+  },
+  {
+    "User ID": "6887041",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:09:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887041\nPASSWORD: TpHnB2B4\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\n\nmatrix = []\n\nfor row in range(n) :\n    matrix.append(row)\n    \nfor col in range(m) :\n    matrix.append(matrix)\n\nprint(matrix)"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T03:59:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: 2fFz1Kbu\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\ncoords = []\nheight = 0\nn = int(input())\nm = int(input())\nini_n = int(input())\nini_m = int(input())\ntruemax = 0\nval = 0\narea = [[int(input()) for __ in range(m)] for __ in range(n)]\n\nfor i in range(len(area)):\n    for j in range(len(area[i])):\n        if area[i][j] > truemax:\n            truemax = area[i][j]\n\nwhile True: \n    val = area[ini_n][ini_m]\n    if area[ini_n + 1][ini_m + 1] > val:\n        ini_n += 1\n        ini_m += 1\n        val = area[ini_n + 1][ini_m + 1] \n    elif area[ini_n + 1][ini_m + -1] > val:\n        ini_n += 1\n        ini_m -= 1\n        val = area[ini_n + 1][ini_m + -1]\n    elif area[ini_n - 1][ini_m + 1] > val:\n        ini_n -= 1\n        ini_m += 1\n        val = area[ini_n - 1][ini_m + 1]\n    elif area[ini_n - 1][ini_m - 1] > val:\n        ini_n -= 1\n        ini_m -= 1\n        val = [ini_n - 1][ini_m - 1]\n    \n    else:\n        break\n\nprint(f'{ini_n} {ini_m}')\nprint(val)\n\n"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:01:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD:  mSmEr3uF\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nlist1=[]\nn=int(input())\nm =int(input())\nfor i in range(0,n-1):\n    rows = []\n    foe j in range(0,n-1)\n    "
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:07:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: AsGm8cWp\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\nm=int(input())\nhight=int(input())\nrow=int(input())\nbig=[]\nfor i in range(n):\n    row=[]\n    for j in range(m):\n        q=int(input())\n        row.append(q)\n    big.append(row)\n\nx=max(big)\nfor i in range(n-1,m-1):\n    if big[i]==hight and big[i]==row:\n        a=big[i]\n    \n\nprint(x)\n"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:11:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: VSXrvaMj\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nlistn = []\nfor i in range(n):\n    nn = int(input())\n    listn.append(nn)\n\nfor i in listn:\n    for j in listn:\n        if i > j:\n            i == j\n\nprint(j)\nprint(i)\nif i > j:\n    print('Iced Americano, no sugar')\nelse:\n    print('Hot Latte 300% sweetness')\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:37:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: Ug6arpZz\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nN = int(input()) #rows\nM = int(input()) #colum\nmountain = []\ncollection = []\n\ncount = 0\nfor i in range (N):\n    x = []\n    for j in range (M):\n        x.append(int(input()))\n    mountain.append(x)\n# print(mountain)\n\nrows = int(input())\ncolum = int(input())\n\nfor i in range (N):\n    for j in range (M):\n        print(mountain[i][j],end=' ')\n    print()\nprint()\n\ncollection.extend([mountain[rows][colum],[rows,colum]])\nprint(collection)"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:53:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD: AJTh849M\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\nh_max = input()\n\nfor i in range(n):\n    if h_max == 0:\n        print(\"Iced Americano, no sugar\")\n    else:\n     print(\"Hot Latte 300% sweetness\")\n\nprint()\n    \n"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: f7bT6QNP\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\na=[]\n\nn=int(input())\nm=int(input())\nfor i in range(n):\n    for j in range(m):\n\n\n    "
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: rpAUs2eT\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\n\n\n\n\nmon = []\nfor i in range(n):\n    listn = []\n    for j in range(m):\n        inpu = int(input())\n        listn.append(inpu)\n    mon.append(listn)\n\n\nroll = int(input())\ncolum = int(input())\n\nk = 0\nl = 0\nc = 0\nbom = 1\nwhile bom == 1:\n    if roll == 0 and colum == 0:\n        if mon[roll][colum+1] > mon[roll][colum] and colum != m - 1:\n            colum += 1\n        elif mon[roll+1][colum] > mon[roll][colum] and colum != m - 1:\n            roll += 1\n\n    elif roll != n - 1:\n        if mon[roll+1][colum] > mon[roll][colum] and colum != m - 1:\n            roll += 1\n\n        elif mon[roll][colum-1] > mon[roll][colum] and colum != m - 1:\n            colum += 1\n\n\n \n    for i in mon:\n        for j in i:\n            if k < j:\n                k += j\n\n    \n\n    if mon[roll][colum] == k:\n        break\n    \n    elif l == 40:\n        break\n\n\n\n    l += 1\nprint(mon)\nprint(roll,colum)    \nprint(mon[roll][colum] )\nprint('Iced Americano, no sugar')\n\n\n        \n\n    \n\n"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T03:56:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: MkPzXQH4\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\nmat = [[int(input()) for __ in range (n)]for __ in range (m)]\nstart = mat[int(input())][int(input())]\nmat_sub = []\nmax = 0\nmax_sub = 0\nfor i in range (len(mat)) :\n    for j in range (len(mat(i))) :\n        mat_sub.append(mat[i][j])\nmat_sub.sort()\nmax = mat_sub[-1]\nfor k in range (len(mat)):\n    for m in range (len(mat[k])) :\n        if start == mat[0][0] :\n"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: yCwjjFaw\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nN = int(input())\nM = int(input())\n\nl = []\nfor row in range(N) :\n    c = []\n    for col in range(M) :\n        n = int(input())\n        c.append(n)\n    l.append(c)\nstart_row = int(input())\nstart_col = int(input())\n\nmax = 0\nfor i in range(len(l)) :\n    for j in l[i] :\n        if j >= max :\n            max = j\n        elif j < max :\n            max = max\n\n\nstart_point = l[start_row][start_col]\nfor i in range(len(l)) :\n    for j in l[i] :\n        # if j < start_poinnt :\n\n        print(j,end=\" \")\n    print()\n\n        \n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887057",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887057\nPASSWORD: nwyDjT8R\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nm = int(input())\nn= int(input())\nlist=[]\nfor i in range(n):\n    num = int(input())\n    for j in range(n):\n        list.append(num)\n    print(list, end=' ')\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: Ec4R4djr\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nm = int(input())\n\nrcs = []\nfor i in range(n):\n    for j in range(m):\n        rc = int(input())\n    rcs.append(rc)\n\nhr = int(input())\nhc = int(input())\n\nfor i in range(n):\n    for j in range(m):\n        if rcs[n][m] == rcs[hr][hc]:\n            print('Iced Americano, no sugar')\n        else:\n            print('Hot Latte 300%, sweetness')"
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:03:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887060\nPASSWORD: FafaFahj\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn=int(input())\nm=int(input())\na=[]\n\nfor i in range(n):\n    row=[]\n    for j in range(m):\n        h=int(input())\n        row.append(h)\n    a.append(row)\n\nfor i in range(n):\n    for j in range(m):\n        if a[i][j]>a[i][j]:\n            n=a[i][j]\n            print(a[i][j])\n            break\n    break\n\n\n"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:13:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD: eEBTFnca\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nN = int(input())\nM = int(input())\n\nlistA = []\n\nfor i in range(N) :\n    row = []\n    for j in range(M) :\n        num = int(input())\n        row.append(num)\n    listA.append(row)\n\n\nmax_num = listA[0][0]\n\nfor i in range(N) :\n    for j in range(M) :\n        if listA[i][j] > max_num :\n            max_num = listA[i][j]\n\nprint(i,j)\nprint(listA[i][j])\n"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: JzHd7MdK\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn=int(input())\nm=int(input())\nA=[]\nfor i in range(n):\n    row = []\n    for i in range(m):\n        member=int(input())\n        row.append(member)\n    row.append(0)\n    A.append(row)\n\nlenA=len(A)\nfor i in range(1):\n    row = []\n    for i in range(m):\n        member=0\n        row.append(member)\n    A.append(row)\n\n\nfn=int(input())\nfm=int(input())\nx=A[fn][fm]\nxn=fn\nxm=fm\n\nwhile True:\n\n    if (x<A[xn][xm-1]):\n            x=A[xn][xm-1]\n            xn=fn\n            xm=fm-1\n\n    if (x<A[xn+1][xm]):\n            x=A[xn+1][xm]\n            xn=fn+1\n            xm=fm\n\n    if (x<A[xn][xm+1]):\n            x=A[xn][xm+1]\n            xn=fn\n            xm=fm+1\n\n    if (x<A[xn-1][xm]):\n            x=A[xn-1][xm]\n            xn=fn-1\n            xm=fm\n    else:\n        break\n\nprint(xn,xm)\nprint(x)\nmost=0\nfor i in range(n):\n    for j in range(m):\n        if A[i][j]>most:\n            most=A[i][j]\nif x==most:\n    print(\"Iced Americano, no sugar\")\nelse:\n    print(\"Hot Latte 300% sweetness\")"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD:  UMr6MHv5\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nN = int(input())\nM = int(input()) \nfor i in range(1,N-1):\n    for j in range(1,M-1):\n        print(i)"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/1 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: TIMEOUT",
+    "Submission Time": "2025-10-03T04:15:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: 8BjdRvtM\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nRow = int(input())\nCol = int(input())\nreal_max = 0\nbox = []\nfor i in range(Row):\n    x = []\n    for j in range(Col):\n        y = int(input())\n        x.append(y)\n        if real_max < y:\n            real_max = y\n    box.append(x)\nprint(real_max)\npos_x = int(input())\npos_y = int(input())\nmax_guess = 0\n#left\nleft,right,up,down = 0,0,0,0\nwhile True:\n    left,right,up,down = 0,0,0,0\n    if pos_y != 0:#left check\n        left = box[pos_x][pos_y-1]\n    if pos_y != Col-1:#right check\n        right = box[pos_x][pos_y+1] \n    if pos_x != 0:#up check\n        down = box[pos_x-1][pos_y] \n    if pos_x != Row-1:#down check\n        down = box[pos_x+1][pos_y] \n    if left > right and left > up and left > down:\n        box[pos_x][pos_y] = box[pos_x][pos_y-1]\n    elif right > left and right > up and right > down:\n        box[pos_x][pos_y] = box[pos_x][pos_y+1]\n    elif up > left and up > right and up > down:\n        box[pos_x][pos_y] = box[pos_x-1][pos_y]\n    elif down > left and down > up and right < down:\n        box[pos_x][pos_y] = box[pos_x+1][pos_y]\n    if box[pos_x][pos_y] > left and box[pos_x][pos_y] > right and box[pos_x][pos_y] > up and box[pos_x][pos_y] > down:\n        break\n    else:\n        continue\n\n\nprint(pos_x,pos_y)\nprint(box[pos_x][pos_y])\n\n\n"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:08:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887065\nPASSWORD: HqReWzQC\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\nmatrix = []\n\nfor i in range(n):\n    m = []\n    for j in range(m) :\n        a = int(input())\n        m.append(a)\n    matrix.apeend(m)\n\nfor i in range(n) :\n    for j in range(m):\n        if matrix[i][j]\n        "
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:13:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD: zWwpJbbR\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\nm=int(input())\nmax=0\nmaxboard=0\na=[]\nfor i in range(m):\n    x=[]\n    for j in range(n):\n        h=int(input())\n        x.append(h)\n    a.append(x)\n\nfor i in range(len(a)):\n    for j in range(len(a)):\n        if a[i][j]>max and a[i+1][j]<a[i][j] and a[i-1][j]<a[i][j] and a[i][j-1]<a[i][j] and a[i][j-1]<a[i][j]:\n            max=a[i][j]\n            print(i , j)\n            print(a[i][j])\n        elif a[i][j]>max :\n            maxboard=a[i][j]\n\nif max>maxboard:\n    print('Iced Americano, no sugar')\nelse:\n    print('Hot Latte 300% sweetness')\n\n\n\n"
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:08:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887067\nPASSWORD: EB7ZkFpr\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nn = int(input())\nm = int(input())\n\nprint('1 1')\nprint(9)\nprint('Iced Americano, no sugar')"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:47:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: BEkk6zpe\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nl=[]\n\nn = int(input())\nm = int(input())\na = int(input())\no = n*m\nfor p in range (o):\n    l.append(a)\n    a = int(input())\n\nprint=(l)\n#start1 = int(input())\n#start2 = int(input())\n\n\n#for i in range(n):\n    #for j in range(m):\n        #print(a)\n"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:21:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: T6ERAjf7\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nm = int(input())\ntall = int(input())\nside = int(input())\ncol = int(input())\n\nfor i in range(n):\n    for j in range(m):\n        if tall == \"success\":\n            print(\"Iced Americano, no sugar\")\n        else:\n            print(\"Hot Latte 300% sweetness\")\n    print()"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: MNahV3pq\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nm = int(input())\nlist1 = []\nfor i in range(n):\n    row = []\n    for j in range(m):\n        r= int(input())\n        row.append(r)\n    list1.append(row)\nB = 0\nA = []\n\nfor i in range(n):\n    for j in range(m):\n        if  list1[i][j] > list1[j][i]:\n            list1[i][j] = list1[j][i]\n            if list1[i][j] > list1[i-1][j] and list1[i][j] > list1[i][j+1] and list1[i][j] > list1[i][j-1] and list1[i][j] > list1[i+1][j]:\n                    print(f'{i} {j}')                \n                    print(list1[i][j])\n                    print('Iced Americano, no sugar')\n\nfor i in range(n):\n    for j in range(m):\n        if  list1[i][j] > list1[j][i]:\n            list1[i][j] = list1[j][i]\n            if list1[i][j] > list1[i-1][j] and list1[i][j] > list1[i][j+1] and list1[i][j] > list1[i][j-1] and list1[i][j] > list1[i+1][j]:\n                    print(f'{i} {j}')                \n                    print(list1[i][j])\n                    print('Hot Latte 300% sweetness')\n\n"
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887074\nPASSWORD: 88Kphcj8\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\nwhile True:\n    n = int(input())\n    if n == 0:\n        break\n    A.append(n)\n    A.sort\nprint(*A[5]),print(A*[8])\nprint(A[-1])\nprint('Iced Americano, no sugar')"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: ANB58hnW\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nN = int(input())\nM = int(input())\narea = [[int(input()) for _ in range(N)] for _ in range(N)]\n\nh = []\nfor i in range(2):\n    height = int(input())\n\nprint(h)"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:01:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: 7gvFh7PY\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\nm=int(input())\n\nlist=[]\n\nfor i in range(n):\n    m1=[]\n    for j in range(m):\n        mm=int(input())\n        m1.append(mm)\n    list.append(m1)\n\nr=int(input())\nc=int(input())\n\nfor i in range(len(list)):\n    for j in range(len(list)):\n        if j>i:\n            print(j)\n\nif j==max(list):\n    print(\"Iced Americano, no sugar\")\nelse:\n    print(\"Hot Latte 300% sweetness\")\n    \n        \n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: JGphjpJe\nEXERCISEID: itds120-mid-q2\n */\n'''\n\nn=int(input())\nm=int(input())\nh=int(input())\n\nlist=[]\nfor i in range(n):\n    inner=[]\n    for j in range(m):\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887079",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:06:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887079\nPASSWORD: CwUP3nYc\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nN = int(input())\nM = int(input())\n\nprint(\"1 1\")\nprint(\"9\")\nprint(\"Iced Americano, no sugar\")\n"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: 34H1WXAA\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\nlist1 = []\n\nfor i in range(n):\n    list2 = []\n    for j in range(m):\n        list3 = int(input())\n        list2.append(list3)\n    list1.append(list2)\n\n\nlist_row = int(input())\nlist_cols = int(input())\nstart = list1[list_row][list_cols]\n\nwhile True:\n\n    for i in range(n):\n        for j in range(m):\n            la = list1[n][m]\n            if start < \n    "
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:10+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: qJjC4UEZ\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nc=int(input())\nr=int(input())\nh=[]\n\n\n\n\nfor i in range(c*r):\n    a=int(input())\n    h=[[a]*c]*r\n\n\n\n\n\n\n\nprint(h)\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:52:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: mr6thYbs\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn=int(input())\nm=int(input())\nrow=[]\ncol=[]\n\n\nfor n in range(0,n-1):\n    for m in range(0,m-1):\n        if row==max and col==max:\n            print(\"Iced Americano, no sugar\")\n        else:\n            print(\"Hot Latte 300% sweetness\")\n            break\n    \nprint()"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: 4DckWCbm\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nm = int(input())\nheight = int(input())\n\n\nwhile True:\n    for i in range(0,1,n-1):\n        for j in range(0,1,m-1):\n            if height >= 0,0 :\n                print(1)\n            elif height > height:\n                    continue\n            elif height > height:\n                print(\"Iced Americano, no sugar\")\n            else:\n                print(\"Hot Latte 300%  sweetness\")\nprint()\n\n\n"
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: ERROR, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:09:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: djAVQA5Y\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nN = int(input())\nM = int(input())\nlist = []\nrow = int(input())\ncol = int(input())\nwin = 0\nfor i in range(N):\n    sub_list = []\n    for j in range(M):\n        height = int(input())\n        sub_list.append(height)\n    list.append(sub_list)\nstart = list[row][col]\nfor i in range(N):\n    for j in range(M):\n        if list[row][col] < list[i][j]:\n            start = list[i][j]\n            win = 1\n            row = i\n            col = j\n            break\nif win == 1 :\n    print(str(row) + ' '+ str(col))\n    print(start)\n    print('Iced Americano, no sugar')\nelif win == 0 :\n    print(row + ' '+ col)\n    print(start)\n    print('Hot Latte 300% sweetness')\n    \n\n\n"
+  },
+  {
+    "User ID": "6887087",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T03:28:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887087\nPASSWORD: e7pVJWmk\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nwhile True :\n    i = int(input())\n    \nprint(\"`Iced Americano, no sugar`\")\n"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "4/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: FAIL, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:15:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: uFPzzAF9\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nlist=[]\nn=int(input())\nm=int(input())\nfor i in range(n):\n    row=[]\n    for j in range (m):\n        x=int(input())\n        row.append(x)\n    list.append(row)\nmax1=0\nfor i in range (n):\n    for j in range(m):\n        if list[i][j]>max1:\n            max1=list[i][j]\nstart1=int(input())\nstart2=int(input())\nmax2=list[start1][start2]\nfor i in range (start1,n):\n    for j in range(start2,m):\n        if list[i][j]>max2:\n            max2=list[i][j]\n            a=i\n            b=j\nfor i in range (start1,0,-1):\n    for j in range(start2,-1,-1):\n        if list[i][j]>max2:\n            max2=list[i][j]\n            a=i\n            b=j\n'''while True:\n    if start1=0 or start1=m\n        if list[start1][start2]>list[start1][start2+1] or list[start1][start2]>list[start1+1][start2+1] or list[start1][start2]>list[start1+1][start2]'''\n\nprint(f'{a} {b}')\nif max1==max2:\n    print(max2)\n    print('Iced Americano, no sugar')\nelse:\n    print(max2)\n    print('Hot Latte 300% sweetness')\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: FM6TYUdV\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\n\nn = int(input())\nm = int(input())\n\nfor i in range (n):\n    row = []\n    for j in range (m):\n        x = int(input())\n        row.append(x)\n    A.append(row)\n\nB = []\nb = []\nmark_r = int(input())\nmark_c = int(input())\nb.append(mark_r)\nb.append(mark_c)\nB.append(b)\n\n"
+  },
+  {
+    "User ID": "6887090",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:04:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887090\nPASSWORD: pwrsTUnS\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\n#h = int(input())\nr = int(input())\nc = int(input())\nlist = []\na = []\n\nfor i in range(n):\n    ri = []\n    for j in range(m):\n       ri.append(int(input()))\n\nc=sorted(ri)\nmax = int(c[-1])\n\n\n\nfor i in range(n):\n    for j in range(m):\n       \n        if ri[r][c] > max and ri[r][c] < max  :\n            max = max\n            a.append('Hot Latte 300' '%' 'sweetness')\n        elif ri[r+1][c-1] > max and ri[r+1][c-1] < max :\n            max = max \n            a.append('Hot Latte 300' '%' 'sweetness')\n        elif ri[r-1][c-1] > max and ri[r-1][c-1] < max :\n            max = max \n            a.append('Hot Latte 300' '%' 'sweetness')\n        elif ri[r-1][c+1] > max and ri[r-1][c+1] < max :\n            max = max \n            a.append('Hot Latte 300' '%' 'sweetness')\n        else:\n            a.append('Iced Americano, no sugar')\nb = set(a)\n\n\n\n#for i in range (n):\n    #for j in range (m):\n        #if list[i][j] == max :\n\n\n\n\n            \nprint()           \nprint(list.index(max))\nprint(b)    \n\n\n\n\n\n\n\n\n\n\n        \n\n\n\n\n"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: FfTEgAWq\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n#input\nN = int(input())\nM = int(input())\n\nBoard = []\nfor i in range(N):\n    row = []\n    for j in range(M):\n        x = int(input())\n        row.append(x)\n    Board.append(row)\n\nstart_x = int(input())\nstart_y = int(input())\n\nprint(Board)\n\n#start at\nStart = Board[start_x][start_y]\nStep = Start\nfor i in range(start_x):\n    for j in range(start_y):\n        if Board[i][j] >= Start:\n            Step = Board\nprint(Start)\nprint(Step)\n         \n\n\n'''\nFound_Height = False\nif Found_Height == True:\n    print(\"Iced Americano, no sugar\")\nelif Found_Height == False:\n    print(\"Hot Latte 300% sweetness\")\n'''"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887093\nPASSWORD: UnGKPQk7\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm = int(input())\n\nlisthi=[]\nfor i in range(n):\n    box=[]\n    for j in range(m):\n        x = int(input())\n        box.append(x)\n    listhi.append(box)\nprint(listhi)\n\na = 99999\n\nfor i in range(len(listhi)):\n    for j in range(len(listhi)):\n        if listhi[i][j] < a:\n            a = listhi[i][j]\nprint(a)\n\n# for i in range(n):\n#     for j in range(m):\n#         list[i][j]"
+  },
+  {
+    "User ID": "6887094",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T03:48:52+00:00",
+    "Code": "'''\n/**\nUSERID: 6887094\nPASSWORD: jZXcJKBq\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nN = int(input())\nM = int(input())\nlist2 = []\n\n\nfor i in range(M) :\n    list1\n    for j in range(N) :\n        n = int(input())\n        list1.append(n)\n    list2.append(list1)\n\nfor\n"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: ERROR, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:10:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: GfKuEeE8\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nn = int(input())\n\nm = int(input())\n\nnm = []\n\nfor i in range(n):\n    row = []\n    for j in range(m):\n        x = int(input())\n        row.append(x)\n    nm.append(row)\n\np1 = int(input())\np2 = int(input())\n\nmax = 0\nfor i in range(n):\n    for j in range(m):\n        if nm[i][j] > max :\n            max = nm[i][j]\n            \n            \nmax2 = nm[p1][p2]\nwhile True :\n     if nm[p1-1][p2] >max2 :\n        max2 = nm[p1-1][p2]\n        xx = p1-1\n        yy = p2\n     elif nm[p1+1][p2] >max2 :\n        max2 = nm[p1+1][p2]\n        xx = p1+1\n        yy = p2\n     elif nm[p1][p2-1] >max2 :\n        max2 = nm[p1][p2-1]\n        xx = p1\n        yy = p2-1\n     elif nm[p1][p2+1] > max2 :\n        max2 = nm[p1][p2+1] \n        xx = p1\n        yy = p2+1\n     else:\n        break\nprint(xx,yy)\nprint(max2)\n\n\nif max2 ==max :\n    print('Iced Americano, no sugar')\nelse:\n    print('Hot Latte 300% sweetness')\n\n\n\n"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:13:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: kuYfZ8Jj\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist1=[]\nn=int(input())\nm=int(input())\nfor _ in range(n):\n    row=[]\n    for _ in range(m):\n        row.append(int(input()))\n    list1.append(row)\n\np_n=int(input())\np_m=int(input())\n\no=[]\nfor i in range(n):\n    for j in range(m):\n        if list1[i][j]>list1[i][n]:\n            print(i,j)\n            o.append(list1[i][j])\n    if j>i:\n        print(o)\n        print('Iced Americano, no sugar')\n        break\n\n            \n"
+  },
+  {
+    "User ID": "6887098",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:01:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887098\nPASSWORD: FEEukY2t\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n#height=[]\n#n = int(input())\n#m = int(input())\n#for h in range(n):\n#    height.append(int(input()))\n#start_n = int(input())\n#start_m = int(input())\n\n#for i in range(start_n,n-1):\n#    for j in range(start_m,m-1):\nprint(f'{1} {1}')\nprint(9)\nprint('Iced Americano, no sugar')\n\n\n"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:23:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: CQ87zh9Z\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nprint(1,1)\nprint(9)\nprint('Iced Americano, no sugar')\n"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: pFMVk51y\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\nrow=[]\nfor _ in range(n):\n    row.append(n)\n\n\n\n"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:46:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: 5NTgWVzy\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = int(input())\nm =  int(input())\n\n\n"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:15:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: XQw874AW\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nN = int(input())\nM = int(input())\nl=[]\ntrueMax = 0\nfor i in range(N):\n    row = []\n    for j in range(M):\n        x=int(input())\n        row.append(x)\n        if x > trueMax:\n            trueMax = x\n    l.append(row)\nr = int(input())\nc = int(input())\n\nmax = l[r][c]\n\na=1\nh=[]\nwhile a >0:\n    if c+1 <=M-1 and l[r][c+1] > max:\n        max = l[r][c+1]\n        c+=1\n        a+=1\n    if c-1 <=M-1 and l[r][c-1] > max:\n        max = l[r][c-1]\n        c-=1\n        a+=1\n    if r+1 <=N-1 and l[r+1][c] > max:\n        max = l[r+1][c]\n        r+=1\n        a+=1\n    if r-1 <=N-1 and l[r-1][c] > max:\n        max = l[r-1][c]\n        r-=1\n        a+=1\n    a-=1\n    \nprint(r,c)\nprint(max)\nif max == trueMax:\n    print(\"Iced Americano, no sugar\")\nelse:\n    print(\"Hot Latte 300% sweetness\")"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:10:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: CrXuPAeu\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nn = int(input())\nm = int(input())\nstop = False\nfor i in range(n):\n    for i in range(n):\n        print('('+str(i)+','+str(j)+')',end = ' ')\n        if i == n or i == m:\n            stop = True\n            break\n    print()\n    if stop:\n        break"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: pyXPtvJK\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nm = int(input())\nh = n * m\nlist = []\n\nfor i in range(h) :\n    h = int(input())\n    list.append(h)\n    \nk = int(input())\nl = int(input())\n\n\n"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:06:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD: W1MCRFBK\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/1 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: TIMEOUT",
+    "Submission Time": "2025-10-03T03:37:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: Egru3Nq6\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nn = float(input())\nm = int(input())\nh = int(input())\nrows = input()\ncol = input()\n\n\nmaxh = h\nh1 = int(input())\nif h1 > maxh :\n    maxh = h1\n\nmaxh = False\n    \nwhile True :\n    print(\"Hot Latte 300% sweetness\")\n\n"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:50:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: Kk8Xt2Cy\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn=int(input())\nm=int(input())\na=[]\nw=[]\nmax=1\ncount=0\nfor i in range(n):\n    x=[]\n    for j in range(m):\n        y=int(input())\n        x.append(y)\n    a.append(x)  \nfor i in a:\n    for j in i:\n        if j>max:\n            max=j\n            w=[j]  \nprint(max)             \nprint(w)\n\n\n    \n                   \n\n"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T03:58:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: td4Zj4qa\nEXERCISEID: itds120-mid-q2\n */\n'''\n# YOUR CODE GOES HERE\nn = int(input())\nm = int(input())\n\nfor i in range(n) :\n    for j in range(m):\n        \n"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887111\nPASSWORD: 5Z1FqkMt\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nfirst= int(input())\nsec = int(input())\nlist = []\nfor i in range(first*sec) :\n    x = input()\n    list.append(x)\n\nfor j in list:\n    all = j\n\nfor o in range(first):\n    for p in list:\n        print(all, end = \" \")\n        if first == sec:\n            break\n    print()\n"
+  },
+  {
+    "User ID": "6887112",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:13:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887112\nPASSWORD: SJ7T6YQD\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n"
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887113\nPASSWORD: eSdcbhq9\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nn = int(input())\nm = int(input())\na =[ ]\nfor i in range(n):\n    row = []\n    for j in range(m):\n        row.append(int(input()))\n    a.append(row)\np1 = int(input())\np2 = int(input())\n\nprint(a)\n\nprint(a[p1][p2])\n"
+  },
+  {
+    "User ID": "6887114",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "3/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: FAIL, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:15:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887114\nPASSWORD: cbEsgAkN\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nN = int(input())\nM = int(input())\nrow = []\n\nfor i in range(N):\n    col = []\n    for j in range(M):\n        a = int(input())\n        col.append(a)\n    row.append(col)\n#row\nmax = -999\nfor i in range(N):\n    for j in range(M):\n        if row[i][j] > max:\n            max = row[i][j]\n        else:\n            continue\n#print(max)\ntotal = 0\npos_i = 0\npos_j = 0\nn_row = int(input())\nm_col = int(input())\ntotal = row[n_row][m_col]\nfor i in range(n_row,N):\n    for j in range(m_col,M):\n        if i != 0:\n            if total < row[i-1][j]:\n                total = row[i-1][j]\n                pos_i = i-1\n                pos_j = j\n        if i != N-1:\n            if total < row[i+1][j]:\n                total = row[i+1][j]\n                pos_i = i+1\n                pos_j = j\n        if j != 0:\n            if total < row[i][j-1]:\n                total = row[i][j-1]\n                pos_i = i\n                pos_j = j-1\n        if j != M-1:\n            if total < row[i][j+1]:\n                total = row[i][j+1]\n                pos_i = i\n                pos_j = j+1\n        if total == max:\n            break\nprint(f'{pos_i} {pos_j}')\nprint(total)\nif total == max:\n    print('Iced Americano, no sugar')\nelse:\n    print('Hot Latte 300% sweetness')"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: AmypMj4Q\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nN = int(input())\nM = int(input())\n\nfor i in range(N):\n    for j in range(M):\n\n\n"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:48:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887116\nPASSWORD: J92CTmgc\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: 6WnzWUXs\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\nm = int(input())\n\nfor i in range(n-1):\n    max = i\n    for j in range(m-1):\n        if max > j :\n            max = j\n        \n\n\n"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887118\nPASSWORD: knhg7ccV\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn=int(input())\nm=int(input())\nlist1=[]\n\nfor _ in range(n):\n    row=[]\n    for _ in range(m):\n        row.append(int(input()))\n    list1.append(row)\n\nsrow=int(input())\nscol=int(input())\n\nfor j in range(m):\n    start=list1[srow][scol]\n    for i in range (1,n):\n        if list1[i][j]>start:\n            max=list1[i][j]\n    print(max,end=' ')\n\n\n"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: bRsW4NMy\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\nN=int(input())\nM=int(input())\nT=[]\nfor i in range(N):\n    t=[]\n    for i in range(M):\n        t.append(int(input()))\n    T.append(t)\nns=int(input())\nms=int(input())\n\n# while True:\n\nfor i in range(9):\n    m=T[ns][ms]\n    if T[ns-1][ms]>m:\n        m=T[ns-1][ms]\n        p1=ns-1\n        p2=ms\n    if T[ns][ms-1]>m:\n        m=T[ns][ms-1]\n        p1=ns\n        p2=ms-1\n    if T[ns][ms+1]>m:\n        m=T[ns][ms+1]\n        p1=ns\n        p2=ms+1\n    if T[ns+1][ms]>m:\n        m=T[ns+1][ms]\n        p1=ns+1\n        p2=ms\n    else:\n        break\n    ns=p1\n    ms=p2\n\nT.sort(reverse=True)\nif m==T[0][0]:\n    caf='Iced Americano, no sugar'\nelse:\n    caf='Hot Latte 300% sweetness'\n\nprint(ns, ms)\nprint(m)\nprint(caf)\n"
+  },
+  {
+    "User ID": "6887120",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:06:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887120\nPASSWORD: nPQweRjr\nEXERCISEID: itds120-mid-q2\n */\n'''\n\n# YOUR CODE GOES HERE\n\nN = int(input())\nM = int(input())\n\nlis = []\nr_lis = []\nnum = 0\nfor i in range (N):\n    r_lis.append(lis)\n    for j in range(M):\n        num = int(input())\n    lis.append(num)\nprint(lis)\n        \n        \n"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-mid-q2",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-02T09:23:21+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 999\r\nPASSWORD: 424242\r\nEXERCISEID: itds120-mid-q2\r\n */\r\n'''\r\n\r\nN = int(input().strip())\r\nM = int(input().strip())\r\n\r\nmatrix = []\r\n\r\nfor i in range(N):\r\n    row = []\r\n    for j in range(M):\r\n        row.append(int(input().strip()))\r\n    matrix.append(row)\r\n\r\nstart_row = int(input().strip())\r\nstart_col = int(input().strip())\r\n\r\n\r\nr, c = start_row, start_col\r\nwhile True:\r\n    current_height = matrix[r][c]\r\n    best_r, best_c = r, c\r\n    for dr, dc in [(-1,0),(1,0),(0,-1),(0,1)]:\r\n        nr, nc = r + dr, c + dc\r\n        if 0 <= nr < N and 0 <= nc < M:\r\n            if matrix[nr][nc] > matrix[best_r][best_c]:\r\n                best_r, best_c = nr, nc\r\n    if (best_r, best_c) == (r, c):\r\n        break\r\n    else:\r\n        r, c = best_r, best_c\r\n\r\nfinal_height = matrix[r][c]\r\n\r\nglobal_max = max(max(row) for row in matrix)\r\n\r\nprint(r, c)\r\nprint(final_height)\r\nif final_height == global_max:\r\n    print(\"Iced Americano, no sugar\")\r\nelse:\r\n    print(\"Hot Latte 300% sweetness\")\r\n"
+  }
+]

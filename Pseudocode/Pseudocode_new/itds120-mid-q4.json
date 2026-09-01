@@ -1,0 +1,1028 @@
+[
+  {
+    "User ID": "6887002",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:51:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887002\nPASSWORD: ETgrJJ1T\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nvoid=[]\nbeforHi=[]\nafterHi=[]\nwhile True:\n    a=input()\n\n    if a==\"Noe\":\n        break\n    void.append(a)\n\nfor i in void:\n    if i==\"Hi\":\n        break\n    beforHi.append(i)\n\nfor i in void:\n    total=0\n    for j in beforHi:\n        if j in void:\n            total=total+1\n            continue\nrow=0 \nvlen=len(void)\nblen=len(beforHi)\nfor i in range(vlen-blen-1):\n    if i ==\"Neo\":\n        break\n    row=row+1\n    afterHi.append(void[total+row])\nfor j in afterHi:\n    print(j,end=\" \")\nfor i in beforHi:\n    print(i,end=\" \")\n\n# print(total)\n# print(beforHi)\n# print(afterHi)\n    "
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:13:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: cS1NGQ3K\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\nwhile True:\n    x = input()\n    if x == 'Noe':\n        break\n    A.append(x)\nfor i in range(len(A)):\n    if A[i] == 'Hi':\n        print(A[6:],A[:5])\n\n"
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:13:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887004\nPASSWORD: rwSBMkcV\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n\n\nlist1 = []\n\n\nwhile True:\n    n = input()\n    if  n == 'Noe' :\n        break\n    list1.append(n)\n    list1.sort()\n    \nprint(list1)"
+  },
+  {
+    "User ID": "6887005",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887005\nPASSWORD: zeDNF2C6\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nword = []\nwhile True:\n    x = input()\n    if x =='Non':\n        break\n    word.append(x)\nword.sort()\ncounted = ['Hi']\nfor i in range(len(word)):\n    if word[i] == counted[]\n    \n        counted.remove(i)\n        counted.append(i)\nprint(counted)\n\n\n"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:32:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: XbyT11Tf\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nword = []\nhip = 0\n\nwhile (True):\n    n = input()\n    if (n == \"Noe\"):\n        break\n    if (n == \"Hi\"):\n        hip = len(word)\n    word.append(n)\n\nfor i in range(hip+1, len(word)):\n    print(word[i], end=\" \")\n\nfor i in range(0, hip):\n    print(word[i], end=\" \")\n\n"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:10:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: BeNKDkGt\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na = []\nwhile True:\n    n = input()\n    if n =='Noe':\n        break\n    a.append(n)\nb =[]\nfor i in range(len(a)):\n    if a[i] == 'Hi':\n        c = i\nfor k in range(c+1,len(a)):\n    b.append(a[k])\nfor r in range(0,c):\n    b.append(a[r])\nfor i in b:\n    print(i,end=' ')\n\n\n"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: udD3dnQM\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nword =[]\n\nwhile True:\n    n=input()\n    if n == 'Noe':\n        break\n    word.append(n)\n    word.sort\n\nprint(word)\n\n"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:14:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: 7h2JvGqV\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx = []\n\na = input()\nif a == 'Noe':\n    break\nelse:\n     x.append(a)\n     x.remove('Noe')\n\na = input()\nwhile True:\n    x = [:'Hi']\n    y = ['Hi':]\n    print(y+x)\n"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:07:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: B5uvBbns\nEXERCISEID: itds120-mid-q4\n */\n'''\n\nLi = [];\n\nwhile True:\n    w = input()\n    if w == 'Noe':\n        break;\n    Li.append(w);\n\nfor i in range(len(Li)):\n    if Li[i] == 'Hi':\n        m = Li[i+1:] + Li[:i]\n\nfor i in range(len(m)):\n    print(m[i], end=\" \") \n        \n\n\n    \n\n        \n        \n\n\n\n\n"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:16:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: q6T5EXsk\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nOracle = []\nwhile True:\n    a = input()\n    if a =='Noe':\n        break\n    Oracle.append(a)\nfor i in Oracle:\n    if 'Hi' in Oracle:\n        print(Oracle[6:])\n        print(Oracle[:4])\nprint()        \n\n"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:39:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: BBNQd64N\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist = []\nwhile True:\n    char = input()\n\n    if char == 'Noe':\n        break\n\n    list.append(char)\n\nn = len(list)\n\nc = 0\nfor v in list:\n\n    if v != 'Hi':\n        c += 1\n\n    if v == 'Hi':\n        break\n\n\nlist.remove('Hi')\n\nfor i in range(c):\n\n    a = list.pop(0)\n    list.append(a)\n\n\nfor v in list:\n    print(v, end= ' ')"
+  },
+  {
+    "User ID": "6887014",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:02:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887014\nPASSWORD: 9qW4cw5a\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nlist =[]\nwhile True:\n    n = input()\n    if n == 'Hi':\n        break\n    list.append(n)\n\nlist2 = []\nwhile True:\n    x =input()\n    if x == 'Noe':\n        break\n    list2.append(x)\n\n\nfor i in list2:\n    print(i,end=' ')\nfor j in list:\n    print(j,end=' ')\n  \n    \n\n\n"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:14:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887015\nPASSWORD: Fq7DDVJT\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist=[]\nlist2=[]\nwhile True:\n    str=input()\n    if str=='Hi':\n        break\n    list.append(str)\n    \nwhile True:\n    str=input()\n    if str=='Noe':\n        break\n    list2.append(str)\n    \nlist3=list2+list\n\nfor i in list3:\n    print(i,end=' ')\n\n\n"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:09:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: cJKfrTge\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nA = []\nB = []\nwhile True:\n    x = input()\n    if (x == 'Hi'):\n        break\n    A.append(x)\nwhile True:\n    x = input()\n    if (x == 'Noe'):\n        break\n    B.append(x)\nfor i in B:\n    print(i, end=' ')\nfor j in A:\n    print(j, end=' ')\n"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:03:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887017\nPASSWORD: ApDbr2Uh\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nword=[]\nwhile True:\n    x=str(input())\n    if x=='Noe':\n        break\n    word.append(x)\nk=[]\nfor i in range(len(word)):\n    if word[i]=='Hi':\n        break\n    k.append(word)\n    k.sort\n    \n    \nprint(k,end=' ')\n\n"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:44:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887018\nPASSWORD: Qg4nTvQz\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nA=[]\n\n\nwhile True:\n    x = input()\n    if x=='Noe':\n        break\n    A.append(x)\n\nn=len(A)\n\nfor i in range(n):\n    if A[i]=='Hi':\n        for j in range(i+1,n):\n            print(A[j],end=' ')\n\nfor i in range(0,n-1):\n    if A[i]=='Hi':\n        break\n    print(A[i],end=' ')\n    \n"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:11:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: JpzC6nwX\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nwordList = []\narrangeList = []\nbackList = []\n\nhiCheck = False\nwhile True:\n    word = str(input())\n    if word == \"Noe\":\n        break\n    wordList.append(word)\n\nfor i in wordList:\n    if i != \"Hi\" and hiCheck == False:\n        backList.append(i)\n    elif i == \"Hi\":\n        hiCheck = True\n        continue\n    if hiCheck == True:\n        arrangeList.append(i)\narrangeList.extend(backList)\n\n# print(wordList)\n# print(backList)\n# print(arrangeList)\nfor i in arrangeList:\n    print(i, end=\" \")\n\n\n    "
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:16:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: 8aJ7EYFh\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nbefore_Hi = []\nafter_Hi = []\n\nwhile True:\n    x = input()\n    if x == \"Hi\":\n        break\n    before_Hi.append(x)\n\nwhile True:\n    x = input()\n    if x == \"Noe\":\n        break\n    after_Hi.append(x)\n\nfull = after_Hi + before_Hi\n\nfor i in full:\n    print(i, end=\" \")\n"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T02:18:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021 \nPASSWORD: 1pKkNCBu\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nA = []\n\nwhile True:\n    x = str(input())\n    if x == 'Noe':\n        break\n    A.append(x)\n\nresult0 = []\nresult1 = []\nfor i in range(len(A)):\n    if A[i] == 'Hi':\n        count = i\n        break\n    else:\n        result0.append(A[i])\n\nA = A[count+1:]\n\nresult1 = A+result0\n\nfor i in range(len(result1)):\n    print(result1[i],end=' ')"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:57:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: VycDKN1B\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist_a = []\nlist_b = []\n\nwhile True:\n    n = input()\n    if n == 'Hi':\n        break\n    list_a.append(n)\n\nwhile True:\n    x = input()\n    if x == 'Noe':\n        break\n    list_b.append(x)\n\nprint(*list_b,*list_a,end=' ')\n\n\n"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:47:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887023\nPASSWORD: wkYa7DW8\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\nlist2 = []\nwhile True:\n    x = str(input())\n\n    if 'Hi' in list:\n        list2.append(x)\n    if x == 'Noe':\n        break\n    else:\n        list.append(x)\n\n\nnum = len(list2)\n\nfor i in range(num):\n    list.pop()\n\nlist2.pop()\nfor i in list2:\n    print(i,end=' ')\nfor h in list:\n    print(h,end=' ')"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:41:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: RH9Jzcht\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nw = []\n\nwhile True:\n    wordinput = input()\n    if wordinput == 'Noe':\n        break\n    w.append(wordinput)\n\n# print(w)\n\ncountindex = 0\n\nfor i in w:\n    if i == 'Hi':\n        break\n\n    countindex += 1     \n\nback = len(w)-countindex\norderedl = []\nfor q in range(countindex):\n    orderedl.append(w[q])\n\n\norderedbf = []\n\n\nfor t in w[(-back)+1:]:\n    orderedbf.append(t)\n\n# print(orderedbf)\n\n# print(orderedl)\n\nfor v in orderedbf:\n    print(v,end =' ')\n\nfor l in orderedl:\n    print(l,end=' ')\n\n# for j in w[revindex:]:\n#     print(j,end=' ')\n\n\n\n# for q in range(countindex):\n#     print(w[q],end=' ')\n\n# print('orderlist',ordered)"
+  },
+  {
+    "User ID": "6887025",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T02:56:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887025\nPASSWORD: APBcSWVg\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\nlist2 = []\nanswer = []\n\nwhile True :\n    x=input()\n    list.append(x)\n    if x == 'Hi' :\n        list.pop()\n        break\n\nwhile True :\n    x=input()\n    list2.append(x)\n    if x == 'Noe' :\n        list2.pop()\n        break\n    \nanswer.extend(list2)\nanswer.extend(list)\n\nfor i in answer:\n    print(i,end=' ')"
+  },
+  {
+    "User ID": "6887026",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887026\nPASSWORD: H9H2PStd\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist1=[]\nlist2=[]\nwhile True:\n    x=input()\n    if x == 'Noe':\n        break\n    list1.append(x)\nfor i in (list1):\n    if i == 'Hi':\n        break\n    list2.append(i)\n    list1.remove(i)\n    list1.remove('Hi')\n    print(list1)\n    print(list2)\n"
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T02:59:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887027\nPASSWORD: KMWjYcJu\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nword = []\nah =[]\n\nwhile True:\n    x = input()\n\n    if x == 'Noe':\n        break\n    \n    elif x == 'Hi':\n        ah.append(x)\n\n    elif len(ah) != 0:\n        ah.append(x)\n\n    else:\n        word.append(x)\n\n# print (ah)\n\nfor i in range(len(ah)-1):\n    print(ah[i+1], end=' ')\n\nfor i in range(len(word)):\n    print(word[i], end=' ')\n\n\n"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:51:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: AR3EG6JW\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nwhile True:\n    a = input()\n    print(a,end=' ')\n    if a == 'Noe':\n        break\n"
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T02:57:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD: fqRbvsBW\nEXERCISEID: itds120-mid-q4\n */\n'''\nword = []\nword_split = []\nwhile True :\n    a = input()\n    if a == 'Hi' :\n        break\n    word.append(a)\nwhile True :\n    a = input()\n    if a == 'Noe' :\n        break\n    word_split.append(a)\nfor s in word_split :\n    print(s , end=' ')\nfor v in word :\n    print(v , end=' ')\n\n"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:07:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: SDXwqvn2\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist1 = []\nwhile True :\n    x = input()\n    if x == 'Noe' :\n        break\n    list1.append(x)\n\njer = 0\nfor i in range(len(list1)) :\n    if list1[i] == 'Hi' :\n        jer = i\n        list1.remove('Hi')\n        break\n    \nlist3 = list1[jer:] + list1[:jer] \nfor i in list3 :\n    print(i , end = ' ')\n    \n"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:30:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: qvHNWZJy\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nb_list = []\na_list = []\n\nwhile True:\n    w1 = input()\n    if w1!=\"Hi\":\n        b_list.append(w1)\n    else:\n        break\n\nwhile True:\n    w2 = input()\n    if w2!=\"Noe\":\n        a_list.append(w2)\n    else:\n        break\n\nprint(\" \".join(a_list+b_list))"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/1 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: TIMEOUT",
+    "Submission Time": "2025-10-03T04:10:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: 2YEC9mp3\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nn =input()\nl1 = []\nl2 = []\nwhile True:\n    n == 'Hi'\n    continue\n    l1.append(n)\nwhile True:\n    n == 'Noe'\n    break\n    l2.append(n)\n\nprint(*(l2+l1))\n\n\n\n"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:04:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: pt5Aqtg9\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nsh1 = []\nwhile True:\n    char1 = input()\n    if char1 == \"Hi\":\n        break\n    sh1.append(char1)\n\nsh2 = []\nwhile True:\n    char2 = input()\n    if char2 == \"Noe\":\n        break\n    sh2.append(char2)\n\nsh2.extend(sh1)\n\nfor i in range(len(sh2)):\n    print(sh2[i], end = \" \")"
+  },
+  {
+    "User ID": "6887034",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887034\nPASSWORD: mhwkgj91\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nword = []\nword_forward = []\nwhile True:\n    n = input()\n    if n == \"Hi\":\n        break\n    word.append(n)\n\nwhile True:\n    a = input()\n    if a == \"Noe\":\n        break\n    word_forward.append(a)\n\nword_forward.extend(word)\nn = len(word_forward)\n\nprint(word_forward)\n"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:48:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: JqbpnCGQ\nEXERCISEID: itds120-mid-q4\n */\n'''\nA = []\nB = [] \n\nwhile True :\n    w = input()\n    if w == 'Noe' :\n        break\n    else :\n        A.append(w)\n\nfor i in range(len(A)) :\n    if A[i] == 'Hi' :\n        x = A[ : i]\n        y = A[ i+1: ]\nB = y+x\nfor j in B:\n    print(j,end = ' ')"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: CSrZZey8\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nn_list = []\nwhile True:\n    n = input()\n    if n == 'Noe':\n        break\n    n_list.append(n)\nfor i in n_list:\n    if i in ['a'and 'beginning'and'has'and'an'and'end'and'Hi'and'Everything'and'that'and'has']:\n        print('Everything that has a beginning has an end')\n    elif i in ['no'and 'spoon'and'Hi'and'There'and'is']:\n        print('There is no spoon')\n    elif i in ['Fear,'and 'doubt,'and'and'and'disbelief.'and'Free','your,'and 'mind.,'and'Hi'and'You.'and'have']:\n        print('You have to let it all go, Neo. Fear, doubt, and disbelief. Free your mind.')\n    elif i in ['to'and 'do'and'and'and'with.'and'the'and'time'and 'that'and'is'and'given.'and'us'and'Hi'and'All'and 'we'and'to'and'decide.'and 'is' and' what']:\n        print('All we have to decide is what to do with the time that is given us')"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:09:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: nt3K8yCn\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nword = []\nwhile True:\n    x = input()\n    if x == 'Hi':\n        break\n    word.append(x)\n# print(word)\nword2 = []\nwhile True:\n    y = input()\n    if y == 'Noe':\n        break\n    word2.append(y)\n# print(word2)\n\nword2.extend(word)\n# print(word2)\n\nfor word2 in word2 :\n    print(word2,end=' ')"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:00:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887038\nPASSWORD: U7qZwJrK\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx = input()\nw = []\nwhile True:\n    x = input()\n    w.append(x)\n    \n    if x == 'Hi':\n        continue\n    if x == 'Noe':\n        break \nprint(w)  \n"
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T02:35:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: c6CePfYu\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\ntext = []\nwhile True:\n    x = input()\n    if x=='Noe':\n        break\n    text.append(x)\n\nnew = []\nh = text.index('Hi')\n\nfor i in range(len(text)):\n    if i>h:\n        print(text[i], end=' ')\n\nfor i in range(len(text)):\n    if i==h:\n        break\n    print(text[i], end=' ')"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:14:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887040\nPASSWORD: 6QFdZ12U\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nword_list = []\nword_result = []\nwhile True :\n    word = str(input())\n    if word == \"Noe\" :\n        break\n    word_list.append(word)\n\nfor i in range(len(word_list)) :\n    if word_list[i] == \"Hi\" :\n        for j in word_list[i+1::1]:\n            word_result.append(j)\n        for j in word_list[0:i:1]:\n            word_result.append(j)\n\n    \nfor i in range(len(word_result)):\n    print(f'{word_result[i]}', end=\" \")\n"
+  },
+  {
+    "User ID": "6887041",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:12:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887041\nPASSWORD: TpHnB2B4\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n# front = []\n# back = []\n\nlistx = []\nback = []\n\nwhile True :\n    x = input()\n    listx.append(x)\n    if x == 'Noe' :\n        break\n\n# print(listx)\n\ncount = 0\n\nfor i in listx :\n    if i != 'Hi' :\n        count += 1\n    else :\n        break\n\nfor j in range(count) :\n    back.append(listx[0])\n    listx.pop(0)\nlistx.pop(0)   #delete 'Hi'\nlistx.pop(-1)  #delete 'Noe'\n\n# print(listx)\n# print(back)\n\nprint(f'{listx + back}')"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:44:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: 2fFz1Kbu\nEXERCISEID: itds120-mid-q4\n */\n'''\n\nwords = []\n\nindex = 0\n# YOUR CODE GOES HERE\n\nwhile True:\n    n = input()\n    if n == 'Noe':\n        break\n    words.append(n)\n\nfor i in range(len(words)):\n    if words[i] == 'Hi':\n        index = i\n        break\n\nfor i in range(index + 1, len(words)):\n    print(words[i], end = ' ')\n\nfor i in range(0, index):\n    print(words[i], end = ' ')\n\n\n    \n"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:03:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD: mSmEr3uF\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nNoe = []\nHi = ['Hi']\nfound = False\nwhile True :\n    n =(input())\n    if n == 'Noe':\n        break\n    Noe.append(n)\n\n    if n in Hi:\n        Noe.remove(n)\n\nNoe.sort()\n\nfor i in Noe:\n    print(i ,end=' ')\n\n"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/1 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: TIMEOUT",
+    "Submission Time": "2025-10-03T04:15:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: AsGm8cWp\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\noracle=[]\nwhile True:\n    word=str(input)\n    if word=='Noe':\n        break\n    oracle.append(word)\n\nf_hi=[]\nl_hi=[]\noracle.index('Hi')\nfor i in range(len(oracle)):\n    if oracle[i]>oracle.index('Hi'):\n        f_hi.append(oracle[i])\n    else:\n        l_hi.append(oracle[i])\n\nre=f_hi+l_hi\n\nprint(re)"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:11:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: VSXrvaMj\nEXERCISEID: itds120-mid-q4\n */\n'''\n\nword = []\nwhile True:\n    n = input()\n    if n == 'Noe':\n        break\n    word.append(n)\n\n    for i in word:\n        if i == 'Hi':\n            word.remove(i)    \n            for j in word:\n                if j <= i:\n                    word.remove(j)\n                    word.append(j)\n\nprint(word)\n\n\n"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:08:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: Ug6arpZz\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nsay = []\nx = 0\nwhile True :\n    n = input()\n    if n == 'Noe':\n        break\n    say.append(n)\n\n#print back\nfor i in range (len(say)):\n    if x == 1 :\n        print(say[i],end=' ')\n    elif say[i] == 'Hi':\n        x = 1\n\n#print front\nfor i in range (len(say)):\n    if x == 1 and say[i] != 'Hi':\n        print(say[i],end=' ')\n    elif x == 1 and say[i] == 'Hi':\n        x = 0\n    else :\n        break"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T03:40:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD: AJTh849M\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nmessage = input()\nn = int(input())\nfor i in range(n):\n    if message == 'Hi' :\n        continue\n    else message == 'Noe' :\n        break\n   \nprint(i)\nprint('Everything that has a beginning has an end')\n"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:14:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: f7bT6QNP\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na=[]\nwhile True:\n    x= input()\n    if x == 'Hi':\n        break\n    a.append(x)\nb=[]\nwhile True:\n    y= input()\n    if y == 'Noe':\n        break\n    b.append(y)\n\n\nfor i in b:\n    print(i,end=' ')\nfor y in a:\n    print(y,end=' ')"
+  },
+  {
+    "User ID": "6887050",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:51+00:00",
+    "Code": "'''\n/**\nUSERID: 6887050\nPASSWORD: qXT6h6dD\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n# A = []\n# while True:\n#     x = input()\n#     if x == \"Noe\":\n#         break\n#     A.append(x)\n\n# B = []\n# for i in range(x,x-1):\n#     if x == \"Hi\":\n#     B.append(x)\n# print(B)\n\n\nA = []\nwhile True:\n    x = input()\n    if x == \"Noe\":\n        break\n    A.append(x)\nB = []\nfor i in A:\n    if x == 'Hi':\n        B.append(i)\nB.sort()\nprint(A)\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T02:53:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: rpAUs2eT\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntext = []\nwhile True:\n    user = input()\n    if user == 'Noe':\n        break\n    else:\n        text.append(user)\n\n\nk = 0\nfor i in text:\n    if i == 'Hi':\n\n        for i in text[k:]:\n            if i == 'Hi':\n                pass\n            else:\n                print(f'{i} ',end = '')\n        for j in text[:k]:\n            print(f'{j} ',end = '')\n\n\n\n    k += 1\n\n    "
+  },
+  {
+    "User ID": "6887052",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:23:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887052\nPASSWORD: 6d6Hnzr7\nEXERCISEID: itds120-mid-q4\n */\n'''\n\nlist1 = []\nlistx = []\nx = input()\ny = 0\nz = 0\nwhile True:\n    listx.append(x)\n    if x == 'Hi':\n        y = z\n    z += 1\n    x = input()\n    if x == 'Noe':\n        break\nfor i in range(z-1):\n    if y == z-1:\n        y = 0\n        list1.append(listx[y])\n    elif y != z:\n        list1.append(listx[y+1])\n        y += 1\nif x == 'Noe':\n    for i in range(z-1):\n        print(list1[i],end = ' ')\n"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:11:30+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: MkPzXQH4\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nword = []\nfinal = []\n\n\nwhile True :\n    n = input()\n    if n == 'Noe' :\n        break\n    elif n == 'Hi' :\n        continue\n    word.append(n)\n    \nword.sort()\nfor i in word :\n    print(i,end=' ')"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T02:56:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: yCwjjFaw\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nword1 = []\nword2 = []\n\nwhile True :\n    w1 = input()\n    if w1 != \"Hi\" :\n        word1.append(w1)\n    elif w1 == \"Hi\" :\n        break\n\nwhile True :\n    w2 = input()\n    if w2 != \"Noe\" :\n        word2.append(w2)\n    else :\n        break\n    \nfor i in range(len(word2)) :\n    print(word2[i],end=' ')\n    \nfor i in range(len(word1)) :\n    print(word1[i],end=' ')\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:03:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887056\nPASSWORD: ehGVsN1W\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist_word = []\nnew_word = []\nwhile True:\n    s = input()\n    if s == \"Noe\":\n        break\n    list_word.append(s)\n\nif list_word == \"Hi\":\n    list_word.pop(\"Hi\")\n    \nprint(list_word)\n\n\n\n"
+  },
+  {
+    "User ID": "6887057",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "4/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887057\nPASSWORD: nwyDjT8R\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nn = input()\n\nif n == 'a' or n=='beginning' or n=='has' or n=='an' or n=='end' or n=='Hi' or n=='Everthing' or n=='tha' or n=='has' or n=='Noe':\n    print('Everything that has a beginning has an end')\nif n == 'no' or n=='spoon' or n=='Hi' or n=='There' or n=='is' or n=='Noe':\n    print('There is no spoon')\nif n == 'Not' or n=='all' or n=='those' or n=='who' or n=='wander' or n=='are'or n=='lost;'or n =='The' or n =='old ' or n == 'that' or n =='is' or n =='strong' or n =='does'or n =='not' or n == 'wither,' or n =='Deep' or n =='roots' or n =='not'or n =='reached'or n =='by'or n =='the'or n =='frost.'or n =='Hi'or n =='All'or n =='that'or n =='is'or n =='gold'or n =='does'or n =='not'or n =='giitter,' or n =='Noe':\n    print('All that is gold does not glitter, Not all those who wander are lost; The old that is strong does not wither, Deep roots are not reached by the frost.')\n\nif  n == 'Fear,' or  n == 'doubt,' or  n == 'and' or  n == 'disbelief.' or  n == 'Free' or  n == 'your' or  n == 'mind.' or  n == 'Hi' or  n == 'You' or  n == 'have' or  n == 'to' or  n == 'let' or  n == 'it' or  n == 'all' or  n == 'go,' or  n == 'Neo.' or  n == 'Noe':\n    print('You have to let it all go, Neo. Fear, doubt, and disbelief. Free your mind.')\n\n"
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:29:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: Ec4R4djr\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nnames = []\n\nwhile True:\n    name = input()\n    if name == 'Noe':\n        break\n    names.append(name)\n\nstarts = []\nfor i in range(len(names)-1, -1, -1):\n    if names[i] == 'Hi':\n        break\n    starts.append(names[i])\n\nfor i in range(1, len(starts)+1):\n    print(starts[-i], end = ' ')\n\nfor j in range(len(names)):\n    if names[j] == 'Hi':\n        break\n    print(names[j], end = ' ')"
+  },
+  {
+    "User ID": "6887059",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:13:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887059\nPASSWORD: nsRg453A\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n# list_l = []\n# letter = []\n# while True :\n#     n = input()\n#     if n == \"Noe\" :\n#         break\n#     if n == \"Hi\" :\n#         continue\n#     if n != \"Hi\" :\n#         list_l.append(n)\n#     letter.append(list_l)\n# # print(letter)\n    \n# for i in range (letter[i]) :\n#     print(i)\n\nletter = []\nwhile True :\n    n = input()\n    if n == \"Noe\" :\n        break\n    letter.append(n)\nsorted_letter = sorted(letter , reverse = True)\nfor i in range((sorted_letter)) :\n    print(f\"{sorted_letter}\")\n"
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887060\nPASSWORD: FafaFahj\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nword=[]\n\nwhile True:\n    w=input()\n    if w==\"Noe\":\n        break\n    word.append(w)\n\nfor i in range(len(word)):\n    if word[i]==\"Hi\":\n        word.remove(\"Hi\")\n    else:\n        word.append(word[i])\n        \n\nfor i in range(len(word)):\n    print(word[i], end=\" \")\n\n    "
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD: eEBTFnca\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlistA = []\n\nwhile True :\n    n = input()\n    if n == 'Noe' :\n        break\n    else :\n        listA.append(n)\n\nfor i in range(len(listA)) :\n    if listA[i] == 'Hi' :\n        listA[i+(len(listA))- 2]\n\n\n'''\nfor item in listA :\n    if item == 'Hi' :\n        listA.remove('Hi')\n'''\n'''\nfor i in range(len(listA)) :\n    if listA[i] == 'Hi' :\n        listA.remove('Hi')\n        '''\n\nprint(listA)\n"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:13:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: JzHd7MdK\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nA=[]\nB=[]\nC=[]\ncount=0\nwhile True:\n    x=input()\n    if x=='Noe':\n        break\n    if x == 'Hi':\n        count+=1\n        continue\n    if count == 0:\n        A.append(x)\n    elif count == 1:\n        B.append(x)\n\nfor i in B:\n    print(i,end=' ')\nfor i in A:\n    print(i,end=' ')"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD:  UMr6MHv5\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist1 = []\nword = str(input())\nwhile True:\n    word = input()\n    if word == \"Noe\":\n        break\n    list1.append(word)\nprint(*list1)\n"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:29:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: 8BjdRvtM\nEXERCISEID: itds120-mid-q4\n */\n'''\nhellc = 0\nhi = 0\noracle_word = []\nwhile True:\n    x = input()\n    if x != 'Hi':\n        hellc += 1\n    if x == 'Hi':\n        hi = hellc\n    if x == 'Noe':\n        break\n    oracle_word.append(x)\nfor i in range(hi+1,len(oracle_word),1):\n    print(oracle_word[i],end=' ')\nfor i in range(0,hi,1):\n    print(oracle_word[i],end=' ')\n\n\n"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T02:42:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887065\nPASSWORD: HqReWzQC\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nchar = []\nhi = []\nwhile True :\n    n = input()\n    if n == 'Hi' :\n        break\n    hi.append(n)\n\nwhile True :\n    a = input()\n    if a == 'Noe' :\n        break\n    char.append(a)\n\nfor x in char :\n    print(x , end = ' ')\nfor y in hi :\n    print(y , end = ' ')\n"
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:36:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD: zWwpJbbR\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na=[]\nz=[]\nposition=0\nwhile True:\n    x=str(input())\n    if x!='Noe':\n        a.append(x)\n    else:\n        break\n\nfor i in range(len(a)):\n    if a[i]=='Hi':\n        position=i\n\nz.extend(a[int(position+1):])\nz.extend(a[0:int(position)])\n\nfor i in range(len(z)):\n    print(z[i], end=' ')\n\n\n    \n\n\n        \n\n"
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: ERROR, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887067\nPASSWORD: EB7ZkFpr\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nwhile True:\n    alp = input()\n    if alp == 'Hi':\n        break\n    print(alp)\n    alp = input()\n    if alp == 'Noe':\n        break \n\n"
+  },
+  {
+    "User ID": "6887068",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887068\nPASSWORD: nfnVnyEV\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nhi_list = []\nn = input()\nx = \"Pass\"\n\nwhile True :\n    if n == \"Noe\" :\n        break \n    hi_list.append(n)\n    n = input()\n\ncount = -1\nfor _ in range(len(hi_list)) :\n    if \"Hi\" in hi_list[0:_] :\n        break\n    count += 1\n\nparta  = hi_list[count+1:]\npartb = hi_list[0:count]\npartc =  parta + partb\n\nprint(partc)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n##  for a in range(0,_):\n##    print(hi_list[a:_])\n   \n\n\n\n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887069",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:06+00:00",
+    "Code": "'''\n/**\nUSERID: 6887069\nPASSWORD: e2PD8SBH\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nText = []\n\nwhile True :\n    n = input()\n    Text.append(n)\n    if n == \"Noe\" :\n        break   \nText.remove(\"Noe\")\nprint(Text)\n"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: BEkk6zpe\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\na=[]\nb=[]\nwhile True:\n    x = str(input())\n    a.append(x)\n    if x == \"Hi\":\n        break\nwhile True:\n    y = str(input())\n    b.append(y)\n    if y == \"Noe\":\n        break\na.pop()\nb.pop()\n\nprint(b+a, end=' ')"
+  },
+  {
+    "User ID": "6887071",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T02:40:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887071\nPASSWORD: ecHbHhn3\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx = []\nn = input()\n    if n == 'Noe':\n        break\n    x.append(n)\n\n"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:13:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: T6ERAjf7\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist1 = []\n\nwhile True:\n    n = input()\n    if n == \"Noe\":\n        break\n    list1.append(n)\n\nfor i in list1:\n    print(list1)"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: MNahV3pq\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist1 = []\nvole = ['a','e','i','o','u']\nwhile True:\n    n = input()\n    if n == 'Noe':\n        break\n    else:\n        list1.append(n)\nlist1.sort()\nlist1.remove('Hi')\nprint(list1)\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:45:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887074\nPASSWORD: 88Kphcj8\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\nwhile True:\n    n = input()\n    if n == \"Hi\":\n        break\n    A.append(n)\n    A.pop\n\nB = []\nwhile True:\n    x = input()\n    if x == 'Noe':\n        break\n    B.append(x)\nprint(*B+A)\n"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:05:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: ANB58hnW\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nwords = []\nwords_2 = []\n\nwhile True:\n    word = input()\n    if word == 'Hi':\n        break\n    words.append(word)\n\nwhile True:\n    word = input()\n    if word == 'Noe':\n        break\n    words_2.append(word)\nwords_2.extend(words)\nfor i in words_2:\n    print(i, end = ' ')\n "
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:29:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: 7gvFh7PY\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist=[]\nlist2=[]\nwhile True:\n    n=input()\n    if n == 'Noe':\n        break\n    list.append(n)\n\n\nfor i in range(len(list)):\n    if list[i] == 'Hi':\n        list2.append(list[i+1:])\n        list2.append(list[0:i])\n\nfor i in list2:\n    for j in i:\n        print(j,end=' ')\n\n    \n\n"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:14:55+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: JGphjpJe\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n#PASS\n\nlist=[]\nstart=[]\nend=[]\nwhile True:\n    n=input()\n    if n == 'Noe':\n        break\n    list.append(n)\n\nfor i in range(len(list)):\n    if list[i] == 'Hi':\n        start.append(list[i+1:])\n        end.append(list[:i])\n\nfor i in start:\n    for j in i:\n        print(j, end=' ')\nfor i in end:\n    for j in i:\n        print(j, end=' ')"
+  },
+  {
+    "User ID": "6887078",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887078\nPASSWORD: XpaqhE1M\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nN = []\nwhile True:\n    n = input()\n    if n == \"Hi\" :\n        break\n    N.append(n)"
+  },
+  {
+    "User ID": "6887079",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:55:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887079\nPASSWORD: CwUP3nYc\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nwhile True:\n    n = input()\n    if n == \"Noe\":\n        break\n\nprint(\"Everything that has a beginning has an end\")"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:35:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: 34H1WXAA\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist1 = []\n\nwhile True:\n    list_ = input()\n    if list_ == 'Hi':\n        break\n    list1.append(list_)\n\nlist2 = []\n\nwhile True:\n    list__ = input()\n    if list__ == 'Noe':\n        break\n    list2.append(list__)\n\nlist2.extend(list1)\n\nfor i in range(len(list2)):\n    print(list2[i], end=' ')"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:06:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: qJjC4UEZ\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx=[]\ny=[]\n\nwhile True:\n    a=str(input())\n    if a=='Hi':\n        break\n    x.append(a)\n\n\nwhile True:\n    b=str(input())\n    if b=='Noe':\n        break\n    y.append(b)\n\npp=y+x\n\n\nfor i in pp:\n    print(i,end=' ')\n\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:00:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: mr6thYbs\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nA=[]\n\nwhile True:\n    n=input()\n    if n==\"Noe\":\n        break\n    A.append(n)\n   \n\nfor i in A:\n    if i==\"Hi\":\n        break\n\nA.sort()\nprint(A) \n"
+  },
+  {
+    "User ID": "6887083",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/1 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: TIMEOUT",
+    "Submission Time": "2025-10-03T04:07:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887083\nPASSWORD:  pkZa7PrV\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntext = []\nword = []\nwhile True:\n    text = []\n    if text == \"Hi\":\n        break\n\n    \n            \n\n"
+  },
+  {
+    "User ID": "6887084",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "2/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887084\nPASSWORD: d7nEdE6D\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nwhile True:\n    text = input()\n    if text == 'Noe':\n        break\n    elif text == 'no' and 'spoon' and 'Hi' and 'There' and 'is' and 'Noe':\n        print('There is no spoon')\n    elif text == 'a' and 'beginning' and 'has 'and 'an' and 'end'and 'Hi' and 'Everything' and 'that' and 'has 'and 'Noe':\n        print('Everything that has a beginning has an end')\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:14:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: 4DckWCbm\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nn = []\n\nwhile True:\n    if n == \"Noe\":\n        break\n    elif == \"Hi\":\n        print(f\"word after \"Hi\",end=\" \"\")\n\nprint()\n\n    \n\n"
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:15:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: djAVQA5Y\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\n\nwhile True:\n    word = input()\n    if word == 'Noe':\n        break\n    list.append(word)\nlist.remove('Hi')\nif len(list) == 8 :\n    count = ((len(list) // 2)-1)*-1\nelif len(list) == 4  :\n    count = ((len(list) // 2))*-1\nelif len(list) == 30  :\n    count = ((len(list) // 2)-8)*-1\nelif len(list) == 15  :\n    count = ((len(list) // 2)+1)*-1\nelse:\n    count = ((len(list) // 2)-1)*-1\n\n\nfor i in range(len(list)):\n    print(list[count],end=' ')\n    count+=1\n    \n###ขอเหลี่ยมหน่อยนะครับไม่มันไม่ไหวจริง###\n\n\n    \n\n"
+  },
+  {
+    "User ID": "6887087",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T03:32:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887087\nPASSWORD: e7pVJWmk\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\ni = input()\nlist1 = []\nlist2 = []\n\nwhile i != \"Noe\" :\n    if i != \"Hi\" :\n        list1.append(i)\n        continue\n    else :\n        list2.append(i)\n        continue\n    i = input()\n\nlist1.extend(list2)\n    print(list1)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:15:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: uFPzzAF9\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na=[]\nwhile True:\n    x=input()\n    if x=='Hi':\n        break\n    a.append(x)\nlist=[]\nwhile True:\n    y=input()\n    if y=='Noe':\n        break\n    list.append(y)\nfor i in list:\n    print(i,end=' ')\nfor j in a:\n    print(j,end=' ')\n"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:00:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: FM6TYUdV\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\n\nwhile True:\n    word = input()\n    if word == 'Noe':\n        break\n    else:\n        list.append(word)\n\nfor i in list:\n    if i == 'Hi':\n        list.remove('Hi')\n        list.sort()\n\nfor i in list:\n    print(i, end=' ')"
+  },
+  {
+    "User ID": "6887090",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:15:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887090\nPASSWORD: pwrsTUnS\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist=[]\nb =[]\n\nwhile True:\n    x = input()\n    list.append(x)\n    if x == 'Hi':\n        break\n\nwhile True:\n\n    a = input()\n    b.append(a)\n\n    if a == 'Noe':\n        break\n\nfor i in range(len(b)):\n\nfor j in range(len(list)):\n\n    print(b[i]+list[j])\n\n"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T02:41:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: FfTEgAWq\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n#input\nword = []\nwhile True:\n    x = input()\n    if x == \"Noe\":\n        break\n    word.append(x)\n\n#print(word)\n\n\n#check hi location\ncount = 0\nfor i in word:\n    count += 1\n    if i == \"Hi\":\n         break\n\n#print(count)\n\n\n#print out after Hi until last one\nfor i in range(count,len(word)):\n    print(word[i],end =\" \")\n\n\n#print out the first until hi\nfor i in range(count-1):\n    print(word[i], end=\" \")\n"
+  },
+  {
+    "User ID": "6887093",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:15:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887093\nPASSWORD: UnGKPQk7\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlistname=[]\n\nwhile True:\n    name = input()\n    if name ==\"Noe\":\n        break\n    else:\n        listname.append(name)\n\n# print(listname)\n\n# start=[]\n# end=[]\n# last=[]\n\nfor i in range (len(listname)):\n    if listname[i] == \"Hi\":\n        end=(listname[i+1:-1])\n\n        last=(listname[-1])\n\n        start=(listname[0:i])\n        \n# print(end)\n# print(last)\n# print(start)\n\nlistall=[]\n\nfor i in end:\n    listall.append(i)\n\nlistall.append(last)\n\nfor j in start:\n    listall.append(j)\n\n# print(listall)\n\nfor k in listall:\n    print(k,end=\" \")"
+  },
+  {
+    "User ID": "6887094",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:49:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887094\nPASSWORD: jZXcJKBq\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist1 = []\nlist2 = []\n\nwhile True :\n    n = input()\n\n    if n == 'Hi' :\n        list2.extend(list1)\n        list1 = []\n        continue\n\n    if n == 'Noe' :\n        break\n\n    list1.append(n)\n\nlist1.extend(list2)\n\nfor i in list1 :\n    print(i,end=' ')"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:10:35+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: GfKuEeE8\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\na= []\nb = []\nwhile True :\n    n = str(input())\n    a.append(n)\n    if n == 'Hi':\n        break\na.pop()\nwhile True :\n    m = str(input())\n    b.append(m)\n    if m == 'Noe':\n        break\nb.pop()\nfor v in b :\n    print(v,end=' ')\nfor v in a :\n    print(v,end=' ')\n"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:13:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: kuYfZ8Jj\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist1=[]\nlist2=[]\nwhile True:\n    n=input()\n    if n=='Hi':\n        break\n    list1.append(n)\nwhile True:\n    n=input()\n    if n=='Noe':\n        break\n    list2.append(n)\nfor i in list2:\n    print(i,end=' ')\nfor k in list1:\n    print(k, end=' ')\n\n    \n\n"
+  },
+  {
+    "User ID": "6887097",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T03:24:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887097\nPASSWORD: tj53QnWE\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nf = []\nl = []\nx = False\no = True\nw = ''\n\nwhile o==True :\n    w = input()\n        if w == 'noe':\n            o = False\n        if w == 'hi':\n            x = True\n    \n        if x == True:\n            f.append(w)\n        else:\n            l.append(w)\n\nfor i in range(len(f)):\n    print(f[i], end=' ')\n\nfor i in range(len(l-1)):\n    print(l[i], end=' ')\n\nprint(l[len(l)])\n"
+  },
+  {
+    "User ID": "6887098",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:09:26+00:00",
+    "Code": "'''\n/**\nUSERID: 6887098\nPASSWORD: FEEukY2t\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nstart = []\nend = []\nwhile True:\n    n = input()\n    if n == 'Hi':\n        break\n    start.append(n)\n\nwhile True:\n    o = input()\n    if o == 'Noe':\n        break\n    end.append(o)\n\nfor x in range(len(end)):\n    print(end.pop(0),end=' ')\n\nfor y in range(len(start)):\n    print(start.pop(0),end=' ')\n\n"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T03:30:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: CQ87zh9Z\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nprint('Everything that has a beginning has an end')\n\n"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:13:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: pFMVk51y\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist1=[]\nwhile True:\n    x=input()\n    if x==\"Noe\":\n        break\n    else:\n        list1.append(x)\nfor i in list1:\n    if i!=\"Hi\":\n        continue\n    else:\n        list1.remove(i)\n\n"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:46:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: 5NTgWVzy\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na = []\nb = []\n\nwhile True :\n    word = input()\n    if word == 'Hi' :\n        break\n    a.append(word)\n\nwhile True :\n    word = input()\n    if word == 'Noe' :\n        break\n    b.append(word)\n\n\nfor i in range(len(b)) :\n    print(b[i], end=' ')\nfor i in range(len(a)) :\n    print(a[i], end=' ')"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "4/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: FAIL, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:14:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: XQw874AW\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nl = []\nwhile True:\n    x = input()\n    if x == 'Noe':\n        break\n    l.append(x)\n\nc=[]\nfor i in range(len(l)):\n    if l[i] == 'Hi':\n        break\n    c.append(l[i]) \n\nfor j in range(len(l)):\n    if j >= len(l):\n        break\n    if l[j] != 'Hi':\n        l.pop(0)\n    else:\n        l.pop(0)\n        break\nif l[0] == 'Hi':    \n    for i in range(len(l)-1):\n        print(l[i+1],end=' ')\nelse:\n    for i in range(len(l)):\n        print(l[i],end=' ')\nfor k in c:\n    print(k,end=' ')\n\n"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:10:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: CrXuPAeu\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n a = [str(input())]\n while True:\n    x =  input()\n    if x == 'Noe':\n        break\n    a.append(x)\nq = [no ,spoon ,Hi]\n\nfor e in q:\n    while e in a:\n        a. pppend(e)\nprint(a)"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "1/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: PASS, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:41+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: pyXPtvJK\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nlist = []\n\nwhile True :\n    n = input()\n    if n == 'Noe' :\n        break\n    elif n == 'Hi' :\n        continue\n    \n    list.append(n)\n    list.sort()\n\n\nfor i in list:\n    \n    print(i , end=' ')\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR",
+    "Submission Time": "2025-10-03T04:05:56+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD: W1MCRFBK\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nwords = []\nwhile True:\n    x=input()\n    if x == 'Noe':\n        break\n    else:\n        words.append(x)\n\nfirst_part=[]\nwhile True:\n    y = input()\n    if y == 'Hi':\n        break\n    else:\n        first_part.append(y)\n\nprint(first_part+words)"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:08:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: Egru3Nq6\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nx= input()\nu=[]\n\n\nwhile x != 'Noe' :\n    f=input()\n    if f != 'Noe' :\n        u.append(x)\n        break\n   \nprint(u)\n"
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T02:47:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: Kk8Xt2Cy\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na=[]\nb=[]\nwhile True:\n    x=input()\n    if x=='Hi':\n        break\n    a.append(x)\nwhile True:\n    x=input()\n    if x=='Noe':\n        break\n    b.append(x)\nfor i in b:\n    print(i,'',end='')\nfor i in a:\n    print(i,'',end='')        \n"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:58:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: td4Zj4qa\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nfirst = []\nlast = []\n\nwhile True :\n    word = input()\n    if word == 'Hi' :\n        break\n    else  :\n        last.append(word)\n\nwhile True :\n    word = input()\n    first.append(word)\n    if word == 'Noe':\n        break\n\nfirst.remove('Noe')\nfirst.extend(last)\n\nfor i in first :\n    print(i,end=' ')\n\n"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T02:59:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887111\nPASSWORD: 5Z1FqkMt\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist = []\nlist1 = []\nwhile True :\n    x = input()\n    if x == \"Hi\" :\n        break\n    list.append(x)\n\nwhile True :\n    x= input()\n    if x == \"Noe\" :\n        break\n    list1.append(x)\nfor j in list1 :\n    print(j, end = \" \")\nfor i in list :\n    print(i, end = \" \")\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887112",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:13:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887112\nPASSWORD:  SJ7T6YQD\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nwhile True :\n    n = input()\n    if n == 'Hi' :\n        break\n    print(n,end=' ')\nwhile True :\n    x = input()\n    if x == 'Noe' :\n        break\n    print(x,end=' ') \n\n\n        "
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:00:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887113\nPASSWORD: eSdcbhq9\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\na = []\nb = []\nwhile True:\n    n = input()\n    if n == 'Hi':\n        break\n    else:\n        a.append(n)\n\nwhile True:\n    n = input()\n    if n == 'Noe':\n        break\n    else:\n        b.append(n)\n\nfor i in b:\n    print(i,end = ' ')\nfor i in a:\n    print(i,end = ' ')"
+  },
+  {
+    "User ID": "6887114",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:14:54+00:00",
+    "Code": "'''\n/**\nUSERID: 6887114\nPASSWORD: cbEsgAkN\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nOracle = []\nwhile True:\n    text = input()\n    if text == 'Noe':\n        break\n    Oracle.append(text)\n\n\n\n"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:15:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: AmypMj4Q\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nAfHi = []\nBeHi = []\n\nwhile True:\n    word = input()\n    if word == 'Hi':\n        break\n    BeHi.append(word)\n\nwhile True:\n    word_A = input()\n    if word_A == 'Noe':\n        break\n    AfHi.append(word_A)\n    \nfor i in range(len(AfHi)):\n    print(AfHi[i], end=' ')\n\nfor i in range(len(BeHi)):\n    print(BeHi[i], end=' ')\n\n#END"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:02:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887116\nPASSWORD: J92CTmgc\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist = []\nwhile True:\n    x = str(input())\n    if x == 'Hi':\n        break\n    list.append(x)\nlist.sort(reverse=True)\nprint(list)\n\n\n"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "0/5 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL",
+    "Submission Time": "2025-10-03T04:15:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: 6WnzWUXs\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na = []\nb = []\nbig = []\n\nwhile True:\n    o = str(input())\n    if o == 'Noe':\n        break\n    big.append(o)\n\nback = big.sort(reverse=True)   \nbig2 = []\nback2 = []\n\n\nfor i in big:\n    \n    back2.append(i)\n    if i == 'Hi':\n        break\n        print(i,end=' ')\n\nfor i in big:\n    big2.append(i)\n    if i == 'Hi':\n        break\n    print(i,end=' ')\n    \n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:00:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887118\nPASSWORD: knhg7ccV\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nB=[]\nwhile True:\n    n=input()\n    if n=='Hi':\n        break\n    else:\n        B.append(n)\nF=[]\nwhile True:\n    f=input()\n    if f=='Noe':\n        break\n    else:\n        F.append(f)\n    \nF=F+B\n\nfor i in F:\n    print(i,end=' ')\n\n"
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T03:56:49+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: bRsW4NMy\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx=input()\nlist1=[]\nl=[]\nl2=[]\nwhile x!='Noe':\n    if x=='Hi':\n        x=input()\n        while x!='Noe':\n            l2.append(x)\n            x=input()\n    else:\n        l.append(x)\n        x=input()\n\nlist1.append(l)\nlist1.append(l2)\n\nfor j in list1[1]:\n    print(j,end=' ')\nfor i in list1[0]:\n    print(i,end=' ')\n\n\n\n"
+  },
+  {
+    "User ID": "6887120",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-03T04:13:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887120\nPASSWORD: nPQweRjr\nEXERCISEID: itds120-mid-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlis1 = []\nlis2 = []\nwhile True:\n    k = input()\n    if k == \"Hi\":\n        break\n    lis1.append(k)\nwhile True :\n    n = input()\n    if n== \"Noe\":\n        break\n    lis2.append(n)\nfor i in range(len(lis2)):\n    t = lis2[i]\n    print(t,\"\",end = \"\")\nfor i in range(len(lis1)):\n    p= lis1[i]\n    print(p,\"\",end = \"\")\n"
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-mid-q4",
+    "Test Results": "5/5 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS",
+    "Submission Time": "2025-10-02T09:23:39+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 999\r\nPASSWORD: 424242\r\nEXERCISEID: itds120-mid-q4\r\n */\r\n'''\r\n\r\nwords = []\r\nwhile True:\r\n    w = input().strip()\r\n    if w == \"Noe\":\r\n        break\r\n    words.append(w)\r\n\r\nhi_index = -1\r\n\r\nfor i in range(len(words)):\r\n    if words[i] == \"Hi\":\r\n        hi_index = i\r\n        break\r\n\r\nshifted = words[hi_index+1:] + words[:hi_index]\r\n\r\n# Print as a single sentence\r\nprint(\" \".join(shifted))\r\n"
+  }
+]

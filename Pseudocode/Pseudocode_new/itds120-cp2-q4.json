@@ -1,0 +1,992 @@
+[
+  {
+    "User ID": "6887001",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "4/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:05:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887001\nPASSWORD: h9TrmHWN\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nA = []\n\nwhile True:\n    x = input()\n    if x == '-1':\n        break\n    A.append(x)\n\nA.sort(reverse = True)\n\nprint(f'- {A[2]}')\nprint(f'- {A[1]}')\nprint(f'- {A[0]}')\n\n    \n\n"
+  },
+  {
+    "User ID": "6887002",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:52:39+00:00",
+    "Code": "'''\n/**\nUSERID: 6887002\nPASSWORD: F8P64sjH\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nl=[]\nwhile True:\n    a=int(input())\n    if a==-1:\n        break\n    l.append(a)   \nl.sort(reverse=True)\nfor i in range(3):\n    print(\"- \",end=\"\")\n    print(l[2-i])"
+  },
+  {
+    "User ID": "6887003",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:33:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887003\nPASSWORD: KSv7B5BK\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nA = []\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    A.append(n)\nA.sort(reverse=True)\nprint(f'- {A[2]}')\nprint(f'- {A[1]}')\nprint(f'- {A[0]}')\n\n"
+  },
+  {
+    "User ID": "6887004",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:52:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887004\nPASSWORD: AfWmZBKG\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist1=[]\ny=int(input())\n\nwhile True :\n    x = int(input()) \n    if x == -1 :\n        break\n    list1.append(x)\n    if x >24 :\n        list1.append(43)\nlist1.sort(reverse=True)\n#list1.append(43)\n\n\nprint(\"-\", list1[2])\nprint(\"-\", list1[1])\nprint(\"-\", list1[0])\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887006",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:51:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887006\nPASSWORD: qNCguHKZ\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nball  =  []\nwhile True :\n    n = int(input())\n    ball.append(n)\n    if n == -1 :\n        ball.remove(int(-1))\n        break\nball.sort()\nprint(f\"- {ball[-3]}\")\nprint(f\"- {ball[-2]}\")\nprint(F\"- {ball[-1]}\")\n"
+  },
+  {
+    "User ID": "6887007",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:04:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887007\nPASSWORD: V1YYWwq7\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nscore = []\n\nwhile (True):\n    x = int(input())\n    if (x == -1):\n        break\n    score.append(x)\nscore.sort()\n\nfor i in range(2, -1, -1):\n    print(f\"- {score[(i+1)*(-1)]}\")\n\n"
+  },
+  {
+    "User ID": "6887008",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:57:05+00:00",
+    "Code": "'''\n/**\nUSERID: 6887008\nPASSWORD: MhAE3nFz\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na=[]\nwhile True:\n    n = input()\n    if n =='-1':\n        break\n    n = int(n)\n    a.append(n)\na.sort(reverse=True)\nprint('-',a[2])\nprint('-',a[1])\nprint('-',a[0])\n"
+  },
+  {
+    "User ID": "6887009",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:48:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887009\nPASSWORD: w4rZw1GV\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nmatrix=[]\nwhile True:\n    x = int(input())\n    if x == -1:\n        break\n    matrix.append(x)\nmatrix.sort()\nprint('-',matrix[-3])\nprint('-',matrix[-2])\nprint('-',matrix[-1])"
+  },
+  {
+    "User ID": "6887010",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: FAIL, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T10:01:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887010\nPASSWORD: wJv3SsDE\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx = int(input())\na =[]\nwhile True:\n    x = input()\n    if x == '-1':\n        break\n    else:\n        for i in [a]:\n           for j in [a]:\n            x = input()\n            a = [str(x)]\n            a.sort(reverse=True)\n            print(a[:3])\n    \n"
+  },
+  {
+    "User ID": "6887011",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:15:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887011\nPASSWORD: FFJhBzJS\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nLi = []\n\nwhile True:\n    n = int(input());\n    if n == -1:\n        break;\n    Li.append(n)\n\nLi.sort()\nprint(f\"- {Li[-3]}\")\nprint(f\"- {Li[-2]}\")\nprint(f\"- {Li[-1]}\")\n"
+  },
+  {
+    "User ID": "6887012",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "4/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:05:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887012\nPASSWORD: VfG93sQU\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nteam = []\nwhile True:\n    a = input()\n    if a == '-1':\n        break\n    team.append(a)\nteam.sort(reverse=True)\nfor i in range(1):\n    print(f'- {team[2]}')\n    print(f'- {team[1]}')\n    print(f'- {team[0]}')  \n\n\n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887013",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:04:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887013\nPASSWORD: EkB8JgjC\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist = []\n\nwhile True:\n    char = int(input())\n\n    if char == -1:\n        break\n\n    list.append(char)\n\nlist.sort()\n\nfor i in range(-3, 0, +1):\n\n    print('-', list[i])"
+  },
+  {
+    "User ID": "6887014",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:17:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887014\nPASSWORD: jbyHfCww\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\nwhile True:\n    n =int(input())\n    if n == -1:\n        break\n    list.append(n)\n\nlist.sort()\n\npop3 = list.pop(-3)\npop2 = list.pop(-2)\npop1 = list.pop(-1)\n\nprint(f'- {pop3}')\nprint(f'- {pop2}')\nprint(f'- {pop1}')"
+  },
+  {
+    "User ID": "6887015",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:50:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887015\nPASSWORD: rmw6XAq8\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist=[]\nwhile True:\n    n=int(input())\n    if n== -1:\n        break\n    list.append(n)\nlist.sort()\nchamp=list[-3:]\nfor i in champ:\n    print('-',i)\n\n"
+  },
+  {
+    "User ID": "6887016",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:50:57+00:00",
+    "Code": "'''\n/**\nUSERID: 6887016\nPASSWORD: zbBt2222\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\nwhile True:\n    x = int(input())\n    if (x == -1):\n        break\n    A.append(x)\nA.sort()\n# print(A)\nprint(f'- {A[-3]}')\nprint(f'- {A[-2]}')\nprint(f'- {A[-1]}')"
+  },
+  {
+    "User ID": "6887017",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T08:56:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887017\nPASSWORD: u1Xsn7Kf\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nwhile True:\n    n=int(input( ))\n    if n ==-1:\n        a.append(n)\n        a.sort(n)\n        c=len(a)\n        for i in range(c):\n            print(a,end=' ')\n            if a[i][0]>num:\n                num=a[i][0]\n            if a[i][1]>num1:\n                num1>a[i][1]\n            if a[i][2]>num2:\n                num2>a[i][2]\n             if a[i][3]>num3:\n                num3>a[i][3]\n   \n    print()\nprint(f'-'{num})\nprint(f'-'{num1})\nprint(f'-'{num2})\nprint(f'-'{num3})\n\n"
+  },
+  {
+    "User ID": "6887018",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:18:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887018\nPASSWORD: VJ87KPUf\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\n\nwhile True:\n    x = int(input())\n    list.append(x)\n    if x==-1:\n        break\n\nlist.sort()\n\n\nfor i in range(-3,0,+1):\n    print(f'- {list[i]}')\n\n\n\n    \n\n\n"
+  },
+  {
+    "User ID": "6887019",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:44:44+00:00",
+    "Code": "'''\n/**\nUSERID: 6887019\nPASSWORD: tmSRzmWS\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nscoreList = []\n\nwhile True:\n    scoreInput = int(input())\n    \n    if scoreInput == -1:\n        break\n    \n    scoreList.append(scoreInput)\n\nscoreList = sorted(scoreList, reverse = True)\n#print(scoreList)\nfor i in range(2,-1,-1):\n    print(f\"- {scoreList[i]}\")\n\n"
+  },
+  {
+    "User ID": "6887020",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:34:29+00:00",
+    "Code": "'''\n/**\nUSERID: 6887020\nPASSWORD: Unb9Sasf\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nnums = []\n\nwhile True:\n    x = int(input())\n    if x == -1:\n        break\n    nums.append(x)\n\nnums.sort()\n\nfor i in nums[-3:]:\n    print(f\"- {i}\")\n"
+  },
+  {
+    "User ID": "6887021",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:42:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887021\nPASSWORD: ka33bC4t\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nA=[]\nwhile True:\n    x=int(input())\n    if x == -1:\n        break\n    A.append(x)\n\n\nA.sort()\n\nfor i in range(-3,0,):\n    print('-',A[i])"
+  },
+  {
+    "User ID": "6887022",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T10:04:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887022\nPASSWORD: 3TzK6jQY\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n"
+  },
+  {
+    "User ID": "6887023",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:28:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887023\nPASSWORD: D7HBb7Yv\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na = []\nb = []\ny = 0\nwhile True:\n    x = float(input())\n    if x == -1:\n        break\n    else:\n        a.append(int(x))\na.sort(reverse = True)\n\nfor i in a :\n    if i >= a[2]:\n        y = y +  1 \n        print(f'- {a[3-y]}')\n    if y == 3 :\n        break"
+  },
+  {
+    "User ID": "6887024",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:30:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887024\nPASSWORD: bMWVu7Fn\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nscore=[]\n\nwhile True :\n    n = int(input())\n    if n == -1 :\n        break\n    \n    score.append(n)\n\nscore.sort()\n\nprint(f'- {score[-3]}')\n\nprint(f'- {score[-2]}')\n\nprint(f'- {score[-1]}')"
+  },
+  {
+    "User ID": "6887025",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:32:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887025\nPASSWORD: NaCWdWhs\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist=[]\n\nwhile True:\n    x=int(input())\n    list.append(x)\n    if x==-1:\n        break\nlist.sort()\n\n\nfor i in range(-3,0):\n    print('- ',end='')\n    print(list[i],end='')\n    print()\n\n"
+  },
+  {
+    "User ID": "6887026",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:54:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887026\nPASSWORD: jeQg7aHB\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nl = []\n\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    l.append(n)\nl.sort()\nx=l[-1]\ny=l[-2]\nz=l[-3]\nprint('-',z)\nprint('-',y)\nprint('-',x)"
+  },
+  {
+    "User ID": "6887027",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:05:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887027\nPASSWORD: g7c82cAW\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist = []\ncount = -1\n\nwhile True:\n    x = int(input())\n\n    if x == -1:\n        break\n    else:\n\n        list.append(x)\n        count += 1\n\n\nlist.sort(reverse=True)\n\n\nresult = []\nfor i in range (3):\n    result.append(list[i])\n\nresult.sort()\n\n\nfor i in range (3):\n\n    print(f'- {result[i]}')"
+  },
+  {
+    "User ID": "6887028",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "4/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: PASS, CASE 4: PASS, CASE 5: FAIL, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:43:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887028\nPASSWORD: Ute8z4Ea\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\nB = []\n\nwhile True:\n    a = input()\n    if a == '-1':\n        break\n    A.append(a)\nA.sort()\n\nprint(f'- {A[-3]}')\nprint(f'- {A[-2]}')\nprint(f'- {A[-1]}')"
+  },
+  {
+    "User ID": "6887029",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:59:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887029\nPASSWORD: GVw8fHEb\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\nballoon = []\nwhile True :\n    n = int(input())\n    if n == -1 :\n        break\n    balloon.append(n)\nballoon.sort()\nprint(f'- {balloon[-3]}')\nprint(f'- {balloon[-2]}')\nprint(f'- {balloon[-1]}')\n"
+  },
+  {
+    "User ID": "6887030",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:52:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887030\nPASSWORD: vYb8MWXy\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na = []\nwhile True :\n    n = int(input())\n    if n == -1 :\n        break\n    a.append(int(n))\n\na.sort()\n\nfor x in a[-3:] :\n    print(f'- {x}')\nprint()\n"
+  },
+  {
+    "User ID": "6887031",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T10:01:23+00:00",
+    "Code": "'''\n/**\nUSERID: 6887031\nPASSWORD: vEwcFd6K\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nn = int(input())\n"
+  },
+  {
+    "User ID": "6887032",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "2/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:07:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887032\nPASSWORD: 7bGdWztq\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na = []\nwhile True:\n    num = int(input())\n    if num == -1:\n        break\n    a.append(num)\n    a.sort()\n    \nprint('-',*a[ 3:4])\nprint('-',*a[ 4:5])\nprint('-',*a[ 5:6])\n"
+  },
+  {
+    "User ID": "6887033",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:04:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887033\nPASSWORD: ECTqm4Mp\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nballoon = []\n\nwhile True:\n    num = input()\n    if num == \"-1\":\n        break\n    balloon.append(int(num))\nballoon.sort()\n\nfor i in balloon[-3:]:\n    print(f'- {i}')\n"
+  },
+  {
+    "User ID": "6887034",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:02:09+00:00",
+    "Code": "'''\n/**\nUSERID: 6887034\nPASSWORD: Uj6Gg26Y\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\ntotal = []\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    total.append(n)\n\ntotal.sort(reverse=True)\nprint(f\"- {total[2]}\")\nprint(f\"- {total[1]}\")\nprint(f\"- {total[0]}\")"
+  },
+  {
+    "User ID": "6887035",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:03:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887035\nPASSWORD: 6cRyKwZU\nEXERCISEID: itds120-cp2-q4\n */\n'''\nA = []\n\n\nwhile True :\n    a = input()\n    if a == '-1' :\n        break\n    else :\n        a = int(a)\n        A.append(a)\n\nA.sort()\n\nprint('- '+str(A[-3]))\nprint('- '+str(A[-2]))\nprint('- '+str(A[-1]))\n\n"
+  },
+  {
+    "User ID": "6887036",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T09:25:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887036\nPASSWORD: HEqzwF44\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nn_list = []\n\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    n_list.append(n)\n\n"
+  },
+  {
+    "User ID": "6887037",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:45:14+00:00",
+    "Code": "'''\n/**\nUSERID: 6887037\nPASSWORD: UKaRVZsY\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\nwhile True:\n    x = int(input())\n    if x == -1 :\n        break\n    A.append(x)\n\nA.sort()\nprint('-',A[-3])\nprint('-',A[-2])\nprint('-',A[-1])"
+  },
+  {
+    "User ID": "6887038",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T10:05:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887038\nPASSWORD: jqaZBeMa\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\n\nwhile True :\n    n = int(input())\n    if n == -1:\n        break\n    list.sort(n)\n        print(list)\n        \n\n"
+  },
+  {
+    "User ID": "6887039",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:51:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887039\nPASSWORD: N32dkX91\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nwinner = []\nS = []\n\nwhile True:\n    x = int(input())\n    if x==-1:\n        break\n    winner.append(x)\nwinner.sort(reverse = True) # max to min\n\nwinner = winner[0:3]\nwinner.sort() #min to max\n\nfor v in winner:\n    print(f'- {v}')"
+  },
+  {
+    "User ID": "6887040",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:01:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887040\nPASSWORD: 7GyNRWdw\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nscore = []\nwhile True :\n    num = int(input())\n    if num == -1 :\n        break\n    else :\n        score.append(int(num))\n\nscore.sort()\n\nfor i in score[-3:]:\n    print(f'- {i}')\n\n#print(f'-{x}')\n#print(f'-{y}')\n#print(f'-{z}')"
+  },
+  {
+    "User ID": "6887041",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:09:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887041\nPASSWORD: r6awaW4A\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlistx = []\n\nwhile True :\n    x = input()\n    if x == '-1':\n        break\n    else :\n        x = int(x)\n        listx.append(x)\n\nlistx.sort(reverse=True)\n\nprint(f'- {listx[2]}')\nprint(f'- {listx[1]}')\nprint(f'- {listx[0]}')"
+  },
+  {
+    "User ID": "6887042",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:52:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887042\nPASSWORD: vUN5FWVj\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nscore = []\nwhile True:\n    x = int(input())\n    if x == -1:\n        break\n    else:\n        score.append(x)\n\nscore.sort(reverse = True)\n\nprint(f'- {score[2]}')\nprint(f'- {score[1]}')\nprint(f'- {score[0]}')\n"
+  },
+  {
+    "User ID": "6887043",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:58:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887043\nPASSWORD: ZwDQjXFm\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist1 = []\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    list1.append(n)\nlist1.sort()\n\nx = 0\ny = 0\nz = 0\nfor i in list1:\n    x = list1[-3]\n    y = list1[-2]\n    z = list1[-1]\nprint(f'- {x}')\nprint(f'- {y}')\nprint(f'- {z}')\n\n    \n"
+  },
+  {
+    "User ID": "6887044",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T09:29:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887044\nPASSWORD: 3RBWDn6B\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nA=[]\nwhile True:\n    n=input()\n    if n=='-1':\n        break\n    A.append(n)\n\nA.sort()\n\nfor i in A:\n    print(A[-3:])\n\n"
+  },
+  {
+    "User ID": "6887045",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T09:52:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887045\nPASSWORD: mHDyCep4\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\nwhile True:\n    n = int(input())\n    if n != '-1':\n        list.append(n)\n    else:\n        break\nlist.sort()\n\n\n"
+  },
+  {
+    "User ID": "6887047",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:48:12+00:00",
+    "Code": "'''\n/**\nUSERID: 6887047\nPASSWORD: NhBDb2u4\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nscore = []\nwhile True :\n    n = int(input())\n    if n == -1 :\n        break\n    score.append(n)\nscore.sort()\nfor i in range (3,0,-1) :\n    print(f'- {score[-i]}')\n"
+  },
+  {
+    "User ID": "6887048",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T09:33:38+00:00",
+    "Code": "'''\n/**\nUSERID: 6887048\nPASSWORD: CpQpYFMK\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx = int(input())\ny = int(input())\nz = int(input())\nn = int(input())\n\nfor i in range(n):\n    num_team = int(input())\n    if num_team < 0 :\n        break\n\n    print(num_team)    \n\n"
+  },
+  {
+    "User ID": "6887049",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:52:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887049\nPASSWORD: ZvyV7W6M\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nscore=[]\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    score.append(n)\n\nscore.sort()\n\ntop= score[-3:]\nfor i in top:\n    print(f'- {i}')"
+  },
+  {
+    "User ID": "6887050",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T10:05:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887050\nPASSWORD: pKU7ZKwn\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\nwhile True:\n    n = input()\n    if n == \"q\":\n        break\n    A = sorted.A\nB =[]\nfor i in A:\n    if i not in B:\n        B.append(i)\nfor j in B:\n    count = 0\n    for i in A:\n        if j == i:\n            count =+1\n    print(\"-\",(count))\n\n"
+  },
+  {
+    "User ID": "6887051",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:44:19+00:00",
+    "Code": "'''\n/**\nUSERID: 6887051\nPASSWORD: GHNdnRPd\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlistballoon = []\nk = 0\nwhile True:\n    user = int(input())\n    if user >= 4:\n        listballoon.append(user)\n    elif user == 1:\n        listballoon.append(1)\n    elif user == -1 :\n        break\n    \nlistballoon.sort()\n\nfor i in range(3,0,-1):\n    print(f'- {listballoon[-i]}')\n\n\n"
+  },
+  {
+    "User ID": "6887052",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:01:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887052\nPASSWORD: SWv2qvzd\nEXERCISEID: itds120-cp2-q4\n */\n'''\nx = int(input())\nlist1 = []\nlistX = []\n\nwhile x!= -1:\n    list1.append(x)\n    x =int(input())\n\nif x == -1:\n    list1.sort()\n\n\nprint('-',list1[-3])\nprint('-',list1[-2])\nprint('-',list1[-1])\n\n"
+  },
+  {
+    "User ID": "6887053",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:50:16+00:00",
+    "Code": "'''\n/**\nUSERID: 6887053\nPASSWORD: vvdFs955\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nballon = []\nyay = []\nwhile True :\n    n = int(input())\n    if n == -1 :\n        break\n    else :\n        ballon.append(n)\n\nballon.sort(reverse=True)\nfor i in range (len(ballon[0:3])) :\n    yay.append(ballon[i])\nfor j in range (len(yay)) :\n    yay.sort()\n    print(f'- {yay[j]}')\n\n    \n\n"
+  },
+  {
+    "User ID": "6887054",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:35:02+00:00",
+    "Code": "'''\n/**\nUSERID: 6887054\nPASSWORD: 5PR4WwHA\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\nwhile True:\n    n = int(input())\n    if n != -1 :\n        list.append(n)\n    else :\n        break\nfor i in list :\n    if i == 0 :\n        list.remove(i)\n\nlist.sort(reverse=True)\n\nprint(f\"- {list[2]}\")\nprint(f\"- {list[1]}\")\nprint(f\"- {list[0]}\")\n\n"
+  },
+  {
+    "User ID": "6887056",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/1 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: TIMEOUT",
+    "Submission Time": "2025-09-22T09:51:20+00:00",
+    "Code": "'''\n/**\nUSERID: 6887056\nPASSWORD: e8W9bbNK\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nnumber = int(input())\n\nscore = []\nwhile True:\n    if number == \"-1\":\n        break\nfor i in range(number):\n    score.append(number)\n    score.sort()\n    print(score)\n        \n    "
+  },
+  {
+    "User ID": "6887057",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T10:05:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887057\nPASSWORD: Ubh4eDKd\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist = []\nwhile True:\n    x = int(input())\n    if x == -1:\n        break\n    for i in range(x):\n        if i <= x:\n         list.append(i)\n         list.sort\n         print(list[i])\n\n\n\n\n\n\n     \n   \n\n"
+  },
+  {
+    "User ID": "6887058",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:04:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887058\nPASSWORD: ds4EdVUw\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nnums = []\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    nums.append(n)\n\nnums.sort(reverse=True)\n\nfor i in range(2, -1, -1):\n    print(f'- {nums[i]}')"
+  },
+  {
+    "User ID": "6887059",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T09:54:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887059\nPASSWORD: XTGJevfN\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n\n"
+  },
+  {
+    "User ID": "6887060",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:01:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887060\nPASSWORD: jFy2HDUh\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nA=[]\n\n\nwhile True:\n    n=int(input())\n    if n==-1:\n        break\n    A.append(n)\n\nA.sort()\n\n\n\nprint(\"- \"+str(A[len(A)-3]))\nprint(\"- \"+str(A[len(A)-2]))\nprint(\"- \"+str(A[len(A)-1]))"
+  },
+  {
+    "User ID": "6887061",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:58:47+00:00",
+    "Code": "'''\n/**\nUSERID: 6887061\nPASSWORD: Yhw8Ve7c\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n# find fisrt max value\n\nscore = []\n\nwhile True :\n    n = int(input())\n    if n == (-1) :\n        break\n    else :\n        score.append(n)\n\nscore.sort()\nwinner = score[-3 : ]\n\nfor item in winner :\n    print(f'- {item}')\n    \n\n\n"
+  },
+  {
+    "User ID": "6887062",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:27:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887062\nPASSWORD: uQptcGZk\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nTeam=[]\nwhile True:\n    n=int(input())\n    if n==-1:\n        break\n    Team.append(n)\nTeam.sort()\nle=len(Team)\nprint('-',Team[le-3])\nprint('-',Team[le-2])\nprint('-',Team[le-1])"
+  },
+  {
+    "User ID": "6887063",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T09:46:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887063\nPASSWORD: ePMDK9ed\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\nB = []\nwhile True:\n    n = (input())\n    if n == '-1':\n        break\nA.append(n)\nprint(A)"
+  },
+  {
+    "User ID": "6887064",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:49:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887064\nPASSWORD: Nu7MRUue\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n#ให้สมมติว่าไม่มีทีมที่ได้รางวัลทีมไหนที่ได้จำนวนลูกโป่งเท่ากัน\nballon = []\nwhile True:\n    score = int(input())\n    if score == -1:\n        break\n    ballon.append(score)\nballon.sort()\nfor i in range(-3,0):\n    print('-',ballon[i])\n    \n\n"
+  },
+  {
+    "User ID": "6887065",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:48:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887065\nPASSWORD: 4suaUgVC\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nscore = []\nwhile True :\n    s = int(input())\n    if s == -1 :\n        break\n    else :\n        score.append(s)\n\nscore.sort()\n\nfor i in score[-3:] :\n    print('-' , i)\n\n\n\n"
+  },
+  {
+    "User ID": "6887066",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:05:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887066\nPASSWORD: ndCZw2q5\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na=[]\nb=[]\nx=0\nwhile True:\n    n=int(input())\n    if n==-1:\n        break\n    else:\n        a.append(n)\na.sort(reverse=True)\nprint(f'- {a[2]}')\nprint(f'- {a[1]}')\nprint(f'- {a[0]}')\n"
+  },
+  {
+    "User ID": "6887067",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:22:43+00:00",
+    "Code": "'''\n/**\nUSERID: 6887067\nPASSWORD: GmHEbPFD\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nnums = []\n\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    nums.append(n)\n    nums.sort(reverse=True)\nprint(f'- {nums[2]}')\nprint(f'- {nums[1]}')\nprint(f'- {nums[0]}')\n\n\n\n"
+  },
+  {
+    "User ID": "6887068",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T10:05:25+00:00",
+    "Code": "'''\n/**\nUSERID: 6887068\nPASSWORD: KaVWRfm8\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nfirst = 0\nsecond = 0\nthird = 0\nb = int(input())\nlistb = [] \n\nwhile True:\n    if b == -1 :\n        break\n    listb.append(b)\n    b = int(input())\n\nlistb.sort()   \nlistb.pop(0)\nlistb.pop(1)\nlistb.pop(2)\nprint(listb)\n\n    "
+  },
+  {
+    "User ID": "6887069",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:55:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887069\nPASSWORD: rEUBPK4q\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nscore = []\nwhile True :\n    n = int(input())\n    if n == -1 :\n        break\n    score.append(n)\nscore.sort(reverse =True)\nprint(\"-\",*score[2:3])\nprint(\"-\",*score[1:2])\nprint(\"-\",*score[0:1])\n"
+  },
+  {
+    "User ID": "6887070",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:12:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887070\nPASSWORD: fgHeNgy6\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\na=[]\nc=0\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    a.append(n)\na.sort()\nc =+ 1\nprint(\"-\", a[c-4])\nprint(\"-\", a[c-3])\nprint(\"-\", a[c-2])\n"
+  },
+  {
+    "User ID": "6887072",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "3/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: PASS, CASE 2: FAIL, CASE 3: FAIL, CASE 4: PASS, CASE 5: FAIL, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:34:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887072\nPASSWORD: 6YsHBcXE\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist1 = []\n\nwhile True:\n    sc = input()\n    if sc == \"-1\":\n        break\n    list1.append(sc)\n    list1.sort()\n\ncounted = []\n\nfor i in range(3,len(list1)):\n    sc = list1[i]\n    if sc not in counted:\n        count = 0\n        for j in range(3,len(list1)):\n            if list1[j] == sc:\n                count += 0\n        counted.append(sc)\n        print(f\"- {sc}\")"
+  },
+  {
+    "User ID": "6887073",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:29:28+00:00",
+    "Code": "'''\n/**\nUSERID: 6887073\nPASSWORD: cJgvepGP\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nc =[]\nr = []\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    else :\n        c.append(n)\nc.sort()\nx = c[-3]\ny = c[-2]\nz = c[-1]\nr.append(x)\nr.append(y)\nr.append(z)\nfor i in r:\n    print(f'- {i}')\nprint()\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887074",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:06:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887074\nPASSWORD: knMacpcR\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist_A = []\nwhile True :\n    n = int(input())\n    if n == -1 :\n        break\n    list_A.append(int(n))\nlist_A.sort()\nprint(f'-',list_A[-3])\nprint(f'-',list_A[-2])\nprint(f'-',list_A[-1])\n"
+  },
+  {
+    "User ID": "6887075",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:52:27+00:00",
+    "Code": "'''\n/**\nUSERID: 6887075\nPASSWORD: XS7yTkz6\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\ns = []\n\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    s.append(n)\ns.sort(reverse=True)\nprint(f'- {s[2]}')\nprint(f'- {s[1]}')\nprint(f'- {s[0]}')"
+  },
+  {
+    "User ID": "6887076",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:45:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887076\nPASSWORD: 4DrAQNHN\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist=[]\nwin=0\ns=0\nt=0\n\nwhile True:\n    n=int(input())\n    if n==-1:\n        break\n    list.append(n)\n\nlist.sort()\n\nfor i in list:\n    if max(list):\n        win=i\nlist.remove(max(list))\n\nfor i in list:\n    if max(list):\n        s=i\nlist.remove(max(list))\n\nfor i in list:\n    if max(list):\n        t=i\nlist.remove(max(list))\n\nprint('-',t)\nprint('-',s)\nprint('-',win)\n\n"
+  },
+  {
+    "User ID": "6887077",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:03:24+00:00",
+    "Code": "'''\n/**\nUSERID: 6887077\nPASSWORD: tUHnPCUB\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist=[]\nwhile True:\n    n=int(input())\n    if n==-1:\n        break\n    list.append(n)\n\nlist.sort()\n\nlist2=[]\nlist2.append(list[-3])\nlist2.append(list[-2])\nlist2.append(list[-1])\n\nprint(f'- {list2[0]}')\nprint(f'- {list2[1]}')\nprint(f'- {list2[2]}')\n\n#PASS\n    \n"
+  },
+  {
+    "User ID": "6887078",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T10:03:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887078\nPASSWORD: KE2gpMTR\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nn = []\nwhile True:\n    x = int(input())\n    if x == -1:\n        break\n    n.append(float(x))\n"
+  },
+  {
+    "User ID": "6887079",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T09:37:21+00:00",
+    "Code": "'''\n/**\nUSERID: 6887079\nPASSWORD: wqUd59F9\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nreward_list = []\n\nwhile True:\n    reward = input()\n    if reward == \" -1 \"\n        break\n    reward_list.append(reward)\n\nreward_list.sort()\nreward_count = []\nfor i in reward_list:\n    if i not in reward_count:\n        count = 0\n        for j in reward_list:\n            if i == j:\n                count+=1\n        reward_count.append(i)\n        print(f\"{i} = {count}\", end = \" \")\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887080",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T10:04:17+00:00",
+    "Code": "'''\n/**\nUSERID: 6887080\nPASSWORD: pBU7v24R\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nball = []\n\nwhile True :\n    b = int(input())\n    if b == '-1':\n        break\n    ball.append(b)\n\nteam = ball.sort(reverse=True)\n\nprint(team[2])\nprint(team[1])\nprint(team[0])\n\n\n\n"
+  },
+  {
+    "User ID": "6887081",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:24:46+00:00",
+    "Code": "'''\n/**\nUSERID: 6887081\nPASSWORD: J6rqjvAj\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nB=[]\n\n\nwhile True:\n    a=float(input())\n    if a==-1:\n        break\n    B.append(a)\nB.sort()\n\nZ=int(B.pop())\nY=int(B.pop())\nX=int(B.pop())\n\n\n\n\nprint(f'- {X}')\nprint(f'- {Y}')\nprint(f'- {Z}')\n"
+  },
+  {
+    "User ID": "6887082",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T10:05:33+00:00",
+    "Code": "'''\n/**\nUSERID: 6887082\nPASSWORD: GPC6Gd6y\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nnum=[]\ntotal=0\n\nwhile True:\n    n==input()\n    if n=='-1':\n        break\n    num.append(n)\n\nB=[]\nfor i in num:\n    num.sort()\n    print(B)\n    \n\n#for i in num:\n #   total=total+float(i)\n\n#    if i not in list1:\n #       sum=0\n  #      for j in list:\n   #         if j==i:\n    #            sum+=1\n     #   print(sum)\n\n\n"
+  },
+  {
+    "User ID": "6887084",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T08:56:11+00:00",
+    "Code": "'''\n/**\nUSERID: 6887084\nPASSWORD: RAwyg82b\nEXERCISEID: itds120-cp2-q4\n */\n'''\ni=int(input())\n\nfor i in range(100):\n    X=int(input())\n    Y=int(input())\n    Z=int(input())\n    if i <0:\n        break \n    elif i >=0:\n        print(X,Y,Z)\n    \n\n# YOUR CODE GOES HERE\n\n\n"
+  },
+  {
+    "User ID": "6887085",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/1 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: TIMEOUT",
+    "Submission Time": "2025-09-22T09:31:59+00:00",
+    "Code": "'''\n/**\nUSERID: 6887085\nPASSWORD: FTnqMKTW\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nX = int(input())\nY = int(input())\nZ = int(input())\n\n\nnum =[]\n\n\nwhile True:\n    for i in range(X):\n        if X == -1 or Y == -1 or Z == -1:\n            break\n        \"\"\"for i in range():\n            if X,Y,Z >=\"\"\"\n        num.sort()\n    print()\n\n"
+  },
+  {
+    "User ID": "6887086",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:56:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887086\nPASSWORD: 6a94rayU\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\nx = []\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    list.append(n)\nlist.sort()\nfor i in range(len(list)-3,len(list),+1):\n    print('- ',end='')\n    print(list[int(i)])\n    "
+  },
+  {
+    "User ID": "6887087",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T09:48:15+00:00",
+    "Code": "'''\n/**\nUSERID: 6887087\nPASSWORD: Wb8TvXfV\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE+\n\n\n\n\n\n# list = []\n\n# while True :\n#     n = input()\n#     if n != \"-1\" :\n#         list.append(n)\n#     else :\n#         list.sort()\n#         continue\n# print(list)\n        \n\nn = input()\na = 0\nlist = []\n\nwhile n != \"-1\" :\n    if n != \"-1\" :\n        list.append(n)\n    else :\n        list.sort()\n        continue\n    n = input()\n\nprint(list)\nprint(list)\nprint(list)"
+  },
+  {
+    "User ID": "6887088",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T09:52:32+00:00",
+    "Code": "'''\n/**\nUSERID: 6887088\nPASSWORD: Mc17C1QA\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx=input()\nwhile not x==-1:\n    x=input()\n\n"
+  },
+  {
+    "User ID": "6887089",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:36:58+00:00",
+    "Code": "'''\n/**\nUSERID: 6887089\nPASSWORD: Ay5q2fNq\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nA = []\n\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    else:\n        A.append(n)\n        A.sort()\n\nmax = 0\nfor i in A:\n    if i > max:\n        max = i\n        #print('- ' + str(A[0:3]), end=' ')\n        #print('- ' + str(max))\n    #print()\n\nfor i in A[(len(A)-3):(len(A))]:\n    print('- ' + str(i))"
+  },
+  {
+    "User ID": "6887090",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:25:53+00:00",
+    "Code": "'''\n/**\nUSERID: 6887090\nPASSWORD: 6S64XaeD\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\nn = (int(input()))\nlist.append(n)\nwhile n != -1 :\n    n = (int(input()))\n    list.append(n)\n    if n == '-1':\n        break\n\nlist.sort()\nt = len(list)\n\n\nfor i in list[t-3:]:\n    print('-' ,i)\n\n\n\n"
+  },
+  {
+    "User ID": "6887092",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:58:03+00:00",
+    "Code": "'''\n/**\nUSERID: 6887092\nPASSWORD: 3gGNYASs\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist = []\nwhile True:\n    ballon_num = int(input())\n\n    if ballon_num == -1:\n        break\n    \n    else:\n        list.append(ballon_num)\n\nlist.sort()\n\nFinal_list = []\nfor i in range(-1,-4,-1):\n    Final_list.append(list[i])\n\n'''\nprint(list)\nprint(Final_list)'''\n\nfor i in range(-1,-4,-1):\n    print(\"- \" + str(Final_list[i]))\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887094",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:54:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887094\nPASSWORD: RYtfwYrE\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nlist1 = []\n\nwhile True :\n    n = int(input())\n\n    if n == -1 :\n        break\n\n    list1.append(n)\n\nlist1.sort()\n\nfor i in list1[-3:] :\n    print(f'- {i}')"
+  },
+  {
+    "User ID": "6887095",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:01:45+00:00",
+    "Code": "'''\n/**\nUSERID: 6887095\nPASSWORD: hzg9cEsX\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na= []\nwhile True :\n    x = int(input())\n    if x == -1 :\n        break\n    a.append(x)\n\na.sort()\nn = len(a)\nfor i in range(2,-1,-1):\n    print(f'- {a[-1-i]}')\n"
+  },
+  {
+    "User ID": "6887096",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:53:31+00:00",
+    "Code": "'''\n/**\nUSERID: 6887096\nPASSWORD: dcr2VnWR\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist1=[]\nwhile True:\n    x=int(input())\n    if x!=-1:\n        list1.append(x)\n    else:\n        break\nlist1.sort()\n\nfor i in list1[-3:]:\n    print(f'- {i}')\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887097",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:25:04+00:00",
+    "Code": "'''\n/**\nUSERID: 6887097\nPASSWORD: nJTEZkNu\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nl = [] \nwhile True:\n    j = int(input())\n    if j == -1:\n        break\n    l.append(j)\nl.sort(reverse=True)\n\nprint(f'- {l[2]}')\nprint(f'- {l[1]}')\nprint(f'- {l[0]}')\n"
+  },
+  {
+    "User ID": "6887099",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T10:01:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887099\nPASSWORD: PKgyqCaX\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx = int(input())\ni = int(x)\nfor i in x :\n    if x == -1:\n        break\n\nprint(x+i)\n"
+  },
+  {
+    "User ID": "6887100",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:00:07+00:00",
+    "Code": "'''\n/**\nUSERID: 6887100\nPASSWORD: PSkAQqAK\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist1=[]\nwhile True:\n    x=int(input())\n    if x==-1:\n        list1.sort()\n        break\n    else:\n        list1.append(x)\nfor i in list1[-3:]:  \n    print(\"- \"+str(i))\n\n"
+  },
+  {
+    "User ID": "6887101",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:52:36+00:00",
+    "Code": "'''\n/**\nUSERID: 6887101\nPASSWORD: NA11KcJe\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\na = []\n\n\nwhile True :\n    x = int(input())\n    if x == -1 :\n        break\n    a.append(x)\n\na.sort()\nprint(f'- {a[(len(a))-3]}')\nprint(f'- {a[(len(a))-2]}')\nprint(f'- {a[(len(a))-1]}')\n"
+  },
+  {
+    "User ID": "6887103",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:38:00+00:00",
+    "Code": "'''\n/**\nUSERID: 6887103\nPASSWORD: Hc9D5vbs\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\ns = []\nwhile True:\n    x = int(input())\n    if x == -1:\n        break\n    s.append(x)\n\ns.sort()\nprint('-',s[-3])\nprint('-',s[-2])\nprint('-',s[-1])\n    \n\n\n"
+  },
+  {
+    "User ID": "6887104",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T09:47:40+00:00",
+    "Code": "'''\n/**\nUSERID: 6887104\nPASSWORD: 5UpB5ryQ\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nt=0\nc=0\nwhile True:\n    x = int(intput())\n    if x == '-1'\n        break\n    try:\n        a = int(x)\n        if 0 <= a<=100\n            t - t+a\n            c = c+1\n        except ValurError:\n            continue\nif c > 0\n    n = round(t/c,2)\n    print(f\"{n}\")\nelse:\n    print()\n\n"
+  },
+  {
+    "User ID": "6887105",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T10:05:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887105\nPASSWORD: ZgaGtGpU\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\nwhile True :\n    n = int(input())\n    if n == -1 :\n        break\nk = 1\nlist = []\nfor i in range(n) :\n    list1 = []\n    for j in range(k) :\n        p = int(input())\n        list1.append(p)\n    list.append(list1)\n\nfor i in range(n) :\n    max = list[i][0]\n    if list1[i][j] > max :\n        max = list[i]\n    print(max)\n    max2 = max\n    if list[i][j] > max2 :\n        max2 = list[i][j]\n    print(max2)\n    max3 = max2\n    if list[i][j] > max3 :\n        max3 = list[i][j]\n    print(max3)\n\n\n    \n\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887106",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T10:02:34+00:00",
+    "Code": "'''\n/**\nUSERID: 6887106\nPASSWORD: 5X5Gu1qy\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist=[]\ncheck=[]\n\nwhile True:\n    i=input()\n    if i !='-1':\n        list.append(i)\n    else:\n        list.sort()\n        break"
+  },
+  {
+    "User ID": "6887107",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T09:24:13+00:00",
+    "Code": "'''\n/**\nUSERID: 6887107\nPASSWORD: Z9CUHvBP\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\nx = int(input()).split()\nk=0\n\nwhile k < len(x) :\n    x = input()\n    if i > lem(x) :\n        len(x)==i\n    print(i) \n   \n    "
+  },
+  {
+    "User ID": "6887108",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:05:08+00:00",
+    "Code": "'''\n/**\nUSERID: 6887108\nPASSWORD: MhBRskjX\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na=[]\nk=-1\nwhile True:\n    x=int(input())\n    if x==-1:\n        break\n    a.append(x)    \na.sort()\nb=len(a)\nprint('-',a[b-3])\nprint('-',a[b-2])   \nprint('-',a[b-1])\n\n"
+  },
+  {
+    "User ID": "6887109",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T10:03:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887109\nPASSWORD: gR4EGQKU\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nteam = []\nrun = True\n\nwhile run :\n    n = input()\n    if n == '-1' :\n        run = False\n    else :\n        n = int(n)\n        team.append(n)\n\nteam.sort()\nresult = []\nresult.extend(team[-3:])\n\nx = result[0]\ny = result[1]\nz = result[2]\n\n\nprint(f'- {x}')\nprint(f'- {y}')\nprint(f'- {z}')\n"
+  },
+  {
+    "User ID": "6887111",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:19:54+00:00",
+    "Code": "'''\n/**\nUSERID:6887111\nPASSWORD: m8QT4nnc\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlistA= []\n\nwhile True :\n    x = input()\n    if x == '-1' :\n        break\n    x = int(x)\n    listA.append(x)\n\nlistA.sort()\nprint(f'- {listA[-3]}')\nprint(f'- {listA[-2]}')\nprint(f'- {listA[-1]}')"
+  },
+  {
+    "User ID": "6887113",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:33:01+00:00",
+    "Code": "'''\n/**\nUSERID: 6887113\nPASSWORD: X3Jam6eG\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\na = [ ]\nwhile True:\n    n = int(input())\n    if n == -1:\n        break\n    else:\n        a.append(n)\n\na.sort()\n\nprint(f'- {a[-3]}')\nprint(f'- {a[-2]}')\nprint(f'- {a[-1]}')"
+  },
+  {
+    "User ID": "6887114",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:10:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887114\nPASSWORD: vyyXW7B6\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\ncount = 0\nteam = []\nwhile True:\n    balloon = int(input())\n    if balloon == -1:\n        break\n    team.append(balloon)\nmax_bln = 0\nm = -1\nfor i in range(len(team)):\n    if team[i] > max_bln:\n        max_bln = team[i]   \n    elif team[i] < max_bln:\n        continue\nz = max_bln\nteam.remove(max_bln)\n\nz = max_bln\nsec_bln = 0\nn = -1\nfor i in range(len(team)):\n    if team[i] > sec_bln:\n        sec_bln = team[i]\n        \n    elif team[i] < sec_bln:\n        continue\ny = sec_bln\nteam.remove(sec_bln)\n\nth_bln = 0\nfor i in range(len(team)):\n    if team[i] > th_bln:\n        th_bln = team[i]\n    elif team[i] < th_bln:\n        continue\nx = th_bln\nteam.remove(th_bln)\nprint(f'- {x}')\nprint(f'- {y}')\nprint(f'- {z}')\n"
+  },
+  {
+    "User ID": "6887115",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:53:50+00:00",
+    "Code": "'''\n/**\nUSERID: 6887115\nPASSWORD: Pg5erMKh\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\na = []\nb = int(input())\na.append(b)\ncount = 1\n\nwhile True:\n    b = int(input())\n    a.append(b)\n    count += 1\n    if b == -1:\n        break\na.sort()\nprint('- ' + str(a[count-3]))\nprint('- ' + str(a[count-2]))\nprint('- ' + str(a[count-1]))"
+  },
+  {
+    "User ID": "6887116",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: FAIL, CASE 2: FAIL, CASE 3: FAIL, CASE 4: FAIL, CASE 5: FAIL, CASE 6: FAIL",
+    "Submission Time": "2025-09-22T09:54:18+00:00",
+    "Code": "'''\n/**\nUSERID: 6887116\nPASSWORD: rTBhyqmk\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\n\n\n"
+  },
+  {
+    "User ID": "6887117",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "0/6 passed",
+    "All Passed": false,
+    "Test Cases": "CASE 1: ERROR, CASE 2: ERROR, CASE 3: ERROR, CASE 4: ERROR, CASE 5: ERROR, CASE 6: ERROR",
+    "Submission Time": "2025-09-22T10:01:37+00:00",
+    "Code": "'''\n/**\nUSERID: 6887117\nPASSWORD: v7YE3617\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nb = []\nwhile True:\n    x = int(input())\n    if n == -1:\n        break\n    b.append(x)\n    b.sort()\n\nfor i in b:\n    if list(b[i])\n\n\n\n\n"
+  },
+  {
+    "User ID": "6887118",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:56:48+00:00",
+    "Code": "'''\n/**\nUSERID: 6887118\nPASSWORD: pPqavJtc\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nlist1=[]\nwhile True:\n    n=int(input())\n    if n==-1:\n        break\n    list1.append(n)\n\nlist1.sort()\n\nwin3=list1[-3:]\n\nfor i in win3:\n    print('- '+str(i))\n    \n\n\n\n    "
+  },
+  {
+    "User ID": "6887119",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T08:46:42+00:00",
+    "Code": "'''\n/**\nUSERID: 6887119\nPASSWORD: cvf7671U\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\n# YOUR CODE GOES HERE\nx=int(input())\nteam=[]\nwhile x!=-1:\n    team.append(x)\n    x=int(input())\nteam.sort()\nt=[]\nfor i in range(-1,-4,-1):\n    t.append(team[i])\nt.sort()\nfor i in t:\n    print('-', i)\n\n\n"
+  },
+  {
+    "User ID": "6887120",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T09:39:22+00:00",
+    "Code": "'''\n/**\nUSERID: 6887120\nPASSWORD: 1BS2pU1T\nEXERCISEID: itds120-cp2-q4\n */\n'''\n\nx = 0\ny = 0\nz = 0\n\nlis = []\n\nwhile True :\n    n = int(input())\n    if n == -1:\n        break\n    else :\n        lis.append(n)\n        continue\n\nlis.sort()\nx = lis[-1]\ny = lis[-2]\nz = lis[-3]\nprint(f\"- {z}\")\nprint(f\"- {y}\")\nprint(f\"- {x}\")\n    "
+  },
+  {
+    "User ID": "999",
+    "Exercise ID": "itds120-cp2-q4",
+    "Test Results": "6/6 passed",
+    "All Passed": true,
+    "Test Cases": "CASE 1: PASS, CASE 2: PASS, CASE 3: PASS, CASE 4: PASS, CASE 5: PASS, CASE 6: PASS",
+    "Submission Time": "2025-09-22T04:59:20+00:00",
+    "Code": "'''\r\n/**\r\nUSERID: 999\r\nPASSWORD: 424242\r\nEXERCISEID: itds120-cp2-q4\r\n */\r\n'''\r\n\r\n\r\nballoons = []\r\nwhile True:\r\n    n = int(input().strip())\r\n    if n == -1:\r\n        break\r\n    balloons.append(n)\r\n\r\nballoons.sort()\r\n\r\nprint(f\"- {balloons[-3]}\")\r\nprint(f\"- {balloons[-2]}\")\r\nprint(f\"- {balloons[-1]}\")"
+  }
+]
