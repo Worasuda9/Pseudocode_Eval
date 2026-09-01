@@ -1,0 +1,3235 @@
+[
+    {
+        "User ID": "6887001",
+        "Pseudocode": [
+            "get text",
+            "upper_text = text converted to uppercase",
+            "text = split text by whitespace",
+            "initialize text0 to empty text",
+            "go through each ch in text",
+            "    if text at index 0 is upper_text",
+            "        text0 += ch",
+            "display text0"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"Enter text: \")",
+            "upper_text = text.upper()",
+            "text = text.split()",
+            "",
+            "text0 = \"\"",
+            "for ch in text:",
+            "    if ch == upper_text:",
+            "        text0 += ch",
+            "",
+            "print(text0)"
+        ]
+    },
+    {
+        "User ID": "6887003",
+        "Pseudocode": [
+            "get txt  ",
+            "txt = trim whitespace from txt  ",
+            "txt = split txt by space  ",
+            "initialize lst to empty list  ",
+            "go through each t in txt  ",
+            "    add t to lst  ",
+            "initialize n_lst to empty list  ",
+            "go through each n in lst  ",
+            "    if n from index 0 to 1 is uppercase and n from index 1 to length of n is lowercase  ",
+            "        add n to n_lst  ",
+            "initialize real_lst to empty list  ",
+            "go through each i in n_lst  ",
+            "    if i is alphabetic or i at last index is .  ",
+            "        add i to real_lst  ",
+            "display real_lst"
+        ],
+        "Pseudocode to Code": [
+            "txt = input()  ",
+            "txt = txt.strip()  ",
+            "txt = txt.split()  ",
+            "lst = []  ",
+            "for t in txt:  ",
+            "    lst.append(t)  ",
+            "n_lst = []  ",
+            "for n in lst:  ",
+            "    if n[0].isupper() and n[1:].islower():  ",
+            "        n_lst.append(n)  ",
+            "real_lst = []  ",
+            "for i in n_lst:  ",
+            "    if i.isalpha() or i[-1] == '.':  ",
+            "        real_lst.append(i)  ",
+            "print(real_lst)"
+        ]
+    },
+    {
+        "User ID": "6887004",
+        "Pseudocode": [
+            "get n  ",
+            "words = split n  ",
+            "wordscl = list of items in words where each item is combined from alphabetic characters in item  ",
+            "display wordscl"
+        ],
+        "Pseudocode to Code": [
+            "n = input()  ",
+            "words = n.split()  ",
+            "wordscl = [''.join(filter(str.isalpha, item)) for item in words]  ",
+            "print(wordscl)"
+        ]
+    },
+    {
+        "User ID": "6887005",
+        "Pseudocode": [
+            "get txt  ",
+            "txt = trim whitespace from txt  ",
+            "txt = split txt by whitespace  ",
+            "initialize lst to empty list  ",
+            "",
+            "go through each i in txt  ",
+            "    if i is alphabetic  ",
+            "         add lst to lst  ",
+            "    otherwise  ",
+            "        continue  ",
+            "",
+            "display lst  ",
+            "",
+            "initialize total to empty list  ",
+            "",
+            "repeat length of lst times using index x  ",
+            "    if x at index 0 is equal to x at index 0 converted to uppercase and x from index 1 to end is equal to x from index 1 to end converted to lowercase  ",
+            "        add lst to total  ",
+            "",
+            "initialize total to empty list  ",
+            "",
+            "go through each i in lst  ",
+            "    if x is equal to i at index 0 and i at index 0 is equal to i at index 0 converted to uppercase and i from index 1 to end is equal to i from index 1 to end converted to lowercase  ",
+            "        add x to total  ",
+            "",
+            "display total  ",
+            "",
+            "and i at index 0 converted to uppercase"
+        ],
+        "Pseudocode to Code": [
+            "txt = input()  ",
+            "txt = txt.strip()  ",
+            "txt = txt.split()  ",
+            "lst = []  ",
+            "",
+            "for i in txt:  ",
+            "    if i.isalpha():  ",
+            "        lst.append(i)  ",
+            "",
+            "print(lst)  ",
+            "",
+            "total = []  ",
+            "",
+            "for x in range(len(lst)):  ",
+            "    if lst[x][0] == lst[x][0].upper() and lst[x][1:] == lst[x][1:].lower():  ",
+            "        total.append(lst[x])  ",
+            "",
+            "total = []  ",
+            "",
+            "for i in lst:  ",
+            "    if i[0] == i[0].upper() and i[1:] == i[1:].lower():  ",
+            "        total.append(i)  ",
+            "",
+            "print(total)"
+        ]
+    },
+    {
+        "User ID": "6887006",
+        "Pseudocode": [
+            "get inputwords  ",
+            "trim whitespace from inputwords  ",
+            "split inputwords by space  ",
+            "display inputwords  ",
+            "initialize wordlist to empty list  ",
+            "go through each i in inputwords  ",
+            "    if i is alphabetic  ",
+            "        if i at index 0 is i at index 1 is uppercase  ",
+            "            add i at index 1 to wordlist  ",
+            "        otherwise if i at index 1 is i at index 0 is uppercase  ",
+            "            add i at index 0 to wordlist  ",
+            "display wordlist"
+        ],
+        "Pseudocode to Code": [
+            "inputwords = input()",
+            "inputwords = inputwords.strip()",
+            "inputwords = inputwords.split()",
+            "",
+            "print(inputwords)",
+            "",
+            "wordlist = []",
+            "",
+            "for i in inputwords:",
+            "    if i.isalpha():",
+            "        if i[0].isupper() and i[1].isupper():",
+            "            wordlist.append(i[1])",
+            "        elif i[0].isupper() and i[1].isupper() == False:",
+            "            wordlist.append(i[0])",
+            "",
+            "print(wordlist)"
+        ]
+    },
+    {
+        "User ID": "6887007",
+        "Pseudocode": [
+            "define function check with parameter x",
+            "if x from index 1 to end is alphabetic or (x from index 1 to second last is alphabetic and x at last index is .)",
+            "    upper = x at index 0 is uppercase",
+            "    lower = x from index 1 to end is lowercase",
+            "    return upper and lower",
+            "otherwise",
+            "    return False",
+            "",
+            "word = get input and trim whitespace from it",
+            "word = list of items in word where length of x is greater than 0",
+            "",
+            "resault = list of items in word where check is true for each item",
+            "display resault"
+        ],
+        "Pseudocode to Code": [
+            "def check(x):",
+            "    if (x[1:].isalpha() or (x[1:-1].isalpha() and x[-1] == '.')):",
+            "        upper = x[0].isupper()",
+            "        lower = x[1:].islower()",
+            "        return upper and lower",
+            "    else:",
+            "        return False",
+            "",
+            "word = input().strip()",
+            "word = [x for x in word.split() if len(x) > 0]",
+            "",
+            "result = [x for x in word if check(x)]",
+            "print(result)"
+        ]
+    },
+    {
+        "User ID": "6887008",
+        "Pseudocode": [
+            "get t  ",
+            "txt = split t  ",
+            "initialize new to empty list  ",
+            "initialize lst to empty list  ",
+            "initialize ans to empty list  ",
+            "go through each w in txt  ",
+            "    if w at index 0 is uppercase  ",
+            "        add w to new  ",
+            "go through each i in new  ",
+            "    if i is alphabetic or i at last index is .  ",
+            "        add i to lst  ",
+            "go through each j in lst  ",
+            "    if substring of j from index 1 to end is lowercase  ",
+            "        add j to ans  ",
+            "display ans"
+        ],
+        "Pseudocode to Code": [
+            "t = input()  ",
+            "txt = t.split()  ",
+            "new = []  ",
+            "lst = []  ",
+            "ans = []  ",
+            "",
+            "for w in txt:  ",
+            "    if w[0].isupper():  ",
+            "        new.append(w)  ",
+            "",
+            "for i in new:  ",
+            "    if i.isalpha() or i[-1] == '.':  ",
+            "        lst.append(i)  ",
+            "",
+            "for j in lst:  ",
+            "    if j[1:].islower():  ",
+            "        ans.append(j)  ",
+            "",
+            "print(ans)"
+        ]
+    },
+    {
+        "User ID": "6887009",
+        "Pseudocode": [
+            "get word  ",
+            "word = trim whitespace from word  ",
+            "splitword = split word by whitespace  ",
+            "initialize lst to empty list  ",
+            "go through each w in splitword  ",
+            "    if w at index 0 is uppercase or w from index 0 to 1 is lowercase or w is alphabetic  ",
+            "        add w to lst  ",
+            "    if w from index 1 to end is not equal to w is lowercase  ",
+            "         remove item from list  ",
+            "display lst"
+        ],
+        "Pseudocode to Code": [
+            "word = input(\"Enter a word: \")  ",
+            "word = word.strip()  ",
+            "splitword = word.split()  ",
+            "lst = []  ",
+            "",
+            "for w in splitword:  ",
+            "    if w[0].isupper() or w[0:1].islower() or w.isalpha():  ",
+            "        lst.append(w)  ",
+            "    if not w[1:].islower():  ",
+            "        lst.remove(w)  ",
+            "",
+            "print(lst)"
+        ]
+    },
+    {
+        "User ID": "6887010",
+        "Pseudocode": [
+            "get a  ",
+            "a = split a  ",
+            "display a"
+        ],
+        "Pseudocode to Code": [
+            "a = input(\"Enter a: \")  ",
+            "a = a.split()  ",
+            "print(a)"
+        ]
+    },
+    {
+        "User ID": "6887011",
+        "Pseudocode": [
+            "get text  ",
+            "set text to trim whitespace from text and split text by space  ",
+            "initialize new to empty list  ",
+            "go through each word in text  ",
+            "    go through each char in word  ",
+            "        if char is alphabetic  ",
+            "            if char is uppercase  ",
+            "                if word from index 1 to end is not uppercase  ",
+            "                    add word to new  ",
+            "initialize newer to empty list  ",
+            "go through each word in new  ",
+            "    if word from index 0 to end is not uppercase  ",
+            "        if word at last index is not equal to ! or word at last index is equal to ?  ",
+            "            add word to newer  ",
+            "display newer"
+        ],
+        "Pseudocode to Code": [
+            "text = input().strip().split()",
+            "new = []",
+            "",
+            "for word in text:",
+            "    for char in word:",
+            "        if char.isalpha():",
+            "            if char.isupper() and not word[1:].isupper():",
+            "                new.append(word)",
+            "                break",
+            "",
+            "newer = []",
+            "",
+            "for word in new:",
+            "    if not word.isupper() and (word[-1] != '!' and word[-1] == '?'):",
+            "        newer.append(word)",
+            "",
+            "print(newer)"
+        ]
+    },
+    {
+        "User ID": "6887012",
+        "Pseudocode": [
+            "get t  ",
+            "t = split t by space  ",
+            "initialize char to empty list  ",
+            "go through each i in t  ",
+            "    if i is alphabetic or '.' is in i  ",
+            "        add i to char  ",
+            "display char"
+        ],
+        "Pseudocode to Code": [
+            "t = input().split()  ",
+            "char = []  ",
+            "for i in t:  ",
+            "    if i.isalpha() or '.' in i:  ",
+            "        char.append(i)  ",
+            "print(char)"
+        ]
+    },
+    {
+        "User ID": "6887013",
+        "Pseudocode": [
+            "get char_list",
+            "",
+            "initialize output to empty list",
+            "",
+            "go through each v in char_list",
+            "    if v at index 0 is uppercase and v from index 1 to end is lowercase and v is alphabetic",
+            "        add v to output",
+            "    if v at index 0 is uppercase and v from index 1 to second last is lowercase and v at index last is .",
+            "        add v to output",
+            "",
+            "display output"
+        ],
+        "Pseudocode to Code": [
+            "char_list = get_char_list()",
+            "",
+            "output = []",
+            "",
+            "for v in char_list:",
+            "    if v[0].isupper() and v[1:].islower() and v.isalpha():",
+            "        output.append(v)",
+            "    if v[0].isupper() and v[1:-1].islower() and v[-1] == '.':",
+            "        output.append(v)",
+            "",
+            "print(output)"
+        ]
+    },
+    {
+        "User ID": "6887014",
+        "Pseudocode": [
+            "get n  ",
+            "n = trim whitespace from n  ",
+            "n = split n by space  ",
+            "initialize lst to empty list  ",
+            "",
+            "go through each i in n  ",
+            "    if i is alphabetic and i at index 0 is uppercase and substring of i from index 1 to end is lowercase then  ",
+            "        add i to lst  ",
+            "",
+            "display lst"
+        ],
+        "Pseudocode to Code": [
+            "n = input().strip()",
+            "n = n.split()",
+            "lst = []",
+            "",
+            "for i in n:",
+            "    if i.isalpha() and i[0].isupper() and i[1:].islower():",
+            "        lst.append(i)",
+            "",
+            "print(lst)"
+        ]
+    },
+    {
+        "User ID": "6887015",
+        "Pseudocode": [
+            "get text  ",
+            "set data to empty list  ",
+            "go through each i in text  ",
+            "    if i is alphabetic and i at index 0 is i at index 0 converted to uppercase and i from index 1 to end is i from index 1 to end converted to lowercase or i at last index is . and i at index 1 is i at index 1 converted to lowercase and i at index 0 is i at index 0 converted to uppercase:  ",
+            "        add i to data  ",
+            "display data"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"get text: \")  ",
+            "data = []  ",
+            "for i in text:  ",
+            "    if (i.isalpha() and i[0] == i[0].upper() and i[1:] == i[1:].lower()) or (i[-1] == '.' and i[1] == i[1].lower() and i[0] == i[0].upper()):  ",
+            "        data.append(i)  ",
+            "print(data)"
+        ]
+    },
+    {
+        "User ID": "6887016",
+        "Pseudocode": [
+            "get txt",
+            "set txt to list of items in txt split by whitespace",
+            "initialize result to empty list",
+            "go through each i in range of length of txt",
+            "    if txt at index i is alphabetic or last character of txt at index i is .",
+            "        if txt at index i is equal to txt at index i capitalized",
+            "            add txt at index i to result",
+            "display result"
+        ],
+        "Pseudocode to Code": [
+            "txt = input()",
+            "txt = txt.split()",
+            "result = []",
+            "",
+            "for i in range(len(txt)):",
+            "    if txt[i].isalpha() or txt[i][-1] == '.':",
+            "        if txt[i] == txt[i].capitalize():",
+            "            result.append(txt[i])",
+            "",
+            "print(result)"
+        ]
+    },
+    {
+        "User ID": "6887017",
+        "Pseudocode": [
+            "initialize text to empty list",
+            "get n",
+            "set n to split n by whitespace",
+            "go through each i in n",
+            "    if first character of i is uppercase",
+            "        if second character of i is lowercase",
+            "            add i to text",
+            "display text"
+        ],
+        "Pseudocode to Code": [
+            "text = []",
+            "n = input()",
+            "n = n.split()",
+            "",
+            "for i in n:",
+            "    if i[0].isupper():",
+            "        if i[1].islower():",
+            "            text.append(i)",
+            "",
+            "print(text)"
+        ]
+    },
+    {
+        "User ID": "6887018",
+        "Pseudocode": [
+            "get txt  ",
+            "txt = split txt by space  ",
+            "initialize upper_lst to empty list  ",
+            "initialize lst2 to empty list  ",
+            "initialize num to list containing 1, 2, 3, 4, 5, 6, 7, 8, 9  ",
+            "",
+            "go through each words in txt  ",
+            "    if words is alphabetic then  ",
+            "        if words at index 0 is uppercase and substring of words from index 1 to end is lowercase or words from start to second last is equal to . then  ",
+            "            add words to upper_lst  ",
+            "    otherwise if words is not numeric then  ",
+            "        go through each letters in words  ",
+            "            if letters is equal to . then  ",
+            "                add words to lst2  ",
+            "",
+            "display upper_lst"
+        ],
+        "Pseudocode to Code": [
+            "txt = input().split()  ",
+            "upper_lst = []  ",
+            "lst2 = []  ",
+            "num = [1, 2, 3, 4, 5, 6, 7, 8, 9]  ",
+            "",
+            "for word in txt:  ",
+            "    if word.isalpha():  ",
+            "        if (word[0].isupper() and word[1:].islower()) or word[:-1] == '.':  ",
+            "            upper_lst.append(word)  ",
+            "    elif not word.isnumeric():  ",
+            "        for letter in word:  ",
+            "            if letter == '.':  ",
+            "                lst2.append(word)  ",
+            "",
+            "print(upper_lst)"
+        ]
+    },
+    {
+        "User ID": "6887019",
+        "Pseudocode": [
+            "get txtList  ",
+            "initialize newList to empty list  ",
+            "",
+            "go through each txt in txtList  ",
+            "    initialize capitalise to False  ",
+            "    initialize allAlpha to True  ",
+            "    if txt is txt capitalized then  ",
+            "        set capitalise to True  ",
+            "    go through each i in txt  ",
+            "        if i is . then  ",
+            "            continue  ",
+            "        otherwise if i is not alphabetic then  ",
+            "            set allAlpha to False  ",
+            "            break  ",
+            "    if capitalise and allAlpha then  ",
+            "        add txt to newList  ",
+            "",
+            "display newList"
+        ],
+        "Pseudocode to Code": [
+            "txtList = [...]  # Assuming txtList is defined",
+            "newList = []",
+            "",
+            "for txt in txtList:",
+            "    capitalise = False",
+            "    allAlpha = True",
+            "    ",
+            "    if txt[0].isupper():",
+            "        capitalise = True",
+            "        ",
+            "    for i in txt:",
+            "        if i == '.':",
+            "            continue",
+            "        elif not i.isalpha():",
+            "            allAlpha = False",
+            "            break",
+            "            ",
+            "    if capitalise and allAlpha:",
+            "        newList.append(txt)",
+            "",
+            "print(newList)"
+        ]
+    },
+    {
+        "User ID": "6887020",
+        "Pseudocode": [
+            "get word",
+            "set cap to empty list",
+            "go through each i in word",
+            "    if i is alphabetic and i at index 0 is i at index 0 converted to uppercase and i from index 1 to end is i from index 1 to end converted to lowercase",
+            "        add i to cap",
+            "    otherwise if i at last index is . and i at index 0 is i at index 0 converted to uppercase and i from index 1 to end is i from index 1 to end converted to lowercase",
+            "        add i to cap",
+            "display cap"
+        ],
+        "Pseudocode to Code": [
+            "word = input(\"Enter a word: \")",
+            "cap = []",
+            "",
+            "for i in word:",
+            "    if i.isalpha() and i[0] == i[0].upper() and i[1:].lower() == i[1:]:",
+            "        cap.append(i)",
+            "    elif i.endswith('.') and i[0] == i[0].upper() and i[1:-1].lower() == i[1:-1]:",
+            "        cap.append(i)",
+            "",
+            "print(cap)"
+        ]
+    },
+    {
+        "User ID": "6887021",
+        "Pseudocode": [
+            "get input_string  ",
+            "set word to list of items in input_string split by whitespace  ",
+            "set word to list of x for each x in word where length of x is greater than 0  ",
+            "set filterfullstop to list of x for each x in word where x at index -1 is . or x at index -1 is alphabetic  ",
+            "set filterupperall to list of x for each x in filterfullstop where x from index 1 to end is lowercase  ",
+            "set filternum to list of x for each x in filterupperall where x up to index -1 is alphabetic  ",
+            "set upper to list of x for each x in filternum where x at index 0 is uppercase  ",
+            "display upper"
+        ],
+        "Pseudocode to Code": [
+            "input_string = input()",
+            "word = input_string.split()",
+            "word = [x for x in word if len(x) > 0]",
+            "filterfullstop = [x for x in word if x[-1] == '.' or x[-1].isalpha()]",
+            "filterupperall = [x for x in filterfullstop if x[1:].islower()]",
+            "filternum = [x for x in filterupperall if x[:-1].isalpha()]",
+            "upper = [x for x in filternum if x[0].isupper()]",
+            "print(upper)"
+        ]
+    },
+    {
+        "User ID": "6887022",
+        "Pseudocode": [
+            "get text  ",
+            "split text by whitespace  ",
+            "go through each i in text  ",
+            "    if i is alphabetic and first character of i capitalized  ",
+            "        display i"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"Enter text: \")  ",
+            "words = text.split()  ",
+            "for word in words:  ",
+            "    if word.isalpha() and word[0].isupper():  ",
+            "        print(word)"
+        ]
+    },
+    {
+        "User ID": "6887023",
+        "Pseudocode": [
+            "get x  ",
+            "initialize Ans to empty text  ",
+            "go through each i in x  ",
+            "    if i is alphabetic and i at index 0 is i at index 0 converted to uppercase and i at index 1 is i at index 1 converted to lowercase and i at last index is i at last index converted to lowercase  ",
+            "        Ans = Ans plus i plus space  ",
+            "    otherwise if i at last index is . and i at index 0 is i at index 0 converted to uppercase and i at index 1 is i at index 1 converted to lowercase  ",
+            "        Ans = Ans plus i plus space  ",
+            "display Ans split()"
+        ],
+        "Pseudocode to Code": [
+            "x = input()",
+            "Ans = \"\"",
+            "for i in x:",
+            "    if i.isalpha() and i[0] == i[0].upper() and i[1] == i[1].lower() and i[-1] == i[-1].lower():",
+            "        Ans += i + \" \"",
+            "    elif i[-1] == '.' and i[0] == i[0].upper() and i[1] == i[1].lower():",
+            "        Ans += i + \" \"",
+            "print(Ans.split())"
+        ]
+    },
+    {
+        "User ID": "6887024",
+        "Pseudocode": [
+            "get textinput  ",
+            "set textlist to split textinput by whitespace  ",
+            "display textlist  ",
+            "initialize ans to empty list  ",
+            "go through each i in range of length of textlist  ",
+            "    initialize want to False  ",
+            "    initialize n to empty string  ",
+            "    go through each q in range of length of textlist at index i  ",
+            "        if textlist at index i at index q is alphabetic or textlist at index i at index q is .  ",
+            "            set n to n plus textlist at index i at index q  ",
+            "        otherwise  ",
+            "            break  ",
+            "    add n to ans  ",
+            "display ans"
+        ],
+        "Pseudocode to Code": [
+            "textinput = input()",
+            "textlist = textinput.split()",
+            "print(textlist)",
+            "ans = []",
+            "for i in range(len(textlist)):",
+            "    want = False",
+            "    n = \"\"",
+            "    for q in range(len(textlist[i])):",
+            "        if textlist[i][q].isalpha() or textlist[i][q] == '.':",
+            "            n += textlist[i][q]",
+            "        else:",
+            "            break",
+            "    ans.append(n)",
+            "print(ans)"
+        ]
+    },
+    {
+        "User ID": "6887025",
+        "Pseudocode": [
+            "get X  ",
+            "X = trim whitespace from X and split X by whitespace  ",
+            "initialize list to empty list  ",
+            "initialize ans to empty list  ",
+            "go through each i in X  ",
+            "    if i is alphabetic or last character of i is .  ",
+            "        add i to list  ",
+            "go through each i in list  ",
+            "    if first character of i is uppercase and substring of i from index 1 to end is lowercase  ",
+            "        add i to ans  ",
+            "display ans"
+        ],
+        "Pseudocode to Code": [
+            "X = input().strip().split()",
+            "list_items = []",
+            "ans = []",
+            "",
+            "for i in X:",
+            "    if i.isalpha() or i.endswith('.'):",
+            "        list_items.append(i)",
+            "",
+            "for i in list_items:",
+            "    if i[0].isupper() and i[1:].islower():",
+            "        ans.append(i)",
+            "",
+            "print(ans)"
+        ]
+    },
+    {
+        "User ID": "6887026",
+        "Pseudocode": [
+            "get word  ",
+            "word = split word  ",
+            "initialize frist_cap to empty list  ",
+            "initialize a to list containing .  ",
+            "go through each i in word  ",
+            "    if i is alphabetic and i at index 0 is uppercase and i from index 1 to end is lowercase  ",
+            "        if i at last index is in a  ",
+            "            add i to frist_cap  ",
+            "        otherwise  ",
+            "            add i to frist_cap  ",
+            "display frist_cap"
+        ],
+        "Pseudocode to Code": [
+            "word = input(\"get word: \")",
+            "word = word.split()",
+            "frist_cap = []",
+            "a = ['.']",
+            "",
+            "for i in word:",
+            "    if i.isalpha() and i[0].isupper() and i[1:].islower():",
+            "        if i[-1] in a:",
+            "            frist_cap.append(i)",
+            "        else:",
+            "            frist_cap.append(i)",
+            "",
+            "print(frist_cap)"
+        ]
+    },
+    {
+        "User ID": "6887027",
+        "Pseudocode": [
+            "get txt",
+            "set txt to split txt by space",
+            "initialize final to empty list",
+            "",
+            "go through each i in txt",
+            "    if (i is alphabetic is true or '.' is in i is true) and i is title case is true or (i is alphabetic is true and i is title case is true)",
+            "        add i to final",
+            "",
+            "display final"
+        ],
+        "Pseudocode to Code": [
+            "txt = input()",
+            "txt = txt.split()",
+            "",
+            "final = []",
+            "",
+            "for i in txt:",
+            "    if (i.isalpha() or '.' in i) and i.istitle() or (i.isalpha() and i.istitle()):",
+            "        final.append(i)",
+            "",
+            "print(final)"
+        ]
+    },
+    {
+        "User ID": "6887028",
+        "Pseudocode": [
+            "get txt  ",
+            "set text to list of words from txt split by space  ",
+            "set filtered to capitalize txt  ",
+            "initialize result to empty list  ",
+            "",
+            "go through each t in text  ",
+            "    if t is capitalize txt  ",
+            "        add t to result  ",
+            "",
+            "display result"
+        ],
+        "Pseudocode to Code": [
+            "txt = input(\"Enter text: \")",
+            "text = txt.split()",
+            "filtered = txt.capitalize()",
+            "result = []",
+            "",
+            "for t in text:",
+            "    if t == filtered:",
+            "        result.append(t)",
+            "",
+            "print(result)"
+        ]
+    },
+    {
+        "User ID": "6887029",
+        "Pseudocode": [
+            "get input_string  ",
+            "set output_list to empty list  ",
+            "go through each i in input_string  ",
+            "    if i is alphabetic or '.' is in i  ",
+            "        if i at index -1 is .  ",
+            "            if i at index 0 is uppercase and substring of i from index 1 to -1 is lowercase  ",
+            "                add i to output_list  ",
+            "        otherwise  ",
+            "            if i at index 0 is uppercase and substring of i from index 1 to end is lowercase  ",
+            "                add i to output_list  ",
+            "display output_list"
+        ],
+        "Pseudocode to Code": [
+            "input_string = input()",
+            "output_list = []",
+            "",
+            "for i in input_string:",
+            "    if i.isalpha() or '.' in i:",
+            "        if i[-1] == '.':",
+            "            if i[0].isupper() and i[1:-1].islower():",
+            "                output_list.append(i)",
+            "        else:",
+            "            if i[0].isupper() and i[1:].islower():",
+            "                output_list.append(i)",
+            "",
+            "print(output_list)"
+        ]
+    },
+    {
+        "User ID": "6887030",
+        "Pseudocode": [
+            "get txt",
+            "set txt_list to split txt",
+            "",
+            "initialize count to 0",
+            "go through each word in txt_list",
+            "    if word at index 0 is uppercase is true",
+            "        '''",
+            "        if word from index 1 to end is lowercase is true",
+            "            continue",
+            "        otherwise",
+            "            remove item at index count from txt_list",
+            "            count = count plus 1",
+            "        '''",
+            "    otherwise",
+            "        remove item at index count from txt_list",
+            "        count = count plus 1",
+            "",
+            "display txt_list"
+        ],
+        "Pseudocode to Code": [
+            "txt = input()",
+            "txt_list = txt.split()",
+            "",
+            "count = 0",
+            "for word in txt_list[:]:",
+            "    if word[0].isupper():",
+            "        if word[1:].islower():",
+            "            continue",
+            "        else:",
+            "            txt_list.pop(count)",
+            "            count += 1",
+            "    else:",
+            "        txt_list.pop(count)",
+            "        count += 1",
+            "",
+            "print(txt_list)"
+        ]
+    },
+    {
+        "User ID": "6887031",
+        "Pseudocode": [
+            "get txt  ",
+            "txt = trim whitespace from txt  ",
+            "txt = split txt by whitespace  ",
+            "",
+            "initialize newtxt to empty list  ",
+            "go through each t in txt  ",
+            "    if t is title case and t is alphabetic or t is title case and last character of t is .  ",
+            "        add t to newtxt  ",
+            "display newtxt"
+        ],
+        "Pseudocode to Code": [
+            "txt = input().strip()",
+            "txt = txt.split()",
+            "",
+            "newtxt = []",
+            "for t in txt:",
+            "    if (t.istitle() and t.isalpha()) or (t.istitle() and t[-1] == '.'):",
+            "        newtxt.append(t)",
+            "",
+            "print(newtxt)"
+        ]
+    },
+    {
+        "User ID": "6887032",
+        "Pseudocode": [
+            "get n  ",
+            "set list_n to empty list  ",
+            "go through each i in n  ",
+            "    if i at index 0 is uppercase and substring of i from index 1 to end is lowercase  ",
+            "        if i at last index is lowercase or i at last index is .  ",
+            "            add i to list_n  ",
+            "display list_n"
+        ],
+        "Pseudocode to Code": [
+            "n = input().split()",
+            "list_n = []",
+            "",
+            "for i in n:",
+            "    if i[0].isupper() and i[1:].islower():",
+            "        if i[-1].islower() or i[-1] == '.':",
+            "            list_n.append(i)",
+            "",
+            "print(list_n)"
+        ]
+    },
+    {
+        "User ID": "6887033",
+        "Pseudocode": [
+            "get txt  ",
+            "set txt2 to empty list  ",
+            "go through each i in txt  ",
+            "    if i is alphabetic and i is title case or (dot is in i and i is title case)  ",
+            "        add i to txt2  ",
+            "display txt2"
+        ],
+        "Pseudocode to Code": [
+            "txt = input()  ",
+            "txt2 = []  ",
+            "for i in txt.split():  ",
+            "    if (i.isalpha() and i.istitle()) or ('.' in i and i.istitle()):  ",
+            "        txt2.append(i)  ",
+            "print(txt2)"
+        ]
+    },
+    {
+        "User ID": "6887034",
+        "Pseudocode": [
+            "get s  ",
+            "s = split s by whitespace  ",
+            "initialize help to empty list  ",
+            "initialize ddd to empty list  ",
+            "go through each i in s  ",
+            "    if i at index 0 is uppercase and i at index 1 is lowercase and i at last index is not ? and i at last index is not ! and i at last index is not O and i at last index is not 1 and i at second last index is not 1  ",
+            "        add i to help  ",
+            "display help"
+        ],
+        "Pseudocode to Code": [
+            "s = input()  ",
+            "s = s.split()  ",
+            "help_list = []  ",
+            "ddd = []  ",
+            "",
+            "for i in s:  ",
+            "    if i[0].isupper() and i[1].islower() and i[-1] not in ['?', '!', 'O', '1'] and i[-2] != '1':  ",
+            "        help_list.append(i)  ",
+            "",
+            "print(help_list)"
+        ]
+    },
+    {
+        "User ID": "6887035",
+        "Pseudocode": [
+            "get text",
+            "set text to split text by space",
+            "initialize out to empty list",
+            "go through each i in range of length of text",
+            "    go through each j in range of length of text",
+            "        if text at index i is alphabetic is True and text at index i at index 0 is uppercase is True",
+            "            add text at index i to out",
+            "display out"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"get text: \")",
+            "text = text.split()",
+            "out = []",
+            "",
+            "for i in range(len(text)):",
+            "    for j in range(len(text)):",
+            "        if text[i].isalpha() and text[i][0].isupper():",
+            "            out.append(text[i])",
+            "",
+            "print(out)"
+        ]
+    },
+    {
+        "User ID": "6887036",
+        "Pseudocode": [
+            "get n  ",
+            "initialize nn to empty list  ",
+            "add n to nn  ",
+            "",
+            "go through each i in nn  ",
+            "if i at index 0 at index 0 is uppercase or i at index 1 at index 0 is uppercase or i at index 2 at index 0 is uppercase or i at index 3 at index 0 is uppercase  ",
+            "display i  ",
+            "otherwise  ",
+            "display i at index 1"
+        ],
+        "Pseudocode to Code": [
+            "n = input()  ",
+            "nn = []  ",
+            "nn.append(n)  ",
+            "",
+            "for i in nn:  ",
+            "    if (i[0].isupper() or ",
+            "        i[1].isupper() or ",
+            "        i[2].isupper() or ",
+            "        i[3].isupper()):  ",
+            "        print(i)  ",
+            "    else:  ",
+            "        print(i[1])"
+        ]
+    },
+    {
+        "User ID": "6887037",
+        "Pseudocode": [
+            "get text",
+            "text = split text",
+            "",
+            "initialize list1 to empty list",
+            "",
+            "go through each i in text",
+            "    if i at index 0 is uppercase and i from index 0 to end is alphabetic and i at last index is lowercase",
+            "        add i to list1",
+            "    otherwise if i at index 0 is lowercase",
+            "        continue",
+            "    otherwise if i at last index is equal to .",
+            "        add i to list1",
+            "    if i is uppercase and i at last index is decimal",
+            "        remove i from list1",
+            "",
+            "go through each i in list1",
+            "    if i at index 1 is uppercase",
+            "        remove i from list1",
+            "",
+            "display list1"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"Enter text: \")",
+            "text = text.split()",
+            "",
+            "list1 = []",
+            "",
+            "for i in text:",
+            "    if i[0].isupper() and i.isalpha() and i[-1].islower():",
+            "        list1.append(i)",
+            "    elif i[0].islower():",
+            "        continue",
+            "    elif i[-1] == '.':",
+            "        list1.append(i)",
+            "    if i.isupper() and i[-1].isdigit():",
+            "        list1.remove(i)",
+            "",
+            "for i in list1:",
+            "    if i[1].isupper():",
+            "        list1.remove(i)",
+            "",
+            "print(list1)"
+        ]
+    },
+    {
+        "User ID": "6887038",
+        "Pseudocode": [
+            "get text  ",
+            "set new to space  ",
+            "initialize l to empty list  ",
+            "go through each i in text  ",
+            "    if i is alphabetic  ",
+            "        new += i  ",
+            "    add i to l  ",
+            "display l  ",
+            "# p = l.append(i)  ",
+            "# for i in range (p) :  ",
+            "#      i[0] == i.isupper() :  ",
+            "#         p += i  ",
+            "#      i[1::] == i.islower():  ",
+            "#         p += i  ",
+            "# display p"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"Enter text: \")  ",
+            "new = \"\"  ",
+            "l = []  ",
+            "",
+            "for i in text:  ",
+            "    if i.isalpha():  ",
+            "        new += i  ",
+            "    l.append(i)  ",
+            "",
+            "print(l)  ",
+            "",
+            "p = []  ",
+            "for i in l:  ",
+            "    if i.isupper():  ",
+            "        p.append(i)  ",
+            "for i in l:  ",
+            "    if i.islower():  ",
+            "        p.append(i)  ",
+            "",
+            "print(p)"
+        ]
+    },
+    {
+        "User ID": "6887039",
+        "Pseudocode": [
+            "get text  ",
+            "set text to split text  ",
+            "initialize new to empty list  ",
+            "go through each i in range of length of text  ",
+            "    if text at index i has first character uppercase and last character is .  ",
+            "        if text at index i is equal to text at index i capitalized  ",
+            "            add text at index i to new  ",
+            "    otherwise if text at index i has first character uppercase and text at index i is alphabetic  ",
+            "        if text at index i is equal to text at index i capitalized  ",
+            "            add text at index i to new  ",
+            "display new"
+        ],
+        "Pseudocode to Code": [
+            "text = input()  ",
+            "text = text.split()  ",
+            "new = []  ",
+            "for i in range(len(text)):  ",
+            "    if text[i][0].isupper() and text[i][-1] == '.':  ",
+            "        if text[i] == text[i].capitalize():  ",
+            "            new.append(text[i])  ",
+            "    elif text[i][0].isupper() and text[i].isalpha():  ",
+            "        if text[i] == text[i].capitalize():  ",
+            "            new.append(text[i])  ",
+            "print(new)"
+        ]
+    },
+    {
+        "User ID": "6887040",
+        "Pseudocode": [
+            "get input_  ",
+            "set input_ to trim whitespace from input_ and split input_ by spaces  ",
+            "",
+            "initialize word_col to empty list  ",
+            "initialize word_thing to empty text  ",
+            "",
+            "go through each i in input_  ",
+            "    if i is alphabetic or last character of i is .  ",
+            "        set word_thing to word_thing plus i plus space  ",
+            "        add word_thing trimmed to word_col  ",
+            "    set word_thing to empty text  ",
+            "",
+            "initialize cap_word to empty list  ",
+            "go through each i in word_col  ",
+            "    if first character of i is uppercase and substring of i from index 1 to end is lowercase  ",
+            "        add i to cap_word  ",
+            "",
+            "display cap_word"
+        ],
+        "Pseudocode to Code": [
+            "input_ = input()  ",
+            "input_ = input_.strip().split()  ",
+            "",
+            "word_col = []  ",
+            "word_thing = \"\"  ",
+            "",
+            "for i in input_:  ",
+            "    if i.isalpha() or i[-1] == '.':  ",
+            "        word_thing += i + \" \"  ",
+            "        word_col.append(word_thing.strip())  ",
+            "    word_thing = \"\"  ",
+            "",
+            "cap_word = []  ",
+            "for i in word_col:  ",
+            "    if i[0].isupper() and i[1:].islower():  ",
+            "        cap_word.append(i)  ",
+            "",
+            "print(cap_word)"
+        ]
+    },
+    {
+        "User ID": "6887042",
+        "Pseudocode": [
+            "get words  ",
+            "trim whitespace from words  ",
+            "split words by space  ",
+            "initialize cap to empty list  ",
+            "",
+            "go through each word in words  ",
+            "    if word is alphabetic and word at index 0 is uppercase and substring of word from index 1 to end is lowercase then  ",
+            "        add word to cap  ",
+            "    otherwise if word at index -2 to start is alphabetic and word at index -1 is . and word at index 0 is uppercase and substring of word from index 1 to end is lowercase then  ",
+            "        add word to cap  ",
+            "display cap"
+        ],
+        "Pseudocode to Code": [
+            "words = input(\"Enter words: \")  ",
+            "words = words.strip()  ",
+            "words = words.split()  ",
+            "cap = []  ",
+            "",
+            "for word in words:  ",
+            "    if word.isalpha() and word[0].isupper() and word[1:].islower():  ",
+            "        cap.append(word)  ",
+            "    elif len(word) > 1 and word[-1] == '.' and word[-2].isalpha() and word[0].isupper() and word[1:-1].islower():  ",
+            "        cap.append(word)  ",
+            "",
+            "print(cap)"
+        ]
+    },
+    {
+        "User ID": "6887043",
+        "Pseudocode": [
+            "get num  ",
+            "num = num stripped of whitespace and split by space  ",
+            "initialize result to empty list  ",
+            "",
+            "go through each i in num  ",
+            "    if i is empty string  ",
+            "        pass  ",
+            "    if first character of i is uppercase and substring of i from index 1 to end is lowercase  ",
+            "        add i to result  ",
+            "",
+            "initialize result2 to empty list  ",
+            "go through each j in result  ",
+            "    if j is alphabetic  ",
+            "        add j to result2  ",
+            "    otherwise if last character of j is .  ",
+            "        add j to result2  ",
+            "",
+            "display result2"
+        ],
+        "Pseudocode to Code": [
+            "num = input()",
+            "num = num.strip().split()",
+            "",
+            "result = []",
+            "",
+            "for i in num:",
+            "    if i == '':",
+            "        pass",
+            "    elif i[0].isupper() and i[1:].islower():",
+            "        result.append(i)",
+            "",
+            "result2 = []",
+            "",
+            "for j in result:",
+            "    if j.isalpha():",
+            "        result2.append(j)",
+            "    elif j[-1] == '.':",
+            "        result2.append(j)",
+            "",
+            "print(result2)"
+        ]
+    },
+    {
+        "User ID": "6887044",
+        "Pseudocode": [
+            "get s  ",
+            "initialize t to empty text  ",
+            "go through each i in s  ",
+            "    if i is alphabetic and '.'  ",
+            "        if not i is lowercase  ",
+            "            t = t plus i  ",
+            "display t"
+        ],
+        "Pseudocode to Code": [
+            "s = input()",
+            "t = \"\"",
+            "",
+            "for i in s:",
+            "    if i.isalpha() and i == '.':",
+            "        if not i.islower():",
+            "            t += i",
+            "",
+            "print(t)"
+        ]
+    },
+    {
+        "User ID": "6887045",
+        "Pseudocode": [
+            "get txt  ",
+            "part = split txt by space  ",
+            "initialize capitalize to empty list  ",
+            "initialize result to empty list  ",
+            "go through each p in part  ",
+            "    if p capitalize  ",
+            "        add p to capitalize  ",
+            "go through each q in capitalize  ",
+            "    if q is alphabetic  ",
+            "        add q to result  ",
+            "    otherwise if substring of q from index 0 to length of q minus 1 is .  ",
+            "        add q to result  ",
+            "display result"
+        ],
+        "Pseudocode to Code": [
+            "txt = input()  ",
+            "part = txt.split()  ",
+            "capitalize = []  ",
+            "result = []  ",
+            "",
+            "for p in part:  ",
+            "    if p[0].isupper():  ",
+            "        capitalize.append(p)  ",
+            "",
+            "for q in capitalize:  ",
+            "    if q.isalpha():  ",
+            "        result.append(q)  ",
+            "    elif q[:-1] == '.':  ",
+            "        result.append(q)  ",
+            "",
+            "print(result)"
+        ]
+    },
+    {
+        "User ID": "6887047",
+        "Pseudocode": [
+            "get s",
+            "s = s split",
+            "initialize words to empty list",
+            "go through each word in s",
+            "    if word is word capitalized and (word is alphabetic or word at index -1 is .)",
+            "        add word to words",
+            "display words"
+        ],
+        "Pseudocode to Code": [
+            "s = input()",
+            "s = s.split()",
+            "words = []",
+            "",
+            "for word in s:",
+            "    if word.istitle() and (word.isalpha() or word[-1] == '.'):",
+            "        words.append(word)",
+            "",
+            "print(words)"
+        ]
+    },
+    {
+        "User ID": "6887048",
+        "Pseudocode": [
+            "get s  ",
+            "s = convert s to uppercase  ",
+            "s = trim whitespace from s  ",
+            "s = split s by whitespace  ",
+            "initialize new to list of v for each v in s where v is trimmed  ",
+            "initialize s_joinn to combine items in new into text  ",
+            "display s_joinn"
+        ],
+        "Pseudocode to Code": [
+            "s = input()  ",
+            "s = s.upper()  ",
+            "s = s.strip()  ",
+            "s = s.split()  ",
+            "new = [v.strip() for v in s]  ",
+            "s_joinn = ' '.join(new)  ",
+            "print(s_joinn)"
+        ]
+    },
+    {
+        "User ID": "6887049",
+        "Pseudocode": [
+            "get txt  ",
+            "set txt to list of items in txt split by space  ",
+            "initialize n_txt to empty list  ",
+            "go through each i in txt  ",
+            "    if i is not empty  ",
+            "        add i to n_txt  ",
+            "initialize result to empty list  ",
+            "go through each i in n_txt  ",
+            "    if i at index 0 is uppercase and substring of i from index 1 to end is lowercase and (i is alphabetic or i at last index is .)  ",
+            "        add i to result  ",
+            "display result"
+        ],
+        "Pseudocode to Code": [
+            "txt = input()  ",
+            "txt = txt.split()  ",
+            "n_txt = []  ",
+            "",
+            "for i in txt:  ",
+            "    if i:  ",
+            "        n_txt.append(i)  ",
+            "",
+            "result = []  ",
+            "",
+            "for i in n_txt:  ",
+            "    if i[0].isupper() and i[1:].islower() and (i.isalpha() or i[-1] == '.'):  ",
+            "        result.append(i)  ",
+            "",
+            "print(result)"
+        ]
+    },
+    {
+        "User ID": "6887051",
+        "Pseudocode": [
+            "get word",
+            "word = word trimmed and split by space",
+            "",
+            "define function isgood with parameter s",
+            "    initialize listn to empty list",
+            "    initialize l to 0",
+            "    go through each i in s",
+            "        if i is empty string",
+            "            pass",
+            "        otherwise if first character of i is uppercase and last character of i is alphabetic and last character of i is not uppercase",
+            "            go through each k in i",
+            "                if type of k is integer",
+            "                    break",
+            "            add i to listn",
+            "            ",
+            "        otherwise if last character of i is dot",
+            "            replace dot in i with empty string",
+            "            if first character of i is uppercase and second last character of i is not uppercase",
+            "                go through each k in i",
+            "                    if type of k is integer",
+            "                        break",
+            "                add i to listn",
+            "",
+            "    return listn",
+            "",
+            "initialize m to 0",
+            "initialize listn to empty list",
+            "initialize listk to empty list",
+            "go through each i, k in paired items from isgood(word) and range from 0 to 10",
+            "    go through each m in i",
+            "        if m is decimal",
+            "            add i to listn",
+            "",
+            "listn = unique items in listn",
+            "",
+            "initialize l to isgood(word)",
+            "",
+            "go through each i in l",
+            "    if i is in listn or second character of i is uppercase",
+            "        pass",
+            "    otherwise",
+            "        add i to listk",
+            "",
+            "display listk"
+        ],
+        "Pseudocode to Code": [
+            "word = input().strip().split()",
+            "",
+            "def isgood(s):",
+            "    listn = []",
+            "    for i in s:",
+            "        if i == \"\":",
+            "            continue",
+            "        elif i[0].isupper() and i[-1].isalpha() and not i[-1].isupper():",
+            "            if any(k.isdigit() for k in i):",
+            "                break",
+            "            listn.append(i)",
+            "        elif i[-1] == '.':",
+            "            i = i[:-1]",
+            "            if i[0].isupper() and not i[-2].isupper():",
+            "                if any(k.isdigit() for k in i):",
+            "                    break",
+            "                listn.append(i)",
+            "    return listn",
+            "",
+            "m = 0",
+            "listn = []",
+            "listk = []",
+            "for i, k in zip(isgood(word), range(0, 10)):",
+            "    for m in i:",
+            "        if isinstance(m, float):",
+            "            listn.append(i)",
+            "",
+            "listn = list(set(listn))",
+            "",
+            "l = isgood(word)",
+            "",
+            "for i in l:",
+            "    if i in listn or (len(i) > 1 and i[1].isupper()):",
+            "        continue",
+            "    listk.append(i)",
+            "",
+            "print(listk)"
+        ]
+    },
+    {
+        "User ID": "6887052",
+        "Pseudocode": [
+            "initialize A to empty list  ",
+            "get x  ",
+            "split x by space  ",
+            "define function alpha with parameter x  ",
+            "if x is alphabetic is true  ",
+            "then return x  ",
+            "if length of x is greater than 0  ",
+            "if x at index -1 is .  ",
+            "then return x  ",
+            "Y = list of items in x where alpha  ",
+            "repeat length of Y times using index i  ",
+            "set Z to Y at index i  ",
+            "if Z from index 0 to 1 is uppercase is true and Z from index 1 to end is lowercase is true  ",
+            "then add Z to A  ",
+            "display A"
+        ],
+        "Pseudocode to Code": [
+            "A = []",
+            "x = input().strip()",
+            "x_split = x.split()",
+            "",
+            "def alpha(x):",
+            "    return x.isalpha()",
+            "",
+            "Y = [item for item in x_split if alpha(item)]",
+            "",
+            "for i in range(len(Y)):",
+            "    Z = Y[i]",
+            "    if Z[0].isupper() and Z[1:].islower():",
+            "        A.append(Z)",
+            "",
+            "print(A)"
+        ]
+    },
+    {
+        "User ID": "6887053",
+        "Pseudocode": [
+            "get words  ",
+            "initialize final to empty list  ",
+            "initialize a to 0  ",
+            "initialize b to 0  ",
+            "initialize c to 0  ",
+            "go through each word in words  ",
+            "    if word is alphabetic or word at index -1 is .  ",
+            "        if word at index 0 is uppercase  ",
+            "            set a to 1  ",
+            "            display a  ",
+            "        if word from index 1 to end is equal to word from index 1 to end converted to lowercase  ",
+            "            set b to 1  ",
+            "            display b  ",
+            "        if word at index -1 is alphabetic or word at index -1 is .  ",
+            "            set c to 1  ",
+            "            display c  ",
+            "        if a is equal to 1 and b is equal to 1 and c is equal to 1  ",
+            "            add word to final  ",
+            "display final"
+        ],
+        "Pseudocode to Code": [
+            "words = input(\"Enter words: \").split()",
+            "final = []",
+            "a = 0",
+            "b = 0",
+            "c = 0",
+            "",
+            "for word in words:",
+            "    if word.isalpha() or word[-1] == '.':",
+            "        if word[0].isupper():",
+            "            a = 1",
+            "            print(a)",
+            "        if word[1:].lower() == word[1:]:",
+            "            b = 1",
+            "            print(b)",
+            "        if word[-1].isalpha() or word[-1] == '.':",
+            "            c = 1",
+            "            print(c)",
+            "        if a == 1 and b == 1 and c == 1:",
+            "            final.append(word)",
+            "",
+            "print(final)"
+        ]
+    },
+    {
+        "User ID": "6887054",
+        "Pseudocode": [
+            "get txt  ",
+            "set txt to result of stripping whitespace from txt and splitting by spaces  ",
+            "",
+            "initialize result to empty list  ",
+            "go through each i in txt  ",
+            "    if i at index 0 is uppercase and substring of i from index 1 to end is lowercase and i is alphabetic:  ",
+            "        add i to result  ",
+            "",
+            "display result"
+        ],
+        "Pseudocode to Code": [
+            "txt = input().strip().split()",
+            "",
+            "result = []",
+            "for i in txt:",
+            "    if i[0].isupper() and i[1:].islower() and i.isalpha():",
+            "        result.append(i)",
+            "",
+            "print(result)"
+        ]
+    },
+    {
+        "User ID": "6887056",
+        "Pseudocode": [
+            "get s  ",
+            "initialize cap to empty list  ",
+            "go through each ch in s  ",
+            "    if ch is not empty  ",
+            "        add ch to cap  ",
+            "display cap"
+        ],
+        "Pseudocode to Code": [
+            "s = input()",
+            "cap = []",
+            "",
+            "for ch in s:",
+            "    if ch:  ",
+            "        cap.append(ch)",
+            "",
+            "print(cap)"
+        ]
+    },
+    {
+        "User ID": "6887058",
+        "Pseudocode": [
+            "get txt  ",
+            "txt = split txt by space  ",
+            "initialize cap_words to empty list  ",
+            "",
+            "go through each t in txt  ",
+            "    if t at index 0 is uppercase and substring of t from index 1 to -1 is lowercase or t at index -1 is .  ",
+            "        if t is alphabetic  ",
+            "            add t to cap_words  ",
+            "",
+            "display cap_words"
+        ],
+        "Pseudocode to Code": [
+            "txt = input()",
+            "txt = txt.split(\" \")",
+            "cap_words = []",
+            "",
+            "for t in txt:",
+            "    if (t[0].isupper() and t[1:-1].islower()) or t[-1] == '.':",
+            "        if t.isalpha():",
+            "            cap_words.append(t)",
+            "",
+            "print(cap_words)"
+        ]
+    },
+    {
+        "User ID": "6887059",
+        "Pseudocode": [
+            "get USERID  ",
+            "get PASSWORD  ",
+            "get EXERCISEID"
+        ],
+        "Pseudocode to Code": [
+            "USERID = input(\"Enter USERID: \")  ",
+            "PASSWORD = input(\"Enter PASSWORD: \")  ",
+            "EXERCISEID = input(\"Enter EXERCISEID: \")"
+        ]
+    },
+    {
+        "User ID": "6887060",
+        "Pseudocode": [
+            "get word  ",
+            "set word to split word by space  ",
+            "initialize all to empty list  ",
+            "go through each i in word  ",
+            "    if i is alphabetic and i at index 0 is uppercase and i at index 0 to end is not equal to i at index 1 to end or i at last index is .  ",
+            "        add i to all  ",
+            "display all"
+        ],
+        "Pseudocode to Code": [
+            "word = input(\"get word: \")  ",
+            "word = word.split()  ",
+            "all_words = []  ",
+            "for i in word:  ",
+            "    if i.isalpha() and i[0].isupper() and i[1:] != i[1:] or i[-1] == '.':  ",
+            "        all_words.append(i)  ",
+            "print(all_words)"
+        ]
+    },
+    {
+        "User ID": "6887061",
+        "Pseudocode": [
+            "get s",
+            "s = trim whitespace from s",
+            "s = split s by whitespace",
+            "initialize output to empty list",
+            "go through each word in s",
+            "    if word at index 0 is uppercase",
+            "        left = substring of word from index 1 to length of word",
+            "        if left at last index is not .",
+            "            if left is lowercase and left is alphabetic",
+            "                add word to output",
+            "        otherwise if left at last index is .",
+            "            left = substring of word from index 1 to length of word minus 1",
+            "            if left is lowercase and left is alphabetic",
+            "                add word to output",
+            "display output"
+        ],
+        "Pseudocode to Code": [
+            "s = input()",
+            "s = s.strip()",
+            "s = s.split()",
+            "output = []",
+            "",
+            "for word in s:",
+            "    if word[0].isupper():",
+            "        left = word[1:]",
+            "        if left[-1] != '.':",
+            "            if left.islower() and left.isalpha():",
+            "                output.append(word)",
+            "        elif left[-1] == '.':",
+            "            left = left[:-1]",
+            "            if left.islower() and left.isalpha():",
+            "                output.append(word)",
+            "",
+            "print(output)"
+        ]
+    },
+    {
+        "User ID": "6887062",
+        "Pseudocode": [
+            "get x  ",
+            "initialize new to empty list  ",
+            "go through each word in x  ",
+            "    initialize count to 0  ",
+            "    go through each i and char in word with index  ",
+            "        if i is 0  ",
+            "            if char is lowercase  ",
+            "                break  ",
+            "            otherwise  ",
+            "                if char is alphabetic  ",
+            "                    count = count plus 1  ",
+            "        otherwise if i is greater than 0  ",
+            "            if char is lowercase and char is alphabetic or char is .  ",
+            "                count = count plus 1  ",
+            "    if count is equal to length of word  ",
+            "        add word to new  ",
+            "display new"
+        ],
+        "Pseudocode to Code": [
+            "x = input()",
+            "new = []",
+            "",
+            "for word in x.split():",
+            "    count = 0",
+            "    for i, char in enumerate(word):",
+            "        if i == 0:",
+            "            if char.islower():",
+            "                break",
+            "            else:",
+            "                if char.isalpha():",
+            "                    count += 1",
+            "        elif i > 0:",
+            "            if (char.islower() and char.isalpha()) or char == '.':",
+            "                count += 1",
+            "",
+            "    if count == len(word):",
+            "        new.append(word)",
+            "",
+            "print(new)"
+        ]
+    },
+    {
+        "User ID": "6887063",
+        "Pseudocode": [
+            "get words  ",
+            "initialize list1 to empty list  ",
+            "set list1 to words split by whitespace  ",
+            "initialize found to False  ",
+            "repeat length of words times using index i  ",
+            "    if words at index i is alphabetic  ",
+            "        set a to combine items in list1 into text  ",
+            "        add words at index i to list1  ",
+            "display list1"
+        ],
+        "Pseudocode to Code": [
+            "words = input(\"Enter words: \").split()",
+            "list1 = []",
+            "found = False",
+            "",
+            "for i in range(len(words)):",
+            "    if words[i].isalpha():",
+            "        text = ' '.join(list1)",
+            "        list1.append(words[i])",
+            "",
+            "print(list1)"
+        ]
+    },
+    {
+        "User ID": "6887064",
+        "Pseudocode": [
+            "get text  ",
+            "text = trim whitespace from text and split by whitespace  ",
+            "initialize outlist to empty list  ",
+            "go through each i in text  ",
+            "    if i is alphabetic and i at index 0 is uppercase and substring of i from index 1 to end is lowercase then  ",
+            "        add i to outlist  ",
+            "    if i at last index is . and substring of i from index 1 to second last index is lowercase and i at index 0 is uppercase then  ",
+            "        add i to outlist  ",
+            "display outlist"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"get text: \")",
+            "text = text.strip().split()",
+            "",
+            "outlist = []",
+            "",
+            "for i in text:",
+            "    if i.isalpha() and i[0].isupper() and i[1:].islower():",
+            "        outlist.append(i)",
+            "    if i[-1] == '.' and i[0].isupper() and i[1:-1].islower():",
+            "        outlist.append(i)",
+            "",
+            "print(outlist)"
+        ]
+    },
+    {
+        "User ID": "6887065",
+        "Pseudocode": [
+            "get word  ",
+            "trim whitespace from word  ",
+            "split word by space  ",
+            "",
+            "initialize cap_word to empty list  ",
+            "go through each x in word  ",
+            "    if x is alphabetic or '.' is in substring of x from index -1 to end:  ",
+            "        if x at index 0 is x at index 0 converted to uppercase and x from index 1 to end is x from index 1 to end converted to lowercase:  ",
+            "            add x to cap_word  ",
+            "",
+            "display cap_word"
+        ],
+        "Pseudocode to Code": [
+            "word = input()",
+            "word = word.strip()",
+            "word_list = word.split()",
+            "",
+            "cap_word = []",
+            "for x in word_list:",
+            "    if x.isalpha() or ('.' in x[-1:]):",
+            "        if x[0].upper() == x[0] and x[1:].lower() == x[1:]:",
+            "            cap_word.append(x)",
+            "",
+            "print(cap_word)"
+        ]
+    },
+    {
+        "User ID": "6887066",
+        "Pseudocode": [
+            "get text  ",
+            "set a to empty list  ",
+            "go through each i in text  ",
+            "    if i is i capitalized and (i is alphabetic or i ends with .)  ",
+            "        add i to a  ",
+            "display a"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"Enter text: \")  ",
+            "a = []  ",
+            "for i in text:  ",
+            "    if i.isupper() and (i.isalpha() or i == '.'):  ",
+            "        a.append(i)  ",
+            "print(a)"
+        ]
+    },
+    {
+        "User ID": "6887067",
+        "Pseudocode": [
+            "get n  ",
+            "n is split by space  ",
+            "display n  ",
+            "initialize n1 to empty list  ",
+            "add n to n1  ",
+            "display n1  ",
+            "initialize news_n to empty list  ",
+            "go through each k in n  ",
+            "add n to news_n  ",
+            "display news_n"
+        ],
+        "Pseudocode to Code": [
+            "n = input(\"get n: \")",
+            "n = n.split()",
+            "print(n)",
+            "",
+            "n1 = []",
+            "n1.append(n)",
+            "print(n1)",
+            "",
+            "news_n = []",
+            "for k in n:",
+            "    news_n.append(n)",
+            "print(news_n)"
+        ]
+    },
+    {
+        "User ID": "6887068",
+        "Pseudocode": [
+            "get n  ",
+            "set word to list containing a, b, c, d, e, f, g, h, i, j, k, l, m, o, p, q, r, s, t, u, v, w, s, y, z  ",
+            "initialize list1 to empty list  ",
+            "go through each c in range of length of n  ",
+            "go through each n[c] in word  ",
+            "if n[c] is not word  ",
+            "display n[c]"
+        ],
+        "Pseudocode to Code": [
+            "n = int(input())",
+            "word = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 's', 'y', 'z']",
+            "list1 = []",
+            "",
+            "for c in range(n):",
+            "    for char in word:",
+            "        if char != word[c]:",
+            "            print(char)"
+        ]
+    },
+    {
+        "User ID": "6887069",
+        "Pseudocode": [
+            "get x",
+            "combine items in x into text",
+            "",
+            "go through each i in x",
+            "    if i is i.islower() or i.isdigit() or i.isnumeric() ",
+            "        x.replace(i, \"\")",
+            "        ",
+            "display x.split()"
+        ],
+        "Pseudocode to Code": [
+            "x = input()",
+            "text = ''.join(x)",
+            "",
+            "for i in x:",
+            "    if i.islower() or i.isdigit() or i.isnumeric():",
+            "        text = text.replace(i, \"\")",
+            "",
+            "print(text.split())"
+        ]
+    },
+    {
+        "User ID": "6887070",
+        "Pseudocode": [
+            "initialize u to empty list",
+            "get n",
+            "split n by space",
+            "add n to u",
+            "up = list of items in u where item is uppercase",
+            "display up"
+        ],
+        "Pseudocode to Code": [
+            "u = []",
+            "n = input()",
+            "u.extend(n.split())",
+            "up = [item for item in u if item.isupper()]",
+            "print(up)"
+        ]
+    },
+    {
+        "User ID": "6887071",
+        "Pseudocode": [
+            "get text  ",
+            "trim whitespace from text  ",
+            "split text by whitespace  ",
+            "display text"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"Enter text: \")  ",
+            "text = text.strip()  ",
+            "words = text.split()  ",
+            "print(words)"
+        ]
+    },
+    {
+        "User ID": "6887072",
+        "Pseudocode": [
+            "get txt  ",
+            "txt = split txt by whitespace  ",
+            "initialize fill to empty text  ",
+            "go through each i in txt  ",
+            "    if i is alphabetic  ",
+            "        fill = fill plus i converted to uppercase  ",
+            "        display i without newline"
+        ],
+        "Pseudocode to Code": [
+            "txt = input()  ",
+            "txt = txt.split()  ",
+            "fill = \"\"  ",
+            "for i in txt:  ",
+            "    if i.isalpha():  ",
+            "        fill += i.upper()  ",
+            "        print(i, end='')"
+        ]
+    },
+    {
+        "User ID": "6887073",
+        "Pseudocode": [
+            "get word  ",
+            "set word to list of items in word split by whitespace  ",
+            "initialize ans to empty list  ",
+            "go through each i in word  ",
+            "    if i is alphabetic or i at index -1 is .  ",
+            "        if i at index 0 is not uppercase  ",
+            "            continue  ",
+            "        otherwise  ",
+            "            add i to ans  ",
+            "initialize ans2 to empty list  ",
+            "go through each i in ans  ",
+            "    if i from index 1 to end is not lowercase  ",
+            "        continue  ",
+            "    otherwise  ",
+            "        add i to ans2  ",
+            "display ans2"
+        ],
+        "Pseudocode to Code": [
+            "word = input().split()  ",
+            "ans = []  ",
+            "for i in word:  ",
+            "    if i.isalpha() or i[-1] == '.':  ",
+            "        if not i[0].isupper():  ",
+            "            continue  ",
+            "        else:  ",
+            "            ans.append(i)  ",
+            "ans2 = []  ",
+            "for i in ans:  ",
+            "    if not i[1:].islower():  ",
+            "        continue  ",
+            "    else:  ",
+            "        ans2.append(i)  ",
+            "print(ans2)"
+        ]
+    },
+    {
+        "User ID": "6887074",
+        "Pseudocode": [
+            "get word",
+            "x = list of w is uppercase for each w in word split by comma",
+            "display x"
+        ],
+        "Pseudocode to Code": [
+            "word = input(\"Enter words separated by commas: \")",
+            "x = [w.upper() for w in word.split(',')]",
+            "print(x)"
+        ]
+    },
+    {
+        "User ID": "6887075",
+        "Pseudocode": [
+            "get text  ",
+            "set text to split text by space  ",
+            "initialize out to empty list  ",
+            "",
+            "go through each t in text  ",
+            "    if t is alphabetic then  ",
+            "        if t at index 0 is uppercase then  ",
+            "            if substring of t from index 1 to end is lowercase then  ",
+            "                add t to out  ",
+            "    otherwise  ",
+            "        if substring of t from index -1 to end is equal to . then  ",
+            "            if t at index 0 is uppercase then  ",
+            "                if substring of t from index 1 to end is lowercase then  ",
+            "                    add t to out  ",
+            "display out"
+        ],
+        "Pseudocode to Code": [
+            "text = input()  ",
+            "text = text.split()  ",
+            "out = []  ",
+            "",
+            "for t in text:  ",
+            "    if t.isalpha():  ",
+            "        if t[0].isupper():  ",
+            "            if t[1:].islower():  ",
+            "                out.append(t)  ",
+            "    else:  ",
+            "        if t[-1] == '.':  ",
+            "            if t[0].isupper():  ",
+            "                if t[1:].islower():  ",
+            "                    out.append(t)  ",
+            "",
+            "print(out)"
+        ]
+    },
+    {
+        "User ID": "6887076",
+        "Pseudocode": [
+            "initialize out to empty list  ",
+            "initialize text to empty list  ",
+            "get x  ",
+            "split x by whitespace  ",
+            "go through each i in x  ",
+            "    if i is alphabetic or i at index -1 is .  ",
+            "        add i to text  ",
+            "go through each i in text  ",
+            "    if i at index 0 is uppercase and substring of i from index 1 to end is lowercase  ",
+            "        add i to out  ",
+            "display out"
+        ],
+        "Pseudocode to Code": [
+            "out = []",
+            "text = []",
+            "x = input()",
+            "x = x.split()",
+            "",
+            "for i in x:",
+            "    if i.isalpha() or (len(i) > 0 and i[-1] == '.'):",
+            "        text.append(i)",
+            "",
+            "for i in text:",
+            "    if i[0].isupper() and i[1:].islower():",
+            "        out.append(i)",
+            "",
+            "print(out)"
+        ]
+    },
+    {
+        "User ID": "6887077",
+        "Pseudocode": [
+            "get list_input  ",
+            "set list_output to empty list  ",
+            "go through each i in list_input  ",
+            "    if (i at index 0 is uppercase and i is alphabetic and substring of i from index 1 to end is lowercase and i at last index is not .) or (i at index 0 is uppercase and substring of i from index 1 to end is lowercase and i at last index is .)  ",
+            "        add i to list_output  ",
+            "display list_output"
+        ],
+        "Pseudocode to Code": [
+            "list_input = [...]  # Initialize with your input list",
+            "list_output = []",
+            "",
+            "for i in list_input:",
+            "    if ((i[0].isupper() and i[1:].islower() and not i.endswith('.')) or ",
+            "        (i[0].isupper() and i[1:].islower() and i.endswith('.'))):",
+            "        list_output.append(i)",
+            "",
+            "print(list_output)"
+        ]
+    },
+    {
+        "User ID": "6887080",
+        "Pseudocode": [
+            "get words_input  ",
+            "set words to split words_input by whitespace  ",
+            "set capitalized_words_isalpha to list of w for each w in words where w is alphabetic  ",
+            "initialize final_capitalized_words to empty list  ",
+            "",
+            "go through each w in length of capitalized_words_isalpha  ",
+            "    ",
+            "",
+            "display capitalized_words"
+        ],
+        "Pseudocode to Code": [
+            "words_input = input()",
+            "words = words_input.split()",
+            "capitalized_words_isalpha = [w for w in words if w.isalpha()]",
+            "final_capitalized_words = []",
+            "",
+            "for w in capitalized_words_isalpha:",
+            "    final_capitalized_words.append(w)",
+            "",
+            "print(final_capitalized_words)"
+        ]
+    },
+    {
+        "User ID": "6887081",
+        "Pseudocode": [
+            "get word  ",
+            "set T to empty list  ",
+            "set AA to empty list  ",
+            "go through each i in range of length of word  ",
+            "    set T to word  ",
+            "    if T at index 0 is uppercase is true  ",
+            "        add T to AA  ",
+            "display AA"
+        ],
+        "Pseudocode to Code": [
+            "word = input(\"Enter a word: \")",
+            "T = []",
+            "AA = []",
+            "",
+            "for i in range(len(word)):",
+            "    T = word",
+            "    if T[0].isupper():",
+            "        AA.append(T)",
+            "",
+            "print(AA)"
+        ]
+    },
+    {
+        "User ID": "6887082",
+        "Pseudocode": [
+            "get s",
+            "set words to split s",
+            "initialize clean to empty list",
+            "",
+            "go through each w in words",
+            "    set w_clean to combine items in w where each item is alphabetic",
+            "    if w_clean is w with , replaced with empty and ! replaced with empty",
+            "        add w_clean to clean",
+            "",
+            "display list containing clean joined with ', '"
+        ],
+        "Pseudocode to Code": [
+            "s = input()",
+            "words = s.split()",
+            "clean = []",
+            "",
+            "for w in words:",
+            "    w_clean = ''.join(char for char in w if char.isalpha())",
+            "    if w_clean == w.replace(',', '').replace('!', ''):",
+            "        clean.append(w_clean)",
+            "",
+            "print(', '.join(clean))"
+        ]
+    },
+    {
+        "User ID": "6887083",
+        "Pseudocode": [
+            "get word",
+            "capitalized word = word split by whitespace",
+            "",
+            "go through each ch in txt",
+            "    if ch is alphabetic",
+            "",
+            "if txt is equal to txts from start to end",
+            "    display txt converted to uppercase",
+            "if txt is equal to txts from end to start",
+            "    display txt converted to lowercase",
+            "if txt is equal to .",
+            "    display nothing",
+            "",
+            "display txt"
+        ],
+        "Pseudocode to Code": [
+            "word = input(\"get word: \")",
+            "capitalized_word = word.split()",
+            "",
+            "txt = input(\"Enter text: \")",
+            "txts = txt",
+            "",
+            "for ch in txt:",
+            "    if ch.isalpha():",
+            "        pass",
+            "",
+            "if txt == txts:",
+            "    print(txt.upper())",
+            "if txt == txts[::-1]:",
+            "    print(txt.lower())",
+            "if txt == '.':",
+            "    pass",
+            "",
+            "print(txt)"
+        ]
+    },
+    {
+        "User ID": "6887084",
+        "Pseudocode": [
+            "get word",
+            "word = word converted to uppercase",
+            "word = word capitalized and split by whitespace",
+            "display word"
+        ],
+        "Pseudocode to Code": [
+            "word = input(\"Enter a word: \")",
+            "word = word.upper()",
+            "word = word.capitalize().split()",
+            "print(word)"
+        ]
+    },
+    {
+        "User ID": "6887085",
+        "Pseudocode": [
+            "initialize txt to empty text",
+            "initialize alphabet to empty list",
+            "",
+            "go through each txt in alphabet",
+            "    display alphabet",
+            "",
+            "    if alphabet is A-Z or alphabet is a-z or alphabet is .",
+            "        display txt converted to uppercase and trimmed and split",
+            "    otherwise",
+            "        display empty text",
+            "",
+            "display alphabet",
+            "",
+            "import numpy as np",
+            "",
+            "get txt",
+            "trim whitespace from txt",
+            "set alphabets to list of items in txt split by whitespace",
+            "initialize word to empty text",
+            "display alphabets",
+            "",
+            "go through each alphabet in alphabets",
+            "    set n to alphabet converted to uppercase at index 0 and split and trimmed",
+            "    add n to word",
+            "display word"
+        ],
+        "Pseudocode to Code": [
+            "txt = \"\"",
+            "alphabet = []",
+            "",
+            "for char in txt:",
+            "    print(alphabet)",
+            "",
+            "    if char.isalpha() or char == '.':",
+            "        print(txt.upper().strip().split())",
+            "    else:",
+            "        print(\"\")",
+            "",
+            "print(alphabet)",
+            "",
+            "import numpy as np",
+            "",
+            "txt = input()",
+            "txt = txt.strip()",
+            "alphabets = txt.split()",
+            "word = \"\"",
+            "print(alphabets)",
+            "",
+            "for alphabet in alphabets:",
+            "    n = alphabet[0].upper().strip()",
+            "    word += n",
+            "print(word)"
+        ]
+    },
+    {
+        "User ID": "6887086",
+        "Pseudocode": [
+            "get word  ",
+            "initialize list to empty  ",
+            "initialize list2 to empty  ",
+            "go through each i in word  ",
+            "    if (i at index 0 is uppercase or i at index -1 is .) and (i is alphabetic or i at index -1 is .) and (i from index 1 to end is lowercase)  ",
+            "        add i to list  ",
+            "display list"
+        ],
+        "Pseudocode to Code": [
+            "word = input(\"Enter a word: \")  ",
+            "list1 = []  ",
+            "list2 = []  ",
+            "",
+            "for i in word:  ",
+            "    if (i.isupper() or i == '.') and (i.isalpha() or i == '.') and (i[1:].islower()):  ",
+            "        list1.append(i)  ",
+            "",
+            "print(list1)"
+        ]
+    },
+    {
+        "User ID": "6887088",
+        "Pseudocode": [
+            "get x  ",
+            "initialize result to empty list  ",
+            "go through each i in x  ",
+            "    if i from index 0 to end minus 1 is alphabetic  ",
+            "        if i at index 0 is uppercase  ",
+            "            if length of i is 2  ",
+            "                if i at last index is lowercase or i at last index is .  ",
+            "                    add i to result  ",
+            "            if i from index 1 to end minus 1 is lowercase  ",
+            "                if i at last index is lowercase or i at last index is .  ",
+            "                    add i to result  ",
+            "display result"
+        ],
+        "Pseudocode to Code": [
+            "x = input().split()",
+            "result = []",
+            "",
+            "for i in x:",
+            "    if i.isalpha():",
+            "        if i[0].isupper():",
+            "            if len(i) == 2:",
+            "                if i[-1].islower() or i[-1] == '.':",
+            "                    result.append(i)",
+            "        if i[1:-1].islower():",
+            "            if i[-1].islower() or i[-1] == '.':",
+            "                result.append(i)",
+            "",
+            "print(result)"
+        ]
+    },
+    {
+        "User ID": "6887089",
+        "Pseudocode": [
+            "get w  ",
+            "x = split w by space  ",
+            "u = list of words for each words in x where words at index 0 is uppercase  ",
+            "display u  ",
+            "c = list containing no items  ",
+            "go through each words in x  ",
+            "    if words is alphabetic  ",
+            "        add words to c  ",
+            "display c  ",
+            "go through each words in x  ",
+            "    if words is alphabetic  ",
+            "        add words to c  ",
+            "go through each words in c  ",
+            "    if words at index 0 is alphabetic  ",
+            "        add words to u  ",
+            "display u"
+        ],
+        "Pseudocode to Code": [
+            "w = input()  ",
+            "x = w.split()  ",
+            "u = [word for word in x if word[0].isupper()]  ",
+            "print(u)  ",
+            "c = []  ",
+            "for word in x:  ",
+            "    if word.isalpha():  ",
+            "        c.append(word)  ",
+            "print(c)  ",
+            "for word in x:  ",
+            "    if word.isalpha():  ",
+            "        c.append(word)  ",
+            "for word in c:  ",
+            "    if word[0].isalpha():  ",
+            "        u.append(word)  ",
+            "print(u)"
+        ]
+    },
+    {
+        "User ID": "6887090",
+        "Pseudocode": [
+            "get tex  ",
+            "initialize list_upper to empty list  ",
+            "set list_tex to split tex by space  ",
+            "",
+            "go through each tex in list_tex  ",
+            "    if tex at index 0 is upper case and tex from index 0 to end is not equal to tex from start to end in upper case  ",
+            "        add tex to list_upper  ",
+            "    otherwise if tex at index 0 is upper case and tex from index 0 to end is not equal to tex from start to end in upper case and tex is not alphabetic  ",
+            "        clear list_tex  ",
+            "        add tex at index 0 to list_upper  ",
+            "display list_upper"
+        ],
+        "Pseudocode to Code": [
+            "tex = input()  ",
+            "list_upper = []  ",
+            "list_tex = tex.split()  ",
+            "",
+            "for tex in list_tex:  ",
+            "    if tex[0].isupper() and tex != tex.upper():  ",
+            "        list_upper.append(tex)  ",
+            "    elif tex[0].isupper() and tex != tex.upper() and not tex.isalpha():  ",
+            "        list_tex.clear()  ",
+            "        list_upper.append(tex)  ",
+            "",
+            "print(list_upper)"
+        ]
+    },
+    {
+        "User ID": "6887092",
+        "Pseudocode": [
+            "get input_word  ",
+            "input_word = trim whitespace from input_word  ",
+            "input_word = split input_word by space  ",
+            "",
+            "initialize word to empty list  ",
+            "go through each i in input_word  ",
+            "    if i from index 0 to -1 is alphabetic and i at index -1 is not numeric then  ",
+            "        if i at index 0 is uppercase and i from index 1 to end is lowercase and i at index -1 is not ? and i at index -1 is not ! then  ",
+            "            add i to word  ",
+            "display word"
+        ],
+        "Pseudocode to Code": [
+            "input_word = input(\"Enter a word: \")  ",
+            "input_word = input_word.strip()  ",
+            "input_word = input_word.split()  ",
+            "",
+            "word = []  ",
+            "for i in input_word:  ",
+            "    if i[:-1].isalpha() and not i[-1].isdigit():  ",
+            "        if i[0].isupper() and i[1:].islower() and i[-1] not in ['?', '!']:  ",
+            "            word.append(i)  ",
+            "print(word)"
+        ]
+    },
+    {
+        "User ID": "6887093",
+        "Pseudocode": [
+            "get x",
+            "x = trim whitespace from x and split x by space",
+            "initialize listdot to empty list",
+            "go through each k in x",
+            "    if . is in k",
+            "        add k to listdot",
+            "initialize lastdot to empty list",
+            "go through each d in listdot",
+            "    if . is in last character of d and substring of d from index 1 to second last character is lowercase",
+            "        add d to lastdot",
+            "initialize listx to empty list",
+            "go through each i in x",
+            "    if i is alphabetic and first character of i is uppercase and substring of i from index 1 to end is lowercase and last character of i is lowercase",
+            "        add i to listx",
+            "display listx",
+            "z = extend listx with lastdot"
+        ],
+        "Pseudocode to Code": [
+            "x = input().strip().split()",
+            "listdot = []",
+            "",
+            "for k in x:",
+            "    if '.' in k:",
+            "        listdot.append(k)",
+            "",
+            "lastdot = []",
+            "",
+            "for d in listdot:",
+            "    if d[-1] == '.' and d[1:-1].islower():",
+            "        lastdot.append(d)",
+            "",
+            "listx = []",
+            "",
+            "for i in x:",
+            "    if i.isalpha() and i[0].isupper() and i[1:].islower() and i[-1].islower():",
+            "        listx.append(i)",
+            "",
+            "print(listx)",
+            "z = listx + lastdot"
+        ]
+    },
+    {
+        "User ID": "6887094",
+        "Pseudocode": [
+            "get w  ",
+            "initialize new_list to empty list  ",
+            "go through each i in w  ",
+            "    if i from index 0 to second last is alphabetic and i at index 0 is uppercase and i from index 1 to second last is lowercase  ",
+            "        if i at last index is lowercase or i at last index is .  ",
+            "            add i to new_list  ",
+            "    if i is Is  ",
+            "        add i to new_list  ",
+            "display new_list"
+        ],
+        "Pseudocode to Code": [
+            "w = input()  ",
+            "new_list = []  ",
+            "for i in w:  ",
+            "    if all(c.isalpha() for c in i[:-1]) and i[0].isupper() and all(c.islower() for c in i[1:-1]):  ",
+            "        if i[-1].islower() or i[-1] == '.':  ",
+            "            new_list.append(i)  ",
+            "    if i == \"Is\":  ",
+            "        new_list.append(i)  ",
+            "print(new_list)"
+        ]
+    },
+    {
+        "User ID": "6887095",
+        "Pseudocode": [
+            "get a  ",
+            "initialize x to empty list  ",
+            "go through each v in a  ",
+            "    if v is title case  ",
+            "        if v at last index is . or v at last index is alphabetic  ",
+            "            add v to x  ",
+            "display x"
+        ],
+        "Pseudocode to Code": [
+            "a = [...]  # Initialize a with your list of strings",
+            "x = []",
+            "",
+            "for v in a:",
+            "    if v.istitle():",
+            "        if v[-1] == '.' or v[-1].isalpha():",
+            "            x.append(v)",
+            "",
+            "print(x)"
+        ]
+    },
+    {
+        "User ID": "6887096",
+        "Pseudocode": [
+            "get text  ",
+            "text = trim whitespace from text  ",
+            "text = split text by whitespace  ",
+            "initialize list2 to empty list  ",
+            "",
+            "go through each i in text  ",
+            "    if i is lowercase then  ",
+            "        continue  ",
+            "    otherwise if i is uppercase then  ",
+            "        continue  ",
+            "    otherwise if first character of i is numeric then  ",
+            "        continue  ",
+            "    otherwise  ",
+            "        add i to list2  ",
+            "",
+            "display list2"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"get text: \")  ",
+            "text = text.strip()  ",
+            "text = text.split()  ",
+            "list2 = []  ",
+            "",
+            "for i in text:  ",
+            "    if i.islower():  ",
+            "        continue  ",
+            "    elif i.isupper():  ",
+            "        continue  ",
+            "    elif i[0].isdigit():  ",
+            "        continue  ",
+            "    else:  ",
+            "        list2.append(i)  ",
+            "",
+            "print(list2)"
+        ]
+    },
+    {
+        "User ID": "6887098",
+        "Pseudocode": [
+            "get txt  ",
+            "txt = trim whitespace from txt  ",
+            "txt = split txt by whitespace  ",
+            "initialize output to empty list  ",
+            "",
+            "go through each text in txt  ",
+            "    if text is alphabetic and text at index 0 is uppercase and text from index 1 to end is lowercase or text at index 0 is uppercase and text from index 1 to end is lowercase and text at last index is .  ",
+            "        add text to output  ",
+            "",
+            "display output"
+        ],
+        "Pseudocode to Code": [
+            "txt = input()  ",
+            "txt = txt.strip()  ",
+            "txt = txt.split()  ",
+            "output = []  ",
+            "",
+            "for text in txt:  ",
+            "    if (text.isalpha() and text[0].isupper() and text[1:].islower()) or \\",
+            "       (text.isalpha() and text[0].isupper() and text[1:].islower() and text[-1] == '.'):  ",
+            "        output.append(text)  ",
+            "",
+            "print(output)"
+        ]
+    },
+    {
+        "User ID": "6887099",
+        "Pseudocode": [
+            "initialize dict to empty dictionary"
+        ],
+        "Pseudocode to Code": [
+            "empty_dict = {}"
+        ]
+    },
+    {
+        "User ID": "6887100",
+        "Pseudocode": [
+            "import string  ",
+            "get txt  ",
+            "trim whitespace from txt  ",
+            "set word to split txt by whitespace  ",
+            "initialize count to empty list  ",
+            "go through each w in word  ",
+            "    if w is alphabetic  ",
+            "        go through each i in w  ",
+            "            if i at index 0 is uppercase  ",
+            "                add w to count  ",
+            "    if w is not alphabetic  ",
+            "        if . is in w  ",
+            "            go through each i in w  ",
+            "                if i at index 0 is uppercase  ",
+            "                    add w to count  ",
+            "display count"
+        ],
+        "Pseudocode to Code": [
+            "import string",
+            "",
+            "txt = input()",
+            "txt = txt.strip()",
+            "word = txt.split()",
+            "",
+            "count = []",
+            "",
+            "for w in word:",
+            "    if w.isalpha():",
+            "        if w[0].isupper():",
+            "            count.append(w)",
+            "    elif not w.isalpha():",
+            "        if '.' in w:",
+            "            if w[0].isupper():",
+            "                count.append(w)",
+            "",
+            "print(count)"
+        ]
+    },
+    {
+        "User ID": "6887101",
+        "Pseudocode": [
+            "get txt  ",
+            "txt = trim whitespace from txt and split txt by space  ",
+            "",
+            "initialize new_txt to empty list  ",
+            "go through each i in txt  ",
+            "    if not length of i is equal to 0  ",
+            "        add i to new_txt  ",
+            "",
+            "initialize new_txt2 to empty list  ",
+            "go through each i in new_txt  ",
+            "    if i is alphabetic or i at index -1 is equal to .  ",
+            "        add i to new_txt2  ",
+            "",
+            "initialize new_txt3 to empty list  ",
+            "go through each i in new_txt2  ",
+            "    set a to i at index 0  ",
+            "    set b to substring of i from index 1 to end  ",
+            "",
+            "    if a is uppercase and b is lowercase  ",
+            "        add i to new_txt3  ",
+            "",
+            "display new_txt3"
+        ],
+        "Pseudocode to Code": [
+            "txt = input().strip().split()  ",
+            "new_txt = []  ",
+            "for i in txt:  ",
+            "    if len(i) != 0:  ",
+            "        new_txt.append(i)  ",
+            "new_txt2 = []  ",
+            "for i in new_txt:  ",
+            "    if i.isalpha() or i[-1] == '.':  ",
+            "        new_txt2.append(i)  ",
+            "new_txt3 = []  ",
+            "for i in new_txt2:  ",
+            "    a = i[0]  ",
+            "    b = i[1:]  ",
+            "    if a.isupper() and b.islower():  ",
+            "        new_txt3.append(i)  ",
+            "print(new_txt3)"
+        ]
+    },
+    {
+        "User ID": "6887103",
+        "Pseudocode": [
+            "initialize Pass to True  ",
+            "get In  ",
+            "set In to split and trim whitespace from In  ",
+            "initialize res to empty list  ",
+            "go through each word in In  ",
+            "    initialize Pass to True  ",
+            "    if first character of word is uppercase:  ",
+            "        go through each char in word from index 1 to end:  ",
+            "            if char is uppercase or char is not alphabetic and char is not .:  ",
+            "                set Pass to False  ",
+            "        if Pass:  ",
+            "            add word to res  ",
+            "display res"
+        ],
+        "Pseudocode to Code": [
+            "Pass = True  ",
+            "In = input()  ",
+            "In = In.split()  ",
+            "res = []  ",
+            "",
+            "for word in In:  ",
+            "    Pass = True  ",
+            "    if word[0].isupper():  ",
+            "        for char in word[1:]:  ",
+            "            if char.isupper() or (not char.isalpha() and char != '.'):  ",
+            "                Pass = False  ",
+            "        if Pass:  ",
+            "            res.append(word)  ",
+            "",
+            "print(res)"
+        ]
+    },
+    {
+        "User ID": "6887104",
+        "Pseudocode": [
+            "get text_input",
+            "initialize cleaned_string to empty string",
+            "go through each char in text_input",
+            "    if char is alphanumeric",
+            "        cleaned_string = cleaned_string plus char",
+            "if length of cleaned_string is greater than 1",
+            "    display cleaned_string",
+            "otherwise",
+            "    display empty string"
+        ],
+        "Pseudocode to Code": [
+            "text_input = input()",
+            "cleaned_string = \"\"",
+            "",
+            "for char in text_input:",
+            "    if char.isalnum():",
+            "        cleaned_string += char",
+            "",
+            "if len(cleaned_string) > 1:",
+            "    print(cleaned_string)",
+            "else:",
+            "    print(\"\")"
+        ]
+    },
+    {
+        "User ID": "6887105",
+        "Pseudocode": [
+            "get s  ",
+            "initialize txt to empty text  ",
+            "initialize list to empty list  ",
+            "",
+            "go through each i in s  ",
+            "    if i at index 0 is uppercase and substring of i from index 1 to end is lowercase  ",
+            "        if i is alphabetic or i at last index is .  ",
+            "            x = txt plus i  ",
+            "            add x to list  ",
+            "display list"
+        ],
+        "Pseudocode to Code": [
+            "s = input()",
+            "txt = \"\"",
+            "lst = []",
+            "",
+            "for i in s:",
+            "    if i[0].isupper() and i[1:].islower():",
+            "        if i.isalpha() or i[-1] == \".\":",
+            "            x = txt + i",
+            "            lst.append(x)",
+            "",
+            "print(lst)"
+        ]
+    },
+    {
+        "User ID": "6887106",
+        "Pseudocode": [
+            "get words  ",
+            "initialize list to empty list"
+        ],
+        "Pseudocode to Code": [
+            "words = input(\"Enter words separated by spaces: \").split()",
+            "word_list = []"
+        ]
+    },
+    {
+        "User ID": "6887107",
+        "Pseudocode": [
+            "get eiei",
+            "initialize idd to empty list",
+            "",
+            "go through each i in eiei",
+            "    add i to idd",
+            "    set s to combine items in idd into text and trim whitespace from s",
+            "",
+            "display s"
+        ],
+        "Pseudocode to Code": [
+            "eiei = input()",
+            "idd = []",
+            "",
+            "for i in eiei:",
+            "    idd.append(i)",
+            "    s = ' '.join(idd).strip()",
+            "",
+            "print(s)"
+        ]
+    },
+    {
+        "User ID": "6887108",
+        "Pseudocode": [
+            "initialize a to empty list",
+            "get s",
+            "set s to trim whitespace from s and split s by whitespace",
+            "go through each i in s",
+            "    if i at index 0 is uppercase and i from index 1 to end is lowercase and (i from index 1 to end is alphabetic or i at last index is .)",
+            "        add i to a",
+            "display a"
+        ],
+        "Pseudocode to Code": [
+            "a = []",
+            "s = input()",
+            "s = s.strip().split()",
+            "",
+            "for i in s:",
+            "    if i[0].isupper() and i[1:].islower() and (i[1:].isalpha() or i[-1] == '.'):",
+            "        a.append(i)",
+            "",
+            "print(a)"
+        ]
+    },
+    {
+        "User ID": "6887109",
+        "Pseudocode": [
+            "get s  ",
+            "word = s.strip().split by space  ",
+            "initialize result to empty list  ",
+            "",
+            "go through each w in word  ",
+            "    if w is alphabetic :  ",
+            "        if w at index 0 is uppercase and w from index 1 to end is lowercase :  ",
+            "            add w to result  ",
+            "",
+            "    if w from index 1 to end is lowercase and w at last index is . :  ",
+            "        add w to result  ",
+            "",
+            "go through each c in result  ",
+            "    if c at index 0 is not uppercase :  ",
+            "        remove c from result  ",
+            "",
+            "display result"
+        ],
+        "Pseudocode to Code": [
+            "s = input()  ",
+            "word = s.strip().split()  ",
+            "result = []  ",
+            "",
+            "for w in word:  ",
+            "    if w.isalpha():  ",
+            "        if w[0].isupper() and w[1:].islower():  ",
+            "            result.append(w)  ",
+            "",
+            "    if w[1:].islower() and w[-1] == '.':  ",
+            "        result.append(w)  ",
+            "",
+            "result = [c for c in result if c[0].isupper()]  ",
+            "",
+            "print(result)"
+        ]
+    },
+    {
+        "User ID": "6887111",
+        "Pseudocode": [
+            "get sen  ",
+            "sen = sen stripped of whitespace and split  ",
+            "initialize list_up to empty list  ",
+            "",
+            "go through each i in sen  ",
+            "    if substring of i from index 2 to 7 is numeric:  ",
+            "        remove i from sen  ",
+            "",
+            "go through each i in sen  ",
+            "    if i at index 0 is uppercase and i at last index is alphabetic or i at last index is .:  ",
+            "        add i to list_up  ",
+            "    otherwise:  ",
+            "        continue  ",
+            "",
+            "display list_up"
+        ],
+        "Pseudocode to Code": [
+            "sen = input(\"Enter a sentence: \")  ",
+            "sen = sen.strip().split()  ",
+            "list_up = []  ",
+            "",
+            "for i in sen:  ",
+            "    if i[2:7].isnumeric():  ",
+            "        sen.remove(i)  ",
+            "",
+            "for i in sen:  ",
+            "    if (i[0].isupper() and (i[-1].isalpha() or i[-1] == '.')):  ",
+            "        list_up.append(i)  ",
+            "    else:  ",
+            "        continue  ",
+            "",
+            "print(list_up)"
+        ]
+    },
+    {
+        "User ID": "6887112",
+        "Pseudocode": [
+            "get s  ",
+            "initialize newtxt to empty list  ",
+            "initialize num to 0123456789  ",
+            "initialize p to ,!?  ",
+            "go through each i in s  ",
+            "    if i at index 0 is uppercase and i from index 1 to end is lowercase and i from index 1 to end is not empty and i at last index is not in p and i is not in num  ",
+            "        if i is not in newtxt  ",
+            "            add i to newtxt  ",
+            "display newtxt"
+        ],
+        "Pseudocode to Code": [
+            "s = input()  ",
+            "newtxt = []  ",
+            "num = '0123456789'  ",
+            "p = ',.!?'  ",
+            "",
+            "for i in s:  ",
+            "    if i.isupper() and i[1:].islower() and i[1:] != '' and i[-1] not in p and i not in num:  ",
+            "        if i not in newtxt:  ",
+            "            newtxt.append(i)  ",
+            "            ",
+            "print(newtxt)"
+        ]
+    },
+    {
+        "User ID": "6887113",
+        "Pseudocode": [
+            "initialize gg to list containing no items  ",
+            "get word  ",
+            "set word to split word by space and trim whitespace  ",
+            "go through each i in word  ",
+            "    go through each j in i  ",
+            "        if j at index 0 is uppercase  ",
+            "            add i to gg  ",
+            "go through each i in gg  ",
+            "    if ? is in i or ! is in i  ",
+            "        remove i from gg  ",
+            "display gg"
+        ],
+        "Pseudocode to Code": [
+            "gg = []",
+            "word = input()",
+            "word = [w.strip() for w in word.split()]",
+            "",
+            "for i in word:",
+            "    for j in i:",
+            "        if j.isupper():",
+            "            gg.append(i)",
+            "            break",
+            "",
+            "gg = [i for i in gg if '?' not in i and '!' not in i]",
+            "",
+            "print(gg)"
+        ]
+    },
+    {
+        "User ID": "6887114",
+        "Pseudocode": [
+            "get text  ",
+            "set text to split text by space  ",
+            "set alpha to list of x for each x in text where x is alphabetic or . is in x  ",
+            "set capital to list of x for each x in alpha where x at index 0 is uppercase and substring of x from index 1 to end is lowercase  ",
+            "set result to list of x for each x in capital where x at index -1 is . and x is not in x  ",
+            "display capital plus result"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"get text: \")  ",
+            "text = text.split()  ",
+            "alpha = [x for x in text if x.isalpha() or '.' in x]  ",
+            "capital = [x for x in alpha if x[0].isupper() and x[1:].islower()]  ",
+            "result = [x for x in capital if x[-1] == '.' and x not in result]  ",
+            "output = capital + result  ",
+            "print(output)"
+        ]
+    },
+    {
+        "User ID": "6887115",
+        "Pseudocode": [
+            "get text  ",
+            "initialize Anslist1 to empty list  ",
+            "initialize num_list to 0123456789  ",
+            "",
+            "go through each i in text  ",
+            "    if i capitalize and i is alphabetic or . is in i and i is not lowercase and i is not uppercase  ",
+            "        add i to Anslist1  ",
+            "",
+            "display Anslist1"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"Enter text: \")  ",
+            "Anslist1 = []  ",
+            "num_list = \"0123456789\"  ",
+            "",
+            "for i in text:  ",
+            "    if (i.isupper() and i.isalpha()) or ('.' in i and not i.islower() and not i.isupper()):  ",
+            "        Anslist1.append(i)  ",
+            "",
+            "print(Anslist1)"
+        ]
+    },
+    {
+        "User ID": "6887116",
+        "Pseudocode": [
+            "initialize list to empty list  ",
+            "get x  ",
+            "split x by whitespace  ",
+            "display x  ",
+            "initialize list to empty list  ",
+            "get x  ",
+            "split x by whitespace  ",
+            "go through each i in x  ",
+            "add i to list  ",
+            "if list is capitalized  ",
+            "display i"
+        ],
+        "Pseudocode to Code": [
+            "list1 = []",
+            "x = input()",
+            "x = x.split()",
+            "print(x)",
+            "",
+            "list2 = []",
+            "x = input()",
+            "x = x.split()",
+            "",
+            "for i in x:",
+            "    list2.append(i)",
+            "    if i.isupper():",
+            "        print(i)"
+        ]
+    },
+    {
+        "User ID": "6887117",
+        "Pseudocode": [
+            "get text  ",
+            "set text to list of items in text split by whitespace  ",
+            "initialize cap to empty list  ",
+            "go through each t in text  ",
+            "    if t is alphabetic and first character of t is uppercase and substring of t from index 1 to end is lowercase or last character of t is .  ",
+            "        add t to cap  ",
+            "    otherwise  ",
+            "        skip to next iteration  ",
+            "display cap"
+        ],
+        "Pseudocode to Code": [
+            "text = input()",
+            "text = text.split()",
+            "cap = []",
+            "",
+            "for t in text:",
+            "    if t.isalpha() and t[0].isupper() and t[1:].islower() or t.endswith('.'):",
+            "        cap.append(t)",
+            "",
+            "print(cap)"
+        ]
+    },
+    {
+        "User ID": "6887118",
+        "Pseudocode": [
+            "get text  ",
+            "set listtitle to empty list  ",
+            "go through each i in text  ",
+            "    if i is title case and i is alphabetic then  ",
+            "        add i to listtitle  ",
+            "    otherwise if i is title case and i ends with . then  ",
+            "        add i to listtitle  ",
+            "display listtitle"
+        ],
+        "Pseudocode to Code": [
+            "text = input(\"Enter text: \")  ",
+            "listtitle = []  ",
+            "for i in text.split():  ",
+            "    if i.istitle() and i.isalpha():  ",
+            "        listtitle.append(i)  ",
+            "    elif i.istitle() and i.endswith('.'):  ",
+            "        listtitle.append(i)  ",
+            "print(listtitle)"
+        ]
+    },
+    {
+        "User ID": "6887119",
+        "Pseudocode": [
+            "get text  ",
+            "initialize text2 to empty list  ",
+            "go through each x in text  ",
+            "    if x at last index is . and x from start to second last index is alphabetic  ",
+            "        add x to text2  ",
+            "    otherwise if x is alphabetic  ",
+            "        add x to text2  ",
+            "initialize text3 to empty list  ",
+            "go through each x in text2  ",
+            "    if x at index 0 is uppercase and x from index 1 to end is lowercase  ",
+            "        add x to text3  ",
+            "display text3"
+        ],
+        "Pseudocode to Code": [
+            "text = input()",
+            "text2 = []",
+            "for x in text:",
+            "    if x[-1] == '.' and x[:-1].isalpha():",
+            "        text2.append(x)",
+            "    elif x.isalpha():",
+            "        text2.append(x)",
+            "text3 = []",
+            "for x in text2:",
+            "    if x[0].isupper() and x[1:].islower():",
+            "        text3.append(x)",
+            "print(text3)"
+        ]
+    },
+    {
+        "User ID": "6887120",
+        "Pseudocode": [
+            "get string",
+            "initialize count_str to length of string",
+            "initialize lis1 to empty list",
+            "initialize total to split string by space",
+            "initialize alpha to empty text",
+            "initialize c to empty text",
+            "go through each i in total",
+            "    if i is alphabetic",
+            "        set c to c plus i plus space",
+            "set c to split c by space",
+            "remove empty items from c",
+            "initialize d to empty text",
+            "go through each i in c",
+            "    if first character of i is uppercase and second character of i is lowercase and last character of i is alphanumeric",
+            "        set d to d plus i plus space",
+            "set e to split d by space",
+            "remove empty items from e",
+            "display e"
+        ],
+        "Pseudocode to Code": [
+            "string_input = input()",
+            "count_str = len(string_input)",
+            "lis1 = []",
+            "total = string_input.split()",
+            "alpha = \"\"",
+            "c = \"\"",
+            "",
+            "for i in total:",
+            "    if i.isalpha():",
+            "        c += i + \" \"",
+            "c = c.split()",
+            "c = list(filter(None, c))",
+            "d = \"\"",
+            "",
+            "for i in c:",
+            "    if i[0].isupper() and i[1].islower() and i[-1].isalnum():",
+            "        d += i + \" \"",
+            "e = d.split()",
+            "e = list(filter(None, e))",
+            "print(e)"
+        ]
+    },
+    {
+        "User ID": "999",
+        "Pseudocode": [
+            "define function is_capitalized with parameter s",
+            "go through each i in range of length of s",
+            "    set c to s at index i",
+            "    if c is not alphabetic",
+            "        if not (i is equal to length of s minus 1 and c is equal to .)",
+            "            return False",
+            "    if s ends with .",
+            "        set s to substring of s from index 0 to length of s minus 1",
+            "    go through each c in s from index 1 to end",
+            "        if c is not lowercase",
+            "            return False",
+            "    return s at index 0 is uppercase",
+            "",
+            "get instr",
+            "set instr to trim whitespace from instr",
+            "set words to list of s for each s in result of splitting instr by whitespace where length of s is greater than 0",
+            "set capitalizeds to list of items in words where is_capitalized of item is True",
+            "display capitalizeds"
+        ],
+        "Pseudocode to Code": [
+            "def is_capitalized(s):",
+            "    for i in range(len(s)):",
+            "        c = s[i]",
+            "        if not c.isalpha():",
+            "            if not (i == len(s) - 1 and c == '.'):",
+            "                return False",
+            "    if s.endswith('.'):",
+            "        s = s[:-1]",
+            "    for c in s[1:]:",
+            "        if not c.islower():",
+            "            return False",
+            "    return s[0].isupper()",
+            "",
+            "instr = input()",
+            "instr = instr.strip()",
+            "words = [s for s in instr.split() if len(s) > 0]",
+            "capitalizeds = [item for item in words if is_capitalized(item)]",
+            "print(capitalizeds)"
+        ]
+    }
+]
