@@ -1,0 +1,2089 @@
+[
+    {
+        "User ID": "6887001",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887002",
+        "Pseudocode": [
+            "initialize n to 77  ",
+            "initialize k to 13  ",
+            "get m  ",
+            "c = m to the power of k modulo n  ",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "n = 77  ",
+            "k = 13  ",
+            "m = int(input())  ",
+            "c = pow(m, k, n)  ",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887003",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887004",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887006",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887007",
+        "Pseudocode": [
+            "get m",
+            "",
+            "result = m to the power of 13",
+            "",
+            "remainder = result modulo 77",
+            "",
+            "display remainder"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number: \"))",
+            "",
+            "result = m ** 13",
+            "",
+            "remainder = result % 77",
+            "",
+            "print(remainder)"
+        ]
+    },
+    {
+        "User ID": "6887008",
+        "Pseudocode": [
+            "initialize n to 77  ",
+            "initialize k to 13  ",
+            "get m  ",
+            "c = m to the power of k modulo n  ",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "n = 77  ",
+            "k = 13  ",
+            "m = int(input())  ",
+            "c = pow(m, k, n)  ",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887009",
+        "Pseudocode": [
+            "get m",
+            "a = m to the power of 13 modulo 77",
+            "display a"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "a = pow(m, 13, 77)",
+            "print(a)"
+        ]
+    },
+    {
+        "User ID": "6887010",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887011",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number for m: \"))",
+            "",
+            "c = (m ** 13) % 77",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887012",
+        "Pseudocode": [
+            "get m",
+            "initialize k to 13",
+            "initialize n to 77",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter the value of m: \"))",
+            "k = 13",
+            "n = 77",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887013",
+        "Pseudocode": [
+            "get x",
+            "",
+            "ans = x to the power of 13",
+            "",
+            "ans = ans modulo 77",
+            "",
+            "display ans"
+        ],
+        "Pseudocode to Code": [
+            "x = int(input(\"Enter a number: \"))",
+            "",
+            "ans = x ** 13",
+            "",
+            "ans = ans % 77",
+            "",
+            "print(ans)"
+        ]
+    },
+    {
+        "User ID": "6887014",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = (m to the power of 13) modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "c = (m ** k) % n",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887015",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter m: \"))",
+            "",
+            "n = 77",
+            "",
+            "k = 13",
+            "",
+            "c = (m ** k) % n",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887016",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887017",
+        "Pseudocode": [
+            "get m",
+            "",
+            "if (0 <= m) and (m < 77)",
+            "    result = (m to the power of 13) modulo 77",
+            "    display result"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "if 0 <= m < 77:",
+            "    result = pow(m, 13, 77)",
+            "    print(result)"
+        ]
+    },
+    {
+        "User ID": "6887018",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number: \"))",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887019",
+        "Pseudocode": [
+            "get m",
+            "initialize k to 13",
+            "initialize n to 77",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "k = 13",
+            "n = 77",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887020",
+        "Pseudocode": [
+            "get value  ",
+            "m = value to the power of 13  ",
+            "m = m modulo 77  ",
+            "display m"
+        ],
+        "Pseudocode to Code": [
+            "value = int(input(\"Enter a value: \"))  ",
+            "m = value ** 13  ",
+            "m = m % 77  ",
+            "print(m)"
+        ]
+    },
+    {
+        "User ID": "6887021",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "chiper = m to the power of k modulo n",
+            "display chiper"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "chiper = pow(m, k, n)",
+            "print(chiper)"
+        ]
+    },
+    {
+        "User ID": "6887022",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = (m to the power of k) modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = (m ** k) % n",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887023",
+        "Pseudocode": [
+            "get m",
+            "",
+            "ans = (float(m) to the power of 13) modulo 77",
+            "",
+            "display int(ans)"
+        ],
+        "Pseudocode to Code": [
+            "m = input(\"Enter a number: \")",
+            "ans = (float(m) ** 13) % 77",
+            "print(int(ans))"
+        ]
+    },
+    {
+        "User ID": "6887024",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "n = 77",
+            "",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887025",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887026",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number: \"))",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887027",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "c = (m ** 13) % 77",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887028",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "n = 77",
+            "",
+            "k = 13",
+            "",
+            "c = (m ** k) % n",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887029",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = (m ** k) % n",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887030",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887031",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number: \"))",
+            "c = (m ** 13) % 77",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887032",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "if 0 <= m < n",
+            "    display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "if 0 <= m < n:",
+            "    print(c)"
+        ]
+    },
+    {
+        "User ID": "6887033",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "c = pow(m, 13, 77)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887034",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "initialize c to 0",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display int(c)"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(int(c))"
+        ]
+    },
+    {
+        "User ID": "6887035",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887036",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = absolute value of (m to the power of k) modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "c = abs(m ** k) % n",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887037",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887038",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887039",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887040",
+        "Pseudocode": [
+            "get m",
+            "",
+            "a = m to the power of 13 modulo 77",
+            "",
+            "display a"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number: \"))",
+            "a = (m ** 13) % 77",
+            "print(a)"
+        ]
+    },
+    {
+        "User ID": "6887041",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887042",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887043",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number (m): \"))",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887044",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "c = (m ** 13) % 77",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887045",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887047",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887048",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "if c == 1",
+            "    display 1",
+            "otherwise if c == 2",
+            "    display 30",
+            "otherwise if c == 3",
+            "    display 38",
+            "otherwise if c == 4",
+            "    display 53",
+            "otherwise",
+            "    display 26"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "k = int(input(\"Enter a value for k: \"))",
+            "n = int(input(\"Enter a value for n: \"))",
+            "",
+            "c = (m ** k) % n",
+            "",
+            "if c == 1:",
+            "    print(1)",
+            "elif c == 2:",
+            "    print(30)",
+            "elif c == 3:",
+            "    print(38)",
+            "elif c == 4:",
+            "    print(53)",
+            "else:",
+            "    print(26)"
+        ]
+    },
+    {
+        "User ID": "6887049",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887050",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887051",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "initialize c to int",
+            "if 0 <= m and m < n",
+            "    c = m to the power of k modulo n",
+            "otherwise",
+            "    pass",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = None",
+            "",
+            "if 0 <= m < n:",
+            "    c = pow(m, k, n)",
+            "",
+            "if c is not None:",
+            "    print(c)"
+        ]
+    },
+    {
+        "User ID": "6887052",
+        "Pseudocode": [
+            "initialize n to 77  ",
+            "initialize k to 13  ",
+            "get m  ",
+            "c = m to the power of k modulo n  ",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "n = 77  ",
+            "k = 13  ",
+            "m = int(input(\"Enter a value for m: \"))  ",
+            "c = (m ** k) % n  ",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887053",
+        "Pseudocode": [
+            "get m",
+            "cal = m to the power of 13",
+            "cal = cal modulo 77",
+            "display cal"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "cal = m ** 13",
+            "cal = cal % 77",
+            "print(cal)"
+        ]
+    },
+    {
+        "User ID": "6887054",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887056",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number: \"))",
+            "",
+            "c = (m ** 13) % 77",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887057",
+        "Pseudocode": [
+            "get m",
+            "output = m to the power of 13",
+            "output = output modulo 77",
+            "display round(output)"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "output = m ** 13",
+            "output = output % 77",
+            "print(round(output))"
+        ]
+    },
+    {
+        "User ID": "6887058",
+        "Pseudocode": [
+            "get x",
+            "initialize n to 77",
+            "initialize k to 13",
+            "result = x to the power of k",
+            "result = result modulo n",
+            "display result"
+        ],
+        "Pseudocode to Code": [
+            "x = int(input(\"Enter a value for x: \"))",
+            "n = 77",
+            "k = 13",
+            "result = x ** k",
+            "result = result % n",
+            "print(result)"
+        ]
+    },
+    {
+        "User ID": "6887059",
+        "Pseudocode": [
+            "get m",
+            "",
+            "if 0 <= m < 77",
+            "    c = m to the power of 13 modulo 77",
+            "    display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "",
+            "if 0 <= m < 77:",
+            "    c = pow(m, 13, 77)",
+            "    print(c)"
+        ]
+    },
+    {
+        "User ID": "6887060",
+        "Pseudocode": [
+            "initialize n to 77  ",
+            "initialize k to 13  ",
+            "get m  ",
+            "",
+            "if m >= 0 and m < n  ",
+            "    total = m to the power of k modulo n  ",
+            "display total"
+        ],
+        "Pseudocode to Code": [
+            "n = 77  ",
+            "k = 13  ",
+            "m = int(input(\"Enter a value for m: \"))  ",
+            "",
+            "if 0 <= m < n:  ",
+            "    total = pow(m, k, n)  ",
+            "    print(total)"
+        ]
+    },
+    {
+        "User ID": "6887061",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887062",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "display round(c)"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number: \"))",
+            "",
+            "c = pow(m, 13, 77)",
+            "",
+            "print(round(c))"
+        ]
+    },
+    {
+        "User ID": "6887063",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887064",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887065",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number: \"))",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887066",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887067",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "print c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter m: \"))",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887068",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "",
+            "initialize k to 13",
+            "",
+            "c = (m to the power of k) modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = (m ** k) % n",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887069",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "if 0 > m > 77",
+            "    display \"no\"",
+            "otherwise",
+            "    display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "",
+            "if 0 > m > 77:",
+            "    print(\"no\")",
+            "else:",
+            "    print(c)"
+        ]
+    },
+    {
+        "User ID": "6887070",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887071",
+        "Pseudocode": [
+            "initialize n to 77  ",
+            "initialize k to 13  ",
+            "get m  ",
+            "c = m to the power of k modulo n  ",
+            "display float(c)"
+        ],
+        "Pseudocode to Code": [
+            "n = 77  ",
+            "k = 13  ",
+            "m = float(input(\"Enter a value for m: \"))  ",
+            "c = pow(m, k, n)  ",
+            "print(float(c))"
+        ]
+    },
+    {
+        "User ID": "6887072",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "c = (m ** k) % n",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887073",
+        "Pseudocode": [
+            "initialize n to 77  ",
+            "initialize k to 13  ",
+            "get m  ",
+            "c = m to the power of k modulo n  ",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "n = 77  ",
+            "k = 13  ",
+            "m = int(input(\"Enter a value for m: \"))  ",
+            "c = pow(m, k, n)  ",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887074",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter m: \"))",
+            "n = 77",
+            "k = 13",
+            "c = (m ** k) % n",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887075",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887076",
+        "Pseudocode": [
+            "get m",
+            "ans = m to the power of 13 modulo 77",
+            "display ans"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "ans = pow(m, 13, 77)",
+            "print(ans)"
+        ]
+    },
+    {
+        "User ID": "6887077",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter value for m: \"))",
+            "",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887078",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = (m ** k) % n",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887080",
+        "Pseudocode": [
+            "get m",
+            "result = m to the power of 13",
+            "remainder = result modulo 77",
+            "display remainder"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "result = m ** 13",
+            "remainder = result % 77",
+            "print(remainder)"
+        ]
+    },
+    {
+        "User ID": "6887081",
+        "Pseudocode": [
+            "get m",
+            "initialize k to 13",
+            "initialize n to 77",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "get_m = int(input(\"Enter a value for m: \"))",
+            "k = 13",
+            "n = 77",
+            "",
+            "c = pow(get_m, k, n)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887082",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "if m >= 0 and m < n",
+            "    display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "",
+            "if 0 <= m < n:",
+            "    print(c)"
+        ]
+    },
+    {
+        "User ID": "6887083",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "m = 0 <= m < n",
+            "display \"m\""
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "m = m % n",
+            "print(m)"
+        ]
+    },
+    {
+        "User ID": "6887084",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887085",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "c = (m × k) modulo n",
+            "",
+            "result = m × (0 <= m < n)",
+            "",
+            "#if (2 to the power of 13) == 8192 and (8192 modulo 77) == 30:",
+            "   # display 1",
+            "",
+            "display \"1\""
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter m: \"))",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = (m * k) % n",
+            "",
+            "result = m * (0 <= m < n)",
+            "",
+            "if (2 ** 13) == 8192 and (8192 % 77) == 30:",
+            "    print(1)",
+            "",
+            "print(\"1\")"
+        ]
+    },
+    {
+        "User ID": "6887086",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number: \"))",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887087",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887088",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "x = m to the power of k modulo n",
+            "display x"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "x = pow(m, k, n)",
+            "print(x)"
+        ]
+    },
+    {
+        "User ID": "6887089",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "",
+            "if m >= 0 and m < n",
+            "    display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "",
+            "if 0 <= m < n:",
+            "    print(c)"
+        ]
+    },
+    {
+        "User ID": "6887090",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of 13 modulo 77",
+            "display int(c)"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(int(c))"
+        ]
+    },
+    {
+        "User ID": "6887092",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = (m ** k) % n",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887093",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887094",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize k to 13",
+            "",
+            "initialize n to 77",
+            "",
+            "c = (m to the power of k) modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "k = 13",
+            "n = 77",
+            "",
+            "c = (m ** k) % n",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887095",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887096",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887097",
+        "Pseudocode": [
+            "initialize n to 77  ",
+            "initialize k to 13  ",
+            "get m  ",
+            "c = m to the power of 13 modulo 77  ",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "n = 77  ",
+            "k = 13  ",
+            "m = int(input())  ",
+            "c = pow(m, k, n)  ",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887098",
+        "Pseudocode": [
+            "get m",
+            "",
+            "c = m to the power of 13 modulo 77",
+            "",
+            "if m >= 0 and m < 77",
+            "    display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number (m): \"))",
+            "",
+            "c = pow(m, 13, 77)",
+            "",
+            "if 0 <= m < 77:",
+            "    print(c)"
+        ]
+    },
+    {
+        "User ID": "6887099",
+        "Pseudocode": [
+            "initialize n to 77  ",
+            "initialize k to 13  ",
+            "get m  ",
+            "c = m to the power of k modulo n  ",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "n = 77  ",
+            "k = 13  ",
+            "m = int(input(\"Enter a value for m: \"))  ",
+            "c = (m ** k) % n  ",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887100",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887101",
+        "Pseudocode": [
+            "get num",
+            "c = num to the power of 13",
+            "c = c modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "num = int(input(\"Enter a number: \"))",
+            "c = num ** 13",
+            "c = c % 77",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887103",
+        "Pseudocode": [
+            "initialize n to 77",
+            "initialize k to 13",
+            "get m",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "n = 77",
+            "k = 13",
+            "m = int(input(\"Enter a value for m: \"))",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887104",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "x = m to the power of k modulo n",
+            "display x"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "x = pow(m, k, n)",
+            "print(x)"
+        ]
+    },
+    {
+        "User ID": "6887105",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887106",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887107",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "",
+            "if (m >= 0) and (m < n)",
+            "    display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter m: \"))",
+            "",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "",
+            "if 0 <= m < n:",
+            "    print(c)"
+        ]
+    },
+    {
+        "User ID": "6887108",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo 77",
+            "if m >= 0 and m <= n",
+            "    display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "if 0 <= m <= n:",
+            "    print(c)"
+        ]
+    },
+    {
+        "User ID": "6887109",
+        "Pseudocode": [
+            "get m",
+            "",
+            "cal = m to the power of 13 modulo 77",
+            "",
+            "display cal"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number (m): \"))",
+            "cal = (m ** 13) % 77",
+            "print(cal)"
+        ]
+    },
+    {
+        "User ID": "6887111",
+        "Pseudocode": [
+            "get x",
+            "c = x to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "x = int(input(\"Enter a number: \"))",
+            "c = pow(x, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887112",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "c = (m ** k) % n",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887113",
+        "Pseudocode": [
+            "get m",
+            "c = m to the power of 13 modulo 77",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number: \"))",
+            "c = pow(m, 13, 77)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887114",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "c = m to the power of k modulo n",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input())",
+            "n = 77",
+            "k = 13",
+            "c = pow(m, k, n)",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887115",
+        "Pseudocode": [
+            "get m",
+            "if m >= 0 and m <= 77",
+            "    c = m to the power of 13 modulo 77",
+            "    display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "if 0 <= m <= 77:",
+            "    c = pow(m, 13, 77)",
+            "    print(c)"
+        ]
+    },
+    {
+        "User ID": "6887116",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887117",
+        "Pseudocode": [
+            "initialize n to 77  ",
+            "initialize k to 13  ",
+            "get m  ",
+            "c = m to the power of k modulo n  ",
+            "display c"
+        ],
+        "Pseudocode to Code": [
+            "n = 77  ",
+            "k = 13  ",
+            "m = int(input())  ",
+            "c = pow(m, k, n)  ",
+            "print(c)"
+        ]
+    },
+    {
+        "User ID": "6887118",
+        "Pseudocode": [
+            "get m",
+            "",
+            "initialize n to 77",
+            "",
+            "initialize k to 13",
+            "",
+            "c = m to the power of k modulo n",
+            "",
+            "if m >= 0 and m < n",
+            "    display c"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "",
+            "n = 77",
+            "k = 13",
+            "",
+            "c = pow(m, k, n)",
+            "",
+            "if 0 <= m < n:",
+            "    print(c)"
+        ]
+    },
+    {
+        "User ID": "6887119",
+        "Pseudocode": [
+            "get m",
+            "result = m to the power of 13",
+            "result = result modulo 77",
+            "display result"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a number: \"))",
+            "result = m ** 13",
+            "result = result % 77",
+            "print(result)"
+        ]
+    },
+    {
+        "User ID": "6887120",
+        "Pseudocode": [
+            "get m",
+            "initialize n to 77",
+            "initialize k to 13",
+            "",
+            "total = m to the power of k modulo n",
+            "display total"
+        ],
+        "Pseudocode to Code": [
+            "m = int(input(\"Enter a value for m: \"))",
+            "n = 77",
+            "k = 13",
+            "",
+            "total = (m ** k) % n",
+            "print(total)"
+        ]
+    },
+    {
+        "User ID": "999",
+        "Pseudocode": [
+            "initialize USERID to 999  ",
+            "initialize PASSWORD to 424242  ",
+            "initialize EXERCISEID to 'itds120-cp1-q1'  ",
+            "",
+            "define function is_capitalized with parameter s  ",
+            "    go through each index i in the range of length of s  ",
+            "        set c to s[i]  ",
+            "        if c is not an alphabet  ",
+            "            if not (i is equal to length of s minus 1 and c is equal to '.')  ",
+            "                return False  ",
+            "    if s ends with '.'  ",
+            "        set s to s without the last character  ",
+            "    go through each character c in s starting from index 1  ",
+            "        if c is not a lowercase letter  ",
+            "            return False  ",
+            "    return s[0] is an uppercase letter  ",
+            "",
+            "get instr  ",
+            "set instr to instr with leading and trailing spaces removed  ",
+            "set words to list of items from instr split by spaces where length of item is greater than 0  ",
+            "set capitalizeds to list of items from words where is_capitalized returns True  ",
+            "display capitalizeds"
+        ],
+        "Pseudocode to Code": [
+            "USERID = 999  ",
+            "PASSWORD = 424242  ",
+            "EXERCISEID = 'itds120-cp1-q1'  ",
+            "",
+            "def is_capitalized(s):  ",
+            "    for i in range(len(s)):  ",
+            "        c = s[i]  ",
+            "        if not c.isalpha():  ",
+            "            if not (i == len(s) - 1 and c == '.'):  ",
+            "                return False  ",
+            "    if s.endswith('.'):  ",
+            "        s = s[:-1]  ",
+            "    for c in s[1:]:  ",
+            "        if not c.islower():  ",
+            "            return False  ",
+            "    return s[0].isupper()  ",
+            "",
+            "instr = input(\"Enter a string: \")  ",
+            "instr = instr.strip()  ",
+            "words = [item for item in instr.split() if len(item) > 0]  ",
+            "capitalizeds = [word for word in words if is_capitalized(word)]  ",
+            "print(capitalizeds)"
+        ]
+    }
+]
